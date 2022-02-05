@@ -1,2 +1,0 @@
-# KhamiyevAnvar.com
-Personel Website
