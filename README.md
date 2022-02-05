@@ -1,2 +1,1 @@
-# KhamiyevAnvar.com
-Personel Website
+# KhamiyevAnvar.github.io
