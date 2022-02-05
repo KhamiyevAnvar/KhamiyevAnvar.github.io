@@ -1,0 +1,694 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+#foodhead {
+  background-image: url(../img/headback.jpg);
+  background-size: contain;
+}
+#foodhead .express {
+  position: fixed;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 8px 5px;
+  display: block;
+  text-align: right;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.063rem;
+  font-weight: 400;
+}
+#foodhead .express img {
+  margin-right: 5px;
+}
+#foodhead .express span {
+  display: inline-block;
+  color: #3d2514;
+  margin-right: 35px;
+}
+#foodhead .NavB {
+  margin-top: 49px;
+}
+#foodhead .NavB a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 5px;
+}
+#foodhead .NavB #menu {
+  display: none;
+  float: right;
+  font-size: 1.5rem;
+  padding: 10px 5px;
+}
+#foodhead .NavB #menu #menu-n {
+  padding: 6px 18px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+#foodhead .NavB #menu #menu-n .nav-m {
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin: 5px 0;
+  background-color: #3d2514;
+  border-radius: 2px;
+  transition: 0.5s ease-in-out;
+}
+#foodhead .NavB ul {
+  display: inline-block;
+  list-style: none;
+  float: right;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.313rem;
+  font-weight: 700;
+  font-size: 1.375rem;
+  font-weight: 600;
+  padding: 8px 5px;
+  margin: 0;
+  transition: 0.5s ease-in-out;
+}
+#foodhead .NavB ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 16px 26px;
+  border-radius: 5px;
+  transform: scale(0.9);
+  transition: 0.3s;
+}
+#foodhead .NavB ul li a {
+  color: black;
+  text-decoration: none;
+}
+#foodhead .NavB ul li:hover {
+  background-color: white;
+  transform: scale(1);
+}
+#foodhead .NavB ul .active {
+  background-color: white;
+}
+#foodhead .headbody .hb-left {
+  margin-top: 80px;
+  padding-top: 40px;
+  padding-left: 20px;
+  width: 100%;
+  object-fit: contain;
+}
+#foodhead .headbody .hb-left div p {
+  display: inline-block;
+  margin: 0;
+  padding: 5px 10px;
+  border: 2px dashed #3d2514;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+#foodhead .headbody .hb-left span {
+  display: inline-block;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 7.125rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px white;
+}
+#foodhead .headbody .hb-left span span {
+  display: block;
+  font-size: 3.5rem;
+  line-height: 16px;
+}
+#foodhead .headbody .hb-right {
+  padding: 10px 20px;
+  position: relative;
+}
+#foodhead .headbody .hb-right img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+#foodhead .headbody .hb-right .price {
+  position: absolute;
+  left: 50px;
+  bottom: 60px;
+  color: white;
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #bf2222;
+  padding: 8px;
+  text-align: center;
+}
+#foodhead .headbody .hb-right .price .pricebor {
+  line-height: 26px;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 700;
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  padding: 26px ;
+  border: 2px dashed white ;
+}
+#foodhead .headbody .hb-right .price .pricebor span {
+  display: inline-block;
+  font-size: 1.313rem;
+}
+#today {
+  padding: 30px 0;
+}
+#today .today-left {
+  margin-top: 25px;
+  position: relative;
+}
+#today .today-left img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 16px;
+}
+#today .today-left .tl-text {
+  position: absolute;
+  left: 20px;
+  top: 25px;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+}
+#today .today-left .tl-text span {
+  line-height: 15px;
+  display: block;
+  font-size: 1.375rem;
+}
+#today .today-left .tl-text h1 {
+  margin: 0;
+  font-size: 2.25rem;
+}
+#today .today-right {
+  margin-top: 25px;
+  position: relative;
+}
+#today .today-right img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 16px;
+}
+#today .today-right .tr-text {
+  position: absolute;
+  left: 20px;
+  top: 25px;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+}
+#today .today-right .tr-text span {
+  line-height: 22px;
+  display: block;
+  font-size: 1.375rem;
+}
+#today .today-right .tr-text h1 {
+  line-height: 35px;
+  margin: 0;
+  font-size: 2.25rem;
+}
+#enjoy .enjoyhead {
+  text-align: center;
+  padding: 10px 50px;
+}
+#enjoy .enjoyhead a {
+  margin-top: 35px;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.563rem;
+  font-weight: 400;
+  padding: 5px 15px;
+  color: #3d2514;
+  background-color: #ffc045;
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+#enjoy .enjoyhead h1 {
+  margin-top: 30px;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 3.125rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #3d2514;
+}
+#enjoy .enjoyhead p {
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.063rem;
+  font-weight: 400;
+  color: #3d2514;
+}
+#enjoy .enjoybody {
+  margin-top: 35px;
+  padding: 40px 0;
+}
+#enjoy .enjoybody img {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+}
+#enjoy .enjoybody div {
+  padding: 5px 26px;
+  text-align: center;
+  color: #3d2514;
+}
+#enjoy .enjoybody div h4 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2.25rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+#enjoy .enjoybody div p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.063rem;
+  font-weight: 400;
+}
+#enjoy .enjoybody div a {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 1.063rem;
+  font-weight: 400;
+  display: inline-block;
+  padding: 12px 30px;
+  color: white;
+  background-color: #bf2222;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#discover {
+  margin-top: 40px;
+  padding: 30px 20px;
+}
+#discover .dis-shadow {
+  box-shadow: 0 0 10px #dadada;
+  padding: 25px 18px;
+}
+#discover .dis-left {
+  color: #3d2514;
+  display: inline-block;
+}
+#discover .dis-left span {
+  display: block;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.875rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+#discover .dis-left span span {
+  line-height: 38px;
+  display: block;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 2.75rem;
+  font-weight: 400;
+}
+#discover .dis-left p {
+  height: 126px;
+  overflow: hidden;
+  margin: 0;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.313rem;
+  font-weight: 400;
+}
+#discover .dis-right img {
+  width: 100%;
+  object-fit: contain;
+}
+#discover .desing-dots {
+  margin-top: 10px;
+}
+#discover .desing-dots span {
+  display: inline-block;
+  background-color: #dcdcdc;
+  width: 14px ;
+  height: 14px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+#discover .desing-dots .active,
+#discover .desing-dots span:hover {
+  background-color: #ffc045;
+  box-shadow: 0 0 2px black;
+  transform: scale(1.05);
+}
+#reservation {
+  background-image: url(../img/reservationback.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 90px 0;
+}
+#reservation .reshead {
+  text-transform: uppercase;
+  text-align: center;
+  color: #3d2514;
+}
+#reservation .reshead span {
+  display: inline-block;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.875rem;
+}
+#reservation .reshead h1 {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 3.125rem;
+}
+#reservation .resform {
+  padding: 35px 0;
+}
+#reservation .resform .formc {
+  padding: 15px 10px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.313rem;
+  font-weight: 400;
+}
+#reservation .resform .formc input {
+  width: 48%;
+  padding: 10px 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #dadada;
+  border-radius: 3px;
+}
+#reservation .resform .formc input:nth-child(1) {
+  margin-right: 5px;
+}
+#reservation .resform .formc input:active {
+  border: #bf2222 !important;
+}
+#reservation .resform .formc button {
+  font-family: 'Alfa Slab One', cursive;
+  text-transform: uppercase;
+  width: 48%;
+  height: 100%;
+  padding: 12px 4px;
+  color: white;
+  border: none;
+  background-color: #bf2222;
+  border-radius: 3px;
+}
+#reservation .resform .formc button:hover {
+  color: #bf2222;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#fouter {
+  padding: 30px 8px ;
+}
+#fouter #fouterback {
+  background-image: url(../img/fouterback.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#fouter #fouterback .row {
+  padding: 60px 25px;
+}
+#fouter #fouterback .fouter-left a {
+  display: inline-block;
+}
+#fouter #fouterback .fouter-left a img {
+  width: 100%;
+}
+#fouter #fouterback .fouter-left p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.063rem;
+  font-weight: 400;
+  color: white;
+  margin-top: 30px;
+  text-align: justify;
+}
+#fouter #fouterback .foutercon {
+  margin-top: 135px;
+}
+#fouter #fouterback .foutercon .locdesing {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 400;
+  font-size: 1.313rem;
+}
+#fouter #fouterback .foutercon .locdesing .desing-icon {
+  display: inline-block;
+  width: 22px;
+  text-align: center;
+  margin-right: 7px;
+}
+#fouter #fouterback .foutercon .locdesing .desing-icon i {
+  width: 100%;
+}
+#fouter #fouterback .foutercon .locdesing span {
+  display: inline-block;
+}
+#fouter #fouterback .fouter-nav {
+  padding: 10px 20px;
+}
+#fouter #fouterback .fouter-nav span {
+  display: inline-block;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.063rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+}
+#fouter #fouterback .fouter-nav .fouter-nav-icon {
+  display: inline-block;
+  float: right;
+}
+#fouter #fouterback .fouter-nav .fouter-nav-icon a {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  width: 28px;
+  height: 28px;
+  color: black;
+  background-color: white;
+  border-radius: 50%;
+  font-size: 1.125rem;
+  border: 1px solid black;
+  transition: 0.3s ease-in-out;
+}
+#fouter #fouterback .fouter-nav .fouter-nav-icon a:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  transform: scale(1.1);
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  #foodhead .express {
+    text-align: center;
+  }
+  #foodhead .express span {
+    margin-right: 0;
+  }
+  #foodhead .NavB {
+    position: relative;
+  }
+  #foodhead .NavB #menu {
+    display: block;
+  }
+  #foodhead .NavB #menu #menu-n {
+    padding: 6px 8px;
+  }
+  #foodhead .NavB #menu .is-active .nav-m:nth-child(2) {
+    opacity: 0;
+  }
+  #foodhead .NavB #menu .is-active .nav-m:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  #foodhead .NavB #menu .is-active .nav-m:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+  #foodhead .NavB ul {
+    position: absolute;
+    left: -1000px;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: block;
+    width: 100%;
+    clear: right;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+  }
+  #foodhead .NavB ul li {
+    display: block;
+    color: #3d2514;
+  }
+  #foodhead .NavB .listresponsiv {
+    left: 0px;
+  }
+  #foodhead .headbody .hb-left {
+    margin-top: 0;
+  }
+  #foodhead .headbody .hb-left div p {
+    font-size: 1.5rem;
+  }
+  #foodhead .headbody .hb-left span {
+    font-size: 5.125rem;
+  }
+  #foodhead .headbody .hb-left span span {
+    font-size: 3rem;
+  }
+  #enjoy .enjoybody div h4 {
+    font-size: 1.81rem;
+  }
+  #enjoy .enjoybody div p {
+    font-size: 0.95rem;
+  }
+  #enjoy .enjoybody div a {
+    padding: 12px 26px;
+  }
+  #discover .dis-left {
+    padding: 5px 0;
+  }
+  #discover .dis-left span {
+    font-size: 1.2rem;
+  }
+  #discover .dis-left span span {
+    font-size: 1.5rem;
+  }
+  #discover .dis-left p {
+    margin-top: 7px;
+    height: 78px;
+    font-size: 0.8rem;
+  }
+  #discover .dis-right {
+    padding: 5px 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  #today .today-left .tl-text span {
+    font-size: 1rem;
+  }
+  #today .today-left .tl-text h1 {
+    font-size: 1.8rem;
+  }
+  #today .today-right .tr-text {
+    left: 15px;
+    top: 11px;
+  }
+  #today .today-right .tr-text span {
+    line-height: 22px;
+    font-size: 1rem;
+  }
+  #today .today-right .tr-text h1 {
+    line-height: 22px;
+    font-size: 1.7rem;
+  }
+  #fouter #fouterback .fouter-left p {
+    font-size: 0.9rem;
+  }
+  #fouter #fouterback .foutercon .locdesing {
+    font-size: 0.9rem;
+  }
+}
+@media all and (max-width: 768px) {
+  #foodhead .express {
+    text-align: center;
+  }
+  #foodhead .express span {
+    margin-right: 0;
+  }
+  #foodhead .NavB {
+    position: relative;
+  }
+  #foodhead .NavB #menu {
+    display: block;
+  }
+  #foodhead .NavB #menu #menu-n {
+    padding: 6px 8px;
+  }
+  #foodhead .NavB #menu .is-active .nav-m:nth-child(2) {
+    opacity: 0;
+  }
+  #foodhead .NavB #menu .is-active .nav-m:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  #foodhead .NavB #menu .is-active .nav-m:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+  #foodhead .NavB ul {
+    position: absolute;
+    left: -1000px;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: block;
+    width: 100%;
+    clear: right;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+  }
+  #foodhead .NavB ul li {
+    display: block;
+    color: #3d2514;
+  }
+  #foodhead .NavB .listresponsiv {
+    left: 0px;
+  }
+  #foodhead .headbody .hb-left {
+    margin-top: 0;
+    padding-top: 59px;
+    padding-left: 15px;
+  }
+  #foodhead .headbody .hb-left div p {
+    font-size: 1.2rem;
+  }
+  #foodhead .headbody .hb-left span {
+    font-size: 4.125rem;
+  }
+  #foodhead .headbody .hb-left span span {
+    font-size: 2.5rem;
+  }
+  #discover .dis-left {
+    padding: 5px 0;
+  }
+  #discover .dis-left span {
+    font-size: 1.2rem;
+  }
+  #discover .dis-left span span {
+    font-size: 1.5rem;
+  }
+  #discover .dis-left p {
+    margin-top: 7px;
+    height: 78px;
+    font-size: 0.8rem;
+  }
+  #discover .dis-right {
+    padding: 5px 0;
+  }
+  #reservation .reshead span {
+    font-size: 1.6rem;
+  }
+  #reservation .reshead h1 {
+    font-size: 2.5rem;
+  }
+  #reservation .resform {
+    padding: 26px 0;
+  }
+  #reservation .resform .formc {
+    padding: 7px 9px;
+    font-size: 1rem;
+  }
+  #reservation .resform .formc button {
+    padding: 10px 7px;
+  }
+  #fouter #fouterback .foutercon {
+    margin-top: 50px;
+  }
+  #fouter #fouterback .fouter-nav {
+    padding: 10px 1px;
+  }
+  #fouter #fouterback .fouter-nav span {
+    font-size: 0.9rem;
+  }
+  #fouter #fouterback .fouter-nav .fouter-nav-icon a {
+    width: 23px;
+    height: 23px;
+    font-size: 0.9rem;
+  }
+}

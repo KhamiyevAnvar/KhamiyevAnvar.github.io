@@ -1,0 +1,956 @@
+@fs-10:0.625rem;
+@fs-12:0.75rem;
+@fs-14:0.875rem;
+@fs-15:0.938rem;
+@fs-16:1rem;
+@fs-18:1.125rem;
+
+@fs-24:1.8rem;
+@fs-44:2.75rem;
+@fs-56:3.5rem;
+
+
+@fs-21:1.313rem;
+@fs-22:1.375rem;
+@fs-23:1.438rem;
+@fs-25:1.563rem;
+@fs-26:1.625rem;
+@fs-30:1.875rem;
+@fs-33:2.063rem;
+@fs-36:2.25rem;
+@fs-58:3.625rem;
+@fs-67:4.188rem;
+@fs-75:4.688rem; 
+@fs-98:6.125rem;
+
+@fw-400:400;
+@fw-600:600;
+@fw-700:700;  
+
+@ff-balo:'Baloo Bhai 2', cursive;
+@ff-lato: 'Lato', sans-serif;
+@ff-monserrat: 'Montserrat', sans-serif;
+
+@bg-col-yogahead:#f4f9f4;
+@bg-col-nav:#e2ede8;
+@bg-col-logo:#a7d7c5;
+@bg-col-hover:#c7d9d5;
+
+@col-logo:#6c9894;
+@col-nav:#494f4e;
+
+
+*{
+	box-sizing: border-box;
+	padding:0;
+	margin: 0;
+
+}
+
+#yogahead{
+	background-color: @bg-col-yogahead;
+	.NavB{
+		background-color:@bg-col-nav;
+
+		a{
+			display: inline-block;
+			text-decoration: none;
+			padding:10px 5px;
+			background-color:@bg-col-logo;
+			img{
+				color: @col-logo;
+			}
+		}
+		#menu{
+			display: none;
+			float: right;
+			font-size: @fs-24;
+			padding:15px 5px;
+			
+			
+			#menu-n{
+				padding:16px 18px;
+				cursor: pointer;
+				transition: 0.8s ease-in-out;
+				
+				.nav-m{
+					display:block;
+					width: 30px;
+					height: 4px;
+					margin: 5px 0;
+					background-color:@col-nav;
+					border-radius:2px;
+					transition: 0.5s ease-in-out;
+					
+				}
+			}
+			#menu-n:hover{
+				background-color: @bg-col-hover;
+				border-radius:5px;
+				
+			}
+		}
+
+		ul{
+			display: inline-block;
+			list-style: none;
+			float: right;
+			
+			font-family: @ff-balo;
+			font-size: @fs-22;
+			font-weight: 600;
+			padding:12px 5px;
+			margin: 0;
+			transition: .5s ease-in-out;
+
+			li{
+				display: inline-block;
+				text-transform: uppercase;
+				padding:16px 26px;
+				border-radius:5px;
+				color:@col-nav;
+
+			}
+			li:hover{
+				background-color:@bg-col-hover;
+			}
+			.active{
+				background-color:@bg-col-hover;
+			}
+		}
+
+	}
+
+	.yogaclass{
+		
+		padding:32px 0;
+		.class-left{
+			position:relative;
+			text-align: center;
+			vertical-align: middle;
+			width: 100%;
+			
+
+
+			.class-relative{
+				background-image: url(../img/desing1.png);
+				background-repeat:no-repeat;
+				background-position: center;
+				 background-size: auto;
+				width: 100%;
+				height: 600px;
+				vertical-align: middle;
+				img	{
+					margin-top:130px;
+					width: 300px;
+					height: 300px;
+					border-radius:50%;
+				}
+			}
+		}
+		.class-right{
+			color:@col-logo;
+			text-align: center;
+			padding-top:150px;
+
+
+			h1{
+
+				font-family: @ff-balo;
+				font-size:@fs-98;
+				font-weight: @fw-600;
+				text-transform: uppercase; 
+			}
+			p{
+				font-family:@ff-monserrat;
+				font-size: @fs-21;
+				font-weight: @fw-400;
+				padding:0 60px;
+			}
+			a{
+				display: inline-block;
+				font-family: @ff-lato;
+				font-size: @fs-18;
+				font-weight: @fw-700;
+				text-transform: uppercase;
+				text-decoration: none;
+				color:white;
+				padding:4px 24px;
+				border-radius:10px;
+				background-color:@col-logo;
+				margin-top: 15px;
+			}
+		}
+	}
+	
+}
+
+#choose{
+	background-color:@col-logo;
+	color: white;
+	padding:25px 0;
+	.choose-head{
+		text-align: center;
+		padding:20px 120px;
+
+		h1{
+			margin-top: 40px;
+			font-family: @ff-balo;
+			font-size: @fs-75;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+		p{
+			font-family: @ff-monserrat;
+			font-size: @fs-30;
+			font-weight: 400;
+
+		}
+	}
+	.choose-body{
+		text-align: center;
+		padding:10px 0;
+		.class-desing{
+			margin-top: 10px;
+			background-image:url(../img/desing3.png);
+			background-repeat:no-repeat;
+			background-size:contain;
+			background-position:center;
+			vertical-align: middle;
+			text-align: center;
+			padding:10px 15px;
+			
+			img{
+				padding:10%;
+				
+				border-radius:50%;
+				width: 100%;
+				
+			}
+		}
+		h4{
+			margin-top: 15px;
+			font-family: @ff-balo;
+			font-size: @fs-36;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+		p{
+			font-family: @ff-monserrat;
+			font-size: @fs-22;
+			font-weight: 400;
+		}
+	}
+}
+
+#stats{
+	background-image:url(../img/statsback.png);
+	background-position:bottom;
+	background-size:cover;
+	background-repeat:no-repeat;
+	.stats-head{
+		color:@col-logo;
+		text-align: center;
+		padding:25px 200px;
+		
+		h1{
+			font-family: @ff-balo;
+			font-size: @fs-75;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+		p{
+			font-family: @ff-monserrat;
+			font-size: @fs-30;
+			font-weight: 400;
+		}
+	}
+
+	.stats-body{
+		color:@col-logo;
+		.stats-desing{
+			text-align: center;
+			padding:45px 0;
+			div{
+
+				display: inline-block;
+				width: 240px;
+				height:240px;
+				vertical-align: middle;
+				text-align: center;
+				border-radius:50%;
+				border:3px solid @col-logo;
+				h2{
+					margin-top: 30px;
+					font-family: @ff-balo;
+					font-size: @fs-67;
+					font-weight: 600;
+				}
+				p{
+					font-family: @ff-monserrat;
+					font-size: @fs-25;
+					font-weight: 400;
+				}
+				
+			}
+		}
+	}
+}
+
+#stats2{
+	background-image:url(../img/statsback2.png);
+	background-repeat:no-repeat;
+	background-position:-50px -50px;
+	padding:50px 0;
+}
+
+#best{
+	background-color:@col-logo;
+	.col-md-6{
+		padding:0;
+	}
+	.best-left{
+		color: white;
+		
+		
+		padding-top:60px;
+		padding-left:25px;
+		padding-right:25px;
+		h1{
+			margin-top: 150px;
+			font-family: @ff-balo;
+			font-size: @fs-75;
+			font-weight: @fw-600;
+			text-transform: uppercase;
+		}
+		p{
+			font-family: @ff-monserrat;
+			font-size: @fs-30;
+			font-weight: @fw-400;
+		}
+		a{
+
+			display: inline-block;
+			text-decoration: none;
+			color:@col-logo;
+			background-color:white;
+			padding:5px 60px;
+			border-radius:3px;
+			font-family: @ff-balo;
+			font-size: @fs-25;
+			font-weight: @fw-600;
+			text-transform: uppercase;
+		}
+	}
+
+	.best-right{
+		img{
+			width: 100%;
+		}
+	}
+}
+
+#new{
+	background-color:@bg-col-yogahead;
+	background-image:url(../img/newback.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:920px;
+	.new-left{
+		padding:60px;
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+	.new-right{
+		padding:60px 20px;
+		color: @col-logo;
+		h1{
+			padding-top:90px;
+			font-family: @ff-balo;
+			font-size: @fs-75;
+			font-weight: @fw-600;
+			text-transform: uppercase;
+		}
+		p{
+			font-family: @ff-monserrat;
+			font-size: @fs-30;
+			font-weight: @fw-400;
+		}
+		a{
+
+			display: inline-block;
+			text-decoration: none;
+			color:white;
+			background-color:@col-logo;
+			padding:5px 60px;
+			border-radius:3px;
+			font-family: @ff-balo;
+			font-size: @fs-25;
+			font-weight: @fw-600;
+			text-transform: uppercase;
+		}
+	}
+}
+
+#pricing{
+	background-color:@col-logo;
+	padding:80px 0;
+	.pricing-head{
+		text-align: center;
+		color:@bg-col-yogahead;
+		h1{
+			margin-top: 40px;
+			font-family: @ff-balo;
+			font-size: @fs-75;
+			font-weight: @fw-600;
+			text-transform: uppercase;
+		}
+		p{
+			font-family: @ff-monserrat;
+			font-size: @fs-30;
+			font-weight: @fw-400;
+			padding:0 160px;
+			
+		}
+	}
+	.col-md-4{
+		padding:30px;
+	}
+	.pricing-body{
+		padding:0 30px;
+		.pricing-desing{
+		background-color:@bg-col-yogahead;
+		text-align: center;
+		color: @col-logo;
+		padding:30px 20px;
+		border-radius:4px;
+
+		h1 {
+			font-family: @ff-balo;
+			font-size: @fs-36;
+			font-weight: @fw-600;
+			text-transform: uppercase;
+			margin: 0;
+		}
+		span{
+			display:block;
+			font-family: @ff-balo;
+			font-size: @fs-36;
+			font-weight: @fw-600;
+			text-transform: uppercase;
+
+		}
+		p{
+			margin-top:20px; 
+			font-family: @ff-monserrat;
+			font-size: @fs-22;
+			font-weight: @fw-400;	
+		}
+		a{
+			display:block;
+			font-family: @ff-balo;
+			font-size: @fs-30;
+			font-weight: @fw-600;
+			text-decoration: none;
+			color: @bg-col-yogahead;
+			background-color:@col-logo;
+			padding:10px 20px;
+			text-transform: uppercase;
+			border-radius:4px;
+		}
+	}	
+	}
+}
+
+#trainer{
+	padding:80px 0;
+	background-image:url(../img/trainerback.jpg);
+	background-size:cover;
+	.trainer-body{
+		text-align: center;
+		font-size: @fs-58;
+		color: @col-logo;
+		.trainer-img{
+			display: inline-block;
+			width: 350px;
+			height: 350px;
+			background-image:url(../img/trainerdesing.png);
+			background-size:contain;
+			padding:35px;
+			img{
+				width: 100%;
+				border-radius:50%;
+			}
+
+		}	
+		p{
+			font-family: @ff-monserrat;
+			font-weight: 400;
+		}
+		span{
+			display: block;
+			font-family: @ff-balo;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+	}
+}
+
+#update{
+	background-color:@col-logo;
+	padding:180px 0;
+	.update-body{
+		text-align: center;
+		color: @bg-col-yogahead;
+		h1{
+			font-family: @ff-balo;
+			font-size: @fs-75;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+		p{
+			margin-top: 10px;
+			font-family: @ff-monserrat;
+			font-size: @fs-30;
+			font-weight: 400;
+			padding:0 80px;
+		
+		}
+		.update-mail{
+			margin-top: 10px;
+			display: inline-block;
+			width: 75%;
+			form{
+				position:relative;
+				input{
+					width: 100%;
+					border:none;
+					height: 50px;
+					border-radius:30px;
+					padding:0 15px;
+				}
+
+				button{
+					height: 50px;
+					border:none;
+					background-color:@bg-col-yogahead;
+					color: @col-logo;
+					width: 30%;
+					border-radius:30px;
+					font-family: @ff-balo;
+					font-size: 25px;
+					font-weight: 600;
+					position:absolute;
+					right: 0;
+					box-shadow:0 0 2px black;
+				}
+			}
+		}
+	}
+}
+
+#fouter{
+	background-color:@bg-col-yogahead;
+	padding:120px 0;
+	.fouter-title{
+		color:@col-logo;
+		padding:5px 50px;
+		h1{
+			font-family: @ff-balo;
+			font-size: @fs-33;
+			font-weight: @fw-600;
+		}
+		p{
+			margin-top: 15px;
+			font-family: @ff-monserrat;
+			font-size: @fs-25;
+			font-weight: @fw-400;
+		}
+	}
+	
+	.fouter-desing{
+		padding:5px 0;
+		color: @col-logo;
+		h1{
+			font-family: @ff-balo;
+			font-size: @fs-33;
+			font-weight: @fw-600;
+		}
+		ul{
+			list-style: none;
+			padding:0;
+			margin: 0;
+			margin-top: 15px;
+			li{
+				a{
+					display: block;
+					text-decoration: none;
+					font-family: @ff-monserrat;
+					font-size: @fs-25;
+					font-weight: @fw-400;
+					color: @col-logo;
+					transition: 1s;		
+				}
+				a:hover{
+					text-shadow: 0px 0px 1.5px black;
+				}
+			}
+		}
+	}
+
+	.follow{
+		ul{
+			li{
+				a{
+					.iconfont{
+						width: 34px;
+						height: 34px;
+						display: inline-block;
+						text-align: center;
+						margin-right: 10px;
+						margin-bottom:3px;
+						font-size: @fs-21;
+						i{
+							width: 100%;
+							height: 100%;
+							padding-top:6px;
+							background-color:@col-logo;
+							color: @bg-col-yogahead;
+							border-radius:50%;
+
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+	#yogahead{
+		.yogaclass{
+			.class-right{
+				padding-top:100px;
+				h1{
+					font-size: 5.5rem
+				}
+				p{
+					padding: 0px 30px;
+				}
+			}	
+		}
+	}
+
+	#choose{
+		.choose-body{
+			h4{
+				font-size: 1.8rem;
+			}
+			p{
+				font-size: 1.1rem;
+			}
+		}
+	}
+
+	#best{
+		.best-left{
+			h1{
+				font-size: 3.2rem;
+			}
+			p{
+				font-size: 1.3rem;
+			}
+			a{
+				font-size: 1.4rem;
+			}
+		}
+	}
+
+	#new{
+		.new-right{
+			
+			h1{font-size: 4rem;
+				padding-top: 30px;}
+			p{font-size: 1.6rem}
+		}
+
+	}
+	#pricing{
+		padding:30px 0;
+		.pricing-body{
+			padding:0 12px;
+			.col-md-4{
+				padding:14px;
+			}
+			.pricing-desing{
+				padding:19px 10px;
+				h1{
+					font-size: 1.8rem;
+				}
+				span{
+					font-size: 1.8rem;
+				}
+			}
+		}
+
+	}
+
+	#fouter{
+		.col-md-7{
+			padding:0;
+		}
+		.fouter-title{
+			h1{
+
+			}
+			p{
+				font-size: @fs-16;
+			}
+		}
+		.fouter-desing{
+			ul{
+				li{
+					a{
+						font-size: @fs-16;
+					}
+				}
+			}
+		}
+		.follow{
+			ul{
+				li{
+					a{
+						.iconfont{
+							width: 30px;
+							height:30px;
+							margin-right: 4px;
+							font-size: @fs-16;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 992px)  {
+	#yogahead{
+		.yogaclass{
+			.class-right{
+				padding-top:72px;
+				h1{
+					font-size: 5.125rem
+				}
+				p{
+					padding: 0px 20px;
+				}
+			}	
+		}
+	}
+	
+	#best{
+		.best-left{
+			padding:40px 35px;
+			h1{font-size: 3.6rem;
+				margin-top: 50px;}
+			p{font-size: 1.5rem}
+		}
+
+	}
+	#new{
+		.new-right{
+			
+			h1{font-size: 3rem;
+				padding-top: 20px;}
+			p{font-size: 1.2rem}
+		}
+
+	}
+
+	#pricing{
+		.pricing-body{
+			padding:0 12px;
+			.col-md-4{
+				padding:14px;
+			}
+			.pricing-desing{
+				h1{
+					font-size: 2rem;
+				}
+				span{
+					font-size: 2rem;
+				}
+				p{
+					font-size: 1.1rem;
+				}
+				a{
+					font-size: 1.25rem;
+				}
+
+			}
+		}
+
+	}
+	
+}
+
+@media all and (max-width: 768px) {
+	
+	#yogahead{
+		.NavB{
+			position:relative;
+			
+			#menu{
+				display: block;
+				#menu-n{
+					.nav-m{
+
+					}
+				}	
+				.is-active{
+					.nav-m:nth-child(2){
+					opacity: 0;
+					}
+					.nav-m:nth-child(1){
+						transform: translateY(9px) rotate(45deg);
+					}
+					.nav-m:nth-child(3){
+						transform: translateY(-9px) rotate(-45deg);
+					}
+				}
+				
+
+			}
+			ul{	
+				position:absolute;
+				left:-1000px;
+				z-index: 1;
+				background-color:rgba(226,237,232,0.8);
+				display: block;
+				width: 100%;
+				clear: right;
+				text-align: center;
+				border-radius:0 0 5px 5px;
+
+				li{
+					display: block;
+
+				}
+			}
+			.listresponsiv{
+				left:0px;
+			}
+
+		}
+	}
+
+	#choose{
+		.choose-head{
+			padding:20px 20px;
+		}
+		
+	}
+
+	#stats{
+		.stats-head{
+			padding:25px 20px;
+		}
+	}
+
+	#best{
+		.best-left{
+			h1{
+				font-size: 3.4rem;
+			}
+			p{
+				font-size: 1.4rem;
+			}
+			a{
+				font-size: 1.3rem;
+				padding:5px 50px;
+			}
+		}
+	}
+
+	#pricing{
+		.pricing-head{
+			p{
+				padding:0 20px;
+			}
+		}
+		.col-md-4{
+			padding:15px 7px;
+		}
+
+		.pricing-body{
+			padding:0 12px;
+		}
+
+	}
+
+	#trainer{
+		.trainer-body{
+			font-size: @fs-36;
+		}
+	}
+
+	#update{
+		padding:80px 0;
+		.update-body{
+			h1{
+				font-size: 4rem;
+			}
+			p{
+				padding:0 10px;
+			}
+			.update-mail{
+				width: 96%;
+				form{
+					button{
+						width: 38%;
+						font-size: 21px;
+					}
+				}
+			}
+		}
+	}
+
+	#fouter{
+		padding:60px 20px;
+		.fouter-title{
+			padding:10px 0;
+		}
+		.fouter-desing{
+			padding:10px 0;
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

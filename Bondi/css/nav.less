@@ -1,0 +1,139 @@
+#Navbar{
+	background-color: @bg-col-head;
+	.navdiv{
+		position:relative;
+		padding:15px 0;
+		
+		.logo{
+			display: inline-block;
+			margin-left: 8px;
+			img{}
+		}
+		
+		#navbut{
+			display: none;
+			float: right;
+			color: white;
+			margin-right:8px;
+			margin-left:12px;
+			padding:4px 0;
+			cursor: pointer;
+			transition: 0.8s ease-in-out;
+			span{
+				display:block;
+				margin:4px 0;
+				width: 30px;
+				height: 5px;
+				background-color:white;
+				border-radius:4px;
+				transition: 0.5s;
+			}
+		}
+		.login-but{
+			display: inline-block;
+			float: right;
+			color:@col-login;
+			background-color:@bg-col-login;
+			font-family: @ff-roboto;
+			text-decoration: none;
+			font-size: @fs-15;
+			font-weight: @fw-500;
+			padding:6px 28px;
+			border-radius:18px;
+			transition: 0.3s;
+		}
+		.login-but:hover{
+			color: @bg-col-login;
+			background-color: @col-login;
+		}
+		.search-icon{
+			display: inline-block;
+			float: right;
+			color: white;
+			margin-right:20px;
+			font-size: @fs-18;
+			padding:4px 0;
+			color:@col-search;
+			border-left:1px solid @col-search;
+			transition: 0.3s;
+			cursor: pointer;
+			i{
+				padding-left:15px;
+			}
+			
+		}
+		.search-icon:hover{
+			color: white;
+		}
+		ul{
+			display: inline-block;
+			list-style: none;
+			text-align: center;
+			transition: 0.3s ease-in-out;
+			float: right;
+			li{
+				display: inline-block;
+				margin-right:12px;
+				transform: scale(1);
+				transition: .5s;
+				padding: 3px 12px;
+				a{
+					text-decoration: none;
+					font-family: @ff-roboto;
+					font-size: @fs-15;
+					font-weight: @fw-400;
+					text-transform: capitalize;
+					color: @col-list;
+					transition: 0.3s;
+					
+				    
+				}
+				a:hover{
+					color: @col-search;
+				}
+				
+			}
+			.active{
+				a{
+					color: @col-search;
+				}
+				
+			}
+			li:hover{
+				transform: scale(1.07);
+			}
+		}
+	}
+	.nav-body{
+		font-family: @ff-roboto;
+		text-align: center;
+		padding:15vh 0;
+		h1{
+			font-weight: @fw-300;
+			font-size: @fs-50;
+			color: white;
+		}
+		p{
+			font-weight: @fw-400;
+			font-size: @fs-15;
+			color: white;
+		}
+		a{
+			display: inline-block;
+			text-decoration: none;
+			font-weight: @fw-500;
+			font-size: @fs-15;
+			color: @col-login;
+			background-color:@bg-col-login;
+			padding:10px 38px;
+			border-radius:25px;
+			text-transform: capitalize;
+			transition: 0.3s;
+		}
+		a:hover{
+			color:@bg-col-login;
+			background-color:@col-login;
+		}
+	}
+}
+

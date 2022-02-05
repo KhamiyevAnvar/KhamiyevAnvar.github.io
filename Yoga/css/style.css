@@ -1,0 +1,720 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+#yogahead {
+  background-color: #f4f9f4;
+}
+#yogahead .NavB {
+  background-color: #e2ede8;
+}
+#yogahead .NavB a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 5px;
+  background-color: #a7d7c5;
+}
+#yogahead .NavB a img {
+  color: #6c9894;
+}
+#yogahead .NavB #menu {
+  display: none;
+  float: right;
+  font-size: 1.8rem;
+  padding: 15px 5px;
+}
+#yogahead .NavB #menu #menu-n {
+  padding: 16px 18px;
+  cursor: pointer;
+  transition: 0.8s ease-in-out;
+}
+#yogahead .NavB #menu #menu-n .nav-m {
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin: 5px 0;
+  background-color: #494f4e;
+  border-radius: 2px;
+  transition: 0.5s ease-in-out;
+}
+#yogahead .NavB #menu #menu-n:hover {
+  background-color: #c7d9d5;
+  border-radius: 5px;
+}
+#yogahead .NavB ul {
+  display: inline-block;
+  list-style: none;
+  float: right;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 1.375rem;
+  font-weight: 600;
+  padding: 12px 5px;
+  margin: 0;
+  transition: 0.5s ease-in-out;
+}
+#yogahead .NavB ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 16px 26px;
+  border-radius: 5px;
+  color: #494f4e;
+}
+#yogahead .NavB ul li:hover {
+  background-color: #c7d9d5;
+}
+#yogahead .NavB ul .active {
+  background-color: #c7d9d5;
+}
+#yogahead .yogaclass {
+  padding: 32px 0;
+}
+#yogahead .yogaclass .class-left {
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+}
+#yogahead .yogaclass .class-left .class-relative {
+  background-image: url(../img/desing1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  width: 100%;
+  height: 600px;
+  vertical-align: middle;
+}
+#yogahead .yogaclass .class-left .class-relative img {
+  margin-top: 130px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+#yogahead .yogaclass .class-right {
+  color: #6c9894;
+  text-align: center;
+  padding-top: 150px;
+}
+#yogahead .yogaclass .class-right h1 {
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 6.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#yogahead .yogaclass .class-right p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.313rem;
+  font-weight: 400;
+  padding: 0 60px;
+}
+#yogahead .yogaclass .class-right a {
+  display: inline-block;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  padding: 4px 24px;
+  border-radius: 10px;
+  background-color: #6c9894;
+  margin-top: 15px;
+}
+#choose {
+  background-color: #6c9894;
+  color: white;
+  padding: 25px 0;
+}
+#choose .choose-head {
+  text-align: center;
+  padding: 20px 120px;
+}
+#choose .choose-head h1 {
+  margin-top: 40px;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 4.688rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#choose .choose-head p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.875rem;
+  font-weight: 400;
+}
+#choose .choose-body {
+  text-align: center;
+  padding: 10px 0;
+}
+#choose .choose-body .class-desing {
+  margin-top: 10px;
+  background-image: url(../img/desing3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  vertical-align: middle;
+  text-align: center;
+  padding: 10px 15px;
+}
+#choose .choose-body .class-desing img {
+  padding: 10%;
+  border-radius: 50%;
+  width: 100%;
+}
+#choose .choose-body h4 {
+  margin-top: 15px;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 2.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#choose .choose-body p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.375rem;
+  font-weight: 400;
+}
+#stats {
+  background-image: url(../img/statsback.png);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#stats .stats-head {
+  color: #6c9894;
+  text-align: center;
+  padding: 25px 200px;
+}
+#stats .stats-head h1 {
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 4.688rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#stats .stats-head p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.875rem;
+  font-weight: 400;
+}
+#stats .stats-body {
+  color: #6c9894;
+}
+#stats .stats-body .stats-desing {
+  text-align: center;
+  padding: 45px 0;
+}
+#stats .stats-body .stats-desing div {
+  display: inline-block;
+  width: 240px;
+  height: 240px;
+  vertical-align: middle;
+  text-align: center;
+  border-radius: 50%;
+  border: 3px solid #6c9894;
+}
+#stats .stats-body .stats-desing div h2 {
+  margin-top: 30px;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 4.188rem;
+  font-weight: 600;
+}
+#stats .stats-body .stats-desing div p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.563rem;
+  font-weight: 400;
+}
+#stats2 {
+  background-image: url(../img/statsback2.png);
+  background-repeat: no-repeat;
+  background-position: -50px -50px;
+  padding: 50px 0;
+}
+#best {
+  background-color: #6c9894;
+}
+#best .col-md-6 {
+  padding: 0;
+}
+#best .best-left {
+  color: white;
+  padding-top: 60px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+#best .best-left h1 {
+  margin-top: 150px;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 4.688rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#best .best-left p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.875rem;
+  font-weight: 400;
+}
+#best .best-left a {
+  display: inline-block;
+  text-decoration: none;
+  color: #6c9894;
+  background-color: white;
+  padding: 5px 60px;
+  border-radius: 3px;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 1.563rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#best .best-right img {
+  width: 100%;
+}
+#new {
+  background-color: #f4f9f4;
+  background-image: url(../img/newback.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 920px;
+}
+#new .new-left {
+  padding: 60px;
+}
+#new .new-left img {
+  width: 100%;
+  height: auto;
+}
+#new .new-right {
+  padding: 60px 20px;
+  color: #6c9894;
+}
+#new .new-right h1 {
+  padding-top: 90px;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 4.688rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#new .new-right p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.875rem;
+  font-weight: 400;
+}
+#new .new-right a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #6c9894;
+  padding: 5px 60px;
+  border-radius: 3px;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 1.563rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#pricing {
+  background-color: #6c9894;
+  padding: 80px 0;
+}
+#pricing .pricing-head {
+  text-align: center;
+  color: #f4f9f4;
+}
+#pricing .pricing-head h1 {
+  margin-top: 40px;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 4.688rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#pricing .pricing-head p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.875rem;
+  font-weight: 400;
+  padding: 0 160px;
+}
+#pricing .col-md-4 {
+  padding: 30px;
+}
+#pricing .pricing-body {
+  padding: 0 30px;
+}
+#pricing .pricing-body .pricing-desing {
+  background-color: #f4f9f4;
+  text-align: center;
+  color: #6c9894;
+  padding: 30px 20px;
+  border-radius: 4px;
+}
+#pricing .pricing-body .pricing-desing h1 {
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 2.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+}
+#pricing .pricing-body .pricing-desing span {
+  display: block;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 2.25rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#pricing .pricing-body .pricing-desing p {
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.375rem;
+  font-weight: 400;
+}
+#pricing .pricing-body .pricing-desing a {
+  display: block;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 1.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #f4f9f4;
+  background-color: #6c9894;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+#trainer {
+  padding: 80px 0;
+  background-image: url(../img/trainerback.jpg);
+  background-size: cover;
+}
+#trainer .trainer-body {
+  text-align: center;
+  font-size: 3.625rem;
+  color: #6c9894;
+}
+#trainer .trainer-body .trainer-img {
+  display: inline-block;
+  width: 350px;
+  height: 350px;
+  background-image: url(../img/trainerdesing.png);
+  background-size: contain;
+  padding: 35px;
+}
+#trainer .trainer-body .trainer-img img {
+  width: 100%;
+  border-radius: 50%;
+}
+#trainer .trainer-body p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+#trainer .trainer-body span {
+  display: block;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#update {
+  background-color: #6c9894;
+  padding: 180px 0;
+}
+#update .update-body {
+  text-align: center;
+  color: #f4f9f4;
+}
+#update .update-body h1 {
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 4.688rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+#update .update-body p {
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.875rem;
+  font-weight: 400;
+  padding: 0 80px;
+}
+#update .update-body .update-mail {
+  margin-top: 10px;
+  display: inline-block;
+  width: 75%;
+}
+#update .update-body .update-mail form {
+  position: relative;
+}
+#update .update-body .update-mail form input {
+  width: 100%;
+  border: none;
+  height: 50px;
+  border-radius: 30px;
+  padding: 0 15px;
+}
+#update .update-body .update-mail form button {
+  height: 50px;
+  border: none;
+  background-color: #f4f9f4;
+  color: #6c9894;
+  width: 30%;
+  border-radius: 30px;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 25px;
+  font-weight: 600;
+  position: absolute;
+  right: 0;
+  box-shadow: 0 0 2px black;
+}
+#fouter {
+  background-color: #f4f9f4;
+  padding: 120px 0;
+}
+#fouter .fouter-title {
+  color: #6c9894;
+  padding: 5px 50px;
+}
+#fouter .fouter-title h1 {
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 2.063rem;
+  font-weight: 600;
+}
+#fouter .fouter-title p {
+  margin-top: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.563rem;
+  font-weight: 400;
+}
+#fouter .fouter-desing {
+  padding: 5px 0;
+  color: #6c9894;
+}
+#fouter .fouter-desing h1 {
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 2.063rem;
+  font-weight: 600;
+}
+#fouter .fouter-desing ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 15px;
+}
+#fouter .fouter-desing ul li a {
+  display: block;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.563rem;
+  font-weight: 400;
+  color: #6c9894;
+  transition: 1s;
+}
+#fouter .fouter-desing ul li a:hover {
+  text-shadow: 0px 0px 1.5px black;
+}
+#fouter .follow ul li a .iconfont {
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 10px;
+  margin-bottom: 3px;
+  font-size: 1.313rem;
+}
+#fouter .follow ul li a .iconfont i {
+  width: 100%;
+  height: 100%;
+  padding-top: 6px;
+  background-color: #6c9894;
+  color: #f4f9f4;
+  border-radius: 50%;
+}
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  #yogahead .yogaclass .class-right {
+    padding-top: 100px;
+  }
+  #yogahead .yogaclass .class-right h1 {
+    font-size: 5.5rem;
+  }
+  #yogahead .yogaclass .class-right p {
+    padding: 0px 30px;
+  }
+  #choose .choose-body h4 {
+    font-size: 1.8rem;
+  }
+  #choose .choose-body p {
+    font-size: 1.1rem;
+  }
+  #best .best-left h1 {
+    font-size: 3.2rem;
+  }
+  #best .best-left p {
+    font-size: 1.3rem;
+  }
+  #best .best-left a {
+    font-size: 1.4rem;
+  }
+  #new .new-right h1 {
+    font-size: 4rem;
+    padding-top: 30px;
+  }
+  #new .new-right p {
+    font-size: 1.6rem;
+  }
+  #pricing {
+    padding: 30px 0;
+  }
+  #pricing .pricing-body {
+    padding: 0 12px;
+  }
+  #pricing .pricing-body .col-md-4 {
+    padding: 14px;
+  }
+  #pricing .pricing-body .pricing-desing {
+    padding: 19px 10px;
+  }
+  #pricing .pricing-body .pricing-desing h1 {
+    font-size: 1.8rem;
+  }
+  #pricing .pricing-body .pricing-desing span {
+    font-size: 1.8rem;
+  }
+  #fouter .col-md-7 {
+    padding: 0;
+  }
+  #fouter .fouter-title p {
+    font-size: 1rem;
+  }
+  #fouter .fouter-desing ul li a {
+    font-size: 1rem;
+  }
+  #fouter .follow ul li a .iconfont {
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  #yogahead .yogaclass .class-right {
+    padding-top: 72px;
+  }
+  #yogahead .yogaclass .class-right h1 {
+    font-size: 5.125rem;
+  }
+  #yogahead .yogaclass .class-right p {
+    padding: 0px 20px;
+  }
+  #best .best-left {
+    padding: 40px 35px;
+  }
+  #best .best-left h1 {
+    font-size: 3.6rem;
+    margin-top: 50px;
+  }
+  #best .best-left p {
+    font-size: 1.5rem;
+  }
+  #new .new-right h1 {
+    font-size: 3rem;
+    padding-top: 20px;
+  }
+  #new .new-right p {
+    font-size: 1.2rem;
+  }
+  #pricing .pricing-body {
+    padding: 0 12px;
+  }
+  #pricing .pricing-body .col-md-4 {
+    padding: 14px;
+  }
+  #pricing .pricing-body .pricing-desing h1 {
+    font-size: 2rem;
+  }
+  #pricing .pricing-body .pricing-desing span {
+    font-size: 2rem;
+  }
+  #pricing .pricing-body .pricing-desing p {
+    font-size: 1.1rem;
+  }
+  #pricing .pricing-body .pricing-desing a {
+    font-size: 1.25rem;
+  }
+}
+@media all and (max-width: 768px) {
+  #yogahead .NavB {
+    position: relative;
+  }
+  #yogahead .NavB #menu {
+    display: block;
+  }
+  #yogahead .NavB #menu .is-active .nav-m:nth-child(2) {
+    opacity: 0;
+  }
+  #yogahead .NavB #menu .is-active .nav-m:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  #yogahead .NavB #menu .is-active .nav-m:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+  #yogahead .NavB ul {
+    position: absolute;
+    left: -1000px;
+    z-index: 1;
+    background-color: rgba(226, 237, 232, 0.8);
+    display: block;
+    width: 100%;
+    clear: right;
+    text-align: center;
+    border-radius: 0 0 5px 5px;
+  }
+  #yogahead .NavB ul li {
+    display: block;
+  }
+  #yogahead .NavB .listresponsiv {
+    left: 0px;
+  }
+  #choose .choose-head {
+    padding: 20px 20px;
+  }
+  #stats .stats-head {
+    padding: 25px 20px;
+  }
+  #best .best-left h1 {
+    font-size: 3.4rem;
+  }
+  #best .best-left p {
+    font-size: 1.4rem;
+  }
+  #best .best-left a {
+    font-size: 1.3rem;
+    padding: 5px 50px;
+  }
+  #pricing .pricing-head p {
+    padding: 0 20px;
+  }
+  #pricing .col-md-4 {
+    padding: 15px 7px;
+  }
+  #pricing .pricing-body {
+    padding: 0 12px;
+  }
+  #trainer .trainer-body {
+    font-size: 2.25rem;
+  }
+  #update {
+    padding: 80px 0;
+  }
+  #update .update-body h1 {
+    font-size: 4rem;
+  }
+  #update .update-body p {
+    padding: 0 10px;
+  }
+  #update .update-body .update-mail {
+    width: 96%;
+  }
+  #update .update-body .update-mail form button {
+    width: 38%;
+    font-size: 21px;
+  }
+  #fouter {
+    padding: 60px 20px;
+  }
+  #fouter .fouter-title {
+    padding: 10px 0;
+  }
+  #fouter .fouter-desing {
+    padding: 10px 0;
+  }
+}

@@ -1,0 +1,58 @@
+#newsletter{
+	background-color:@bg-col-newsletter;
+	padding:2vh 0;
+	text-align: center;
+	.newsletter-head{
+		padding:2vh 0;
+		h4{
+			display: inline-block;
+			font-family: @ff-roboto;
+			font-size: @fs-21;
+			color: @bg-col-head;
+			margin: 0;
+			line-height: 38px;
+		}
+	}
+	.newsletter{
+		padding:2vh 0;
+		font-family: @ff-roboto;
+		form{
+			display: inline-block;
+			width: 100%;
+			input{
+				color: white;
+				font-size: @fs-15;
+				font-weight:@fw-400;
+				width: 64%;
+				height: 38px;
+			    background: transparent;
+			    outline: none;
+			    border: none;
+			    border-bottom: 1px solid white;
+			    padding-left:10px;
+			}
+			::placeholder{
+				color: white;
+			}
+			button{
+				margin-left: 3%;
+				width: 30%;
+				font-size: @fs-15;
+				font-weight:@fw-500;
+				color: @col-login;
+				background-color:@bg-col-head;
+				height: 38px;
+			    border-radius: 15px;
+			    outline: none;
+			    border: none;
+			    transition: 0.3s;
+			}
+			button:hover{
+				color:green;
+			}
+			button:focus{
+				background-color: @col-search;
+			}
+		}
+	}
+}

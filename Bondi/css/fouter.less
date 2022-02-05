@@ -1,0 +1,140 @@
+#fouter{
+	background-color:@bg-col-head;
+	padding:2vw 1.5vw;
+	.fouter-one{
+		padding:3vw 1.5vw;
+		font-family: @ff-roboto;
+		font-weight: @fw-400;
+		font-size: @fs-13;
+		color:@col-list; 
+		img{}
+		p{
+			margin-top: 30px;
+			text-align: justify;
+			line-height: 2.2;
+		}
+		.loc-ser{
+
+			display: block;
+			margin-top: 55px;
+			span{color: @col-search}
+		}
+		.copyright{
+			margin-top: 5px;
+			display:block;
+			i{margin-right: 3px}
+			span{color:@col-login;}
+		}
+	}
+	.fouter-two{
+		padding:3vw 0;
+		font-family: @ff-roboto;
+		font-weight: @fw-400;
+		h2{
+			color: white;
+			text-transform: capitalize;
+			font-size: @fs-15;
+		}
+
+		ul{
+			list-style: none;
+			padding: 0;
+			li{
+				padding-bottom:10px;
+				a{
+					display: inline-block;
+					text-decoration: none;
+					font-size: @fs-13;
+					color:@col-list; 
+					transition: 0.3s
+				}
+				a:hover{
+					transform: translateX(6px) scale(1.1);
+					color: white;
+				}
+			}
+		}
+	}
+	.fouter-third{
+		padding:3vw 0;
+		font-family: @ff-roboto;
+		font-weight: @fw-400;
+		h2{
+			font-size: @fs-15;
+			color: white;
+		}
+		p{
+			font-size: @fs-13;
+			color:@col-list;
+			line-height: 2.4;
+		}
+		.contact-mail{
+			display: inline-block;
+			color: white;
+			font-size: @fs-13;
+			text-decoration: none;
+			padding:8px 48px;
+			background-color:@bg-col-login;
+			border-radius:15px;
+			margin-top: 15px;
+			transition: 0.3s;
+		}
+		.contact-mail:hover{
+			color: @bg-col-login;
+			background-color:white;
+
+		}
+		.social-div{
+			margin-top: 30px;
+			a{
+				display: inline-block;
+				text-decoration:none;
+				color: white;
+				width: 30px;
+				height: 30px;
+				text-align: center;
+				border-radius:50%;
+				padding-top:4px;
+				margin-right: 5px;
+				i{
+					display: inline-block;
+					width: 100%;
+					height: 100%;
+
+				}
+			}
+			.s-facebook{
+				background-color:#347cd2;
+				transition: 0.3s;
+			}
+			.s-facebook:hover{
+				color: #347cd2;
+				background-color:white;
+			}
+			.s-twitter{
+				background-color:#1ec4ff;
+				transition: 0.3s;
+			}
+			.s-twitter:hover{
+				color: #1ec4ff;
+				background-color:white;
+			}
+			.s-google{
+				background-color:#ff4032;
+				transition: 0.3s;
+			}
+			.s-google:hover{
+				color: #ff4032;
+				background-color:white;
+			}
+			.s-dribble{
+				background-color:#ff3298;
+				transition: 0.3s;
+			}
+			.s-dribble:hover{
+				color: #ff3298;
+				background-color:white;
+			}
+		}
+	}
+}
