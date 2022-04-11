@@ -1,0 +1,16 @@
+%ul-reset {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+%button-reset {
+    border: none;
+    background: none;
+    outline: none;
+
+    :focus {
+        outline: none;
+    }
+}
