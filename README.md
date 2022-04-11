@@ -1,1 +1,0 @@
-# KhamiyevAnvar.github.io
