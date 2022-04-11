@@ -1,0 +1,10 @@
+@mixin line-limit($line-limit:1) {
+  -webkit-line-clamp: $line-limit;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+}
+
+@mixin main-transition($second:.4s) {
+  transition: all $second ease;
+}
