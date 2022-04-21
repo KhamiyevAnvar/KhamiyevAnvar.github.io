@@ -783,7 +783,8 @@
           -webkit-transition: all 0.4s ease;
           -o-transition: all 0.4s ease;
           transition: all 0.4s ease; }
-        #blog .blog-left .blog-left-foot nav ul .page-item .page-link .page-link:focus {
+        #blog .blog-left .blog-left-foot nav ul .page-item .page-link:focus {
+          outline: none;
           -webkit-box-shadow: none !important;
           box-shadow: none !important; }
       #blog .blog-left .blog-left-foot nav ul .page-item:hover .page-link {
