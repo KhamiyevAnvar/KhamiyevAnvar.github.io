@@ -21,27 +21,32 @@ $('.emprise-cover-carousel').owlCarousel({
         nextIcon,
         prevIcon
     ],
-    autoplay: true,
+    smartSpeed: 1000, //smooth effect
     dots: false,
-    autoplayTimeout: 7000,
+    autoplay: true, //smooth autoplya effect ><
+    slideTransition: 'linear',
+    autoplayTimeout: 10000,
+    autoplaySpeed: 1000,
+    autoplayHoverPause: false,
     responsive: {
         0: {
             items: 1
         }
     }
 })
-const prevIcon2 = '<svg svg width = "80" height = "81" viewBox = "0 0 80 81" fill = "none" xmlns = "http://www.w3.org/2000/svg" ><g filter="url(#filter0_df_396_724)"><circle cx="40" cy="37" r="36" fill="#E81A46"/></g><path d="M36 45.925L44.463 37.463L36 29" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><defs><filter id="filter0_df_396_724" x="0" y="0" width="80" height="81" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="4"/><feGaussianBlur stdDeviation="2"/><feComposite in2="hardAlpha" operator="out"/><feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/><feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_396_724"/><feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_396_724" result="shape"/><feGaussianBlur stdDeviation="0.5" result="effect2_foregroundBlur_396_724"/></filter></defs></svg> ';
-const nextIcon2 = '<svg width="80" height="81" viewBox="0 0 80 81" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_df_396_724)"><circle cx="37" cy="37" r="35.5" stroke="#546179"/></g><path d="M41.461 45.34L32.998 36.877L41.461 28.415" stroke="#546179" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><defs><filter id="filter0_f_396_727" x="0" y="0" width="74" height="74" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="0.5" result="effect1_foregroundBlur_396_727"/></filter></defs></svg>';
+const nextIcon2 = '<svg width="10" height="10" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.461 18.34L1.99805 9.87704L10.461 1.41504" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+const prevIcon2 = '<svg width="10" height="10" viewBox="0 0 11 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 17.925L9.463 9.463L1 1" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
 $('.category-carousel').owlCarousel({
     loop: true,
-    margin: 16,
+    margin: 32,
     nav: true,
     navText: [
         nextIcon2,
         prevIcon2
     ],
-    autoplay: true,
+    smartSpeed: 1000,
+    autoplay: false,
     dots: false,
     autoplayTimeout: 10000,
     responsive: {
@@ -62,13 +67,14 @@ $('.category-carousel').owlCarousel({
 
 $('.trending-carousel').owlCarousel({
     loop: true,
-    margin: 20,
+    margin: 32,
     nav: true,
     navText: [
         nextIcon2,
         prevIcon2
     ],
-    autoplay: true,
+    smartSpeed: 1000,
+    autoplay: false,
     dots: false,
     autoplayTimeout: 10000,
     responsive: {
@@ -94,7 +100,8 @@ $('.destinations-carousel').owlCarousel({
         nextIcon2,
         prevIcon2
     ],
-    autoplay: true,
+    smartSpeed: 2000,
+    autoplay: false,
     dots: false,
     autoplayTimeout: 8000,
     responsive: {
@@ -109,9 +116,10 @@ $('.seller-carousel').owlCarousel({
     loop: true,
     margin: 16,
     nav: false,
-    autoplay: true,
+    autoplay: false,
     dots: false,
     autoplayTimeout: 10000,
+    smartSpeed: 1000,
     responsive: {
         0: {
             items: 1
@@ -170,11 +178,11 @@ $('.recently-carousel').owlCarousel({
 })
 
 
-
+// range
 const rangeInput = document.querySelectorAll(".range-input input"),
     priceInput = document.querySelectorAll(".price-input input"),
     range = document.querySelector(".slider .progress");
-let priceGap = 1000;
+let priceGap = 750;
 
 priceInput.forEach(input => {
     input.addEventListener("input", e => {
@@ -212,3 +220,84 @@ rangeInput.forEach(input => {
         }
     });
 });
+
+// tour-detail
+$('.tour-head-galery-carousel').owlCarousel({
+    loop: true,
+    margin: 32,
+    nav: true,
+    navText: [
+        nextIcon2,
+        prevIcon2
+    ],
+    smartSpeed: 1000,
+    autoplay: false,
+    dots: false,
+    autoplayTimeout: 8000,
+    responsive: {
+        0: {
+            items: 1
+        }
+    }
+
+})
+
+// show more
+var ShowBut = document.querySelector(".show-more");
+var content = document.querySelector(".show-more-content");
+if (ShowBut != null) {
+    ShowBut.addEventListener("click", function () {
+        content.classList.toggle("active");
+    })
+}
+
+
+var ShowBut1 = document.querySelector(".show-more1");
+var content1 = document.querySelector(".show-more-content1");
+if (ShowBut1 != null) {
+    ShowBut1.addEventListener("click", function () {
+        content1.classList.toggle("active");
+    })
+
+}
+
+
+// booking
+$('#booking-date').datepicker();
+
+// inrease function
+var value = document.getElementById("travel-count");
+var travelCount = 0;
+function increase() {
+    if (travelCount >= 0) {
+        travelCount++;
+        value.innerHTML = travelCount;
+    }
+}
+function reduce() {
+    if (travelCount > 0) {
+        travelCount--;
+        value.innerHTML = travelCount;
+    } else {
+        alert("sifir")
+    }
+}
+
+// filter but
+
+const filterBut = document.querySelector(".filter-icon-button");
+const removeFilterBut = document.querySelector(".remove-filter-icon-button");
+const filterMenu = document.querySelector(".search-result-body-left");
+
+if (filterBut != null) {
+    filterBut.addEventListener("click", function () {
+        filterMenu.classList.add("active-filter-menu");
+    })
+}
+
+if (removeFilterBut != null) {
+    removeFilterBut.addEventListener("click", function () {
+        filterMenu.classList.remove("active-filter-menu");
+        console.log(filterMenu.classList[0]);
+    })
+}    

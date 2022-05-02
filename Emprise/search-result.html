@@ -23,9 +23,9 @@
                         Emprise
                     </a>
                     <ul class="nav-list">
-                        <li><a href="#">Destination</a></li>
-                        <li><a href="#">Activities</a></li>
-                        <li><a href="#">Specials</a></li>
+                        <li><a href="index.html">Destination</a></li>
+                        <li><a href="search-result.html">Activities</a></li>
+                        <li><a href="tour-detail.html">Specials</a></li>
                         <div class="mobile-nav-but">
                             <button type="button" class="search-but">
                                 <img src="assets/css/icons/search-icon.png" alt="">
@@ -171,8 +171,33 @@
 
 <section id="search-result-body">
     <div class="mdl-grid">
-        <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-phone">
+        <div class="mdl-cell mdl-cell--12-col">
+            <div class="filter-block">
+                <button type="button" class="filter-icon-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M487.976 0H24.028C2.71 0-8.047 25.866 7.058 40.971L192 225.941V432c0 7.831 3.821 15.17 10.237 19.662l80 55.98C298.02 518.69 320 507.493 320 487.98V225.941l184.947-184.97C520.021 25.896 509.338 0 487.976 0z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
             <div class="search-result-body-left">
+                <div class="remove-block">
+                    <button class="remove-filter-icon-button">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M30.214 15.9997C30.2065 18.964 29.2914 21.8382 27.5812 24.2547C25.9535 26.5586 23.5833 28.3747 20.928 29.3428C18.1076 30.3709 15.0098 30.4985 12.122 29.6805C9.33914 28.8925 6.86386 27.249 5.01865 25.0352C1.20821 20.4574 0.758163 13.7333 3.82601 8.6452C6.88636 3.57212 12.9771 0.862972 18.7902 2.04119C24.5884 3.2194 29.1189 7.96228 30.049 13.8008C30.169 14.5363 30.214 15.2717 30.214 15.9997C30.214 16.9678 31.7142 16.9678 31.7142 15.9997C31.7067 12.7577 30.7091 9.54575 28.8189 6.90414C26.9511 4.29256 24.3408 2.30385 21.3255 1.20068C15.1898 -1.03568 8.04149 0.930513 3.90102 5.97358C1.82328 8.49511 0.578143 11.587 0.330614 14.844C0.0830862 18.0634 0.863175 21.3429 2.52836 24.1046C4.15605 26.7987 6.60133 29.0051 9.47416 30.3034C12.512 31.6767 15.9174 32.0594 19.1878 31.399C25.481 30.1232 30.5366 24.84 31.5117 18.4912C31.6392 17.6657 31.7067 16.8402 31.7142 16.0072C31.7217 15.0316 30.2215 15.0316 30.214 15.9997Z"
+                                fill="#28B0A6"></path>
+                            <path
+                                d="M9.30282 10.3534C10.6982 11.7488 12.0936 13.1441 13.489 14.5394C15.7009 16.7511 17.9127 18.9628 20.1246 21.1745C20.6293 21.6792 21.1415 22.1913 21.6462 22.696C22.3216 23.3714 23.3756 22.3249 22.6927 21.6495C21.2973 20.2542 19.9019 18.8589 18.5065 17.4636C16.2947 15.2519 14.0828 13.0402 11.871 10.8284C11.3662 10.3238 10.8541 9.81165 10.3494 9.30696C9.68136 8.62415 8.62739 9.67806 9.30282 10.3534Z"
+                                fill="#28B0A6"></path>
+                            <path
+                                d="M10.3532 22.6969C11.7485 21.3015 13.1438 19.9061 14.5391 18.5107C16.7509 16.2988 18.9626 14.087 21.1743 11.8751C21.679 11.3704 22.1911 10.8582 22.6958 10.3535C23.3712 9.6781 22.3247 8.62412 21.6493 9.30698C20.254 10.7024 18.8587 12.0978 17.4634 13.4932C15.2516 15.705 13.0399 17.9169 10.8282 20.1288C10.3235 20.6335 9.81141 21.1456 9.30672 21.6503C8.62391 22.3184 9.67781 23.3723 10.3532 22.6969Z"
+                                fill="#28B0A6"></path>
+                        </svg>
+                    </button>
+                </div>
                 <div class=" start-datepicker-item">
                     <label for="start-date">When are you traveling?</label>
                     <div class="start-date-input">
@@ -279,7 +304,7 @@
                     <ul>
                         <li>
                             <label for="duration-1" class="checkbox">
-                                <input id="duration-1" name="checkbox-group" type="radio">
+                                <input id="duration-1" name="checkbox-group" type="checkbox">
                                 <span class="checkbox__mark">
                                     <svg width="25" height="18" viewBox="0 0 25 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -293,21 +318,21 @@
                         </li>
                         <li>
                             <label for="duration-2" class="checkbox">
-                                <input id="duration-2" name="checkbox-group" type="radio"">
+                                <input id="duration-2" name="checkbox-group" type="checkbox">
                                 <span class=" checkbox__mark">
-                                <svg width="25" height="18" viewBox="0 0 25 18" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M9.13449 12.7269L22.2809 0L25 2.64085L9.13449 18L0 9.15702L2.71912 6.51624L9.13449 12.7269Z"
-                                        fill="#000000" />
-                                </svg>
+                                    <svg width="25" height="18" viewBox="0 0 25 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9.13449 12.7269L22.2809 0L25 2.64085L9.13449 18L0 9.15702L2.71912 6.51624L9.13449 12.7269Z"
+                                            fill="#000000" />
+                                    </svg>
                                 </span>
                                 1 to 4 Hours
                             </label>
                         </li>
                         <li>
                             <label for="duration-3" class="checkbox">
-                                <input id="duration-3" name="checkbox-group" type="radio">
+                                <input id="duration-3" name="checkbox-group" type="checkbox">
                                 <span class="checkbox__mark">
                                     <svg width="25" height="18" viewBox="0 0 25 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -321,7 +346,7 @@
                         </li>
                         <li>
                             <label for="duration-4" class="checkbox">
-                                <input id="duration-4" name="checkbox-group" type="radio">
+                                <input id="duration-4" name="checkbox-group" type="checkbox">
                                 <span class="checkbox__mark">
                                     <svg width="25" height="18" viewBox="0 0 25 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -335,7 +360,7 @@
                         </li>
                         <li>
                             <label for="duration-5" class="checkbox">
-                                <input id="duration-5" name="checkbox-group" type="radio">
+                                <input id="duration-5" name="checkbox-group" type="checkbox">
                                 <span class="checkbox__mark">
                                     <svg width="25" height="18" viewBox="0 0 25 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -354,7 +379,7 @@
                     <ul>
                         <li>
                             <label for="tour-rating-1" class="checkbox">
-                                <input id="tour-rating-1" name="checkbox-group-tour-rating" type="radio">
+                                <input id="tour-rating-1" name="checkbox-group-tour-rating" type="checkbox">
                                 <span class="checkbox__mark">
                                     <svg width="25" height="18" viewBox="0 0 25 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -368,35 +393,35 @@
                         </li>
                         <li>
                             <label for="tour-rating-2" class="checkbox">
-                                <input id="tour-rating-2" name="checkbox-group-tour-rating" type="radio"">
+                                <input id="tour-rating-2" name="checkbox-group-tour-rating" type="checkbox">
                                 <span class=" checkbox__mark">
-                                <svg width="25" height="18" viewBox="0 0 25 18" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M9.13449 12.7269L22.2809 0L25 2.64085L9.13449 18L0 9.15702L2.71912 6.51624L9.13449 12.7269Z"
-                                        fill="#000000" />
-                                </svg>
+                                    <svg width="25" height="18" viewBox="0 0 25 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9.13449 12.7269L22.2809 0L25 2.64085L9.13449 18L0 9.15702L2.71912 6.51624L9.13449 12.7269Z"
+                                            fill="#000000" />
+                                    </svg>
                                 </span>
                                 <img src="assets/css/icons/stars2.png" alt="">
                             </label>
                         </li>
                         <li>
                             <label for="tour-rating-3" class="checkbox">
-                                <input id="tour-rating-3" name="checkbox-group-tour-rating" type="radio"">
+                                <input id="tour-rating-3" name="checkbox-group-tour-rating" type="checkbox">
                                 <span class=" checkbox__mark">
-                                <svg width="25" height="18" viewBox="0 0 25 18" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M9.13449 12.7269L22.2809 0L25 2.64085L9.13449 18L0 9.15702L2.71912 6.51624L9.13449 12.7269Z"
-                                        fill="#000000" />
-                                </svg>
+                                    <svg width="25" height="18" viewBox="0 0 25 18" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9.13449 12.7269L22.2809 0L25 2.64085L9.13449 18L0 9.15702L2.71912 6.51624L9.13449 12.7269Z"
+                                            fill="#000000" />
+                                    </svg>
                                 </span>
                                 <img src="assets/css/icons/stars2.png" alt="">
                             </label>
                         </li>
                         <li>
                             <label for="tour-rating-4" class="checkbox">
-                                <input id="tour-rating-4" name="checkbox-group-tour-rating" type="radio">
+                                <input id="tour-rating-4" name="checkbox-group-tour-rating" type="checkbox">
                                 <span class="checkbox__mark">
                                     <svg width="25" height="18" viewBox="0 0 25 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -410,7 +435,7 @@
                         </li>
                         <li>
                             <label for="tour-rating-5" class="checkbox">
-                                <input id="tour-rating-5" name="checkbox-group-tour-rating" type="radio">
+                                <input id="tour-rating-5" name="checkbox-group-tour-rating" type="checkbox">
                                 <span class="checkbox__mark">
                                     <svg width="25" height="18" viewBox="0 0 25 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -429,7 +454,7 @@
                     <ul>
                         <li>
                             <label for="age-group-1" class="checkbox">
-                                <input id="age-group-1" name="checkbox-group-age-group" type="radio">
+                                <input id="age-group-1" name="checkbox-group-age-group" type="checkbox">
                                 <span class="checkbox__mark">
                                     <svg width="25" height="18" viewBox="0 0 25 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -443,7 +468,7 @@
                         </li>
                         <li>
                             <label for="age-group-2" class="checkbox">
-                                <input id="age-group-2" name="checkbox-group-age-group" type="radio"">
+                                <input id="age-group-2" name="checkbox-group-age-group" type="checkbox"">
                                 <span class=" checkbox__mark">
                                 <svg width="25" height="18" viewBox="0 0 25 18" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -457,7 +482,7 @@
                         </li>
                         <li>
                             <label for="age-group-3" class="checkbox">
-                                <input id="age-group-3" name="checkbox-group-age-group" type="radio">
+                                <input id="age-group-3" name="checkbox-group-age-group" type="checkbox">
                                 <span class="checkbox__mark">
                                     <svg width="25" height="18" viewBox="0 0 25 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -471,7 +496,7 @@
                         </li>
                         <li>
                             <label for="age-group-4" class="checkbox">
-                                <input id="age-group-4" name="checkbox-group-age-group" type="radio">
+                                <input id="age-group-4" name="checkbox-group-age-group" type="checkbox">
                                 <span class="checkbox__mark">
                                     <svg width="25" height="18" viewBox="0 0 25 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -485,7 +510,7 @@
                         </li>
                         <li>
                             <label for="age-group-5" class="checkbox">
-                                <input id="age-group-5" name="checkbox-group-age-group" type="radio">
+                                <input id="age-group-5" name="checkbox-group-age-group" type="checkbox">
                                 <span class="checkbox__mark">
                                     <svg width="25" height="18" viewBox="0 0 25 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -504,7 +529,7 @@
                     <ul>
                         <li>
                             <label for="special-1" class="checkbox">
-                                <input id="special-1" name="checkbox-group-special" type="radio">
+                                <input id="special-1" name="checkbox-group-special" type="checkbox" checked>
                                 <span class="checkbox__mark">
                                     <svg width="25" height="18" viewBox="0 0 25 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -518,7 +543,7 @@
                         </li>
                         <li>
                             <label for="special-2" class="checkbox">
-                                <input id="special-2" name="checkbox-group-special" type="radio"">
+                                <input id="special-2" name="checkbox-group-special" type="checkbox"">
                                 <span class=" checkbox__mark">
                                 <svg width="25" height="18" viewBox="0 0 25 18" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -532,7 +557,7 @@
                         </li>
                         <li>
                             <label for="special-3" class="checkbox">
-                                <input id="special-3" name="checkbox-group-special" type="radio">
+                                <input id="special-3" name="checkbox-group-special" type="checkbox">
                                 <span class="checkbox__mark">
                                     <svg width="25" height="18" viewBox="0 0 25 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -546,7 +571,7 @@
                         </li>
                         <li>
                             <label for="special-4" class="checkbox">
-                                <input id="special-4" name="checkbox-group-special" type="radio" checked>
+                                <input id="special-4" name="checkbox-group-special" type="checkbox">
                                 <span class="checkbox__mark">
                                     <svg width="25" height="18" viewBox="0 0 25 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -576,9 +601,9 @@
                 </div>
             </div>
         </div>
-        <div class="mdl-cell mdl-cell--8-col mdl-cell--4-col-phone">
+        <div class="mdl-cell mdl-cell--8-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
             <div class="row search-result-body-right">
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <div class="trending-item">
                         <div class="item-head">
                             <a href="#"><img src="assets/img/trend1.jpg" alt=""></a>
@@ -670,7 +695,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <div class="trending-item">
                         <div class="item-head">
                             <a href="#"><img src="assets/img/trend2.jpg" alt=""></a>
@@ -762,7 +787,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <div class="trending-item">
                         <div class="item-head">
                             <a href="#"><img src="assets/img/trend3.jpg" alt=""></a>
@@ -854,7 +879,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <div class="trending-item">
                         <div class="item-head">
                             <a href="#"><img src="assets/img/trend1.jpg" alt=""></a>
@@ -946,7 +971,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <div class="trending-item">
                         <div class="item-head">
                             <a href="#"><img src="assets/img/trend2.jpg" alt=""></a>
@@ -1038,7 +1063,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <div class="trending-item">
                         <div class="item-head">
                             <a href="#"><img src="assets/img/trend3.jpg" alt=""></a>
@@ -1130,7 +1155,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <div class="trending-item">
                         <div class="item-head">
                             <a href="#"><img src="assets/img/trend1.jpg" alt=""></a>
@@ -1222,7 +1247,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-md-6">
                     <div class="trending-item">
                         <div class="item-head">
                             <a href="#"><img src="assets/img/trend2.jpg" alt=""></a>
@@ -1322,8 +1347,10 @@
 <section id="recently">
     <d class="mdl-grid">
         <div class="our-head">
-            <h2>Recently Viewed</h2>
-            <p>Sost Brilliant reasons Entrada should be your one-stop-shop!</p>
+            <div class="our-head-left">
+                <h2>Recently Viewed</h2>
+                <p>Sost Brilliant reasons Entrada should be your one-stop-shop!</p>
+            </div>
         </div>
         </div>
         <div class="mdl-grid owl-carousel owl-theme  recently-carousel">
@@ -1487,7 +1514,7 @@
     <div class="mdl-grid">
         <div class="mdl-cell mdl-cell--12-col">
             <div class="privacy">
-                <h6>Privacy Policy</h6>
+                <a href="#">Privacy Policy</a>
                 <ul>
                     <li><a href="#">Linkedin</a></li>
                     <li><a href="#">Facebook</a></li>
@@ -1495,7 +1522,7 @@
                 </ul>
             </div>
             <div class="copywriter">
-                <span class="copywriter-left">2016-2021 © emprise</span>
+                <span class="copywriter-left">2022 © emprise</span>
                 <div class="copywriter-right">
                     <img src="assets/css/icons/paymentlogos.png" alt="">
                 </div>
