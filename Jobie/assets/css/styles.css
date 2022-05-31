@@ -1,0 +1,3036 @@
+/* reset starts */
+.dashboard-container #sidebar .sidebar .main-menu, .dashboard-container .main-jobie #breadcrump .breadcrump-list, .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .profileSummarySkills .mh-professional-skills .mh-professional-progress, .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .recentActivities .recentList, .dashboard-container .main-jobie #suggestion .suggestion .suggestion-list, .dashboard-container .main-jobie #jobie-pagination .jobie-pagination-nav .jobie-pagination-body, .dashboard-container .main-jobie #applicationsTitleBars .applicationsTitleBars .applicationsTitleBars-left .applicationsTabMenu, .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appStatus .appStatusFlex .editRemove, .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileSummaryRight .editProfileSummarySkills .mh-professional-skills .mh-professional-progress, .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .portofolios .portofolioList {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+.dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .reviews-position .reviews-more, .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-right button, .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right .viewList .viewListDesing, .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appStatus .appStatusFlex .edit-button, .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .companiesCloseButton, .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .companyDetailsHead .companyFollow, .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .vacancy-detail .companyVacancy, .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .vacancy-detail .companyDetail, .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .generalInput .showHide, .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .cancelSave .cancelBut, .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .cancelSave .formSubBut, .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock #skillsFormBlock .profilFormHead button {
+  border: none;
+  background: none;
+  outline: none; }
+  .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .reviews-position .reviews-more :focus, .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-right button :focus, .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right .viewList .viewListDesing :focus, .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appStatus .appStatusFlex .edit-button :focus, .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .companiesCloseButton :focus, .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .companyDetailsHead .companyFollow :focus, .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .vacancy-detail .companyVacancy :focus, .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .vacancy-detail .companyDetail :focus, .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .generalInput .showHide :focus, .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .cancelSave .cancelBut :focus, .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .cancelSave .formSubBut :focus, .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock #skillsFormBlock .profilFormHead button :focus {
+    outline: none; }
+
+.dashboard-container .main-jobie #jobie-nav .nav-right .search input, .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-left .searchCompany input, .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appType input, .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .generalInput input {
+  border: none !important;
+  -webkit-border-radius: 0 !important;
+  border-radius: 0 !important;
+  outline: none !important; }
+
+/* reset ends */
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("fonts/Poppins/Poppins-Regular.ttf"); }
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url("fonts/Poppins/Poppins-Medium.ttf"); }
+
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url("fonts/Poppins/Poppins-SemiBold.ttf"); }
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("fonts/Poppins/Poppins-Bold.ttf"); }
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */ }
+  * ::-webkit-scrollbar {
+    width: 6px;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+  * ::-webkit-scrollbar-track {
+    background: #F2F2F2;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+  * ::-webkit-scrollbar-thumb {
+    background: rgba(64, 24, 157, 0.8);
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+  * ::-webkit-scrollbar-thumb:hover {
+    background: rgba(64, 24, 157, 0.4); }
+
+.dashboard-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 0 auto; }
+  .dashboard-container #sidebar {
+    padding-left: 25px;
+    width: 220px;
+    background-color: #40189D;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+    .dashboard-container #sidebar .sidebar .side-header {
+      margin-top: 28px;
+      margin-bottom: 26px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .dashboard-container #sidebar .sidebar .side-header .logo {
+        margin-right: 24px;
+        -webkit-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        width: 50px;
+        height: 50px;
+        -o-object-fit: contain;
+        object-fit: contain; }
+      .dashboard-container #sidebar .sidebar .side-header .logo-text {
+        -webkit-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        width: 75px;
+        height: auto;
+        -o-object-fit: contain;
+        object-fit: contain; }
+    .dashboard-container #sidebar .sidebar .main-menu {
+      margin-top: 50px; }
+      .dashboard-container #sidebar .sidebar .main-menu li {
+        -webkit-border-radius: 46px 0 0 46px;
+        border-radius: 46px 0 0 46px;
+        -webkit-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease; }
+        .dashboard-container #sidebar .sidebar .main-menu li a {
+          text-decoration: none;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
+          padding: 22px 26px; }
+          .dashboard-container #sidebar .sidebar .main-menu li a svg {
+            width: 22px;
+            height: 22px;
+            -o-object-fit: contain;
+            object-fit: contain; }
+            .dashboard-container #sidebar .sidebar .main-menu li a svg path {
+              fill: #BFBFBF;
+              -webkit-transition: all 0.4s ease;
+              -o-transition: all 0.4s ease;
+              transition: all 0.4s ease; }
+          .dashboard-container #sidebar .sidebar .main-menu li a span {
+            font-family: Poppins-SemiBold;
+            font-size: 1rem;
+            color: #BFBFBF;
+            text-transform: capitalize;
+            margin-left: 20px;
+            -webkit-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease; }
+      .dashboard-container #sidebar .sidebar .main-menu .active {
+        background-color: #F2F2F2; }
+        .dashboard-container #sidebar .sidebar .main-menu .active a svg path {
+          fill: #40189D; }
+        .dashboard-container #sidebar .sidebar .main-menu .active a span {
+          color: #40189D; }
+      .dashboard-container #sidebar .sidebar .main-menu li:hover {
+        background-color: #F2F2F2; }
+        .dashboard-container #sidebar .sidebar .main-menu li:hover a svg path {
+          fill: #40189D; }
+        .dashboard-container #sidebar .sidebar .main-menu li:hover a span {
+          color: #40189D; }
+    .dashboard-container #sidebar .sidebar .sidebar-footer {
+      margin-top: 200px; }
+      .dashboard-container #sidebar .sidebar .sidebar-footer p {
+        font-family: Poppins-SemiBold;
+        font-size: 0.75rem;
+        text-transform: capitalize;
+        color: #9B70FF; }
+        .dashboard-container #sidebar .sidebar .sidebar-footer p span {
+          display: inline-block;
+          margin-top: 5px;
+          font-family: Poppins-Regular; }
+      .dashboard-container #sidebar .sidebar .sidebar-footer .madeLove {
+        margin-top: 30px;
+        display: block;
+        font-family: Poppins-SemiBold;
+        font-size: 0.75rem;
+        color: #7649E0; }
+        .dashboard-container #sidebar .sidebar .sidebar-footer .madeLove span {
+          color: red; }
+  .dashboard-container .sidebar-small {
+    padding-left: 17px !important;
+    width: 91px !important; }
+    .dashboard-container .sidebar-small .sidebar .side-header .logo {
+      margin-right: 0; }
+    .dashboard-container .sidebar-small .sidebar .side-header .logo-text {
+      display: none; }
+    .dashboard-container .sidebar-small .sidebar .main-menu li a span {
+      display: none; }
+    .dashboard-container .sidebar-small .sidebar .sidebar-footer {
+      display: none; }
+  .dashboard-container .main-jobie {
+    width: calc(100% - 220px);
+    background-color: #F2F2F2;
+    padding-left: 38px;
+    padding-right: 50px;
+    min-height: 100vh;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease; }
+    .dashboard-container .main-jobie #jobie-nav {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 39px 0; }
+      .dashboard-container .main-jobie #jobie-nav .nav-left {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .dashboard-container .main-jobie #jobie-nav .nav-left #nav-but {
+          display: inline-block;
+          margin-right: 32px; }
+          .dashboard-container .main-jobie #jobie-nav .nav-left #nav-but span {
+            display: block;
+            width: 22px;
+            height: 2.7px;
+            background-color: black;
+            margin: 4.3px 0;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            -webkit-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease; }
+          .dashboard-container .main-jobie #jobie-nav .nav-left #nav-but span:nth-child(2) {
+            position: relative;
+            left: 6px; }
+        .dashboard-container .main-jobie #jobie-nav .nav-left #nav-but:hover {
+          cursor: pointer; }
+        .dashboard-container .main-jobie #jobie-nav .nav-left .active-nav-desk-but span:nth-child(2) {
+          -webkit-transform: translateX(-6px);
+          -ms-transform: translateX(-6px);
+          transform: translateX(-6px); }
+        .dashboard-container .main-jobie #jobie-nav .nav-left .jobie-brand {
+          font-family: Poppins-SemiBold;
+          font-size: 1.5rem;
+          color: black;
+          text-transform: capitalize;
+          margin: 0; }
+      .dashboard-container .main-jobie #jobie-nav .nav-right {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .dashboard-container .main-jobie #jobie-nav .nav-right .search {
+          width: 330px;
+          height: 50px;
+          -webkit-border-radius: 50px;
+          border-radius: 50px;
+          overflow: hidden;
+          position: relative;
+          margin-right: 76px; }
+          .dashboard-container .main-jobie #jobie-nav .nav-right .search input {
+            width: 100%;
+            height: 100%;
+            padding: 0 50px 0 20px;
+            background-color: #E3E3E3;
+            font-family: Poppins-Regular;
+            font-size: 0.938rem;
+            color: #757575; }
+          .dashboard-container .main-jobie #jobie-nav .nav-right .search svg {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            pointer-events: none;
+            width: 22px;
+            height: 22px;
+            -o-object-fit: contain;
+            object-fit: contain; }
+        .dashboard-container .main-jobie #jobie-nav .nav-right .notification {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
+          margin-right: 64px; }
+          .dashboard-container .main-jobie #jobie-nav .nav-right .notification .message {
+            margin-right: 35px; }
+          .dashboard-container .main-jobie #jobie-nav .nav-right .notification .notification-desing {
+            position: relative; }
+            .dashboard-container .main-jobie #jobie-nav .nav-right .notification .notification-desing .message-icon {
+              width: 50px;
+              height: 50px;
+              -webkit-border-radius: 50%;
+              border-radius: 50%;
+              overflow: hidden;
+              background-color: white;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+              -ms-flex-align: center;
+              align-items: center; }
+              .dashboard-container .main-jobie #jobie-nav .nav-right .notification .notification-desing .message-icon svg {
+                width: 50%;
+                height: 50%;
+                -o-object-fit: contain;
+                object-fit: contain; }
+                .dashboard-container .main-jobie #jobie-nav .nav-right .notification .notification-desing .message-icon svg path {
+                  fill: #3E4954; }
+            .dashboard-container .main-jobie #jobie-nav .nav-right .notification .notification-desing span {
+              width: 22px;
+              height: 22px;
+              -webkit-border-radius: 50%;
+              border-radius: 50%;
+              background-color: #40189D;
+              position: absolute;
+              top: -8px;
+              right: -8px;
+              font-family: Poppins-SemiBold;
+              font-size: 0.75rem;
+              color: white;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-box-shadow: 0 2px 5px #40189D;
+              box-shadow: 0 2px 5px #40189D; }
+          .dashboard-container .main-jobie #jobie-nav .nav-right .notification .notification-desing:hover {
+            cursor: pointer; }
+        .dashboard-container .main-jobie #jobie-nav .nav-right .profile {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .dashboard-container .main-jobie #jobie-nav .nav-right .profile .profile-img {
+            width: 52px;
+            height: 52px;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 25px; }
+            .dashboard-container .main-jobie #jobie-nav .nav-right .profile .profile-img img {
+              width: 100%;
+              height: 100%;
+              -o-object-fit: cover;
+              object-fit: cover; }
+          .dashboard-container .main-jobie #jobie-nav .nav-right .profile .profile-content {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column; }
+            .dashboard-container .main-jobie #jobie-nav .nav-right .profile .profile-content h5 {
+              font-family: Poppins-SemiBold;
+              font-size: 0.938rem;
+              counter-reset: black;
+              text-transform: capitalize;
+              margin-bottom: 8px; }
+            .dashboard-container .main-jobie #jobie-nav .nav-right .profile .profile-content span {
+              font-family: Poppins-Regular;
+              font-size: 0.75rem;
+              color: #8F8F8F; }
+    .dashboard-container .main-jobie #breadcrump {
+      margin-top: 16px; }
+      .dashboard-container .main-jobie #breadcrump .breadcrump-list {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex; }
+        .dashboard-container .main-jobie #breadcrump .breadcrump-list li {
+          text-transform: capitalize; }
+          .dashboard-container .main-jobie #breadcrump .breadcrump-list li a {
+            text-decoration: none; }
+        .dashboard-container .main-jobie #breadcrump .breadcrump-list li:not(:last-child) {
+          font-family: Poppins-SemiBold;
+          font-size: 0.875rem; }
+          .dashboard-container .main-jobie #breadcrump .breadcrump-list li:not(:last-child) a {
+            display: inline-block;
+            color: #40189D; }
+          .dashboard-container .main-jobie #breadcrump .breadcrump-list li:not(:last-child) a:after {
+            content: "/";
+            display: inline-block;
+            margin-left: 3px;
+            margin-right: 9px; }
+        .dashboard-container .main-jobie #breadcrump .breadcrump-list li:last-child {
+          font-family: Poppins-Regular;
+          font-size: 0.875rem; }
+          .dashboard-container .main-jobie #breadcrump .breadcrump-list li:last-child a {
+            color: #969BA0;
+            pointer-events: none; }
+    .dashboard-container .main-jobie #featured {
+      margin-top: 30px; }
+      .dashboard-container .main-jobie #featured .featured .featured-card {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+        padding: 26px 18px; }
+        .dashboard-container .main-jobie #featured .featured .featured-card .featured-icon {
+          width: 45px;
+          height: 45px;
+          -webkit-border-radius: 10px;
+          border-radius: 10px;
+          border: 1px solid white;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
+          padding: 8px; }
+          .dashboard-container .main-jobie #featured .featured .featured-card .featured-icon img {
+            width: 100%;
+            height: 100%;
+            -o-object-fit: contain;
+            object-fit: contain; }
+        .dashboard-container .main-jobie #featured .featured .featured-card .featured-content {
+          text-align: right; }
+          .dashboard-container .main-jobie #featured .featured .featured-card .featured-content p {
+            font-family: Poppins-Medium;
+            font-size: 0.875rem;
+            color: white;
+            text-transform: capitalize;
+            margin-bottom: 4px; }
+          .dashboard-container .main-jobie #featured .featured .featured-card .featured-content span {
+            display: inline-block;
+            font-family: Poppins-SemiBold;
+            font-size: 2.25rem;
+            color: white; }
+      .dashboard-container .main-jobie #featured .featured .featured-card-interviews {
+        background: #4E36E2; }
+      .dashboard-container .main-jobie #featured .featured .featured-card-sent {
+        background: #48A9F8; }
+      .dashboard-container .main-jobie #featured .featured .featured-card-profile {
+        background: #1BD084; }
+      .dashboard-container .main-jobie #featured .featured .featured-card-message {
+        background: #8BC740; }
+    .dashboard-container .main-jobie #dashboardBody {
+      margin-top: 30px; }
+      .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary {
+        background-color: white;
+        -webkit-border-radius: 30px;
+        border-radius: 30px;
+        padding-top: 25px;
+        position: relative; }
+        .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .profileSummaryHead {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .profileSummaryHead .profileSummaryImg {
+            width: 110px;
+            height: 110px;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            position: relative;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center; }
+            .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .profileSummaryHead .profileSummaryImg .profileEllipsImg {
+              width: 100%;
+              height: 100%;
+              -o-object-fit: cover;
+              object-fit: cover;
+              position: absolute;
+              top: 0;
+              left: 0; }
+            .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .profileSummaryHead .profileSummaryImg .profileSummaryImg {
+              width: 80%;
+              height: 80%;
+              -o-object-fit: cover;
+              object-fit: cover; }
+          .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .profileSummaryHead .profileBodyName {
+            margin: 0;
+            margin-top: 15px;
+            font-family: Poppins-Medium;
+            font-size: 1.125rem;
+            color: #000;
+            text-transform: capitalize; }
+          .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .profileSummaryHead .profileBodyWork {
+            display: inline-block;
+            font-family: Poppins-Regular;
+            font-size: 0.875rem;
+            color: rgba(0, 0, 0, 0.7);
+            margin-top: 5px; }
+        .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .profileSummarySkills {
+          margin-top: 35px;
+          padding-bottom: 20px;
+          border-bottom: 1px solid #EBEBEB;
+          text-align: center; }
+          .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .profileSummarySkills .mh-professional-skills .mh-professional-progress li {
+            display: inline-block; }
+            .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .profileSummarySkills .mh-professional-skills .mh-professional-progress li .mh-progress {
+              margin: 0 7px; }
+              .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .profileSummarySkills .mh-professional-skills .mh-professional-progress li .mh-progress svg {
+                width: 50px;
+                height: 50px;
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+                overflow: hidden; }
+                .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .profileSummarySkills .mh-professional-skills .mh-professional-progress li .mh-progress svg path {
+                  stroke-width: 25; }
+                .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .profileSummarySkills .mh-professional-skills .mh-professional-progress li .mh-progress svg path:nth-child(1) {
+                  stroke: #F0F0F0; }
+              .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .profileSummarySkills .mh-professional-skills .mh-professional-progress li .mh-progress .progressbar-text {
+                font-family: Poppins-SemiBold;
+                font-size: 0.813rem;
+                color: #232323 !important; }
+            .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .profileSummarySkills .mh-professional-skills .mh-professional-progress li .pr-skill-name {
+              margin-top: 10px;
+              font-family: Poppins-Regular;
+              font-size: 0.813rem;
+              color: rgba(0, 0, 0, 0.74);
+              text-transform: capitalize; }
+          .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .profileSummarySkills .mh-professional-skills .mh-professional-progress li:nth-child(1) .mh-progress svg path:nth-child(2) {
+            stroke: #FF8E26; }
+          .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .profileSummarySkills .mh-professional-skills .mh-professional-progress li:nth-child(2) .mh-progress svg path:nth-child(2) {
+            stroke: #3EA834; }
+          .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .profileSummarySkills .mh-professional-skills .mh-professional-progress li:nth-child(3) .mh-progress svg path:nth-child(2) {
+            stroke: #22AC93; }
+        .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .recentActivities {
+          margin-top: 20px;
+          padding-left: 15px;
+          padding-right: 10px; }
+          .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .recentActivities .recentHead {
+            font-family: Poppins-Medium;
+            font-size: 1rem;
+            color: #3D3D3D;
+            text-transform: capitalize; }
+          .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .recentActivities .recentList .recentItem {
+            margin-top: 15px; }
+            .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .recentActivities .recentList .recentItem a {
+              text-decoration: none;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex; }
+              .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .recentActivities .recentList .recentItem a .recentItemImg {
+                width: 48px;
+                height: 48px;
+                border: 1px solid #F3EAFF;
+                -webkit-border-radius: 20px;
+                border-radius: 20px;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-pack: center;
+                -webkit-justify-content: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-transition: all 0.4s ease;
+                -o-transition: all 0.4s ease;
+                transition: all 0.4s ease;
+                min-width: 48px; }
+                .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .recentActivities .recentList .recentItem a .recentItemImg svg {
+                  width: 20px;
+                  height: 20px; }
+                  .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .recentActivities .recentList .recentItem a .recentItemImg svg path {
+                    fill: #40189D;
+                    -webkit-transition: all 0.4s ease;
+                    -o-transition: all 0.4s ease;
+                    transition: all 0.4s ease; }
+              .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .recentActivities .recentList .recentItem a .recentItemContent {
+                padding-left: 10px; }
+                .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .recentActivities .recentList .recentItem a .recentItemContent .contentText {
+                  font-family: Poppins-Medium;
+                  font-size: 0.813rem;
+                  color: #3D3D3D;
+                  margin: 0; }
+                  .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .recentActivities .recentList .recentItem a .recentItemContent .contentText span {
+                    font-family: Poppins-SemiBold;
+                    text-transform: capitalize; }
+                .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .recentActivities .recentList .recentItem a .recentItemContent .itemAgoTime {
+                  display: inline-block;
+                  margin-top: 5px;
+                  font-family: Poppins-Regular;
+                  font-size: 0.75rem;
+                  color: #AEAEAE; }
+            .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .recentActivities .recentList .recentItem a:hover .recentItemImg {
+              border-color: #40189D;
+              background-color: #40189D; }
+              .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .recentActivities .recentList .recentItem a:hover .recentItemImg svg path {
+                fill: white; }
+        .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .reviews-position {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(50%, rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0)));
+          background: -webkit-linear-gradient(bottom, white 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+          background: -o-linear-gradient(bottom, white 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+          background: linear-gradient(0deg, white 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+          -webkit-border-radius: 0 0 50% 50%;
+          border-radius: 0 0 50% 50%; }
+          .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .reviews-position .reviews-more {
+            position: relative;
+            bottom: -24px;
+            width: 50px;
+            height: 50px;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            background: #FFFFFF;
+            -webkit-box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.25);
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            -webkit-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease; }
+            .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .reviews-position .reviews-more img {
+              width: 42%;
+              height: 42%;
+              -o-object-fit: contain;
+              object-fit: contain; }
+          .dashboard-container .main-jobie #dashboardBody .dashboardBody .profileSummary .reviews-position .reviews-more:hover {
+            cursor: pointer;
+            -webkit-transform: translateY(8px);
+            -ms-transform: translateY(8px);
+            transform: translateY(8px); }
+      .dashboard-container .main-jobie #dashboardBody .dashboardBody #recommendedJobs {
+        margin-top: 30px; }
+        .dashboard-container .main-jobie #dashboardBody .dashboardBody #recommendedJobs .recommendedJobsHead {
+          font-family: Poppins-Medium;
+          font-size: 1.125rem;
+          color: #000;
+          text-transform: capitalize;
+          margin: 0; }
+        .dashboard-container .main-jobie #dashboardBody .dashboardBody #recommendedJobs .recommendedJobs {
+          margin-top: 15px; }
+          .dashboard-container .main-jobie #dashboardBody .dashboardBody #recommendedJobs .recommendedJobs .jobieCard {
+            margin: 8px 0; }
+          .dashboard-container .main-jobie #dashboardBody .dashboardBody #recommendedJobs .recommendedJobs .jobieCard:hover {
+            -webkit-box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); }
+    .dashboard-container .main-jobie #featuredCompanies {
+      margin-top: 60px; }
+      .dashboard-container .main-jobie #featuredCompanies .featuredCompanies .featuredCompanies-head {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .dashboard-container .main-jobie #featuredCompanies .featuredCompanies .featuredCompanies-head h4 {
+          font-family: Poppins-Medium;
+          font-size: 1.25rem;
+          color: black;
+          text-transform: capitalize; }
+        .dashboard-container .main-jobie #featuredCompanies .featuredCompanies .featuredCompanies-head .featured-more .featured-more-link {
+          display: inline-block;
+          text-decoration: none;
+          font-family: Poppins-Medium;
+          font-size: 1rem;
+          color: #40189D;
+          text-transform: capitalize;
+          padding: 11px 24px;
+          border: 1px solid #40189D;
+          -webkit-border-radius: 49px;
+          border-radius: 49px;
+          -webkit-transition: all 0.4s ease;
+          -o-transition: all 0.4s ease;
+          transition: all 0.4s ease; }
+          .dashboard-container .main-jobie #featuredCompanies .featuredCompanies .featuredCompanies-head .featured-more .featured-more-link img {
+            width: 20px;
+            height: auto;
+            -o-object-fit: contain;
+            object-fit: contain;
+            margin-left: 10px; }
+        .dashboard-container .main-jobie #featuredCompanies .featuredCompanies .featuredCompanies-head .featured-more .featured-more-link:hover {
+          -webkit-box-shadow: 0 0 2px #40189D;
+          box-shadow: 0 0 2px #40189D;
+          -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+          transform: scale(1.1); }
+      .dashboard-container .main-jobie #featuredCompanies .featuredCompanies .featured-carousel {
+        padding-top: 28px; }
+        .dashboard-container .main-jobie #featuredCompanies .featuredCompanies .featured-carousel .featured-item {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
+          text-decoration: none;
+          background-color: white;
+          padding: 15px 18px;
+          -webkit-border-radius: 10px;
+          border-radius: 10px; }
+          .dashboard-container .main-jobie #featuredCompanies .featuredCompanies .featured-carousel .featured-item .featured-item-img {
+            width: 60px;
+            height: 60px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            overflow: hidden; }
+            .dashboard-container .main-jobie #featuredCompanies .featuredCompanies .featured-carousel .featured-item .featured-item-img img {
+              width: 100%;
+              height: 100%;
+              -o-object-fit: cover;
+              object-fit: cover; }
+          .dashboard-container .main-jobie #featuredCompanies .featuredCompanies .featured-carousel .featured-item .featured-item-content {
+            padding-left: 10px; }
+            .dashboard-container .main-jobie #featuredCompanies .featuredCompanies .featured-carousel .featured-item .featured-item-content p {
+              font-family: Poppins-SemiBold;
+              font-size: 0.875rem;
+              color: #141414;
+              text-transform: capitalize;
+              margin-bottom: 8px;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+              display: -webkit-box;
+              overflow: hidden; }
+            .dashboard-container .main-jobie #featuredCompanies .featuredCompanies .featured-carousel .featured-item .featured-item-content span {
+              display: block;
+              font-family: Poppins-Medium;
+              font-size: 0.875rem;
+              color: #40189D;
+              text-transform: capitalize; }
+        .dashboard-container .main-jobie #featuredCompanies .featuredCompanies .featured-carousel .owl-dots {
+          position: absolute;
+          top: -43px;
+          right: 200px; }
+          .dashboard-container .main-jobie #featuredCompanies .featuredCompanies .featured-carousel .owl-dots .owl-dot {
+            -webkit-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+            width: 18px; }
+            .dashboard-container .main-jobie #featuredCompanies .featuredCompanies .featured-carousel .owl-dots .owl-dot span {
+              -webkit-transition: all 0.4s ease;
+              -o-transition: all 0.4s ease;
+              transition: all 0.4s ease;
+              width: 12px;
+              height: 12px; }
+          .dashboard-container .main-jobie #featuredCompanies .featuredCompanies .featured-carousel .owl-dots .owl-dot:focus {
+            outline: none; }
+          .dashboard-container .main-jobie #featuredCompanies .featuredCompanies .featured-carousel .owl-dots .owl-dot:hover span {
+            background: #40189D; }
+          .dashboard-container .main-jobie #featuredCompanies .featuredCompanies .featured-carousel .owl-dots .active span {
+            background: #40189D; }
+    .dashboard-container .main-jobie #bigSearchBox {
+      margin-top: 30px; }
+      .dashboard-container .main-jobie #bigSearchBox .bigSearchBox {
+        background-color: white;
+        -webkit-border-radius: 24px;
+        border-radius: 24px;
+        padding: 16px 28px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-left {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-left .select-location {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center; }
+            .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-left .select-location .loca-icon {
+              width: 20px;
+              height: 27px;
+              margin-right: 10px; }
+              .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-left .select-location .loca-icon img {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: contain;
+                object-fit: contain; }
+            .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-left .select-location .location-cover {
+              position: relative; }
+              .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-left .select-location .location-cover .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+                width: 160px; }
+              .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-left .select-location .location-cover img {
+                position: absolute;
+                top: 50%;
+                right: 8px;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+                pointer-events: none; }
+              .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-left .select-location .location-cover .dropdown-toggle {
+                background: none;
+                border: none;
+                font-family: Poppins-SemiBold;
+                font-size: 0.938rem;
+                color: #5C5C5C;
+                padding: 0 10px; }
+              .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-left .select-location .location-cover .dropdown-toggle:focus {
+                -webkit-box-shadow: none;
+                box-shadow: none;
+                outline: 0 !important; }
+              .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-left .select-location .location-cover .dropdown-toggle::after {
+                display: none; }
+              .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-left .select-location .location-cover .dropdown-menu {
+                border: none;
+                -webkit-border-radius: 0 0 5px 5px;
+                border-radius: 0 0 5px 5px;
+                padding-bottom: 0; }
+                .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-left .select-location .location-cover .dropdown-menu li {
+                  font-family: Poppins-Regular;
+                  font-size: 0.938rem; }
+                  .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-left .select-location .location-cover .dropdown-menu li a span {
+                    color: #5C5C5C !important; }
+                  .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-left .select-location .location-cover .dropdown-menu li .dropdown-item.active {
+                    background-color: #40189D; }
+                    .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-left .select-location .location-cover .dropdown-menu li .dropdown-item.active span {
+                      color: white !important; }
+                  .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-left .select-location .location-cover .dropdown-menu li .dropdown-item:active {
+                    background-color: #40189D; }
+          .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-left .searchBoxBorder {
+            display: inline-block;
+            width: 1.2px;
+            height: 32px;
+            background-color: #E6E6E6;
+            margin-left: 12px;
+            margin-right: 16px; }
+          .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-left .searchCompany {
+            width: 250px;
+            height: 27px; }
+            .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-left .searchCompany input {
+              width: 100%;
+              height: 100%;
+              font-family: Poppins-Regular;
+              font-size: 0.938rem;
+              color: #ADADAD; }
+            .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-left .searchCompany input::-webkit-input-placeholder {
+              color: #ADADAD; }
+            .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-left .searchCompany input::-ms-input-placeholder {
+              color: #ADADAD; }
+            .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-left .searchCompany input::placeholder {
+              color: #ADADAD; }
+        .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-right {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-right button {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-border-radius: 60px;
+            border-radius: 60px;
+            padding: 10px 20px; }
+            .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-right button svg {
+              width: 18px;
+              height: 24px;
+              -o-object-fit: contain;
+              object-fit: contain;
+              margin-right: 12px; }
+            .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-right button span {
+              font-family: Poppins-SemiBold;
+              font-size: 0.938rem;
+              text-transform: uppercase; }
+          .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-right button:hover {
+            cursor: pointer; }
+          .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-right .filter-button {
+            margin-right: 12px;
+            background-color: #EEEEEE;
+            -webkit-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease; }
+            .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-right .filter-button svg path {
+              -webkit-transition: all 0.4s ease;
+              -o-transition: all 0.4s ease;
+              transition: all 0.4s ease; }
+            .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-right .filter-button span {
+              -webkit-transition: all 0.4s ease;
+              -o-transition: all 0.4s ease;
+              transition: all 0.4s ease;
+              color: #40189D; }
+          .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-right .filter-button:hover {
+            background-color: #40189D; }
+            .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-right .filter-button:hover svg path {
+              fill: white; }
+            .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-right .filter-button:hover span {
+              color: white; }
+          .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-right .search-button {
+            background-color: #40189D;
+            -webkit-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease; }
+            .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-right .search-button svg path {
+              fill: white;
+              -webkit-transition: all 0.4s ease;
+              -o-transition: all 0.4s ease;
+              transition: all 0.4s ease; }
+            .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-right .search-button span {
+              color: white;
+              -webkit-transition: all 0.4s ease;
+              -o-transition: all 0.4s ease;
+              transition: all 0.4s ease; }
+          .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-right .search-button:hover {
+            background-color: #EEEEEE; }
+            .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-right .search-button:hover svg path {
+              fill: #40189D; }
+            .dashboard-container .main-jobie #bigSearchBox .bigSearchBox .bigSearchBox-right .search-button:hover span {
+              color: #40189D; }
+    .dashboard-container .main-jobie #suggestion {
+      margin-top: 30px;
+      padding-left: 30px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid #EDEDED; }
+      .dashboard-container .main-jobie #suggestion .suggestion {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .dashboard-container .main-jobie #suggestion .suggestion .suggestion-head {
+          font-family: Poppins-Regular;
+          font-size: 0.938rem;
+          color: #ADADAD;
+          text-transform: capitalize;
+          margin: 0;
+          margin-right: 35px; }
+        .dashboard-container .main-jobie #suggestion .suggestion .suggestion-list li {
+          display: inline-block;
+          margin-right: 10px;
+          -webkit-transition: all 0.4s ease;
+          -o-transition: all 0.4s ease;
+          transition: all 0.4s ease; }
+          .dashboard-container .main-jobie #suggestion .suggestion .suggestion-list li a {
+            text-decoration: none;
+            font-family: Poppins-Medium;
+            font-size: 0.875rem;
+            color: #40189D;
+            background-color: #E3D7FF;
+            padding: 10px 22px;
+            -webkit-border-radius: 24px;
+            border-radius: 24px;
+            min-width: 100px;
+            -webkit-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease; }
+        .dashboard-container .main-jobie #suggestion .suggestion .suggestion-list li:hover a {
+          background-color: #40189D;
+          color: white; }
+        .dashboard-container .main-jobie #suggestion .suggestion .suggestion-list .active a {
+          background-color: #40189D;
+          color: white; }
+    .dashboard-container .main-jobie #searchJobsTitleBars {
+      margin-top: 40px; }
+      .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-left p {
+          margin: 0;
+          font-family: Poppins-SemiBold;
+          font-size: 0.938rem;
+          text-transform: capitalize;
+          margin-bottom: 3px; }
+        .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-left span {
+          display: block;
+          font-family: Poppins-Regular;
+          font-size: 0.813rem;
+          color: #8A8A8A; }
+        .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center; }
+            .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .full-freelance-time {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+              -ms-flex-align: center;
+              align-items: center;
+              font-family: Poppins-SemiBold;
+              font-size: 0.875rem;
+              color: #5C5C5C;
+              margin-right: 44px; }
+              .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .full-freelance-time .checkbox {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                -ms-flex-align: center;
+                align-items: center;
+                margin: 0;
+                cursor: pointer; }
+                .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .full-freelance-time .checkbox input {
+                  display: none; }
+                .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .full-freelance-time .checkbox input:checked ~ .checkbox__mark {
+                  background-color: transparent; }
+                  .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .full-freelance-time .checkbox input:checked ~ .checkbox__mark img:last-child {
+                    opacity: 1;
+                    visibility: visible; }
+                  .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .full-freelance-time .checkbox input:checked ~ .checkbox__mark img:first-child {
+                    opacity: 0;
+                    visibility: hidden; }
+                .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .full-freelance-time .checkbox .checkbox__mark {
+                  margin-right: 0.8rem;
+                  position: relative;
+                  width: 1.5rem;
+                  height: 1.5rem;
+                  border: none;
+                  -webkit-border-radius: 8px;
+                  border-radius: 8px; }
+                  .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .full-freelance-time .checkbox .checkbox__mark img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    -o-object-fit: contain;
+                    object-fit: contain;
+                    -webkit-transition: all 0.4s ease;
+                    -o-transition: all 0.4s ease;
+                    transition: all 0.4s ease; }
+                  .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .full-freelance-time .checkbox .checkbox__mark img:last-child {
+                    opacity: 0;
+                    visibility: hidden; }
+                  .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .full-freelance-time .checkbox .checkbox__mark img:first-child {
+                    opacity: 1;
+                    visibility: visible; }
+              .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .full-freelance-time .fulltime {
+                margin-right: 28px; }
+            .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .details-salary {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+              -ms-flex-align: center;
+              align-items: center;
+              margin-right: 45px; }
+              .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .details-salary .details {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                -ms-flex-align: center;
+                align-items: center;
+                margin-right: 25px; }
+                .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .details-salary .details span {
+                  display: inline-block;
+                  font-family: Poppins-SemiBold;
+                  font-size: 0.875rem;
+                  color: #5C5C5C;
+                  text-transform: capitalize;
+                  margin-right: 10px; }
+              .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .details-salary .salary {
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                -webkit-align-items: center;
+                -ms-flex-align: center;
+                align-items: center; }
+                .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .details-salary .salary span {
+                  display: inline-block;
+                  font-family: Poppins-SemiBold;
+                  font-size: 0.875rem;
+                  color: #5C5C5C;
+                  text-transform: capitalize;
+                  margin-right: 10px; }
+              .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .details-salary .switch {
+                position: relative;
+                display: inline-block;
+                height: 14px; }
+              .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .details-salary .switch-input {
+                display: none; }
+              .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .details-salary .switch-label {
+                display: block;
+                width: 36px;
+                height: 100%;
+                text-indent: -150%;
+                clip: rect(0 0 0 0);
+                color: transparent;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+                margin: 0; }
+              .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .details-salary .switch-label::before,
+              .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .details-salary .switch-label::after {
+                content: "";
+                display: block;
+                position: absolute;
+                cursor: pointer; }
+              .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .details-salary .switch-label::before {
+                width: 100%;
+                height: 100%;
+                background-color: #D8D8D8;
+                -webkit-border-radius: 9999em;
+                border-radius: 9999em;
+                -webkit-transition: background-color 0.25s ease;
+                -o-transition: background-color 0.25s ease;
+                transition: background-color 0.25s ease; }
+              .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .details-salary .switch-label::after {
+                top: 0;
+                left: 0;
+                -webkit-transform: translateY(-12%);
+                -ms-transform: translateY(-12%);
+                transform: translateY(-12%);
+                width: 21px;
+                height: 21px;
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+                background-color: #959595;
+                -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.45);
+                box-shadow: 0 0 2px rgba(0, 0, 0, 0.45);
+                -webkit-transition: left 0.25s ease;
+                -o-transition: left 0.25s ease;
+                transition: left 0.25s ease; }
+              .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .details-salary .switch-input:checked + .switch-label::before {
+                background-color: #E4CFFF; }
+              .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .details-salary .switch-input:checked + .switch-label::after {
+                left: 17px;
+                background-color: #40189D; }
+            .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .select-sort {
+              margin-right: 45px; }
+              .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .select-sort .sort-cover {
+                position: relative;
+                padding: 8px 12px;
+                border: 1px solid #BEA1FF;
+                -webkit-border-radius: 46px;
+                border-radius: 46px; }
+                .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .select-sort .sort-cover .sort-icon {
+                  width: 20px;
+                  height: 20px;
+                  position: absolute;
+                  top: 50%;
+                  left: 12px;
+                  -webkit-transform: translateY(-50%);
+                  -ms-transform: translateY(-50%);
+                  transform: translateY(-50%);
+                  pointer-events: none; }
+                  .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .select-sort .sort-cover .sort-icon img {
+                    width: 100%;
+                    height: 100%;
+                    -o-object-fit: contain;
+                    object-fit: contain; }
+                .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .select-sort .sort-cover .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+                  width: 120px; }
+                .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .select-sort .sort-cover img {
+                  position: absolute;
+                  top: 50%;
+                  right: 12px;
+                  -webkit-transform: translateY(-50%);
+                  -ms-transform: translateY(-50%);
+                  transform: translateY(-50%);
+                  pointer-events: none; }
+                .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .select-sort .sort-cover .dropdown-toggle {
+                  background: none;
+                  border: none;
+                  font-family: Poppins-SemiBold;
+                  font-size: 0.938rem;
+                  color: #5C5C5C;
+                  padding: 0; }
+                  .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .select-sort .sort-cover .dropdown-toggle .filter-option {
+                    text-align: center; }
+                .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .select-sort .sort-cover .dropdown-toggle:focus {
+                  -webkit-box-shadow: none;
+                  box-shadow: none;
+                  outline: 0 !important; }
+                .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .select-sort .sort-cover .dropdown-toggle::after {
+                  display: none; }
+                .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .select-sort .sort-cover .dropdown-menu {
+                  border: none;
+                  -webkit-border-radius: 0 0 5px 5px;
+                  border-radius: 0 0 5px 5px;
+                  padding-bottom: 0; }
+                  .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .select-sort .sort-cover .dropdown-menu li {
+                    font-family: Poppins-Regular;
+                    font-size: 0.938rem; }
+                    .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .select-sort .sort-cover .dropdown-menu li a span {
+                      color: #5C5C5C !important; }
+                    .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .select-sort .sort-cover .dropdown-menu li .dropdown-item.active {
+                      background-color: #40189D; }
+                      .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .select-sort .sort-cover .dropdown-menu li .dropdown-item.active span {
+                        color: white !important; }
+                    .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right form .select-sort .sort-cover .dropdown-menu li .dropdown-item:active {
+                      background-color: #40189D; }
+          .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right .viewList {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center; }
+            .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right .viewList .viewListDesing {
+              width: 44px;
+              height: 44px;
+              -webkit-border-radius: 50px;
+              border-radius: 50px;
+              border: 1px solid #BEA1FF;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-transition: all 0.4s ease;
+              -o-transition: all 0.4s ease;
+              transition: all 0.4s ease; }
+              .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right .viewList .viewListDesing svg {
+                width: 21px;
+                height: 21px;
+                -o-object-fit: contain;
+                object-fit: contain; }
+                .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right .viewList .viewListDesing svg path {
+                  fill: #40189D;
+                  -webkit-transition: all 0.4s ease;
+                  -o-transition: all 0.4s ease;
+                  transition: all 0.4s ease; }
+            .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right .viewList .viewListDesing:hover {
+              cursor: pointer;
+              border: 1px solid #40189D;
+              background: #40189D; }
+              .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right .viewList .viewListDesing:hover svg path {
+                fill: white; }
+            .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right .viewList .viewList1 {
+              margin-right: 12px; }
+            .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right .viewList .active {
+              border: 1px solid #40189D;
+              background: #40189D; }
+              .dashboard-container .main-jobie #searchJobsTitleBars .searchJobsTitleBars .searchJobsTitleBars-right .viewList .active svg path {
+                fill: white; }
+    .dashboard-container .main-jobie .jobieCard {
+      background-color: white;
+      -webkit-border-radius: 20px;
+      border-radius: 20px;
+      padding: 18px 18px;
+      -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
+      -webkit-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+      position: relative;
+      margin: 15px 0; }
+      .dashboard-container .main-jobie .jobieCard .jobieCard-head {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .dashboard-container .main-jobie .jobieCard .jobieCard-head .jobieCard-head-left {
+          font-family: Poppins-Medium; }
+          .dashboard-container .main-jobie .jobieCard .jobieCard-head .jobieCard-head-left span {
+            display: block;
+            font-size: 0.813rem;
+            color: #797979;
+            text-transform: capitalize;
+            margin-bottom: 6px; }
+          .dashboard-container .main-jobie .jobieCard .jobieCard-head .jobieCard-head-left p {
+            margin: 0;
+            font-size: 1rem;
+            text-transform: capitalize; }
+        .dashboard-container .main-jobie .jobieCard .jobieCard-head .jobieCard-head-img {
+          width: 50px;
+          height: 50px;
+          -webkit-border-radius: 6px;
+          border-radius: 6px;
+          overflow: hidden; }
+          .dashboard-container .main-jobie .jobieCard .jobieCard-head .jobieCard-head-img img {
+            width: 100%;
+            height: 100%;
+            -o-object-fit: cover;
+            object-fit: cover; }
+      .dashboard-container .main-jobie .jobieCard .card-price {
+        display: block;
+        margin-top: 15px;
+        font-family: Poppins-Medium;
+        font-size: 0.813rem;
+        color: #40189D; }
+      .dashboard-container .main-jobie .jobieCard .card-content {
+        margin: 0;
+        margin-top: 20px;
+        font-family: Poppins-Regular;
+        font-size: 0.813rem;
+        color: rgba(12, 12, 12, 0.7);
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        overflow: hidden; }
+      .dashboard-container .main-jobie .jobieCard .jobieCard-footer {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-top: 15px; }
+        .dashboard-container .main-jobie .jobieCard .jobieCard-footer .footer-link .remote-link {
+          text-decoration: none;
+          display: inline-block;
+          font-family: Poppins-Medium;
+          font-size: 0.875rem;
+          text-transform: uppercase;
+          color: #40189D;
+          background-color: #E9E0FF;
+          padding: 8px 12px;
+          -webkit-border-radius: 49px;
+          border-radius: 49px;
+          min-width: 75px;
+          -webkit-transition: all 0.4s ease;
+          -o-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+          position: relative;
+          z-index: 1; }
+        .dashboard-container .main-jobie .jobieCard .jobieCard-footer .footer-link .remote-link:hover {
+          color: white;
+          background-color: #40189D;
+          -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 14px rgba(0, 0, 0, 0.2); }
+        .dashboard-container .main-jobie .jobieCard .jobieCard-footer .footer-capitalCity {
+          display: inline-block;
+          font-family: Poppins-Medium;
+          font-size: 0.875rem;
+          color: #2E2E2E;
+          text-transform: capitalize; }
+      .dashboard-container .main-jobie .jobieCard .jobieCard-link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+    .dashboard-container .main-jobie #jobieCardBox {
+      margin-top: 30px; }
+      .dashboard-container .main-jobie #jobieCardBox .jobieCardBox .col-md-4,
+      .dashboard-container .main-jobie #jobieCardBox .jobieCardBox .col-md-6 {
+        -webkit-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease; }
+      .dashboard-container .main-jobie #jobieCardBox .jobieCardBox .jobieCard:hover {
+        -webkit-box-shadow: 0px 12px 23px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 12px 23px rgba(0, 0, 0, 0.1); }
+    .dashboard-container .main-jobie #jobie-pagination {
+      margin-top: 40px;
+      margin-bottom: 30px; }
+      .dashboard-container .main-jobie #jobie-pagination .jobie-pagination {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .dashboard-container .main-jobie #jobie-pagination .jobie-pagination .jobie-pagination-left {
+          font-family: Poppins-Medium;
+          font-size: 0.938rem;
+          color: #3E4954; }
+      .dashboard-container .main-jobie #jobie-pagination .jobie-pagination-nav {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .dashboard-container .main-jobie #jobie-pagination .jobie-pagination-nav .prevBox {
+          margin-right: 17px; }
+          .dashboard-container .main-jobie #jobie-pagination .jobie-pagination-nav .prevBox .prevItem {
+            display: inline-block;
+            font-family: Poppins-Medium;
+            font-size: 1rem;
+            color: #40189D;
+            text-transform: capitalize;
+            background-color: white;
+            -webkit-border-radius: 61px;
+            border-radius: 61px;
+            padding: 10px 16px;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            text-decoration: none;
+            -webkit-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease; }
+            .dashboard-container .main-jobie #jobie-pagination .jobie-pagination-nav .prevBox .prevItem .pagImg {
+              width: 20px;
+              height: 24px;
+              margin-right: 5px; }
+              .dashboard-container .main-jobie #jobie-pagination .jobie-pagination-nav .prevBox .prevItem .pagImg img {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: contain;
+                object-fit: contain; }
+            .dashboard-container .main-jobie #jobie-pagination .jobie-pagination-nav .prevBox .prevItem p {
+              margin: 0; }
+          .dashboard-container .main-jobie #jobie-pagination .jobie-pagination-nav .prevBox .prevItem:hover {
+            -webkit-box-shadow: 0px 12px 23px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 12px 23px rgba(0, 0, 0, 0.1); }
+        .dashboard-container .main-jobie #jobie-pagination .jobie-pagination-nav .jobie-pagination-body {
+          margin-right: 17px;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
+          -webkit-border-radius: 61px;
+          border-radius: 61px;
+          background-color: #ECDEFF;
+          font-family: Poppins-Medium;
+          font-size: 1rem; }
+          .dashboard-container .main-jobie #jobie-pagination .jobie-pagination-nav .jobie-pagination-body li {
+            display: inline-block; }
+            .dashboard-container .main-jobie #jobie-pagination .jobie-pagination-nav .jobie-pagination-body li a {
+              display: inline-block;
+              -webkit-border-radius: 61px;
+              border-radius: 61px;
+              padding: 10px 19px;
+              color: #40189D;
+              text-decoration: none;
+              -webkit-transition: all 0.4s ease;
+              -o-transition: all 0.4s ease;
+              transition: all 0.4s ease; }
+          .dashboard-container .main-jobie #jobie-pagination .jobie-pagination-nav .jobie-pagination-body .active a {
+            background-color: #40189D;
+            color: white; }
+          .dashboard-container .main-jobie #jobie-pagination .jobie-pagination-nav .jobie-pagination-body li:hover a {
+            background-color: #40189D;
+            color: white;
+            cursor: pointer; }
+        .dashboard-container .main-jobie #jobie-pagination .jobie-pagination-nav .nextBox .nextItem {
+          display: inline-block;
+          font-family: Poppins-Medium;
+          font-size: 1rem;
+          color: #40189D;
+          text-transform: capitalize;
+          background-color: white;
+          -webkit-border-radius: 61px;
+          border-radius: 61px;
+          padding: 10px 16px;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
+          text-decoration: none;
+          -webkit-transition: all 0.4s ease;
+          -o-transition: all 0.4s ease;
+          transition: all 0.4s ease; }
+          .dashboard-container .main-jobie #jobie-pagination .jobie-pagination-nav .nextBox .nextItem p {
+            margin: 0; }
+          .dashboard-container .main-jobie #jobie-pagination .jobie-pagination-nav .nextBox .nextItem .pagImg {
+            width: 20px;
+            height: 24px;
+            margin-left: 5px; }
+            .dashboard-container .main-jobie #jobie-pagination .jobie-pagination-nav .nextBox .nextItem .pagImg img {
+              width: 100%;
+              height: 100%;
+              -o-object-fit: contain;
+              object-fit: contain; }
+        .dashboard-container .main-jobie #jobie-pagination .jobie-pagination-nav .nextBox .nextItem:hover {
+          -webkit-box-shadow: 0px 12px 23px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 12px 23px rgba(0, 0, 0, 0.1); }
+    .dashboard-container .main-jobie #applicationsTitleBars .applicationsTitleBars {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .dashboard-container .main-jobie #applicationsTitleBars .applicationsTitleBars .applicationsTitleBars-left {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .dashboard-container .main-jobie #applicationsTitleBars .applicationsTitleBars .applicationsTitleBars-left .applicationsResult {
+          margin-right: 60px; }
+          .dashboard-container .main-jobie #applicationsTitleBars .applicationsTitleBars .applicationsTitleBars-left .applicationsResult p {
+            margin: 0;
+            font-family: Poppins-SemiBold;
+            font-size: 0.938rem;
+            text-transform: capitalize;
+            margin-bottom: 3px; }
+          .dashboard-container .main-jobie #applicationsTitleBars .applicationsTitleBars .applicationsTitleBars-left .applicationsResult span {
+            display: block;
+            font-family: Poppins-Regular;
+            font-size: 0.813rem;
+            color: #8A8A8A; }
+        .dashboard-container .main-jobie #applicationsTitleBars .applicationsTitleBars .applicationsTitleBars-left .applicationsTabMenu li {
+          display: inline-block;
+          margin-right: 8px;
+          -webkit-transition: all 0.4s ease;
+          -o-transition: all 0.4s ease;
+          transition: all 0.4s ease; }
+          .dashboard-container .main-jobie #applicationsTitleBars .applicationsTitleBars .applicationsTitleBars-left .applicationsTabMenu li a {
+            text-decoration: none;
+            font-family: Poppins-Medium;
+            font-size: 0.875rem;
+            color: #5C5C5C;
+            background-color: #E3D7FF;
+            padding: 8px 18px;
+            -webkit-border-radius: 46px;
+            border-radius: 46px;
+            min-width: 70px;
+            -webkit-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease; }
+        .dashboard-container .main-jobie #applicationsTitleBars .applicationsTitleBars .applicationsTitleBars-left .applicationsTabMenu li:hover a {
+          background-color: #40189D;
+          color: white; }
+        .dashboard-container .main-jobie #applicationsTitleBars .applicationsTitleBars .applicationsTitleBars-left .applicationsTabMenu .active a {
+          background-color: #40189D;
+          color: white; }
+      .dashboard-container .main-jobie #applicationsTitleBars .applicationsTitleBars .applicationsTitleBars-form .select-applications .applications-cover {
+        position: relative;
+        padding: 8px 12px;
+        border: 1px solid #BEA1FF;
+        -webkit-border-radius: 46px;
+        border-radius: 46px; }
+        .dashboard-container .main-jobie #applicationsTitleBars .applicationsTitleBars .applicationsTitleBars-form .select-applications .applications-cover .applications-icon {
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          top: 50%;
+          left: 12px;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          pointer-events: none; }
+          .dashboard-container .main-jobie #applicationsTitleBars .applicationsTitleBars .applicationsTitleBars-form .select-applications .applications-cover .applications-icon img {
+            width: 100%;
+            height: 100%;
+            -o-object-fit: contain;
+            object-fit: contain; }
+        .dashboard-container .main-jobie #applicationsTitleBars .applicationsTitleBars .applicationsTitleBars-form .select-applications .applications-cover .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+          width: 120px; }
+        .dashboard-container .main-jobie #applicationsTitleBars .applicationsTitleBars .applicationsTitleBars-form .select-applications .applications-cover img {
+          position: absolute;
+          top: 50%;
+          right: 12px;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          pointer-events: none; }
+        .dashboard-container .main-jobie #applicationsTitleBars .applicationsTitleBars .applicationsTitleBars-form .select-applications .applications-cover .dropdown-toggle {
+          background: none;
+          border: none;
+          font-family: Poppins-SemiBold;
+          font-size: 0.938rem;
+          color: #5C5C5C;
+          padding: 0; }
+          .dashboard-container .main-jobie #applicationsTitleBars .applicationsTitleBars .applicationsTitleBars-form .select-applications .applications-cover .dropdown-toggle .filter-option {
+            text-align: center; }
+        .dashboard-container .main-jobie #applicationsTitleBars .applicationsTitleBars .applicationsTitleBars-form .select-applications .applications-cover .dropdown-toggle:focus {
+          -webkit-box-shadow: none;
+          box-shadow: none;
+          outline: 0 !important; }
+        .dashboard-container .main-jobie #applicationsTitleBars .applicationsTitleBars .applicationsTitleBars-form .select-applications .applications-cover .dropdown-toggle::after {
+          display: none; }
+        .dashboard-container .main-jobie #applicationsTitleBars .applicationsTitleBars .applicationsTitleBars-form .select-applications .applications-cover .dropdown-menu {
+          border: none;
+          -webkit-border-radius: 0 0 5px 5px;
+          border-radius: 0 0 5px 5px;
+          padding-bottom: 0; }
+          .dashboard-container .main-jobie #applicationsTitleBars .applicationsTitleBars .applicationsTitleBars-form .select-applications .applications-cover .dropdown-menu li {
+            font-family: Poppins-Regular;
+            font-size: 0.938rem; }
+            .dashboard-container .main-jobie #applicationsTitleBars .applicationsTitleBars .applicationsTitleBars-form .select-applications .applications-cover .dropdown-menu li a span {
+              color: #5C5C5C !important; }
+            .dashboard-container .main-jobie #applicationsTitleBars .applicationsTitleBars .applicationsTitleBars-form .select-applications .applications-cover .dropdown-menu li .dropdown-item.active {
+              background-color: #40189D; }
+              .dashboard-container .main-jobie #applicationsTitleBars .applicationsTitleBars .applicationsTitleBars-form .select-applications .applications-cover .dropdown-menu li .dropdown-item.active span {
+                color: white !important; }
+            .dashboard-container .main-jobie #applicationsTitleBars .applicationsTitleBars .applicationsTitleBars-form .select-applications .applications-cover .dropdown-menu li .dropdown-item:active {
+              background-color: #40189D; }
+    .dashboard-container .main-jobie #applicationsTable .applicationsTable {
+      margin-top: 25px;
+      padding-bottom: 15px;
+      background-color: white;
+      -webkit-border-radius: 20px;
+      border-radius: 20px; }
+      .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable {
+        width: 100%; }
+        .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable .checkbox {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
+          font-size: 1rem;
+          cursor: pointer;
+          width: 1.6rem;
+          margin: 0; }
+          .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable .checkbox input {
+            display: none; }
+          .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable .checkbox input:checked ~ .checkbox__mark {
+            background-color: #40189D; }
+          .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable .checkbox input:checked ~ .checkbox__mark svg {
+            opacity: 1;
+            -webkit-transform: translate(-50%, -50%) scale(1);
+            -ms-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1); }
+          .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable .checkbox .checkbox__mark {
+            position: relative;
+            width: 1.1rem;
+            height: 1.1rem;
+            border: 0.1rem solid #BEBEBE;
+            -webkit-border-radius: 4px;
+            border-radius: 4px; }
+            .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable .checkbox .checkbox__mark svg {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              -webkit-transform: translate(-50%, -50%) scale(0.5);
+              -ms-transform: translate(-50%, -50%) scale(0.5);
+              transform: translate(-50%, -50%) scale(0.5);
+              width: 68%;
+              height: auto;
+              -webkit-transition: all ease 0.2s;
+              -o-transition: all ease 0.2s;
+              transition: all ease 0.2s;
+              opacity: 0; }
+              .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable .checkbox .checkbox__mark svg path {
+                fill: white; }
+        .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable thead tr {
+          border-bottom: 1px solid #F4F4F4; }
+          .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable thead tr th {
+            padding: 20px 0;
+            padding-left: 5px;
+            font-family: Poppins-Medium;
+            font-size: 0.938rem; }
+          .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable thead tr th:first-child {
+            padding-left: 25px; }
+          .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable thead tr th:last-child {
+            padding-right: 25px; }
+        .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr {
+          border-bottom: 1px solid #F4F4F4; }
+          .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr td {
+            padding: 20px 0;
+            padding-left: 5px;
+            font-size: 0.875rem; }
+          .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr td:first-child {
+            padding-left: 25px; }
+          .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr td:last-child {
+            padding-right: 12px; }
+          .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appId {
+            font-family: Poppins-Medium; }
+          .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appDate {
+            font-family: Poppins-Regular; }
+          .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appCompany .appCompanyFlex {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center; }
+            .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appCompany .appCompanyFlex .appCompany-img {
+              width: 40px;
+              height: 40px;
+              -webkit-border-radius: 5px;
+              border-radius: 5px;
+              overflow: hidden;
+              margin-right: 7px; }
+              .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appCompany .appCompanyFlex .appCompany-img img {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: cover;
+                object-fit: cover; }
+            .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appCompany .appCompanyFlex .appCompany-content .appCompany-work {
+              display: block;
+              font-family: Poppins-SemiBold;
+              font-size: 0.813rem;
+              margin-bottom: 3px; }
+            .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appCompany .appCompanyFlex .appCompany-content .appCompany-name {
+              margin: 0;
+              font-family: Poppins-Regular;
+              font-size: 0.813rem;
+              color: rgba(0, 0, 0, 0.8); }
+          .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appType {
+            font-family: Poppins-Regular; }
+            .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appType input {
+              width: 90px;
+              text-transform: uppercase; }
+          .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appPosition {
+            font-family: Poppins-Regular;
+            text-transform: capitalize; }
+          .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appContact .appContactFlex {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center; }
+            .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appContact .appContactFlex .appContactDesing {
+              display: inline-block;
+              text-decoration: none;
+              width: 40px;
+              height: 40px;
+              -webkit-border-radius: 50px;
+              border-radius: 50px;
+              border: 1px solid #EDDFFF;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-transition: all 0.4s ease;
+              -o-transition: all 0.4s ease;
+              transition: all 0.4s ease; }
+              .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appContact .appContactFlex .appContactDesing svg {
+                width: 19px;
+                height: 19px;
+                -o-object-fit: contain;
+                object-fit: contain; }
+                .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appContact .appContactFlex .appContactDesing svg path {
+                  fill: #40189D;
+                  -webkit-transition: all 0.4s ease;
+                  -o-transition: all 0.4s ease;
+                  transition: all 0.4s ease; }
+            .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appContact .appContactFlex .appContactDesing:hover {
+              cursor: pointer;
+              border: 1px solid #40189D;
+              background: #40189D; }
+              .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appContact .appContactFlex .appContactDesing:hover svg path {
+                fill: white; }
+            .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appContact .appContactFlex .appContactDesing:not(:last-child) {
+              margin-right: 6px; }
+            .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appContact .appContactFlex .active {
+              border: 1px solid #40189D;
+              background: #40189D; }
+              .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appContact .appContactFlex .active svg path {
+                fill: white; }
+          .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appStatus .appStatusFlex {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            position: relative; }
+            .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appStatus .appStatusFlex .appStatusButton {
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+              -ms-flex-align: center;
+              align-items: center;
+              font-family: Poppins-Medium;
+              font-size: 0.875rem;
+              padding: 8px 24px;
+              border: 1px solid transparent;
+              -webkit-border-radius: 61px;
+              border-radius: 61px;
+              text-transform: capitalize;
+              min-width: 126px; }
+            .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appStatus .appStatusFlex .appPending {
+              border-color: #B1B1B1;
+              color: #B1B1B1; }
+            .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appStatus .appStatusFlex .appOnhold {
+              border-color: #FF9548;
+              color: #FF9548; }
+            .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appStatus .appStatusFlex .appCandidate {
+              border-color: #2BC155;
+              color: white;
+              background: #2BC155; }
+            .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appStatus .appStatusFlex .edit-button {
+              display: inline-block;
+              width: 24px;
+              height: 24px;
+              margin-left: 5px; }
+              .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appStatus .appStatusFlex .edit-button img {
+                width: 100%;
+                height: auto;
+                -o-object-fit: contain;
+                object-fit: contain; }
+            .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appStatus .appStatusFlex .edit-button:hover {
+              cursor: pointer; }
+            .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appStatus .appStatusFlex .editRemove {
+              position: absolute;
+              right: -18px;
+              top: -25px;
+              -webkit-box-shadow: 0 0 2px #40189D;
+              box-shadow: 0 0 2px #40189D;
+              font-family: Poppins-Medium;
+              font-size: 0.875rem;
+              color: white;
+              background-color: #40189D;
+              text-transform: capitalize;
+              -webkit-border-radius: 4px;
+              border-radius: 4px;
+              overflow: hidden;
+              z-index: 100;
+              visibility: hidden;
+              opacity: 0;
+              -webkit-transform: scale(0);
+              -ms-transform: scale(0);
+              transform: scale(0);
+              -webkit-transition: all 0.9s ease;
+              -o-transition: all 0.9s ease;
+              transition: all 0.9s ease; }
+              .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appStatus .appStatusFlex .editRemove li {
+                padding: 8px 14px;
+                -webkit-transition: all 0.4s ease;
+                -o-transition: all 0.4s ease;
+                transition: all 0.4s ease; }
+              .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appStatus .appStatusFlex .editRemove li:hover {
+                cursor: pointer;
+                background-color: white;
+                color: #40189D; }
+            .dashboard-container .main-jobie #applicationsTable .applicationsTable .applicationTable tbody tr .appStatus .appStatusFlex .active-editRemove {
+              top: 45px;
+              right: 18px;
+              visibility: visible;
+              opacity: 1;
+              -webkit-transform: scale(1);
+              -ms-transform: scale(1);
+              transform: scale(1); }
+    .dashboard-container .main-jobie #companies-content .companies-content #companyCardBox {
+      margin-top: 30px; }
+      .dashboard-container .main-jobie #companies-content .companies-content #companyCardBox .companyCardBox .col-md-3 {
+        -webkit-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease; }
+      .dashboard-container .main-jobie #companies-content .companies-content #companyCardBox .companyCardBox .col-md-6 {
+        -webkit-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease; }
+      .dashboard-container .main-jobie #companies-content .companies-content #companyCardBox .companyCardBox .companyCard {
+        display: inline-block;
+        width: 100%;
+        text-decoration: none;
+        background-color: white;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+        padding: 18px 18px;
+        -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
+        -webkit-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        position: relative;
+        margin-bottom: 30px;
+        padding: 30px 10px; }
+        .dashboard-container .main-jobie #companies-content .companies-content #companyCardBox .companyCardBox .companyCard .companyCard-content {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .dashboard-container .main-jobie #companies-content .companies-content #companyCardBox .companyCardBox .companyCard .companyCard-content .companyCard-img {
+            width: 60px;
+            height: 60px;
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+            overflow: hidden; }
+            .dashboard-container .main-jobie #companies-content .companies-content #companyCardBox .companyCardBox .companyCard .companyCard-content .companyCard-img img {
+              width: 100%;
+              height: 100%;
+              -o-object-fit: cover;
+              object-fit: cover; }
+          .dashboard-container .main-jobie #companies-content .companies-content #companyCardBox .companyCardBox .companyCard .companyCard-content .company-name {
+            font-family: Poppins-SemiBold;
+            font-size: 0.875rem;
+            text-transform: capitalize;
+            color: #414141;
+            margin-top: 14px; }
+          .dashboard-container .main-jobie #companies-content .companies-content #companyCardBox .companyCardBox .companyCard .companyCard-content .company-work {
+            font-family: Poppins-Regular;
+            font-size: 0.75rem;
+            color: rgba(0, 0, 0, 0.7);
+            text-transform: capitalize;
+            margin: 0;
+            margin-top: 4px; }
+        .dashboard-container .main-jobie #companies-content .companies-content #companyCardBox .companyCardBox .companyCard .companyCard-link {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%; }
+      .dashboard-container .main-jobie #companies-content .companies-content #companyCardBox .companyCardBox .companyCard:hover {
+        -webkit-box-shadow: 0px 12px 23px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 12px 23px rgba(0, 0, 0, 0.1); }
+    .dashboard-container .main-jobie #companies-content .companies-content .col-lg-12 {
+      -webkit-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease; }
+    .dashboard-container .main-jobie #companies-content .companies-content .col-lg-9 {
+      -webkit-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease; }
+    .dashboard-container .main-jobie #companies-content .companies-content .col-lg-3 {
+      -webkit-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      transition: all 0.4s ease; }
+    .dashboard-container .main-jobie #companies-content .companies-content #company-details {
+      margin-top: 30px; }
+      .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details {
+        background-color: white;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+        padding: 50px 20px 25px 20px;
+        position: relative; }
+        .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .companiesCloseButton {
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          top: 20px;
+          right: 20px;
+          cursor: pointer; }
+          .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .companiesCloseButton img {
+            width: 100%;
+            height: 100%;
+            -o-object-fit: contain;
+            object-fit: contain;
+            -webkit-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease; }
+        .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details #companiesCloseButton:hover img {
+          -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          transform: rotate(90deg); }
+        .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .companyDetailsHead {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .companyDetailsHead .companyCard-img {
+            width: 80px;
+            height: 80px;
+            -webkit-border-radius: 6px;
+            border-radius: 6px;
+            overflow: hidden; }
+            .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .companyDetailsHead .companyCard-img img {
+              width: 100%;
+              height: 100%;
+              -o-object-fit: cover;
+              object-fit: cover; }
+          .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .companyDetailsHead .company-name {
+            font-family: Poppins-Medium;
+            font-size: 1.125rem;
+            text-transform: capitalize;
+            color: #000000;
+            margin-top: 20px; }
+          .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .companyDetailsHead .company-work {
+            font-family: Poppins-Regular;
+            font-size: 0.813rem;
+            color: rgba(0, 0, 0, 0.7);
+            text-transform: capitalize;
+            margin: 0;
+            margin-top: 3px; }
+          .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .companyDetailsHead .companyFollow {
+            font-family: Poppins-SemiBold;
+            font-size: 0.938rem;
+            color: #40189D;
+            border: 1px solid #40189D;
+            -webkit-border-radius: 48px;
+            border-radius: 48px;
+            width: 100%;
+            padding: 9px 0;
+            margin-top: 20px;
+            -webkit-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+            min-width: 120px; }
+          .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .companyDetailsHead .companyFollow:hover {
+            background: #40189D;
+            color: white;
+            cursor: pointer; }
+        .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .employee-reviews {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
+          margin-top: 30px; }
+          .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .employee-reviews .employees {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center; }
+            .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .employee-reviews .employees .employees-img {
+              width: 32px;
+              height: 32px;
+              background-color: #40189D;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-border-radius: 50%;
+              border-radius: 50%; }
+              .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .employee-reviews .employees .employees-img img {
+                width: 40%;
+                height: 40%;
+                -o-object-fit: contain;
+                object-fit: contain; }
+            .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .employee-reviews .employees .employees-content {
+              padding-left: 7px; }
+              .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .employee-reviews .employees .employees-content .employees-count {
+                font-family: Poppins-SemiBold;
+                font-size: 0.813rem;
+                color: #000; }
+              .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .employee-reviews .employees .employees-content .employees-text {
+                font-family: Poppins-Regular;
+                font-size: 0.688rem;
+                text-transform: capitalize;
+                color: #AEAEAE;
+                margin: 0;
+                margin-top: 2px; }
+          .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .employee-reviews .reviews {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center; }
+            .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .employee-reviews .reviews .reviews-img {
+              width: 32px;
+              height: 32px;
+              background-color: #FFBE17;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+              -ms-flex-align: center;
+              align-items: center;
+              -webkit-border-radius: 50%;
+              border-radius: 50%; }
+              .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .employee-reviews .reviews .reviews-img img {
+                width: 40%;
+                height: 40%;
+                -o-object-fit: contain;
+                object-fit: contain; }
+            .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .employee-reviews .reviews .reviews-content {
+              padding-left: 7px; }
+              .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .employee-reviews .reviews .reviews-content .reviews-count {
+                font-family: Poppins-SemiBold;
+                font-size: 0.813rem;
+                color: #000; }
+              .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .employee-reviews .reviews .reviews-content .reviews-text {
+                font-family: Poppins-Regular;
+                font-size: 0.688rem;
+                text-transform: capitalize;
+                color: #AEAEAE;
+                margin: 0;
+                margin-top: 2px; }
+        .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .location-block {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center;
+          margin-top: 20px;
+          padding-bottom: 20px;
+          border-bottom: 1px solid #EBEBEB; }
+          .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .location-block .location-img {
+            width: 32px;
+            height: 32px;
+            background-color: #ECECEC;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-border-radius: 50%;
+            border-radius: 50%; }
+            .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .location-block .location-img img {
+              width: 40%;
+              height: 40%;
+              -o-object-fit: contain;
+              object-fit: contain; }
+          .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .location-block .location-content {
+            padding-left: 7px; }
+            .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .location-block .location-content .location-count {
+              font-family: Poppins-SemiBold;
+              font-size: 0.813rem;
+              color: #000; }
+            .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .location-block .location-content .location-text {
+              font-family: Poppins-Regular;
+              font-size: 0.688rem;
+              text-transform: capitalize;
+              color: #AEAEAE;
+              margin: 0;
+              margin-top: 2px; }
+        .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .companyDetailsContent {
+          margin-top: 30px; }
+          .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .companyDetailsContent .contentHead {
+            display: block;
+            font-family: Poppins-SemiBold;
+            font-size: 0.875rem;
+            color: #000;
+            text-transform: capitalize; }
+          .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .companyDetailsContent .contentBody {
+            margin: 0;
+            margin-top: 22px;
+            font-family: Poppins-Regular;
+            font-size: 0.75rem;
+            color: #313131; }
+        .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .vacancy-detail {
+          margin-top: 25px; }
+          .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .vacancy-detail .companyVacancy {
+            font-family: Poppins-SemiBold;
+            font-size: 0.938rem;
+            text-transform: capitalize;
+            color: white;
+            background-color: #40189D;
+            border: 1px solid transparent;
+            -webkit-border-radius: 48px;
+            border-radius: 48px;
+            width: 100%;
+            padding: 9px 0;
+            -webkit-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+            min-width: 120px; }
+          .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .vacancy-detail .companyVacancy:hover {
+            border: 1px solid #40189D;
+            background: transparent;
+            color: #40189D;
+            cursor: pointer; }
+          .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .vacancy-detail .companyDetail {
+            font-family: Poppins-SemiBold;
+            font-size: 0.938rem;
+            text-transform: capitalize;
+            color: #888888;
+            background-color: #EDEDED;
+            -webkit-border-radius: 48px;
+            border-radius: 48px;
+            width: 100%;
+            padding: 9px 0;
+            margin-top: 12px;
+            -webkit-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+            min-width: 120px; }
+          .dashboard-container .main-jobie #companies-content .companies-content #company-details .company-details .vacancy-detail .companyDetail:hover {
+            color: #40189D;
+            cursor: pointer;
+            -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5); }
+    .dashboard-container .main-jobie #profileContentBlock {
+      margin-top: 40px;
+      padding-bottom: 42px; }
+      .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock {
+        background-color: white;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+        padding: 18px 23px 40px 23px; }
+        .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormHead {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormHead h4 {
+            width: 15%;
+            font-family: Poppins-SemiBold;
+            font-size: 1rem;
+            color: #000;
+            text-transform: uppercase;
+            margin: 0; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormHead span {
+            width: 85%;
+            height: 1px;
+            background-color: #E7E7E7; }
+        .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup {
+          margin-top: 24px;
+          width: calc(100%/3);
+          padding: 0 15px; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup label {
+            display: block;
+            font-family: Poppins-Medium;
+            font-size: 0.813rem;
+            color: #515151;
+            text-transform: capitalize; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .generalInput {
+            position: relative; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .generalInput input {
+              display: block;
+              border-bottom: 1px solid #C2C2C2 !important;
+              padding: 10px 0;
+              font-family: Poppins-Medium;
+              font-size: 0.875rem;
+              color: #000;
+              width: 100%; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .generalInput input::-webkit-input-placeholder {
+              color: #BBBBBB; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .generalInput input::-ms-input-placeholder {
+              color: #BBBBBB; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .generalInput input::placeholder {
+              color: #BBBBBB; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .generalInput input[type='password'] {
+              padding-right: 60px; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .generalInput input[type='tel'] {
+              padding-left: 50px; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .generalInput input[type='email'] {
+              padding-left: 50px; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .generalInput .showHide {
+              position: absolute;
+              top: 50%;
+              right: 10px;
+              -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+              font-family: Poppins-SemiBold;
+              font-size: 0.875rem;
+              color: #40189D;
+              text-transform: uppercase;
+              -webkit-transition: all 0.4s ease;
+              -o-transition: all 0.4s ease;
+              transition: all 0.4s ease; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .generalInput .showHide:hover {
+              cursor: pointer;
+              color: #FF9548; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .generalInput svg {
+              position: absolute;
+              top: 50%;
+              left: 15px;
+              -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+              width: 16px;
+              height: 16px; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .city-cover {
+            position: relative; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .city-cover .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+              width: 100%; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .city-cover img {
+              position: absolute;
+              top: 50%;
+              right: 8px;
+              -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+              pointer-events: none; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .city-cover .dropdown-toggle {
+              background: none;
+              border: none;
+              font-family: Poppins-Medium;
+              font-size: 1rem;
+              color: #000;
+              padding: 10px 0;
+              border-bottom: 1px solid #C2C2C2 !important;
+              -webkit-border-radius: 0;
+              border-radius: 0; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .city-cover .dropdown-toggle:focus {
+              -webkit-box-shadow: none;
+              box-shadow: none;
+              outline: 0 !important; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .city-cover .dropdown-toggle::after {
+              display: none; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .city-cover .dropdown-menu {
+              border: none;
+              -webkit-border-radius: 0 0 5px 5px;
+              border-radius: 0 0 5px 5px;
+              padding-bottom: 0; }
+              .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .city-cover .dropdown-menu li {
+                font-family: Poppins-Regular;
+                font-size: 0.938rem; }
+                .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .city-cover .dropdown-menu li a span {
+                  color: #5C5C5C !important; }
+                .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .city-cover .dropdown-menu li .dropdown-item.active {
+                  background-color: #40189D; }
+                  .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .city-cover .dropdown-menu li .dropdown-item.active span {
+                    color: white !important; }
+                .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .city-cover .dropdown-menu li .dropdown-item:active {
+                  background-color: #40189D; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .country-cover {
+            position: relative; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .country-cover .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+              width: 100%; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .country-cover img {
+              position: absolute;
+              top: 50%;
+              right: 8px;
+              -webkit-transform: translateY(-50%);
+              -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+              pointer-events: none; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .country-cover .dropdown-toggle {
+              background: none;
+              border: none;
+              font-family: Poppins-Medium;
+              font-size: 1rem;
+              color: #000;
+              padding: 10px 0;
+              border-bottom: 1px solid #C2C2C2 !important;
+              -webkit-border-radius: 0;
+              border-radius: 0; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .country-cover .dropdown-toggle:focus {
+              -webkit-box-shadow: none;
+              box-shadow: none;
+              outline: 0 !important; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .country-cover .dropdown-toggle::after {
+              display: none; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .country-cover .dropdown-menu {
+              border: none;
+              -webkit-border-radius: 0 0 5px 5px;
+              border-radius: 0 0 5px 5px;
+              padding-bottom: 0; }
+              .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .country-cover .dropdown-menu li {
+                font-family: Poppins-Regular;
+                font-size: 0.938rem; }
+                .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .country-cover .dropdown-menu li a span {
+                  color: #5C5C5C !important; }
+                .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .country-cover .dropdown-menu li .dropdown-item.active {
+                  background-color: #40189D; }
+                  .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .country-cover .dropdown-menu li .dropdown-item.active span {
+                    color: white !important; }
+                .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .profilFormGroup .country-cover .dropdown-menu li .dropdown-item:active {
+                  background-color: #40189D; }
+        .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .cancelSave {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: end;
+          -webkit-justify-content: flex-end;
+          -ms-flex-pack: end;
+          justify-content: flex-end;
+          width: 100%;
+          padding: 0 15px;
+          margin-top: 30px; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .cancelSave .cancelBut {
+            font-family: Poppins-SemiBold;
+            font-size: 0.875rem;
+            color: #9F9F9F;
+            text-transform: capitalize;
+            padding: 12px 26px;
+            -webkit-border-radius: 54px;
+            border-radius: 54px;
+            background-color: #F4F4F4;
+            margin-right: 20px;
+            cursor: pointer;
+            -webkit-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .cancelSave .cancelBut:hover {
+            color: #40189D;
+            -webkit-box-shadow: 0 0 2px #40189D;
+            box-shadow: 0 0 2px #40189D; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .cancelSave .formSubBut {
+            font-family: Poppins-SemiBold;
+            font-size: 0.875rem;
+            color: #FFFDFD;
+            text-transform: capitalize;
+            padding: 12px 26px;
+            -webkit-border-radius: 50px;
+            border-radius: 50px;
+            background-color: #40189D;
+            cursor: pointer;
+            -webkit-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .cancelSave .formSubBut:hover {
+            background-color: #F4F4F4;
+            color: #40189D;
+            -webkit-box-shadow: 0 0 2px #40189D;
+            box-shadow: 0 0 2px #40189D; }
+        .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock .editProfileHead .editHeadName {
+          font-family: Poppins-SemiBold;
+          font-size: 1.25rem;
+          color: #000;
+          text-transform: capitalize;
+          margin: 0; }
+        .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock #generalsFormBlock {
+          margin-top: 30px; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock #generalsFormBlock #generalsForm {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin: 0 -15px; }
+        .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock #contactFormBlock {
+          margin-top: 50px; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock #contactFormBlock #contactForm {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin: 0 -15px; }
+        .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock #aboutFormBlock {
+          margin-top: 50px; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock #aboutFormBlock .profilTextareaBlock {
+            margin-top: 22px; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock #aboutFormBlock .profilTextareaBlock .textareaHead {
+              display: block;
+              font-family: Poppins-Medium;
+              font-size: 0.938rem;
+              color: #515151;
+              text-transform: capitalize; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock #aboutFormBlock .profilTextareaBlock textarea {
+              margin-top: 12px;
+              width: 100%;
+              border: none;
+              outline: 0;
+              border: 1px solid #C2C2C2;
+              -webkit-border-radius: 20px;
+              border-radius: 20px;
+              background: #FBFBFB;
+              text-align: justify;
+              padding: 20px 20px 24px 20px;
+              overflow: hidden; }
+        .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock #skillsFormBlock {
+          margin-top: 45px; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock #skillsFormBlock .profilFormHead h4 {
+            width: 11%; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock #skillsFormBlock .profilFormHead span {
+            width: 64%; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock #skillsFormBlock .profilFormHead button {
+            width: 20%;
+            font-family: Poppins-SemiBold;
+            font-size: 1rem;
+            color: #40189D;
+            text-transform: capitalize;
+            -webkit-transition: all 0.4s ease;
+            -o-transition: all 0.4s ease;
+            transition: all 0.4s ease; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock #skillsFormBlock .profilFormHead button:hover {
+            cursor: pointer;
+            color: #FF8E26; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock #skillsFormBlock .skillsform {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            margin: 0 -15px; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock #skillsFormBlock .skillsform .skillsFormGroup {
+              width: calc(100% / 2);
+              padding: 0 15px;
+              margin-top: 24px;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex; }
+              .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock #skillsFormBlock .skillsform .skillsFormGroup .rangeLeft {
+                padding-right: 20px; }
+                .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock #skillsFormBlock .skillsform .skillsFormGroup .rangeLeft .rangeValue {
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -ms-flexbox;
+                  display: flex;
+                  -webkit-box-pack: center;
+                  -webkit-justify-content: center;
+                  -ms-flex-pack: center;
+                  justify-content: center;
+                  -webkit-box-align: center;
+                  -webkit-align-items: center;
+                  -ms-flex-align: center;
+                  align-items: center;
+                  width: 50px;
+                  height: 50px;
+                  border: 1px solid #F3EFF9;
+                  -webkit-border-radius: 50%;
+                  border-radius: 50%;
+                  font-family: Poppins-SemiBold;
+                  font-size: 0.875rem;
+                  color: #40189D; }
+              .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock #skillsFormBlock .skillsform .skillsFormGroup .inputRange {
+                width: 100%; }
+                .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock #skillsFormBlock .skillsform .skillsFormGroup .inputRange label {
+                  display: block;
+                  font-family: Poppins-Medium;
+                  font-size: 0.875rem;
+                  color: #515151; }
+                .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock #skillsFormBlock .skillsform .skillsFormGroup .inputRange .rangeInput {
+                  -webkit-appearance: none;
+                  width: 100%;
+                  height: 10px;
+                  background: -webkit-gradient(linear, left top, right top, color-stop(78%, #EEE), color-stop(22%, #EEE));
+                  background: -webkit-linear-gradient(left, #EEE 78%, #EEE 22%);
+                  background: -o-linear-gradient(left, #EEE 78%, #EEE 22%);
+                  background: linear-gradient(90deg, #EEE 78%, #EEE 22%);
+                  -webkit-border-radius: 20px;
+                  border-radius: 20px;
+                  outline: none;
+                  opacity: 0.9;
+                  -webkit-transition: all 0.4s ease;
+                  -o-transition: all 0.4s ease;
+                  transition: all 0.4s ease; }
+                .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock #skillsFormBlock .skillsform .skillsFormGroup .inputRange .rangeInput:hover {
+                  opacity: 1; }
+                .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileBlock #skillsFormBlock .skillsform .skillsFormGroup .inputRange .rangeInput::-webkit-slider-thumb {
+                  -webkit-appearance: none;
+                  width: 22px;
+                  height: 22px;
+                  background: #40189D;
+                  -webkit-border-radius: 5px;
+                  border-radius: 5px;
+                  cursor: pointer; }
+      .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileSummaryRight {
+        background-color: white;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+        padding: 28px 15px 35px 15px; }
+        .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileSummaryRight .editProfileSummaryHead {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+          flex-direction: column;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileSummaryRight .editProfileSummaryHead .editProfileSummaryImg {
+            width: 110px;
+            height: 110px;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            position: relative;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileSummaryRight .editProfileSummaryHead .editProfileSummaryImg .editProfileEllipsImg {
+              width: 100%;
+              height: 100%;
+              -o-object-fit: cover;
+              object-fit: cover;
+              position: absolute;
+              top: 0;
+              left: 0; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileSummaryRight .editProfileSummaryHead .editProfileSummaryImg .editProfileSummaryImg {
+              width: 80%;
+              height: 80%;
+              -o-object-fit: cover;
+              object-fit: cover; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileSummaryRight .editProfileSummaryHead .editProfileBodyName {
+            margin: 0;
+            margin-top: 15px;
+            font-family: Poppins-Medium;
+            font-size: 1.125rem;
+            color: #000;
+            text-transform: capitalize; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileSummaryRight .editProfileSummaryHead .editProfileBodyWork {
+            display: inline-block;
+            font-family: Poppins-Regular;
+            font-size: 0.875rem;
+            color: rgba(0, 0, 0, 0.7);
+            margin-top: 5px; }
+        .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileSummaryRight .editFollow {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+          -webkit-justify-content: center;
+          -ms-flex-pack: center;
+          justify-content: center;
+          margin-top: 25px;
+          padding-bottom: 28px;
+          border-bottom: 1px solid #EBEBEB; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileSummaryRight .editFollow .editFollowDesing {
+            border: 1px solid #F0F0F0;
+            -webkit-border-radius: 19px;
+            border-radius: 19px;
+            padding: 8px 14px;
+            margin: 0 7px; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileSummaryRight .editFollow .editFollowDesing span {
+              display: block;
+              text-align: center;
+              font-family: Poppins-SemiBold;
+              font-size: 1.125rem;
+              color: #000000; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileSummaryRight .editFollow .editFollowDesing p {
+              margin: 0;
+              text-align: center;
+              font-family: Poppins-Regular;
+              font-size: 0.875rem;
+              color: #000000; }
+        .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileSummaryRight .editContact {
+          margin-top: 30px; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileSummaryRight .editContact .editContactDesing {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileSummaryRight .editContact .editContactDesing .editContactDesingSvg {
+              min-width: 42px;
+              height: 42px;
+              -webkit-border-radius: 50%;
+              border-radius: 50%;
+              border: 1px solid rgba(64, 24, 157, 0.16);
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+              -ms-flex-align: center;
+              align-items: center;
+              margin-right: 12px; }
+              .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileSummaryRight .editContact .editContactDesing .editContactDesingSvg svg {
+                width: 21px;
+                height: 21px;
+                -o-object-fit: contain;
+                object-fit: contain; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileSummaryRight .editContact .editContactDesing .editContactDesingContent {
+              display: inline-block;
+              text-decoration: none;
+              font-family: Poppins-Regular;
+              font-size: 0.875rem;
+              color: #000; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileSummaryRight .editContact .editContactEmail {
+            margin-top: 18px; }
+        .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileSummaryRight .editProfileSummarySkills {
+          margin-top: 35px;
+          text-align: center; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileSummaryRight .editProfileSummarySkills .mh-professional-skills .mh-professional-progress li {
+            display: inline-block; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileSummaryRight .editProfileSummarySkills .mh-professional-skills .mh-professional-progress li .mh-progress {
+              margin: 0 7px; }
+              .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileSummaryRight .editProfileSummarySkills .mh-professional-skills .mh-professional-progress li .mh-progress svg {
+                width: 50px;
+                height: 50px;
+                -webkit-border-radius: 50%;
+                border-radius: 50%;
+                overflow: hidden; }
+                .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileSummaryRight .editProfileSummarySkills .mh-professional-skills .mh-professional-progress li .mh-progress svg path {
+                  stroke-width: 25; }
+                .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileSummaryRight .editProfileSummarySkills .mh-professional-skills .mh-professional-progress li .mh-progress svg path:nth-child(1) {
+                  stroke: #F0F0F0; }
+              .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileSummaryRight .editProfileSummarySkills .mh-professional-skills .mh-professional-progress li .mh-progress .progressbar-text {
+                font-family: Poppins-SemiBold;
+                font-size: 0.813rem;
+                color: #232323 !important; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileSummaryRight .editProfileSummarySkills .mh-professional-skills .mh-professional-progress li .pr-skill-name {
+              margin-top: 10px;
+              font-family: Poppins-Regular;
+              font-size: 0.813rem;
+              color: rgba(0, 0, 0, 0.74);
+              text-transform: capitalize; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileSummaryRight .editProfileSummarySkills .mh-professional-skills .mh-professional-progress li:nth-child(1) .mh-progress svg path:nth-child(2) {
+            stroke: #FF8E26; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileSummaryRight .editProfileSummarySkills .mh-professional-skills .mh-professional-progress li:nth-child(2) .mh-progress svg path:nth-child(2) {
+            stroke: #3EA834; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .editProfileSummaryRight .editProfileSummarySkills .mh-professional-skills .mh-professional-progress li:nth-child(3) .mh-progress svg path:nth-child(2) {
+            stroke: #22AC93; }
+      .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .portofolios {
+        margin-top: 25px;
+        background-color: white;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+        padding: 25px 17px; }
+        .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .portofolios .portofoliosHead {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+          justify-content: space-between;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+          -ms-flex-align: center;
+          align-items: center; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .portofolios .portofoliosHead h5 {
+            font-family: Poppins-Medium;
+            font-size: 1.125rem;
+            color: #000;
+            text-transform: capitalize;
+            margin: 0; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .portofolios .portofoliosHead .portofoliosHeadEditBut img {
+            width: 22px;
+            height: 22px;
+            -o-object-fit: contain;
+            object-fit: contain; }
+        .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .portofolios .portofolioList li {
+          margin-top: 18px;
+          -webkit-border-radius: 18px;
+          border-radius: 18px;
+          background-color: #FBFBFB;
+          -webkit-transition: all 0.4s ease;
+          -o-transition: all 0.4s ease;
+          transition: all 0.4s ease; }
+          .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .portofolios .portofolioList li a {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            text-decoration: none; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .portofolios .portofolioList li a .listIcon {
+              width: 42px;
+              height: 42px;
+              -webkit-border-radius: 18px;
+              border-radius: 18px;
+              display: -webkit-box;
+              display: -webkit-flex;
+              display: -ms-flexbox;
+              display: flex;
+              -webkit-box-pack: center;
+              -webkit-justify-content: center;
+              -ms-flex-pack: center;
+              justify-content: center;
+              -webkit-box-align: center;
+              -webkit-align-items: center;
+              -ms-flex-align: center;
+              align-items: center;
+              margin-right: 14px; }
+              .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .portofolios .portofolioList li a .listIcon img {
+                width: 21px;
+                height: 21px;
+                -o-object-fit: contain;
+                object-fit: contain; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .portofolios .portofolioList li a .listIconFacebook {
+              background: #3D6AD6; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .portofolios .portofolioList li a .listIconDribbble {
+              background: #EA518D; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .portofolios .portofolioList li a .listIconLinkedin {
+              background: #0073B1; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .portofolios .portofolioList li a .listIconYoutube {
+              background: #FF0000; }
+            .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .portofolios .portofolioList li a span {
+              font-family: Poppins-Medium;
+              font-size: 0.875rem;
+              color: #3D3D3D; }
+        .dashboard-container .main-jobie #profileContentBlock .profileContentBlock .portofolios .portofolioList li:hover {
+          -webkit-box-shadow: 0 0 2px #40189D;
+          box-shadow: 0 0 2px #40189D; }
+  .dashboard-container .main-jobie2 {
+    width: calc(100% - 91px);
+    overflow-x: hidden; }
