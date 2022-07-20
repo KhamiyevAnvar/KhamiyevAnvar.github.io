@@ -152,6 +152,16 @@ html ::-webkit-scrollbar-thumb:hover {
   border-radius: 5px;
   box-shadow: 0 0 3px #019194;
 }
+#portfolio .preparationYear {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 500;
+  font-size: 2.75rem;
+  color: #02dde0;
+}
 #portfolio .port-item {
   transition: 0.5s;
   margin: 25px 0;
