@@ -363,6 +363,12 @@ html ::-webkit-scrollbar-thumb:hover {
 #skills .skills-right .skill-item .skill-item-body .skill-tech-5 {
   width: 80%;
 }
+#skills .skills-right .skill-item .skill-item-body .skill-tech-6 {
+  width: 50%;
+}
+#skills .skills-right .skill-item .skill-item-body .skill-tech-7 {
+  width: 80%;
+}
 #skills .skills-right .skill-item:hover {
   transform: scale(1.05);
   opacity: 1;
