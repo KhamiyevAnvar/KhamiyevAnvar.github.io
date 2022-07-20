@@ -261,64 +261,16 @@ html ::-webkit-scrollbar-thumb:hover {
     transform: rotate(360deg);
   }
 }
-@media screen and (max-width: 992px) {
-  #Navbar .navdiv {
-    position: relative;
-  }
-  #Navbar .navdiv ul {
-    margin-top: 15px;
-    position: absolute;
-    left: -1000px;
-    width: 100%;
-    display: block;
-    list-style: none;
-    text-align: center;
-    background-color: #019194;
-    padding: 15px;
-    opacity: 1;
-    z-index: 9;
-    border-radius: 0 0 15px 15px;
-  }
-  #Navbar .navdiv ul li {
-    display: block;
-    padding: 10px 15px;
-  }
-  #Navbar .navdiv .menu-responsive {
-    left: 0;
-  }
-  #Navbar .navdiv .is-active span:nth-child(2) {
-    opacity: 0;
-  }
-  #Navbar .navdiv .is-active span:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
-  }
-  #Navbar .navdiv .is-active span:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
-  }
-  #Navbar .navdiv #navbut {
-    display: inline-block;
-  }
-}
 @media all and (max-width: 767px) {
-  #Navbar .nav-body {
-    padding: 10vh 2vw;
-  }
-  #Navbar .nav-body h1 {
-    font-size: 2.1rem;
-  }
-  #Navbar .nav-body p {
-    font-size: 1rem;
-  }
-  #Navbar .nav-body a {
-    font-size: 0.8rem;
-  }
-  #not-found .not-found-element a {
-    font-size: 1.274rem;
-  }
   .loader .first {
     width: 90px;
     height: 90px;
     border: 8px solid #1cfbff;
     border-top: 8px solid #02dde0;
+  }
+}
+@media all and (max-width: 767px) {
+  #not-found .not-found-element a {
+    font-size: 1.274rem;
   }
 }

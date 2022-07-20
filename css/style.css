@@ -721,6 +721,14 @@ html ::-webkit-scrollbar-thumb:hover {
   }
 }
 @media all and (max-width: 767px) {
+  .loader .first {
+    width: 90px;
+    height: 90px;
+    border: 8px solid #1cfbff;
+    border-top: 8px solid #02dde0;
+  }
+}
+@media all and (max-width: 767px) {
   #about {
     padding: 4vh 10px;
   }
@@ -802,11 +810,5 @@ html ::-webkit-scrollbar-thumb:hover {
   }
   #contact .contact-right {
     margin-top: 6vh;
-  }
-  .loader .first {
-    width: 90px;
-    height: 90px;
-    border: 8px solid #1cfbff;
-    border-top: 8px solid #02dde0;
   }
 }

@@ -110,78 +110,12 @@ html{
 
 @import "loading.less";
 
-@media screen and (max-width: 1024px) and (min-width: 768px) {}
-
-@media screen and (max-width: 992px)  {
-	#Navbar{
-		.navdiv{
-			position:relative;
-			ul{
-				margin-top: 15px;
-				position:absolute;
-				left: -1000px;
-				width: 100%;
-				display: block;
-				list-style: none;
-				text-align: center;
-				background-color:@bg-col-nav;
-				padding:15px;
-				opacity:1;
-				z-index: 9;
-				border-radius:0 0 15px 15px;
-				li{
-					display:block;
-					padding: 10px 15px;
-				}
-			}
-			.menu-responsive{
-				left: 0;
-			}
-			.is-active{
-				span:nth-child(2){
-				opacity: 0;
-				}
-				span:nth-child(1){
-					transform: translateY(9px) rotate(45deg);
-				}
-				span:nth-child(3){
-					transform: translateY(-9px) rotate(-45deg);
-				}
-			}
-			#navbut{
-				display: inline-block;
-			}
-		}
-	}
-}
-
 @media all and (max-width: 767px) {
-	#Navbar{
-		.navdiv{
-
-		}
-		.nav-body{
-			padding:10vh 2vw;
-			h1{font-size: 2.1rem;}
-			p{font-size: 1rem;}
-			a{font-size: 0.8rem;}
-		}
-	}
-	
 	#not-found{
 		.not-found-element{
 			a{
 				font-size: 1.274rem;
 			}
 		}
-	}
-
-	.loader{
-		.first{
-			width: 90px;
-			height: 90px;
-			border:8px solid @col-list-hover;
-			border-top:8px solid @col-list;
-		} 	
 	}
 }
