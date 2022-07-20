@@ -15,6 +15,7 @@
 @fs-24:1.8rem;
 @fs-25:1.563rem;
 @fs-26:clamp(1rem,5vw,1.625rem);
+@fs-28: 1.75rem;
 @fs-30:1.875rem;
 @fs-33:2.063rem;
 @fs-36:2.25rem;
@@ -302,7 +303,7 @@ html{
 					position:absolute;
 					display: inline-block;
 					width: 95%;
-					height: 5px;
+					height: 100%;
 					border-radius:5px;
 					background-color:@col-list;	
 				}
@@ -348,67 +349,81 @@ html{
 
 @media screen and (max-width: 1024px) and (min-width: 768px) {}
 
-@media screen and (max-width: 992px)  {
-	#Navbar{
-		.navdiv{
-			position:relative;
-			ul{
-				margin-top: 15px;
-				position:absolute;
-				left: -1000px;
-				width: 100%;
-				display: block;
-				list-style: none;
-				text-align: center;
-				background-color:@bg-col-nav;
-				padding:15px;
-				opacity: 1;
-				z-index: 9;
-				li{
-					display:block;
-					padding: 10px 15px;
-				}
-			}
-			.menu-responsive{
-				left: 0;
-				
-			}
-			.is-active{
-				span:nth-child(2){
-				opacity: 0;
-				}
-				span:nth-child(1){
-					transform: translateY(9px) rotate(45deg);
-				}
-				span:nth-child(3){
-					transform: translateY(-9px) rotate(-45deg);
-				}
-			}
-			#navbut{
-				display: inline-block;
-			}
-		}	
-		.nav-body{
-			padding:15vh 0;
-		}
-	}
-}
+@media screen and (max-width: 992px)  {}
 
 @media all and (max-width: 767px) {
-	#Navbar{
-		.navdiv{
-
-		}
-		.nav-body{
-			padding:10vh 2vw;
-			h1{font-size: 2.1rem;}
-			p{font-size: 1rem;}
-			a{font-size: 0.8rem;}
-		}
-	}
+	
 	#about{
+		padding: 4vh 10px;
 		.row{
 			padding: 0;
+		}
+		.about-head{
+			padding:4vh 0;
+			h2{
+				font-size: @fs-33;
+			}
+			.who{
+				span{
+					margin:5px;
+				}
+				span:nth-child(2){
+					font-size: @fs-18;
+				}
+			}
+			.about-content{
+				margin-top:3vh;
+				font-size: @fs-16;
+				p{
+					text-indent: 40px;
+				}
+			}
+			a{	
+				margin-top: 12px;
+				padding:8px 20px;
+				border-radius:20px;
+				font-size: @fs-15;
+			}	
+		}
+	}
+
+	#skills{
+		padding:6vh 0;
+		padding-bottom: 4vh;
+		.skills-name{
+			h1{
+				font-size: @fs-33;
+			}
+			.what{
+				span:nth-child(2){
+					font-size: @fs-18;
+				}
+			}
+		}
+		.skills-left{
+			h1{
+				font-size: @fs-28;
+			}
+			.readmore{
+				padding:2vh 0;
+				font-size: @fs-16;
+			}
+			a{
+				margin-top: 8px;
+				font-size: @fs-15;
+				padding:5px 16px;
+				border-radius:20px;
+			}
+		}
+		.skills-right{
+			margin: 1vh 0;
+			padding: 1vh 2vw;
+			.skill-item{
+				margin-bottom: 10px;
+				.skill-item-body{
+					height: 4px;
+				}
+			}
 		}
 	}
 

@@ -13,6 +13,9 @@
 	.navdiv{
 		position:relative;
 		padding:36px 0;
+		display: flex;
+	    justify-content: space-between;
+	    align-items: center;
 		.logo{
 			display: inline-block;
 			margin-left: 8px;
@@ -46,6 +49,7 @@
 			transition: 0.3s ease-in-out;
 			float: right;
 			border-bottom:1px solid transparent;
+			margin-bottom: 0 !important;
 			li{
 				display: inline-block;
 				margin-right:12px;
@@ -62,6 +66,7 @@
 					color: @col-list;
 					transition: 0.3s;
 				    padding: 3px 12px;
+				    border-bottom:1px solid transparent;
 				}
 				a:hover{
 					color: @col-list-hover;
@@ -111,6 +116,85 @@
 			color:@col-list ;
 			background-color:white;
 			
+		}
+	}
+}
+
+
+@media screen and (max-width: 992px)  {
+	#Navbar{
+		.navdiv{
+			position:relative;
+			ul{
+				margin-top: 15px;
+				position:absolute;
+				top: -1000px;
+				width: 100%;
+				display: block;
+				list-style: none;
+				text-align: center;
+				background-color:@bg-col-nav;
+				padding:15px;
+				opacity:1;
+				z-index: 9;
+				border-radius:0 0 15px 15px;
+				li{
+					display:block;
+					padding: 10px 15px;
+				}
+			}
+			.menu-responsive{
+				top: 94.9px
+			}
+			.is-active{
+				span:nth-child(2){
+				opacity: 0;
+				}
+				span:nth-child(1){
+					transform: translateY(9px) rotate(45deg);
+				}
+				span:nth-child(3){
+					transform: translateY(-9px) rotate(-45deg);
+				}
+			}
+			#navbut{
+				display: inline-block;
+			}
+		}
+	}
+}
+@media all and (max-width: 767px) {
+	#Navbar{
+		.navdiv{
+			padding:16px 0;
+			display: flex;
+		    justify-content: space-between;
+		    align-items: center;
+			.logo{
+				width: 50px;
+				img{
+					width: 100%;
+					object-fit:contain;
+				}
+			}
+			
+			.menu-responsive{
+				top: 57.9px;
+			}
+			#navbut{
+				padding:4px 0;
+				span{
+					margin: 6px 0;
+					width: 28px;
+					height: 3px;
+				}
+			}
+		}	
+		.nav-body{
+			padding:10vh 2vw;
+			h1{font-size: 2.1rem;}
+			p{font-size: 1rem;}
+			a{font-size: 0.8rem;}
 		}
 	}
 }

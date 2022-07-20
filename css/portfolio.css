@@ -33,6 +33,9 @@ html ::-webkit-scrollbar-thumb:hover {
 #Navbar .navdiv {
   position: relative;
   padding: 36px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 #Navbar .navdiv .logo {
   display: inline-block;
@@ -64,6 +67,7 @@ html ::-webkit-scrollbar-thumb:hover {
   transition: 0.3s ease-in-out;
   float: right;
   border-bottom: 1px solid transparent;
+  margin-bottom: 0 !important;
 }
 #Navbar .navdiv ul li {
   display: inline-block;
@@ -81,6 +85,7 @@ html ::-webkit-scrollbar-thumb:hover {
   color: #02dde0;
   transition: 0.3s;
   padding: 3px 12px;
+  border-bottom: 1px solid transparent;
 }
 #Navbar .navdiv ul li a:hover {
   color: #1cfbff;
@@ -124,6 +129,82 @@ html ::-webkit-scrollbar-thumb:hover {
   color: #02dde0;
   background-color: white;
 }
+@media screen and (max-width: 992px) {
+  #Navbar .navdiv {
+    position: relative;
+  }
+  #Navbar .navdiv ul {
+    margin-top: 15px;
+    position: absolute;
+    top: -1000px;
+    width: 100%;
+    display: block;
+    list-style: none;
+    text-align: center;
+    background-color: #019194;
+    padding: 15px;
+    opacity: 1;
+    z-index: 9;
+    border-radius: 0 0 15px 15px;
+  }
+  #Navbar .navdiv ul li {
+    display: block;
+    padding: 10px 15px;
+  }
+  #Navbar .navdiv .menu-responsive {
+    top: 94.9px;
+  }
+  #Navbar .navdiv .is-active span:nth-child(2) {
+    opacity: 0;
+  }
+  #Navbar .navdiv .is-active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  #Navbar .navdiv .is-active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+  #Navbar .navdiv #navbut {
+    display: inline-block;
+  }
+}
+@media all and (max-width: 767px) {
+  #Navbar .navdiv {
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #Navbar .navdiv .logo {
+    width: 50px;
+  }
+  #Navbar .navdiv .logo img {
+    width: 100%;
+    object-fit: contain;
+  }
+  #Navbar .navdiv .menu-responsive {
+    top: 57.9px;
+  }
+  #Navbar .navdiv #navbut {
+    padding: 4px 0;
+  }
+  #Navbar .navdiv #navbut span {
+    margin: 6px 0;
+    width: 28px;
+    height: 3px;
+  }
+  #Navbar .nav-body {
+    padding: 10vh 2vw;
+  }
+  #Navbar .nav-body h1 {
+    font-size: 2.1rem;
+  }
+  #Navbar .nav-body p {
+    font-size: 1rem;
+  }
+  #Navbar .nav-body a {
+    font-size: 0.8rem;
+  }
+}
 #portfolio {
   padding: 4vh 2vw;
 }
@@ -164,7 +245,7 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 #portfolio .port-item {
   transition: 0.5s;
-  margin: 25px 0;
+  margin: 15px 0;
   position: relative;
   width: 100%;
   height: 230px;
@@ -513,8 +594,8 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 .loader .first {
   display: flex;
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   background-color: transparent;
   animation: loading 0.8s infinite linear;
   border-radius: 50%;
@@ -526,56 +607,12 @@ html ::-webkit-scrollbar-thumb:hover {
     transform: rotate(360deg);
   }
 }
-@media screen and (max-width: 992px) {
-  #Navbar .navdiv {
-    position: relative;
-  }
-  #Navbar .navdiv ul {
-    margin-top: 15px;
-    position: absolute;
-    left: -1000px;
-    width: 100%;
-    display: block;
-    list-style: none;
-    text-align: center;
-    background-color: #019194;
-    padding: 15px;
-    opacity: 1;
-    z-index: 9;
-    border-radius: 0 0 15px 15px;
-  }
-  #Navbar .navdiv ul li {
-    display: block;
-    padding: 10px 15px;
-  }
-  #Navbar .navdiv .menu-responsive {
-    left: 0;
-  }
-  #Navbar .navdiv .is-active span:nth-child(2) {
-    opacity: 0;
-  }
-  #Navbar .navdiv .is-active span:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
-  }
-  #Navbar .navdiv .is-active span:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
-  }
-  #Navbar .navdiv #navbut {
-    display: inline-block;
-  }
-}
 @media all and (max-width: 767px) {
-  #Navbar .nav-body {
-    padding: 10vh 2vw;
+  #portfolio .portfolio-head h1 {
+    text-align: center;
   }
-  #Navbar .nav-body h1 {
-    font-size: 2.1rem;
-  }
-  #Navbar .nav-body p {
-    font-size: 1rem;
-  }
-  #Navbar .nav-body a {
-    font-size: 0.8rem;
+  #portfolio .portfolio-head span {
+    height: 3px;
   }
   #portfolio .preparationYear {
     margin-top: 20px;
@@ -583,7 +620,7 @@ html ::-webkit-scrollbar-thumb:hover {
     font-size: 2.063rem;
   }
   #portfolio .port-item {
-    margin: 10px 0;
+    margin: 5px 0;
     height: 190px;
   }
   #portfolio .port-item a {

@@ -33,6 +33,9 @@ html ::-webkit-scrollbar-thumb:hover {
 #Navbar .navdiv {
   position: relative;
   padding: 36px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 #Navbar .navdiv .logo {
   display: inline-block;
@@ -64,6 +67,7 @@ html ::-webkit-scrollbar-thumb:hover {
   transition: 0.3s ease-in-out;
   float: right;
   border-bottom: 1px solid transparent;
+  margin-bottom: 0 !important;
 }
 #Navbar .navdiv ul li {
   display: inline-block;
@@ -81,6 +85,7 @@ html ::-webkit-scrollbar-thumb:hover {
   color: #02dde0;
   transition: 0.3s;
   padding: 3px 12px;
+  border-bottom: 1px solid transparent;
 }
 #Navbar .navdiv ul li a:hover {
   color: #1cfbff;
@@ -123,6 +128,82 @@ html ::-webkit-scrollbar-thumb:hover {
 #Navbar .nav-body a:hover {
   color: #02dde0;
   background-color: white;
+}
+@media screen and (max-width: 992px) {
+  #Navbar .navdiv {
+    position: relative;
+  }
+  #Navbar .navdiv ul {
+    margin-top: 15px;
+    position: absolute;
+    top: -1000px;
+    width: 100%;
+    display: block;
+    list-style: none;
+    text-align: center;
+    background-color: #019194;
+    padding: 15px;
+    opacity: 1;
+    z-index: 9;
+    border-radius: 0 0 15px 15px;
+  }
+  #Navbar .navdiv ul li {
+    display: block;
+    padding: 10px 15px;
+  }
+  #Navbar .navdiv .menu-responsive {
+    top: 94.9px;
+  }
+  #Navbar .navdiv .is-active span:nth-child(2) {
+    opacity: 0;
+  }
+  #Navbar .navdiv .is-active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  #Navbar .navdiv .is-active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+  #Navbar .navdiv #navbut {
+    display: inline-block;
+  }
+}
+@media all and (max-width: 767px) {
+  #Navbar .navdiv {
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #Navbar .navdiv .logo {
+    width: 50px;
+  }
+  #Navbar .navdiv .logo img {
+    width: 100%;
+    object-fit: contain;
+  }
+  #Navbar .navdiv .menu-responsive {
+    top: 57.9px;
+  }
+  #Navbar .navdiv #navbut {
+    padding: 4px 0;
+  }
+  #Navbar .navdiv #navbut span {
+    margin: 6px 0;
+    width: 28px;
+    height: 3px;
+  }
+  #Navbar .nav-body {
+    padding: 10vh 2vw;
+  }
+  #Navbar .nav-body h1 {
+    font-size: 2.1rem;
+  }
+  #Navbar .nav-body p {
+    font-size: 1rem;
+  }
+  #Navbar .nav-body a {
+    font-size: 0.8rem;
+  }
 }
 #about {
   padding: 10vh 0;
@@ -347,7 +428,7 @@ html ::-webkit-scrollbar-thumb:hover {
   position: absolute;
   display: inline-block;
   width: 95%;
-  height: 5px;
+  height: 100%;
   border-radius: 5px;
   background-color: #02dde0;
 }
@@ -626,8 +707,8 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 .loader .first {
   display: flex;
-  width: 140px;
-  height: 140px;
+  width: 120px;
+  height: 120px;
   background-color: transparent;
   animation: loading 0.8s infinite linear;
   border-radius: 50%;
@@ -639,61 +720,70 @@ html ::-webkit-scrollbar-thumb:hover {
     transform: rotate(360deg);
   }
 }
-@media screen and (max-width: 992px) {
-  #Navbar .navdiv {
-    position: relative;
-  }
-  #Navbar .navdiv ul {
-    margin-top: 15px;
-    position: absolute;
-    left: -1000px;
-    width: 100%;
-    display: block;
-    list-style: none;
-    text-align: center;
-    background-color: #019194;
-    padding: 15px;
-    opacity: 1;
-    z-index: 9;
-  }
-  #Navbar .navdiv ul li {
-    display: block;
-    padding: 10px 15px;
-  }
-  #Navbar .navdiv .menu-responsive {
-    left: 0;
-  }
-  #Navbar .navdiv .is-active span:nth-child(2) {
-    opacity: 0;
-  }
-  #Navbar .navdiv .is-active span:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
-  }
-  #Navbar .navdiv .is-active span:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
-  }
-  #Navbar .navdiv #navbut {
-    display: inline-block;
-  }
-  #Navbar .nav-body {
-    padding: 15vh 0;
-  }
-}
 @media all and (max-width: 767px) {
-  #Navbar .nav-body {
-    padding: 10vh 2vw;
-  }
-  #Navbar .nav-body h1 {
-    font-size: 2.1rem;
-  }
-  #Navbar .nav-body p {
-    font-size: 1rem;
-  }
-  #Navbar .nav-body a {
-    font-size: 0.8rem;
+  #about {
+    padding: 4vh 10px;
   }
   #about .row {
     padding: 0;
+  }
+  #about .about-head {
+    padding: 4vh 0;
+  }
+  #about .about-head h2 {
+    font-size: 2.063rem;
+  }
+  #about .about-head .who span {
+    margin: 5px;
+  }
+  #about .about-head .who span:nth-child(2) {
+    font-size: 1.125rem;
+  }
+  #about .about-head .about-content {
+    margin-top: 3vh;
+    font-size: 1rem;
+  }
+  #about .about-head .about-content p {
+    text-indent: 40px;
+  }
+  #about .about-head a {
+    margin-top: 12px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.938rem;
+  }
+  #skills {
+    padding: 6vh 0;
+    padding-bottom: 4vh;
+  }
+  #skills .skills-name h1 {
+    font-size: 2.063rem;
+  }
+  #skills .skills-name .what span:nth-child(2) {
+    font-size: 1.125rem;
+  }
+  #skills .skills-left h1 {
+    font-size: 1.75rem;
+  }
+  #skills .skills-left .readmore {
+    padding: 2vh 0;
+    font-size: 1rem;
+  }
+  #skills .skills-left a {
+    margin-top: 8px;
+    font-size: 0.938rem;
+    padding: 5px 16px;
+    border-radius: 20px;
+  }
+  #skills .skills-right {
+    margin: 1vh 0;
+    padding: 1vh 2vw;
+  }
+  #skills .skills-right .skill-item {
+    margin-bottom: 10px;
+  }
+  #skills .skills-right .skill-item .skill-item-body {
+    height: 4px;
   }
   #contact {
     padding: 6vh 0;
