@@ -656,10 +656,11 @@ html ::-webkit-scrollbar-thumb:hover {
     padding: 0;
   }
   #contact .contact-left {
-    padding-left: 30px;
+    padding-left: 20px;
   }
   #contact .social-div {
-    padding-left: 30px;
+    text-align: center;
+    padding-left: 0px;
   }
   #contact .contact-right {
     margin-top: 6vh;
