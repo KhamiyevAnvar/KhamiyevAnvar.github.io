@@ -1,0 +1,23 @@
+/* is;enm */
+@import "common.less";
+
+.lineLimit3 {
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+.lineLimit6 {
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+.lineLimit10 {
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}

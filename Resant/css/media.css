@@ -1,0 +1,1119 @@
+@font-face {
+  font-family: raleway-light;
+  src: url(fonts/Raleway/Raleway-Light.ttf);
+}
+@font-face {
+  font-family: raleway-medium;
+  src: url(fonts/Raleway/Raleway-Medium.ttf);
+}
+@font-face {
+  font-family: cormorant-regular;
+  src: url(fonts/Cormorant/Cormorant-Regular.ttf);
+}
+@font-face {
+  font-family: cormorant-medium;
+  src: url(fonts/Cormorant/Cormorant-Medium.ttf);
+}
+@font-face {
+  font-family: cormorant-semibold;
+  src: url(fonts/Cormorant/Cormorant-SemiBold.ttf);
+}
+@font-face {
+  font-family: cormorant-bold;
+  src: url(fonts/Cormorant/Cormorant-Bold.ttf);
+}
+@font-face {
+  font-family: montserrat-light;
+  src: url(fonts/Montserrat/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: montserrat-regular;
+  src: url(fonts/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: montserrat-medium;
+  src: url(fonts/Montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: montserrat-semibold;
+  src: url(fonts/Montserrat/Montserrat-SemiBold.ttf);
+}
+@media screen and (max-width: 1199.5px) {
+  #resantHead #resantHeadOpacity .resantHead .resantPageList {
+    margin-top: 80px;
+    flex-direction: column;
+    font-size: 2.75rem;
+  }
+  #resantHead #resantHeadOpacity .resantHead .resantPageList li:not(:first-child) {
+    margin-top: 15px;
+  }
+  #about .aboutBody .aboutCardContent {
+    padding: 12px 20px;
+  }
+  #about .aboutBody .aboutCardContent span {
+    display: inline-block;
+    width: 54px;
+    height: 1px;
+    background-color: #808080;
+    margin: 8px 0 10px 0;
+  }
+  .eventCard {
+    height: 360px;
+  }
+  .eventCard .eventPos {
+    padding: 0 12px 15px 12px;
+  }
+  .eventCard .eventPos .eventTime {
+    font-size: 1rem;
+  }
+  .eventCard .eventPos .cardBut {
+    font-size: 0.875rem;
+    padding: 6px 8px;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPageBodyItemContent {
+    width: 60%;
+  }
+  #contact .contactBody .contactItem .contactItemBody .contactItemBodyItem {
+    flex-basis: 50%;
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width: 991.9px) {
+  #resantHead #resantHeadOpacity {
+    padding: 20px 0;
+    padding-bottom: 140px;
+  }
+  #resantHead #resantHeadOpacity .resantHead .resantHeadFirstresantHeadFirst {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #resantHead #resantHeadOpacity .resantHead .resantHeadFirstresantHeadFirst .resantHeadFirstLeft {
+    display: none;
+  }
+  #resantHead #resantHeadOpacity .resantHead .resantHeadFirstresantHeadFirst .resantHeadCenter {
+    width: 180px;
+    height: 60px;
+  }
+  #resantHead #resantHeadOpacity .resantHead .resantHeadFirstresantHeadFirst .resantHeadRight a {
+    font-size: 1.125rem;
+    padding: 6.5px 9px;
+  }
+  #resantHead #resantHeadOpacity .resantHead .resantHeadFirstresantHeadFirst .resantHeadRight #nav-but {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+  #resantHead #resantHeadOpacity .resantHead #Navbar {
+    display: none;
+  }
+  #resantHead #resantHeadOpacity .resantHead .resantHeadContent {
+    text-align: center;
+  }
+  #resantHead #resantHeadOpacity .resantHead .resantHeadContent h1 {
+    font-size: 2.75rem;
+    margin-top: 120px;
+  }
+  #resantHead #resantHeadOpacity .resantHead .resantHeadContent p {
+    font-size: 1.125rem;
+    margin-top: 12px;
+    padding: 0 10px;
+  }
+  #resantHead #resantHeadOpacity .resantHead .resantPageList {
+    margin-top: 70px;
+    font-size: 2.375rem;
+  }
+  #resantHead #resantHeadOpacity .resantHead .resantPageList li {
+    padding: 6px 40px;
+    border-radius: 39px;
+  }
+  #mobileMenu {
+    display: block;
+  }
+  #footer {
+    padding: 20px 0 30px 0;
+  }
+  #footer .footMenuList2 {
+    border-left: none;
+    border-right: none;
+  }
+  #restaurantBody {
+    padding: 15px 0;
+  }
+  #restaurantBody .restaurantCard {
+    height: 360px;
+    margin: 20px 6px;
+  }
+  #restaurantBody .restaurantCard .overlay .restaurantContent .restaurantName {
+    font-size: 2.25rem;
+    margin-bottom: 40px;
+  }
+  #restaurantBody .restaurantCard .overlay .restaurantContent .restaurantLink {
+    font-size: 1.25rem;
+    padding: 10px 18px;
+  }
+  #restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-left {
+    height: 420px;
+  }
+  #restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right {
+    padding: 15px 35px;
+  }
+  #restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .restaurantContentName {
+    font-size: 2rem;
+  }
+  #restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .restaurantContentText {
+    margin-top: 25px;
+    font-size: 1.25rem;
+  }
+  #restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .restaurantOnePageLink {
+    font-size: 1.375rem;
+    padding: 12px 20px;
+    margin-top: 20px;
+  }
+  #restaurantOnePageBody .restaurantOneCol .parallax-window {
+    height: 400px;
+  }
+  #restaurantOnePageBody .restaurantOneCol .parallax-window2 {
+    height: 400px;
+  }
+  #restaurantOnePageBody .restaurantOneCol .restaurantOneColBlock {
+    font-size: 2.75rem;
+  }
+  #restaurantOnePageBody .restaurantOneCol .restaurantOneColBlock span {
+    font-size: 2.75rem;
+  }
+  #restaurantOnePageBody .restaurantOneCol .restaurantOneColBlock2 {
+    font-size: 2.75rem;
+  }
+  #eventPageBody {
+    padding: 15px 0;
+  }
+  #eventPageBody .eventName {
+    padding: 10px 0;
+    font-size: 2.75rem;
+  }
+  #eventPageBody .eventPageBody {
+    margin-top: 25px;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem {
+    width: 100%;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPageBodyItemContent {
+    width: 100%;
+    padding: 25px;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPageBodyItemContent .eventPageBodyItemHead {
+    padding-bottom: 8px;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPageBodyItemContent .eventPageBodyItemHead .eventPageTime {
+    font-family: montserrat-medium;
+    font-size: 1.375rem;
+    color: #C59D37;
+    text-transform: lowercase;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPageBodyItemContent .eventPageBodyItemHead .eventPageName {
+    margin: 16px 0 0 0;
+    font-family: montserrat-semibold;
+    font-size: 1.25rem;
+    color: #000;
+    text-transform: uppercase;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPageBodyItemContent .eventPageBodyItemHead .eventPageContent {
+    margin: 16px 0 0 0;
+    font-family: montserrat-regular;
+    font-size: 1.125rem;
+    color: #000;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPageBodyItemContent .eventPageBodyItemFooter .eventPageBodyItemFooterDesing {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-top: 16px;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPageBodyItemContent .eventPageBodyItemFooter .eventPageBodyItemFooterDesing .eventDesingText {
+    margin-right: 10px;
+    font-family: montserrat-regular;
+    font-size: 1.125rem;
+    color: #686868;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPageBodyItemContent .eventPageBodyItemFooter .eventPageBodyItemFooterDesing .eventDesingIcon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPageBodyItemContent .eventPageBodyItemFooter .eventPageBodyItemFooterDesing .eventDesingIcon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPosElement {
+    position: initial;
+    width: 100%;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPosElement .eventPosElementImg {
+    height: 400px;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPosElement .eventPosElementName {
+    margin-top: 21px;
+    font-size: 2.75rem;
+  }
+  #contact {
+    padding: 35px 0 240px 0;
+  }
+  #contact .contactHead .contactName {
+    font-size: 2.5rem;
+  }
+  #contact .contactHead span {
+    margin-top: 18px;
+  }
+  #contact .contactHead .contactContent1 {
+    font-size: 1.375rem;
+    margin-top: 35px;
+  }
+  #contact .contactHead .contactContent2 {
+    font-size: 1.125rem;
+    margin-top: 26px;
+  }
+  #contact .contactBody {
+    margin-top: 15px;
+  }
+  #contact .contactBody .contactItem {
+    margin-top: 40px;
+  }
+  #contact .contactBody .contactItem .contactItemName {
+    font-size: 1.688rem;
+  }
+  #contact .contactBody .contactItem .contactItemBody {
+    margin-top: 10px;
+  }
+  #contact .contactBody .contactItem .contactItemBody .contactItemBodyItem {
+    flex-basis: 100%;
+    padding: 0px 5px;
+  }
+  #contact .contactBody .contactItem .contactItemBody .contactItemBodyItem .contactItemBodyItemContent a {
+    font-size: 1.25rem;
+  }
+  #contact .contactBody .contactItem .contactItemBody .contactItemBodyItem .contactItemBodyItemContent span {
+    font-size: 1.25rem;
+  }
+  #tour .tourName {
+    font-size: 2.5rem;
+    padding: 22px 0;
+  }
+  #tour .tour .tourImg {
+    height: 500px;
+  }
+  #tour .tourContent .tourContentList li {
+    font-size: 2rem;
+  }
+  #tour .tourContent .tourContentList li:not(:first-child) {
+    margin-top: 21px;
+  }
+  #hotels .hotelsHead {
+    padding-top: 28px;
+    padding-bottom: 42px;
+  }
+  #hotels .hotelsHead .col-12 {
+    margin-top: 9px;
+  }
+  #hotels .hotelCard {
+    padding: 20px 5px;
+  }
+  #hotels .hotelCard .hotelCardImg {
+    width: 100%;
+    height: 420px;
+  }
+  #hotels .hotelCard .hotelCardInfo {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+    padding-top: 20px;
+  }
+  #hotels .hotelCard .hotelCardInfo .hotelCardName {
+    font-size: 2.75rem;
+  }
+  #hotels .hotelCard .hotelCardInfo .hotelCardName .hotelCardContent {
+    margin-top: 12px;
+    font-size: 1.25rem;
+  }
+  #hotels .hotelCard .hotelCardInfo .hotelCardName .hotelCardFoot {
+    margin-top: 44px;
+  }
+  #hotels .hotelCard .hotelCardInfo .hotelCardName .hotelCardFoot img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+  }
+  #hotels .hotelCard .hotelCardInfo .hotelCardName .hotelCardFoot .hotelMoreButton {
+    padding-left: 7px;
+    font-size: 1.25rem;
+  }
+  #hotels .hotelCard .hotelCardInfo .hotelCardName .callLink {
+    margin-top: 30px;
+    padding: 12px 30px;
+    font-size: 1.25rem;
+  }
+  #hotels .hotelsSlider {
+    padding: 32px 0;
+  }
+  #hotels .hotelsSlider .hotelsSliderHead {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  #hotels .hotelsSlider .hotelsSliderCover {
+    padding-left: 8vw;
+  }
+  #hotels .hotelsSlider .hotelsSliderCover .hotelsSliderItem .hotelsSliderItemHead {
+    height: 350px;
+  }
+  #hotels .hotelsSlider .hotelsSliderCover .hotelsSliderItem .hotelsSliderItemHead .hotelSliderItemLink {
+    font-size: 1.063rem;
+    padding: 8px 13px;
+  }
+  #hotels .hotelsSlider .hotelsSliderCover .hotelsSliderItem .hotelsSliderItemName {
+    margin-top: 24px;
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 767.9px) {
+  #resantHead #resantHeadOpacity {
+    padding: 15px 0;
+    padding-bottom: 100px;
+  }
+  #resantHead #resantHeadOpacity .resantHead .resantHeadFirstresantHeadFirst {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+  }
+  #resantHead #resantHeadOpacity .resantHead .resantHeadFirstresantHeadFirst .resantHeadCenter {
+    width: 170px;
+  }
+  #resantHead #resantHeadOpacity .resantHead .resantHeadFirstresantHeadFirst .resantHeadRight a {
+    display: none;
+  }
+  #resantHead #resantHeadOpacity .resantHead .resantHeadContent h1 {
+    font-size: 2.25rem;
+    margin-top: 80px;
+  }
+  #resantHead #resantHeadOpacity .resantHead .resantHeadContent p {
+    font-size: 0.875rem;
+    margin-top: 10px;
+  }
+  #resantHead #resantHeadOpacity .resantHead .resantPageList {
+    margin-top: 40px;
+    font-size: 1.875rem;
+  }
+  #resantHead #resantHeadOpacity .resantHead .resantPageList li {
+    padding: 5px 34px;
+    border-radius: 39px;
+  }
+  #about .aboutHead {
+    padding: 22px 0 14px 0;
+  }
+  #about .aboutHead h2 {
+    font-size: 2.25rem;
+  }
+  #about .aboutHead div {
+    font-size: 1.125rem;
+    margin-top: 20px;
+  }
+  #about .aboutHead span {
+    margin-top: 7px;
+  }
+  #about .aboutHead p {
+    font-size: 0.938rem;
+    margin-top: 12px;
+  }
+  #about .aboutBody .aboutCardImg {
+    height: 250px;
+  }
+  #about .aboutBody .aboutCardContent {
+    height: 250px;
+    padding: 15px;
+  }
+  #about .aboutBody .aboutCardContent h5 {
+    font-family: montserrat-semibold;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  #about .aboutBody .aboutCardContent span {
+    display: inline-block;
+    width: 54px;
+    height: 1px;
+    background-color: #808080;
+    margin: 10px 0 12px 0;
+  }
+  #about .aboutBody .aboutCardContent p {
+    font-family: montserrat-regular;
+    font-size: 1rem;
+    color: #565656;
+    text-align: center;
+  }
+  #about .aboutBody .aboutCardContent ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  #about .aboutBody .aboutCardContent ul li::before {
+    content: "-";
+    display: inline-block;
+    padding-right: 5px;
+  }
+  #about .aboutBody .aboutCardOne {
+    height: 250px;
+  }
+  #about .aboutBody .aboutCardOne .aboutCardOneContent {
+    padding: 20px 30px;
+  }
+  #about .aboutBody .aboutCardOne .aboutCardOneContent h5 {
+    font-size: 1.25rem;
+    color: #fff;
+  }
+  #about .aboutBody .aboutCardOne .aboutCardOneContent span {
+    display: inline-block;
+    width: 54px;
+    height: 1px;
+    background-color: #fff;
+    margin: 17px 0 20px 0;
+  }
+  #about .aboutBody .aboutCardOne .aboutCardOneContent p {
+    font-family: montserrat-regular;
+    font-size: 1rem;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+  }
+  #events {
+    padding: 35px 0 12px 0;
+  }
+  #events .eventsHead {
+    font-size: 2.25rem;
+  }
+  #events .eventsBody {
+    margin-top: 28px !important;
+  }
+  .eventCard {
+    height: 360px;
+    margin: 4px 0 !important;
+  }
+  .eventCard .eventPos {
+    padding: 0 18px 15px 18px;
+  }
+  .eventCard .eventPos .eventTime {
+    font-size: 1rem;
+  }
+  .eventCard .eventPos .cardBut {
+    font-size: 0.875rem;
+    padding: 6px 8px;
+  }
+  #brand {
+    padding: 15px 0 18px 0;
+  }
+  #brand .brandHead {
+    font-size: 2.25rem;
+  }
+  #brand .brandBody {
+    margin-top: 28px;
+  }
+  #brand .brandBody .brandBodyItems {
+    padding: 12px 0;
+  }
+  #map .mapListClose {
+    width: 0% !important;
+  }
+  #map .mapList {
+    width: 85%;
+    height: 100%;
+  }
+  #map .mapList .mapRestaurantList .mapRestaurantItem {
+    font-size: 1.375rem;
+  }
+  #map .mapCoverMap {
+    width: 100%;
+    height: 300px;
+    background-color: grey;
+    font-size: 2.75rem;
+  }
+  #footer {
+    padding: 20px 0 30px 0;
+  }
+  #footer .footLogo {
+    padding-top: 20px;
+  }
+  #footer .footLogo img {
+    width: 210px;
+    height: 100%;
+    object-fit: contain;
+  }
+  #footer .footMenuListDesing {
+    font-size: 1.25rem;
+    padding: 20px 0 20px 0;
+  }
+  #footer .footMenuListDesing li:not(:first-child) {
+    margin-top: 3px;
+  }
+  #footer .footContactBlock {
+    padding-top: 20px;
+  }
+  #footer .footContactBlock .contactName {
+    font-size: 1.875rem;
+  }
+  #footer .footContactBlock .footAddress {
+    margin-top: 15px;
+    font-size: 1rem;
+  }
+  #footer .footContactBlock .footMobile {
+    margin-top: 14px;
+  }
+  #footer .footContactBlock .footMobile a {
+    font-size: 1rem;
+  }
+  #footer .footContactBlock .footEmail {
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+  #footer .barcodeBlock img {
+    width: 170px;
+    height: 170px;
+  }
+  #footer .copyriter {
+    margin-top: 25px;
+    font-size: 1rem;
+  }
+  #restaurantBody {
+    padding: 15px 0;
+  }
+  #restaurantBody .restaurantCard {
+    height: 340px;
+    margin: 14px 2px;
+  }
+  #restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-left {
+    height: 380px;
+  }
+  #restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right {
+    padding: 25px 40px;
+  }
+  #restaurantOnePageBody .restaurantOneCol .parallax-window {
+    height: 350px;
+  }
+  #restaurantOnePageBody .restaurantOneCol .parallax-window2 {
+    height: 350px;
+  }
+  #contact {
+    padding: 28px 0 100px 0;
+  }
+  #contact .contactHead {
+    padding: 0 12px;
+  }
+  #contact .contactHead .contactName {
+    font-size: 2.25rem;
+  }
+  #contact .contactHead span {
+    margin-top: 10px;
+  }
+  #contact .contactHead .contactContent1 {
+    font-size: 1.25rem;
+    margin-top: 25px;
+  }
+  #contact .contactHead .contactContent2 {
+    font-size: 1rem;
+    margin-top: 16px;
+  }
+  #contact .contactBody {
+    margin-top: 10px;
+  }
+  #contact .contactBody .contactItem {
+    margin-top: 30px;
+    padding: 0 12px;
+  }
+  #contact .contactBody .contactItem .contactItemName {
+    font-size: 1.5rem;
+  }
+  #contact .contactBody .contactItem .contactItemBody {
+    margin-top: 10px;
+  }
+  #contact .contactBody .contactItem .contactItemBody .contactItemBodyItem {
+    padding: 0px 5px;
+    margin: 6px 0;
+  }
+  #contact .contactBody .contactItem .contactItemBody .contactItemBodyItem .contactItemBodyItemIcon {
+    height: 24px;
+  }
+  #contact .contactBody .contactItem .contactItemBody .contactItemBodyItem .contactItemBodyItemIcon img {
+    width: 20px;
+  }
+  #contact .contactBody .contactItem .contactItemBody .contactItemBodyItem .contactItemBodyItemContent a {
+    font-size: 1.125rem;
+  }
+  #contact .contactBody .contactItem .contactItemBody .contactItemBodyItem .contactItemBodyItemContent span {
+    font-size: 1.063rem;
+  }
+  #tour .tourName {
+    font-size: 2.25rem;
+    padding: 20px 0;
+  }
+  #tour .tour .tourImg {
+    height: 300px;
+  }
+  #tour .tourContent .tourContentList li {
+    font-size: 1.688rem;
+  }
+  #tour .tourContent .tourContentList li:not(:first-child) {
+    margin-top: 16px;
+  }
+  #feedback .feedbackHead {
+    padding: 0 30px;
+  }
+  #feedback .feedbackHead h2 {
+    margin-top: 30px;
+    font-size: 2.25rem;
+  }
+  #feedback .feedbackHead p {
+    margin-top: 25px;
+    font-size: 1.188rem;
+  }
+  #feedback .feedbackCover {
+    margin-top: 32px;
+    padding: 40px 0 65px 0 !important;
+  }
+  #feedback .feedbackCover .feedbackCoverHead .feedbackCoverName {
+    margin-top: 15px;
+    font-size: 2.25rem;
+  }
+  #feedback .feedbackCover .feedbackItemDesing {
+    margin-top: 30px;
+    padding: 0 10px;
+  }
+  #feedback .feedbackCover .feedbackItemDesing label {
+    font-size: 1.25rem;
+    padding-bottom: 0;
+  }
+  #feedback .feedbackCover .feedbackItemDesing input {
+    padding: 4px 0;
+  }
+  #feedback .feedbackCover .feedbackItemButton {
+    margin-top: 25px;
+  }
+  #feedback .feedbackCover .feedbackItemButton #feedSendBut {
+    font-family: 1.188rem;
+    padding: 12px 36px;
+  }
+  #hotels .hotelCard {
+    padding: 15px 0;
+  }
+  #hotels .hotelCard .hotelCardImg {
+    height: 300px;
+  }
+  #hotels .hotelCard .hotelCardInfo {
+    padding-top: 14px;
+  }
+  #hotels .hotelCard .hotelCardInfo .hotelCardName {
+    font-size: 2rem;
+  }
+  #hotels .hotelCard .hotelCardInfo .hotelCardContent {
+    margin-top: 10px;
+    font-size: 1.125rem;
+  }
+  #hotels .hotelCard .hotelCardInfo .hotelCardFoot {
+    margin-top: 24px;
+  }
+  #hotels .hotelCard .hotelCardInfo .hotelCardFoot img {
+    width: 16px;
+    height: 16px;
+  }
+  #hotels .hotelCard .hotelCardInfo .hotelCardFoot .hotelMoreButton {
+    padding-left: 6px;
+    font-size: 1.063rem;
+  }
+  #hotels .hotelCard .hotelCardInfo .callLink {
+    margin-top: 20px;
+    padding: 7px 22px;
+    font-size: 1.125rem;
+  }
+  #hotels .hotelsSlider {
+    padding: 25px 0;
+  }
+  #hotels .hotelsSlider .hotelsSliderHead {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  #hotels .hotelsSlider .hotelsSliderCover {
+    padding-left: 8vw;
+  }
+  #hotels .hotelsSlider .hotelsSliderCover .hotelsSliderItem .hotelsSliderItemHead {
+    height: 300px;
+  }
+  #hotels .hotelsSlider .hotelsSliderCover .hotelsSliderItem .hotelsSliderItemHead .hotelSliderItemLink {
+    font-size: 1rem;
+    padding: 6px 11px;
+  }
+  #hotels .hotelsSlider .hotelsSliderCover .hotelsSliderItem .hotelsSliderItemName {
+    margin-top: 20px;
+    font-size: 1.75rem;
+  }
+  #onloadModal .onloadModalInfo {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 575.9px) {
+  #brand .brandBody {
+    margin-top: 25px;
+  }
+  #brand .brandBody .brandBodyItems {
+    padding: 0;
+  }
+  #brand .brandBody .brandBodyItems .brandBox {
+    height: 140px;
+  }
+  #restaurantBody {
+    padding: 12px 0;
+  }
+  #restaurantBody .restaurantCard {
+    height: 300px;
+    margin: 5px 0;
+  }
+  #restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-left {
+    height: 280px;
+  }
+  #restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right {
+    padding: 26px 20px;
+  }
+  #restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .restaurantContentName {
+    font-size: 1.688rem;
+  }
+  #restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .restaurantContentText {
+    margin-top: 15px;
+    font-size: 1.125rem;
+  }
+  #restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .restaurantOnePageLink {
+    font-size: 1.25rem;
+    padding: 8px 16px;
+    margin-top: 12px;
+  }
+  #restaurantOnePageBody .restaurantOneCol .parallax-window {
+    height: 260px;
+  }
+  #restaurantOnePageBody .restaurantOneCol .parallax-window2 {
+    height: 260px;
+  }
+  #restaurantOnePageBody .restaurantOneCol .restaurantOneColBlock span {
+    font-size: 2rem;
+  }
+  #restaurantOnePageBody .restaurantOneCol .restaurantOneColBlock2 {
+    font-size: 2rem;
+  }
+  #eventsPageBody {
+    padding-bottom: 2px;
+  }
+  #eventsPageBody .eventsName {
+    font-size: 2rem;
+  }
+  #eventsPageBody .eventsBody {
+    margin-top: 5px;
+  }
+  #eventsPageBody .eventsBody .eventCard {
+    margin: 5px 0;
+  }
+  #eventPageBody {
+    padding: 12px 0;
+  }
+  #eventPageBody .eventName {
+    padding: 7px 0;
+    font-size: 2.25rem;
+  }
+  #eventPageBody .eventPageBody {
+    margin-top: 15px;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPageBodyItemContent {
+    padding: 22px;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPageBodyItemContent .eventPageBodyItemHead {
+    padding-bottom: 8px;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPageBodyItemContent .eventPageBodyItemHead .eventPageTime {
+    font-size: 1.125rem;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPageBodyItemContent .eventPageBodyItemHead .eventPageName {
+    font-size: 1rem;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPageBodyItemContent .eventPageBodyItemHead .eventPageContent {
+    font-size: 1rem;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPageBodyItemContent .eventPageBodyItemFooter .eventPageBodyItemFooterDesing {
+    margin-top: 10px;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPageBodyItemContent .eventPageBodyItemFooter .eventPageBodyItemFooterDesing .eventDesingText {
+    margin-right: 7px;
+    font-size: 1rem;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPageBodyItemContent .eventPageBodyItemFooter .eventPageBodyItemFooterDesing .eventDesingIcon {
+    width: 20px;
+    height: 20px;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPosElement .eventPosElementImg {
+    height: 240px;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPosElement .eventPosElementName {
+    margin-top: 10px;
+    font-size: 1.688rem;
+  }
+  #contact {
+    padding: 28px 0 80px 0;
+  }
+  #contact .contactHead {
+    padding: 0 12px;
+  }
+  #contact .contactHead .contactName {
+    font-size: 2rem;
+  }
+  #contact .contactHead span {
+    margin-top: 7px;
+  }
+  #contact .contactHead .contactContent1 {
+    font-size: 1.125rem;
+    margin-top: 20px;
+  }
+  #contact .contactBody {
+    margin-top: 8px;
+  }
+  #contact .contactBody .contactItem {
+    margin-top: 2;
+    padding: 0 12px;
+  }
+  #contact .contactBody .contactItem .contactItemName {
+    font-size: 1.375rem;
+  }
+  #contact .contactBody .contactItem .contactItemBody {
+    margin-top: 9px;
+  }
+  #contact .contactBody .contactItem .contactItemBody .contactItemBodyItem {
+    padding: 0px 2px;
+    margin: 4px 0;
+  }
+  #contact .contactBody .contactItem .contactItemBody .contactItemBodyItem .contactItemBodyItemIcon {
+    height: 24px;
+  }
+  #contact .contactBody .contactItem .contactItemBody .contactItemBodyItem .contactItemBodyItemIcon img {
+    width: 20px;
+  }
+  #contact .contactBody .contactItem .contactItemBody .contactItemBodyItem .contactItemBodyItemContent a {
+    font-size: 1.125rem;
+  }
+  #contact .contactBody .contactItem .contactItemBody .contactItemBodyItem .contactItemBodyItemContent span {
+    font-size: 1.063rem;
+  }
+  #feedback .feedbackHead {
+    padding: 0 25px;
+  }
+  #feedback .feedbackHead h2 {
+    margin-top: 20px;
+    font-size: 2rem;
+  }
+  #feedback .feedbackHead p {
+    margin-top: 15px;
+    font-size: 1.063rem;
+  }
+  #feedback .feedbackCover {
+    margin-top: 25px;
+    padding: 25px 0 55px 0 !important;
+  }
+  #feedback .feedbackCover .feedbackCoverHead .feedbackCoverName {
+    margin-top: 12px;
+    font-size: 2rem;
+  }
+  #feedback .feedbackCover .feedbackItemDesing {
+    margin-top: 22px;
+    padding: 0 7px;
+  }
+  #feedback .feedbackCover .feedbackItemDesing label {
+    font-size: 1.063rem;
+  }
+  #feedback .feedbackCover .feedbackItemDesing input {
+    font-size: 1rem;
+  }
+  #feedback .feedbackCover .feedbackItemButton {
+    margin-top: 20px;
+  }
+  #feedback .feedbackCover .feedbackItemButton #feedSendBut {
+    font-family: 1.063rem;
+    padding: 8px 26px;
+  }
+  #hotels .hotelsHead {
+    padding-top: 15px;
+    padding-bottom: 25px;
+  }
+  #hotels .hotelCard {
+    padding: 12px 0;
+  }
+  #hotels .hotelCard .hotelCardImg {
+    height: 240px;
+  }
+  #hotels .hotelCard .hotelCardInfo {
+    padding-top: 12px;
+  }
+  #hotels .hotelCard .hotelCardInfo .hotelCardName {
+    font-size: 1.75rem;
+  }
+  #hotels .hotelCard .hotelCardInfo .hotelCardContent {
+    margin-top: 9px;
+    font-size: 1.063rem;
+  }
+  #hotels .hotelCard .hotelCardInfo .hotelCardFoot {
+    margin-top: 20px;
+  }
+  #hotels .hotelCard .hotelCardInfo .hotelCardFoot img {
+    width: 16px;
+    height: 16px;
+  }
+  #hotels .hotelCard .hotelCardInfo .hotelCardFoot .hotelMoreButton {
+    padding-left: 5px;
+    font-size: 0.938rem;
+  }
+  #hotels .hotelCard .hotelCardInfo .callLink {
+    margin-top: 18px;
+    padding: 5px 20px;
+    font-size: 1.063rem;
+  }
+  #hotels .hotelsSlider {
+    padding: 18px 0;
+  }
+  #hotels .hotelsSlider .hotelsSliderHead {
+    font-size: 1.688rem;
+    margin-bottom: 20px;
+  }
+  #hotels .hotelsSlider .hotelsSliderCover {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+  #hotels .hotelsSlider .hotelsSliderCover .hotelsSliderItem .hotelsSliderItemHead {
+    height: 250px;
+  }
+  #hotels .hotelsSlider .hotelsSliderCover .hotelsSliderItem .hotelsSliderItemHead .hotelSliderItemLink {
+    font-size: 0.938rem;
+    padding: 4px 10px;
+  }
+  #hotels .hotelsSlider .hotelsSliderCover .hotelsSliderItem .hotelsSliderItemName {
+    margin-top: 16px;
+    font-size: 1.5rem;
+  }
+  #onloadModal .onloadModalInfo {
+    width: 88%;
+    height: 50%;
+    flex-wrap: wrap;
+    top: 30%;
+    height: auto;
+    max-height: 90vh;
+  }
+  #onloadModal .onloadModalInfo .onloadModalInfoLeft {
+    flex-basis: 100%;
+    order: 2;
+    height: 180px;
+  }
+  #onloadModal .onloadModalInfo .onloadModalInfoRight {
+    flex-basis: 100%;
+    order: 1;
+    height: auto;
+  }
+  #onloadModal .onloadModalInfo .onloadModalInfoRight .onloadModalInfoRightContent {
+    padding: 28px 15px;
+  }
+  #onloadModal .onloadModalInfo .onloadModalInfoRight .onloadModalInfoRightContent .onloadModalInfoName {
+    font-size: 1.5rem;
+  }
+  #onloadModal .onloadModalInfo .onloadModalInfoRight .onloadModalInfoRightContent .onloadModalInfoContent {
+    font-size: 1.125rem;
+    margin-top: 8px;
+  }
+  #onloadModal .onloadModalBottom {
+    padding: 12px;
+  }
+  #onloadModal .onloadModalBottom .onloadModalBottomContent {
+    font-size: 1.063rem;
+  }
+  #onloadModal .onloadModalBottom .onloadModalBottomButtons {
+    margin-top: 10px;
+  }
+  #onloadModal .onloadModalBottom .onloadModalBottomButtons button {
+    margin: 0 4px;
+    font-size: 0.938rem;
+    padding: 4px 12px;
+  }
+}
+@media screen and (max-width: 360.9px) {
+  .eventCard {
+    height: 330px;
+  }
+  .eventCard .eventPos {
+    padding: 0 12px 14px 12px;
+  }
+  .eventCard .eventPos .eventTime {
+    font-size: 1rem;
+  }
+  .eventCard .eventPos .cardBut {
+    font-size: 0.875rem;
+    padding: 6px 8px;
+  }
+  #eventPageBody .eventName {
+    font-size: 2rem;
+  }
+  #eventPageBody .eventPageBody {
+    margin-top: 12px;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPageBodyItemContent {
+    padding: 20;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPageBodyItemContent .eventPageBodyItemHead .eventPageTime {
+    font-size: 1.063rem;
+    margin-top: 10px;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPageBodyItemContent .eventPageBodyItemHead .eventPageName {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPageBodyItemContent .eventPageBodyItemHead .eventPageContent {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPageBodyItemContent .eventPageBodyItemFooter .eventPageBodyItemFooterDesing {
+    margin-top: 10px;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPageBodyItemContent .eventPageBodyItemFooter .eventPageBodyItemFooterDesing .eventDesingText {
+    margin-right: 7px;
+    font-size: 0.813rem;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPageBodyItemContent .eventPageBodyItemFooter .eventPageBodyItemFooterDesing .eventDesingIcon {
+    width: 17px;
+    height: 17px;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPosElement .eventPosElementImg {
+    height: 240px;
+  }
+  #eventPageBody .eventPageBody .eventPageBodyItem .eventPosElement .eventPosElementName {
+    margin-top: 10px;
+    font-size: 1.688rem;
+  }
+  #tour .tourName {
+    font-size: 2.25rem;
+    padding: 20px 0;
+  }
+  #tour .tour .tourImg {
+    height: 300px;
+  }
+  #tour .tourContent {
+    padding: 20px 0;
+  }
+  #tour .tourContent .tourContentList li {
+    font-size: 1.5rem;
+  }
+  #tour .tourContent .tourContentList li:not(:first-child) {
+    margin-top: 16px;
+  }
+  #tour .tourContent .tourContentList li::before {
+    left: -22px;
+  }
+  #tour .tourContent .tourContentList .active::before {
+    left: -22px;
+  }
+}
