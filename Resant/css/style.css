@@ -1587,6 +1587,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1.25rem;
+  border-radius: 0;
 }
 #feedback .feedbackCover .feedbackItemDesing textarea {
   width: 100%;
@@ -1608,17 +1609,18 @@ body {
   align-items: center;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
-  font-family: 1.25rem;
+  font-size: 1.25rem;
   color: #fff;
-  padding: 12px 36px;
+  padding: 10px 32px;
   background: #0C1D49;
-  box-shadow: 0 0 5px #000000;
+  border: 1px solid transparent;
   text-transform: uppercase;
   transition: all ease 0.4s;
+  border-radius: 5px;
 }
 #feedback .feedbackCover .feedbackItemButton #feedSendBut:hover {
   background-color: white;
-  box-shadow: 0 0 3px #0C1D49;
+  box-shadow: 0 0 3px black;
   border: 1px solid #0C1D49;
   color: #0C1D49;
 }
