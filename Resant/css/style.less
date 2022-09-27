@@ -84,7 +84,7 @@ body {
 							width: 100%;
 							margin: 0;
 							margin-top: 5px;
-							border-radius: 5px;
+							border-radius: 3px;
 							box-shadow: 0 0 5px #C59D37;
 							padding: 2px 0;
 							transition: @transition4;
@@ -1271,6 +1271,7 @@ body {
 			height: 100%;
 			object-fit: cover;
 			transition: @transition6;
+			transform: scale(1.08);
 		}
 
 		.overlay {
@@ -1881,6 +1882,7 @@ body {
 				font-family: "Open Sans", sans-serif;
 				font-weight: 400;
 				font-size: @fs-20;
+				border-radius: 0;
 			}
 
 			textarea {
@@ -1905,18 +1907,20 @@ body {
 				align-items: center;
 				font-family: "Open Sans", sans-serif;
 				font-weight: 500;
-				font-family: @fs-20;
+				font-size: @fs-20;
 				color: #fff;
-				padding: 12px 36px;
+				padding: 10px 32px;
 				background: #0C1D49;
-				box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+				// box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+				border: 1px solid transparent;
 				text-transform: uppercase;
 				transition: @transition4;
+				border-radius: 5px;
 			}
 
 			#feedSendBut:hover {
 				background-color: white;
-				box-shadow: 0 0 3px #0C1D49;
+				box-shadow: 0 0 3px black;
 				border: 1px solid #0C1D49;
 				color: #0C1D49;
 			}

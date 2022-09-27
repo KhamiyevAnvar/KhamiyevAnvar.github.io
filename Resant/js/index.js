@@ -50,8 +50,19 @@ $(function () {
 
     // Language button event
     const langBut = $(".resantHeadLangActive");
-    langBut.click(function () {
-        $(".resantHeadLangDrop").toggleClass("resantHeadLangDropActive");
+    langBut.click(function (e) {
+        $(this).siblings(".resantHeadLangDrop").toggleClass("resantHeadLangDropActive");
+        e.stopPropagation();
+    })
+
+    // lang bar click function stop
+    $(".resantHeadLangDrop").click(function (e) {
+        e.stopPropagation();
+    })
+
+    // body click closed lang bar
+    $("body").click(function () {
+        langBut.siblings(".resantHeadLangDrop").removeClass("resantHeadLangDropActive");
     })
 
     // brand owl carousel
@@ -124,7 +135,6 @@ $(function () {
 
     // hotels card show more show less button
     const hotelMoreButton = $(".hotelMoreButton");
-
     hotelMoreButton.click(function () {
         console.log("class length - " + ($(this).parents(".hotelCard").find(".hotelCardInfoOverflow").length));
         if ($(this).parents(".hotelCard").find(".hotelCardInfoOverflow").length > 0) {
@@ -141,13 +151,16 @@ $(function () {
 
     // map
     if ($("#resantMap").length > 0) {
+
+
+
         function initMap(getId) {
             var location = { lat: 40.408061, lng: 49.861052 };
-            var location2 = { lat: 40.37523217230092, lng: 49.88369388889494 };
-            let map = new google.maps.Map(document.getElementById(getId), {
+            var map = new google.maps.Map(document.getElementById(getId), {
                 zoom: 12,
                 styles: [{ "featureType": "all", "elementType": "labels.text", "stylers": [{ "color": "#878787" }] }, { "featureType": "all", "elementType": "labels.text.stroke", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "all", "stylers": [{ "color": "#f9f5ed" }] }, { "featureType": "road.highway", "elementType": "all", "stylers": [{ "color": "#f5f5f5" }] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{ "color": "#c9c9c9" }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "color": "#aee0f4" }] }],
-                center: location
+                center: location,
+                title: "Hello World!"
             });
 
             marker = new google.maps.Marker({
@@ -156,15 +169,59 @@ $(function () {
                 animation: google.maps.Animation.DROP,
                 title: "Hello World!"
             });
-            marker2 = new google.maps.Marker({
-                map: map,
-                position: location2,
-                animation: google.maps.Animation.DROP,
-                title: "Hello World!2"
+
+
+            // Pin marker
+
+            var mapLatLng = [];
+
+            $(".mapRestaurantItem").map((mapListItem) => {
+                mapLatLng.push([Number($(".mapRestaurantItem")[mapListItem].getAttribute('lat')), Number($(".mapRestaurantItem")[mapListItem].getAttribute('lng'))]);
             });
 
-            marker.addListener('click', toggleBounce);
-            marker2.addListener('click', toggleBounce);
+            function addMarker(late, lange) {
+                marker = new google.maps.Marker({
+                    map: map,
+                    position: new google.maps.LatLng(late, lange),
+                    animation: google.maps.Animation.DROP,
+                    title: "Hello World!"
+                });
+            }
+            for (var i = 0; i < mapLatLng.length; i++) {
+                addMarker(Number(mapLatLng[i][0]), Number(mapLatLng[i][1]));
+            }
+
+            // animation
+            // marker.addListener('click', toggleBounce);
+
+            // map list
+            function changeMap(lat, long) {
+                const myLatLng = {
+                    lat: lat,
+                    lng: long
+                };
+                const map = new google.maps.Map(
+                    document.getElementById("resantMap"), {
+                    zoom: 19,
+                    center: myLatLng,
+                }
+                );
+
+                new google.maps.Marker({
+                    position: myLatLng,
+                    map,
+                });
+            }
+
+            var mapListItem = $(".mapRestaurantItem");
+
+            mapListItem.click(function () {
+                let late = Number($(this).attr("lat"));
+                let lange = Number($(this).attr("lng"));
+
+                changeMap(late, lange);
+
+            })
         }
 
         function toggleBounce() {
@@ -182,7 +239,11 @@ $(function () {
 
         initMap("resantMap");
         google.maps.event.addDomListener(window, "load", initMap);
+
+
     }
+
+
 
     // map list close
     var closeMapListBut = $("#closeMapListBut");
@@ -200,9 +261,4 @@ $(function () {
             onloadModal.css("display", "none");
         })
     }
-
-
-
-
-
 })
