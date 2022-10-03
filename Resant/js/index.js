@@ -293,7 +293,7 @@ $(function () {
 
 // Page onload - loading
 window.onload = (e) => {
-    $(".onloadPage").addClass("onloadPageNone")
+    document.getElementsByClassName("onloadPage")[0].classList.add("onloadPageNone");
 }
 
 

@@ -1,5 +1,6 @@
 @import "reset.css";
 @import "mixin.css";
+@import "onload.css";
 @font-face {
   font-family: raleway-light;
   src: url(fonts/Raleway/Raleway-Light.ttf);
@@ -88,7 +89,7 @@ body {
 #resantHead #resantHeadOpacity .resantHead .resantHeadFirstresantHeadFirst .resantHeadFirstLeft .resantHeadLangBlock .resantHeadLangActive {
   margin: 0;
   font-family: raleway-medium;
-  font-size: 1rem;
+  font-size: 1.188rem;
   position: relative;
   padding: 0 7px;
 }
@@ -124,6 +125,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 2px 0;
+  font-size: 1.125rem;
 }
 #resantHead #resantHeadOpacity .resantHead .resantHeadFirstresantHeadFirst .resantHeadFirstLeft .resantHeadLangBlock .resantHeadLangDrop li:hover {
   color: #C59D37;
@@ -348,7 +350,7 @@ body {
 }
 #mobileMenu .mobileMenuOverlay .resantMobileHead .resantHeadLangBlock .resantHeadLangActive {
   font-family: raleway-medium;
-  font-size: 1rem;
+  font-size: 1.188rem;
   color: #AC8623;
   margin: 0;
   position: relative;
@@ -371,7 +373,7 @@ body {
   top: 10px;
   left: 0;
   font-family: raleway-medium;
-  font-size: 1rem;
+  font-size: 1.125rem;
   list-style-type: none;
   text-transform: capitalize;
   width: 100%;
