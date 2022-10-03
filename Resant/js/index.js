@@ -289,9 +289,11 @@ $(function () {
         })
     }
 
-    // Page onload - loading
-    $(window).on("load", function () {
-        $(".onloadPage").addClass("onloadPageNone")
-    })
-
 })
+
+// Page onload - loading
+window.onload = (e) => {
+    $(".onloadPage").addClass("onloadPageNone")
+}
+
+
