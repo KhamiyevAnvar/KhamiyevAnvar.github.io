@@ -166,7 +166,11 @@ body {
   width: 200px;
   height: 60px;
 }
-#resantHead #resantHeadOpacity .resantHead .resantHeadFirstresantHeadFirst .resantHeadCenter img {
+#resantHead #resantHeadOpacity .resantHead .resantHeadFirstresantHeadFirst .resantHeadCenter a {
+  display: flex;
+  height: 100%;
+}
+#resantHead #resantHeadOpacity .resantHead .resantHeadFirstresantHeadFirst .resantHeadCenter a img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -686,7 +690,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(15, 15, 15, 0.2);
+  background-color: rgba(15, 15, 15, 0.4);
   transition: all ease 0.6s;
 }
 .eventCard img {
@@ -729,7 +733,7 @@ body {
   cursor: pointer;
 }
 .eventCard:hover .eventCardImgOverlay {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .eventCard:hover img {
   transform: scale(1.1);
@@ -762,6 +766,11 @@ body {
   height: 100%;
   object-fit: contain;
 }
+.marker-position {
+  bottom: 0;
+  left: 70px;
+  position: relative;
+}
 #map {
   display: flex;
   position: relative;
@@ -775,7 +784,7 @@ body {
 }
 #map .mapList {
   background-color: white;
-  width: 25%;
+  width: max-content;
   height: 680px;
   position: absolute;
   top: 0;
@@ -788,10 +797,11 @@ body {
   height: 100%;
   list-style-type: none;
   overflow-y: auto;
+  transition: all ease 0.4s;
 }
 #map .mapList .mapRestaurantList .mapRestaurantItem {
   width: 100%;
-  padding: 10px 0 10px 25px;
+  padding: 10px 10px 10px 25px;
   display: flex;
   align-items: center;
   font-family: cormorant-medium;
@@ -1343,7 +1353,7 @@ body {
 }
 #eventPageBody .eventPageBody .eventPageBodyItem .eventPosElement .eventPosElementImg {
   width: 100%;
-  height: 100%;
+  height: 80%;
 }
 #eventPageBody .eventPageBody .eventPageBodyItem .eventPosElement .eventPosElementImg img {
   width: 100%;
@@ -1355,6 +1365,9 @@ body {
   font-family: cormorant-semibold;
   font-size: 2.75rem;
   color: #131313;
+  letter-spacing: 10px;
+  line-height: 60px;
+  text-align: center;
 }
 #contact {
   padding: 35px 0 240px 0;
@@ -1655,8 +1668,7 @@ body {
 #hotels .hotelCard .hotelCardInfo {
   width: 57%;
   height: 554px;
-  padding-left: 50px;
-  padding-right: 10px;
+  padding: 0 10px 5px 50px;
 }
 #hotels .hotelCard .hotelCardInfo .hotelCardName {
   margin: 0;

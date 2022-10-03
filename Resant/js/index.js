@@ -155,19 +155,17 @@ $(function () {
 
 
         function initMap(getId) {
-            var location = { lat: 40.408061, lng: 49.861052 };
+            var location = { lat: 40.37236309656292, lng: 49.840664727974975 };
             var map = new google.maps.Map(document.getElementById(getId), {
                 zoom: 12,
                 styles: [{ "featureType": "all", "elementType": "labels.text", "stylers": [{ "color": "#878787" }] }, { "featureType": "all", "elementType": "labels.text.stroke", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "all", "stylers": [{ "color": "#f9f5ed" }] }, { "featureType": "road.highway", "elementType": "all", "stylers": [{ "color": "#f5f5f5" }] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{ "color": "#c9c9c9" }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "color": "#aee0f4" }] }],
-                center: location,
-                title: "Hello World!"
+                center: location
             });
 
             marker = new google.maps.Marker({
                 map: map,
                 position: location,
-                animation: google.maps.Animation.DROP,
-                title: "Hello World!"
+                animation: google.maps.Animation.DROP
             });
 
 
@@ -176,19 +174,29 @@ $(function () {
             var mapLatLng = [];
 
             $(".mapRestaurantItem").map((mapListItem) => {
-                mapLatLng.push([Number($(".mapRestaurantItem")[mapListItem].getAttribute('lat')), Number($(".mapRestaurantItem")[mapListItem].getAttribute('lng'))]);
+                mapLatLng.push([Number($(".mapRestaurantItem")[mapListItem].getAttribute('lat')), Number($(".mapRestaurantItem")[mapListItem].getAttribute('lng')), $(".mapRestaurantItem")[mapListItem].getAttribute('name')]);
             });
 
-            function addMarker(late, lange) {
+            function addMarker(late, lange, labelText) {
+                // const svgMarker = {
+                //     path: "M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z",
+                //     fillColor: "red",
+                //     fillOpacity: 0.9,
+                //     strokeWeight: 0,
+                //     rotation: 0,
+                //     scale: 0.07,
+                //     anchor: new google.maps.Point(15, 30),
+                // };
                 marker = new google.maps.Marker({
                     map: map,
+                    // icon: svgMarker,
                     position: new google.maps.LatLng(late, lange),
                     animation: google.maps.Animation.DROP,
-                    title: "Hello World!"
+                    label: { color: '#555', fontWeight: 'bold', fontSize: '12px', text: labelText, className: 'marker-position' }
                 });
             }
             for (var i = 0; i < mapLatLng.length; i++) {
-                addMarker(Number(mapLatLng[i][0]), Number(mapLatLng[i][1]));
+                addMarker(Number(mapLatLng[i][0]), Number(mapLatLng[i][1]), mapLatLng[i][2]);
             }
 
             // animation
@@ -218,32 +226,27 @@ $(function () {
             mapListItem.click(function () {
                 let late = Number($(this).attr("lat"));
                 let lange = Number($(this).attr("lng"));
-
                 changeMap(late, lange);
 
             })
         }
 
-        function toggleBounce() {
-            if (marker.getAnimation() !== null) {
-                marker.setAnimation(null);
-            } else {
-                marker.setAnimation(google.maps.Animation.BOUNCE);
-            }
-            if (marker2.getAnimation() !== null) {
-                marker2.setAnimation(null);
-            } else {
-                marker2.setAnimation(google.maps.Animation.BOUNCE);
-            }
-        }
+        // function toggleBounce() {
+        //     if (marker.getAnimation() !== null) {
+        //         marker.setAnimation(null);
+        //     } else {
+        //         marker.setAnimation(google.maps.Animation.BOUNCE);
+        //     }
+        //     if (marker2.getAnimation() !== null) {
+        //         marker2.setAnimation(null);
+        //     } else {
+        //         marker2.setAnimation(google.maps.Animation.BOUNCE);
+        //     }
+        // }
 
         initMap("resantMap");
         google.maps.event.addDomListener(window, "load", initMap);
-
-
     }
-
-
 
     // map list close
     var closeMapListBut = $("#closeMapListBut");

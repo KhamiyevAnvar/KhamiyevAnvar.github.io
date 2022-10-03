@@ -167,7 +167,7 @@
   }
   #restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .restaurantOnePageLink {
     font-size: 1.375rem;
-    padding: 12px 20px;
+    padding: 10px 20px;
     margin-top: 20px;
   }
   #restaurantOnePageBody .restaurantOneCol .parallax-window {
@@ -389,7 +389,7 @@
     padding: 0 15px;
   }
   #resantHead #resantHeadOpacity .resantHead .resantHeadFirstresantHeadFirst .resantHeadCenter {
-    width: 170px;
+    width: 165px;
   }
   #resantHead #resantHeadOpacity .resantHead .resantHeadFirstresantHeadFirst .resantHeadRight a {
     display: none;
@@ -524,7 +524,6 @@
     width: 0% !important;
   }
   #map .mapList {
-    width: 85%;
     height: 100%;
   }
   #map .mapList .mapRestaurantList .mapRestaurantItem {
@@ -543,7 +542,7 @@
     padding-top: 20px;
   }
   #footer .footLogo img {
-    width: 210px;
+    width: 170px;
     height: 100%;
     object-fit: contain;
   }
@@ -575,8 +574,8 @@
     margin-top: 15px;
   }
   #footer .barcodeBlock img {
-    width: 170px;
-    height: 170px;
+    width: 160px;
+    height: 160px;
   }
   #footer .copyriter {
     margin-top: 25px;
@@ -1043,7 +1042,7 @@
 }
 @media screen and (max-width: 360.9px) {
   .eventCard {
-    height: 330px;
+    height: 300px;
   }
   .eventCard .eventPos {
     padding: 0 12px 14px 12px;
