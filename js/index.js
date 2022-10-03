@@ -1,7 +1,6 @@
 // loading
 $(window).on("load", function(){
-    $(".loader").fadeOut(500);
-        
+    $(".loader").fadeOut(500);     
 })
 
 // nav back
@@ -72,3 +71,4 @@ function sweetError(){
 	  text: 'Please fill in all fields'
 	})
 }
+
