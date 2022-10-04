@@ -1135,11 +1135,11 @@ body {
 	.onloadModalInfo {
 		background-color: white;
 		position: absolute;
-		top: 36%;
+		top: 50%;
 		left: 50%;
-		transform: translate(-50%, -36%);
+		transform: translate(-50%, -50%);
 		width: 70%;
-		height: 65%;
+		height: 70%;
 		display: flex;
 
 		.onloadModalInfoLeft {
@@ -1217,53 +1217,6 @@ body {
 
 
 		}
-	}
-
-	.onloadModalBottom {
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		width: 100%;
-		background-color: rgba(0, 0, 0, 0.9);
-		padding: 15px;
-
-		.onloadModalBottomContent {
-			font-family: montserrat-regular;
-			font-size: @fs-22;
-			color: white;
-			text-align: center;
-			margin: 0;
-		}
-
-		.onloadModalBottomButtons {
-			display: flex;
-			justify-content: center;
-			margin-top: 15px;
-
-			button {
-				background: none;
-				border: none;
-				outline: none;
-				margin: 0 5px;
-				font-family: montserrat-regular;
-				font-size: @fs-16;
-				color: white;
-				text-transform: uppercase;
-				background-color: #C59D37;
-				padding: 5px 15px;
-				border: 1px solid transparent;
-				transition: @transition4;
-
-			}
-
-			button:hover {
-				box-shadow: 0 0 2px white;
-				border: 1px solid #C59D37;
-				background-color: white;
-				color: #C59D37;
-			}
-		}
-
 	}
 }
 
@@ -1415,7 +1368,7 @@ body {
 					font-family: montserrat-semibold;
 					font-size: @fs-24;
 					color: #6D6D6D;
-					padding: 15px 22px;
+					padding: 10px 22px;
 					border: 1px solid #C59D37;
 					transition: @transition4;
 					text-transform: uppercase;
@@ -2065,7 +2018,7 @@ body {
 		}
 
 		.hotelCardInfoOverflow {
-			overflow-y: scroll !important;
+			overflow-y: auto !important;
 
 			.hotelCardFoot {
 				img {

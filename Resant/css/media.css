@@ -1001,7 +1001,6 @@
     width: 88%;
     height: 50%;
     flex-wrap: wrap;
-    top: 30%;
     height: auto;
     max-height: 90vh;
   }
@@ -1024,20 +1023,6 @@
   #onloadModal .onloadModalInfo .onloadModalInfoRight .onloadModalInfoRightContent .onloadModalInfoContent {
     font-size: 1.125rem;
     margin-top: 8px;
-  }
-  #onloadModal .onloadModalBottom {
-    padding: 12px;
-  }
-  #onloadModal .onloadModalBottom .onloadModalBottomContent {
-    font-size: 1.063rem;
-  }
-  #onloadModal .onloadModalBottom .onloadModalBottomButtons {
-    margin-top: 10px;
-  }
-  #onloadModal .onloadModalBottom .onloadModalBottomButtons button {
-    margin: 0 4px;
-    font-size: 0.938rem;
-    padding: 4px 12px;
   }
 }
 @media screen and (max-width: 360.9px) {

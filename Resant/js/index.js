@@ -156,7 +156,7 @@ $(function () {
         function initMap(getId) {
             var location = { lat: 40.37236309656292, lng: 49.840664727974975 };
             var map = new google.maps.Map(document.getElementById(getId), {
-                zoom: 12,
+                zoom: 7,
                 styles: [{ "featureType": "all", "elementType": "labels.text", "stylers": [{ "color": "#878787" }] }, { "featureType": "all", "elementType": "labels.text.stroke", "stylers": [{ "visibility": "off" }] }, { "featureType": "landscape", "elementType": "all", "stylers": [{ "color": "#f9f5ed" }] }, { "featureType": "road.highway", "elementType": "all", "stylers": [{ "color": "#f5f5f5" }] }, { "featureType": "road.highway", "elementType": "geometry.stroke", "stylers": [{ "color": "#c9c9c9" }] }, { "featureType": "water", "elementType": "all", "stylers": [{ "color": "#aee0f4" }] }],
                 center: location,
                 zoomControl: true,
@@ -188,32 +188,11 @@ $(function () {
                 //     scale: 0.07,
                 //     anchor: new google.maps.Point(10, 30),
                 // };
-                // const svgMarker2 = {
-                //     path: "M384 192c0 87.4-117 243-168.3 307.2c-12.3 15.3-35.1 15.3-47.4 0C117 435 0 279.4 0 192C0 86 86 0 192 0S384 86 384 192z",
-                //     fillColor: "#EE3535",
-                //     fillOpacity: 0.9,
-                //     strokeWeight: 0,
-                //     rotation: 0,
-                //     scale: 0.07,
-                //     anchor: new google.maps.Point(15, 30),
-                // };
-                // const gMapSvg = {
-                //     path: "M320 144c0 79.5-64.5 144-144 144S32 223.5 32 144S96.5 0 176 0s144 64.5 144 144zM176 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM144 480V317.1c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32z",
-                //     fillColor: "#0000ff",
-                //     fillOpacity: 1,
-                //     anchor: new google.maps.Point(
-                //         faBus.icon[0] / 2, // width
-                //         faBus.icon[1] // height
-                //     ),
-                //     strokeWeight: 1,
-                //     strokeColor: "#ffffff",
-                //     scale: 0.075,
-                // }
                 marker = new google.maps.Marker({
                     map: map,
                     position: new google.maps.LatLng(late, lange),
                     animation: google.maps.Animation.DROP,
-                    label: { color: '#555', fontWeight: 'bold', fontSize: '13px', text: labelText, className: 'marker-position' }
+                    label: { color: '#555', fontWeight: '900', fontSize: '14px', text: labelText, className: 'marker-position' }
                 });
             }
             for (var i = 0; i < mapLatLng.length; i++) {
@@ -241,7 +220,7 @@ $(function () {
                 new google.maps.Marker({
                     position: myLatLng,
                     map,
-                    label: { color: '#555', fontSize: '13px', text: labelCont, className: 'marker-position' }
+                    label: { color: '#555', fontWeight: '900', fontSize: '14px', text: labelCont, className: 'marker-position' }
                 });
             }
 
