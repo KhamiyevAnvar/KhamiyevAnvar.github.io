@@ -239,7 +239,8 @@ $(function () {
             mapListItem.click(function () {
                 let late = Number($(this).attr("lat"));
                 let lange = Number($(this).attr("lng"));
-                let labelCont = $(this).attr("name")
+                let labelCont = $(this).attr("name");
+                $(this).addClass("active").siblings().removeClass("active");
                 changeMap(late, lange, labelCont);
             })
         }
