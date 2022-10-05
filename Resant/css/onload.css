@@ -37,28 +37,28 @@
 .onloadPage .shape:nth-child(1) {
     cy: 50;
     cx: 50;
-    fill: #c20f00;
+    fill: #6A6A49;
     animation: movein 3s ease infinite alternate;
 }
 
 .onloadPage .shape:nth-child(2) {
     cy: 50;
     cx: 150;
-    fill: #ffdd22;
+    fill: #000000;
     animation: movein 3s ease infinite alternate;
 }
 
 .onloadPage .shape:nth-child(3) {
     cy: 150;
     cx: 50;
-    fill: #2374c6;
+    fill: #443421;
     animation: movein 3s ease infinite alternate;
 }
 
 .onloadPage .shape:nth-child(4) {
     cy: 150;
     cx: 150;
-    fill: #000000;
+    fill: #C59D37;
     animation: movein 3s ease infinite alternate;
 }
 
