@@ -784,6 +784,7 @@ body {
 }
 #map .mapListClose .mapRestaurantList {
   width: 0;
+  transition: all ease 0.4s;
 }
 #map .mapList {
   background-color: white;
@@ -1771,4 +1772,103 @@ body {
   color: #0B0603;
   text-transform: uppercase;
   text-align: center;
+}
+#beach {
+  background-color: white;
+}
+#beach .beachHead {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#beach .beachHead .col-12:nth-child(even) {
+  background-color: #F2F2F2;
+}
+#beach .beachHead .col-12 {
+  margin-top: 10px;
+}
+#beach .beachCard {
+  padding: 30px 15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#beach .beachCard .beachCardImg {
+  width: 43%;
+  height: 554px;
+}
+#beach .beachCard .beachCardImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#beach .beachCard .beachCardInfo {
+  width: 57%;
+  height: 554px;
+  padding: 0 10px 5px 50px;
+}
+#beach .beachCard .beachCardInfo .beachCardName {
+  margin: 0;
+  font-family: cormorant-medium;
+  font-size: 3rem;
+  color: #000;
+  text-transform: capitalize;
+}
+#beach .beachCard .beachCardInfo .beachCardContent {
+  margin: 0;
+  margin-top: 15px;
+  font-family: montserrat-regular;
+  font-size: 1.25rem;
+  color: #000;
+  transition: all ease 0.6s;
+}
+#beach .beachCard .beachCardInfo .beachCardContentLimit {
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+}
+#beach .beachCard .beachCardInfo .beachCardFoot {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 54px;
+}
+#beach .beachCard .beachCardInfo .beachCardFoot img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  transition: all ease 0.4s;
+}
+#beach .beachCard .beachCardInfo .beachCardFoot .beachMoreButton {
+  display: inline-block;
+  border: none;
+  outline: none;
+  background: none;
+  padding-left: 7px;
+  font-family: montserrat-regular;
+  font-size: 1.25rem;
+  color: black;
+  text-transform: capitalize;
+}
+#beach .beachCard .beachCardInfo .callLink {
+  display: inline-block;
+  margin-top: 39px;
+  text-decoration: none;
+  padding: 12px 30px;
+  background-color: #0C1D49;
+  font-family: montserrat-medium;
+  font-size: 1.25rem;
+  color: #fff;
+  text-transform: capitalize;
+  transition: all ease 0.4s;
+}
+#beach .beachCard .beachCardInfo .callLink:hover {
+  background-color: white;
+  color: #0C1D49;
+  box-shadow: 0 0 5px #0C1D49;
+}
+#beach .beachCard .beachCardInfoOverflow {
+  overflow-y: auto !important;
+}
+#beach .beachCard .beachCardInfoOverflow .beachCardFoot img {
+  transform: rotate(45deg);
 }

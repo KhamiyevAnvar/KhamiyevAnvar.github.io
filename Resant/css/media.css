@@ -376,6 +376,50 @@
     margin-top: 24px;
     font-size: 2rem;
   }
+  #beach .beachHead {
+    padding-top: 28px;
+    padding-bottom: 42px;
+  }
+  #beach .beachHead .col-12 {
+    margin-top: 9px;
+  }
+  #beach .beachCard {
+    padding: 20px 5px;
+  }
+  #beach .beachCard .beachCardImg {
+    width: 100%;
+    height: 420px;
+  }
+  #beach .beachCard .beachCardInfo {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+    padding-top: 20px;
+  }
+  #beach .beachCard .beachCardInfo .beachCardName {
+    font-size: 2.75rem;
+  }
+  #beach .beachCard .beachCardInfo .beachCardName .beachCardContent {
+    margin-top: 12px;
+    font-size: 1.25rem;
+  }
+  #beach .beachCard .beachCardInfo .beachCardName .beachCardFoot {
+    margin-top: 44px;
+  }
+  #beach .beachCard .beachCardInfo .beachCardName .beachCardFoot img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+  }
+  #beach .beachCard .beachCardInfo .beachCardName .beachCardFoot .beachMoreButton {
+    padding-left: 7px;
+    font-size: 1.25rem;
+  }
+  #beach .beachCard .beachCardInfo .beachCardName .callLink {
+    margin-top: 30px;
+    padding: 12px 30px;
+    font-size: 1.25rem;
+  }
 }
 @media screen and (max-width: 767.9px) {
   #resantHead #resantHeadOpacity {
@@ -752,6 +796,38 @@
     margin-top: 20px;
     font-size: 1.75rem;
   }
+  #beach .beachCard {
+    padding: 15px 0;
+  }
+  #beach .beachCard .beachCardImg {
+    height: 300px;
+  }
+  #beach .beachCard .beachCardInfo {
+    padding-top: 14px;
+  }
+  #beach .beachCard .beachCardInfo .beachCardName {
+    font-size: 2rem;
+  }
+  #beach .beachCard .beachCardInfo .beachCardContent {
+    margin-top: 10px;
+    font-size: 1.125rem;
+  }
+  #beach .beachCard .beachCardInfo .beachCardFoot {
+    margin-top: 24px;
+  }
+  #beach .beachCard .beachCardInfo .beachCardFoot img {
+    width: 16px;
+    height: 16px;
+  }
+  #beach .beachCard .beachCardInfo .beachCardFoot .beachMoreButton {
+    padding-left: 6px;
+    font-size: 1.063rem;
+  }
+  #beach .beachCard .beachCardInfo .callLink {
+    margin-top: 20px;
+    padding: 7px 22px;
+    font-size: 1.125rem;
+  }
   #onloadModal .onloadModalInfo {
     width: 75%;
   }
@@ -996,6 +1072,42 @@
   #hotels .hotelsSlider .hotelsSliderCover .hotelsSliderItem .hotelsSliderItemName {
     margin-top: 16px;
     font-size: 1.5rem;
+  }
+  #beach .beachHead {
+    padding-top: 15px;
+    padding-bottom: 25px;
+  }
+  #beach .beachCard {
+    padding: 12px 0;
+  }
+  #beach .beachCard .beachCardImg {
+    height: 240px;
+  }
+  #beach .beachCard .beachCardInfo {
+    padding-top: 12px;
+  }
+  #beach .beachCard .beachCardInfo .beachCardName {
+    font-size: 1.75rem;
+  }
+  #beach .beachCard .beachCardInfo .beachCardContent {
+    margin-top: 9px;
+    font-size: 1.063rem;
+  }
+  #beach .beachCard .beachCardInfo .beachCardFoot {
+    margin-top: 20px;
+  }
+  #beach .beachCard .beachCardInfo .beachCardFoot img {
+    width: 16px;
+    height: 16px;
+  }
+  #beach .beachCard .beachCardInfo .beachCardFoot .beachMoreButton {
+    padding-left: 5px;
+    font-size: 0.938rem;
+  }
+  #beach .beachCard .beachCardInfo .callLink {
+    margin-top: 18px;
+    padding: 5px 20px;
+    font-size: 1.063rem;
   }
   #onloadModal .onloadModalInfo {
     width: 88%;

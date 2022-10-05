@@ -147,12 +147,23 @@ $(function () {
             $(this).text("show less");
         }
     })
+    // beach card show more show less button
+    const beachMoreButton = $(".beachMoreButton");
+    beachMoreButton.click(function () {
+        if ($(this).parents(".beachCard").find(".beachCardInfoOverflow").length > 0) {
+            $(this).parents(".beachCardInfo").removeClass("beachCardInfoOverflow");
+            $(this).parents(".beachCardInfo").find(".beachCardContent").addClass("beachCardContentLimit");
+            $(this).text("show more");
+
+        } else {
+            $(this).parents(".beachCardInfo").addClass("beachCardInfoOverflow");
+            $(this).parents(".beachCardInfo").find(".beachCardContent").removeClass("beachCardContentLimit");
+            $(this).text("show less");
+        }
+    })
 
     // map
     if ($("#resantMap").length > 0) {
-
-
-
         function initMap(getId) {
             var location = { lat: 40.37236309656292, lng: 49.840664727974975 };
             var map = new google.maps.Map(document.getElementById(getId), {
