@@ -1,7 +1,7 @@
 @import "reset.css";
 @import "mixin.css";
 @import "common.less";
-@import "onload.css";
+;
 
 * {
 	padding: 0;
@@ -923,7 +923,7 @@ body {
 				padding: 10px 10px 10px 25px;
 				display: flex;
 				align-items: center;
-				font-family: cormorant-medium;
+				font-family: montserrat-medium;
 				font-size: @fs-24;
 				color: #0C1D49;
 				transition: @transition6;
@@ -1222,11 +1222,59 @@ body {
 }
 
 // onload page
+.onloadPageNone {
+	opacity: 0;
+	visibility: hidden;
+	display: none;
+}
+
+.onloadResant {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background-color: rgba(255, 255, 255, 0.95);
+	font-family: "Montserrat", sans-serif;
+	transition: all ease .6s;
+
+	.onloadResantBack {
+		border-radius: 50%;
+		animation: onload 3s ease infinite alternate;
+		background-color: white;
+		width: 180px;
+		height: 180px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@keyframes onload {
+			0% {
+				transform: rotate(0deg) scale(0.9);
+			}
+
+			100% {
+				transform: rotate(360deg) scale(1.1);
+			}
+		}
+
+		img {
+			width: 70%;
+			height: 70%;
+		}
+
+
+	}
+}
 
 // Restaurant Page
 #restaurantBody {
 	padding: 15px 0;
-
 
 	.restaurantCard {
 		height: 450px;
@@ -1260,7 +1308,6 @@ body {
 			transition: @transition4;
 
 			.restaurantContent {
-
 				text-align: center;
 
 				.restaurantName {
@@ -1333,8 +1380,9 @@ body {
 			justify-content: center;
 			align-items: center;
 			width: 100%;
-			height: 100%;
-			padding: 20px 60px;
+			height: 570px;
+			overflow: auto;
+			padding: 50px 60px;
 
 			.content {
 				display: flex;
@@ -1349,6 +1397,7 @@ body {
 					font-size: @fs-40;
 					color: #AC8623;
 					text-align: center;
+					padding-top: 80px;
 				}
 
 				.restaurantContentText {
@@ -1381,6 +1430,31 @@ body {
 					box-shadow: 0 0 3px #6D6D6D;
 					color: white;
 				}
+
+
+
+				.container {
+					.row {
+						margin-top: 15px !important;
+
+						.col-sm-4 {
+							padding: 15px;
+
+							.testImg {
+								width: 100% !important;
+								height: 120px !important;
+
+								img {
+									width: 100% !important;
+									height: 100% !important;
+									object-fit: cover !important;
+								}
+							}
+						}
+
+					}
+				}
+
 			}
 		}
 	}
@@ -2006,23 +2080,30 @@ body {
 
 			}
 
-			.callLink {
-				display: inline-block;
-				margin-top: 39px;
-				text-decoration: none;
-				padding: 12px 30px;
-				background-color: #0C1D49;
-				font-family: montserrat-medium;
-				font-size: @fs-20;
-				color: #fff;
-				text-transform: capitalize;
-				transition: @transition4;
-			}
+			.hotelItemLinks {
+				display: flex;
+				flex-wrap: wrap;
+				margin-top: 35px;
 
-			.callLink:hover {
-				background-color: white;
-				color: #0C1D49;
-				box-shadow: 0 0 5px #0C1D49;
+				.hotelItemLinksDesing {
+					display: inline-block;
+					text-decoration: none;
+					padding: 12px 30px;
+					background-color: #0C1D49;
+					font-family: montserrat-medium;
+					font-size: @fs-20;
+					color: #fff;
+					text-transform: capitalize;
+					transition: @transition4;
+					margin-right: 5px;
+					margin-top: 5px;
+				}
+
+				.hotelItemLinksDesing:hover {
+					background-color: white;
+					color: #0C1D49;
+					box-shadow: 0 0 5px #0C1D49;
+				}
 			}
 		}
 
@@ -2127,6 +2208,40 @@ body {
 					color: #0B0603;
 					text-transform: uppercase;
 					text-align: center;
+				}
+			}
+
+			.owl-stage-outer {
+				position: relative;
+			}
+
+			.owl-nav {
+				.owl-prev {
+					position: absolute;
+					top: 45%;
+					transform: translateY(-50%);
+					left: 4vw;
+					width: 40px;
+					height: auto;
+					padding: 0 15px;
+
+					svg {
+						fill: #C59D37;
+					}
+				}
+
+				.owl-next {
+					display: none;
+					position: absolute;
+					top: 45%;
+					right: 4vw;
+					transform: translateY(-50%);
+					width: 40px;
+					height: auto;
+
+					svg {
+						fill: #C59D37;
+					}
 				}
 			}
 		}

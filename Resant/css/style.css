@@ -1,6 +1,5 @@
 @import "reset.css";
 @import "mixin.css";
-@import "onload.css";
 @font-face {
   font-family: raleway-light;
   src: url(fonts/Raleway/Raleway-Light.ttf);
@@ -808,7 +807,7 @@ body {
   padding: 10px 10px 10px 25px;
   display: flex;
   align-items: center;
-  font-family: cormorant-medium;
+  font-family: montserrat-medium;
   font-size: 1.5rem;
   color: #0C1D49;
   transition: all ease 0.6s;
@@ -1050,6 +1049,48 @@ body {
   margin: 0;
   margin-top: 10px;
 }
+.onloadPageNone {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+}
+.onloadResant {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgba(255, 255, 255, 0.95);
+  font-family: "Montserrat", sans-serif;
+  transition: all ease .6s;
+}
+.onloadResant .onloadResantBack {
+  border-radius: 50%;
+  animation: onload 3s ease infinite alternate;
+  background-color: white;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes onload {
+  0% {
+    transform: rotate(0deg) scale(0.9);
+  }
+  100% {
+    transform: rotate(360deg) scale(1.1);
+  }
+}
+.onloadResant .onloadResantBack img {
+  width: 70%;
+  height: 70%;
+}
 #restaurantBody {
   padding: 15px 0;
 }
@@ -1137,8 +1178,9 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
-  padding: 20px 60px;
+  height: 570px;
+  overflow: auto;
+  padding: 50px 60px;
 }
 #restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content {
   display: flex;
@@ -1153,6 +1195,7 @@ body {
   font-size: 2.5rem;
   color: #AC8623;
   text-align: center;
+  padding-top: 80px;
 }
 #restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .restaurantContentText {
   margin-top: 30px;
@@ -1181,6 +1224,21 @@ body {
   background-color: #C59D37;
   box-shadow: 0 0 3px #6D6D6D;
   color: white;
+}
+#restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .container .row {
+  margin-top: 15px !important;
+}
+#restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .container .row .col-sm-4 {
+  padding: 15px;
+}
+#restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .container .row .col-sm-4 .testImg {
+  width: 100% !important;
+  height: 120px !important;
+}
+#restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .container .row .col-sm-4 .testImg img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
 }
 #restaurantOnePageBody .restaurantOneCol .parallax-window {
   height: 450px;
@@ -1686,9 +1744,13 @@ body {
   color: black;
   text-transform: capitalize;
 }
-#hotels .hotelCard .hotelCardInfo .callLink {
+#hotels .hotelCard .hotelCardInfo .hotelItemLinks {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+#hotels .hotelCard .hotelCardInfo .hotelItemLinks .hotelItemLinksDesing {
   display: inline-block;
-  margin-top: 39px;
   text-decoration: none;
   padding: 12px 30px;
   background-color: #0C1D49;
@@ -1697,8 +1759,10 @@ body {
   color: #fff;
   text-transform: capitalize;
   transition: all ease 0.4s;
+  margin-right: 5px;
+  margin-top: 5px;
 }
-#hotels .hotelCard .hotelCardInfo .callLink:hover {
+#hotels .hotelCard .hotelCardInfo .hotelItemLinks .hotelItemLinksDesing:hover {
   background-color: white;
   color: #0C1D49;
   box-shadow: 0 0 5px #0C1D49;
@@ -1780,6 +1844,33 @@ body {
   color: #0B0603;
   text-transform: uppercase;
   text-align: center;
+}
+#hotels .hotelsSlider .hotelsSliderCover .owl-stage-outer {
+  position: relative;
+}
+#hotels .hotelsSlider .hotelsSliderCover .owl-nav .owl-prev {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  left: 4vw;
+  width: 40px;
+  height: auto;
+  padding: 0 15px;
+}
+#hotels .hotelsSlider .hotelsSliderCover .owl-nav .owl-prev svg {
+  fill: #C59D37;
+}
+#hotels .hotelsSlider .hotelsSliderCover .owl-nav .owl-next {
+  display: none;
+  position: absolute;
+  top: 45%;
+  right: 4vw;
+  transform: translateY(-50%);
+  width: 40px;
+  height: auto;
+}
+#hotels .hotelsSlider .hotelsSliderCover .owl-nav .owl-next svg {
+  fill: #C59D37;
 }
 #beach {
   background-color: white;

@@ -350,8 +350,10 @@
     padding-left: 7px;
     font-size: 1.25rem;
   }
-  #hotels .hotelCard .hotelCardInfo .hotelCardName .callLink {
+  #hotels .hotelCard .hotelCardInfo .hotelCardName .hotelItemLinks {
     margin-top: 30px;
+  }
+  #hotels .hotelCard .hotelCardInfo .hotelCardName .hotelItemLinks .hotelItemLinksDesing {
     padding: 12px 30px;
     font-size: 1.25rem;
   }
@@ -415,8 +417,10 @@
     padding-left: 7px;
     font-size: 1.25rem;
   }
-  #beach .beachCard .beachCardInfo .beachCardName .callLink {
+  #beach .beachCard .beachCardInfo .beachCardName .hotelItemLinks {
     margin-top: 30px;
+  }
+  #beach .beachCard .beachCardInfo .beachCardName .hotelItemLinks .hotelItemLinksDesing {
     padding: 12px 30px;
     font-size: 1.25rem;
   }
@@ -770,9 +774,11 @@
     padding-left: 6px;
     font-size: 1.063rem;
   }
-  #hotels .hotelCard .hotelCardInfo .callLink {
+  #hotels .hotelCard .hotelCardInfo .hotelItemLinks {
     margin-top: 20px;
-    padding: 7px 22px;
+  }
+  #hotels .hotelCard .hotelCardInfo .hotelItemLinks .hotelItemLinksDesing {
+    padding: 7px 20px;
     font-size: 1.125rem;
   }
   #hotels .hotelsSlider {
@@ -823,13 +829,23 @@
     padding-left: 6px;
     font-size: 1.063rem;
   }
-  #beach .beachCard .beachCardInfo .callLink {
+  #beach .beachCard .beachCardInfo .hotelItemLinks {
     margin-top: 20px;
-    padding: 7px 22px;
+  }
+  #beach .beachCard .beachCardInfo .hotelItemLinks .hotelItemLinksDesing {
+    padding: 7px 20px;
     font-size: 1.125rem;
   }
   #onloadModal .onloadModalInfo {
     width: 75%;
+  }
+  .onloadResant .onloadResantBack {
+    width: 140px;
+    height: 140px;
+  }
+  .onloadResant .onloadResantBack img {
+    width: 70%;
+    height: 70%;
   }
 }
 @media screen and (max-width: 575.9px) {
@@ -1046,8 +1062,10 @@
     padding-left: 5px;
     font-size: 0.938rem;
   }
-  #hotels .hotelCard .hotelCardInfo .callLink {
+  #hotels .hotelCard .hotelCardInfo .hotelItemLinks {
     margin-top: 18px;
+  }
+  #hotels .hotelCard .hotelCardInfo .hotelItemLinks .hotelItemLinksDesing {
     padding: 5px 20px;
     font-size: 1.063rem;
   }
@@ -1072,6 +1090,13 @@
   #hotels .hotelsSlider .hotelsSliderCover .hotelsSliderItem .hotelsSliderItemName {
     margin-top: 16px;
     font-size: 1.5rem;
+  }
+  #hotels .hotelsSlider .hotelsSliderCover .owl-nav .owl-prev {
+    width: 30px;
+  }
+  #hotels .hotelsSlider .hotelsSliderCover .owl-nav .owl-next {
+    width: 30px;
+    display: block;
   }
   #beach .beachHead {
     padding-top: 15px;
@@ -1104,8 +1129,10 @@
     padding-left: 5px;
     font-size: 0.938rem;
   }
-  #beach .beachCard .beachCardInfo .callLink {
+  #beach .beachCard .beachCardInfo .hotelItemLinks {
     margin-top: 18px;
+  }
+  #beach .beachCard .beachCardInfo .hotelItemLinks .hotelItemLinksDesing {
     padding: 5px 20px;
     font-size: 1.063rem;
   }
