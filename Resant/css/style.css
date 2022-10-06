@@ -1178,7 +1178,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 570px;
+  height: 100%;
   overflow: auto;
   padding: 50px 60px;
 }
@@ -1195,7 +1195,6 @@ body {
   font-size: 2.5rem;
   color: #AC8623;
   text-align: center;
-  padding-top: 80px;
 }
 #restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .restaurantContentText {
   margin-top: 30px;
@@ -1204,7 +1203,18 @@ body {
   color: #000;
   text-align: center;
 }
-#restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .restaurantOnePageLink {
+#restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .contentLink {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+#restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .contentLink .restaurantOnePageButton {
+  outline: none;
+  background: none !important;
+}
+#restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .contentLink a,
+#restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .contentLink button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1219,26 +1229,65 @@ body {
   margin-top: 25px;
   text-transform: capitalize;
   min-width: 90px;
+  margin: 0 4px;
 }
-#restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .restaurantOnePageLink:hover {
+#restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .contentLink .restaurantOnePageLink:hover {
   background-color: #C59D37;
   box-shadow: 0 0 3px #6D6D6D;
   color: white;
 }
-#restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .container .row {
-  margin-top: 15px !important;
+#restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .contentLink .restaurantOnePageButton:hover {
+  background-color: #C59D37 !important;
+  box-shadow: 0 0 3px #6D6D6D;
+  color: white;
 }
-#restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .container .row .col-sm-4 {
-  padding: 15px;
+#restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .modal .modal-dialog .modal-content .modal-header {
+  display: none;
 }
-#restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .container .row .col-sm-4 .testImg {
-  width: 100% !important;
-  height: 120px !important;
+#restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .modal .modal-dialog .modal-content .modal-body img {
+  width: 100%;
 }
-#restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .container .row .col-sm-4 .testImg img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
+#restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .kabinetGalery {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease .8s;
+}
+#restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .kabinetGalery .row {
+  margin: 0 -5px;
+  margin-top: 25px;
+  padding-bottom: 20px;
+}
+#restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .kabinetGalery .row .col-4 {
+  padding: 5px;
+}
+#restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .kabinetGalery .row .col-4 .thumbnail {
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+}
+#restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .kabinetGalery .row .col-4 .thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all ease 0.4s;
+}
+#restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .kabinetGalery .row .col-4 .thumbnail:hover img {
+  transform: scale(1.02);
+}
+#restaurantOnePageBody .restaurantTwoCol .restaurantKabinet {
+  height: 570px;
+}
+#restaurantOnePageBody .restaurantTwoCol .restaurantKabinet .content {
+  justify-content: flex-start;
+}
+#restaurantOnePageBody .restaurantTwoCol .restaurantKabinet .content .restaurantContentName {
+  padding-top: 20px;
+}
+#restaurantOnePageBody .restaurantTwoCol .restaurantKabinet .content .kabinetGalery {
+  display: block;
+  visibility: visible;
+  opacity: 1;
 }
 #restaurantOnePageBody .restaurantOneCol .parallax-window {
   height: 450px;

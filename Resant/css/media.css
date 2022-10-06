@@ -165,10 +165,14 @@
     margin-top: 25px;
     font-size: 1.25rem;
   }
-  #restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .restaurantOnePageLink {
+  #restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .contentLink a,
+  #restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .contentLink button {
     font-size: 1.375rem;
-    padding: 10px 20px;
+    padding: 10px 22px;
     margin-top: 20px;
+  }
+  #restaurantOnePageBody .restaurantTwoCol .restaurantKabinet {
+    height: 420px;
   }
   #restaurantOnePageBody .restaurantOneCol .parallax-window {
     height: 400px;
@@ -642,6 +646,9 @@
   #restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right {
     padding: 25px 40px;
   }
+  #restaurantOnePageBody .restaurantTwoCol .restaurantKabinet {
+    height: 380px;
+  }
   #restaurantOnePageBody .restaurantOneCol .parallax-window {
     height: 350px;
   }
@@ -865,6 +872,10 @@
     height: 300px;
     margin: 5px 0;
   }
+  #map .mapList .mapRestaurantList .mapRestaurantItem {
+    font-size: 1rem;
+    padding: 10px 8px 5px 12px;
+  }
   #restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-left {
     height: 280px;
   }
@@ -878,10 +889,14 @@
     margin-top: 15px;
     font-size: 1.125rem;
   }
-  #restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .restaurantOnePageLink {
-    font-size: 1.25rem;
-    padding: 8px 16px;
-    margin-top: 12px;
+  #restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .contentLink a,
+  #restaurantOnePageBody .restaurantTwoCol .restaurantTwoCol-right .content .contentLink button {
+    font-size: 1.125rem;
+    padding: 6px 14px;
+    margin-top: 10px;
+  }
+  #restaurantOnePageBody .restaurantTwoCol .restaurantKabinet {
+    height: auto;
   }
   #restaurantOnePageBody .restaurantOneCol .parallax-window {
     height: 260px;
