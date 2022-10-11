@@ -1836,6 +1836,7 @@ body {
 }
 #hotels .hotelsSlider .hotelsSliderCover {
   padding-left: 9vw;
+  padding-right: 9vw;
 }
 #hotels .hotelsSlider .hotelsSliderCover .owl-stage .owl-item .hotelsSliderItem {
   transform: scale(0.7);
@@ -1910,7 +1911,6 @@ body {
   fill: #C59D37;
 }
 #hotels .hotelsSlider .hotelsSliderCover .owl-nav .owl-next {
-  display: none;
   position: absolute;
   top: 45%;
   right: 4vw;
