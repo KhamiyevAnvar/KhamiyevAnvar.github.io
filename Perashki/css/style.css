@@ -11224,6 +11224,8 @@ h6,
 /* blog item info */
 .blog-item-info .item {
   background-color: #F4F5F8;
+  border-radius: 0 0 15px 15px;
+  overflow: hidden;
 }
 
 .blog-item-info .item .item-img {
