@@ -169,6 +169,7 @@ a {
   color: #FFAA17;
   text-decoration: none;
   background-color: transparent;
+  transition: all ease .4s;
 }
 
 a:hover {
@@ -10981,7 +10982,8 @@ h6,
 }
 
 .service-item {
-  height: 320px;
+  /* height: 320px; */
+  height: 100%;
   overflow: hidden;
   background: #F4F5F8;
   transition: .5s;
@@ -11143,6 +11145,20 @@ h6,
   z-index: -1;
 }
 
+.partner-carousel {
+  background-color: #F4F5F8;
+  padding: 30px;
+}
+
+.partner-carousel .partner-item {
+  height: 100px;
+}
+
+.partner-carousel .partner-item img {
+  height: 100%;
+  object-fit: contain;
+}
+
 .contact-form .help-block ul {
   margin: 0;
   padding: 0;
@@ -11293,6 +11309,10 @@ h6,
 
 
 @media (max-width: 575.98px) {
+  .partner-carousel .partner-item {
+    height: 65px;
+  }
+
   .blog-item .item .item-img {
     height: 200px;
   }
