@@ -11146,6 +11146,20 @@ h6,
   z-index: -1;
 }
 
+
+#AboutQuestion .card button {
+  box-shadow: none;
+  text-decoration: none;
+}
+
+#AboutQuestion .card .card-header {
+  transition: all ease .4s;
+}
+
+#AboutQuestion .card .card-header:hover {
+  background: white;
+}
+
 .partner-carousel {
   background-color: #F4F5F8;
   padding: 30px;
