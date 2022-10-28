@@ -68,8 +68,8 @@
     position: absolute;
     width: 4em;
     top: 50%;
-    transform: translateY(-50%);
-    right: -5%;
+    transform: translateY(-50%) rotate(-135deg);
+    right: -9%;
 }
 
 .container_wrapper svg path {
@@ -95,8 +95,10 @@
         font-size: 1rem;
     }
 
-    .container_wrapper svg {
-        right: -5%;
-    }
+}
 
+@media screen and (max-width: 575.5px) {
+    .container_wrapper #spin-btn {
+        font-size: 0.8rem;
+    }
 }

@@ -11322,6 +11322,10 @@ h6,
   font-size: 16px;
 }
 
+.sps_spinner {
+  padding: 0 15px;
+  text-align: center;
+}
 
 @media (max-width: 575.98px) {
   .partner-carousel .partner-item {
