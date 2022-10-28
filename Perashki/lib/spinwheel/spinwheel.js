@@ -15,12 +15,12 @@ const rotationValues = [
 const data = [16, 16, 16, 16, 16, 16];
 //background color for each piece
 var pieColors = [
+    "#ffaa17",
     "#f1b93c",
-    "#686A6F",
-    "#f1b93c",
-    "#686A6F",
-    "#f1b93c",
-    "#686A6F",
+    "#ff7017",
+    "#ff9717",
+    "#ff8317",
+    "#ff9717",
 ];
 var newBrElement = document.createElement("br");
 //Create chart
