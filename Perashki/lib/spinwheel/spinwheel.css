@@ -1,8 +1,9 @@
 .container_wrapper {
     position: relative;
     width: 100% !important;
-    height: 100vh !important;
+    /* height: 100vh !important; */
     background: #ffaa17;
+    padding: 30px 0;
 }
 
 .container_wrapper .wrapper {
@@ -11,10 +12,11 @@
     max-width: 34.37em;
     max-height: 90vh;
     background-color: #ffffff;
-    position: absolute;
+    /* position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
-    left: 50%;
+    left: 50%; */
+    margin: 0 auto;
     padding: 3em;
     border-radius: 1em;
     box-shadow: 0 4em 5em rgba(27, 8, 53, 0.2);
