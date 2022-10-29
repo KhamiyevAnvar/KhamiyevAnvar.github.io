@@ -11012,6 +11012,17 @@ h6,
   color: #F4F5F8;
 }
 
+.service-item .serviceSvgItem {
+  text-align: left;
+}
+
+.service-item .serviceSvgItem svg {
+  fill: #FFAA17 !important;
+  width: auto;
+  max-height: 70px;
+
+}
+
 .portfolio-item .portfolio-btn {
   position: absolute;
   width: 0;
