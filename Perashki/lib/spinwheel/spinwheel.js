@@ -22,7 +22,8 @@ var pieColors = [
     "#ff8317",
     "#ff9717",
 ];
-var newBrElement = document.createElement("br");
+// var newBrElement = document.createElement("br");
+// console.log(newBrElement);
 //Create chart
 let myChart = new Chart(wheel, {
     //Plugin for displaying text on pie chart
@@ -31,7 +32,7 @@ let myChart = new Chart(wheel, {
     type: "pie",
     data: {
         //Labels(values which are to be displayed on chart)
-        labels: [5 + "%", 30 + "%", 10 + "%", 20 + "%", 15 + "%", 25 + "%"],
+        labels: ["Smm " + 5 + "%", "Desing " + 30 + "%", "Smm " + 10 + "%", "Smm " + 20 + "%", "Smm " + 15 + "%", "Smm " + 25 + "%"],
         //Settings for dataset/pie
         datasets: [
             {
@@ -54,7 +55,7 @@ let myChart = new Chart(wheel, {
             datalabels: {
                 color: "#ffffff",
                 formatter: (_, context) => context.chart.data.labels[context.dataIndex],
-                font: { size: 24 },
+                font: { size: 20 }
             },
         },
     },

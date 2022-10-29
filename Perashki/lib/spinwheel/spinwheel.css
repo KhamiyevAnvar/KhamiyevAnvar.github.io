@@ -87,6 +87,13 @@
     font-weight: 500;
 }
 
+
+.sps_spinner {
+    padding: 0 15px;
+    text-align: center;
+    font-size: calc(0.7rem + 1.5vw);
+}
+
 @media screen and (max-width: 768px) {
     .container_wrapper .wrapper {
         font-size: 12px;
