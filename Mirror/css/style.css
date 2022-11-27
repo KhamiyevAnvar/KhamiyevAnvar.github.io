@@ -794,6 +794,11 @@
     max-width: 1440px;
   }
 }
+@media (min-width: 980.9px) {
+  .container {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1199.9px) {
   #navbar_menu_button {
     display: inline-flex;
@@ -1043,7 +1048,7 @@
     font-size: 16px;
   }
 }
-@media only screen and (max-width: 567.9px) {
+@media screen and (max-width: 567.9px) {
   #navbar_menu_button {
     top: 18px;
     right: 16px;
@@ -1052,7 +1057,7 @@
     padding: 30px 0;
   }
 }
-@media only screen and (max-width: 360px) {
+@media screen and (max-width: 360px) {
   #navbar_menu_button {
     top: 12px;
     right: 15px;
