@@ -664,6 +664,9 @@
   color: white;
   padding-top: 18px;
 }
+#fullpage .section6{
+  position: relative;
+}
 #fullpage .section6 .partner-name {
   font-family: tt-medium;
   font-size: 36px;
