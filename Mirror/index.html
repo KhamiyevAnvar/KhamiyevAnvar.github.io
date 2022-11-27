@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Mirror</title>
+	<link rel="icon" type="image/x-icon" href="img/logohead.ico">
+	<meta name="author" content="Anvar Khamiyev" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="components/owl-carousel/owl.carousel.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="css/scrollerPlugin.css" />
+
+
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+	<div id="mirror">
+		<!-- phone menu button -->
+		<div id="navbar_menu_button">
+			<svg id="navbar_menu_button_ham" class="ham hamRotate ham8" viewBox="0 0 100 100" ">
+				<path class=" line top"
+				d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+			<path class="line middle" d="m 30,50 h 40" />
+			<path class="line bottom"
+				d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+			</svg>
+		</div>
+
+		<!-- phone menu -->
+		<div id="mirror_phone_menu" class="mirror_phone_menu">
+			<div class="container">
+				<div class="mirror_phone_menu_head">
+					<a href="index.html">
+						<img src="img/logohead.png" alt="Mirror logo">
+					</a>
+				</div>
+				<ul class="mirror_phone_menu_list list_reset">
+					<li><a href="#section1"></a></li>
+					<li><a href="#section2">SCROLLER</a></li>
+					<li><a href="#section3">LED MONİTOR</a></li>
+					<li><a href="#section4">PRİZMA VƏ BİLLBOARD</a></li>
+					<li><a href="#section5">STATİSTİKA</a></li>
+					<li><a href="#section6">PARTNYORLAR</a></li>
+				</ul>
+				<div class="mirror_phone_menu_bottom">
+					<ul class="mirror_phone_menu_bottom_connect_social">
+						<li class="mirror_phone_menu_bottom_connect_social_desing">
+
+							<a href="#">
+								<svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M0.00381271 19L1.28821 14.2804C0.441893 12.8296 -0.0027461 11.1796 1.27606e-05 9.49999C1.27606e-05 4.25315 4.25316 0 9.50001 0C14.7469 0 19 4.25315 19 9.49999C19 14.7468 14.7469 19 9.50001 19C7.82115 19.0027 6.17183 18.5584 4.72151 17.7127L0.00381271 19ZM6.07146 5.0426C5.94878 5.05021 5.8289 5.08253 5.71901 5.1376C5.61595 5.19595 5.52188 5.26891 5.43971 5.3542C5.32571 5.46155 5.26111 5.55465 5.19176 5.6449C4.84065 6.10184 4.65179 6.66274 4.65501 7.239C4.65691 7.70449 4.77851 8.15765 4.96851 8.58134C5.35706 9.43824 5.99641 10.3455 6.84096 11.1862C7.04426 11.3886 7.24281 11.5919 7.45656 11.7809C8.50478 12.7038 9.7539 13.3694 11.1046 13.7246L11.6451 13.8073C11.8209 13.8168 11.9966 13.8035 12.1733 13.7949C12.45 13.7807 12.7201 13.7057 12.9647 13.5755C13.0891 13.5114 13.2105 13.4417 13.3285 13.3665C13.3285 13.3665 13.3694 13.3399 13.4473 13.281C13.5755 13.186 13.6544 13.1185 13.7608 13.0074C13.8396 12.9257 13.908 12.8297 13.9603 12.7205C14.0344 12.5656 14.1085 12.2702 14.1389 12.0241C14.1617 11.836 14.155 11.7334 14.1522 11.6698C14.1484 11.5681 14.0638 11.4627 13.9717 11.418L13.4188 11.1701C13.4188 11.1701 12.5923 10.81 12.0878 10.5801C12.0346 10.557 11.9776 10.5438 11.9197 10.5412C11.8547 10.5345 11.789 10.5418 11.727 10.5626C11.6651 10.5835 11.6083 10.6173 11.5606 10.6618V10.6599C11.5558 10.6599 11.4922 10.7141 10.8053 11.5463C10.7659 11.5993 10.7116 11.6393 10.6493 11.6613C10.5871 11.6833 10.5197 11.6862 10.4557 11.6698C10.3938 11.6532 10.3332 11.6323 10.2743 11.6071C10.1565 11.5577 10.1156 11.5387 10.0349 11.5035L10.0301 11.5016C9.48662 11.2644 8.98342 10.9438 8.53861 10.5516C8.41891 10.4471 8.30776 10.3331 8.19376 10.2229C7.82001 9.86502 7.49429 9.46011 7.22476 9.01834L7.16871 8.92809C7.12845 8.86745 7.0959 8.80203 7.07181 8.73334C7.03571 8.59369 7.12976 8.4816 7.12976 8.4816C7.12976 8.4816 7.36061 8.22889 7.46796 8.09209C7.55734 7.9784 7.64074 7.86012 7.71781 7.73775C7.82991 7.55725 7.86506 7.372 7.80616 7.22855C7.54016 6.57875 7.26466 5.9318 6.98156 5.2896C6.92551 5.1623 6.75926 5.0711 6.60821 5.05305C6.55691 5.04735 6.50561 5.04165 6.45431 5.03785C6.32673 5.03151 6.19889 5.03278 6.07146 5.04165V5.0426Z"
+										fill="#272727" />
+								</svg>
+							</a>
+
+						</li>
+						<li class="mirror_phone_menu_bottom_connect_social_desing">
+
+							<a href="#">
+								<svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M18.9388 5.61728C18.9282 4.81818 18.7786 4.02703 18.4967 3.27921C18.2523 2.64843 17.879 2.07556 17.4007 1.59722C16.9223 1.11888 16.3495 0.745578 15.7187 0.501166C14.9805 0.224055 14.2006 0.0742162 13.4123 0.0580298C12.3973 0.0126611 12.0755 0 9.49895 0C6.92242 0 6.59218 7.07491e-08 5.58457 0.0580298C4.79659 0.0743352 4.01708 0.224172 3.27921 0.501166C2.64833 0.745408 2.07538 1.11865 1.59701 1.59701C1.11865 2.07538 0.745407 2.64833 0.501166 3.27921C0.2235 4.01685 0.073986 4.79654 0.0590848 5.58457C0.0137161 6.60062 0 6.92242 0 9.49895C0 12.0755 -7.86101e-09 12.4047 0.0590848 13.4133C0.0749111 14.2025 0.223678 14.9812 0.501166 15.7208C0.745817 16.3515 1.11934 16.9242 1.59786 17.4024C2.07639 17.8805 2.64939 18.2536 3.28026 18.4978C4.01612 18.786 4.79576 18.9466 5.58563 18.9726C6.60168 19.0179 6.92348 19.0317 9.5 19.0317C12.0765 19.0317 12.4068 19.0317 13.4144 18.9726C14.2027 18.957 14.9826 18.8076 15.7208 18.5305C16.3514 18.2858 16.9241 17.9124 17.4024 17.4341C17.8807 16.9558 18.2541 16.3831 18.4988 15.7524C18.7763 15.0139 18.9251 14.2352 18.9409 13.445C18.9863 12.43 19 12.1082 19 9.5306C18.9979 6.95408 18.9979 6.627 18.9388 5.61728ZM9.49261 14.3713C6.79792 14.3713 4.61495 12.1884 4.61495 9.49367C4.61495 6.79898 6.79792 4.616 9.49261 4.616C10.7863 4.616 12.0269 5.1299 12.9416 6.04464C13.8564 6.95938 14.3703 8.20003 14.3703 9.49367C14.3703 10.7873 13.8564 12.028 12.9416 12.9427C12.0269 13.8574 10.7863 14.3713 9.49261 14.3713ZM14.5644 5.57297C14.415 5.57311 14.267 5.54378 14.129 5.48667C13.9909 5.42956 13.8655 5.34579 13.7599 5.24015C13.6542 5.1345 13.5704 5.00906 13.5133 4.87101C13.4562 4.73295 13.4269 4.58499 13.427 4.43558C13.427 4.28629 13.4564 4.13846 13.5136 4.00053C13.5707 3.8626 13.6544 3.73727 13.76 3.63171C13.8656 3.52614 13.9909 3.4424 14.1288 3.38527C14.2668 3.32813 14.4146 3.29873 14.5639 3.29873C14.7132 3.29873 14.861 3.32813 14.9989 3.38527C15.1369 3.4424 15.2622 3.52614 15.3678 3.63171C15.4733 3.73727 15.5571 3.8626 15.6142 4.00053C15.6713 4.13846 15.7007 4.28629 15.7007 4.43558C15.7007 5.06442 15.1922 5.57297 14.5644 5.57297Z"
+										fill="#272727" />
+									<path
+										d="M9.49264 12.662C11.2425 12.662 12.6611 11.2435 12.6611 9.49362C12.6611 7.74375 11.2425 6.3252 9.49264 6.3252C7.74277 6.3252 6.32422 7.74375 6.32422 9.49362C6.32422 11.2435 7.74277 12.662 9.49264 12.662Z"
+										fill="#272727" />
+								</svg>
+							</a>
+
+						</li>
+					</ul>
+					<div class="mirror_phone_menu_bottom_connect_contact">
+						<a href="#" id="phoneContactTelMirror">BİZİMLƏ ƏLAQƏ</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- back top nav button -->
+		<div id="back_to_top">
+			<a href="#section1">
+
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+					<path
+						d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z" />
+				</svg>
+			</a>
+		</div>
+
+		<!-- pages -->
+		<div id="fullpage">
+
+			<!-- section 1 Navbar Banner -->
+			<section class="section section1">
+				<div id="mirror_navbar">
+					<div class="container">
+						<div class="mirror_navbar">
+							<div class="mirror_navbar_left">
+								<div class="logo">
+									<a href="index.html" title="Mirror">
+										<img src="img/logohead.png" alt="Mirror logo">
+									</a>
+								</div>
+							</div>
+							<div class="mirror_navbar_right">
+								<div class="mirror_nav_menu ">
+									<ul class="mirror_nav_menu_list">
+										<li><a href="#section1"></a></li>
+										<li><a href="#section2">SCROLLER</a></li>
+										<li><a href="#section3">LED MONİTOR</a></li>
+										<li><a href="#section4">PRİZMA VƏ BİLLBOARD</a></li>
+										<li><a href="#section5">STATİSTİKA</a></li>
+										<li><a href="#section6">PARTNYORLAR</a></li>
+									</ul>
+								</div>
+								<div class="mirror_navbar_right_connect">
+									<ul class="mirror_navbar_right_connect_social">
+										<li class="mirror_navbar_right_connect_social_desing">
+
+											<a href="#" title="whatsapp">
+												<svg width="19" height="19" viewBox="0 0 19 19" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M0.00381271 19L1.28821 14.2804C0.441893 12.8296 -0.0027461 11.1796 1.27606e-05 9.49999C1.27606e-05 4.25315 4.25316 0 9.50001 0C14.7469 0 19 4.25315 19 9.49999C19 14.7468 14.7469 19 9.50001 19C7.82115 19.0027 6.17183 18.5584 4.72151 17.7127L0.00381271 19ZM6.07146 5.0426C5.94878 5.05021 5.8289 5.08253 5.71901 5.1376C5.61595 5.19595 5.52188 5.26891 5.43971 5.3542C5.32571 5.46155 5.26111 5.55465 5.19176 5.6449C4.84065 6.10184 4.65179 6.66274 4.65501 7.239C4.65691 7.70449 4.77851 8.15765 4.96851 8.58134C5.35706 9.43824 5.99641 10.3455 6.84096 11.1862C7.04426 11.3886 7.24281 11.5919 7.45656 11.7809C8.50478 12.7038 9.7539 13.3694 11.1046 13.7246L11.6451 13.8073C11.8209 13.8168 11.9966 13.8035 12.1733 13.7949C12.45 13.7807 12.7201 13.7057 12.9647 13.5755C13.0891 13.5114 13.2105 13.4417 13.3285 13.3665C13.3285 13.3665 13.3694 13.3399 13.4473 13.281C13.5755 13.186 13.6544 13.1185 13.7608 13.0074C13.8396 12.9257 13.908 12.8297 13.9603 12.7205C14.0344 12.5656 14.1085 12.2702 14.1389 12.0241C14.1617 11.836 14.155 11.7334 14.1522 11.6698C14.1484 11.5681 14.0638 11.4627 13.9717 11.418L13.4188 11.1701C13.4188 11.1701 12.5923 10.81 12.0878 10.5801C12.0346 10.557 11.9776 10.5438 11.9197 10.5412C11.8547 10.5345 11.789 10.5418 11.727 10.5626C11.6651 10.5835 11.6083 10.6173 11.5606 10.6618V10.6599C11.5558 10.6599 11.4922 10.7141 10.8053 11.5463C10.7659 11.5993 10.7116 11.6393 10.6493 11.6613C10.5871 11.6833 10.5197 11.6862 10.4557 11.6698C10.3938 11.6532 10.3332 11.6323 10.2743 11.6071C10.1565 11.5577 10.1156 11.5387 10.0349 11.5035L10.0301 11.5016C9.48662 11.2644 8.98342 10.9438 8.53861 10.5516C8.41891 10.4471 8.30776 10.3331 8.19376 10.2229C7.82001 9.86502 7.49429 9.46011 7.22476 9.01834L7.16871 8.92809C7.12845 8.86745 7.0959 8.80203 7.07181 8.73334C7.03571 8.59369 7.12976 8.4816 7.12976 8.4816C7.12976 8.4816 7.36061 8.22889 7.46796 8.09209C7.55734 7.9784 7.64074 7.86012 7.71781 7.73775C7.82991 7.55725 7.86506 7.372 7.80616 7.22855C7.54016 6.57875 7.26466 5.9318 6.98156 5.2896C6.92551 5.1623 6.75926 5.0711 6.60821 5.05305C6.55691 5.04735 6.50561 5.04165 6.45431 5.03785C6.32673 5.03151 6.19889 5.03278 6.07146 5.04165V5.0426Z"
+														fill="#272727" />
+												</svg>
+											</a>
+
+										</li>
+										<li class="mirror_navbar_right_connect_social_desing">
+
+											<a href="#" title="instagram">
+												<svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path
+														d="M18.9388 5.61728C18.9282 4.81818 18.7786 4.02703 18.4967 3.27921C18.2523 2.64843 17.879 2.07556 17.4007 1.59722C16.9223 1.11888 16.3495 0.745578 15.7187 0.501166C14.9805 0.224055 14.2006 0.0742162 13.4123 0.0580298C12.3973 0.0126611 12.0755 0 9.49895 0C6.92242 0 6.59218 7.07491e-08 5.58457 0.0580298C4.79659 0.0743352 4.01708 0.224172 3.27921 0.501166C2.64833 0.745408 2.07538 1.11865 1.59701 1.59701C1.11865 2.07538 0.745407 2.64833 0.501166 3.27921C0.2235 4.01685 0.073986 4.79654 0.0590848 5.58457C0.0137161 6.60062 0 6.92242 0 9.49895C0 12.0755 -7.86101e-09 12.4047 0.0590848 13.4133C0.0749111 14.2025 0.223678 14.9812 0.501166 15.7208C0.745817 16.3515 1.11934 16.9242 1.59786 17.4024C2.07639 17.8805 2.64939 18.2536 3.28026 18.4978C4.01612 18.786 4.79576 18.9466 5.58563 18.9726C6.60168 19.0179 6.92348 19.0317 9.5 19.0317C12.0765 19.0317 12.4068 19.0317 13.4144 18.9726C14.2027 18.957 14.9826 18.8076 15.7208 18.5305C16.3514 18.2858 16.9241 17.9124 17.4024 17.4341C17.8807 16.9558 18.2541 16.3831 18.4988 15.7524C18.7763 15.0139 18.9251 14.2352 18.9409 13.445C18.9863 12.43 19 12.1082 19 9.5306C18.9979 6.95408 18.9979 6.627 18.9388 5.61728ZM9.49261 14.3713C6.79792 14.3713 4.61495 12.1884 4.61495 9.49367C4.61495 6.79898 6.79792 4.616 9.49261 4.616C10.7863 4.616 12.0269 5.1299 12.9416 6.04464C13.8564 6.95938 14.3703 8.20003 14.3703 9.49367C14.3703 10.7873 13.8564 12.028 12.9416 12.9427C12.0269 13.8574 10.7863 14.3713 9.49261 14.3713ZM14.5644 5.57297C14.415 5.57311 14.267 5.54378 14.129 5.48667C13.9909 5.42956 13.8655 5.34579 13.7599 5.24015C13.6542 5.1345 13.5704 5.00906 13.5133 4.87101C13.4562 4.73295 13.4269 4.58499 13.427 4.43558C13.427 4.28629 13.4564 4.13846 13.5136 4.00053C13.5707 3.8626 13.6544 3.73727 13.76 3.63171C13.8656 3.52614 13.9909 3.4424 14.1288 3.38527C14.2668 3.32813 14.4146 3.29873 14.5639 3.29873C14.7132 3.29873 14.861 3.32813 14.9989 3.38527C15.1369 3.4424 15.2622 3.52614 15.3678 3.63171C15.4733 3.73727 15.5571 3.8626 15.6142 4.00053C15.6713 4.13846 15.7007 4.28629 15.7007 4.43558C15.7007 5.06442 15.1922 5.57297 14.5644 5.57297Z"
+														fill="#272727" />
+													<path
+														d="M9.49264 12.662C11.2425 12.662 12.6611 11.2435 12.6611 9.49362C12.6611 7.74375 11.2425 6.3252 9.49264 6.3252C7.74277 6.3252 6.32422 7.74375 6.32422 9.49362C6.32422 11.2435 7.74277 12.662 9.49264 12.662Z"
+														fill="#272727" />
+												</svg>
+											</a>
+
+										</li>
+									</ul>
+									<div class="mirror_navbar_right_connect_contact">
+										<a href="#" id="contactTelMirror">BİZİMLƏ ƏLAQƏ</a>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="mirror_banner">
+					<video autoplay muted loop class="mirror_banner_video">
+						<source id="mirror_banner_source" type="video/mp4">
+					</video>
+				</div>
+
+			</section>
+
+			<!-- section2 Scroller -->
+			<section class="section section2">
+				<div class="scrollerSection">
+					<div class="mirror_scroller owl-carousel owl-theme">
+						<div class="sc_slide anim-in">
+							<div class="image" style="background-image: url(img/about2.jpg)"></div>
+							<div class="overlay"></div>
+							<div class="content">
+								<h1 class="title">Venice</h1>
+								<div class="emblem"></div>
+								<ul class="city-info">
+									<li class="country">Country: Italy</li>
+									<li class="founded">Founded: 697</li>
+									<li class="population">Population: 260,060</li>
+								</ul>
+							</div>
+							<div class="btn-close"></div>
+						</div>
+						<div class="sc_slide anim-in">
+							<div class="image" style="background-image: url(img/about3.jpg)"></div>
+							<div class="overlay"></div>
+							<div class="content">
+								<h1 class="title">Venice</h1>
+								<div class="emblem"></div>
+								<ul class="city-info">
+									<li class="country">Country: Italy</li>
+									<li class="founded">Founded: 697</li>
+									<li class="population">Population: 260,060</li>
+								</ul>
+							</div>
+							<div class="btn-close"></div>
+						</div>
+						<div class="sc_slide anim-in">
+							<div class="image" style="background-image: url(img/about4.jpg)"></div>
+							<div class="overlay"></div>
+							<div class="content">
+								<h1 class="title">Venice</h1>
+								<div class="emblem"></div>
+								<ul class="city-info">
+									<li class="country">Country: Italy</li>
+									<li class="founded">Founded: 697</li>
+									<li class="population">Population: 260,060</li>
+								</ul>
+							</div>
+							<div class="btn-close"></div>
+						</div>
+						<div class="sc_slide anim-in">
+							<div class="image" style="background-image: url(img/about2.jpg)"></div>
+							<div class="overlay"></div>
+							<div class="content">
+								<h1 class="title">Venice</h1>
+								<div class="emblem"></div>
+								<ul class="city-info">
+									<li class="country">Country: Italy</li>
+									<li class="founded">Founded: 697</li>
+									<li class="population">Population: 260,060</li>
+								</ul>
+							</div>
+							<div class="btn-close"></div>
+						</div>
+						<div class="sc_slide anim-in">
+							<div class="image" style="background-image: url(img/about3.jpg)"></div>
+							<div class="overlay"></div>
+							<div class="content">
+								<h1 class="title">Venice</h1>
+								<div class="emblem"></div>
+								<ul class="city-info">
+									<li class="country">Country: Italy</li>
+									<li class="founded">Founded: 697</li>
+									<li class="population">Population: 260,060</li>
+								</ul>
+							</div>
+							<div class="btn-close"></div>
+						</div>
+						<div class="sc_slide anim-in">
+							<div class="image" style="background-image: url(img/about4.jpg)"></div>
+							<div class="overlay"></div>
+							<div class="content">
+								<h1 class="title">Venice</h1>
+								<div class="emblem"></div>
+								<ul class="city-info">
+									<li class="country">Country: Italy</li>
+									<li class="founded">Founded: 697</li>
+									<li class="population">Population: 260,060</li>
+								</ul>
+							</div>
+							<div class="btn-close"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="mirror_pdf">
+					<span class="mirror_pdf_line"></span>
+					<div>
+						<a href="#" download class="mirror_pdf_dowload">
+							Pdf yüklə
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- section3  -->
+			<section class="section section3">
+				<div id="ledSection">
+					<div class="ledSectionHead">
+						<div class="ledSectionHeadItem ledSectionHeadItem1">
+							<h2 class="ledSectionName">LED <br /> MONİTORLAR</h2>
+							<img src="img/led1.jpg" alt="Led Monitorlar">
+						</div>
+						<div class="ledSectionHeadItem ledSectionHeadItem2">
+							<img src="img/led2.jpg" alt="Led Monitorlar">
+						</div>
+						<div class="ledSectionHeadItem ledSectionHeadItem3">
+							<img src="img/led3.jpg" alt="Led Monitorlar">
+						</div>
+					</div>
+					<div class="ledSectionBottom">
+						<div class="ledSectionBottomItem ledSectionBottomItem1">
+							<img src="img/led4.jpg" alt="Led Monitorlar">
+						</div>
+						<div class="ledSectionBottomItem ledSectionBottomItem2">
+							<img src="img/led5.jpg" alt="Led Monitorlar">
+						</div>
+						<div class=" ledSectionBottomItem ledSectionBottomItem3">
+							<div class="ledSectionBottomItem3Position">
+								<img src="img/led6.png" alt="Led Monitorlar">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="mirror_pdf">
+					<span class="mirror_pdf_line"></span>
+					<div>
+						<a href="#" download class="mirror_pdf_dowload">
+							Pdf yüklə
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- section4  -->
+			<section class="section section4">
+				<div id="prizma">
+					<div class="prizma_background">
+					</div>
+
+					<!-- <div class="prizmaName">
+						PRİZMA və<br />
+						BİLLBOARD
+					</div> -->
+
+					<div class="prizma_Head">
+						<div class="prizma_Head1">
+							<div class="prizmaName">
+								PRİZMA və<br />
+								BİLLBOARD
+							</div>
+							<img src="img/prizma1.jpg" alt="Prizma və billboard picture">
+						</div>
+						<div class="prizma_Head2">
+							<div class="prizma_Head2_cover">
+								<img src="img/prizma2.jpg" alt="Prizma və billboard picture">
+								<p class="prizma_Head2_name">Tarqovıy-center</p>
+							</div>
+						</div>
+					</div>
+					<div class="prizma_Bottom">
+						<div class="prizma_Bottom1">
+							<img src="img/prizma3.jpg" alt="Prizma və billboard picture">
+						</div>
+						<div class="prizma_Bottom2">
+							<img src="img/prizma4.jpg" alt="Prizma və billboard picture">
+						</div>
+						<div class="prizma_Bottom3">
+							<img src="img/prizma5.jpg" alt="Prizma və billboard picture">
+						</div>
+					</div>
+				</div>
+				<div class="mirror_pdf">
+					<span class="mirror_pdf_line"></span>
+					<div>
+						<a href="#" download class="mirror_pdf_dowload">
+							Pdf yüklə
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- statistics -->
+			<section class="section section5">
+				<div id="statistics-section">
+					<div class="container">
+						<div class="statistics-section">
+							<h2 class="statistics-section-name">STATİSTİKA</h2>
+							<div class="statistics-box">
+								<div class="statistics-item">
+									<div class="statistics-item-count">
+										<div class="statistics-item-count-into">
+											<span class="numscroller" data-max='18' data-increment='1'>0</span>+
+										</div>
+									</div>
+									<div class="statistics-item-content">
+										<div class="statistics-item-content-icon">
+											<img src="img/statistic1.png" alt="statistic icon">
+										</div>
+										<p class="statistics-item-content-text">LED <br />MONİTOR</p>
+									</div>
+								</div>
+								<div class="statistics-item">
+									<div class="statistics-item-count">
+										<div class="statistics-item-count-into">
+											<span class="numscroller" data-max='300' data-increment='10'></span>+
+										</div>
+									</div>
+									<div class=" statistics-item-content">
+										<div class="statistics-item-content-icon">
+											<img src="img/statistic2.png" alt="statistic icon">
+										</div>
+										<p class="statistics-item-content-text">POSTER</p>
+									</div>
+								</div>
+								<div class="statistics-item">
+									<div class="statistics-item-count">
+										<div class="statistics-item-count-into">
+											<span class="numscroller" data-max='100000' data-increment='2574'></span>+
+										</div>
+									</div>
+									<div class="statistics-item-content">
+										<div class="statistics-item-content-icon">
+											<img src="img/statistic3.png" alt="statistic icon">
+										</div>
+										<p class="statistics-item-content-text">
+											GÜNDƏLİK<br />
+											BAXIŞ
+										</p>
+									</div>
+								</div>
+								<div class="statistics-item">
+									<div class="statistics-item-count">
+										<div class="statistics-item-count-into">
+											<span class="numscroller" data-max='15' data-increment='1'></span>
+										</div>
+									</div>
+									<div class="statistics-item-content">
+										<div class="statistics-item-content-icon">
+											<img src="img/statistic4.png" alt="statistic icon">
+										</div>
+										<p class="statistics-item-content-text">
+											İL<br />
+											TƏCRÜBƏ
+										</p>
+									</div>
+								</div>
+								<div class="statistics-item">
+									<div class="statistics-item-count">
+										<div class="statistics-item-count-into">
+											<span class="numscroller" data-max='40' data-increment='3'></span>+
+										</div>
+									</div>
+									<div class="statistics-item-content">
+										<div class="statistics-item-content-icon">
+											<img src="img/statistic5.png" alt="statistic icon">
+										</div>
+										<p class="statistics-item-content-text">
+											KORPORATİV<br />
+											MÜŞTƏRİ
+										</p>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="footer">
+					<div class="container">
+						<div class="mirror-footer">
+							<div class="mirror-footer-logo">
+								<a href="#">
+									<img src="img/footerLogo.png" alt="Mirror logo">
+								</a>
+							</div>
+							<div class="mirror-footer-social">
+								<div class="mirror-footer-social-desing">
+									<a href="#">
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M16 12.6364C16 12.8409 15.9621 13.108 15.8864 13.4375C15.8106 13.767 15.7311 14.0265 15.6477 14.2159C15.4886 14.5947 15.0265 14.9962 14.2614 15.4205C13.5492 15.8068 12.8447 16 12.1477 16C11.9432 16 11.7424 15.9867 11.5455 15.9602C11.3485 15.9337 11.1307 15.8864 10.892 15.8182C10.6534 15.75 10.4754 15.6951 10.358 15.6534C10.2405 15.6117 10.0303 15.5341 9.72727 15.4205C9.42424 15.3068 9.23864 15.2386 9.17045 15.2159C8.42803 14.9508 7.76515 14.6364 7.18182 14.2727C6.2197 13.6742 5.2197 12.8561 4.18182 11.8182C3.14394 10.7803 2.32576 9.7803 1.72727 8.81818C1.36364 8.23485 1.04924 7.57197 0.784091 6.82955C0.761364 6.76136 0.693182 6.57576 0.579545 6.27273C0.465909 5.9697 0.388258 5.75947 0.346591 5.64205C0.304924 5.52462 0.25 5.34659 0.181818 5.10795C0.113636 4.86932 0.0662879 4.65152 0.0397727 4.45455C0.0132576 4.25758 0 4.05682 0 3.85227C0 3.1553 0.193182 2.45076 0.579545 1.73864C1.00379 0.973485 1.4053 0.511364 1.78409 0.352273C1.97348 0.268939 2.23295 0.189394 2.5625 0.113636C2.89205 0.0378788 3.15909 0 3.36364 0C3.4697 0 3.54924 0.0113636 3.60227 0.0340909C3.73864 0.0795455 3.93939 0.367424 4.20455 0.897727C4.28788 1.04167 4.40152 1.24621 4.54545 1.51136C4.68939 1.77652 4.82197 2.01705 4.94318 2.23295C5.06439 2.44886 5.18182 2.65152 5.29545 2.84091C5.31818 2.87121 5.38447 2.96591 5.49432 3.125C5.60417 3.28409 5.68561 3.41856 5.73864 3.52841C5.79167 3.63826 5.81818 3.74621 5.81818 3.85227C5.81818 4.00379 5.71023 4.19318 5.49432 4.42045C5.27841 4.64773 5.04356 4.85606 4.78977 5.04545C4.53598 5.23485 4.30114 5.43561 4.08523 5.64773C3.86932 5.85985 3.76136 6.03409 3.76136 6.17045C3.76136 6.23864 3.7803 6.32386 3.81818 6.42614C3.85606 6.52841 3.88826 6.60606 3.91477 6.65909C3.94129 6.71212 3.99432 6.80303 4.07386 6.93182C4.15341 7.06061 4.19697 7.13258 4.20455 7.14773C4.7803 8.18561 5.43939 9.07576 6.18182 9.81818C6.92424 10.5606 7.81439 11.2197 8.85227 11.7955C8.86742 11.803 8.93939 11.8466 9.06818 11.9261C9.19697 12.0057 9.28788 12.0587 9.34091 12.0852C9.39394 12.1117 9.47159 12.1439 9.57386 12.1818C9.67614 12.2197 9.76136 12.2386 9.82955 12.2386C9.96591 12.2386 10.1402 12.1307 10.3523 11.9148C10.5644 11.6989 10.7652 11.464 10.9545 11.2102C11.1439 10.9564 11.3523 10.7216 11.5795 10.5057C11.8068 10.2898 11.9962 10.1818 12.1477 10.1818C12.2538 10.1818 12.3617 10.2083 12.4716 10.2614C12.5814 10.3144 12.7159 10.3958 12.875 10.5057C13.0341 10.6155 13.1288 10.6818 13.1591 10.7045C13.3485 10.8182 13.5511 10.9356 13.767 11.0568C13.983 11.178 14.2235 11.3106 14.4886 11.4545C14.7538 11.5985 14.9583 11.7121 15.1023 11.7955C15.6326 12.0606 15.9205 12.2614 15.9659 12.3977C15.9886 12.4508 16 12.5303 16 12.6364Z"
+												fill="white" />
+										</svg>
+
+										<span>+994557575757</span>
+									</a>
+								</div>
+								<div class="mirror-footer-social-desing">
+									<a href="#">
+										<svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M18.9388 5.61728C18.9282 4.81818 18.7786 4.02703 18.4967 3.27921C18.2523 2.64843 17.879 2.07556 17.4007 1.59722C16.9223 1.11888 16.3495 0.745578 15.7187 0.501166C14.9805 0.224055 14.2006 0.0742162 13.4123 0.0580298C12.3973 0.0126611 12.0755 0 9.49895 0C6.92242 0 6.59218 7.07491e-08 5.58457 0.0580298C4.79659 0.0743352 4.01708 0.224172 3.27921 0.501166C2.64833 0.745408 2.07538 1.11865 1.59701 1.59701C1.11865 2.07538 0.745407 2.64833 0.501166 3.27921C0.2235 4.01685 0.073986 4.79654 0.0590848 5.58457C0.0137161 6.60062 0 6.92242 0 9.49895C0 12.0755 -7.86101e-09 12.4047 0.0590848 13.4133C0.0749111 14.2025 0.223678 14.9812 0.501166 15.7208C0.745817 16.3515 1.11934 16.9242 1.59786 17.4024C2.07639 17.8805 2.64939 18.2536 3.28026 18.4978C4.01612 18.786 4.79576 18.9466 5.58563 18.9726C6.60168 19.0179 6.92348 19.0317 9.5 19.0317C12.0765 19.0317 12.4068 19.0317 13.4144 18.9726C14.2027 18.957 14.9826 18.8076 15.7208 18.5305C16.3514 18.2858 16.9241 17.9124 17.4024 17.4341C17.8807 16.9558 18.2541 16.3831 18.4988 15.7524C18.7763 15.0139 18.9251 14.2352 18.9409 13.445C18.9863 12.43 19 12.1082 19 9.5306C18.9979 6.95408 18.9979 6.627 18.9388 5.61728ZM9.49261 14.3713C6.79792 14.3713 4.61495 12.1884 4.61495 9.49367C4.61495 6.79898 6.79792 4.616 9.49261 4.616C10.7863 4.616 12.0269 5.1299 12.9416 6.04464C13.8564 6.95938 14.3703 8.20003 14.3703 9.49367C14.3703 10.7873 13.8564 12.028 12.9416 12.9427C12.0269 13.8574 10.7863 14.3713 9.49261 14.3713ZM14.5644 5.57297C14.415 5.57311 14.267 5.54378 14.129 5.48667C13.9909 5.42956 13.8655 5.34579 13.7599 5.24015C13.6542 5.1345 13.5704 5.00906 13.5133 4.87101C13.4562 4.73295 13.4269 4.58499 13.427 4.43558C13.427 4.28629 13.4564 4.13846 13.5136 4.00053C13.5707 3.8626 13.6544 3.73727 13.76 3.63171C13.8656 3.52614 13.9909 3.4424 14.1288 3.38527C14.2668 3.32813 14.4146 3.29873 14.5639 3.29873C14.7132 3.29873 14.861 3.32813 14.9989 3.38527C15.1369 3.4424 15.2622 3.52614 15.3678 3.63171C15.4733 3.73727 15.5571 3.8626 15.6142 4.00053C15.6713 4.13846 15.7007 4.28629 15.7007 4.43558C15.7007 5.06442 15.1922 5.57297 14.5644 5.57297Z"
+												fill="white" />
+											<path
+												d="M9.49264 12.6611C11.2425 12.6611 12.6611 11.2425 12.6611 9.49264C12.6611 7.74277 11.2425 6.32422 9.49264 6.32422C7.74277 6.32422 6.32422 7.74277 6.32422 9.49264C6.32422 11.2425 7.74277 12.6611 9.49264 12.6611Z"
+												fill="white" />
+										</svg>
+
+										<span>mirroragency</span>
+									</a>
+								</div>
+							</div>
+							<div class="mirror-footer-copyright">
+								Developed by Deirvlon Technologies. All rights reserved
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--  footer -->
+			<section class="section section6">
+				<h2 class="partner-name">Partnyorlar</h2>
+				<div id="partner">
+					<div class="container">
+						<div class="partner">
+							<div class="partner_scroller owl-carousel owl-theme">
+								<div class="partner_item">
+									<a href="">
+										<img src="img/partnerDeirvlon.png" alt="">
+									</a>
+								</div>
+								<div class="partner_item">
+									<a href="">
+										<img src="img/partnerMonyo.png" alt="">
+									</a>
+								</div>
+								<div class="partner_item">
+									<a href="">
+										<img src="img/partnerDeirvlon.png" alt="">
+									</a>
+								</div>
+								<div class="partner_item">
+									<a href="">
+										<img src="img/partnerMonyo.png" alt="">
+									</a>
+								</div>
+								<div class="partner_item">
+									<a href="">
+										<img src="img/partnerDeirvlon.png" alt="">
+									</a>
+								</div>
+								<div class="partner_item">
+									<a href="">
+										<img src="img/partnerMonyo.png" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="footer">
+					<div class="container">
+						<div class="mirror-footer">
+							<div class="mirror-footer-logo">
+								<a href="index.html">
+									<img src="img/footerLogo.png" alt="Mirror logo">
+								</a>
+							</div>
+							<div class="mirror-footer-social">
+								<div class="mirror-footer-social-desing">
+									<a href="#">
+										<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M16 12.6364C16 12.8409 15.9621 13.108 15.8864 13.4375C15.8106 13.767 15.7311 14.0265 15.6477 14.2159C15.4886 14.5947 15.0265 14.9962 14.2614 15.4205C13.5492 15.8068 12.8447 16 12.1477 16C11.9432 16 11.7424 15.9867 11.5455 15.9602C11.3485 15.9337 11.1307 15.8864 10.892 15.8182C10.6534 15.75 10.4754 15.6951 10.358 15.6534C10.2405 15.6117 10.0303 15.5341 9.72727 15.4205C9.42424 15.3068 9.23864 15.2386 9.17045 15.2159C8.42803 14.9508 7.76515 14.6364 7.18182 14.2727C6.2197 13.6742 5.2197 12.8561 4.18182 11.8182C3.14394 10.7803 2.32576 9.7803 1.72727 8.81818C1.36364 8.23485 1.04924 7.57197 0.784091 6.82955C0.761364 6.76136 0.693182 6.57576 0.579545 6.27273C0.465909 5.9697 0.388258 5.75947 0.346591 5.64205C0.304924 5.52462 0.25 5.34659 0.181818 5.10795C0.113636 4.86932 0.0662879 4.65152 0.0397727 4.45455C0.0132576 4.25758 0 4.05682 0 3.85227C0 3.1553 0.193182 2.45076 0.579545 1.73864C1.00379 0.973485 1.4053 0.511364 1.78409 0.352273C1.97348 0.268939 2.23295 0.189394 2.5625 0.113636C2.89205 0.0378788 3.15909 0 3.36364 0C3.4697 0 3.54924 0.0113636 3.60227 0.0340909C3.73864 0.0795455 3.93939 0.367424 4.20455 0.897727C4.28788 1.04167 4.40152 1.24621 4.54545 1.51136C4.68939 1.77652 4.82197 2.01705 4.94318 2.23295C5.06439 2.44886 5.18182 2.65152 5.29545 2.84091C5.31818 2.87121 5.38447 2.96591 5.49432 3.125C5.60417 3.28409 5.68561 3.41856 5.73864 3.52841C5.79167 3.63826 5.81818 3.74621 5.81818 3.85227C5.81818 4.00379 5.71023 4.19318 5.49432 4.42045C5.27841 4.64773 5.04356 4.85606 4.78977 5.04545C4.53598 5.23485 4.30114 5.43561 4.08523 5.64773C3.86932 5.85985 3.76136 6.03409 3.76136 6.17045C3.76136 6.23864 3.7803 6.32386 3.81818 6.42614C3.85606 6.52841 3.88826 6.60606 3.91477 6.65909C3.94129 6.71212 3.99432 6.80303 4.07386 6.93182C4.15341 7.06061 4.19697 7.13258 4.20455 7.14773C4.7803 8.18561 5.43939 9.07576 6.18182 9.81818C6.92424 10.5606 7.81439 11.2197 8.85227 11.7955C8.86742 11.803 8.93939 11.8466 9.06818 11.9261C9.19697 12.0057 9.28788 12.0587 9.34091 12.0852C9.39394 12.1117 9.47159 12.1439 9.57386 12.1818C9.67614 12.2197 9.76136 12.2386 9.82955 12.2386C9.96591 12.2386 10.1402 12.1307 10.3523 11.9148C10.5644 11.6989 10.7652 11.464 10.9545 11.2102C11.1439 10.9564 11.3523 10.7216 11.5795 10.5057C11.8068 10.2898 11.9962 10.1818 12.1477 10.1818C12.2538 10.1818 12.3617 10.2083 12.4716 10.2614C12.5814 10.3144 12.7159 10.3958 12.875 10.5057C13.0341 10.6155 13.1288 10.6818 13.1591 10.7045C13.3485 10.8182 13.5511 10.9356 13.767 11.0568C13.983 11.178 14.2235 11.3106 14.4886 11.4545C14.7538 11.5985 14.9583 11.7121 15.1023 11.7955C15.6326 12.0606 15.9205 12.2614 15.9659 12.3977C15.9886 12.4508 16 12.5303 16 12.6364Z"
+												fill="white" />
+										</svg>
+
+										<span>+994557575757</span>
+									</a>
+								</div>
+								<div class="mirror-footer-social-desing">
+									<a href="#">
+										<svg width="19" height="20" viewBox="0 0 19 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M18.9388 5.61728C18.9282 4.81818 18.7786 4.02703 18.4967 3.27921C18.2523 2.64843 17.879 2.07556 17.4007 1.59722C16.9223 1.11888 16.3495 0.745578 15.7187 0.501166C14.9805 0.224055 14.2006 0.0742162 13.4123 0.0580298C12.3973 0.0126611 12.0755 0 9.49895 0C6.92242 0 6.59218 7.07491e-08 5.58457 0.0580298C4.79659 0.0743352 4.01708 0.224172 3.27921 0.501166C2.64833 0.745408 2.07538 1.11865 1.59701 1.59701C1.11865 2.07538 0.745407 2.64833 0.501166 3.27921C0.2235 4.01685 0.073986 4.79654 0.0590848 5.58457C0.0137161 6.60062 0 6.92242 0 9.49895C0 12.0755 -7.86101e-09 12.4047 0.0590848 13.4133C0.0749111 14.2025 0.223678 14.9812 0.501166 15.7208C0.745817 16.3515 1.11934 16.9242 1.59786 17.4024C2.07639 17.8805 2.64939 18.2536 3.28026 18.4978C4.01612 18.786 4.79576 18.9466 5.58563 18.9726C6.60168 19.0179 6.92348 19.0317 9.5 19.0317C12.0765 19.0317 12.4068 19.0317 13.4144 18.9726C14.2027 18.957 14.9826 18.8076 15.7208 18.5305C16.3514 18.2858 16.9241 17.9124 17.4024 17.4341C17.8807 16.9558 18.2541 16.3831 18.4988 15.7524C18.7763 15.0139 18.9251 14.2352 18.9409 13.445C18.9863 12.43 19 12.1082 19 9.5306C18.9979 6.95408 18.9979 6.627 18.9388 5.61728ZM9.49261 14.3713C6.79792 14.3713 4.61495 12.1884 4.61495 9.49367C4.61495 6.79898 6.79792 4.616 9.49261 4.616C10.7863 4.616 12.0269 5.1299 12.9416 6.04464C13.8564 6.95938 14.3703 8.20003 14.3703 9.49367C14.3703 10.7873 13.8564 12.028 12.9416 12.9427C12.0269 13.8574 10.7863 14.3713 9.49261 14.3713ZM14.5644 5.57297C14.415 5.57311 14.267 5.54378 14.129 5.48667C13.9909 5.42956 13.8655 5.34579 13.7599 5.24015C13.6542 5.1345 13.5704 5.00906 13.5133 4.87101C13.4562 4.73295 13.4269 4.58499 13.427 4.43558C13.427 4.28629 13.4564 4.13846 13.5136 4.00053C13.5707 3.8626 13.6544 3.73727 13.76 3.63171C13.8656 3.52614 13.9909 3.4424 14.1288 3.38527C14.2668 3.32813 14.4146 3.29873 14.5639 3.29873C14.7132 3.29873 14.861 3.32813 14.9989 3.38527C15.1369 3.4424 15.2622 3.52614 15.3678 3.63171C15.4733 3.73727 15.5571 3.8626 15.6142 4.00053C15.6713 4.13846 15.7007 4.28629 15.7007 4.43558C15.7007 5.06442 15.1922 5.57297 14.5644 5.57297Z"
+												fill="white" />
+											<path
+												d="M9.49264 12.6611C11.2425 12.6611 12.6611 11.2425 12.6611 9.49264C12.6611 7.74277 11.2425 6.32422 9.49264 6.32422C7.74277 6.32422 6.32422 7.74277 6.32422 9.49264C6.32422 11.2425 7.74277 12.6611 9.49264 12.6611Z"
+												fill="white" />
+										</svg>
+
+										<span>mirroragency</span>
+									</a>
+								</div>
+							</div>
+							<div class="mirror-footer-copyright">
+								Developed by Deirvlon Technologies. All rights reserved
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<h2 class="partner-name">Partnyorlar</h2>
+			<div id="partner">
+
+				<div class="container">
+					<div class="partner">
+
+						<div class="partner_scroller owl-carousel owl-theme">
+							<div class="partner_item">
+								<a href="">
+									<img src="img/partnerDeirvlon.png" alt="">
+								</a>
+							</div>
+							<div class="partner_item">
+								<a href="">
+									<img src="img/partnerMonyo.png" alt="">
+								</a>
+							</div>
+							<div class="partner_item">
+								<a href="">
+									<img src="img/partnerDeirvlon.png" alt="">
+								</a>
+							</div>
+							<div class="partner_item">
+								<a href="">
+									<img src="img/partnerMonyo.png" alt="">
+								</a>
+							</div>
+							<div class="partner_item">
+								<a href="">
+									<img src="img/partnerDeirvlon.png" alt="">
+								</a>
+							</div>
+							<div class="partner_item">
+								<a href="">
+									<img src="img/partnerMonyo.png" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</section> -->
+		</div>
+
+	</div>
+	<script type="text/javascript" src="js/jquery.slim.min.js"></script>
+	<script type="text/javascript" src="js/tweenMax.min.js"></script>
+	<script type="text/javascript" src="js/timelineMax.min.js"></script>
+
+	<script type="text/javascript" src="components/owl-carousel/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/fullpage.js"></script>
+	<script type="text/javascript" src="js/scrollerPlugin.js"></script>
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+	<script type="text/javascript" src="js/index.js"></script>
+
+</body>
+
+</html>
