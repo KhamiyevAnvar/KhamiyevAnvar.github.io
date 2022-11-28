@@ -193,11 +193,11 @@ if ($('.mirror_scroller').length > 0) {
         margin: 0,
         nav: false,
         dots: false,
-        smartSpeed: 1000, //smooth effect
+        smartSpeed: 500, //smooth effect
         autoplay: true, //smooth autoplya effect ><
         slideTransition: 'linear',
         autoplayTimeout: 10000,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 1000,
         autoplayHoverPause: true,
         responsive: {
             0: {
