@@ -181,9 +181,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20vh;
+  height: 20%;
   position: relative;
-  overflow: hidden;
 }
 #fullpage .mirror_pdf .mirror_pdf_line {
   width: 70vw;
