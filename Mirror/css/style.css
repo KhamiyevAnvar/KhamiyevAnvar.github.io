@@ -92,6 +92,7 @@
 }
 
 .mirror_phone_menu {
+  display: none;
   position: fixed;
   top: 0;
   opacity: 0;
@@ -803,6 +804,9 @@
   }
 }
 @media screen and (max-width: 1199.9px) {
+  .mirror_phone_menu {
+    display: block;
+  }
   #navbar_menu_button {
     display: inline-flex;
   }
@@ -1034,8 +1038,7 @@
     font-size: 18px;
   }
   #fullpage .section5 #statistics-section .statistics-section .statistics-box .statistics-item .statistics-item-content .statistics-item-content-icon {
-    margin-top: 20px;
-    height: 30px;
+    margin-top: 15px;
   }
   #fullpage .section5 #statistics-section .statistics-section .statistics-box .statistics-item .statistics-item-content .statistics-item-content-icon img {
     display: flex;
@@ -1044,7 +1047,7 @@
     width: auto;
   }
   #fullpage .section5 #statistics-section .statistics-section .statistics-box .statistics-item .statistics-item-content .statistics-item-content-text {
-    margin-top: 7px;
+    margin-top: 1px;
     font-size: 16px;
   }
 }

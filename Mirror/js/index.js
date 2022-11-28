@@ -19,7 +19,7 @@ new fullpage('#fullpage', {
         tl.fromTo(title, 1, { y: "-50", opacity: 0 }, { y: 0, opacity: 1 });
 
         const tlPdf = new TimelineMax({ delay: 1 });
-        tlPdf.fromTo(mirrorPdf, 0.8, { y: "50", opacity: 0 }, { y: 0, opacity: 1 });
+        tlPdf.fromTo(mirrorPdf, 0.8, { y: "200", opacity: 0 }, { y: 0, opacity: 1 });
 
 
         const statisticsSection = document.querySelectorAll('.statistics-section')[0];
