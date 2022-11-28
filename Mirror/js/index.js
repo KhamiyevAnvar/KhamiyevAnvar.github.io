@@ -143,12 +143,7 @@ new fullpage('#fullpage', {
 
 
 // menu
-// var phoneMenuBut = document.querySelector('#navbar_menu_button');
 var phoneNavMenu = document.getElementById('mirror_phone_menu');
-// phoneMenuBut.onclick = function () {
-//     phoneNavMenu.classList.toggle("mirror_phone_menu_active");
-
-// }
 
 // ham svg add animation
 const ham = document.getElementById("navbar_menu_button_ham");
@@ -193,7 +188,7 @@ if ($('.mirror_scroller').length > 0) {
         margin: 0,
         nav: false,
         dots: false,
-        smartSpeed: 500, //smooth effect
+        smartSpeed: 1500, //smooth effect
         autoplay: true, //smooth autoplya effect ><
         slideTransition: 'linear',
         autoplayTimeout: 10000,
