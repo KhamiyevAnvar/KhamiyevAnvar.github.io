@@ -330,7 +330,7 @@
   height: 80vh;
 }
 #fullpage .section2 .mirror_scroller {
-  height: 85vh;
+  height: 100%;
   width: 100%;
 }
 #fullpage .section2 .mirror_scroller .owl-stage-outer {
