@@ -865,7 +865,6 @@
     padding: 9px 22px;
   }
   #fullpage .section3 #ledSection {
-    height: 85vh;
     padding: 130px 15px 20px 15px;
   }
   #fullpage .section3 #ledSection .ledSectionHead {
@@ -958,8 +957,6 @@
        object-fit: cover;
   }
   #fullpage .section4 #prizma {
-    height: 85vh;
-    position: relative;
     padding: 100px 10px 20px 10px;
   }
   #fullpage .section4 #prizma .prizma_Head {
