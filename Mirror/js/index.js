@@ -1,4 +1,11 @@
+// Page onload - loading
 
+window.onload = () => {
+    setTimeout(onloadPage, 1000);
+}
+function onloadPage() {
+    document.getElementsByClassName("onloadPage")[0].classList.add("onloadPageNone");
+}
 // Full page management
 new fullpage('#fullpage', {
     // navigation: true,

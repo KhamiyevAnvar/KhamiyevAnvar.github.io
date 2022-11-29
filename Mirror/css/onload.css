@@ -1,0 +1,175 @@
+/* Center the svg and set the background to white */
+.onloadPageNone {
+    opacity: 0;
+    visibility: hidden;
+    display: none;
+}
+
+.onloadPage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.99);
+    transition: all ease .6s;
+    z-index: 1111;
+}
+
+/* Make the svg a white circle and give it the default spinning animation */
+.onloadPage svg {
+    /* background-color: #ffffff; */
+    border-radius: 50%;
+    animation: spin 3s ease infinite alternate;
+}
+
+/*Give each dot a radius of 20*/
+.onloadPage .shape {
+    r: 20;
+}
+
+/*Give each dot its positioning and set the default animation and color for each */
+.onloadPage .shape:nth-child(1) {
+    cy: 50;
+    cx: 50;
+    fill: #9a1560;
+    animation: movein 3s ease infinite alternate;
+}
+
+.onloadPage .shape:nth-child(2) {
+    cy: 50;
+    cx: 150;
+    fill: #e9264d;
+    animation: movein 3s ease infinite alternate;
+}
+
+.onloadPage .shape:nth-child(3) {
+    cy: 150;
+    cx: 50;
+    fill: #aec805;
+    animation: movein 3s ease infinite alternate;
+}
+
+.onloadPage .shape:nth-child(4) {
+    cy: 150;
+    cx: 150;
+    fill: #ef7e00;
+    animation: movein 3s ease infinite alternate;
+}
+
+/* Put the two interface options at the bottom of the screen */
+.onloadPage.control-panel {
+    position: fixed;
+    bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+/* Set color and placement of labels */
+.onloadPage .switch-label {
+    display: inline-block;
+    color: #000000;
+    margin: 5px;
+}
+
+/* Set area of switches */
+.onloadPage .switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 25px;
+}
+
+/* Get rid of checkbox defaults */
+.onloadPage .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Create the slider */
+.onloadPage .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffdd22;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.onloadPage .slider:before {
+    position: absolute;
+    content: "";
+    height: 19px;
+    width: 19px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #000000;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+/* Change color on checked */
+.onloadPage input:checked+.slider {
+    background-color: #c20f00;
+}
+
+/* Set second color change */
+.onloadPage .movement input:checked+.slider {
+    background-color: #2374c6;
+}
+
+/* Set the focus to same color as when checked*/
+.onloadPage input:focus+.slider {
+    box-shadow: 0 0 3px #c20f00;
+}
+
+.onloadPage .movement input:focus+.slider {
+    box-shadow: 0 0 3px #2374c6;
+}
+
+/* Actually move the slider when checked*/
+.onloadPage input:checked+.slider:before {
+    -webkit-transform: translateX(25px);
+    -ms-transform: translateX(25px);
+    transform: translateX(25px);
+}
+
+/* Round the sliders */
+.onloadPage .slider.round {
+    border-radius: 34px;
+}
+
+.onloadPage .slider.round:before {
+    border-radius: 50%;
+}
+
+/*Spin the svg so all the dots spin*/
+@keyframes spin {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+/* Move all the dots toward the center */
+@keyframes movein {
+    to {
+        cy: 100;
+        cx: 100;
+    }
+}
+
+/* Set a bouncy ball type movement for the dots */
+@keyframes moveup {
+    to {
+        cy: 20;
+    }
+}
