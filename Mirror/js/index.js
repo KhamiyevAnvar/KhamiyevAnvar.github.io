@@ -9,7 +9,7 @@ function onloadPage() {
 // Full page management
 new fullpage('#fullpage', {
     // navigation: true,
-    scrollingSpeed: 1500,
+    scrollingSpeed: 1200,
     controlArrows: false,
     slidesNavigation: true,
     anchors: ['section1', 'section2', "section3", "section4", "section5", "section6"],
@@ -195,7 +195,7 @@ if ($('.mirror_scroller').length > 0) {
         margin: 0,
         nav: false,
         dots: false,
-        smartSpeed: 1500, //smooth effect
+        smartSpeed: 500, //smooth effect
         autoplay: true, //smooth autoplya effect ><
         slideTransition: 'linear',
         autoplayTimeout: 10000,
