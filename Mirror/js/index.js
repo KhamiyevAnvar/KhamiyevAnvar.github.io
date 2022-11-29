@@ -9,7 +9,7 @@ function onloadPage() {
 // Full page management
 new fullpage('#fullpage', {
     // navigation: true,
-    scrollingSpeed: 1200,
+    scrollingSpeed: 1500,
     controlArrows: false,
     slidesNavigation: true,
     anchors: ['section1', 'section2', "section3", "section4", "section5", "section6"],
