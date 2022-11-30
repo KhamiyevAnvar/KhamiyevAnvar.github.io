@@ -34,7 +34,7 @@
   z-index: 1002;
   background-color: white;
   border-radius: 50%;
-  box-shadow: 0 0 4px black;
+  box-shadow: 0 0 2.5px black;
   transition: all ease 1s;
 }
 #navbar_menu_button .ham {
