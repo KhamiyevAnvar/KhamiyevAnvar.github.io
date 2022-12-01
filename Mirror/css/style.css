@@ -208,6 +208,10 @@
   background-color: white;
   color: #010101;
 }
+#fullpage .section1 .fp-overflow {
+  height: 100vh;
+  overflow: hidden;
+}
 #fullpage .section1 #mirror_navbar {
   position: absolute;
   top: 0;
@@ -311,9 +315,8 @@
   color: white;
 }
 #fullpage .section1 .mirror_banner {
-  width: 100vh;
+  width: 100%;
   height: 100%;
-  position: relative;
 }
 #fullpage .section1 .mirror_banner .mirror_banner_video {
   position: fixed;
@@ -556,12 +559,14 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-#fullpage .section5 #statistics-section {
+#fullpage .section5 .fp-overflow {
   height: 100vh;
   overflow: hidden;
 }
-#fullpage .section5 #statistics-section .container {
+#fullpage .section5 #statistics-section {
   height: 100%;
+  overflow: hidden;
+  display: flex;
 }
 #fullpage .section5 #statistics-section .statistics-section {
   transition: all ease 2s;
