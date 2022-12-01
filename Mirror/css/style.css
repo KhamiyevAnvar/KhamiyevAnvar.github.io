@@ -357,12 +357,12 @@
 #fullpage .section3 #ledSection {
   height: 80%;
   padding: 80px 40px 20px 40px;
+  overflow: hidden;
 }
 #fullpage .section3 #ledSection .ledSectionHead {
   height: 50%;
   display: flex;
   justify-content: space-between;
-  margin: 0 -10px;
 }
 #fullpage .section3 #ledSection .ledSectionHead .ledSectionHeadItem {
   position: relative;
@@ -405,7 +405,6 @@
   height: 50%;
   display: flex;
   justify-content: space-between;
-  margin: 0 -10px;
   padding-top: 10px;
 }
 #fullpage .section3 #ledSection .ledSectionBottom .ledSectionBottomItem {
@@ -450,13 +449,14 @@
   position: relative;
 }
 #fullpage .section4 .fp-overflow {
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
 }
 #fullpage .section4 #prizma {
   height: 80%;
   position: relative;
   padding: 100px 40px 20px 40px;
+  overflow: hidden;
 }
 #fullpage .section4 #prizma .prizma_background {
   background-color: #1A1A1A;
@@ -471,7 +471,6 @@
 #fullpage .section4 #prizma .prizma_Head {
   height: 50%;
   display: flex;
-  margin: 0 -10px;
 }
 #fullpage .section4 #prizma .prizma_Head .prizma_Head1 {
   width: 68%;
@@ -525,7 +524,6 @@
 #fullpage .section4 #prizma .prizma_Bottom {
   height: 50%;
   display: flex;
-  margin: 0 -10px;
 }
 #fullpage .section4 #prizma .prizma_Bottom .prizma_Bottom1 {
   width: 30%;
@@ -561,13 +559,6 @@
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-}
-#fullpage .section5 {
-  height: 100vh;
-}
-#fullpage .section5 .fp-overflow {
-  height: 100%;
-  overflow: hidden;
 }
 #fullpage .section5 #statistics-section {
   height: 100%;
