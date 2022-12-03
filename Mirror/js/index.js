@@ -1,11 +1,11 @@
 // Page onload - loading
-
 window.onload = () => {
     setTimeout(onloadPage, 1000);
 }
 function onloadPage() {
     document.getElementsByClassName("onloadPage")[0].classList.add("onloadPageNone");
 }
+
 // Full page management
 new fullpage('#fullpage', {
     // navigation: true,
@@ -17,14 +17,14 @@ new fullpage('#fullpage', {
     // showActiveTooltip: true,
     onLeave: (origin, destination, direction) => {
         const section = destination.item;
+
+
         const title = section.querySelectorAll('.partner-name');
-        const mirrorPdf = section.querySelectorAll('.mirror_pdf');
-
-
-
         const tl = new TimelineMax({ delay: 0.7 });
         tl.fromTo(title, 1, { y: "-50", opacity: 0 }, { y: 0, opacity: 1 });
 
+
+        const mirrorPdf = section.querySelectorAll('.mirror_pdf');
         const tlPdf = new TimelineMax({ delay: 1 });
         tlPdf.fromTo(mirrorPdf, 0.8, { y: "200", opacity: 0 }, { y: 0, opacity: 1 });
 
@@ -44,6 +44,7 @@ new fullpage('#fullpage', {
         if (destination.index === 1) {
 
         }
+
         if (destination.index === 2) {
 
             const ledSectionHeadItem1 = section.querySelectorAll('.ledSectionHeadItem1');
@@ -71,9 +72,11 @@ new fullpage('#fullpage', {
         if (destination.index === 2) {
 
         }
+
         if (destination.index !== 3) {
 
         }
+
         if (destination.index === 3) {
             const prizma_Head1 = section.querySelectorAll('.prizma_Head1');
             const prizma_Head2 = section.querySelectorAll('.prizma_Head2');
@@ -94,11 +97,13 @@ new fullpage('#fullpage', {
             tlprizma5.fromTo(prizma_Bottom3, 1.8, { x: "2000" }, { x: 0 });
 
         }
+
         if (destination.index !== 4) {
 
             // statistics animation out
             statisticsSection.classList.remove("statistics-section-animation");
         }
+
         if (destination.index === 4) {
 
             // statistics animation in
@@ -139,9 +144,11 @@ new fullpage('#fullpage', {
                 numscroller(allNums[numscrolIndex]);
             }
         }
+
         if (destination.index === 5) {
 
         }
+
         if (destination.index === 6) {
 
         }
@@ -167,9 +174,7 @@ for (var phoneNavMenuCount = 0; phoneNavMenuCount < $(".mirror_phone_menu_list l
         ham.classList.remove("active");
     }
 }
-// phoneMenuList.onclick = function () {
-//     phoneNavMenu.classList.remove("mirror_phone_menu_active");
-// }
+
 
 // mirror banner video change
 var mirrorBannerSource = document.getElementById("mirror_banner_source");
@@ -186,7 +191,6 @@ let SourceArrayLength = mirrorBannerSourceArray.length;
 var mirrorBannerSourceRandom = Math.floor(Math.random() * SourceArrayLength);
 
 mirrorBannerSource.src = mirrorBannerSourceArray[mirrorBannerSourceRandom];
-
 
 // owl-carousel mirror scroller
 if ($('.mirror_scroller').length > 0) {
