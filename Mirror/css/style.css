@@ -319,16 +319,27 @@
 }
 #fullpage .section1 .mirror_banner {
   width: 100%;
-  height: 100%;
+  height: 90%;
+  position: relative;
 }
 #fullpage .section1 .mirror_banner .mirror_banner_video {
-  position: fixed;
+  position: absolute;
   right: 0;
   top: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+#fullpage .section1 .mirror_banner-slogan {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: tt-medium;
+}
+#fullpage .section1 .mirror_banner-slogan h1 {
+  font-size: 36px;
 }
 #fullpage .section2 .fp-overflow {
   height: 100vh;
@@ -457,16 +468,6 @@
   position: relative;
   padding: 100px 40px 20px 40px;
   overflow: hidden;
-}
-#fullpage .section4 #prizma .prizma_background {
-  background-color: #1A1A1A;
-  position: relative;
-  width: 60%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: -1;
 }
 #fullpage .section4 #prizma .prizma_Head {
   height: 50%;
@@ -827,6 +828,9 @@
   }
 }
 @media screen and (max-width: 991.9px) {
+  #fullpage .section1 .mirror_banner-slogan h1 {
+    font-size: 24px;
+  }
   #fullpage .section3 #ledSection .ledSectionHead .ledSectionHeadItem .ledSectionName {
     top: -35px;
     font-size: 28px;
@@ -875,6 +879,9 @@
   #fullpage .mirror_pdf .mirror_pdf_dowload {
     font-size: 18px;
     padding: 9px 22px;
+  }
+  #fullpage .section1 .mirror_banner-slogan h1 {
+    font-size: 18px;
   }
   #fullpage .section3 #ledSection {
     padding: 130px 15px 20px 15px;
@@ -1061,6 +1068,9 @@
   #navbar_menu_button {
     top: 18px;
     right: 16px;
+  }
+  #fullpage .section1 .mirror_banner-slogan h1 {
+    font-size: 18px;
   }
   #fullpage .section6 #partner .partner .partner_scroller {
     padding: 30px 0;
