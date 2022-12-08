@@ -90,6 +90,7 @@
     transition: all 1s;
     transition-delay: 1.25s;
     padding-bottom: 35px;
+    color: white;
 }
 
 .sc_slide.active .content .title:after {
@@ -245,7 +246,7 @@
     height: 0;
     width: 100%;
     display: block;
-    content: "Venice";
+    content: "";
     overflow: hidden;
     color: #fff59d;
     transition: all 0.85s;
@@ -358,6 +359,7 @@
 .sc_slide:hover:not(.active):not(.anim-out) .content .title {
     opacity: 1;
     transform: translateY(30px);
+    color: #fff59d;
 }
 
 .sc_slide:hover:not(.active):not(.anim-out) .content .title:after {
