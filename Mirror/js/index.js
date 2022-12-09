@@ -102,55 +102,59 @@ new fullpage('#fullpage', {
         if (destination.index !== 0) {
             backToTop.style.opacity = 1;
             mirror_banner_video.pause();
-            // mirror_banner_videoImg.pause();
         }
 
         if (destination.index === 0) {
             backToTop.style.opacity = 0;
             mirror_banner_video.play();
-            // mirror_banner_videoImg.play();
         }
 
         // scroller_video
         // const scroller_video = document.querySelectorAll(".scroller_video");
         // mirror scroller 
         // const mirror_scroller = document.getElementsByClassName("mirror_scroller")[0];
+
+        if (destination.index !== 1) {
+            // pause scroller_video
+            for (let s = 0; s < scroller_video.length; s++) {
+                scroller_video[s].pause();
+            }
+
+        }
         if (destination.index === 1) {
             // play scroller_video
-            // for (let s = 0; s < scroller_video.length; s++) {
-            //     scroller_video[s].play();
-            // }
+            for (let s = 0; s < scroller_video.length; s++) {
+                scroller_video[s].play();
+            }
 
 
             // mirror_scroller animation
 
             // const mirror_scroller1 = new TimelineMax({ delay: 0.8 });
             // mirror_scroller1.fromTo(mirror_scroller, 1.5, { y: -2000 }, { y: 0 });
-        } else {
-            // pause scroller_video
-            // for (let s = 0; s < scroller_video.length; s++) {
-            //     scroller_video[s].pause();
-            // }
         }
-        if (destination.index !== 1) {
 
-
-        }
 
         //led video
         // const led_video = document.querySelectorAll(".led_video");
+        if (destination.index !== 2) {
+
+            // pause scroller_video
+            for (let l = 0; l < led_video.length; l++) {
+                led_video[l].pause();
+
+            }
+
+        }
         if (destination.index === 2) {
 
             // // play scroller_video
-            // for (let l = 0; l < led_video.length; l++) {
+            for (let l = 0; l < led_video.length; l++) {
 
+                // led_video[l].load();
+                led_video[l].play();
 
-            //     led_video[l].load();
-            //     led_video[l].play();
-            //     console.log("1")
-
-
-            // }
+            }
 
             const ledSectionHeadItem1 = section.querySelectorAll('.ledSectionHeadItem1');
             const ledSectionHeadItem2 = section.querySelectorAll('.ledSectionHeadItem2');
@@ -172,18 +176,9 @@ new fullpage('#fullpage', {
             tlLed4.fromTo(ledSectionBottomItem1, 1.9, { x: "-2000" }, { x: 0 });
             tlLed5.fromTo(ledSectionBottomItem2, 1.8, { y: "2000" }, { y: 0 });
             tlLed6.fromTo(ledSectionBottomItem3, 1.7, { x: "1000" }, { x: 0 });
-        } else {
-            // pause scroller_video
-            // for (let l = 0; l < led_video.length; l++) {
-            //     led_video[l].pause();
-
-            // }
         }
 
-        if (destination.index !== 2) {
 
-
-        }
 
         if (destination.index !== 3) {
 
