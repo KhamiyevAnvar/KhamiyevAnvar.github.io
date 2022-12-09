@@ -1019,7 +1019,7 @@
   }
 }
 @media screen and (max-width: 400px) {
-  .section4 #prizma .prizma_Head .prizmaName {
+  #fullpage .section4 #prizma .prizma_Head .prizmaName {
     top: -40px;
     left: 15px;
     font-size: 20px;
@@ -1074,6 +1074,17 @@
     height: 100%;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+  #fullpage .section3 #ledSection {
+    padding: 90px 10px 5px 10px;
+  }
+  #fullpage .section4 #prizma {
+    padding: 70px 5px 0px 5px;
+  }
+  #fullpage .section4 #prizma .prizma_Head .prizmaName {
+    top: -40px;
+    left: 5px;
+    font-size: 20px;
   }
   #fullpage .section5 #statistics-section .statistics-section .statistics-section-name {
     font-size: 24px;
