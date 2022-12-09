@@ -28,7 +28,7 @@ function BrowserDetection() {
         for (let l = 0; l < led_video.length; l++) {
             led_video[l].style.display = "none";
 
-            console.log("safari1 led");
+            console.log("safari1 led1");
         }
     } else {
         mirror_banner_videoImg.style.display = "none";
@@ -41,7 +41,7 @@ function BrowserDetection() {
         for (let l = 0; l < led_videoImg.length; l++) {
             led_videoImg[l].style.display = "none";
 
-            console.log("not safari1 led");
+            console.log("not safari1 led1");
         }
     }
     //And run the script. Note that the script tag needs to be run after HTML so where you place it is important. 

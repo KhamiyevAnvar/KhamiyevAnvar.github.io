@@ -430,6 +430,18 @@
   position: relative;
 }
 #fullpage .section3 #ledSection .ledSectionHead .ledSectionHeadItem .led-img-block .led_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#fullpage .section3 #ledSection .ledSectionHead .ledSectionHeadItem .led-img-block .led_videoImg {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
@@ -468,12 +480,18 @@
   position: relative;
 }
 #fullpage .section3 #ledSection .ledSectionBottom .ledSectionBottomItem .led-img-block .led_video {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 #fullpage .section3 #ledSection .ledSectionBottom .ledSectionBottomItem .led-img-block .led_videoImg {
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
