@@ -491,17 +491,24 @@
 #fullpage .section4 #prizma .prizma-desing-item {
   width: 33.3333333333%;
   padding: 10px;
-  overflow: hidden;
 }
-#fullpage .section4 #prizma .prizma-desing-item img {
+#fullpage .section4 #prizma .prizma-desing-item .prizma-desing-item-cover {
+  overflow: hidden;
+  height: 100%;
+  transition: all ease 0.5s;
+}
+#fullpage .section4 #prizma .prizma-desing-item .prizma-desing-item-cover img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  transition: all ease 0.8s;
+  transition: all ease 0.6s;
 }
-#fullpage .section4 #prizma .prizma-desing-item:hover img {
-  box-shadow: 0 0 10px black;
+#fullpage .section4 #prizma .prizma-desing-item:hover .prizma-desing-item-cover {
+  box-shadow: 0 0 5px black;
+}
+#fullpage .section4 #prizma .prizma-desing-item:hover .prizma-desing-item-cover img {
+  transform: scale(1.03);
 }
 #fullpage .section4 #prizma .prizma_Head {
   height: 50%;
@@ -998,13 +1005,15 @@
     padding: 100px 5px 0px 5px;
     overflow: hidden;
   }
-  #fullpage .section4 #prizma .prizma_Head .prizmaName {
+  #fullpage .section6 #partner .partner .partner_scroller {
+    padding: 30px 0;
+  }
+}
+@media screen and (max-width: 360px) {
+  .section4 #prizma .prizma_Head .prizmaName {
     top: -40px;
     left: 15px;
     font-size: 20px;
-  }
-  #fullpage .section6 #partner .partner .partner_scroller {
-    padding: 30px 0;
   }
 }
 @media screen and (max-width: 360px) {
@@ -1056,37 +1065,6 @@
     height: 100%;
     -o-object-fit: contain;
        object-fit: contain;
-  }
-  #fullpage .section4 #prizma .prizma_Head .prizma_Head1 .prizmaName {
-    font-size: 20px;
-  }
-  #fullpage .section4 #prizma .prizma_Head .prizma_Head2 .prizma_Head2_cover {
-    padding: 10px 12px 0 12px;
-  }
-  #fullpage .section4 #prizma .prizma_Head .prizma_Head2 .prizma_Head2_cover img {
-    height: 80%;
-  }
-  #fullpage .section4 #prizma .prizma_Head .prizma_Head2 .prizma_Head2_cover .prizma_Head2_name {
-    height: 20%;
-    font-size: 16px;
-  }
-  #fullpage .section4 #prizma .prizma_Bottom {
-    height: 50%;
-  }
-  #fullpage .section4 #prizma .prizma_Bottom .prizma_Bottom1 {
-    width: 33.3333333333%;
-    padding-top: 10px;
-  }
-  #fullpage .section4 #prizma .prizma_Bottom .prizma_Bottom2 {
-    width: 33.3333333333%;
-    height: 100%;
-    padding-top: 10px;
-  }
-  #fullpage .section4 #prizma .prizma_Bottom .prizma_Bottom3 {
-    width: 33.3333333333%;
-    height: 100%;
-    padding: 0 10px;
-    padding-top: 10px;
   }
   #fullpage .section5 #statistics-section .statistics-section .statistics-section-name {
     font-size: 24px;

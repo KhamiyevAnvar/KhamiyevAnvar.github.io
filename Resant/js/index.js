@@ -296,7 +296,8 @@ $(function () {
             $("#image-modal").modal('hide')
         });
     });
-    //kabinet buuton
+
+    //kabinet button
 
     $('.restaurantOnePageButton').click(function () {
         $(this).parents(".restaurantTwoCol-right").toggleClass("restaurantKabinet");
