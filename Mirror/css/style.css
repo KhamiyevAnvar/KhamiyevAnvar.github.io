@@ -388,6 +388,15 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+#fullpage .section2 .mirror_scroller .scroller_videoImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 #fullpage .section3 .fp-overflow {
   height: 100vh;
   overflow: hidden;
@@ -459,6 +468,12 @@
   position: relative;
 }
 #fullpage .section3 #ledSection .ledSectionBottom .ledSectionBottomItem .led-img-block .led_video {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#fullpage .section3 #ledSection .ledSectionBottom .ledSectionBottomItem .led-img-block .led_videoImg {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
