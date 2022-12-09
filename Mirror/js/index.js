@@ -6,6 +6,23 @@ function onloadPage() {
     document.getElementsByClassName("onloadPage")[0].classList.add("onloadPageNone");
 }
 
+const mirror_banner_video = document.getElementById("mirror_banner_video");
+const mirror_banner_videoImg = document.getElementById("mirror_banner_videoImg");
+function BrowserDetection() {
+
+    //Check if browser is Safari, if it is, hide the <video> tag, otherwise hide the <img> tag
+    if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+        mirror_banner_video.style.display = "none";
+        console.log("safari")
+    } else {
+        mirror_banner_videoImg.style.display = "none";
+        console.log("not safari")
+    }
+    //And run the script. Note that the script tag needs to be run after HTML so where you place it is important. 
+}
+
+BrowserDetection();
+
 
 // canvas video
 // let mir_video, mir_can_video, ctx_mir_can_video, c_tmp, ctx_tmp;
@@ -59,11 +76,13 @@ new fullpage('#fullpage', {
         if (destination.index !== 0) {
             backToTop.style.opacity = 1;
             mirror_banner_video.pause();
+            mirror_banner_videoImg.pause();
         }
 
         if (destination.index === 0) {
             backToTop.style.opacity = 0;
             mirror_banner_video.play();
+            mirror_banner_videoImg.play();
         }
 
         // scroller_video
