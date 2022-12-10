@@ -103,11 +103,12 @@ new fullpage('#fullpage', {
 
         if (destination.index !== 0) {
             backToTop.style.opacity = 1;
-            mirror_banner_video.pause();
+            // mirror_banner_video.pause();
         }
 
         if (destination.index === 0) {
             backToTop.style.opacity = 0;
+            mirror_banner_video.load();
             mirror_banner_video.play();
         }
 

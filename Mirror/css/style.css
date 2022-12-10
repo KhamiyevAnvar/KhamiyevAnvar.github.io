@@ -26,6 +26,43 @@
   scroll-behavior: smooth;
 }
 
+.load-wraper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(211, 211, 211);
+  z-index: -1;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.load-wraper .activity {
+  position: absolute;
+  left: -45%;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to left, rgba(251, 251, 251, 0.05), rgba(251, 251, 251, 0.3), rgba(251, 251, 251, 0.6), rgba(251, 251, 251, 0.3), rgba(251, 251, 251, 0.05));
+  background-image: -webkit-linear-gradient(to left, rgba(251, 251, 251, 0.05), rgba(251, 251, 251, 0.3), rgba(251, 251, 251, 0.6), rgba(251, 251, 251, 0.3), rgba(251, 251, 251, 0.05));
+  -webkit-animation: loading 1s infinite;
+          animation: loading 1s infinite;
+  z-index: -1;
+}
+@-webkit-keyframes loading {
+  0% {
+    left: -45%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@keyframes loading {
+  0% {
+    left: -45%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
 #navbar_menu_button {
   display: none;
   position: fixed;
@@ -849,8 +886,20 @@
   }
 }
 @media screen and (max-width: 991.9px) {
+  #fullpage .section3 #ledSection .ledSectionHead .ledSectionHeadItem2 {
+    padding-top: 40px;
+  }
+}
+@media screen and (max-width: 991.9px) {
   #fullpage .section1 .mirror_banner-slogan h1 {
     font-size: 24px;
+  }
+  #fullpage .section3 #ledSection .ledSectionHead .ledSectionHeadItem .ledSectionName {
+    top: -35px;
+    font-size: 28px;
+  }
+  #fullpage .section3 #ledSection .ledSectionHead .ledSectionHeadItem2 {
+    padding-top: 40px;
   }
   #fullpage .section4 #prizma {
     padding: 100px 25px 0px 25px;
@@ -860,13 +909,6 @@
     top: -40px;
     left: 45px;
     font-size: 30px;
-  }
-  #fullpage .section3 #ledSection .ledSectionHead .ledSectionHeadItem .ledSectionName {
-    top: -35px;
-    font-size: 28px;
-  }
-  #fullpage .section3 #ledSection .ledSectionHead .ledSectionHeadItem2 {
-    padding-top: 40px;
   }
   #fullpage .section5 #statistics-section .statistics-section .statistics-section-name {
     font-size: 36px;
