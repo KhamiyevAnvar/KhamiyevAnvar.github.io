@@ -16,34 +16,34 @@ const led_videoImg = document.querySelectorAll(".led_videoImg");
 function BrowserDetection() {
 
     //Check if browser is Safari, if it is, hide the <video> tag, otherwise hide the <img> tag
-    // if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
-    //     mirror_banner_video.style.display = "none";
+    if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0) {
+        mirror_banner_video.style.display = "none";
 
 
-    //     for (let i = 0; i < scroller_video.length; i++) {
-    //         scroller_video[i].style.display = "none";
+        for (let i = 0; i < scroller_video.length; i++) {
+            scroller_video[i].style.display = "none";
 
-    //         console.log("safari scroller");
-    //     }
-    //     for (let l = 0; l < led_video.length; l++) {
-    //         led_video[l].style.display = "none";
+            console.log("safari scroller");
+        }
+        // for (let l = 0; l < led_video.length; l++) {
+        //     led_video[l].style.display = "none";
 
-    //         console.log("safari1 led1");
-    //     }
-    // } else {
-    //     mirror_banner_videoImg.style.display = "none";
+        //     console.log("safari1 led1");
+        // }
+    } else {
+        mirror_banner_videoImg.style.display = "none";
 
-    //     for (let i = 0; i < scroller_video.length; i++) {
-    //         scroller_videoImg[i].style.display = "none";
+        for (let i = 0; i < scroller_video.length; i++) {
+            scroller_videoImg[i].style.display = "none";
 
-    //         console.log("not safari scroller");
-    //     }
-    //     for (let l = 0; l < led_videoImg.length; l++) {
-    //         led_videoImg[l].style.display = "none";
+            console.log("not safari scroller");
+        }
+        // for (let l = 0; l < led_videoImg.length; l++) {
+        //     led_videoImg[l].style.display = "none";
 
-    //         console.log("not safari1 led1");
-    //     }
-    // }
+        //     console.log("not safari1 led1");
+        // }
+    }
     //And run the script. Note that the script tag needs to be run after HTML so where you place it is important. 
 }
 
@@ -64,7 +64,9 @@ BrowserDetection();
 //     }
 
 //     requestAnimationFrame(updateCanvas);
+
 // }
+
 
 // document.addEventListener("DOMContentLoaded", () => {
 //     inite();
