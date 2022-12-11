@@ -1,224 +1,55 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-/* Center the svg and set the background to white */
-.onloadPageNone {
-    opacity: 0;
-    visibility: hidden;
-    display: none;
-}
-
-.onloadPage {
+.onloadMirror {
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
     width: 100%;
     height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgba(255, 255, 255, 0.99);
-    -webkit-transition: all ease .6s;
-    -o-transition: all ease .6s;
+    background-color: rgba(255, 255, 255, 1);
     transition: all ease .6s;
-    z-index: 1111;
+
+
 }
 
-/* Make the svg a white circle and give it the default spinning animation */
-.onloadPage svg {
-    /* background-color: #ffffff; */
+.onloadMirror .onloadMirrorBack {
     border-radius: 50%;
-    -webkit-animation: spin 3s ease infinite alternate;
-    animation: spin 3s ease infinite alternate;
-}
-
-/*Give each dot a radius of 20*/
-.onloadPage .shape {
-    r: 20;
-}
-
-/*Give each dot its positioning and set the default animation and color for each */
-.onloadPage .shape:nth-child(1) {
-    cy: 50;
-    cx: 50;
-    fill: #9a1560;
-    -webkit-animation: movein 3s ease infinite alternate;
-    animation: movein 3s ease infinite alternate;
-}
-
-.onloadPage .shape:nth-child(2) {
-    cy: 50;
-    cx: 150;
-    fill: #e9264d;
-    -webkit-animation: movein 3s ease infinite alternate;
-    animation: movein 3s ease infinite alternate;
-}
-
-.onloadPage .shape:nth-child(3) {
-    cy: 150;
-    cx: 50;
-    fill: #aec805;
-    -webkit-animation: movein 3s ease infinite alternate;
-    animation: movein 3s ease infinite alternate;
-}
-
-.onloadPage .shape:nth-child(4) {
-    cy: 150;
-    cx: 150;
-    fill: #ef7e00;
-    -webkit-animation: movein 3s ease infinite alternate;
-    animation: movein 3s ease infinite alternate;
-}
-
-/* Put the two interface options at the bottom of the screen */
-.onloadPage.control-panel {
-    position: fixed;
-    bottom: 5px;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    animation: onload 3s ease infinite alternate;
+    background-color: white;
+    width: 130px;
+    height: 130px;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
+    justify-content: center;
     align-items: center;
+    box-shadow: 0 0 5px gray;
+
+
 }
 
-/* Set color and placement of labels */
-.onloadPage .switch-label {
-    display: inline-block;
-    color: #000000;
-    margin: 5px;
+@keyframes onload {
+    0% {
+        transform: rotate(0deg) scale(0.95);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1.05);
+    }
 }
 
-/* Set area of switches */
-.onloadPage .switch {
-    position: relative;
-    display: inline-block;
-    width: 50px;
-    height: 25px;
+
+.onloadMirror .onloadMirrorBack img {
+    width: auto;
+    height: auto;
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
 }
 
-/* Get rid of checkbox defaults */
-.onloadPage .switch input {
+.onloadMirrorNone {
     opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-/* Create the slider */
-.onloadPage .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ffdd22;
-    -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s;
-}
-
-.onloadPage .slider:before {
-    position: absolute;
-    content: "";
-    height: 19px;
-    width: 19px;
-    left: 3px;
-    bottom: 3px;
-    background-color: #000000;
-    -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
-    transition: 0.4s;
-}
-
-/* Change color on checked */
-.onloadPage input:checked+.slider {
-    background-color: #c20f00;
-}
-
-/* Set second color change */
-.onloadPage .movement input:checked+.slider {
-    background-color: #2374c6;
-}
-
-/* Set the focus to same color as when checked*/
-.onloadPage input:focus+.slider {
-    -webkit-box-shadow: 0 0 3px #c20f00;
-    box-shadow: 0 0 3px #c20f00;
-}
-
-.onloadPage .movement input:focus+.slider {
-    -webkit-box-shadow: 0 0 3px #2374c6;
-    box-shadow: 0 0 3px #2374c6;
-}
-
-/* Actually move the slider when checked*/
-.onloadPage input:checked+.slider:before {
-    -webkit-transform: translateX(25px);
-    -ms-transform: translateX(25px);
-    transform: translateX(25px);
-}
-
-/* Round the sliders */
-.onloadPage .slider.round {
-    border-radius: 34px;
-}
-
-.onloadPage .slider.round:before {
-    border-radius: 50%;
-}
-
-/*Spin the svg so all the dots spin*/
-@-webkit-keyframes spin {
-    to {
-        -webkit-transform: rotate(1turn);
-        transform: rotate(1turn);
-    }
-}
-
-@keyframes spin {
-    to {
-        -webkit-transform: rotate(1turn);
-        transform: rotate(1turn);
-    }
-}
-
-/* Move all the dots toward the center */
-@-webkit-keyframes movein {
-    to {
-        cy: 100;
-        cx: 100;
-    }
-}
-
-@keyframes movein {
-    to {
-        cy: 100;
-        cx: 100;
-    }
-}
-
-/* Set a bouncy ball type movement for the dots */
-@-webkit-keyframes moveup {
-    to {
-        cy: 20;
-    }
-}
-
-@keyframes moveup {
-    to {
-        cy: 20;
-    }
+    visibility: visible;
+    display: none;
 }

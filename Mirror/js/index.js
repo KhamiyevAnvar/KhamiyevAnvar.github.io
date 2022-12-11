@@ -1,9 +1,9 @@
 // Page onload - loading
 window.onload = () => {
-    setTimeout(onloadPage, 1000);
+    setTimeout(onloadMirror, 1000);
 }
-function onloadPage() {
-    document.getElementsByClassName("onloadPage")[0].classList.add("onloadPageNone");
+function onloadMirror() {
+    document.getElementsByClassName("onloadMirror")[0].classList.add("onloadMirrorNone");
 }
 
 const mirror_banner_video = document.getElementById("mirror_banner_video");
@@ -75,6 +75,7 @@ BrowserDetection();
 // Full page management
 new fullpage('#fullpage', {
     // navigation: true,
+    autoscrolling: true,
     scrollingSpeed: 1100,
     controlArrows: false,
     slidesNavigation: true,
