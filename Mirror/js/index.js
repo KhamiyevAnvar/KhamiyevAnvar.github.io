@@ -75,12 +75,13 @@ BrowserDetection();
 // Full page management
 new fullpage('#fullpage', {
     // navigation: true,
-    scrollingSpeed: 1500,
+    scrollingSpeed: 1100,
     controlArrows: false,
     slidesNavigation: true,
     anchors: ['section1', 'section2', "section3", "section4", "section5", "section6"],
     // navigationTooltips: ['', 'SCROLLER', 'LED MONİTOR', 'PRİZMA VƏ BİLLBOARD'],
     // showActiveTooltip: true,
+    keyboardScrolling: true,
     onLeave: (origin, destination, direction) => {
         const section = destination.item;
 
@@ -103,11 +104,12 @@ new fullpage('#fullpage', {
 
         if (destination.index !== 0) {
             backToTop.style.opacity = 1;
-            // mirror_banner_video.pause();
+            mirror_banner_video.pause();
         }
 
         if (destination.index === 0) {
             backToTop.style.opacity = 0;
+            mirror_banner_video.pause();
             mirror_banner_video.play();
         }
 
@@ -126,6 +128,7 @@ new fullpage('#fullpage', {
         if (destination.index === 1) {
             // play scroller_video
             for (let s = 0; s < scroller_video.length; s++) {
+                scroller_video[s].pause();
                 scroller_video[s].play();
             }
 
@@ -144,7 +147,6 @@ new fullpage('#fullpage', {
             // pause scroller_video
             for (let l = 0; l < led_video.length; l++) {
                 led_video[l].pause();
-
             }
 
         }
@@ -152,10 +154,8 @@ new fullpage('#fullpage', {
 
             // // play scroller_video
             for (let l = 0; l < led_video.length; l++) {
-
-                // led_video[l].load();
+                led_video[l].pause();
                 led_video[l].play();
-
             }
 
             const ledSectionHeadItem1 = section.querySelectorAll('.ledSectionHeadItem1');
