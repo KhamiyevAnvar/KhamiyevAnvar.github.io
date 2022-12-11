@@ -36,7 +36,7 @@ function BrowserDetection() {
         for (let i = 0; i < scroller_video.length; i++) {
             scroller_videoImg[i].style.display = "none";
 
-            console.log("not safari scroller update1");
+            console.log("not safari scroller update2");
         }
         // for (let l = 0; l < led_videoImg.length; l++) {
         //     led_videoImg[l].style.display = "none";
