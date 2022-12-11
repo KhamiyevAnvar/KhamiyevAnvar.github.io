@@ -742,6 +742,10 @@
 #fullpage .section6 {
   position: relative;
 }
+#fullpage .section6 .fp-overflow {
+  height: 100vh;
+  overflow: hidden;
+}
 #fullpage .section6 .partner-name {
   font-family: tt-medium;
   font-size: 36px;
