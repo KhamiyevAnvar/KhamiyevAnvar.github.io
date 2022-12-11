@@ -465,6 +465,7 @@
   height: 100%;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 #fullpage .section3 #ledSection .ledSectionHead .ledSectionHeadItem .led-img-block .led_video {
   position: absolute;
@@ -515,6 +516,7 @@
   height: 100%;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 #fullpage .section3 #ledSection .ledSectionBottom .ledSectionBottomItem .led-img-block .led_video {
   position: absolute;
