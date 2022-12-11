@@ -11,8 +11,6 @@
     min-height: 100vh;
     background-color: rgba(255, 255, 255, 1);
     transition: all ease .6s;
-
-
 }
 
 .onloadMirror .onloadMirrorBack {
@@ -25,6 +23,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 5px gray;
+    transition: all ease .4s;
 
 
 }
@@ -46,10 +45,18 @@
     max-width: 70%;
     max-height: 70%;
     object-fit: contain;
+    transition: all ease .8s;
 }
 
 .onloadMirrorNone {
     opacity: 0;
     visibility: visible;
+}
+
+.onloadMirrorNone .onloadMirrorBack img {
+    transform: scale(0);
+}
+
+.onloadMirrorNoneDis {
     display: none;
 }
