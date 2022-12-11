@@ -52,12 +52,13 @@
 .onloadMirrorNone {
     opacity: 0;
     visibility: visible;
+    z-index: -10;
 }
 
 .onloadMirrorNone .onloadMirrorBack img {
     transform: scale(0);
 }
 
-.onloadMirrorNoneDis {
+/* .onloadMirrorNoneDis {
     display: none;
-}
+} */
