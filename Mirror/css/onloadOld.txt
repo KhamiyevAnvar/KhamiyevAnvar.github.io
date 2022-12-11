@@ -1,10 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 /* Center the svg and set the background to white */
 .onloadPageNone {
     opacity: 0;
@@ -19,19 +12,11 @@
     z-index: 100;
     width: 100%;
     height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     min-height: 100vh;
     background-color: rgba(255, 255, 255, 0.99);
-    -webkit-transition: all ease .6s;
-    -o-transition: all ease .6s;
     transition: all ease .6s;
     z-index: 1111;
 }
@@ -40,7 +25,6 @@
 .onloadPage svg {
     /* background-color: #ffffff; */
     border-radius: 50%;
-    -webkit-animation: spin 3s ease infinite alternate;
     animation: spin 3s ease infinite alternate;
 }
 
@@ -54,7 +38,6 @@
     cy: 50;
     cx: 50;
     fill: #9a1560;
-    -webkit-animation: movein 3s ease infinite alternate;
     animation: movein 3s ease infinite alternate;
 }
 
@@ -62,7 +45,6 @@
     cy: 50;
     cx: 150;
     fill: #e9264d;
-    -webkit-animation: movein 3s ease infinite alternate;
     animation: movein 3s ease infinite alternate;
 }
 
@@ -70,7 +52,6 @@
     cy: 150;
     cx: 50;
     fill: #aec805;
-    -webkit-animation: movein 3s ease infinite alternate;
     animation: movein 3s ease infinite alternate;
 }
 
@@ -78,7 +59,6 @@
     cy: 150;
     cx: 150;
     fill: #ef7e00;
-    -webkit-animation: movein 3s ease infinite alternate;
     animation: movein 3s ease infinite alternate;
 }
 
@@ -86,11 +66,7 @@
 .onloadPage.control-panel {
     position: fixed;
     bottom: 5px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -126,7 +102,6 @@
     bottom: 0;
     background-color: #ffdd22;
     -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
     transition: 0.4s;
 }
 
@@ -139,7 +114,6 @@
     bottom: 3px;
     background-color: #000000;
     -webkit-transition: 0.4s;
-    -o-transition: 0.4s;
     transition: 0.4s;
 }
 
@@ -155,12 +129,10 @@
 
 /* Set the focus to same color as when checked*/
 .onloadPage input:focus+.slider {
-    -webkit-box-shadow: 0 0 3px #c20f00;
     box-shadow: 0 0 3px #c20f00;
 }
 
 .onloadPage .movement input:focus+.slider {
-    -webkit-box-shadow: 0 0 3px #2374c6;
     box-shadow: 0 0 3px #2374c6;
 }
 
@@ -181,28 +153,13 @@
 }
 
 /*Spin the svg so all the dots spin*/
-@-webkit-keyframes spin {
-    to {
-        -webkit-transform: rotate(1turn);
-        transform: rotate(1turn);
-    }
-}
-
 @keyframes spin {
     to {
-        -webkit-transform: rotate(1turn);
         transform: rotate(1turn);
     }
 }
 
 /* Move all the dots toward the center */
-@-webkit-keyframes movein {
-    to {
-        cy: 100;
-        cx: 100;
-    }
-}
-
 @keyframes movein {
     to {
         cy: 100;
@@ -211,12 +168,6 @@
 }
 
 /* Set a bouncy ball type movement for the dots */
-@-webkit-keyframes moveup {
-    to {
-        cy: 20;
-    }
-}
-
 @keyframes moveup {
     to {
         cy: 20;
