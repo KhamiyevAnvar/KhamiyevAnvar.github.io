@@ -567,10 +567,6 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-#fullpage .section4 {
-  position: relative;
-  overflow: hidden;
-}
 #fullpage .section4 .fp-overflow {
   height: 100%;
   overflow: hidden;
