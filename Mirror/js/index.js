@@ -81,7 +81,6 @@ new fullpage('#fullpage', {
     anchors: ['section1', 'section2', "section3", "section4", "section5", "section6"],
     // navigationTooltips: ['', 'SCROLLER', 'LED MONİTOR', 'PRİZMA VƏ BİLLBOARD'],
     // showActiveTooltip: true,
-    keyboardScrolling: true,
     onLeave: (origin, destination, direction) => {
         const section = destination.item;
 
@@ -109,7 +108,6 @@ new fullpage('#fullpage', {
 
         if (destination.index === 0) {
             backToTop.style.opacity = 0;
-            mirror_banner_video.pause();
             mirror_banner_video.play();
         }
 
@@ -128,7 +126,7 @@ new fullpage('#fullpage', {
         if (destination.index === 1) {
             // play scroller_video
             for (let s = 0; s < scroller_video.length; s++) {
-                scroller_video[s].pause();
+                // scroller_video[s].pause();
                 scroller_video[s].play();
             }
 
@@ -154,7 +152,6 @@ new fullpage('#fullpage', {
 
             // // play scroller_video
             for (let l = 0; l < led_video.length; l++) {
-                led_video[l].pause();
                 led_video[l].play();
             }
 
@@ -187,32 +184,32 @@ new fullpage('#fullpage', {
         }
 
         if (destination.index === 3) {
-            const prizmaName = section.querySelectorAll('.prizmaName');
-            const prizma_Head1 = section.querySelectorAll('.prizma_Head1');
-            const prizma_Head2 = section.querySelectorAll('.prizma_Head2');
-            const prizma_Head3 = section.querySelectorAll('.prizma_Head3');
-            const prizma_Bottom1 = section.querySelectorAll('.prizma_Bottom1');
-            const prizma_Bottom2 = section.querySelectorAll('.prizma_Bottom2');
-            const prizma_Bottom3 = section.querySelectorAll('.prizma_Bottom3');
+            // const prizmaName = section.querySelectorAll('.prizmaName');
+            // const prizma_Head1 = section.querySelectorAll('.prizma_Head1');
+            // const prizma_Head2 = section.querySelectorAll('.prizma_Head2');
+            // const prizma_Head3 = section.querySelectorAll('.prizma_Head3');
+            // const prizma_Bottom1 = section.querySelectorAll('.prizma_Bottom1');
+            // const prizma_Bottom2 = section.querySelectorAll('.prizma_Bottom2');
+            // const prizma_Bottom3 = section.querySelectorAll('.prizma_Bottom3');
 
-            const tlprizma1 = new TimelineMax({ delay: 0.8 });
-            const tlprizma2 = new TimelineMax({ delay: 0.8 });
-            const tlprizma6 = new TimelineMax({ delay: 0.8 });
-            const tlprizma3 = new TimelineMax({ delay: 0.8 });
-            const tlprizma4 = new TimelineMax({ delay: 0.8 });
-            const tlprizma5 = new TimelineMax({ delay: 0.8 });
+            // const tlprizma1 = new TimelineMax({ delay: 0.8 });
+            // const tlprizma2 = new TimelineMax({ delay: 0.8 });
+            // const tlprizma6 = new TimelineMax({ delay: 0.8 });
+            // const tlprizma3 = new TimelineMax({ delay: 0.8 });
+            // const tlprizma4 = new TimelineMax({ delay: 0.8 });
+            // const tlprizma5 = new TimelineMax({ delay: 0.8 });
 
-            const tlprizmaname1 = new TimelineMax({ delay: 0.5 });
+            // const tlprizmaname1 = new TimelineMax({ delay: 0.5 });
 
-            tlprizma1.fromTo(prizma_Head1, 1.4, { x: "-2000" }, { x: 0 });
-            tlprizma2.fromTo(prizma_Head2, 1.6, { y: "-2000" }, { y: 0 });
-            tlprizma6.fromTo(prizma_Head3, 1.5, { x: "2000" }, { x: 0 });
+            // tlprizma1.fromTo(prizma_Head1, 1.4, { x: "-2000" }, { x: 0 });
+            // tlprizma2.fromTo(prizma_Head2, 1.6, { y: "-2000" }, { y: 0 });
+            // tlprizma6.fromTo(prizma_Head3, 1.5, { x: "2000" }, { x: 0 });
 
-            tlprizma3.fromTo(prizma_Bottom1, 1.5, { x: "-2000" }, { x: 0 });
-            tlprizma4.fromTo(prizma_Bottom2, 1.6, { y: "2000" }, { y: 0 });
-            tlprizma5.fromTo(prizma_Bottom3, 1.4, { x: "2000" }, { x: 0 });
+            // tlprizma3.fromTo(prizma_Bottom1, 1.5, { x: "-2000" }, { x: 0 });
+            // tlprizma4.fromTo(prizma_Bottom2, 1.6, { y: "2000" }, { y: 0 });
+            // tlprizma5.fromTo(prizma_Bottom3, 1.4, { x: "2000" }, { x: 0 });
 
-            tlprizmaname1.fromTo(prizmaName, 1.3, { scale: 0 }, { scale: 1 });
+            // tlprizmaname1.fromTo(prizmaName, 1.3, { scale: 0 }, { scale: 1 });
 
         }
 
