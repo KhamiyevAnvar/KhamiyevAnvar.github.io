@@ -567,7 +567,7 @@
      object-fit: cover;
 }
 #fullpage .section4 .fp-overflow {
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
 }
 #fullpage .section4 #prizma {
@@ -578,12 +578,13 @@
 }
 #fullpage .section4 #prizma .prizma-desing-item {
   width: 33.3333333333%;
+  height: 100%;
   padding: 0 10px;
 }
 #fullpage .section4 #prizma .prizma-desing-item .prizma-desing-item-cover {
-  overflow: hidden;
   width: 100%;
   height: 100%;
+  overflow: hidden;
   transition: all ease 0.5s;
 }
 #fullpage .section4 #prizma .prizma-desing-item .prizma-desing-item-cover img {
@@ -618,7 +619,12 @@
   height: 50%;
   display: flex;
   padding: 10px 0;
-  position: relative;
+}
+#fullpage .section4 .mirror_pdf {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 #fullpage .section5 .fp-overflow {
   overflow: hidden;

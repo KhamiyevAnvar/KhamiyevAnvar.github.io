@@ -1,11 +1,14 @@
 // Page onload - loading
 window.onload = () => {
     setTimeout(onloadMirror, 1000);
+    setTimeout(onloadMirrorDis, 3000);
 }
 function onloadMirror() {
     document.getElementsByClassName("onloadMirror")[0].classList.add("onloadMirrorNone");
 }
-
+function onloadMirrorDis() {
+    document.getElementsByClassName("onloadMirror")[0].classList.add("onloadMirrorNoneDis");
+}
 const mirror_banner_video = document.getElementById("mirror_banner_video");
 const mirror_banner_videoImg = document.getElementById("mirror_banner_videoImg");
 const scroller_video = document.querySelectorAll(".scroller_video");
@@ -76,7 +79,7 @@ BrowserDetection();
 new fullpage('#fullpage', {
     // navigation: true,
     autoscrolling: true,
-    scrollingSpeed: 1100,
+    scrollingSpeed: 1000,
     controlArrows: false,
     slidesNavigation: true,
     anchors: ['section1', 'section2', "section3", "section4", "section5", "section6"],
@@ -104,12 +107,12 @@ new fullpage('#fullpage', {
 
         if (destination.index !== 0) {
             backToTop.style.opacity = 1;
-            mirror_banner_video.pause();
+            // mirror_banner_video.pause();
         }
 
         if (destination.index === 0) {
             backToTop.style.opacity = 0;
-            mirror_banner_video.play();
+            // mirror_banner_video.play();
         }
 
         // scroller_video
@@ -120,7 +123,7 @@ new fullpage('#fullpage', {
         if (destination.index !== 1) {
             // pause scroller_video
             for (let s = 0; s < scroller_video.length; s++) {
-                scroller_video[s].pause();
+                // scroller_video[s].pause();
             }
 
         }
@@ -128,7 +131,7 @@ new fullpage('#fullpage', {
             // play scroller_video
             for (let s = 0; s < scroller_video.length; s++) {
                 // scroller_video[s].pause();
-                scroller_video[s].play();
+                // scroller_video[s].play();
             }
 
 
@@ -145,7 +148,7 @@ new fullpage('#fullpage', {
 
             // pause scroller_video
             for (let l = 0; l < led_video.length; l++) {
-                led_video[l].pause();
+                // led_video[l].pause();
             }
 
         }
@@ -153,7 +156,7 @@ new fullpage('#fullpage', {
 
             // // play scroller_video
             for (let l = 0; l < led_video.length; l++) {
-                led_video[l].play();
+                // led_video[l].play();
             }
 
             const ledSectionHeadItem1 = section.querySelectorAll('.ledSectionHeadItem1');
