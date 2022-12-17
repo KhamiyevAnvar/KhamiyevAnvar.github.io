@@ -2116,11 +2116,6 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-#career .career-item .career-itemFooter .career-itemFooterLocation img {
-  width: auto;
-  height: auto;
-  object-fit: contain;
-}
 #career .career-item .career-itemFooter .career-itemFooterLocation span {
   display: inline-block;
   font-family: roboto-regular;
@@ -2244,11 +2239,6 @@ body {
   display: flex;
   justify-content: right;
   align-items: center;
-}
-#career #career-right .careerVacancyBlock .careerVacancyBlockHead .careerVacancyBlockHeadRight .careerVacancyBlockLocation .careerVacancyBlockLocationLogo {
-  width: auto;
-  height: auto;
-  object-fit: contain;
 }
 #career #career-right .careerVacancyBlock .careerVacancyBlockHead .careerVacancyBlockHeadRight .careerVacancyBlockLocation .careerVacancyBlockLocationContent {
   display: inline-block;
