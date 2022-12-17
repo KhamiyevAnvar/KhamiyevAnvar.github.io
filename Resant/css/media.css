@@ -903,6 +903,9 @@
     margin-top: 15px;
     margin-bottom: 30px;
   }
+  #career #career-right .careerVacancyBlock {
+    padding-bottom: 70px;
+  }
   #career #career-right .careerVacancyBlock .vacancyApplyBlock .applyVacancy {
     font-size: 1.125rem;
     padding: 5px 14px;
