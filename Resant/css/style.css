@@ -2452,8 +2452,3 @@ body {
   height: 16px;
   text-align: center;
 }
-.applyModalActive {
-  opacity: 1 !important;
-  visibility: visible !important;
-  display: flex !important;
-}
