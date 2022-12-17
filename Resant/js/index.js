@@ -297,10 +297,22 @@ $(function () {
         });
     });
 
-    //kabinet button
-
+    //kabinet buuton
     $('.restaurantOnePageButton').click(function () {
         $(this).parents(".restaurantTwoCol-right").toggleClass("restaurantKabinet");
+    })
+
+    // career apply
+
+    const careerItemMoreButton = $(".careerItemMoreButton");
+    const careerRight = $("#career-right");
+    const careerVacancyBlockNone = $(".careerVacancyBlockNone");
+    careerItemMoreButton.click(function () {
+        careerRight.addClass("career-right-active");
+    })
+    careerVacancyBlockNone.click(function () {
+        careerRight.removeClass("career-right-active");
+
     })
 
 
@@ -311,5 +323,50 @@ window.onload = () => {
     document.getElementsByClassName("onloadResant")[0].classList.add("onloadPageNone");
 }
 
+// applyModalForm
+
+var applyVacancy = $(".applyVacancy");
+const applyModal = $("#applyModal");
+var applyModalHeadDelete = $(".applyModalHeadDelete");
 
 
+// active apply modal 
+applyVacancy.click(function () {
+    applyModal.addClass("applyModalActive");
+})
+
+// remove apply modal
+applyModalHeadDelete.click(function () {
+    applyModal.removeClass("applyModalActive");
+})
+
+var applyModalButton = document.getElementById("applyModalButton");
+
+applyModalButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    checkApply();
+})
+
+function checkApply() {
+    const infoCareerApply = document.getElementsByClassName("infoCareerApply")[0];
+
+    var applyModalItemName = document.getElementById("applyModalItemName").value.trim();
+    var applyModalItemSurname = document.getElementById("applyModalItemSurname").value.trim();
+    var applyModalCv = document.getElementById("applyModalCv").value.trim();
+
+
+    if (applyModalItemName.length > 0 && applyModalItemSurname.length > 0 && applyModalCv !== "") {
+        // correct message
+        infoCareerApply.innerText = "Müraciətiniz qeydə alındı";
+        infoCareerApply.style.color = "#011B4C";
+
+        // zero input
+        document.getElementById("applyModalItemName").value = "";
+        document.getElementById("applyModalItemSurname").value = "";
+
+    } else {
+        //incorrect message
+        infoCareerApply.innerText = "Tam doldurulmayıb";
+        infoCareerApply.style.color = "red";
+    }
+}

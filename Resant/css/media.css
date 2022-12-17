@@ -1,4 +1,12 @@
 @font-face {
+  font-family: roboto-regular;
+  src: url(fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: roboto-medium;
+  src: url(fonts/Roboto/Roboto-Medium.ttf);
+}
+@font-face {
   font-family: raleway-light;
   src: url(fonts/Raleway/Raleway-Light.ttf);
 }
@@ -429,6 +437,41 @@
     padding: 12px 30px;
     font-size: 1.25rem;
   }
+  #career #career-right {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    max-height: 100vh;
+    padding-top: 0;
+    z-index: 1000;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: all ease 0.6s;
+  }
+  #career #career-right .careerSearchbar {
+    display: none;
+  }
+  #career #career-right .careerVacancyBlock {
+    height: 100%;
+    padding: 17px 15px 30px 15px;
+  }
+  #career #career-right .careerVacancyBlock .careerVacancyBlockMobileBack {
+    display: block;
+  }
+  #career #career-right .careerVacancyBlock .careerVacancyBlockHead {
+    display: block;
+  }
+  #career #career-right .careerVacancyBlock .careerVacancyBlockHead .careerVacancyBlockHeadRight {
+    display: flex;
+    justify-content: space-between;
+  }
+  #career .career-right-active {
+    visibility: visible !important;
+    opacity: 1 !important;
+    display: block !important;
+  }
 }
 @media screen and (max-width: 767.9px) {
   #resantHead #resantHeadOpacity {
@@ -855,6 +898,14 @@
   .onloadResant .onloadResantBack img {
     width: 70%;
     height: 70%;
+  }
+  #career {
+    margin-top: 15px;
+    margin-bottom: 30px;
+  }
+  #career #career-right .careerVacancyBlock .vacancyApplyBlock .applyVacancy {
+    font-size: 1.125rem;
+    padding: 5px 14px;
   }
 }
 @media screen and (max-width: 575.9px) {
