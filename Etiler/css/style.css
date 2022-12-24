@@ -1,0 +1,2051 @@
+@font-face {
+  font-family: tt-regular;
+  src: url(fonts//tt-fors/TT_fors_regular.ttf);
+}
+@font-face {
+  font-family: tt-medium;
+  src: url(fonts/tt-fors/TT_fors_medium.ttf);
+}
+@font-face {
+  font-family: tt-semibold;
+  src: url(fonts/tt-fors/TT_fors_semibold.ttf);
+}
+@font-face {
+  font-family: tt-bold;
+  src: url(fonts/tt-fors/TT_fors_bold.ttf);
+}
+.list_reset {
+  list-style-type: none;
+  margin: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.load-wraper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(211, 211, 211);
+  z-index: -1;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.load-wraper .activity {
+  position: absolute;
+  left: -45%;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to left, rgba(251, 251, 251, 0.05), rgba(251, 251, 251, 0.3), rgba(251, 251, 251, 0.6), rgba(251, 251, 251, 0.3), rgba(251, 251, 251, 0.05));
+  background-image: -webkit-linear-gradient(to left, rgba(251, 251, 251, 0.05), rgba(251, 251, 251, 0.3), rgba(251, 251, 251, 0.6), rgba(251, 251, 251, 0.3), rgba(251, 251, 251, 0.05));
+  -webkit-animation: loading 1s infinite;
+          animation: loading 1s infinite;
+  z-index: -1;
+}
+@-webkit-keyframes loading {
+  0% {
+    left: -45%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+@keyframes loading {
+  0% {
+    left: -45%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.etilerMobileMenu {
+  position: fixed;
+  top: 0;
+  left: -2000px;
+  visibility: hidden;
+  opacity: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #E30A17;
+  z-index: 1001;
+  transition: all ease 0.6s;
+}
+.etilerMobileMenu #closeMobileMenu {
+  background: #E30A17;
+  outline: none;
+  border: none;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.etilerMobileMenu #closeMobileMenu svg {
+  transition: all ease 0.4s;
+}
+.etilerMobileMenu #closeMobileMenu:hover svg {
+  transform: rotate(90deg);
+}
+.etilerMobileMenu .etilerMobileMenuHead {
+  background-color: #E30A17;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: white;
+  border-radius: 25px;
+  position: relative;
+  margin-top: 80px;
+  height: 40px;
+}
+.etilerMobileMenu .etilerMobileMenuHead .etilerMobileMenuHeadLogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  padding: 8px;
+  background-color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+.etilerMobileMenu .etilerMobileMenuHead .etilerMobileMenuHeadLogo img {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.etilerMobileMenu .etilerMobileMenuBody ul {
+  margin-top: 45px;
+  text-align: center;
+}
+.etilerMobileMenu .etilerMobileMenuBody ul li {
+  display: flex;
+  justify-content: center;
+  font-family: tt-medium;
+  font-size: 18px;
+  transition: all ease 0.4s;
+  margin-top: 10px;
+}
+.etilerMobileMenu .etilerMobileMenuBody ul li a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 25px;
+  transition: all ease 0.4s;
+}
+.etilerMobileMenu .etilerMobileMenuBody ul .active a {
+  transform: scale(1.03);
+  background-color: white;
+  color: #E30A17;
+}
+.etilerMobileMenu .etilerMobileMenuBody ul li:hover a {
+  transform: scale(1.03);
+  background-color: white;
+  color: #E30A17;
+}
+.etilerMobileMenu .etilerMobileMenuSocial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  padding-bottom: 40px;
+}
+.etilerMobileMenu .etilerMobileMenuSocial li {
+  padding: 0 10px;
+}
+.etilerMobileMenu .etilerMobileMenuSocial li a {
+  display: inline-block;
+  transition: all ease 0.4s;
+}
+.etilerMobileMenu .etilerMobileMenuSocial li:hover a {
+  transform: scale(1.03);
+}
+
+.etilerMobileMenuOpen {
+  left: 0;
+  visibility: visible;
+  opacity: 1;
+}
+
+#etilerHeader {
+  height: 100vh;
+  position: relative;
+}
+#etilerHeader .etilerHeader {
+  height: 100%;
+}
+#etilerHeader .etilerHeader .etilerHeaderCarousel {
+  height: 100%;
+  position: relative;
+}
+#etilerHeader .etilerHeader .etilerHeaderCarousel .owl-stage-outer {
+  height: 100%;
+}
+#etilerHeader .etilerHeader .etilerHeaderCarousel .owl-stage-outer .owl-stage {
+  height: 100%;
+}
+#etilerHeader .etilerHeader .etilerHeaderCarousel .owl-stage-outer .owl-stage .owl-item {
+  height: 100%;
+}
+#etilerHeader .etilerHeader .etilerHeaderCarousel .owl-dots {
+  position: absolute;
+  bottom: 4vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#etilerHeader .etilerHeader .etilerHeaderCarousel .owl-dots .owl-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+#etilerHeader .etilerHeader .etilerHeaderCarousel .owl-dots .owl-dot span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+}
+#etilerHeader .etilerHeader .etilerHeaderCarousel .owl-dots .active span {
+  background-color: #000;
+}
+#etilerHeader .etilerHeader .etilerHeaderCarousel .etilerHeaderCarouselItem {
+  height: 100%;
+}
+#etilerHeader .etilerHeader .etilerHeaderCarousel .etilerHeaderCarouselItem img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock {
+  position: absolute;
+  top: 10vh;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock {
+  background-color: #E30A17;
+  border-radius: 59px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 5px 20px;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerMenuDesk {
+  width: 50%;
+  padding: 0 80px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: tt-medium;
+  font-size: 22px;
+  text-transform: capitalize;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerMenuDesk li {
+  margin-right: 7px;
+  padding: 5px 0;
+  overflow: hidden;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerMenuDesk li a {
+  color: #fff;
+  text-decoration: none;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerMenuDesk li:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: all ease 0.4s;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerMenuDesk li:hover:after {
+  width: 100%;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerMenuDesk .active:after {
+  content: "";
+  display: block !important;
+  width: 100% !important;
+  height: 2px !important;
+  background-color: white !important;
+  transition: all ease 0.4s;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px 0 80px;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight .etilerMenuDesk1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: tt-medium;
+  font-size: 22px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight .etilerMenuDesk1 li {
+  margin-right: 15px;
+  padding: 5px 0;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight .etilerMenuDesk1 li a {
+  color: #fff;
+  text-decoration: none;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight .etilerMenuDesk1 li:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: all ease 0.4s;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight .etilerMenuDesk1 li:hover:after {
+  width: 100%;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight .etilerMenuDesk1 .active:after {
+  content: "";
+  display: block !important;
+  width: 100% !important;
+  height: 2px !important;
+  background-color: white !important;
+  transition: all ease 0.4s;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight #etilermobMenuButton {
+  border: none;
+  outline: none;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight .etilerHeaderLanguage {
+  display: flex;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight .etilerHeaderLanguage .etilerHeaderLanguageSelect {
+  position: relative;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight .etilerHeaderLanguage .etilerHeaderLanguageSelect .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  width: 60px;
+  display: flex;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight .etilerHeaderLanguage .etilerHeaderLanguageSelect img {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight .etilerHeaderLanguage .etilerHeaderLanguageSelect .dropdown-toggle {
+  background: none;
+  border: none;
+  font-family: tt-semibold;
+  font-size: 18px;
+  color: white;
+  padding: 0;
+  display: flex;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight .etilerHeaderLanguage .etilerHeaderLanguageSelect .dropdown-toggle .filter-option {
+  text-align: left;
+  padding-left: 10px;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight .etilerHeaderLanguage .etilerHeaderLanguageSelect .dropdown-toggle:focus {
+  box-shadow: none;
+  outline: 0 !important;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight .etilerHeaderLanguage .etilerHeaderLanguageSelect .dropdown-toggle::after {
+  display: none;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight .etilerHeaderLanguage .etilerHeaderLanguageSelect .dropdown-menu {
+  border: none;
+  border-radius: 0 0 5px 5px;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight .etilerHeaderLanguage .etilerHeaderLanguageSelect .dropdown-menu li {
+  font-family: tt-regular;
+  font-size: 18px;
+  text-align: center;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight .etilerHeaderLanguage .etilerHeaderLanguageSelect .dropdown-menu li a span {
+  color: red;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight .etilerHeaderLanguage .etilerHeaderLanguageSelect .dropdown-menu li:hover {
+  background-color: red;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight .etilerHeaderLanguage .etilerHeaderLanguageSelect .dropdown-menu li:hover a span {
+  color: white;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight .etilerHeaderSocialBLock .etilerHeaderSocial {
+  display: flex;
+  align-items: center;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight .etilerHeaderSocialBLock .etilerHeaderSocial li {
+  margin-right: 12px;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight .etilerHeaderSocialBLock .etilerHeaderSocial li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerLogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 140px;
+  background-color: white;
+}
+#etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerLogo img {
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#footer {
+  margin-top: 50px;
+  text-align: center;
+  background-color: #E30A17;
+  padding: 60px 0 12px 0;
+}
+#footer .footerLogoBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer .footerLogoBlock .footerLogo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#footer .footerLogoBlock .footerLogo img {
+  width: 85%;
+  height: 85%;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#footer .copyriter {
+  margin-top: 20px;
+  color: white;
+  font-family: tt-medium;
+  font-size: 16px;
+}
+#footer .copyriter a {
+  color: white;
+  display: inline-block;
+  padding-bottom: 2px;
+  border-bottom: 1px solid white;
+  text-decoration: none;
+}
+
+#about .aboutBlock {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  border-radius: 15px 15px 0 0;
+  padding: 30px 28px;
+  background-color: white;
+  position: relative;
+  top: -150px;
+  z-index: 1;
+}
+#about .aboutBlock .aboutHead .aboutName {
+  font-family: tt-semibold;
+  font-size: 34px;
+  color: #000;
+}
+#about .aboutBlock .aboutHead .aboutContentOne {
+  font-family: tt-regular;
+  font-size: 18px;
+  color: #000;
+}
+#about .aboutBlock .aboutBody {
+  display: flex;
+}
+#about .aboutBlock .aboutBody .aboutBodyLeft {
+  width: 50%;
+}
+#about .aboutBlock .aboutBody .aboutBodyLeft .aboutBodyLeftImg {
+  height: 329px;
+  border-radius: 15px 0 0 15px;
+  overflow: hidden;
+}
+#about .aboutBlock .aboutBody .aboutBodyLeft .aboutBodyLeftImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#about .aboutBlock .aboutBody .aboutBodyLeft .aboutBodyLeftContent {
+  font-family: tt-regular;
+  font-size: 18px;
+  color: #000;
+  padding: 20px 20px 0 0;
+}
+#about .aboutBlock .aboutBody .aboutBodyRight {
+  width: 50%;
+  border-radius: 0 15px 15px 15px;
+  overflow: hidden;
+}
+#about .aboutBlock .aboutBody .aboutBodyRight img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#blog .blogBlock {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  border-radius: 15px 15px 0 0;
+  padding: 30px 28px;
+  padding-bottom: 100px;
+  background-color: white;
+  position: relative;
+  top: -150px;
+  z-index: 1;
+}
+#blog .blogBlock .blogHead .blogName {
+  font-family: tt-semibold;
+  font-size: 34px;
+  color: #000;
+}
+#blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel {
+  padding-bottom: 80px;
+  border-bottom: 1px solid #ECECEC;
+}
+#blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 -10px;
+}
+#blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemLeft {
+  width: 40%;
+  height: 430px;
+  padding: 10px;
+}
+#blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemLeft .blogHeadCarouselItemFirst {
+  height: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+}
+#blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemLeft .blogHeadCarouselItemFirst img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemLeft .blogHeadCarouselItemFirst .blogHeadCarouselItemFirstContent {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 15px;
+}
+#blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemLeft .blogHeadCarouselItemFirst .blogHeadCarouselItemFirstContent .blogHeadCarouselItemFirstContent1 {
+  font-family: tt-medium;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 5px;
+  -webkit-line-clamp: 1 !important;
+  -webkit-box-orient: vertical !important;
+  display: -webkit-box !important;
+  overflow: hidden !important;
+}
+#blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemLeft .blogHeadCarouselItemFirst .blogHeadCarouselItemFirstContent .blogHeadCarouselItemFirstContent2 {
+  font-family: tt-regular;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 5px;
+  -webkit-line-clamp: 1 !important;
+  -webkit-box-orient: vertical !important;
+  display: -webkit-box !important;
+  overflow: hidden !important;
+}
+#blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemright {
+  width: 60%;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 10px;
+}
+#blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemright .blogHeadCarouselItemrightItem {
+  width: 33.3333333333%;
+  height: 50%;
+  padding: 10px;
+}
+#blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemright .blogHeadCarouselItemrightItem .blogHeadCarouselItemrightItemBlock {
+  height: 100%;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+}
+#blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemright .blogHeadCarouselItemrightItem .blogHeadCarouselItemrightItemBlock img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemright .blogHeadCarouselItemrightItem .blogHeadCarouselItemrightItemBlock .blogHeadCarouselItemrightItemBlockContent {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+#blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemright .blogHeadCarouselItemrightItem .blogHeadCarouselItemrightItemBlock .blogHeadCarouselItemrightItemBlockContent .blogHeadCarouselItemrightItemBlockContent1 {
+  font-family: tt-medium;
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 5px;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  display: -webkit-box !important;
+  overflow: hidden !important;
+}
+#blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemright .blogHeadCarouselItemrightItem .blogHeadCarouselItemrightItemBlock .blogHeadCarouselItemrightItemBlockContent .blogHeadCarouselItemrightItemBlockContent2 {
+  font-family: tt-regular;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 5px;
+  -webkit-line-clamp: 1 !important;
+  -webkit-box-orient: vertical !important;
+  display: -webkit-box !important;
+  overflow: hidden !important;
+}
+#blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .owl-stage-outer {
+  height: 100%;
+}
+#blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .owl-stage-outer .owl-stage {
+  height: 100%;
+}
+#blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .owl-stage-outer .owl-stage .owl-item {
+  height: 100%;
+}
+#blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .owl-dots {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .owl-dots .owl-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+#blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .owl-dots .owl-dot span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+}
+#blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .owl-dots .active span {
+  background-color: #000;
+}
+#blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .etilerHeaderCarouselItem {
+  height: 100%;
+}
+#blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .etilerHeaderCarouselItem img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#blog .blogBlock .blogBody {
+  margin-top: 40px;
+}
+#blog .blogBlock .blogBody .blogBodyLeft {
+  height: 350px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+#blog .blogBlock .blogBody .blogBodyLeft img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#blog .blogBlock .blogBody .blogBodyRight {
+  text-align: right;
+  height: 350px;
+  overflow-y: auto;
+}
+#blog .blogBlock .blogBody .blogBodyRight .blogBodyRightContentName {
+  font-family: tt-medium;
+  font-size: 34px;
+  color: #000;
+}
+#blog .blogBlock .blogBody .blogBodyRight .blogBodyRightContentText {
+  font-family: tt-regular;
+  font-size: 18px;
+  color: #000;
+}
+
+#franchise .franchise {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  border-radius: 15px 15px 0 0;
+  padding: 30px 28px;
+  background-color: white;
+  position: relative;
+  top: -150px;
+  z-index: 1;
+}
+#franchise .franchise .franchiseName {
+  font-family: tt-semibold;
+  font-size: 34px;
+  color: #000;
+}
+#franchise .franchise .franchiseLeft .franchiseLeftContent {
+  margin-top: 15px;
+  font-family: tt-regular;
+  font-size: 18px;
+  color: #000;
+  text-align: justify;
+}
+#franchise .franchise .franchiseLeft .franchiseLeftImg {
+  margin-top: 30px;
+  height: 461px;
+  border-radius: 23px;
+  overflow: hidden;
+}
+#franchise .franchise .franchiseLeft .franchiseLeftImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#franchise .franchise .franchiseForm {
+  border: 1px solid #CECECE;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  border-radius: 23px;
+  overflow: hidden;
+  padding: 29px 32px;
+}
+#franchise .franchise .franchiseForm .franchiseFormName {
+  font-family: tt-medium;
+  color: #000;
+}
+#franchise .franchise .franchiseForm .franchiseFormInputDes {
+  margin-top: 15px;
+  position: relative;
+}
+#franchise .franchise .franchiseForm .franchiseFormInputDes input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #D9D9D9;
+  background: white;
+  border-radius: 23px;
+  overflow: hidden;
+  padding: 5px 15px;
+}
+#franchise .franchise .franchiseForm .franchiseFormInputDes input ::-moz-placeholder {
+  color: #BCBCBC;
+}
+#franchise .franchise .franchiseForm .franchiseFormInputDes input :-ms-input-placeholder {
+  color: #BCBCBC;
+}
+#franchise .franchise .franchiseForm .franchiseFormInputDes input ::placeholder {
+  color: #BCBCBC;
+}
+#franchise .franchise .franchiseForm .franchiseFormInputDes .correctIncorrect {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#franchise .franchise .franchiseForm .franchiseFormInputDes .correctIncorrect .fa-check-circle {
+  color: green;
+  display: none;
+}
+#franchise .franchise .franchiseForm .franchiseFormInputDes .correctIncorrect .fa-exclamation-circle {
+  color: #E30A17;
+  display: none;
+}
+#franchise .franchise .franchiseForm .franchiseFormInputDes input::-webkit-outer-spin-button,
+#franchise .franchise .franchiseForm .franchiseFormInputDes input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#franchise .franchise .franchiseForm .franchiseFormInputDes input[type=number] {
+  -moz-appearance: textfield;
+}
+#franchise .franchise .franchiseForm .franchiseFormSelectDes {
+  margin-top: 15px;
+  position: relative;
+}
+#franchise .franchise .franchiseForm .franchiseFormSelectDes .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  width: 100%;
+  display: flex;
+}
+#franchise .franchise .franchiseForm .franchiseFormSelectDes img {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+#franchise .franchise .franchiseForm .franchiseFormSelectDes .dropdown-toggle {
+  background: #EDEDED;
+  border: 1px solid #D9D9D9;
+  font-family: tt-regular;
+  font-size: 18px;
+  color: #A8A8A8;
+  padding: 0;
+  display: flex;
+  padding: 5px 10px;
+  border-radius: 25px;
+}
+#franchise .franchise .franchiseForm .franchiseFormSelectDes .dropdown-toggle .filter-option {
+  text-align: left;
+  padding-left: 10px;
+}
+#franchise .franchise .franchiseForm .franchiseFormSelectDes .dropdown-toggle .inner {
+  border: none;
+}
+#franchise .franchise .franchiseForm .franchiseFormSelectDes .dropdown-toggle:focus {
+  box-shadow: none;
+  outline: 0 !important;
+}
+#franchise .franchise .franchiseForm .franchiseFormSelectDes .dropdown-toggle::after {
+  display: none;
+}
+#franchise .franchise .franchiseForm .franchiseFormSelectDes .dropdown-menu {
+  border: 1px solid #D9D9D9;
+  border-radius: 0 0 5px 5px;
+  padding: 0;
+  border-radius: 10px;
+}
+#franchise .franchise .franchiseForm .franchiseFormSelectDes .dropdown-menu li {
+  font-family: tt-regular;
+  font-size: 18px;
+  text-align: center;
+}
+#franchise .franchise .franchiseForm .franchiseFormSelectDes .dropdown-menu li a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+#franchise .franchise .franchiseForm .franchiseFormSelectDes .dropdown-menu li a span {
+  color: #A8A8A8;
+}
+#franchise .franchise .franchiseForm .franchiseFormSelectDes .dropdown-menu li:hover {
+  background-color: #EDEDED;
+}
+#franchise .franchise .franchiseForm .franchiseFormSelectDes .dropdown-menu li:hover a span {
+  color: white;
+}
+#franchise .franchise .franchiseForm .franchiseFormTextareaDes {
+  margin-top: 15px;
+  position: relative;
+}
+#franchise .franchise .franchiseForm .franchiseFormTextareaDes textarea {
+  width: 100%;
+  outline: none;
+  border: 1px solid #D9D9D9;
+  background: white;
+  border-radius: 23px;
+  overflow: hidden;
+  padding: 10px 15px;
+}
+#franchise .franchise .franchiseForm .franchiseFormTextareaDes textarea ::-moz-placeholder {
+  color: #BCBCBC;
+}
+#franchise .franchise .franchiseForm .franchiseFormTextareaDes textarea :-ms-input-placeholder {
+  color: #BCBCBC;
+}
+#franchise .franchise .franchiseForm .franchiseFormTextareaDes textarea ::placeholder {
+  color: #BCBCBC;
+}
+#franchise .franchise .franchiseForm .franchiseFormTextareaDes .correctIncorrect {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#franchise .franchise .franchiseForm .franchiseFormTextareaDes .correctIncorrect .fa-check-circle {
+  color: green;
+  display: none;
+}
+#franchise .franchise .franchiseForm .franchiseFormTextareaDes .correctIncorrect .fa-exclamation-circle {
+  color: #E30A17;
+  display: none;
+}
+#franchise .franchise .franchiseForm .formConfirm {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+}
+#franchise .franchise .franchiseForm .formConfirm .formConfirmcheckbox {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 2rem;
+  margin: 0;
+  margin-right: 8px;
+}
+#franchise .franchise .franchiseForm .formConfirm .formConfirmcheckbox input {
+  display: none;
+}
+#franchise .franchise .franchiseForm .formConfirm .formConfirmcheckbox input:checked ~ .checkbox__mark {
+  background-color: red;
+  border: 0.1rem solid red;
+}
+#franchise .franchise .franchiseForm .formConfirm .formConfirmcheckbox input:checked ~ .checkbox__mark svg {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+#franchise .franchise .franchiseForm .formConfirm .formConfirmcheckbox .checkbox__mark {
+  position: relative;
+  width: 1.7rem;
+  height: 1.7rem;
+  border: 0.1rem solid #BEBEBE;
+  border-radius: 7px;
+}
+#franchise .franchise .franchiseForm .formConfirm .formConfirmcheckbox .checkbox__mark svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  width: 68%;
+  height: auto;
+  transition: all ease 0.2s;
+  opacity: 0;
+}
+#franchise .franchise .franchiseForm .formConfirm .formConfirmcheckbox .checkbox__mark svg path {
+  fill: white;
+}
+#franchise .franchise .franchiseForm .formConfirm .formConfirmtext {
+  margin: 0;
+  font-family: tt-regular;
+  font-size: 16px;
+  color: #000;
+}
+#franchise .franchise .franchiseForm .formSubButBlock {
+  margin-top: 36px;
+}
+#franchise .franchise .franchiseForm .formSubButBlock #formSubBut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #E30A17;
+  border: 1px solid white;
+  outline: none;
+  color: white;
+  font-family: tt-medium;
+  font-size: 22px;
+  border-radius: 23px;
+  min-width: 100px;
+  padding: 5px 0;
+  transition: all ease 0.4s;
+}
+#franchise .franchise .franchiseForm .formSubButBlock #formSubBut:hover {
+  border: 1.5px solid #E30A17;
+  background: white;
+  color: #E30A17;
+}
+#franchise .franchise .franchiseForm .success .correctIncorrect .fa-check-circle {
+  display: inline-block;
+}
+#franchise .franchise .franchiseForm .incorrect .correctIncorrect .fa-exclamation-circle {
+  display: inline-block;
+}
+
+#contact .contact {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  border-radius: 15px 15px 0 0;
+  padding: 30px 28px;
+  background-color: white;
+  position: relative;
+  top: -150px;
+  z-index: 1;
+}
+#contact .contact .contactName {
+  font-family: tt-semibold;
+  font-size: 34px;
+  color: #000;
+}
+#contact .contact .contactLeft {
+  border-radius: 23px;
+  overflow: hidden;
+}
+#contact .contact .contactLeft .contactMap {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.625rem;
+  color: white;
+  font-weight: 700;
+}
+#contact .contact .contactLeft .contactLeftFooter {
+  background-color: #E30A17;
+  padding: 30px 25px;
+}
+#contact .contact .contactLeft .contactLeftFooter .contactLeftFooterHead {
+  font-family: tt-medium;
+  font-size: 26px;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+  padding: 8px 0;
+}
+#contact .contact .contactLeft .contactLeftFooter .contactLeftFooterList .contactLeftFooterListItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+}
+#contact .contact .contactLeft .contactLeftFooter .contactLeftFooterList .contactLeftFooterListItem .contactLeftFooterListItemIcon {
+  margin-right: 12px;
+}
+#contact .contact .contactLeft .contactLeftFooter .contactLeftFooterList .contactLeftFooterListItem .contactLeftFooterListItemContent {
+  display: inline-flex;
+  margin: 0;
+  text-decoration: none;
+  font-family: tt-regular;
+  font-size: 20px;
+  color: #fff;
+}
+#contact .contact .contactLeft .contactLeftFooter .contactLeftFooterList .contactLeftFooterListItem .contactLeftFooterListItemContent span {
+  display: inline-block;
+  margin-right: 5px;
+  font-family: tt-medium;
+}
+#contact .contact .contactMessage {
+  border: 1px solid #CECECE;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  border-radius: 23px;
+  overflow: hidden;
+  padding: 29px 32px;
+}
+#contact .contact .contactMessage .contactMessageName {
+  font-family: tt-medium;
+  color: #000;
+}
+#contact .contact .contactMessage .contactMessageInputDes {
+  margin-top: 15px;
+  position: relative;
+}
+#contact .contact .contactMessage .contactMessageInputDes input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #D9D9D9;
+  background: white;
+  border-radius: 23px;
+  overflow: hidden;
+  padding: 5px 15px;
+}
+#contact .contact .contactMessage .contactMessageInputDes input ::-moz-placeholder {
+  color: #BCBCBC;
+}
+#contact .contact .contactMessage .contactMessageInputDes input :-ms-input-placeholder {
+  color: #BCBCBC;
+}
+#contact .contact .contactMessage .contactMessageInputDes input ::placeholder {
+  color: #BCBCBC;
+}
+#contact .contact .contactMessage .contactMessageInputDes .correctIncorrect {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact .contact .contactMessage .contactMessageInputDes .correctIncorrect .fa-check-circle {
+  color: green;
+  display: none;
+}
+#contact .contact .contactMessage .contactMessageInputDes .correctIncorrect .fa-exclamation-circle {
+  color: #E30A17;
+  display: none;
+}
+#contact .contact .contactMessage .contactMessageInputDes input::-webkit-outer-spin-button,
+#contact .contact .contactMessage .contactMessageInputDes input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#contact .contact .contactMessage .contactMessageInputDes input[type=number] {
+  -moz-appearance: textfield;
+}
+#contact .contact .contactMessage .contactMessageSelectDes {
+  margin-top: 15px;
+  position: relative;
+}
+#contact .contact .contactMessage .contactMessageSelectDes .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  width: 100%;
+  display: flex;
+}
+#contact .contact .contactMessage .contactMessageSelectDes img {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+#contact .contact .contactMessage .contactMessageSelectDes .dropdown-toggle {
+  background: #EDEDED;
+  border: 1px solid #D9D9D9;
+  font-family: tt-regular;
+  font-size: 18px;
+  color: #A8A8A8;
+  padding: 0;
+  display: flex;
+  padding: 5px 10px;
+  border-radius: 25px;
+}
+#contact .contact .contactMessage .contactMessageSelectDes .dropdown-toggle .filter-option {
+  text-align: left;
+  padding-left: 10px;
+}
+#contact .contact .contactMessage .contactMessageSelectDes .dropdown-toggle .inner {
+  border: none;
+}
+#contact .contact .contactMessage .contactMessageSelectDes .dropdown-toggle:focus {
+  box-shadow: none;
+  outline: 0 !important;
+}
+#contact .contact .contactMessage .contactMessageSelectDes .dropdown-toggle::after {
+  display: none;
+}
+#contact .contact .contactMessage .contactMessageSelectDes .dropdown-menu {
+  border: 1px solid #D9D9D9;
+  border-radius: 0 0 5px 5px;
+  padding: 0;
+  border-radius: 10px;
+}
+#contact .contact .contactMessage .contactMessageSelectDes .dropdown-menu li {
+  font-family: tt-regular;
+  font-size: 18px;
+  text-align: center;
+}
+#contact .contact .contactMessage .contactMessageSelectDes .dropdown-menu li a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+#contact .contact .contactMessage .contactMessageSelectDes .dropdown-menu li a span {
+  color: #A8A8A8;
+}
+#contact .contact .contactMessage .contactMessageSelectDes .dropdown-menu li:hover {
+  background-color: #EDEDED;
+}
+#contact .contact .contactMessage .contactMessageSelectDes .dropdown-menu li:hover a span {
+  color: white;
+}
+#contact .contact .contactMessage .contactMessageTextareaDes {
+  margin-top: 15px;
+  position: relative;
+}
+#contact .contact .contactMessage .contactMessageTextareaDes textarea {
+  width: 100%;
+  outline: none;
+  border: 1px solid #D9D9D9;
+  background: white;
+  border-radius: 23px;
+  overflow: hidden;
+  padding: 10px 15px;
+}
+#contact .contact .contactMessage .contactMessageTextareaDes textarea ::-moz-placeholder {
+  color: #BCBCBC;
+}
+#contact .contact .contactMessage .contactMessageTextareaDes textarea :-ms-input-placeholder {
+  color: #BCBCBC;
+}
+#contact .contact .contactMessage .contactMessageTextareaDes textarea ::placeholder {
+  color: #BCBCBC;
+}
+#contact .contact .contactMessage .contactMessageTextareaDes .correctIncorrect {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact .contact .contactMessage .contactMessageTextareaDes .correctIncorrect .fa-check-circle {
+  color: green;
+  display: none;
+}
+#contact .contact .contactMessage .contactMessageTextareaDes .correctIncorrect .fa-exclamation-circle {
+  color: #E30A17;
+  display: none;
+}
+#contact .contact .contactMessage .contactMessageConfirm {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+}
+#contact .contact .contactMessage .contactMessageConfirm .contactMessageConfirmcheckbox {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 2rem;
+  margin: 0;
+  margin-right: 8px;
+}
+#contact .contact .contactMessage .contactMessageConfirm .contactMessageConfirmcheckbox input {
+  display: none;
+}
+#contact .contact .contactMessage .contactMessageConfirm .contactMessageConfirmcheckbox input:checked ~ .checkbox__mark {
+  background-color: red;
+  border: 0.1rem solid red;
+}
+#contact .contact .contactMessage .contactMessageConfirm .contactMessageConfirmcheckbox input:checked ~ .checkbox__mark svg {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+#contact .contact .contactMessage .contactMessageConfirm .contactMessageConfirmcheckbox .checkbox__mark {
+  position: relative;
+  width: 1.7rem;
+  height: 1.7rem;
+  border: 0.1rem solid #BEBEBE;
+  border-radius: 7px;
+}
+#contact .contact .contactMessage .contactMessageConfirm .contactMessageConfirmcheckbox .checkbox__mark svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  width: 68%;
+  height: auto;
+  transition: all ease 0.2s;
+  opacity: 0;
+}
+#contact .contact .contactMessage .contactMessageConfirm .contactMessageConfirmcheckbox .checkbox__mark svg path {
+  fill: white;
+}
+#contact .contact .contactMessage .contactMessageConfirm .contactMessageConfirmtext {
+  margin: 0;
+  font-family: tt-regular;
+  font-size: 16px;
+  color: #000;
+}
+#contact .contact .contactMessage .contactMessageSubButBlock {
+  margin-top: 36px;
+}
+#contact .contact .contactMessage .contactMessageSubButBlock #contactMessageSubBut {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #E30A17;
+  border: 1px solid white;
+  outline: none;
+  color: white;
+  font-family: tt-medium;
+  font-size: 22px;
+  border-radius: 23px;
+  min-width: 100px;
+  padding: 5px 0;
+  transition: all ease 0.4s;
+}
+#contact .contact .contactMessage .contactMessageSubButBlock #contactMessageSubBut:hover {
+  border: 1.5px solid #E30A17;
+  background: white;
+  color: #E30A17;
+}
+#contact .contact .contactMessage .success .correctIncorrect .fa-check-circle {
+  display: inline-block;
+}
+#contact .contact .contactMessage .incorrect .correctIncorrect .fa-exclamation-circle {
+  display: inline-block;
+}
+
+#etiGalery .etiGalery {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  border-radius: 15px 15px 0 0;
+  padding: 30px 28px;
+  background-color: white;
+  position: relative;
+  top: -150px;
+  z-index: 1;
+}
+#etiGalery .etiGalery .etiGaleryName {
+  font-family: tt-semibold;
+  font-size: 34px;
+  color: #000;
+}
+#etiGalery .etiGalery .etiGaleryBody {
+  margin-top: 20px;
+}
+#etiGalery .etiGalery .etiGaleryBody .etiGaleryItem {
+  width: 100%;
+  height: 220px;
+  border-radius: 25px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+#etiGalery .etiGalery .etiGaleryBody .etiGaleryItem img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all ease 0.6s;
+}
+#etiGalery .etiGalery .etiGaleryBody .etiGaleryItem:hover img {
+  transform: scale(1.03);
+}
+
+.gallery {
+  position: relative;
+  display: none;
+  padding: 2rem 0;
+  background: rgb(12, 11, 12);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.gallery img {
+  width: 80%;
+  height: 80%;
+  display: block;
+  margin: auto;
+  transition: 0.3s ease;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.gallery .gallery__controls {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  margin-top: 15px;
+  gap: 1.3rem;
+}
+.gallery .gallery__controls .controls__btn__close {
+  position: absolute;
+  top: 15px;
+  transition: 0.3s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border-radius: 50%;
+  padding: 0.3rem 0.954rem;
+  border-color: transparent;
+  right: 15px;
+}
+.gallery .gallery__controls .controls__btn__close:hover {
+  border-color: white;
+}
+.gallery .gallery__controls .controls__btn__close svg {
+  width: 24px;
+}
+.gallery .gallery__controls .control__btn {
+  transition: 0.3s linear;
+  border: solid 1px transparent;
+  border-radius: 50%;
+  padding: 0.5rem 1rem 0.5rem 0.9rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+.gallery .gallery__controls .control__btn:hover {
+  border-color: white;
+}
+.gallery .gallery__controls .control__btn svg {
+  pointer-events: none;
+  width: 30px;
+}
+
+.fade {
+  -webkit-animation: fade 0.4s ease;
+          animation: fade 0.4s ease;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+}
+#branch .branch {
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+  border-radius: 15px 15px 0 0;
+  padding: 30px 28px;
+  background-color: white;
+  position: relative;
+  top: -150px;
+  z-index: 1;
+}
+#branch .branch .branchName {
+  font-family: tt-semibold;
+  font-size: 34px;
+  color: #000;
+}
+#branch .branch .branchBody {
+  margin-top: 20px;
+}
+#branch .branch .branchBody .branchBodyLeft .branchBodyLeftHead .branchSelectDes {
+  margin-bottom: 20px;
+  position: relative;
+}
+#branch .branch .branchBody .branchBodyLeft .branchBodyLeftHead .branchSelectDes .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+  width: 100%;
+  display: flex;
+}
+#branch .branch .branchBody .branchBodyLeft .branchBodyLeftHead .branchSelectDes img {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+#branch .branch .branchBody .branchBodyLeft .branchBodyLeftHead .branchSelectDes .dropdown-toggle {
+  background: #EDEDED;
+  border: 1px solid #D9D9D9;
+  font-family: tt-regular;
+  font-size: 18px;
+  color: #A8A8A8;
+  padding: 0;
+  display: flex;
+  padding: 8px 10px;
+  border-radius: 25px;
+}
+#branch .branch .branchBody .branchBodyLeft .branchBodyLeftHead .branchSelectDes .dropdown-toggle .filter-option {
+  text-align: left;
+  padding-left: 10px;
+}
+#branch .branch .branchBody .branchBodyLeft .branchBodyLeftHead .branchSelectDes .dropdown-toggle .inner {
+  border: none;
+}
+#branch .branch .branchBody .branchBodyLeft .branchBodyLeftHead .branchSelectDes .dropdown-toggle:focus {
+  box-shadow: none;
+  outline: 0 !important;
+}
+#branch .branch .branchBody .branchBodyLeft .branchBodyLeftHead .branchSelectDes .dropdown-toggle::after {
+  display: none;
+}
+#branch .branch .branchBody .branchBodyLeft .branchBodyLeftHead .branchSelectDes .dropdown-menu {
+  border: 1px solid #D9D9D9;
+  border-radius: 0 0 5px 5px;
+  padding: 0;
+  border-radius: 10px;
+}
+#branch .branch .branchBody .branchBodyLeft .branchBodyLeftHead .branchSelectDes .dropdown-menu li {
+  font-family: tt-regular;
+  font-size: 18px;
+  text-align: center;
+}
+#branch .branch .branchBody .branchBodyLeft .branchBodyLeftHead .branchSelectDes .dropdown-menu li a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+#branch .branch .branchBody .branchBodyLeft .branchBodyLeftHead .branchSelectDes .dropdown-menu li a span {
+  color: #A8A8A8;
+}
+#branch .branch .branchBody .branchBodyLeft .branchBodyLeftHead .branchSelectDes .dropdown-menu li:hover {
+  background-color: #EDEDED;
+}
+#branch .branch .branchBody .branchBodyLeft .branchBodyLeftHead .branchSelectDes .dropdown-menu li:hover a span {
+  color: white;
+}
+#branch .branch .branchBody .branchBodyLeft .branchBodyLeftBody {
+  background-color: #E30A17;
+  padding: 15px 25px;
+  border-radius: 23px;
+  overflow: hidden;
+  margin-top: 50px;
+}
+#branch .branch .branchBody .branchBodyLeft .branchBodyLeftBody .branchBodyLeftBodyHead {
+  font-family: tt-medium;
+  font-size: 26px;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+  padding: 8px 0;
+}
+#branch .branch .branchBody .branchBodyLeft .branchBodyLeftBody .branchBodyLeftBodyList .branchBodyLeftBodyListItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+}
+#branch .branch .branchBody .branchBodyLeft .branchBodyLeftBody .branchBodyLeftBodyList .branchBodyLeftBodyListItem .branchBodyLeftBodyListItemIcon {
+  margin-right: 12px;
+}
+#branch .branch .branchBody .branchBodyLeft .branchBodyLeftBody .branchBodyLeftBodyList .branchBodyLeftBodyListItem .branchBodyLeftBodyListItemContent {
+  display: inline-flex;
+  margin: 0;
+  text-decoration: none;
+  font-family: tt-regular;
+  font-size: 20px;
+  color: #fff;
+}
+#branch .branch .branchBody .branchBodyLeft .branchBodyLeftBody .branchBodyLeftBodyList .branchBodyLeftBodyListItem .branchBodyLeftBodyListItemContent span {
+  display: inline-block;
+  margin-right: 5px;
+  font-family: tt-medium;
+}
+#branch .branch .branchBody .branchBodyRight {
+  border-radius: 25px;
+  overflow: hidden;
+}
+#branch .branch .branchBody .branchBodyRight #branchMap {
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
+  background-color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.625rem;
+  color: white;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: tt-regular;
+  src: url(fonts//tt-fors/TT_fors_regular.ttf);
+}
+@font-face {
+  font-family: tt-medium;
+  src: url(fonts/tt-fors/TT_fors_medium.ttf);
+}
+@font-face {
+  font-family: tt-semibold;
+  src: url(fonts/tt-fors/TT_fors_semibold.ttf);
+}
+@font-face {
+  font-family: tt-bold;
+  src: url(fonts/tt-fors/TT_fors_bold.ttf);
+}
+.list_reset {
+  list-style-type: none;
+  margin: 0;
+}
+
+@media screen and (max-width: 1199.9px) {
+  #etilerHeader .etilerHeader .etilerHeaderCarousel {
+    height: 100%;
+    position: relative;
+  }
+  #etilerHeader .etilerHeader .etilerHeaderCarousel .owl-stage-outer {
+    height: 100%;
+  }
+  #etilerHeader .etilerHeader .etilerHeaderCarousel .owl-stage-outer .owl-stage {
+    height: 100%;
+  }
+  #etilerHeader .etilerHeader .etilerHeaderCarousel .owl-stage-outer .owl-stage .owl-item {
+    height: 100%;
+  }
+  #etilerHeader .etilerHeader .etilerHeaderCarousel .owl-dots {
+    position: absolute;
+    bottom: 4vh;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #etilerHeader .etilerHeader .etilerHeaderCarousel .owl-dots .owl-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 5px;
+  }
+  #etilerHeader .etilerHeader .etilerHeaderCarousel .owl-dots .owl-dot span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+  }
+  #etilerHeader .etilerHeader .etilerHeaderCarousel .owl-dots .active span {
+    background-color: #000;
+  }
+  #etilerHeader .etilerHeader .etilerHeaderCarousel .etilerHeaderCarouselItem {
+    height: 100%;
+  }
+  #etilerHeader .etilerHeader .etilerHeaderCarousel .etilerHeaderCarouselItem img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock {
+    padding: 4px 18px;
+  }
+  #etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerMenuDesk {
+    font-size: 18px;
+  }
+  #etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight .etilerMenuDesk1 {
+    font-size: 18px;
+  }
+  #etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerLogo {
+    width: 130px;
+    height: 130px;
+  }
+}
+@media screen and (max-width: 991.9px) {
+  #etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock {
+    padding-left: 0;
+    padding-right: 5px;
+  }
+  #etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerMenuDesk {
+    display: none;
+  }
+  #etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+  }
+  #etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight .etilerMenuDesk1 {
+    display: none;
+  }
+  #etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight #etilermobMenuButton {
+    display: flex;
+  }
+  #etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight .etilerHeaderSocialBLock {
+    display: none;
+  }
+  #about .aboutBlock .aboutBody {
+    flex-wrap: wrap;
+  }
+  #about .aboutBlock .aboutBody .aboutBodyLeft {
+    width: 100%;
+  }
+  #about .aboutBlock .aboutBody .aboutBodyLeft .aboutBodyLeftImg {
+    border-radius: 10px;
+  }
+  #about .aboutBlock .aboutBody .aboutBodyLeft .aboutBodyLeftContent {
+    padding: 15px 0;
+  }
+  #about .aboutBlock .aboutBody .aboutBodyRight {
+    width: 100%;
+    height: 329px;
+    border-radius: 10px;
+  }
+  #blog .blogBlock {
+    padding-bottom: 100px;
+  }
+  #blog .blogBlock .blogHead .blogName {
+    font-size: 30px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem {
+    margin: 0 -5px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemLeft {
+    width: 40%;
+    height: 280px;
+    padding: 5px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemLeft .blogHeadCarouselItemFirst .blogHeadCarouselItemFirstContent .blogHeadCarouselItemFirstContent1 {
+    font-size: 16px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemLeft .blogHeadCarouselItemFirst .blogHeadCarouselItemFirstContent .blogHeadCarouselItemFirstContent2 {
+    font-size: 14px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemright {
+    height: 280px;
+    padding: 0 5px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemright .blogHeadCarouselItemrightItem .blogHeadCarouselItemrightItemBlock .blogHeadCarouselItemrightItemBlockContent {
+    padding: 10px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemright .blogHeadCarouselItemrightItem .blogHeadCarouselItemrightItemBlock .blogHeadCarouselItemrightItemBlockContent .blogHeadCarouselItemrightItemBlockContent1 {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 5px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemright .blogHeadCarouselItemrightItem .blogHeadCarouselItemrightItemBlock .blogHeadCarouselItemrightItemBlockContent .blogHeadCarouselItemrightItemBlockContent2 {
+    font-size: 14px;
+  }
+  #blog .blogBlock .blogBody .blogBodyLeft {
+    height: 300px;
+  }
+  #blog .blogBlock .blogBody .blogBodyRight {
+    height: auto;
+    padding: 20px 0 10px 0;
+  }
+  #blog .blogBlock .blogBody .blogBodyRight .blogBodyRightContentName {
+    font-size: 28px;
+  }
+  #blog .blogBlock .blogBody .blogBodyRight .blogBodyRightContentText {
+    font-size: 16px;
+  }
+  #franchise .franchise .franchiseForm {
+    margin-top: 40px;
+  }
+  #contact .contact .contactMessage {
+    margin-top: 40px;
+  }
+  #etiGalery .etiGalery {
+    padding: 25px 28px;
+  }
+  #etiGalery .etiGalery .etiGaleryName {
+    font-size: 30px;
+  }
+  #etiGalery .etiGalery .etiGaleryBody .etiGaleryItem {
+    height: 180px;
+  }
+  #branch .branch {
+    padding: 26px 24px;
+  }
+  #branch .branch .branchName {
+    font-size: 30px;
+  }
+  #branch .branch .branchBody {
+    margin-top: 15px;
+  }
+  #branch .branch .branchBody .col-lg-5 {
+    order: 2;
+  }
+  #branch .branch .branchBody .col-lg-7 {
+    order: 1;
+  }
+  #branch .branch .branchBody .branchBodyLeft {
+    margin-top: 25px;
+  }
+  #branch .branch .branchBody .branchBodyRight #branchMap {
+    height: 330px;
+  }
+}
+@media screen and (max-width: 767.9px) {
+  #etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerLogo {
+    width: 85px;
+    height: 85px;
+  }
+  #about .aboutBlock {
+    padding: 20px 18px;
+  }
+  #about .aboutBlock .aboutHead .aboutName {
+    font-size: 24px;
+  }
+  #about .aboutBlock .aboutHead .aboutContentOne {
+    font-size: 16px;
+  }
+  #about .aboutBlock .aboutBody .aboutBodyLeft .aboutBodyLeftImg {
+    height: 240px;
+  }
+  #about .aboutBlock .aboutBody .aboutBodyLeft .aboutBodyLeftContent {
+    font-size: 16px;
+    padding: 10px 0;
+    margin-bottom: 2px;
+  }
+  #about .aboutBlock .aboutBody .aboutBodyRight {
+    height: 240px;
+  }
+  #blog .blogBlock {
+    padding-bottom: 100px;
+  }
+  #blog .blogBlock .blogHead .blogName {
+    font-size: 26px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem {
+    margin: 0 -5px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemLeft {
+    width: 100%;
+    height: 280px;
+    padding: 5px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemLeft .blogHeadCarouselItemFirst .blogHeadCarouselItemFirstContent .blogHeadCarouselItemFirstContent1 {
+    font-size: 16px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemLeft .blogHeadCarouselItemFirst .blogHeadCarouselItemFirstContent .blogHeadCarouselItemFirstContent2 {
+    font-size: 14px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemright {
+    height: 280px;
+    padding: 0 5px;
+    display: none;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemright .blogHeadCarouselItemrightItem .blogHeadCarouselItemrightItemBlock .blogHeadCarouselItemrightItemBlockContent {
+    padding: 10px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemright .blogHeadCarouselItemrightItem .blogHeadCarouselItemrightItemBlock .blogHeadCarouselItemrightItemBlockContent .blogHeadCarouselItemrightItemBlockContent1 {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 5px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemright .blogHeadCarouselItemrightItem .blogHeadCarouselItemrightItemBlock .blogHeadCarouselItemrightItemBlockContent .blogHeadCarouselItemrightItemBlockContent2 {
+    font-size: 14px;
+  }
+  #blog .blogBlock .blogBody .blogBodyLeft {
+    height: 280px;
+  }
+  #blog .blogBlock .blogBody .blogBodyRight {
+    height: auto;
+    padding: 17px 0 10px 0;
+  }
+  #blog .blogBlock .blogBody .blogBodyRight .blogBodyRightContentName {
+    font-size: 22px;
+  }
+  #franchise .franchise {
+    padding: 20px 18px;
+  }
+  #franchise .franchise .franchiseName {
+    font-size: 24px;
+  }
+  #franchise .franchise .franchiseLeft .franchiseLeftContent {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  #franchise .franchise .franchiseLeft .franchiseLeftImg {
+    margin-top: 20px;
+    height: 280px;
+  }
+  #franchise .franchise .franchiseForm {
+    margin-top: 20px;
+    padding: 16px 20px;
+  }
+  #franchise .franchise .franchiseForm .franchiseFormName {
+    font-size: 24px;
+  }
+  #franchise .franchise .franchiseForm .franchiseFormInputDes {
+    margin-top: 10px;
+  }
+  #franchise .franchise .franchiseForm .franchiseFormInputDes input {
+    padding: 5px 15px;
+  }
+  #franchise .franchise .franchiseForm .franchiseFormSelectDes .dropdown-toggle {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  #franchise .franchise .franchiseForm .franchiseFormSelectDes .dropdown-menu li {
+    font-size: 16px;
+  }
+  #franchise .franchise .franchiseForm .franchiseFormTextareaDes {
+    margin-top: 10px;
+  }
+  #franchise .franchise .franchiseForm .franchiseFormTextareaDes textarea {
+    padding: 10px 15px;
+  }
+  #franchise .franchise .franchiseForm .formConfirm {
+    margin-top: 15px;
+  }
+  #franchise .franchise .franchiseForm .formConfirm .formConfirmcheckbox .checkbox__mark {
+    position: relative;
+    width: 1.7rem;
+    height: 1.7rem;
+    border: 0.1rem solid #BEBEBE;
+    border-radius: 7px;
+  }
+  #franchise .franchise .franchiseForm .formConfirm .formConfirmtext {
+    font-size: 14px;
+  }
+  #franchise .franchise .franchiseForm .formSubButBlock {
+    margin-top: 25px;
+  }
+  #franchise .franchise .franchiseForm .formSubButBlock #formSubBut {
+    font-size: 20px;
+    padding: 5px 0;
+  }
+  #contact .contact {
+    padding: 20px 18px;
+  }
+  #contact .contact .contactName {
+    font-size: 24px;
+  }
+  #contact .contact .contactLeft .contactMap {
+    height: 280px;
+  }
+  #contact .contact .contactLeft .contactLeftFooter {
+    padding: 20px 15px;
+  }
+  #contact .contact .contactLeft .contactLeftFooter .contactLeftFooterHead {
+    font-size: 20px;
+    padding: 5px 0;
+  }
+  #contact .contact .contactLeft .contactLeftFooter .contactLeftFooterList .contactLeftFooterListItem {
+    margin-top: 7px;
+    flex-wrap: wrap;
+  }
+  #contact .contact .contactLeft .contactLeftFooter .contactLeftFooterList .contactLeftFooterListItem .contactLeftFooterListItemIcon {
+    margin-right: 10px;
+  }
+  #contact .contact .contactLeft .contactLeftFooter .contactLeftFooterList .contactLeftFooterListItem .contactLeftFooterListItemContent {
+    font-size: 15px;
+    color: #fff;
+  }
+  #contact .contact .contactLeft .contactLeftFooter .contactLeftFooterList .contactLeftFooterListItem .contactLeftFooterListItemContent span {
+    margin-right: 5px;
+  }
+  #contact .contact .contactMessage {
+    margin-top: 20px;
+    padding: 16px 20px;
+  }
+  #contact .contact .contactMessage .contactMessageName {
+    font-size: 24px;
+  }
+  #contact .contact .contactMessage .contactMessageInputDes {
+    margin-top: 10px;
+  }
+  #contact .contact .contactMessage .contactMessageInputDes input {
+    padding: 5px 15px;
+  }
+  #contact .contact .contactMessage .contactMessageSelectDes .dropdown-toggle {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  #contact .contact .contactMessage .contactMessageSelectDes .dropdown-menu li {
+    font-size: 16px;
+  }
+  #contact .contact .contactMessage .contactMessageTextareaDes {
+    margin-top: 10px;
+  }
+  #contact .contact .contactMessage .contactMessageTextareaDes textarea {
+    padding: 10px 15px;
+  }
+  #contact .contact .contactMessage .contactMessageConfirm {
+    margin-top: 15px;
+  }
+  #contact .contact .contactMessage .contactMessageConfirm .contactMessageConfirmcheckbox .checkbox__mark {
+    position: relative;
+    width: 1.7rem;
+    height: 1.7rem;
+    border: 0.1rem solid #BEBEBE;
+    border-radius: 7px;
+  }
+  #contact .contact .contactMessage .contactMessageConfirm .contactMessageConfirmtext {
+    font-size: 14px;
+  }
+  #contact .contact .contactMessage .contactMessageSubButBlock {
+    margin-top: 25px;
+  }
+  #contact .contact .contactMessage .contactMessageSubButBlock #contactMessageSubBut {
+    font-size: 20px;
+    padding: 5px 0;
+  }
+  #etiGalery .etiGalery {
+    padding: 25px 28px;
+  }
+  #etiGalery .etiGalery .etiGaleryName {
+    font-size: 24px;
+  }
+  #etiGalery .etiGalery .etiGaleryBody .etiGaleryItem {
+    height: 180px;
+    margin-bottom: 12px;
+  }
+  .gallery {
+    padding: 3rem 0;
+  }
+  .gallery .gallery__controls .controls__btn__close {
+    top: 10px;
+    right: 10px;
+  }
+  #branch .branch {
+    padding: 20px 18px;
+  }
+  #branch .branch .branchName {
+    font-size: 26px;
+  }
+  #branch .branch .branchBody .branchBodyLeft {
+    margin-top: 25px;
+  }
+  #branch .branch .branchBody .branchBodyLeft .branchBodyLeftHead .branchSelectDes {
+    margin-bottom: 15px;
+  }
+  #branch .branch .branchBody .branchBodyLeft .branchBodyLeftHead .branchSelectDes .dropdown-toggle {
+    font-size: 16px;
+    padding: 8px 10px;
+  }
+  #branch .branch .branchBody .branchBodyLeft .branchBodyLeftHead .branchSelectDes .dropdown-menu li {
+    font-size: 16px;
+    padding: 3px 0;
+  }
+  #branch .branch .branchBody .branchBodyLeft .branchBodyLeftBody {
+    padding: 12px 20px;
+    margin-top: 30px;
+  }
+  #branch .branch .branchBody .branchBodyLeft .branchBodyLeftBody .branchBodyLeftBodyHead {
+    font-size: 22px;
+    padding: 6px 0;
+  }
+  #branch .branch .branchBody .branchBodyLeft .branchBodyLeftBody .branchBodyLeftBodyList .branchBodyLeftBodyListItem {
+    margin-top: 7px;
+  }
+  #branch .branch .branchBody .branchBodyLeft .branchBodyLeftBody .branchBodyLeftBodyList .branchBodyLeftBodyListItem .branchBodyLeftBodyListItemIcon {
+    margin-right: 10px;
+  }
+  #branch .branch .branchBody .branchBodyLeft .branchBodyLeftBody .branchBodyLeftBodyList .branchBodyLeftBodyListItem .branchBodyLeftBodyListItemContent {
+    font-size: 16px;
+  }
+  #branch .branch .branchBody .branchBodyRight #branchMap {
+    height: 220px;
+  }
+}
+@media screen and (max-width: 360px) {
+  #branch .branch .branchName {
+    font-size: 24px;
+  }
+  #branch .branch .branchBody .branchBodyLeft .branchBodyLeftBody .branchBodyLeftBodyList .branchBodyLeftBodyListItem .branchBodyLeftBodyListItemContent {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=style.css.map */

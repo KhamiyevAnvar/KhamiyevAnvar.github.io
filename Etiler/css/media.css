@@ -1,0 +1,478 @@
+@font-face {
+  font-family: tt-regular;
+  src: url(fonts//tt-fors/TT_fors_regular.ttf);
+}
+@font-face {
+  font-family: tt-medium;
+  src: url(fonts/tt-fors/TT_fors_medium.ttf);
+}
+@font-face {
+  font-family: tt-semibold;
+  src: url(fonts/tt-fors/TT_fors_semibold.ttf);
+}
+@font-face {
+  font-family: tt-bold;
+  src: url(fonts/tt-fors/TT_fors_bold.ttf);
+}
+.list_reset {
+  list-style-type: none;
+  margin: 0;
+}
+
+@media screen and (max-width: 1199.9px) {
+  #etilerHeader .etilerHeader .etilerHeaderCarousel {
+    height: 100%;
+    position: relative;
+  }
+  #etilerHeader .etilerHeader .etilerHeaderCarousel .owl-stage-outer {
+    height: 100%;
+  }
+  #etilerHeader .etilerHeader .etilerHeaderCarousel .owl-stage-outer .owl-stage {
+    height: 100%;
+  }
+  #etilerHeader .etilerHeader .etilerHeaderCarousel .owl-stage-outer .owl-stage .owl-item {
+    height: 100%;
+  }
+  #etilerHeader .etilerHeader .etilerHeaderCarousel .owl-dots {
+    position: absolute;
+    bottom: 4vh;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #etilerHeader .etilerHeader .etilerHeaderCarousel .owl-dots .owl-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 5px;
+  }
+  #etilerHeader .etilerHeader .etilerHeaderCarousel .owl-dots .owl-dot span {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+  }
+  #etilerHeader .etilerHeader .etilerHeaderCarousel .owl-dots .active span {
+    background-color: #000;
+  }
+  #etilerHeader .etilerHeader .etilerHeaderCarousel .etilerHeaderCarouselItem {
+    height: 100%;
+  }
+  #etilerHeader .etilerHeader .etilerHeaderCarousel .etilerHeaderCarouselItem img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock {
+    padding: 4px 18px;
+  }
+  #etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerMenuDesk {
+    font-size: 18px;
+  }
+  #etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight .etilerMenuDesk1 {
+    font-size: 18px;
+  }
+  #etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerLogo {
+    width: 130px;
+    height: 130px;
+  }
+}
+@media screen and (max-width: 991.9px) {
+  #etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock {
+    padding-left: 0;
+    padding-right: 5px;
+  }
+  #etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerMenuDesk {
+    display: none;
+  }
+  #etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+  }
+  #etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight .etilerMenuDesk1 {
+    display: none;
+  }
+  #etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight #etilermobMenuButton {
+    display: flex;
+  }
+  #etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerHeaderMenuBlockRight .etilerHeaderSocialBLock {
+    display: none;
+  }
+  #about .aboutBlock .aboutBody {
+    flex-wrap: wrap;
+  }
+  #about .aboutBlock .aboutBody .aboutBodyLeft {
+    width: 100%;
+  }
+  #about .aboutBlock .aboutBody .aboutBodyLeft .aboutBodyLeftImg {
+    border-radius: 10px;
+  }
+  #about .aboutBlock .aboutBody .aboutBodyLeft .aboutBodyLeftContent {
+    padding: 15px 0;
+  }
+  #about .aboutBlock .aboutBody .aboutBodyRight {
+    width: 100%;
+    height: 329px;
+    border-radius: 10px;
+  }
+  #blog .blogBlock {
+    padding-bottom: 100px;
+  }
+  #blog .blogBlock .blogHead .blogName {
+    font-size: 30px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem {
+    margin: 0 -5px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemLeft {
+    width: 40%;
+    height: 280px;
+    padding: 5px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemLeft .blogHeadCarouselItemFirst .blogHeadCarouselItemFirstContent .blogHeadCarouselItemFirstContent1 {
+    font-size: 16px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemLeft .blogHeadCarouselItemFirst .blogHeadCarouselItemFirstContent .blogHeadCarouselItemFirstContent2 {
+    font-size: 14px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemright {
+    height: 280px;
+    padding: 0 5px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemright .blogHeadCarouselItemrightItem .blogHeadCarouselItemrightItemBlock .blogHeadCarouselItemrightItemBlockContent {
+    padding: 10px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemright .blogHeadCarouselItemrightItem .blogHeadCarouselItemrightItemBlock .blogHeadCarouselItemrightItemBlockContent .blogHeadCarouselItemrightItemBlockContent1 {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 5px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemright .blogHeadCarouselItemrightItem .blogHeadCarouselItemrightItemBlock .blogHeadCarouselItemrightItemBlockContent .blogHeadCarouselItemrightItemBlockContent2 {
+    font-size: 14px;
+  }
+  #blog .blogBlock .blogBody .blogBodyLeft {
+    height: 300px;
+  }
+  #blog .blogBlock .blogBody .blogBodyRight {
+    height: auto;
+    padding: 20px 0 10px 0;
+  }
+  #blog .blogBlock .blogBody .blogBodyRight .blogBodyRightContentName {
+    font-size: 28px;
+  }
+  #blog .blogBlock .blogBody .blogBodyRight .blogBodyRightContentText {
+    font-size: 16px;
+  }
+  #franchise .franchise .franchiseForm {
+    margin-top: 40px;
+  }
+  #contact .contact .contactMessage {
+    margin-top: 40px;
+  }
+  #etiGalery .etiGalery {
+    padding: 25px 28px;
+  }
+  #etiGalery .etiGalery .etiGaleryName {
+    font-size: 30px;
+  }
+  #etiGalery .etiGalery .etiGaleryBody .etiGaleryItem {
+    height: 180px;
+  }
+  #branch .branch {
+    padding: 26px 24px;
+  }
+  #branch .branch .branchName {
+    font-size: 30px;
+  }
+  #branch .branch .branchBody {
+    margin-top: 15px;
+  }
+  #branch .branch .branchBody .col-lg-5 {
+    order: 2;
+  }
+  #branch .branch .branchBody .col-lg-7 {
+    order: 1;
+  }
+  #branch .branch .branchBody .branchBodyLeft {
+    margin-top: 25px;
+  }
+  #branch .branch .branchBody .branchBodyRight #branchMap {
+    height: 330px;
+  }
+}
+@media screen and (max-width: 767.9px) {
+  #etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerLogo {
+    width: 85px;
+    height: 85px;
+  }
+  #about .aboutBlock {
+    padding: 20px 18px;
+  }
+  #about .aboutBlock .aboutHead .aboutName {
+    font-size: 24px;
+  }
+  #about .aboutBlock .aboutHead .aboutContentOne {
+    font-size: 16px;
+  }
+  #about .aboutBlock .aboutBody .aboutBodyLeft .aboutBodyLeftImg {
+    height: 240px;
+  }
+  #about .aboutBlock .aboutBody .aboutBodyLeft .aboutBodyLeftContent {
+    font-size: 16px;
+    padding: 10px 0;
+    margin-bottom: 2px;
+  }
+  #about .aboutBlock .aboutBody .aboutBodyRight {
+    height: 240px;
+  }
+  #blog .blogBlock {
+    padding-bottom: 100px;
+  }
+  #blog .blogBlock .blogHead .blogName {
+    font-size: 26px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem {
+    margin: 0 -5px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemLeft {
+    width: 100%;
+    height: 280px;
+    padding: 5px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemLeft .blogHeadCarouselItemFirst .blogHeadCarouselItemFirstContent .blogHeadCarouselItemFirstContent1 {
+    font-size: 16px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemLeft .blogHeadCarouselItemFirst .blogHeadCarouselItemFirstContent .blogHeadCarouselItemFirstContent2 {
+    font-size: 14px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemright {
+    height: 280px;
+    padding: 0 5px;
+    display: none;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemright .blogHeadCarouselItemrightItem .blogHeadCarouselItemrightItemBlock .blogHeadCarouselItemrightItemBlockContent {
+    padding: 10px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemright .blogHeadCarouselItemrightItem .blogHeadCarouselItemrightItemBlock .blogHeadCarouselItemrightItemBlockContent .blogHeadCarouselItemrightItemBlockContent1 {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 5px;
+  }
+  #blog .blogBlock .blogHead .blogHeadCarouselBlock .blogHeadCarousel .blogHeadCarouselItem .blogHeadCarouselItemright .blogHeadCarouselItemrightItem .blogHeadCarouselItemrightItemBlock .blogHeadCarouselItemrightItemBlockContent .blogHeadCarouselItemrightItemBlockContent2 {
+    font-size: 14px;
+  }
+  #blog .blogBlock .blogBody .blogBodyLeft {
+    height: 280px;
+  }
+  #blog .blogBlock .blogBody .blogBodyRight {
+    height: auto;
+    padding: 17px 0 10px 0;
+  }
+  #blog .blogBlock .blogBody .blogBodyRight .blogBodyRightContentName {
+    font-size: 22px;
+  }
+  #franchise .franchise {
+    padding: 20px 18px;
+  }
+  #franchise .franchise .franchiseName {
+    font-size: 24px;
+  }
+  #franchise .franchise .franchiseLeft .franchiseLeftContent {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  #franchise .franchise .franchiseLeft .franchiseLeftImg {
+    margin-top: 20px;
+    height: 280px;
+  }
+  #franchise .franchise .franchiseForm {
+    margin-top: 20px;
+    padding: 16px 20px;
+  }
+  #franchise .franchise .franchiseForm .franchiseFormName {
+    font-size: 24px;
+  }
+  #franchise .franchise .franchiseForm .franchiseFormInputDes {
+    margin-top: 10px;
+  }
+  #franchise .franchise .franchiseForm .franchiseFormInputDes input {
+    padding: 5px 15px;
+  }
+  #franchise .franchise .franchiseForm .franchiseFormSelectDes .dropdown-toggle {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  #franchise .franchise .franchiseForm .franchiseFormSelectDes .dropdown-menu li {
+    font-size: 16px;
+  }
+  #franchise .franchise .franchiseForm .franchiseFormTextareaDes {
+    margin-top: 10px;
+  }
+  #franchise .franchise .franchiseForm .franchiseFormTextareaDes textarea {
+    padding: 10px 15px;
+  }
+  #franchise .franchise .franchiseForm .formConfirm {
+    margin-top: 15px;
+  }
+  #franchise .franchise .franchiseForm .formConfirm .formConfirmcheckbox .checkbox__mark {
+    position: relative;
+    width: 1.7rem;
+    height: 1.7rem;
+    border: 0.1rem solid #BEBEBE;
+    border-radius: 7px;
+  }
+  #franchise .franchise .franchiseForm .formConfirm .formConfirmtext {
+    font-size: 14px;
+  }
+  #franchise .franchise .franchiseForm .formSubButBlock {
+    margin-top: 25px;
+  }
+  #franchise .franchise .franchiseForm .formSubButBlock #formSubBut {
+    font-size: 20px;
+    padding: 5px 0;
+  }
+  #contact .contact {
+    padding: 20px 18px;
+  }
+  #contact .contact .contactName {
+    font-size: 24px;
+  }
+  #contact .contact .contactLeft .contactMap {
+    height: 280px;
+  }
+  #contact .contact .contactLeft .contactLeftFooter {
+    padding: 20px 15px;
+  }
+  #contact .contact .contactLeft .contactLeftFooter .contactLeftFooterHead {
+    font-size: 20px;
+    padding: 5px 0;
+  }
+  #contact .contact .contactLeft .contactLeftFooter .contactLeftFooterList .contactLeftFooterListItem {
+    margin-top: 7px;
+    flex-wrap: wrap;
+  }
+  #contact .contact .contactLeft .contactLeftFooter .contactLeftFooterList .contactLeftFooterListItem .contactLeftFooterListItemIcon {
+    margin-right: 10px;
+  }
+  #contact .contact .contactLeft .contactLeftFooter .contactLeftFooterList .contactLeftFooterListItem .contactLeftFooterListItemContent {
+    font-size: 15px;
+    color: #fff;
+  }
+  #contact .contact .contactLeft .contactLeftFooter .contactLeftFooterList .contactLeftFooterListItem .contactLeftFooterListItemContent span {
+    margin-right: 5px;
+  }
+  #contact .contact .contactMessage {
+    margin-top: 20px;
+    padding: 16px 20px;
+  }
+  #contact .contact .contactMessage .contactMessageName {
+    font-size: 24px;
+  }
+  #contact .contact .contactMessage .contactMessageInputDes {
+    margin-top: 10px;
+  }
+  #contact .contact .contactMessage .contactMessageInputDes input {
+    padding: 5px 15px;
+  }
+  #contact .contact .contactMessage .contactMessageSelectDes .dropdown-toggle {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+  #contact .contact .contactMessage .contactMessageSelectDes .dropdown-menu li {
+    font-size: 16px;
+  }
+  #contact .contact .contactMessage .contactMessageTextareaDes {
+    margin-top: 10px;
+  }
+  #contact .contact .contactMessage .contactMessageTextareaDes textarea {
+    padding: 10px 15px;
+  }
+  #contact .contact .contactMessage .contactMessageConfirm {
+    margin-top: 15px;
+  }
+  #contact .contact .contactMessage .contactMessageConfirm .contactMessageConfirmcheckbox .checkbox__mark {
+    position: relative;
+    width: 1.7rem;
+    height: 1.7rem;
+    border: 0.1rem solid #BEBEBE;
+    border-radius: 7px;
+  }
+  #contact .contact .contactMessage .contactMessageConfirm .contactMessageConfirmtext {
+    font-size: 14px;
+  }
+  #contact .contact .contactMessage .contactMessageSubButBlock {
+    margin-top: 25px;
+  }
+  #contact .contact .contactMessage .contactMessageSubButBlock #contactMessageSubBut {
+    font-size: 20px;
+    padding: 5px 0;
+  }
+  #etiGalery .etiGalery {
+    padding: 25px 28px;
+  }
+  #etiGalery .etiGalery .etiGaleryName {
+    font-size: 24px;
+  }
+  #etiGalery .etiGalery .etiGaleryBody .etiGaleryItem {
+    height: 180px;
+    margin-bottom: 12px;
+  }
+  .gallery {
+    padding: 3rem 0;
+  }
+  .gallery .gallery__controls .controls__btn__close {
+    top: 10px;
+    right: 10px;
+  }
+  #branch .branch {
+    padding: 20px 18px;
+  }
+  #branch .branch .branchName {
+    font-size: 26px;
+  }
+  #branch .branch .branchBody .branchBodyLeft {
+    margin-top: 25px;
+  }
+  #branch .branch .branchBody .branchBodyLeft .branchBodyLeftHead .branchSelectDes {
+    margin-bottom: 15px;
+  }
+  #branch .branch .branchBody .branchBodyLeft .branchBodyLeftHead .branchSelectDes .dropdown-toggle {
+    font-size: 16px;
+    padding: 8px 10px;
+  }
+  #branch .branch .branchBody .branchBodyLeft .branchBodyLeftHead .branchSelectDes .dropdown-menu li {
+    font-size: 16px;
+    padding: 3px 0;
+  }
+  #branch .branch .branchBody .branchBodyLeft .branchBodyLeftBody {
+    padding: 12px 20px;
+    margin-top: 30px;
+  }
+  #branch .branch .branchBody .branchBodyLeft .branchBodyLeftBody .branchBodyLeftBodyHead {
+    font-size: 22px;
+    padding: 6px 0;
+  }
+  #branch .branch .branchBody .branchBodyLeft .branchBodyLeftBody .branchBodyLeftBodyList .branchBodyLeftBodyListItem {
+    margin-top: 7px;
+  }
+  #branch .branch .branchBody .branchBodyLeft .branchBodyLeftBody .branchBodyLeftBodyList .branchBodyLeftBodyListItem .branchBodyLeftBodyListItemIcon {
+    margin-right: 10px;
+  }
+  #branch .branch .branchBody .branchBodyLeft .branchBodyLeftBody .branchBodyLeftBodyList .branchBodyLeftBodyListItem .branchBodyLeftBodyListItemContent {
+    font-size: 16px;
+  }
+  #branch .branch .branchBody .branchBodyRight #branchMap {
+    height: 220px;
+  }
+}
+@media screen and (max-width: 360px) {
+  #branch .branch .branchName {
+    font-size: 24px;
+  }
+  #branch .branch .branchBody .branchBodyLeft .branchBodyLeftBody .branchBodyLeftBodyList .branchBodyLeftBodyListItem .branchBodyLeftBodyListItemContent {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=media.css.map */
