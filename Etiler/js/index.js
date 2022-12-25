@@ -565,8 +565,8 @@ $(function () {
         }
     }
 
-    console.log($(".blogHeadCarouselItemrightItemBlockContent1"));
-    $(".blogHeadCarouselItemrightItemBlock").click(function () {
-        console.log($(this).eq(1));
-    })
+    // console.log($(".blogHeadCarouselItemrightItemBlockContent1"));
+    // $(".blogHeadCarouselItemrightItemBlock").click(function () {
+    //     console.log($(this).eq(1));
+    // })
 })

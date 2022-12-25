@@ -204,6 +204,9 @@
   }
 }
 @media screen and (max-width: 767.9px) {
+  #etilerHeader {
+    height: 400px;
+  }
   #etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerLogo {
     width: 85px;
     height: 85px;
