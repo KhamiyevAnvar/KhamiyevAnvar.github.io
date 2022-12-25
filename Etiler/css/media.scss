@@ -306,7 +306,7 @@
 
 @media screen and (max-width: 767.9px) {
     #etilerHeader {
-        height: 400px;
+        height: 450px;
 
         .etilerHeader {
             #etilerHeaderMenuBlock {
@@ -318,6 +318,24 @@
                     }
                 }
             }
+        }
+    }
+
+    // footer
+    #footer {
+        margin-top: 0;
+        padding: 30px 0 12px 0;
+
+        .footerLogoBlock {
+
+            .footerLogo {
+                width: 90px;
+                height: 90px;
+            }
+        }
+
+        .copyriter {
+            font-size: $fs12;
         }
     }
 

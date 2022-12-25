@@ -221,6 +221,7 @@
 }
 #etilerHeader .etilerHeader .etilerHeaderCarousel .owl-dots .active span {
   background-color: #000;
+  border: 1px solid #D9D9D9;
 }
 #etilerHeader .etilerHeader .etilerHeaderCarousel .etilerHeaderCarouselItem {
   height: 100%;
@@ -1777,11 +1778,22 @@
 }
 @media screen and (max-width: 767.9px) {
   #etilerHeader {
-    height: 400px;
+    height: 450px;
   }
   #etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerLogo {
     width: 85px;
     height: 85px;
+  }
+  #footer {
+    margin-top: 0;
+    padding: 30px 0 12px 0;
+  }
+  #footer .footerLogoBlock .footerLogo {
+    width: 90px;
+    height: 90px;
+  }
+  #footer .copyriter {
+    font-size: 12px;
   }
   #about .aboutBlock {
     padding: 20px 18px;
