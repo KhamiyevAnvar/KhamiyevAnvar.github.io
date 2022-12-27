@@ -1468,12 +1468,6 @@ html ::-webkit-scrollbar-thumb:hover {
   font-weight: 700;
 }
 
-.onloadEtilerNone {
-  opacity: 0;
-  visibility: hidden;
-  display: none;
-}
-
 .onloadEtiler {
   position: fixed;
   top: 0;
@@ -1486,13 +1480,12 @@ html ::-webkit-scrollbar-thumb:hover {
   align-items: center;
   min-height: 100vh;
   background-color: rgba(255, 255, 255, 0.95);
-  font-family: "Montserrat", sans-serif;
   transition: all ease 0.6s;
 }
 .onloadEtiler .onloadEtilerBack {
   border-radius: 50%;
   -webkit-animation: onload 3s ease infinite alternate;
-          animation: onload 3s ease infinite alternate;
+  animation: onload 3s ease infinite alternate;
   background-color: white;
   width: 180px;
   height: 180px;
@@ -1523,6 +1516,12 @@ html ::-webkit-scrollbar-thumb:hover {
   100% {
     transform: rotate(360deg) scale(1.05);
   }
+}
+
+.onloadEtilerNone {
+  opacity: 0;
+  visibility: hidden;
+  display: none;
 }
 
 @font-face {

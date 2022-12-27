@@ -1,11 +1,13 @@
 
 
-// Page onload - loading
-window.onload = () => {
-    document.getElementsByClassName("onloadEtiler")[0].classList.add("onloadEtilerNone");
-}
+
 
 $(function () {
+
+    // Page onload - loading
+    window.onload = () => {
+        document.getElementsByClassName("onloadEtiler")[0].classList.add("onloadEtilerNone");
+    }
 
 
     // event owl carousel
@@ -353,8 +355,10 @@ $(function () {
     //         })
     //     })
 
+    if ($("#etiGalery").length > 0) {
+        $('[data-fancybox="gallery"]').fancybox();
+    }
 
-    $('[data-fancybox="gallery"]').fancybox();
 
 
     // Page onload - loading
