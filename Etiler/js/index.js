@@ -1,13 +1,14 @@
 
 
 
+// Page onload - loading
+window.onload = () => {
+    document.getElementsByClassName("onloadEtiler")[0].classList.add("onloadEtilerNone");
+}
 
 $(function () {
 
-    // Page onload - loading
-    window.onload = () => {
-        document.getElementsByClassName("onloadEtiler")[0].classList.add("onloadEtilerNone");
-    }
+
 
 
     // event owl carousel
@@ -68,7 +69,6 @@ $(function () {
     $("#closeMobileMenu").click(function () {
         mobileMenu.removeClass("etilerMobileMenuOpen");
     })
-
 
 
 
