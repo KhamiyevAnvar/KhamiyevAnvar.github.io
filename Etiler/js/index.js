@@ -1,15 +1,9 @@
-
-
-
 // Page onload - loading
 window.onload = () => {
     document.getElementsByClassName("onloadEtiler")[0].classList.add("onloadEtilerNone");
 }
 
 $(function () {
-
-
-
 
     // event owl carousel
     if ($('.etilerHeaderCarousel').length > 0) {
