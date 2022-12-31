@@ -1711,6 +1711,9 @@ html ::-webkit-scrollbar-thumb:hover {
   }
 }
 @media screen and (max-width: 767.9px) {
+  .etilerHeaderMainPage {
+    height: calc(100vh - 70px) !important;
+  }
   #etilerHeader {
     height: 520px;
   }
