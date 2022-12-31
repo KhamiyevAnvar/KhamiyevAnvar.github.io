@@ -184,7 +184,7 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 #etilerHeader .etilerHeader .etilerHeaderCarousel .owl-dots {
   position: absolute !important;
-  bottom: 5vh !important;
+  bottom: 8vh !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
 }
