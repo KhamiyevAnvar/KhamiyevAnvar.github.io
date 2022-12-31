@@ -409,6 +409,9 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 
 .etilerHeaderMainPage {
+  height: 100vh !important;
+}
+.etilerHeaderMainPage .etilerHeader {
   height: 90% !important;
 }
 
