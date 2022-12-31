@@ -408,6 +408,13 @@ html ::-webkit-scrollbar-thumb:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
+.etilerHeaderMainPage {
+  height: 100vh !important;
+}
+.etilerHeaderMainPage .etilerHeader {
+  height: calc(100% - 130px) !important;
+}
+
 .mainPageHeightMiddle {
   height: 20px;
 }
@@ -1711,12 +1718,6 @@ html ::-webkit-scrollbar-thumb:hover {
   }
 }
 @media screen and (max-width: 767.9px) {
-  .etilerHeaderMainPage {
-    height: 100vh !important;
-  }
-  .etilerHeaderMainPage .etilerHeader {
-    height: calc(100% - 130px) !important;
-  }
   #etilerHeader {
     height: 520px;
   }
