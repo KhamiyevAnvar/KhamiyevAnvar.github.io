@@ -1715,7 +1715,7 @@ html ::-webkit-scrollbar-thumb:hover {
     height: 100vh !important;
   }
   .etilerHeaderMainPage .etilerHeader {
-    height: calc(100% - 70px) !important;
+    height: calc(100% - 150px) !important;
   }
   #etilerHeader {
     height: 520px;
