@@ -184,26 +184,25 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 #etilerHeader .etilerHeader .etilerHeaderCarousel .owl-dots {
   position: absolute !important;
-  bottom: 4vh !important;
+  bottom: -40px !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
 }
 #etilerHeader .etilerHeader .etilerHeaderCarousel .owl-dots .owl-dot {
-  margin: 0 5px !important;
-}
-#etilerHeader .etilerHeader .etilerHeaderCarousel .owl-dots .owl-dot span {
   display: inline-block !important;
   width: 15px !important;
   min-width: 15px !important;
   height: 15px !important;
   min-height: 15px !important;
   border-radius: 50% !important;
+  border: 1px solid #E30A17;
   background-color: white !important;
-  box-shadow: 0 0 15px black !important;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1) !important;
+  margin: 0 5px !important;
 }
-#etilerHeader .etilerHeader .etilerHeaderCarousel .owl-dots .active span {
-  background-color: #000 !important;
-  box-shadow: 0 0 12px white !important;
+#etilerHeader .etilerHeader .etilerHeaderCarousel .owl-dots .active {
+  background-color: #E30A17 !important;
+  box-shadow: 0 0 10px rgba(224, 11, 24, 0.4) !important;
 }
 #etilerHeader .etilerHeader .etilerHeaderCarousel .etilerHeaderCarouselItem {
   height: 100%;
@@ -410,30 +409,24 @@ html ::-webkit-scrollbar-thumb:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-#slogan {
-  padding: 100px 0;
-}
-#slogan .slogan {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  border-radius: 25px;
-}
-#slogan .slogan .sloganName {
-  font-family: tt-semibold;
-  font-size: 36px;
-  text-align: center;
-  padding: 30px 0;
-}
-#slogan .slogan .sloganName span {
-  display: inline-block;
-  margin-top: 15px;
-  font-family: tt-bold;
-  color: #E30A17;
+.mainPageHeightMiddle {
+  height: 100px;
 }
 
 #footer {
   text-align: center;
   background-color: #E30A17;
-  padding: 60px 0 12px 0;
+  padding: 60px 0 15px 0;
+}
+#footer .footerSlogan {
+  text-align: center;
+  font-family: tt-medium;
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+#footer .footerSlogan span {
+  font-family: tt-semibold;
 }
 #footer .footerLogoBlock {
   display: flex;
