@@ -409,7 +409,7 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 
 .etilerHeaderMainPage {
-  height: 90vh !important;
+  height: 90% !important;
 }
 
 .mainPageHeightMiddle {
