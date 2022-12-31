@@ -184,7 +184,7 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 #etilerHeader .etilerHeader .etilerHeaderCarousel .owl-dots {
   position: absolute !important;
-  bottom: -40px !important;
+  bottom: 5vh !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
 }
@@ -406,14 +406,6 @@ html ::-webkit-scrollbar-thumb:hover {
   height: 85%;
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.etilerHeaderMainPage {
-  height: 90vh !important;
-}
-
-.mainPageHeightMiddle {
-  height: 14vh;
 }
 
 #footer {
@@ -1723,7 +1715,7 @@ html ::-webkit-scrollbar-thumb:hover {
     height: 85px;
   }
   .etilerHeaderMainPage {
-    height: 85vh !important;
+    height: 100vh !important;
   }
   #slogan {
     padding: 70px 0;
