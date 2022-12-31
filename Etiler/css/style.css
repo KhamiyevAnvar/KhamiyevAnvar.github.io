@@ -409,7 +409,7 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 
 .etilerHeaderMainPage {
-  height: 85vh !important;
+  height: 90vh !important;
 }
 
 .mainPageHeightMiddle {
@@ -1721,6 +1721,9 @@ html ::-webkit-scrollbar-thumb:hover {
   #etilerHeader .etilerHeader #etilerHeaderMenuBlock .etilerHeaderMenuBlock .etilerLogo {
     width: 85px;
     height: 85px;
+  }
+  .etilerHeaderMainPage {
+    height: 85vh !important;
   }
   #slogan {
     padding: 70px 0;
