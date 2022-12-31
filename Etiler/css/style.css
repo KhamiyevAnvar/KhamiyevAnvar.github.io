@@ -409,7 +409,7 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 
 .mainPageHeightMiddle {
-  height: 100px;
+  height: 20px;
 }
 
 #footer {
@@ -1715,7 +1715,7 @@ html ::-webkit-scrollbar-thumb:hover {
     height: 100vh !important;
   }
   .etilerHeaderMainPage .etilerHeader {
-    height: calc(100% - 120px) !important;
+    height: calc(100% - 130px) !important;
   }
   #etilerHeader {
     height: 520px;
