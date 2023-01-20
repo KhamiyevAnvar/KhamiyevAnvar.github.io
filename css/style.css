@@ -71,7 +71,8 @@ html ::-webkit-scrollbar-thumb:hover {
   display: inline-block;
   list-style: none;
   text-align: center;
-  transition: 0.3s ease-in-out;
+  transition: ease-in-out all 0.3s;
+  float: right;
   border-bottom: 1px solid transparent;
   margin-bottom: 0 !important;
 }
