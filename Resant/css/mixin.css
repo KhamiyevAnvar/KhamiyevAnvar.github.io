@@ -1,11 +1,5 @@
 /* is;enm */
-
-.lineLimit1 {
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    display: -webkit-box;
-    overflow: hidden;
-}
+@import "common.less";
 
 .lineLimit3 {
     -webkit-line-clamp: 3;

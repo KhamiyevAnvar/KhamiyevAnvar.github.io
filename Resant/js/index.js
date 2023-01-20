@@ -108,6 +108,7 @@ $(function () {
     // event owl carousel
     const chevronLeft = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 278.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"/></svg>';
     const chevronRight = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L274.7 256 105.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"/></svg>';
+
     if ($('.hotelsSliderCover').length > 0) {
         $('.hotelsSliderCover').owlCarousel({
             loop: true,
@@ -140,6 +141,7 @@ $(function () {
 
     // hotels card show more show less button
     const hotelMoreButton = $(".hotelMoreButton");
+
     hotelMoreButton.click(function () {
         console.log("class length - " + ($(this).parents(".hotelCard").find(".hotelCardInfoOverflow").length));
         if ($(this).parents(".hotelCard").find(".hotelCardInfoOverflow").length > 0) {
@@ -285,34 +287,15 @@ $(function () {
         })
     }
 
-    //modal kabinet
-    $(function () {
-        $('a.thumbnail').click(function (e) {
-            e.preventDefault();
-            $('#image-modal .modal-body img').attr('src', $(this).find('img').attr('src'));
-            $("#image-modal").modal('show');
-        });
-        $('#image-modal .modal-body img').on('click', function () {
-            $("#image-modal").modal('hide')
-        });
-    });
+    //fancybox kabinetgalery
+    if ($(".kabinetGalery").length > 0) {
+        $('[data-fancybox="galery"]').fancybox();
+    }
 
-    //kabinet buuton
+    //kabinet button
+
     $('.restaurantOnePageButton').click(function () {
         $(this).parents(".restaurantTwoCol-right").toggleClass("restaurantKabinet");
-    })
-
-    // career apply
-
-    const careerItemMoreButton = $(".careerItemMoreButton");
-    const careerRight = $("#career-right");
-    const careerVacancyBlockNone = $(".careerVacancyBlockNone");
-    careerItemMoreButton.click(function () {
-        careerRight.addClass("career-right-active");
-    })
-    careerVacancyBlockNone.click(function () {
-        careerRight.removeClass("career-right-active");
-
     })
 
 
@@ -323,50 +306,5 @@ window.onload = () => {
     document.getElementsByClassName("onloadResant")[0].classList.add("onloadPageNone");
 }
 
-// applyModalForm
-
-var applyVacancy = $(".applyVacancy");
-const applyModal = $("#applyModal");
-var applyModalHeadDelete = $(".applyModalHeadDelete");
 
 
-// active apply modal 
-applyVacancy.click(function () {
-    applyModal.addClass("applyModalActive");
-})
-
-// remove apply modal
-applyModalHeadDelete.click(function () {
-    applyModal.removeClass("applyModalActive");
-})
-
-var applyModalButton = document.getElementById("applyModalButton");
-
-applyModalButton.addEventListener("click", (e) => {
-    e.preventDefault();
-    checkApply();
-})
-
-function checkApply() {
-    const infoCareerApply = document.getElementsByClassName("infoCareerApply")[0];
-
-    var applyModalItemName = document.getElementById("applyModalItemName").value.trim();
-    var applyModalItemSurname = document.getElementById("applyModalItemSurname").value.trim();
-    var applyModalCv = document.getElementById("applyModalCv").value.trim();
-
-
-    if (applyModalItemName.length > 0 && applyModalItemSurname.length > 0 && applyModalCv !== "") {
-        // correct message
-        infoCareerApply.innerText = "Müraciətiniz qeydə alındı";
-        infoCareerApply.style.color = "#011B4C";
-
-        // zero input
-        document.getElementById("applyModalItemName").value = "";
-        document.getElementById("applyModalItemSurname").value = "";
-
-    } else {
-        //incorrect message
-        infoCareerApply.innerText = "Tam doldurulmayıb";
-        infoCareerApply.style.color = "red";
-    }
-}

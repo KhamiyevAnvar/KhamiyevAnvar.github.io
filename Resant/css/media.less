@@ -1,0 +1,1784 @@
+@import "common.less";
+
+@media screen and (max-width:1199.5px) {
+	#resantHead {
+		#resantHeadOpacity {
+			.resantHead {
+				.resantPageList {
+					margin-top: 80px;
+					flex-direction: column;
+					font-size: @fs-44;
+
+					li:not(:first-child) {
+						margin-top: 15px;
+					}
+				}
+			}
+		}
+	}
+
+	#about {
+		.aboutBody {
+			.aboutCardContent {
+				padding: 12px 20px;
+
+				span {
+					display: inline-block;
+					width: 54px;
+					height: 1px;
+					background-color: #808080;
+					margin: 8px 0 10px 0;
+
+				}
+			}
+		}
+	}
+
+	.eventCard {
+		height: 360px;
+
+		.eventPos {
+			padding: 0 12px 15px 12px;
+
+			.eventTime {
+				font-size: @fs-16;
+			}
+
+			.cardBut {
+				font-size: @fs-14;
+				padding: 6px 8px;
+			}
+		}
+	}
+
+	// event page
+	// event
+	#eventPageBody {
+		.eventPageBody {
+			.eventPageBodyItem {
+				.eventPageBodyItemContent {
+					width: 60%;
+				}
+			}
+		}
+	}
+
+	// contact
+	#contact {
+		.contactBody {
+			.contactItem {
+				.contactItemBody {
+					.contactItemBodyItem {
+						flex-basis: 50%;
+						margin: 10px 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:991.9px) {
+	#resantHead {
+		#resantHeadOpacity {
+			padding: 20px 0;
+			padding-bottom: 140px;
+
+			.resantHead {
+				.resantHeadFirstresantHeadFirst {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+
+					.resantHeadFirstLeft {
+						display: none;
+					}
+
+					.resantHeadCenter {
+						width: 180px;
+						height: 60px;
+					}
+
+					.resantHeadRight {
+						a {
+							font-size: @fs-18;
+							padding: 6.5px 9px;
+						}
+
+						#nav-but {
+							display: block;
+							visibility: visible;
+							opacity: 1;
+						}
+					}
+				}
+
+				#Navbar {
+					display: none;
+				}
+
+				.resantHeadContent {
+					text-align: center;
+
+					h1 {
+						font-size: @fs-44;
+						margin-top: 120px;
+					}
+
+					p {
+						font-size: @fs-18;
+						margin-top: 12px;
+						padding: 0 10px;
+					}
+				}
+
+				.resantPageList {
+					margin-top: 70px;
+					font-size: @fs-38;
+
+					li {
+						padding: 6px 40px;
+						border-radius: 39px;
+					}
+				}
+			}
+		}
+	}
+
+	#mobileMenu {
+		display: block;
+	}
+
+	#footer {
+		padding: 20px 0 30px 0;
+
+		.footMenuList2 {
+			border-left: none;
+			border-right: none;
+		}
+	}
+
+	//restaurant
+
+	#restaurantBody {
+		padding: 15px 0;
+
+		.restaurantCard {
+			height: 360px;
+			margin: 20px 6px;
+
+			.overlay {
+				.restaurantContent {
+					.restaurantName {
+						font-size: @fs-36;
+						margin-bottom: 40px;
+					}
+
+					.restaurantLink {
+						font-size: @fs-20;
+						padding: 10px 18px;
+					}
+				}
+			}
+		}
+	}
+
+	// Restaurant page one
+	#restaurantOnePageBody {
+		.restaurantTwoCol {
+			.restaurantTwoCol-left {
+				height: 420px;
+			}
+
+			.restaurantTwoCol-right {
+				padding: 15px 35px;
+
+				.content {
+					.restaurantContentName {
+						font-size: @fs-32;
+					}
+
+					.restaurantContentText {
+						margin-top: 25px;
+						font-size: @fs-20;
+					}
+
+					.contentLink {
+
+						a,
+						button {
+							font-size: @fs-22;
+							padding: 10px 22px;
+							margin-top: 20px;
+						}
+					}
+				}
+			}
+
+			.restaurantKabinet {
+				height: 420px;
+			}
+		}
+
+		.restaurantOneCol {
+			.parallax-window {
+				height: 400px;
+			}
+
+			.parallax-window2 {
+				height: 400px;
+			}
+
+			.restaurantOneColBlock {
+				font-size: @fs-44;
+
+				span {
+					font-size: @fs-44;
+				}
+			}
+
+			.restaurantOneColBlock2 {
+				font-size: @fs-44;
+			}
+		}
+	}
+
+	// event page
+	#eventPageBody {
+		padding: 15px 0;
+
+		.eventName {
+			padding: 10px 0;
+			font-size: @fs-44;
+		}
+
+		.eventPageBody {
+			margin-top: 25px;
+
+			.eventPageBodyItem {
+				width: 100%;
+
+				.eventPageBodyItemContent {
+					width: 100%;
+					padding: 25px;
+
+					.eventPageBodyItemHead {
+						padding-bottom: 8px;
+
+						.eventPageTime {
+							font-family: montserrat-medium;
+							font-size: @fs-22;
+							color: #C59D37;
+							text-transform: lowercase;
+						}
+
+						.eventPageName {
+							margin: 16px 0 0 0;
+							font-family: montserrat-semibold;
+							font-size: @fs-20;
+							color: #000;
+							text-transform: uppercase;
+						}
+
+						.eventPageContent {
+							margin: 16px 0 0 0;
+							font-family: montserrat-regular;
+							font-size: @fs-18;
+							color: #000;
+						}
+					}
+
+					.eventPageBodyItemFooter {
+						.eventPageBodyItemFooterDesing {
+							display: flex;
+							justify-content: right;
+							align-items: center;
+							margin-top: 16px;
+
+							.eventDesingText {
+								margin-right: 10px;
+								font-family: montserrat-regular;
+								font-size: @fs-18;
+								color: #686868;
+							}
+
+							.eventDesingIcon {
+								width: 20px;
+								height: 20px;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+
+								img {
+									width: 100%;
+									height: 100%;
+									object-fit: contain;
+								}
+							}
+						}
+					}
+				}
+
+				.eventPosElement {
+					position: initial;
+					width: 100%;
+
+					.eventPosElementImg {
+						height: 400px;
+					}
+
+					.eventPosElementName {
+						margin-top: 21px;
+						font-size: @fs-44;
+					}
+				}
+			}
+		}
+	}
+
+	// contact
+	#contact {
+		padding: 35px 0 240px 0;
+
+		.contactHead {
+
+			.contactName {
+				font-size: @fs-40;
+			}
+
+			span {
+				margin-top: 18px;
+
+			}
+
+			.contactContent1 {
+				font-size: @fs-22;
+				margin-top: 35px;
+			}
+
+			.contactContent2 {
+				font-size: @fs-18;
+				margin-top: 26px;
+			}
+		}
+
+		.contactBody {
+			margin-top: 15px;
+
+			.contactItem {
+				margin-top: 40px;
+
+				.contactItemName {
+					font-size: @fs-27;
+				}
+
+				.contactItemBody {
+					margin-top: 10px;
+
+					.contactItemBodyItem {
+						flex-basis: 100%;
+						padding: 0px 5px;
+
+						.contactItemBodyItemContent {
+							a {
+								font-size: @fs-20;
+							}
+
+							span {
+								font-size: @fs-20;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// tour
+	#tour {
+		.tourName {
+			font-size: @fs-40;
+			padding: 22px 0;
+		}
+
+		.tour {
+
+			.tourImg {
+				height: 500px;
+			}
+		}
+
+		.tourContent {
+			.tourContentList {
+				li {
+					font-size: @fs-32;
+				}
+
+				li:not(:first-child) {
+					margin-top: 21px;
+				}
+			}
+		}
+	}
+
+	// hotels
+	#hotels {
+		.hotelsHead {
+			padding-top: 28px;
+			padding-bottom: 42px;
+
+			.col-12 {
+				margin-top: 9px;
+			}
+		}
+
+		.hotelCard {
+			padding: 20px 5px;
+
+			.hotelCardImg {
+				width: 100%;
+				height: 420px;
+			}
+
+			.hotelCardInfo {
+				width: 100%;
+				height: auto;
+				padding-left: 0;
+				padding-top: 20px;
+
+				.hotelCardName {
+					font-size: @fs-44;
+
+					.hotelCardContent {
+						margin-top: 12px;
+						font-size: @fs-20;
+					}
+
+					.hotelCardFoot {
+						margin-top: 44px;
+
+						img {
+							width: 18px;
+							height: 18px;
+							object-fit: contain;
+						}
+
+						.hotelMoreButton {
+							padding-left: 7px;
+							font-size: @fs-20;
+						}
+					}
+
+					.hotelItemLinks {
+						margin-top: 30px;
+
+						.hotelItemLinksDesing {
+							padding: 12px 30px;
+							font-size: @fs-20;
+						}
+					}
+				}
+			}
+		}
+
+		.hotelsSlider {
+			padding: 32px 0;
+
+			.hotelsSliderHead {
+				font-size: @fs-40;
+				margin-bottom: 40px;
+			}
+
+			.hotelsSliderCover {
+				padding-left: 6.5vw;
+				padding-right: 6.5vw;
+
+				.hotelsSliderItem {
+					.hotelsSliderItemHead {
+						height: 350px;
+
+						.hotelSliderItemLink {
+							font-size: @fs-17;
+							padding: 8px 13px;
+						}
+					}
+
+					.hotelsSliderItemName {
+						margin-top: 24px;
+						font-size: @fs-32;
+					}
+				}
+			}
+		}
+	}
+
+	// beach
+	#beach {
+		.beachHead {
+			padding-top: 28px;
+			padding-bottom: 42px;
+
+			.col-12 {
+				margin-top: 9px;
+			}
+		}
+
+		.beachCard {
+			padding: 20px 5px;
+
+			.beachCardImg {
+				width: 100%;
+				height: 420px;
+			}
+
+			.beachCardInfo {
+				width: 100%;
+				height: auto;
+				padding-left: 0;
+				padding-top: 20px;
+
+				.beachCardName {
+					font-size: @fs-44;
+
+					.beachCardContent {
+						margin-top: 12px;
+						font-size: @fs-20;
+					}
+
+					.beachCardFoot {
+						margin-top: 44px;
+
+						img {
+							width: 18px;
+							height: 18px;
+							object-fit: contain;
+						}
+
+						.beachMoreButton {
+							padding-left: 7px;
+							font-size: @fs-20;
+						}
+					}
+
+					.hotelItemLinks {
+						margin-top: 30px;
+
+						.hotelItemLinksDesing {
+							padding: 12px 30px;
+							font-size: @fs-20;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width:767.9px) {
+	#resantHead {
+		#resantHeadOpacity {
+			padding: 15px 0;
+			padding-bottom: 100px;
+
+			.resantHead {
+				.resantHeadFirstresantHeadFirst {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					padding: 0 15px;
+
+
+					.resantHeadCenter {
+						width: 165px;
+					}
+
+					.resantHeadRight {
+						a {
+							display: none;
+						}
+					}
+				}
+
+				.resantHeadContent {
+
+					h1 {
+						font-size: @fs-36;
+						margin-top: 80px;
+					}
+
+					p {
+						font-size: @fs-14;
+						margin-top: 10px;
+					}
+				}
+
+				.resantPageList {
+					margin-top: 40px;
+					font-size: @fs-30;
+
+					li {
+						padding: 5px 34px;
+						border-radius: 39px;
+					}
+				}
+			}
+		}
+	}
+
+	#about {
+		.aboutHead {
+			padding: 22px 0 14px 0;
+
+			h2 {
+				font-size: @fs-36;
+			}
+
+			div {
+				font-size: @fs-18;
+				margin-top: 20px;
+			}
+
+			span {
+				margin-top: 7px;
+			}
+
+			p {
+				font-size: @fs-15;
+				margin-top: 12px;
+			}
+		}
+
+		.aboutBody {
+			.aboutCardImg {
+				height: 250px;
+			}
+
+			.aboutCardContent {
+				height: 250px;
+				padding: 15px;
+
+				h5 {
+					font-family: montserrat-semibold;
+					font-size: @fs-20;
+					text-align: center;
+				}
+
+				span {
+					display: inline-block;
+					width: 54px;
+					height: 1px;
+					background-color: #808080;
+					margin: 10px 0 12px 0;
+
+				}
+
+				p {
+					font-family: montserrat-regular;
+					font-size: @fs-16;
+					color: #565656;
+					text-align: center;
+				}
+
+				ul {
+					list-style-type: none;
+					text-align: center;
+
+					li::before {
+						content: "-";
+						display: inline-block;
+						padding-right: 5px;
+					}
+				}
+			}
+
+			.aboutCardOne {
+				height: 250px;
+
+				.aboutCardOneContent {
+					padding: 20px 30px;
+
+					h5 {
+						font-size: @fs-20;
+						color: #fff;
+					}
+
+					span {
+						display: inline-block;
+						width: 54px;
+						height: 1px;
+						background-color: #fff;
+						margin: 17px 0 20px 0;
+					}
+
+					p {
+						font-family: montserrat-regular;
+						font-size: @fs-16;
+						color: #fff;
+						text-align: center;
+						margin: 0;
+					}
+				}
+			}
+		}
+
+	}
+
+	#events {
+		padding: 35px 0 12px 0;
+
+		.eventsHead {
+			font-size: @fs-36;
+		}
+
+		.eventsBody {
+			margin-top: 28px !important;
+		}
+	}
+
+	.eventCard {
+		height: 360px;
+		margin: 4px 0 !important;
+
+		.eventPos {
+			padding: 0 18px 15px 18px;
+
+			.eventTime {
+				font-size: @fs-16;
+			}
+
+			.cardBut {
+				font-size: @fs-14;
+				padding: 6px 8px;
+			}
+		}
+	}
+
+	#brand {
+		padding: 15px 0 18px 0;
+
+		.brandHead {
+			font-size: @fs-36;
+		}
+
+		.brandBody {
+			margin-top: 28px;
+
+			.brandBodyItems {
+				padding: 12px 0;
+			}
+		}
+	}
+
+	#map {
+		.mapListClose {
+			width: 0% !important;
+		}
+
+		.mapList {
+			height: 100%;
+
+			.mapRestaurantList {
+
+				.mapRestaurantItem {
+					font-size: @fs-22;
+				}
+			}
+		}
+
+		.mapCoverMap {
+			width: 100%;
+			height: 300px;
+			background-color: grey;
+			font-size: @fs-44;
+		}
+	}
+
+	#footer {
+		padding: 20px 0 30px 0;
+
+		.footLogo {
+			padding-top: 20px;
+
+			img {
+				width: 170px;
+				height: 100%;
+				object-fit: contain;
+			}
+		}
+
+		.footMenuListDesing {
+			font-size: @fs-20;
+			padding: 20px 0 20px 0;
+
+			li:not(:first-child) {
+				margin-top: 3px;
+			}
+		}
+
+		.footContactBlock {
+			padding-top: 20px;
+
+			.contactName {
+				font-size: @fs-30;
+			}
+
+			.footAddress {
+				margin-top: 15px;
+				font-size: @fs-16;
+			}
+
+			.footMobile {
+				margin-top: 14px;
+
+				a {
+					font-size: @fs-16;
+				}
+			}
+
+			.footEmail {
+				font-size: @fs-16;
+				margin-top: 15px;
+			}
+
+
+		}
+
+		.barcodeBlock {
+			img {
+				width: 160px;
+				height: 160px;
+			}
+		}
+
+		.copyriter {
+			margin-top: 25px;
+			font-size: @fs-16;
+		}
+	}
+
+	// restaurant
+	#restaurantBody {
+		padding: 15px 0;
+
+		.restaurantCard {
+			height: 340px;
+			margin: 14px 2px;
+		}
+	}
+
+	// Restaurant page one
+	#restaurantOnePageBody {
+		.restaurantTwoCol {
+			.restaurantTwoCol-left {
+				height: 380px;
+			}
+
+			.restaurantTwoCol-right {
+				padding: 25px 40px;
+			}
+
+			.restaurantKabinet {
+				height: 380px;
+			}
+		}
+
+		.restaurantOneCol {
+			.parallax-window {
+				height: 350px;
+			}
+
+			.parallax-window2 {
+				height: 350px;
+			}
+		}
+	}
+
+	// contact
+	#contact {
+		padding: 28px 0 100px 0;
+
+		.contactHead {
+			padding: 0 12px;
+
+			.contactName {
+				font-size: @fs-36;
+			}
+
+			span {
+				margin-top: 10px;
+
+			}
+
+			.contactContent1 {
+				font-size: @fs-20;
+				margin-top: 25px;
+			}
+
+			.contactContent2 {
+				font-size: @fs-16;
+				margin-top: 16px;
+			}
+		}
+
+		.contactBody {
+			margin-top: 10px;
+
+			.contactItem {
+				margin-top: 30px;
+				padding: 0 12px;
+
+				.contactItemName {
+					font-size: @fs-24;
+				}
+
+				.contactItemBody {
+					margin-top: 10px;
+
+					.contactItemBodyItem {
+						padding: 0px 5px;
+						margin: 6px 0;
+
+						.contactItemBodyItemIcon {
+							height: 24px;
+
+							img {
+								width: 20px;
+							}
+						}
+
+						.contactItemBodyItemContent {
+							a {
+								font-size: @fs-18;
+							}
+
+							span {
+								font-size: @fs-17;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// tor
+	#tour {
+		.tourName {
+			font-size: @fs-36;
+			padding: 20px 0;
+		}
+
+		.tour {
+			.tourImg {
+				height: 300px;
+			}
+		}
+
+		.tourContent {
+			.tourContentList {
+				li {
+					font-size: @fs-27;
+				}
+
+				li:not(:first-child) {
+					margin-top: 16px;
+				}
+			}
+		}
+	}
+
+	//feedback
+	#feedback {
+		.feedbackHead {
+			padding: 0 30px;
+
+			h2 {
+				margin-top: 30px;
+				font-size: @fs-36;
+			}
+
+			p {
+				margin-top: 25px;
+				font-size: @fs-19;
+			}
+		}
+
+		.feedbackCover {
+			margin-top: 32px;
+			padding: 40px 0 65px 0 !important;
+
+			.feedbackCoverHead {
+
+				.feedbackCoverName {
+					margin-top: 15px;
+					font-size: @fs-36;
+				}
+			}
+
+			.feedbackItemDesing {
+				margin-top: 30px;
+				padding: 0 10px;
+
+				label {
+					font-size: @fs-20;
+					padding-bottom: 0;
+				}
+
+				input {
+					padding: 4px 0;
+				}
+			}
+
+			.feedbackItemButton {
+				margin-top: 25px;
+
+				#feedSendBut {
+					font-family: @fs-19;
+					padding: 12px 36px;
+				}
+			}
+		}
+	}
+
+	#hotels {
+		.hotelCard {
+			padding: 15px 0;
+
+			.hotelCardImg {
+				height: 300px;
+			}
+
+			.hotelCardInfo {
+				padding-top: 14px;
+
+				.hotelCardName {
+					font-size: @fs-32;
+				}
+
+				.hotelCardContent {
+					margin-top: 10px;
+					font-size: @fs-18;
+				}
+
+				.hotelCardFoot {
+					margin-top: 24px;
+
+					img {
+						width: 16px;
+						height: 16px;
+					}
+
+					.hotelMoreButton {
+						padding-left: 6px;
+						font-size: @fs-17;
+					}
+				}
+
+				.hotelItemLinks {
+					margin-top: 20px;
+
+					.hotelItemLinksDesing {
+						padding: 7px 20px;
+						font-size: @fs-18;
+					}
+				}
+			}
+		}
+
+		.hotelsSlider {
+			padding: 25px 0;
+
+			.hotelsSliderHead {
+				font-size: @fs-32;
+				margin-bottom: 30px;
+			}
+
+			.hotelsSliderCover {
+				padding-left: 10vw;
+				padding-right: 10vw;
+
+				.hotelsSliderItem {
+					.hotelsSliderItemHead {
+						height: 300px;
+
+						.hotelSliderItemLink {
+							font-size: @fs-16;
+							padding: 6px 11px;
+						}
+					}
+
+					.hotelsSliderItemName {
+						margin-top: 20px;
+						font-size: @fs-28;
+					}
+				}
+			}
+
+		}
+	}
+
+	//beach
+	#beach {
+		.beachCard {
+			padding: 15px 0;
+
+			.beachCardImg {
+				height: 300px;
+			}
+
+			.beachCardInfo {
+				padding-top: 14px;
+
+				.beachCardName {
+					font-size: @fs-32;
+				}
+
+				.beachCardContent {
+					margin-top: 10px;
+					font-size: @fs-18;
+				}
+
+				.beachCardFoot {
+					margin-top: 24px;
+
+					img {
+						width: 16px;
+						height: 16px;
+					}
+
+					.beachMoreButton {
+						padding-left: 6px;
+						font-size: @fs-17;
+					}
+				}
+
+				.hotelItemLinks {
+					margin-top: 20px;
+
+					.hotelItemLinksDesing {
+						padding: 7px 20px;
+						font-size: @fs-18;
+					}
+				}
+			}
+		}
+	}
+
+	//
+	#onloadModal {
+		.onloadModalInfo {
+			width: 75%;
+		}
+	}
+
+	.onloadResant {
+
+		.onloadResantBack {
+			width: 140px;
+			height: 140px;
+
+			img {
+				width: 70%;
+				height: 70%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width:575.9px) {
+	#brand {
+		.brandBody {
+			margin-top: 25px;
+
+			.brandBodyItems {
+				padding: 0;
+
+				.brandBox {
+					height: 140px;
+				}
+			}
+		}
+	}
+
+	// restaurant
+	#restaurantBody {
+		padding: 12px 0;
+
+		.restaurantCard {
+			height: 300px;
+			margin: 5px 0;
+		}
+	}
+
+	//map
+	#map {
+		.mapList {
+			.mapRestaurantList {
+				.mapRestaurantItem {
+					font-size: @fs-16;
+					padding: 10px 8px 5px 12px;
+				}
+			}
+		}
+	}
+
+	// Restaurant page one
+	#restaurantOnePageBody {
+		.restaurantTwoCol {
+			.restaurantTwoCol-left {
+				height: 280px;
+			}
+
+			.restaurantTwoCol-right {
+				padding: 26px 20px;
+
+				.content {
+					.restaurantContentName {
+						font-size: @fs-27;
+					}
+
+					.restaurantContentText {
+						margin-top: 15px;
+						font-size: @fs-18;
+					}
+
+					.contentLink {
+
+						a,
+						button {
+							font-size: @fs-18;
+							padding: 6px 14px;
+							margin-top: 10px;
+						}
+					}
+				}
+			}
+
+			.restaurantKabinet {
+				height: auto;
+			}
+		}
+
+		.restaurantOneCol {
+			.parallax-window {
+				height: 260px;
+			}
+
+			.parallax-window2 {
+				height: 260px;
+			}
+
+			.restaurantOneColBlock {
+				span {
+					font-size: @fs-32;
+				}
+			}
+
+			.restaurantOneColBlock2 {
+				font-size: @fs-32;
+			}
+		}
+	}
+
+	//eventsBody
+	#eventsPageBody {
+		padding-bottom: 2px;
+
+		.eventsName {
+			font-size: @fs-32;
+
+		}
+
+		.eventsBody {
+			margin-top: 5px;
+
+			.eventCard {
+				margin: 5px 0;
+			}
+		}
+	}
+
+	// event page
+	#eventPageBody {
+		padding: 12px 0;
+
+		.eventName {
+			padding: 7px 0;
+			font-size: @fs-36;
+		}
+
+		.eventPageBody {
+			margin-top: 15px;
+
+			.eventPageBodyItem {
+
+				.eventPageBodyItemContent {
+					padding: 22px;
+
+					.eventPageBodyItemHead {
+						padding-bottom: 8px;
+
+						.eventPageTime {
+							font-size: @fs-18;
+						}
+
+						.eventPageName {
+							font-size: @fs-16;
+						}
+
+						.eventPageContent {
+							font-size: @fs-16;
+						}
+					}
+
+					.eventPageBodyItemFooter {
+						.eventPageBodyItemFooterDesing {
+							margin-top: 10px;
+
+							.eventDesingText {
+								margin-right: 7px;
+								font-size: @fs-16;
+							}
+
+							.eventDesingIcon {
+								width: 20px;
+								height: 20px;
+							}
+						}
+					}
+				}
+
+				.eventPosElement {
+
+					.eventPosElementImg {
+						height: 240px;
+					}
+
+					.eventPosElementName {
+						margin-top: 10px;
+						font-size: @fs-27;
+					}
+				}
+			}
+		}
+	}
+
+	// contact
+	#contact {
+		padding: 28px 0 80px 0;
+
+		.contactHead {
+			padding: 0 12px;
+
+			.contactName {
+				font-size: @fs-32;
+			}
+
+			span {
+				margin-top: 7px;
+
+			}
+
+			.contactContent1 {
+				font-size: @fs-18;
+				margin-top: 20px;
+			}
+		}
+
+		.contactBody {
+			margin-top: 8px;
+
+			.contactItem {
+				margin-top: 2;
+				padding: 0 12px;
+
+				.contactItemName {
+					font-size: @fs-22;
+				}
+
+				.contactItemBody {
+					margin-top: 9px;
+
+					.contactItemBodyItem {
+						padding: 0px 2px;
+						margin: 4px 0;
+
+						.contactItemBodyItemIcon {
+							height: 24px;
+
+							img {
+								width: 20px;
+							}
+						}
+
+						.contactItemBodyItemContent {
+							a {
+								font-size: @fs-18;
+							}
+
+							span {
+								font-size: @fs-17;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	//feedback
+	#feedback {
+		.feedbackHead {
+			padding: 0 25px;
+
+			h2 {
+				margin-top: 20px;
+				font-size: @fs-32;
+			}
+
+			p {
+				margin-top: 15px;
+				font-size: @fs-17;
+			}
+		}
+
+		.feedbackCover {
+			margin-top: 25px;
+			padding: 25px 0 55px 0 !important;
+
+			.feedbackCoverHead {
+
+				.feedbackCoverName {
+					margin-top: 12px;
+					font-size: @fs-32;
+				}
+			}
+
+			.feedbackItemDesing {
+				margin-top: 22px;
+				padding: 0 7px;
+
+				label {
+					font-size: @fs-17;
+				}
+
+				input {
+					font-size: @fs-16;
+				}
+			}
+
+			.feedbackItemButton {
+				margin-top: 20px;
+
+				#feedSendBut {
+					font-family: @fs-17;
+					padding: 8px 26px;
+				}
+			}
+		}
+	}
+
+	#hotels {
+
+		.hotelsHead {
+			padding-top: 15px;
+			padding-bottom: 25px;
+		}
+
+		.hotelCard {
+			padding: 12px 0;
+
+			.hotelCardImg {
+				height: 240px;
+			}
+
+			.hotelCardInfo {
+				padding-top: 12px;
+
+				.hotelCardName {
+					font-size: @fs-28;
+				}
+
+				.hotelCardContent {
+					margin-top: 9px;
+					font-size: @fs-17;
+				}
+
+				.hotelCardFoot {
+					margin-top: 20px;
+
+					img {
+						width: 16px;
+						height: 16px;
+					}
+
+					.hotelMoreButton {
+						padding-left: 5px;
+						font-size: @fs-15;
+					}
+				}
+
+				.hotelItemLinks {
+					margin-top: 18px;
+
+					.hotelItemLinksDesing {
+						padding: 5px 20px;
+						font-size: @fs-17;
+					}
+				}
+			}
+		}
+
+		.hotelsSlider {
+			padding: 18px 0;
+
+			.hotelsSliderHead {
+				font-size: @fs-27;
+				margin-bottom: 20px;
+			}
+
+			.hotelsSliderCover {
+				padding-left: 2vw;
+				padding-right: 2vw;
+
+				.hotelsSliderItem {
+					.hotelsSliderItemHead {
+						height: 250px;
+
+						.hotelSliderItemLink {
+							font-size: @fs-15;
+							padding: 4px 10px;
+						}
+					}
+
+					.hotelsSliderItemName {
+						margin-top: 16px;
+						font-size: @fs-24;
+					}
+				}
+
+				.owl-nav {
+					.owl-prev {
+						width: 30px;
+					}
+
+					.owl-next {
+						width: 30px;
+						display: block;
+					}
+				}
+			}
+
+		}
+	}
+
+	//beach
+	#beach {
+
+		.beachHead {
+			padding-top: 15px;
+			padding-bottom: 25px;
+		}
+
+		.beachCard {
+			padding: 12px 0;
+
+			.beachCardImg {
+				height: 240px;
+			}
+
+			.beachCardInfo {
+				padding-top: 12px;
+
+				.beachCardName {
+					font-size: @fs-28;
+				}
+
+				.beachCardContent {
+					margin-top: 9px;
+					font-size: @fs-17;
+				}
+
+				.beachCardFoot {
+					margin-top: 20px;
+
+					img {
+						width: 16px;
+						height: 16px;
+					}
+
+					.beachMoreButton {
+						padding-left: 5px;
+						font-size: @fs-15;
+					}
+				}
+
+				.hotelItemLinks {
+					margin-top: 18px;
+
+					.hotelItemLinksDesing {
+						padding: 5px 20px;
+						font-size: @fs-17;
+					}
+				}
+			}
+		}
+	}
+
+	#onloadModal {
+		.onloadModalInfo {
+			width: 88%;
+			height: 50%;
+			flex-wrap: wrap;
+			height: auto;
+			max-height: 90vh;
+
+			.onloadModalInfoLeft {
+				flex-basis: 100%;
+				order: 2;
+				height: 180px;
+			}
+
+
+			.onloadModalInfoRight {
+				flex-basis: 100%;
+				order: 1;
+				height: auto;
+
+				.onloadModalInfoRightContent {
+					padding: 28px 15px;
+
+					.onloadModalInfoName {
+						font-size: @fs-24;
+					}
+
+					.onloadModalInfoContent {
+						font-size: @fs-18;
+						margin-top: 8px;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width:360.9px) {
+	.eventCard {
+		height: 300px;
+
+		.eventPos {
+			padding: 0 12px 14px 12px;
+
+			.eventTime {
+				font-size: @fs-16;
+			}
+
+			.cardBut {
+				font-size: @fs-14;
+				padding: 6px 8px;
+			}
+		}
+	}
+
+	// event page
+	#eventPageBody {
+		.eventName {
+			font-size: @fs-32;
+		}
+
+		.eventPageBody {
+			margin-top: 12px;
+
+			.eventPageBodyItem {
+
+				.eventPageBodyItemContent {
+					padding: 20;
+
+					.eventPageBodyItemHead {
+
+						.eventPageTime {
+							font-size: @fs-17;
+							margin-top: 10px;
+						}
+
+						.eventPageName {
+							font-size: @fs-16;
+							margin-top: 10px;
+						}
+
+						.eventPageContent {
+							font-size: @fs-16;
+							margin-top: 10px;
+						}
+					}
+
+					.eventPageBodyItemFooter {
+						.eventPageBodyItemFooterDesing {
+							margin-top: 10px;
+
+							.eventDesingText {
+								margin-right: 7px;
+								font-size: @fs-13;
+							}
+
+							.eventDesingIcon {
+								width: 17px;
+								height: 17px;
+							}
+						}
+					}
+				}
+
+				.eventPosElement {
+
+					.eventPosElementImg {
+						height: 240px;
+					}
+
+					.eventPosElementName {
+						margin-top: 10px;
+						font-size: @fs-27;
+					}
+				}
+			}
+		}
+	}
+
+	// tor
+	#tour {
+		.tourName {
+			font-size: @fs-36;
+			padding: 20px 0;
+		}
+
+		.tour {
+			.tourImg {
+				height: 300px;
+			}
+		}
+
+		.tourContent {
+			padding: 20px 0;
+
+			.tourContentList {
+				li {
+					font-size: @fs-24;
+				}
+
+				li:not(:first-child) {
+					margin-top: 16px;
+				}
+
+				li::before {
+					left: -22px;
+				}
+
+				.active::before {
+					left: -22px;
+				}
+			}
+		}
+	}
+
+}
