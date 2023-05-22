@@ -1153,7 +1153,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 16px;
+    width: 18px;
   }
   #basket .basket .basketBody .basketBodyList .basketMainListBlock .basketMainListBlockItem:not(:last-child) {
     padding-right: 0;
