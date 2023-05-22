@@ -1423,6 +1423,18 @@
           padding: 12px 0;
         }
       }
+
+      .basketInfoBlock {
+        margin-top: 30px;
+        .basketInfoImg {
+          img {
+            width: 90px;
+          }
+        }
+        .basketInfoText {
+          font-size: $fs18;
+        }
+      }
       .basketBody {
         margin-top: 40px;
         .basketBodyHead {
