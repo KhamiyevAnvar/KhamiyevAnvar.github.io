@@ -1926,7 +1926,7 @@ body {
                 color: $col-cardFeatures;
               }
               .basketMainName2 {
-                @include lineLimit($line: 2);
+                @include lineLimit;
               }
             }
 

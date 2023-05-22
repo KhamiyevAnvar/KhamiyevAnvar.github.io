@@ -2041,7 +2041,7 @@ body {
   color: #a0a0a0;
 }
 #basket .basket .basketBody .basketBodyList .basketMainListBlock .basketMainListBlockItem .basketMainName .basketMainName2 {
-  -webkit-line-clamp: 2 !important;
+  -webkit-line-clamp: 1 !important;
   -webkit-box-orient: vertical !important;
   display: -webkit-box !important;
   overflow: hidden !important;
