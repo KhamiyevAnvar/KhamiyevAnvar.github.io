@@ -848,11 +848,19 @@
       .polarHeaderLeft {
         .polarHeaderLogo {
           display: inline-flex;
-          width: 100px;
+          width: 108px;
         }
       }
 
       .polarHeaderRight {
+        .polarHeaderSearchBlock {
+          margin-right: 15px;
+          .polarHeaderSearch {
+            margin-right: 0;
+            width: 32px;
+            height: 32px;
+          }
+        }
         .polarHeaderMenuButBlock {
           display: flex;
         }

@@ -1,3 +1,8 @@
+$(window).on("load", function () {
+  setTimeout(function () {
+    $(".polarloader").addClass("polarLoaderNone");
+  }, 1000);
+});
 $(function () {
   // select lang
   $(".polarLanguageSelect").select2();
@@ -717,6 +722,7 @@ $(function () {
   });
 });
 
+// home cover slider
 if ($(".homeSlider").length > 0) {
   let slide_data = [
     {

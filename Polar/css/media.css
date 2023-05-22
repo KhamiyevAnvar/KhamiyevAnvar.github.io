@@ -628,7 +628,15 @@
   }
   #polarHeader .polarHeader .polarHeaderLeft .polarHeaderLogo {
     display: inline-flex;
-    width: 100px;
+    width: 108px;
+  }
+  #polarHeader .polarHeader .polarHeaderRight .polarHeaderSearchBlock {
+    margin-right: 15px;
+  }
+  #polarHeader .polarHeader .polarHeaderRight .polarHeaderSearchBlock .polarHeaderSearch {
+    margin-right: 0;
+    width: 32px;
+    height: 32px;
   }
   #polarHeader .polarHeader .polarHeaderRight .polarHeaderMenuButBlock {
     display: flex;
@@ -1043,6 +1051,15 @@
   #basket .basket .basketHead .basketHeadName {
     font-size: 22px;
     padding: 12px 0;
+  }
+  #basket .basket .basketInfoBlock {
+    margin-top: 30px;
+  }
+  #basket .basket .basketInfoBlock .basketInfoImg img {
+    width: 90px;
+  }
+  #basket .basket .basketInfoBlock .basketInfoText {
+    font-size: 18px;
   }
   #basket .basket .basketBody {
     margin-top: 40px;
