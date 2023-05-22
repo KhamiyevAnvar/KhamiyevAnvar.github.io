@@ -882,7 +882,7 @@
   .mobileMenu {
     .mobileMenuHead {
       .mobileHeaderLogo {
-        width: 100px;
+        width: 106px;
         display: inline-flex;
       }
     }
@@ -894,6 +894,15 @@
 
       .mobileMenuListItem:not(:last-child) {
         margin-bottom: 10px;
+      }
+    }
+    .mobileSocial {
+      .mobileSocialItem {
+        width: 32px;
+        height: 32px;
+      }
+      .mobileSocialItem:not(:last-child) {
+        margin-right: 18px;
       }
     }
   }

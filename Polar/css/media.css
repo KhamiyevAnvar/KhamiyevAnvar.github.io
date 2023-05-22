@@ -650,7 +650,7 @@
     height: 20px;
   }
   .mobileMenu .mobileMenuHead .mobileHeaderLogo {
-    width: 100px;
+    width: 106px;
     display: inline-flex;
   }
   .mobileMenu .mobileMenuList .mobileMenuListItem {
@@ -658,6 +658,13 @@
   }
   .mobileMenu .mobileMenuList .mobileMenuListItem:not(:last-child) {
     margin-bottom: 10px;
+  }
+  .mobileMenu .mobileSocial .mobileSocialItem {
+    width: 32px;
+    height: 32px;
+  }
+  .mobileMenu .mobileSocial .mobileSocialItem:not(:last-child) {
+    margin-right: 18px;
   }
   #polarCategory .polarCategory {
     padding-bottom: 30px;
