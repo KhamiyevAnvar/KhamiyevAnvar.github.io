@@ -1,0 +1,1650 @@
+@import "common";
+
+@media only screen and (max-width: 1400px) {
+  #products {
+    .products {
+      .productsBody {
+        margin-top: 25px;
+        display: flex;
+
+        .productsBodyProducts {
+          margin: -10px;
+          .productsItems {
+            padding: 10px;
+            .polarCard {
+              .polarCardHead {
+                height: 280px;
+              }
+
+              .polarCardContent {
+                padding: 8px 0;
+                .polarCardContentTop {
+                  display: flex;
+                  justify-content: space-between;
+                  padding: 5px 0;
+                  .polarCardContentTopName {
+                    font-size: $fs16;
+                  }
+                  .polarCardContentTopPrice {
+                    font-size: $fs18;
+                  }
+                }
+
+                .polarCardContentBody {
+                  padding: 6px 0;
+                  .colorFeatures {
+                    font-size: $fs14;
+                    .colorFeaturesItem {
+                      padding-right: 5px;
+                    }
+                  }
+                }
+
+                .polarCardContentBottom {
+                  padding: 8px 0;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  .polarCardContentStorageCount {
+                    font-family: PoppinsMedium;
+                    font-size: $fs16;
+                    color: $col-main;
+                  }
+
+                  .polarCardAddButton {
+                    font-size: $fs18;
+                    padding: 2px 22px;
+                    min-width: 130px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1199.9px) {
+  #polarHeader {
+    .polarHeader {
+      .polarHeaderMiddle {
+        .polarHeaderMenuList {
+          font-size: $fs18;
+        }
+      }
+    }
+  }
+
+  #products {
+    .products {
+      .productsHead {
+        .productsHeadList {
+          li {
+            button {
+              font-size: $fs16;
+              padding: 4px 17px;
+            }
+          }
+        }
+      }
+      .productsBody {
+        .productsBodyType {
+          .productsBodyTypeHead {
+            font-size: $fs20;
+          }
+          .productsBodyTypeList {
+            ul {
+              li {
+                .checkedCheckboxComp {
+                  font-size: 0.8rem;
+                  .productsBodyTypeListItemName {
+                    font-size: $fs16;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .productsBodyProducts {
+          .productsItems {
+            .polarCard {
+              .polarCardHead {
+                height: 240px;
+              }
+
+              .polarCardContent {
+                .polarCardContentTop {
+                  .polarCardContentTopName {
+                    font-size: $fs14;
+                  }
+                  .polarCardContentTopPrice {
+                    font-size: $fs16;
+                  }
+                }
+
+                .polarCardContentBody {
+                  .colorFeatures {
+                    font-size: $fs12;
+                    .colorFeaturesItem {
+                      padding-right: 4px;
+                    }
+                  }
+                }
+
+                .polarCardContentBottom {
+                  .polarCardContentStorageCount {
+                    font-size: $fs14;
+                  }
+
+                  .polarCardAddButton {
+                    font-size: $fs16;
+                    padding: 2px 18px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // contact
+  #contact {
+    .contact {
+      padding: 90px 0;
+      width: 85%;
+      .contactHead {
+        h1 {
+          font-size: $fs32;
+        }
+        p {
+          font-size: $fs22;
+        }
+      }
+
+      .contactBody {
+        margin-top: 15px;
+        .contactBody1 {
+          padding: 10px;
+          .contactItemDesing {
+            width: 100%;
+            input {
+              font-size: $fs18;
+            }
+          }
+        }
+        .contactBody2 {
+          padding: 10px;
+          .contactItemDesing2 {
+            textarea {
+              font-size: $fs18;
+            }
+          }
+        }
+        .contactBody3 {
+          margin-top: 40px;
+          #sendPolar {
+            padding: 5px 35px;
+            font-size: $fs22;
+            box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991.9px) {
+  #polarHeader {
+    .polarHeader {
+      .polarHeaderLeft {
+        .polarHeaderLogo {
+          display: inline-flex;
+          width: 120px;
+          svg {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+
+      .polarHeaderMiddle {
+        display: none;
+      }
+
+      .polarHeaderRight {
+        .polarHeaderMenuButBlock {
+          display: flex;
+        }
+        .polarHeaderSocial {
+          display: none;
+        }
+      }
+
+      .mobileMenu {
+        display: block;
+      }
+
+      .mobileMenuNone {
+        display: block;
+      }
+    }
+  }
+
+  // polarCategory
+  #polarCategory {
+    .polarCategory {
+      .polarCategoryHead {
+        .polarCategoryHeadName {
+          font-size: $fs24;
+        }
+      }
+
+      .polarCategoryBody {
+        ul {
+          li {
+            font-size: $fs16;
+            a {
+              padding: 10px 22px;
+              min-width: 80px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // polarSlogan
+  #polarSlogan {
+    .polarSlogan {
+      width: 90%;
+      height: 300px;
+      font-size: $fs24;
+    }
+  }
+
+  //featured
+  #featured {
+    padding: 25px 0 15px 0;
+    .featuredHead {
+      font-size: $fs24;
+    }
+
+    .featuredCover {
+      .featuredItem {
+        .polarCard {
+          .polarCardHead {
+            height: 280px;
+          }
+
+          .polarCardContent {
+            padding: 8px 0;
+            .polarCardContentTop {
+              padding: 5px 0;
+              .polarCardContentTopName {
+                font-size: $fs18;
+              }
+              .polarCardContentTopPrice {
+                font-size: $fs20;
+              }
+            }
+
+            .polarCardContentBody {
+              padding: 6px 0;
+
+              .colorFeatures {
+                font-size: $fs16;
+                .colorFeaturesItem {
+                  padding-right: 7px;
+                }
+              }
+            }
+
+            .polarCardContentBottom {
+              padding: 8px 0;
+              .polarCardContentStorageCount {
+                font-size: $fs16;
+              }
+
+              .polarCardAddButton {
+                font-size: $fs20;
+                padding: 3px 22px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .owl-nav {
+      display: none;
+    }
+  }
+
+  // advertising
+  #advertising {
+    margin-top: 10px;
+
+    .advertising {
+      padding-top: 20px;
+      padding-bottom: 60px;
+      .advertisingName {
+        font-size: $fs32;
+      }
+      .advertisingImg {
+        width: 250px;
+      }
+      .advertisingContent {
+        font-size: $fs20;
+      }
+    }
+  }
+
+  // suggestion
+  #suggestion {
+    .suggestion {
+      padding-top: 25px;
+      .suggestionName {
+        font-size: $fs24;
+      }
+      .suggestionBody {
+        margin-top: 25px;
+        .suggestionBodyContainer {
+          height: 450px;
+          .suggestionBodyContainerLeft {
+            .suggestionBodyItemLeft {
+              .suggestionBodyItemPos {
+                padding: 5px 18px;
+                font-size: $fs20;
+              }
+            }
+          }
+          .suggestionBodyContainerRight {
+            .suggestionBodyItemRight {
+              .suggestionBodyItemPosAll {
+                padding: 5px 18px;
+                font-size: $fs20;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // polar video
+  #polarVideo {
+    padding-top: 30px;
+    .polarVideoHead {
+      font-size: $fs24;
+      margin-bottom: 15px;
+    }
+
+    .polarVideoCover {
+      .polarVideoItem {
+        width: 100%;
+        height: 280px;
+      }
+    }
+    .owl-nav {
+      display: none;
+    }
+  }
+
+  // partner
+  #partners {
+    padding: 20px 0 50px 0;
+    .partnersHead {
+      font-size: $fs24;
+      margin-bottom: 15px;
+    }
+    .partnersCover {
+      .partnersItem {
+        height: 120px;
+      }
+    }
+  }
+
+  // fouter
+  #fouter {
+    .fouter {
+      padding: 20px 0;
+      .fouterLogo {
+        svg {
+          width: 125px;
+        }
+      }
+
+      .fouterSocial {
+        margin-top: 25px;
+        .fouterSocialBox {
+          .fouterSocialItem {
+            width: 30px;
+            height: 30px;
+          }
+
+          .fouterSocialText {
+            font-size: $fs18;
+          }
+        }
+
+        .fouterSocialBox:not(:last-child) {
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+
+  //about
+  #polarAbout {
+    background-image: none;
+    .polarAbout {
+      .aboutHead {
+        padding: 30px 0;
+
+        .aboutHeadLeft {
+          width: 100%;
+          .aboutHeadLeftName {
+            font-size: $fs24;
+          }
+          .aboutHeadLeftContent {
+            font-size: $fs18;
+          }
+        }
+      }
+    }
+    .aboutCertificate {
+      .aboutCertificateName {
+        font-size: $fs24;
+        margin-bottom: 20px;
+      }
+      .swiper {
+        padding-bottom: 20px;
+      }
+
+      .swiper-slide {
+        height: 350px;
+      }
+    }
+  }
+
+  //products
+  #products {
+    .products {
+      .productsBody {
+        margin: 25px -10px 0 -10px;
+
+        .productsBodyType {
+          position: fixed;
+          top: 50%;
+          left: 0;
+          transform: translateY(-50%);
+          width: max-content;
+          background-color: white;
+          padding: 15px 20px;
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+          z-index: 99;
+          .productsBodyTypeHead {
+            font-size: $fs20;
+          }
+          .productsBodyTypeList {
+            ul {
+              list-style-type: none;
+              padding: 0;
+              margin: 0;
+              li {
+                padding: 0;
+                margin-top: 8px;
+                .checkedCheckboxComp {
+                  .checkboxMark {
+                    width: 1rem;
+                    height: 1rem;
+                  }
+                  .productsBodyTypeListItemName {
+                    font-size: $fs16;
+                    margin-left: 5px;
+                  }
+                }
+              }
+            }
+            .filterProductBut {
+              display: flex;
+            }
+          }
+        }
+
+        .productsBodyTypeNone {
+          width: 0;
+          padding: 0;
+          margin: 0;
+          @include transitionTime;
+          .productsBodyTypeHead {
+            overflow: hidden;
+          }
+          .productsBodyTypeList {
+            ul {
+              overflow: hidden;
+            }
+            .filterProductBut {
+              display: flex;
+              right: -40px;
+            }
+          }
+        }
+
+        .productsBodyProducts {
+          width: 100%;
+          margin: 0;
+          .productsItems {
+            width: 50%;
+            .polarCard {
+              .polarCardHead {
+                height: 250px;
+              }
+
+              .polarCardContent {
+                .polarCardContentTop {
+                  .polarCardContentTopName {
+                    font-size: $fs16;
+                  }
+                  .polarCardContentTopPrice {
+                    font-size: $fs18;
+                  }
+                }
+
+                .polarCardContentBody {
+                  .colorFeatures {
+                    font-size: $fs14;
+                    .colorFeaturesItem {
+                      padding-right: 5px;
+                    }
+                  }
+                }
+
+                .polarCardContentBottom {
+                  .polarCardContentStorageCount {
+                    font-size: $fs16;
+                  }
+
+                  .polarCardAddButton {
+                    font-size: $fs18;
+                    padding: 2px 20px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // contact
+  #contact {
+    .contact {
+      padding: 70px 0;
+      width: 100%;
+      .contactHead {
+        h1 {
+          font-size: $fs28;
+        }
+        p {
+          font-size: $fs20;
+        }
+      }
+
+      .contactBody {
+        .contactBody1 {
+          padding: 10px;
+          .contactItemDesing {
+            width: 100%;
+            input {
+              font-size: $fs18;
+            }
+          }
+        }
+        .contactBody2 {
+          padding: 10px;
+          .contactItemDesing2 {
+            textarea {
+              font-size: $fs18;
+            }
+          }
+        }
+        .contactBody3 {
+          #sendPolar {
+            font-size: $fs20;
+          }
+        }
+      }
+    }
+  }
+
+  // product page
+  #product {
+    padding: 20px 0 50px 0;
+
+    .product {
+      .productHead {
+        width: 100%;
+      }
+      .productRight {
+        margin-top: 25px;
+      }
+    }
+  }
+
+  //// basket button
+  #polarBasket {
+    width: 60px;
+    height: 60px;
+    .polarBasketCountBlock {
+      top: -10px;
+      width: 25px;
+      height: 25px;
+      .polarBasketItemCount {
+        font-size: $fs16;
+      }
+    }
+  }
+
+  //basket page
+  #basket {
+    padding: 50px 0;
+    .basket {
+      .basketHead {
+        .basketHeadName {
+          font-size: $fs24;
+        }
+      }
+      .basketBody {
+        margin-top: 40px;
+        .basketBodyHead {
+          display: none;
+        }
+        .basketBodyList {
+          .basketMainList {
+            .basketMainListItem {
+              margin-top: 5px;
+            }
+          }
+          .basketMainListBlock {
+            padding: 12px 0;
+            align-items: start;
+
+            .basketMainListBlockItem {
+              position: relative;
+              .basketMainImg {
+                max-width: 90px;
+              }
+
+              .basketMainName {
+                width: 100%;
+                display: flex;
+                font-size: $fs14;
+                overflow: hidden;
+                padding-right: 16px;
+                .basketMainName1 {
+                  display: none;
+                }
+                .basketMainName2 {
+                  margin-right: 3px;
+                }
+              }
+
+              .basketMainColorBlock {
+                width: 30%;
+                padding: 12px 0;
+                justify-content: left;
+
+                .basketMainColorText {
+                  display: block;
+                }
+
+                .basketMainColor {
+                  width: 21px;
+                  height: 21px;
+                }
+                .basketMainColorName {
+                  font-size: $fs14;
+                }
+              }
+
+              .basketMainWeight {
+                width: 70%;
+                padding: 12px 0;
+                justify-content: left;
+                font-size: $fs14;
+                .basketMainWeightName {
+                  display: block;
+                }
+              }
+
+              .basketMainPrice {
+                width: 30%;
+                justify-content: left;
+                font-size: $fs14;
+              }
+
+              .basketMainQuantity {
+                width: 30%;
+                justify-content: left;
+                .basketMainQuantityBlock {
+                  margin-right: 0;
+                  padding: 4px 16px;
+                  .basketMainQuantityCountNum {
+                    width: 15px;
+                    margin: 0 12px;
+                    font-size: $fs16;
+                  }
+                }
+              }
+
+              .basketMainPriceTotal {
+                width: 40%;
+                font-size: $fs14;
+                justify-content: right;
+              }
+
+              .basketMainDeleteButBlock {
+                .basketMainDeleteButton {
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  width: 16px;
+                }
+              }
+            }
+
+            .basketMainListBlockItem:not(:last-child) {
+              padding-right: 0;
+            }
+
+            .basketMainListItemSize1 {
+              width: auto;
+            }
+
+            .basketMainListItemSize2 {
+              width: calc(100% - 102px);
+              flex-wrap: wrap;
+              padding-right: 0;
+            }
+
+            .basketMainListItemSize3 {
+              width: 0%;
+            }
+          }
+        }
+      }
+
+      .basketFouter {
+        margin-top: 45px;
+        .basketFouterTop {
+          .basketFouterTopBlock {
+            font-size: $fs16;
+
+            padding-bottom: 5px;
+          }
+          .basketFouterTopName {
+            margin-right: 10px;
+          }
+        }
+
+        .basketFouterBottom {
+          margin-top: 30px;
+
+          button {
+            font-size: $fs16;
+          }
+
+          .basketClearButton {
+            padding: 6px 15px;
+            margin-right: 12px;
+          }
+
+          .baskeConfirmButton {
+            padding: 6px 30px;
+          }
+        }
+      }
+    }
+  }
+
+  //home slider
+  .homeSlider {
+    height: 400px;
+    .caption {
+      padding-bottom: 40px;
+      .caption-heading h1 {
+        font-size: $fs28;
+        width: 70%;
+      }
+      .caption-subhead {
+        font-size: $fs18;
+        width: 70%;
+      }
+    }
+
+    .nav {
+      a {
+        width: 42px;
+        height: 42px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+}
+
+@media screen and (max-width: 575px) {
+  // nav
+  #polarHeader {
+    padding: 15px 0;
+    .polarHeader {
+      .polarHeaderLeft {
+        .polarHeaderLogo {
+          display: inline-flex;
+          width: 100px;
+        }
+      }
+
+      .polarHeaderRight {
+        .polarHeaderMenuButBlock {
+          display: flex;
+        }
+      }
+
+      .searchBlock {
+        top: 55px;
+        height: 40px;
+
+        .closeSearch {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  //mobileMenu
+  .mobileMenu {
+    .mobileMenuHead {
+      .mobileHeaderLogo {
+        width: 100px;
+        display: inline-flex;
+      }
+    }
+
+    .mobileMenuList {
+      .mobileMenuListItem {
+        font-size: $fs18;
+      }
+
+      .mobileMenuListItem:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  // polarCategory
+  #polarCategory {
+    .polarCategory {
+      padding-bottom: 30px;
+      .polarCategoryHead {
+        .polarCategoryHeadName {
+          font-size: $fs20;
+        }
+      }
+
+      .polarCategoryBody {
+        margin-top: 15px;
+        .polarCategoryList {
+          padding-bottom: 0;
+        }
+        .polarCategoryList::-webkit-scrollbar {
+          display: none;
+        }
+        ul {
+          li {
+            font-size: $fs16;
+            margin: 4px 0;
+            a {
+              padding: 6px 16px;
+            }
+          }
+          li:not(:last-child) {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  // polarSlogan
+  #polarSlogan {
+    .polarSlogan {
+      width: 100%;
+      height: 220px;
+      font-size: $fs18;
+    }
+  }
+
+  //featured
+  #featured {
+    padding: 20px 0 10px 0;
+    .featuredHead {
+      font-size: $fs20;
+    }
+
+    .featuredCover {
+      .featuredItem {
+        .polarCard {
+          .polarCardHead {
+            height: 230px;
+          }
+
+          .polarCardContent {
+            padding: 6px 0;
+            .polarCardContentTop {
+              padding: 3px 0;
+              .polarCardContentTopName {
+                font-size: $fs16;
+              }
+              .polarCardContentTopPrice {
+                font-size: $fs18;
+              }
+            }
+
+            .polarCardContentBody {
+              padding: 4px 0;
+
+              .colorFeatures {
+                font-size: $fs14;
+                justify-content: space-between;
+                .colorFeaturesItem {
+                  padding-right: 5px;
+                }
+              }
+            }
+
+            .polarCardContentBottom {
+              padding: 6px 0;
+              .polarCardContentStorageCount {
+                font-size: $fs14;
+              }
+
+              .polarCardAddButton {
+                font-size: $fs18;
+                padding: 2px 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // advertising
+  #advertising {
+    margin-top: 10px;
+
+    .advertising {
+      padding-top: 20px;
+      padding-bottom: 60px;
+      .advertisingName {
+        font-size: $fs24;
+      }
+      .advertisingImg {
+        width: 180px;
+      }
+      .advertisingContent {
+        font-size: $fs16;
+      }
+    }
+  }
+
+  // suggestion
+  #suggestion {
+    .suggestion {
+      padding: 15px 0;
+      .suggestionName {
+        font-size: $fs20;
+      }
+      .suggestionBody {
+        margin-top: 15px;
+        .suggestionBodyContainer {
+          height: auto;
+          .suggestionBodyContainerLeft {
+            height: 200px;
+            width: 100%;
+            .suggestionBodyItemLeft {
+              padding: 5px;
+              .suggestionBodyItemPos {
+                padding: 3px 15px;
+                font-size: $fs16;
+              }
+            }
+          }
+          .suggestionBodyContainerRight {
+            height: auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            .suggestionBodyItemRight {
+              width: 50%;
+              height: 150px;
+              padding: 5px;
+              .suggestionBodyItemPos1 {
+                padding: 3px 15px;
+                font-size: $fs16;
+              }
+              .suggestionBodyItemPos2 {
+                padding: 3px 15px;
+                font-size: $fs16;
+              }
+              .suggestionBodyItemPos3 {
+                padding: 3px 15px;
+                font-size: $fs16;
+              }
+              .suggestionBodyItemPos4 {
+                padding: 3px 15px;
+                font-size: $fs16;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // polar video
+  #polarVideo {
+    padding-top: 15px;
+    .polarVideoHead {
+      font-size: $fs20;
+    }
+
+    .polarVideoCover {
+      .polarVideoItem {
+        height: 220px;
+      }
+    }
+  }
+
+  //partner
+  #partners {
+    padding: 20px 0 30px 0;
+    .partnersHead {
+      font-size: $fs20;
+    }
+    .partnersCover {
+      .partnersItem {
+        height: 90px;
+      }
+    }
+  }
+
+  // fouter
+  #fouter {
+    .fouter {
+      padding: 15px 0;
+      .fouterLogo {
+        svg {
+          width: 100px;
+        }
+      }
+
+      .fouterSocial {
+        margin-top: 20px;
+        .fouterSocialBox {
+          .fouterSocialItem {
+            width: 27px;
+            height: 27px;
+          }
+
+          .fouterSocialText {
+            font-size: $fs16;
+          }
+        }
+
+        .fouterSocialBox:not(:last-child) {
+          margin-right: 12px;
+        }
+      }
+
+      .fouterCopyright {
+        font-size: $fs14;
+      }
+    }
+  }
+
+  //about
+  #polarAbout {
+    background-image: none;
+    .polarAbout {
+      .aboutHead {
+        padding: 20px 0;
+
+        .aboutHeadLeft {
+          .aboutHeadLeftName {
+            font-size: $fs20;
+          }
+          .aboutHeadLeftContent {
+            font-size: $fs16;
+          }
+        }
+      }
+    }
+    .aboutCertificate {
+      .aboutCertificateName {
+        font-size: $fs20;
+        margin-bottom: 15px;
+      }
+      .swiper {
+        padding-bottom: 10px;
+      }
+
+      .swiper-slide {
+        height: 300px;
+      }
+    }
+  }
+
+  //products
+  #products {
+    .products {
+      .productsHead {
+        .productsHeadList {
+          li {
+            .categoryFilterItemBox {
+              .categoryFilterItem {
+                font-size: $fs14;
+                padding: 2px 10px;
+              }
+            }
+          }
+          li:not(:last-child) {
+            margin-right: 8px;
+          }
+        }
+      }
+      .productsBody {
+        margin-top: 10px;
+
+        .productsBodyProducts {
+          .productsItems {
+            width: 100%;
+            .polarCard {
+              .polarCardHead {
+                height: 240px;
+              }
+
+              .polarCardContent {
+                .polarCardContentTop {
+                  .polarCardContentTopName {
+                    font-size: $fs16;
+                  }
+                  .polarCardContentTopPrice {
+                    font-size: $fs18;
+                  }
+                }
+
+                .polarCardContentBody {
+                  .colorFeatures {
+                    font-size: $fs14;
+                    .colorFeaturesItem {
+                      padding-right: 5px;
+                    }
+                  }
+                }
+
+                .polarCardContentBottom {
+                  .polarCardContentStorageCount {
+                    font-size: $fs16;
+                  }
+
+                  .polarCardAddButton {
+                    font-size: $fs16;
+                    padding: 2px 16px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // contact
+  #contact {
+    .contact {
+      padding: 50px 0;
+
+      .contactHead {
+        h1 {
+          font-size: $fs22;
+        }
+        p {
+          font-size: $fs18;
+        }
+      }
+
+      .contactBody {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        .contactBody1 {
+          width: 100%;
+          padding: 0;
+          .contactItemDesing {
+            width: 100%;
+            input {
+              font-size: $fs16;
+            }
+          }
+        }
+        .contactBody1:not(:first-child) {
+          margin-top: 15px;
+        }
+        .contactBody2 {
+          padding: 0;
+          .contactItemDesing2 {
+            textarea {
+              font-size: $fs16;
+            }
+          }
+        }
+        .contactBody3 {
+          margin-top: 30px;
+          #sendPolar {
+            padding: 2px 25px;
+            font-size: $fs20;
+            box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+          }
+        }
+      }
+    }
+  }
+
+  // product page
+  #product {
+    padding: 20px 0 50px 0;
+
+    .product {
+      .productHead {
+        width: 100%;
+        .productName {
+          font-size: $fs20;
+          color: black;
+        }
+      }
+      .productLeft {
+        .productLeftImg {
+          height: 300px;
+        }
+      }
+
+      .productRight {
+        margin-top: 20px;
+        .color-select {
+          height: 50px;
+          span {
+            text-transform: uppercase;
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            cursor: pointer;
+            font-size: $fs16;
+            .colorBox {
+              width: 25px;
+              height: 25px;
+            }
+          }
+
+          ul {
+            top: 50px;
+            li {
+              width: 28px;
+              height: 28px;
+            }
+          }
+        }
+        .productRightWeight {
+          margin-top: 15px;
+          .productRightWeightName {
+            font-size: $fs18;
+          }
+          .productRightWeightList {
+            ul {
+              li {
+                .checkedCheckboxWeight {
+                  .checkboxMark {
+                    font-size: $fs16;
+                    padding: 6px 16px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .productStorage {
+          margin-top: 18px;
+          padding-bottom: 4px;
+        }
+
+        .productRightFeaturesList {
+          ul {
+            li {
+              .productRightFeaturesListLeft {
+                font-size: $fs16;
+              }
+              .productRightFeaturesListRight {
+                font-size: $fs16;
+              }
+            }
+            li:not(:first-child) {
+              margin-top: 6px;
+            }
+          }
+        }
+
+        .productRightFouter {
+          margin-top: 30px;
+
+          .productRightFouterUp {
+            .productRightFouterUpPrice {
+              font-size: $fs22;
+            }
+          }
+          .productRightFouterDown {
+            margin-top: 18px;
+            justify-content: center;
+            .productRightFouterCount {
+              margin-right: 10px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 5px 20px;
+              .productRightFouterCountNum {
+                width: 30px;
+                font-size: $fs20;
+                margin: 0 12px;
+              }
+              button {
+                width: 24px;
+                height: 24px;
+              }
+              button:hover {
+                cursor: pointer;
+                box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+              }
+            }
+
+            .polarCardProductAddButton {
+              font-size: $fs20;
+              padding: 3px 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // basket button
+  #polarBasket {
+    right: 8px;
+    width: 50px;
+    height: 50px;
+    @include transitionTime;
+    .polarBasketCountBlock {
+      top: -8px;
+      width: 20px;
+      height: 20px;
+      .polarBasketItemCount {
+        font-size: $fs14;
+      }
+    }
+  }
+
+  //basket page
+  #basket {
+    padding: 20px 0;
+    .basket {
+      .basketHead {
+        .basketHeadName {
+          font-size: $fs22;
+          padding: 12px 0;
+        }
+      }
+      .basketBody {
+        margin-top: 40px;
+        .basketBodyHead {
+          display: none;
+        }
+        .basketBodyList {
+          .basketMainList {
+            .basketMainListItem {
+              margin-top: 5px;
+            }
+          }
+          .basketMainListBlock {
+            padding: 12px 0;
+            align-items: start;
+
+            .basketMainListBlockItem {
+              position: relative;
+              .basketMainImg {
+                max-width: 90px;
+              }
+
+              .basketMainName {
+                width: 100%;
+                display: flex;
+                font-size: $fs14;
+                .basketMainName1 {
+                  display: none;
+                }
+                .basketMainName2 {
+                  margin-right: 3px;
+                }
+                .basketMainName3 {
+                  @include lineLimit;
+                }
+              }
+
+              .basketMainColorBlock {
+                width: 50%;
+                padding: 12px 0;
+                justify-content: left;
+
+                .basketMainColorText {
+                  display: block;
+                }
+
+                .basketMainColor {
+                  width: 21px;
+                  height: 21px;
+                }
+                .basketMainColorName {
+                  font-size: $fs14;
+                }
+              }
+
+              .basketMainWeight {
+                width: 50%;
+                padding: 12px 0;
+                justify-content: left;
+                font-size: $fs14;
+                .basketMainWeightName {
+                  display: block;
+                }
+              }
+
+              .basketMainPrice {
+                display: none;
+              }
+
+              .basketMainQuantity {
+                width: 50%;
+                justify-content: left;
+                .basketMainQuantityBlock {
+                  margin-right: 0;
+                  padding: 4px 16px;
+                  .basketMainQuantityCountNum {
+                    width: 15px;
+                    margin: 0 12px;
+                    font-size: $fs16;
+                  }
+                }
+              }
+
+              .basketMainPriceTotal {
+                width: 50%;
+                font-size: $fs14;
+                justify-content: right;
+              }
+
+              .basketMainDeleteButBlock {
+                .basketMainDeleteButton {
+                  position: absolute;
+                  top: 0;
+                  right: 0;
+                  width: 16px;
+                }
+              }
+            }
+
+            .basketMainListBlockItem:not(:last-child) {
+              padding-right: 0;
+            }
+
+            .basketMainListItemSize1 {
+              width: auto;
+            }
+
+            .basketMainListItemSize2 {
+              width: calc(100% - 102px);
+              flex-wrap: wrap;
+              padding-right: 0;
+            }
+
+            .basketMainListItemSize3 {
+              width: 0%;
+            }
+          }
+        }
+      }
+
+      .basketFouter {
+        margin-top: 45px;
+        .basketFouterTop {
+          .basketFouterTopBlock {
+            font-size: $fs16;
+
+            padding-bottom: 5px;
+          }
+          .basketFouterTopName {
+            margin-right: 10px;
+          }
+        }
+
+        .basketFouterBottom {
+          margin-top: 30px;
+
+          button {
+            font-size: $fs16;
+          }
+
+          .basketClearButton {
+            padding: 6px 15px;
+            margin-right: 12px;
+          }
+
+          .baskeConfirmButton {
+            padding: 6px 30px;
+          }
+        }
+      }
+    }
+  }
+
+  .swal2-popup {
+    font-size: $fs14 !important;
+  }
+
+  //home slider
+  .homeSlider {
+    height: 280px;
+    .caption {
+      padding-bottom: 0;
+      .caption-heading h1 {
+        font-size: $fs22;
+        width: 100%;
+        margin-bottom: 0.5rem;
+      }
+      .caption-subhead {
+        font-size: $fs16;
+        width: 100%;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .nav {
+      a {
+        width: 38px;
+        height: 38px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  // fouter
+  #fouter {
+    .fouter {
+      .fouterSocial {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .fouterSocialBox {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+        }
+
+        .fouterSocialBox:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  //products
+  #products {
+    .products {
+      .productsHead {
+        .productsHeadList {
+          justify-content: start;
+          li {
+            button {
+              font-size: $fs12;
+              padding: 1px 8px;
+            }
+          }
+          li:not(:last-child) {
+            margin-right: 7px;
+          }
+        }
+      }
+    }
+  }
+}
