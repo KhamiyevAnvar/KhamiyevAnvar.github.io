@@ -3247,7 +3247,7 @@ body {
     font-size: 20px;
   }
   #featured .featuredCover .featuredItem .polarCard .polarCardHead {
-    height: 230px;
+    height: 260px;
   }
   #featured .featuredCover .featuredItem .polarCard .polarCardContent {
     padding: 6px 0;
@@ -3424,7 +3424,7 @@ body {
     width: 100%;
   }
   #products .products .productsBody .productsBodyProducts .productsItems .polarCard .polarCardHead {
-    height: 240px;
+    height: 260px;
   }
   #products .products .productsBody .productsBodyProducts .productsItems .polarCard .polarCardContent .polarCardContentTop .polarCardContentTopName {
     font-size: 16px;
