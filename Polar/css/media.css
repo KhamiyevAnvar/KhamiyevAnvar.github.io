@@ -169,6 +169,9 @@
   #polarHeader .polarHeader .polarHeaderMiddle {
     display: none;
   }
+  #polarHeader .polarHeader .polarHeaderRight .polarMobileLanguageBlock {
+    display: flex;
+  }
   #polarHeader .polarHeader .polarHeaderRight .polarHeaderMenuButBlock {
     display: flex;
   }

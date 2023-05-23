@@ -3,6 +3,14 @@ $(window).on("load", function () {
     $(".polarloader").addClass("polarLoaderNone");
   }, 1000);
 });
+
+//  mobile select lang
+var cdrop = document.querySelector("#cdrop");
+
+$(".flaqLangItem").on("click", function updateCountry() {
+  cdrop.innerHTML = this.innerHTML;
+});
+
 $(function () {
   // select lang
   $(".polarLanguageSelect").select2();

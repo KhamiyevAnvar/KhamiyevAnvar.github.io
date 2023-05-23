@@ -111,6 +111,79 @@ body {
       display: flex;
       align-items: center;
 
+      //lang dropdown
+      .polarMobileLanguageBlock {
+        min-width: 70px;
+        position: relative;
+        margin-right: 15px;
+        display: none;
+        #cdrop {
+          width: 100%;
+          height: 40px;
+          background: none;
+          border: none;
+          outline: none;
+          padding: 4px 8px;
+          background-color: white;
+          overflow: hidden;
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          svg {
+            width: 34px;
+            height: 34px;
+            object-fit: contain;
+          }
+        }
+
+        #cdrop::after {
+          content: "";
+          display: inline-flex;
+          width: 15px;
+          height: 15px;
+          position: absolute;
+          top: 50%;
+          right: 5px;
+          transform: translateY(-50%);
+
+          background-image: url(../img/arrowVektorDown.png);
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .hovcard {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          display: none;
+          position: absolute;
+          top: 40px;
+          left: 0;
+          width: 100%;
+          background-color: white;
+          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.45);
+          border-radius: 2px;
+          padding: 2px 0;
+          .flaqLangItem {
+            display: flex;
+            justify-content: center;
+            padding: 2px;
+            svg {
+              width: 32px;
+              height: 32px;
+              object-fit: contain;
+            }
+          }
+          .flaqLangItem:hover {
+            cursor: pointer;
+            background-color: #f5f6ff;
+          }
+        }
+      }
+
+      .polarMobileLanguageBlock:hover .hovcard {
+        display: block;
+      }
+
       .polarHeaderSearchBlock {
         .polarHeaderSearch {
           display: inline-flex;
@@ -825,6 +898,7 @@ body {
       width: 100%;
       height: 300px;
       position: relative;
+      overflow: hidden;
       img {
         width: 100%;
         height: 100%;
@@ -836,14 +910,20 @@ body {
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.55);
+        background-color: rgba(0, 0, 0, 0.45);
         display: flex;
         justify-content: center;
         align-items: center;
+        @include transitionTime;
         svg {
           width: 20%;
-          fill: $col-main;
+          fill: rgba(250, 250, 250, 0.7);
         }
+      }
+    }
+    .polarVideoItem:hover {
+      .polarVideoPlay {
+        transform: scale(1.05);
       }
     }
   }
@@ -1193,9 +1273,9 @@ body {
           }
           .filterProductBut {
             position: absolute;
-            top: 20%;
+            top: 42%;
             right: -60px;
-            transform: translateY(-20%);
+            transform: translateY(-50%);
             width: 40px;
             height: 40px;
             background: none;
