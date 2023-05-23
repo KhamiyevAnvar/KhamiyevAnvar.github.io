@@ -702,6 +702,9 @@
   #featured .featuredHead {
     font-size: 20px;
   }
+  #featured .featuredCover .featuredItem .polarCard {
+    padding: 0 4px;
+  }
   #featured .featuredCover .featuredItem .polarCard .polarCardHead {
     height: 260px;
   }
@@ -813,6 +816,9 @@
   #polarVideo .polarVideoCover .polarVideoItem {
     height: 220px;
   }
+  #polarVideo .polarVideoCover .polarVideoItem .polarVideoPlay svg {
+    width: 15%;
+  }
   #partners {
     padding: 20px 0 30px 0;
   }
@@ -826,7 +832,7 @@
     padding: 15px 0;
   }
   #fouter .fouter .fouterLogo svg {
-    width: 100px;
+    width: 108px;
   }
   #fouter .fouter .fouterSocial {
     margin-top: 20px;
@@ -847,13 +853,13 @@
   #polarAbout {
     background-image: none;
   }
-  #polarAbout .polarAbout .aboutHead {
+  #polarAbout marg .polarAbout .aboutHead {
     padding: 20px 0;
   }
-  #polarAbout .polarAbout .aboutHead .aboutHeadLeft .aboutHeadLeftName {
+  #polarAbout marg .polarAbout .aboutHead .aboutHeadLeft .aboutHeadLeftName {
     font-size: 20px;
   }
-  #polarAbout .polarAbout .aboutHead .aboutHeadLeft .aboutHeadLeftContent {
+  #polarAbout marg .polarAbout .aboutHead .aboutHeadLeft .aboutHeadLeftContent {
     font-size: 16px;
   }
   #polarAbout .aboutCertificate .aboutCertificateName {
@@ -900,6 +906,9 @@
   #products .products .productsBody .productsBodyProducts .productsItems .polarCard .polarCardContent .polarCardContentBottom .polarCardAddButton {
     font-size: 16px;
     padding: 2px 16px;
+  }
+  #contact {
+    margin-bottom: 80px;
   }
   #contact .contact {
     padding: 50px 0;
