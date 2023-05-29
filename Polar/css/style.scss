@@ -533,6 +533,7 @@ body {
             background-color: $col-main;
             padding: 13px 25px;
             border-radius: 3px;
+            width: -moz-max-content;
             width: max-content;
             min-width: 80px;
             @include transitionTime;
