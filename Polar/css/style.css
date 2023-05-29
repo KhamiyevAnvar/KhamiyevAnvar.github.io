@@ -750,9 +750,9 @@ body {
   background-color: #b5a801;
   padding: 13px 25px;
   border-radius: 3px;
-  width: -moz-max-content;
   width: max-content;
-  min-width: 80px;
+  width: -moz-max-content;
+  min-width: 70px;
   transition: all ease 0.4s;
 }
 #polarCategory .polarCategory .polarCategoryBody ul li a:hover {
@@ -3311,7 +3311,7 @@ body {
     margin-top: 15px;
   }
   #polarCategory .polarCategory .polarCategoryBody .polarCategoryList {
-    padding-bottom: 0;
+    padding-bottom: 4px;
   }
   #polarCategory .polarCategory .polarCategoryBody .polarCategoryList::-webkit-scrollbar {
     display: none;

@@ -678,7 +678,7 @@
     margin-top: 15px;
   }
   #polarCategory .polarCategory .polarCategoryBody .polarCategoryList {
-    padding-bottom: 0;
+    padding-bottom: 4px;
   }
   #polarCategory .polarCategory .polarCategoryBody .polarCategoryList::-webkit-scrollbar {
     display: none;

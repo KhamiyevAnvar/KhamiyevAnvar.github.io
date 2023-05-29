@@ -533,10 +533,10 @@ body {
             background-color: $col-main;
             padding: 13px 25px;
             border-radius: 3px;
+            width: max-content;
             width: -webkit-max-content;
             width: -moz-max-content;
-            width: max-content;
-            min-width: 80px;
+            min-width: 70px;
             @include transitionTime;
           }
 
