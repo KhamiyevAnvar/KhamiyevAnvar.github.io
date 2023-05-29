@@ -249,14 +249,16 @@ $(function () {
   var myProductsData = JSON.parse(window.localStorage.getItem("myProducts"));
 
   var polarProduct = $("#product");
-  polarProduct.find(".productName").text(myProductsData.cartName);
-  polarProduct.find(".productImg").attr("src", myProductsData.cartSrc);
-  polarProduct
-    .find(".productRightFouterUpPriceCount")
-    .text(myProductsData.cartPrice);
-  polarProduct
-    .find(".productCountStorage")
-    .text(myProductsData.cartStorageCount);
+  if (polarProduct.length > 0) {
+    polarProduct.find(".productName").text(myProductsData.cartName);
+    polarProduct.find(".productImg").attr("src", myProductsData.cartSrc);
+    polarProduct
+      .find(".productRightFouterUpPriceCount")
+      .text(myProductsData.cartPrice);
+    polarProduct
+      .find(".productCountStorage")
+      .text(myProductsData.cartStorageCount);
+  }
   // color select
 
   $.fn.colorSelect = function () {
@@ -698,6 +700,7 @@ $(function () {
       $(".basketFouterTopTotalPriceCount").text(totalPrice + ".00");
     }
   }
+
   totalPriceCalc();
 
   if ($(".basketMainListItem").length == 0) {
