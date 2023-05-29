@@ -536,7 +536,7 @@ body {
             width: max-content;
             width: -webkit-max-content;
             width: -moz-max-content;
-            min-width: 70px;
+            // min-width: 70px;
             @include transitionTime;
           }
 

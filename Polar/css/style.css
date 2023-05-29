@@ -752,7 +752,6 @@ body {
   border-radius: 3px;
   width: max-content;
   width: -moz-max-content;
-  min-width: 70px;
   transition: all ease 0.4s;
 }
 #polarCategory .polarCategory .polarCategoryBody ul li a:hover {
