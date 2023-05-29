@@ -988,7 +988,7 @@
   #product .product .productRight .color-select ul {
     top: 50px;
   }
-  #product .product .productRight .color-select ul li {
+  #product .product .productRight .color-select ul li .dataColorV {
     width: 28px;
     height: 28px;
   }

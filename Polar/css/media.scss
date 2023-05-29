@@ -1336,8 +1336,10 @@
           ul {
             top: 50px;
             li {
-              width: 28px;
-              height: 28px;
+              .dataColorV {
+                width: 28px;
+                height: 28px;
+              }
             }
           }
         }
