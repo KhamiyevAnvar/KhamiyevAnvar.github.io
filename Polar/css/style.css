@@ -1531,6 +1531,7 @@ body {
   padding: 10px;
 }
 #products .products .productsBody .productsBodyProducts .productsItems .polarCard {
+  width: 100%;
   background-color: white;
 }
 #products .products .productsBody .productsBodyProducts .productsItems .polarCard .polarCardHead {
