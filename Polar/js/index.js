@@ -4,19 +4,19 @@ $(window).on("load", function () {
   }, 1000);
 });
 
-//  mobile select lang
-var cdrop = document.querySelector("#cdrop");
-
-$(".flaqLangItem").on("click", function updateCountry() {
-  cdrop.innerHTML = this.innerHTML;
-  $(".hovcard").removeClass("hovcard-active");
-});
-
-$("#cdrop").on("click", function () {
-  $(".hovcard").addClass("hovcard-active");
-});
-
 $(function () {
+  //  mobile select lang
+  var cdrop = $(".cdrop");
+
+  $(".flaqLangItem").on("click", function updateCountry() {
+    cdrop.html($(this).html());
+    $(".hovcard").removeClass("hovcard-active");
+  });
+
+  cdrop.click(function () {
+    $(".hovcard").toggleClass("hovcard-active");
+  });
+
   // select lang
   $(".polarLanguageSelect").select2();
 
@@ -922,66 +922,41 @@ if ($(".homeSlider").length > 0) {
   // }
 }
 
-// // filter products
-// function filterPolarProducts(c) {
-//   var x, i;
-//   x = document.getElementsByClassName("box");
-//   if (x == all) {
-//     c = " ";
-//   }
-//   for (i = 0; i < x.length; i++) {
-//     removeClass(x[i], "show");
-//   }
-// }
+$(".categoryFilterItemBox input").click(function () {
+  $(this).parents("li").siblings().find("input").removeClass("active");
+  $(this).addClass("active");
+  var categoryVal = "." + $(this).val();
+  if ($(this).hasClass("active")) {
+    $(".productsBodyProducts")
+      .find(".productsItems")
+      .removeClass("productShow");
+    $(".productsBodyProducts").find(categoryVal).addClass("productShow");
+    $(".productsItems:not('" + categoryVal + "')").slideUp("800");
+    $(".productShow").slideDown("800");
+  } else {
+    $(categoryVal).slideUp("800");
+    $(".productsBodyProducts").find(categoryVal).removeClass("productShow");
+  }
+});
 
-// $(".categoryFilterItemBox").click(function () {});
+// $(document).ready(function () {
+$(".checkedCheckboxComp input").click(function () {
+  $(this).toggleClass("active");
+  let buttonValue = "." + $(this).val();
+  console.log(buttonValue);
 
-// $(".checkedCheckboxComp").click(function () {
-//   let filterByName = document.getElementsByName("filterType");
-//   var productsItem = $(".productsItems");
-//   var filterNameArr = [];
-//   for (i = 0; i < filterByName.length; i++) {
-//     if (filterByName[i].checked == true) {
-//       filterNameArr.push(filterByName[i].value);
-//     }
-//   }
-
-//   for (t = 0; t < productsItem.length; t++) {
-//     for (a = 0; a < filterNameArr.length; a++) {
-//       // console.log(filterNameArr);
-//       if (filterNameArr[a] == productsItem.eq(t).attr("productType")) {
-//         // console.log(filterNameArr[a] == productsItem.eq(t).attr("productType"));
-//         productsItem.eq(t).removeClass("productNone");
-//         productsItem.eq(t).addClass("productShow");
-
-//         // console.log(filterNameArr);
-//       } else {
-//         console.log(filterNameArr[a]);
-//         productsItem.eq(t).removeClass("productShow");
-//         productsItem.eq(t).addClass("productNone");
-
-//         // console.log(false);
-//       }
-//     }
-//   }
-//   // var filterOptionsArrRemove = [];
-//   // for (a = 0; a < productsItem.length; a++) {
-//   // if (productsItem.eq(a).attr("productType") == filterByName[i].value) {
-//   //   filterOptionsArr.push(a);
-//   //   console.log(a);
-//   //   filterOptionsArr.forEach(function (x) {
-//   //     productsItem.eq(x).removeClass("productNone");
-//   //     productsItem.eq(x).addClass("productShow");
-//   //     // console.log(filterOptionsArr);
-//   //   });
-//   // } else {
-//   //   // filterOptionsArrRemove.push(a);
-//   //   // filterOptionsArrRemove.forEach(function (t) {
-//   //   productsItem.eq(a).removeClass("productShow");
-//   //   productsItem.eq(a).addClass("productNone");
-//   //   //   });
-//   // }
-//   // console.log(filterOptionsArr);
-//   // console.log(filterOptionsArrRemove);
-//   // }
-// });
+  if ($(this).hasClass("active")) {
+    $(".productsBodyProducts").find(buttonValue).addClass("productShow");
+    $(".productsItems:not(.productShow)").slideUp("800");
+    $(".productShow").slideDown("800");
+  } else {
+    $(buttonValue).slideUp("800");
+    $(".productsBodyProducts").find(buttonValue).removeClass("productShow");
+  }
+  if ($(".checkedCheckboxComp input:checkbox:checked").length == 0) {
+    $(".productsItems").slideDown("800");
+    $(".productsBodyProducts")
+      .find(".productsItems")
+      .removeClass("productShow");
+  }
+});

@@ -52,6 +52,7 @@ body {
       display: flex;
       align-items: center;
     }
+
     .polarHeaderMiddle {
       display: flex;
       .polarHeaderMenuList {
@@ -100,24 +101,19 @@ body {
       }
       .polarLanguageBlock {
         margin-left: 15px;
+        display: none;
         .polarLanguageSelect {
           width: 100px;
           min-width: 70px;
           text-transform: uppercase;
         }
       }
-    }
-    .polarHeaderRight {
-      display: flex;
-      align-items: center;
-
-      //lang dropdown
       .polarMobileLanguageBlock {
         min-width: 70px;
         position: relative;
-        margin-right: 15px;
-        display: none;
-        #cdrop {
+        margin-left: 15px;
+
+        .cdrop {
           width: 100%;
           height: 40px;
           background: none;
@@ -136,7 +132,84 @@ body {
           }
         }
 
-        #cdrop::after {
+        .cdrop::after {
+          content: "";
+          display: inline-flex;
+          width: 15px;
+          height: 15px;
+          position: absolute;
+          top: 50%;
+          right: 5px;
+          transform: translateY(-50%);
+
+          background-image: url(../img/arrowVektorDown.png);
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .hovcard {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          display: none;
+          position: absolute;
+          top: 40px;
+          left: 0;
+          width: 100%;
+          background-color: white;
+          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.45);
+          border-radius: 2px;
+          padding: 2px 0;
+          .flaqLangItem {
+            display: flex;
+            justify-content: center;
+            padding: 2px;
+            svg {
+              width: 32px;
+              height: 32px;
+              object-fit: contain;
+            }
+          }
+          .flaqLangItem:hover {
+            cursor: pointer;
+            background-color: #f5f6ff;
+          }
+        }
+        .hovcard-active {
+          display: block;
+        }
+      }
+    }
+
+    .polarHeaderRight {
+      display: flex;
+      align-items: center;
+
+      //lang dropdown
+      .polarMobileLanguageBlock {
+        min-width: 70px;
+        position: relative;
+        margin-right: 15px;
+        display: none;
+        .cdrop {
+          width: 100%;
+          height: 40px;
+          background: none;
+          border: none;
+          outline: none;
+          padding: 4px 8px;
+          background-color: white;
+          overflow: hidden;
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          svg {
+            width: 34px;
+            height: 34px;
+            object-fit: contain;
+          }
+        }
+
+        .cdrop::after {
           content: "";
           display: inline-flex;
           width: 15px;
@@ -1428,11 +1501,11 @@ body {
         // .productAll {
         //   display: flex;
         // }
-        .productNone {
-          display: none !important;
-        }
+        // .productNone {
+        //   display: none !important;
+        // }
         .productShow {
-          display: flex !important;
+          display: flex;
         }
       }
     }
@@ -1452,8 +1525,8 @@ body {
         font-size: $fs40;
         color: #000;
       }
-      p {
-        margin-top: 5px;
+      h2 {
+        margin-top: 12px;
         font-family: PoppinsRegular;
         font-size: $fs22;
         color: #000;

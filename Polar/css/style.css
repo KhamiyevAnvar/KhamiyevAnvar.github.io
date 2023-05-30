@@ -356,23 +356,19 @@ body {
 }
 #polarHeader .polarHeader .polarHeaderMiddle .polarLanguageBlock {
   margin-left: 15px;
+  display: none;
 }
 #polarHeader .polarHeader .polarHeaderMiddle .polarLanguageBlock .polarLanguageSelect {
   width: 100px;
   min-width: 70px;
   text-transform: uppercase;
 }
-#polarHeader .polarHeader .polarHeaderRight {
-  display: flex;
-  align-items: center;
-}
-#polarHeader .polarHeader .polarHeaderRight .polarMobileLanguageBlock {
+#polarHeader .polarHeader .polarHeaderMiddle .polarMobileLanguageBlock {
   min-width: 70px;
   position: relative;
-  margin-right: 15px;
-  display: none;
+  margin-left: 15px;
 }
-#polarHeader .polarHeader .polarHeaderRight .polarMobileLanguageBlock #cdrop {
+#polarHeader .polarHeader .polarHeaderMiddle .polarMobileLanguageBlock .cdrop {
   width: 100%;
   height: 40px;
   background: none;
@@ -385,13 +381,87 @@ body {
   justify-content: left;
   align-items: center;
 }
-#polarHeader .polarHeader .polarHeaderRight .polarMobileLanguageBlock #cdrop svg {
+#polarHeader .polarHeader .polarHeaderMiddle .polarMobileLanguageBlock .cdrop svg {
   width: 34px;
   height: 34px;
   -o-object-fit: contain;
      object-fit: contain;
 }
-#polarHeader .polarHeader .polarHeaderRight .polarMobileLanguageBlock #cdrop::after {
+#polarHeader .polarHeader .polarHeaderMiddle .polarMobileLanguageBlock .cdrop::after {
+  content: "";
+  display: inline-flex;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  background-image: url(../img/arrowVektorDown.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#polarHeader .polarHeader .polarHeaderMiddle .polarMobileLanguageBlock .hovcard {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+  padding: 2px 0;
+}
+#polarHeader .polarHeader .polarHeaderMiddle .polarMobileLanguageBlock .hovcard .flaqLangItem {
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+}
+#polarHeader .polarHeader .polarHeaderMiddle .polarMobileLanguageBlock .hovcard .flaqLangItem svg {
+  width: 32px;
+  height: 32px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#polarHeader .polarHeader .polarHeaderMiddle .polarMobileLanguageBlock .hovcard .flaqLangItem:hover {
+  cursor: pointer;
+  background-color: #f5f6ff;
+}
+#polarHeader .polarHeader .polarHeaderMiddle .polarMobileLanguageBlock .hovcard-active {
+  display: block;
+}
+#polarHeader .polarHeader .polarHeaderRight {
+  display: flex;
+  align-items: center;
+}
+#polarHeader .polarHeader .polarHeaderRight .polarMobileLanguageBlock {
+  min-width: 70px;
+  position: relative;
+  margin-right: 15px;
+  display: none;
+}
+#polarHeader .polarHeader .polarHeaderRight .polarMobileLanguageBlock .cdrop {
+  width: 100%;
+  height: 40px;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 4px 8px;
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+#polarHeader .polarHeader .polarHeaderRight .polarMobileLanguageBlock .cdrop svg {
+  width: 34px;
+  height: 34px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#polarHeader .polarHeader .polarHeaderRight .polarMobileLanguageBlock .cdrop::after {
   content: "";
   display: inline-flex;
   width: 15px;
@@ -1557,11 +1627,8 @@ body {
   box-shadow: 0 0 7px #b5a801;
   cursor: pointer;
 }
-#products .products .productsBody .productsBodyProducts .productNone {
-  display: none !important;
-}
 #products .products .productsBody .productsBodyProducts .productShow {
-  display: flex !important;
+  display: flex;
 }
 
 #contact .contact {
@@ -1577,8 +1644,8 @@ body {
   font-size: 40px;
   color: #000;
 }
-#contact .contact .contactHead p {
-  margin-top: 5px;
+#contact .contact .contactHead h2 {
+  margin-top: 12px;
   font-family: PoppinsRegular;
   font-size: 22px;
   color: #000;
@@ -2770,7 +2837,7 @@ body {
   #contact .contact .contactHead h1 {
     font-size: 32px;
   }
-  #contact .contact .contactHead p {
+  #contact .contact .contactHead h2 {
     font-size: 22px;
   }
   #contact .contact .contactBody {
@@ -3080,7 +3147,7 @@ body {
   #contact .contact .contactHead h1 {
     font-size: 28px;
   }
-  #contact .contact .contactHead p {
+  #contact .contact .contactHead h2 {
     font-size: 20px;
   }
   #contact .contact .contactBody .contactBody1 {
@@ -3563,7 +3630,7 @@ body {
   #contact .contact .contactHead h1 {
     font-size: 22px;
   }
-  #contact .contact .contactHead p {
+  #contact .contact .contactHead h2 {
     font-size: 18px;
   }
   #contact .contact .contactBody {
