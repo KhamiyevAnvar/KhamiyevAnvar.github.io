@@ -929,13 +929,13 @@ $(".categoryFilterItemBox input").click(function () {
   if ($(this).hasClass("active")) {
     $(".productsBodyProducts")
       .find(".productsItems")
-      .removeClass("productShow");
-    $(".productsBodyProducts").find(categoryVal).addClass("productShow");
+      .removeClass("productShow2");
+    $(".productsBodyProducts").find(categoryVal).addClass("productShow2");
     $(".productsItems:not('" + categoryVal + "')").slideUp("800");
-    $(".productShow").slideDown("800");
+    $(".productShow2").slideDown("800");
   } else {
     $(categoryVal).slideUp("800");
-    $(".productsBodyProducts").find(categoryVal).removeClass("productShow");
+    $(".productsBodyProducts").find(categoryVal).removeClass("productShow2");
   }
 });
 
@@ -943,8 +943,6 @@ $(".categoryFilterItemBox input").click(function () {
 $(".checkedCheckboxComp input").click(function () {
   $(this).toggleClass("active");
   let buttonValue = "." + $(this).val();
-  console.log(buttonValue);
-
   if ($(this).hasClass("active")) {
     $(".productsBodyProducts").find(buttonValue).addClass("productShow");
     $(".productsItems:not(.productShow)").slideUp("800");

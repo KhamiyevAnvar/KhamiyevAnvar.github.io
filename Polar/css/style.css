@@ -1630,6 +1630,9 @@ body {
 #products .products .productsBody .productsBodyProducts .productShow {
   display: flex;
 }
+#products .products .productsBody .productsBodyProducts .productShow2 {
+  display: flex;
+}
 
 #contact .contact {
   padding: 100px 0;
