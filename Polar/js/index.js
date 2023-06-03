@@ -17,9 +17,6 @@ $(function () {
     $(".hovcard").toggleClass("hovcard-active");
   });
 
-  // select lang
-  $(".polarLanguageSelect").select2();
-
   // menu but
   var menuBut = $(".polarMenuBut");
   var menuCloseBut = $(".mobileCloseBut");
