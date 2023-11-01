@@ -80,6 +80,9 @@
   .mobileMenu {
     display: block;
   }
+  #headCover .headCover .headCoverItem {
+    height: 320px;
+  }
   #about {
     margin-top: 50px;
   }
@@ -306,8 +309,71 @@
     padding-left: 10px;
     padding-right: 10px;
   }
+  #blogPage {
+    margin-top: 60px;
+  }
+  #blogPage .blogPageHead {
+    font-size: 26px;
+    margin-bottom: 18px;
+  }
+  #blogPage .blogPageSubtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+    width: 80%;
+  }
+  #blogPage .blogPageBody {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  #blogPage .blogPageBody .col-lg-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #blogPage .blogMore {
+    margin-top: 35px;
+  }
+  #blogPage .blogMore .moreBlogs {
+    font-size: 18px;
+  }
+  #singleBlog {
+    margin-top: 20px;
+  }
+  #singleBlog .singleBlog .singleBlogImg {
+    height: 300px;
+  }
+  #singleBlog .singleBlog .singleBlogContent .singleBlogContentName {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+  #singleBlog .singleBlog .singleBlogContent .singleBlogContentText {
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  #singleBlogAdversiting {
+    margin-top: 60px;
+  }
+  #singleBlogAdversiting .singleBlogAdversitingBody {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  #singleBlogAdversiting .singleBlogAdversitingBody .col-lg-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #singleBlogAdversiting .blogMore {
+    margin-top: 35px;
+  }
+  #singleBlogAdversiting .blogMore .moreBlogs {
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 767.9px) {
+  #carsHeader .carsHeader {
+    padding: 0 5px;
+  }
+  #headCover .headCover .headCoverItem {
+    height: 250px;
+  }
   .carsButDes {
     min-width: 150px;
     font-size: 16px;
@@ -645,6 +711,63 @@
   #findCarBlog .findCarBlogBody .col-lg-4 {
     padding-left: 5px;
     padding-right: 5px;
+  }
+  #blogPage {
+    margin-top: 50px;
+  }
+  #blogPage .blogPageHead {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  #blogPage .blogPageSubtitle {
+    font-size: 16px;
+    margin-bottom: 25px;
+    width: 90%;
+  }
+  #blogPage .blogPageBody {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  #blogPage .blogPageBody .col-lg-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #blogPage .blogMore {
+    margin-top: 28px;
+  }
+  #blogPage .blogMore .moreBlogs {
+    font-size: 16px;
+  }
+  #singleBlogAdversiting {
+    margin-top: 25px;
+  }
+  #singleBlogAdversiting .singleBlogAdversitingBody {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  #singleBlogAdversiting .singleBlogAdversitingBody .col-lg-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #singleBlogAdversiting .blogMore {
+    margin-top: 28px;
+  }
+  #singleBlogAdversiting .blogMore .moreBlogs {
+    font-size: 16px;
+  }
+  #singleBlog {
+    margin-top: 15px;
+  }
+  #singleBlog .singleBlog .singleBlogImg {
+    height: 240px;
+  }
+  #singleBlog .singleBlog .singleBlogContent .singleBlogContentName {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  #singleBlog .singleBlog .singleBlogContent .singleBlogContentText {
+    font-size: 16px;
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 575px) {

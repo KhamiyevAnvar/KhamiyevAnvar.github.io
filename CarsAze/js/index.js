@@ -16,7 +16,7 @@ $(function () {
     $(".headCover").owlCarousel({
       // rtl: true,
       loop: true,
-      margin: 15,
+      margin: 0,
       nav: false,
       dots: false,
       smartSpeed: 1500, //smooth effect
