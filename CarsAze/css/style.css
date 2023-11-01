@@ -1,0 +1,1768 @@
+@font-face {
+  font-family: MontserratRegular;
+  src: url(fonts/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: MontserratMedium;
+  src: url(fonts/Montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: MontserratSemibold;
+  src: url(fonts/Montserrat/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: MontserratBold;
+  src: url(fonts/Montserrat/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: PoppinsLight;
+  src: url(fonts/Poppins/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: PoppinsBold;
+  src: url(fonts//Poppins/Poppins-Bold.ttf);
+}
+.list_reset {
+  list-style-type: none;
+  margin: 0;
+}
+
+.button_reset {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html ::-webkit-scrollbar {
+  width: 0.45vw !important;
+}
+html ::-webkit-scrollbar-track {
+  background-color: #7d7a7a;
+}
+html ::-webkit-scrollbar-thumb {
+  background-color: #228bde;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+html ::-webkit-scrollbar-thumb:hover {
+  background-color: #228bde;
+  opacity: 0.5;
+  margin: 1px 0;
+}
+
+#carsHeader {
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+#carsHeader .carsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+#carsHeader .carsHeader .carsHeaderLeft {
+  display: flex;
+  align-items: center;
+}
+#carsHeader .carsHeader .carsHeaderLeft .carsHeaderLogo {
+  width: 90px;
+}
+#carsHeader .carsHeader .carsHeaderLeft .carsHeaderLogo img {
+  width: 100%;
+  height: auto;
+}
+#carsHeader .carsHeader .carsHeaderRight {
+  display: flex;
+  align-items: center;
+}
+#carsHeader .carsHeader .carsHeaderRight .carsHeaderMenuButBlock {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#carsHeader .carsHeader .carsHeaderRight .carsHeaderMenuButBlock .carsMenuBut {
+  background: none;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  background-color: #228bde;
+  border-radius: 5px;
+  width: 34px;
+  height: 32px;
+  transition: all ease 0.4s;
+}
+#carsHeader .carsHeader .carsHeaderRight .carsHeaderMenuButBlock .carsMenuBut span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  transition: all ease 0.4s;
+}
+#carsHeader .carsHeader .carsHeaderRight .carsHeaderMenuButBlock .carsMenuBut span:not(:last-child) {
+  margin-bottom: 4px;
+}
+#carsHeader .carsHeader .carsHeaderRight .carsHeaderMenuButBlock .carsMenuBut:hover {
+  background-color: white;
+  box-shadow: 0 0 4px 1px #228bde;
+}
+#carsHeader .carsHeader .carsHeaderRight .carsHeaderMenuButBlock .carsMenuBut:hover span {
+  background-color: #228bde;
+}
+#carsHeader .carsHeader .carsHeaderRight .carsHeaderMenuList {
+  font-family: MontserratSemibold;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+#carsHeader .carsHeader .carsHeaderRight .carsHeaderMenuList li {
+  transition: all ease 0.4s;
+  margin-right: 30px;
+}
+#carsHeader .carsHeader .carsHeaderRight .carsHeaderMenuList li a {
+  transition: all ease 0.4s;
+  text-decoration: none;
+  color: black;
+}
+#carsHeader .carsHeader .carsHeaderRight .carsHeaderMenuList li:hover {
+  transform: scale(1.02);
+}
+#carsHeader .carsHeader .carsHeaderRight .carsHeaderMenuList li:hover a {
+  color: #228bde;
+}
+#carsHeader .carsHeader .carsHeaderRight .carsHeaderMenuList .active a {
+  color: #228bde;
+}
+#carsHeader .carsHeader .carsHeaderRight .carsHeaderSocial {
+  display: flex;
+}
+#carsHeader .carsHeader .carsHeaderRight .carsHeaderSocial .carsHeaderSocialDesing {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #228bde;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  transition: all ease 0.7s;
+}
+#carsHeader .carsHeader .carsHeaderRight .carsHeaderSocial .carsHeaderSocialDesing svg {
+  width: 57%;
+  height: 57%;
+}
+#carsHeader .carsHeader .carsHeaderRight .carsHeaderSocial .carsHeaderSocialDesing svg path {
+  transition: all ease 0.7s;
+}
+#carsHeader .carsHeader .carsHeaderRight .carsHeaderSocial .carsHeaderSocialDesing:hover {
+  background-color: white;
+  border: 1px solid #228bde;
+  box-shadow: 0 0 2px 0 gray;
+}
+#carsHeader .carsHeader .carsHeaderRight .carsHeaderSocial .carsHeaderSocialDesing:hover svg path {
+  fill: #228bde;
+}
+#carsHeader .carsHeader .carsHeaderRight .carsHeaderSocial .carsHeaderSocialDesing:not(:last-child) {
+  margin-right: 10px;
+}
+
+.mobileMenu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 0 15px;
+  transition: all ease 0.5s;
+}
+.mobileMenu .mobileMenuHead {
+  padding: 20px 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobileMenu .mobileMenuHead .mobileHeaderLogo {
+  width: 85px;
+  display: flex;
+}
+.mobileMenu .mobileMenuHead .mobileHeaderLogo img {
+  width: 100%;
+}
+.mobileMenu .mobileMenuHead .mobileCloseBut {
+  border: none;
+  outline: none;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+  background-color: #228bde;
+  border-radius: 50%;
+  transition: all ease 0.4s;
+}
+.mobileMenu .mobileMenuHead .mobileCloseBut svg {
+  width: 25px;
+  height: 25px;
+  fill: white;
+  transition: all ease 0.4s;
+}
+.mobileMenu .mobileMenuHead .mobileCloseBut:hover {
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 0 0 4px 1px #228bde;
+}
+.mobileMenu .mobileMenuHead .mobileCloseBut:hover svg {
+  fill: #228bde;
+}
+.mobileMenu .mobileMenuList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+}
+.mobileMenu .mobileMenuList .mobileMenuListItem {
+  font-family: MontserratBold;
+  font-size: 22px;
+  line-height: 33px;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0;
+  position: relative;
+}
+.mobileMenu .mobileMenuList .mobileMenuListItem a {
+  text-decoration: none;
+  color: #000;
+  transition: all ease 0.4s;
+}
+.mobileMenu .mobileMenuList .mobileMenuListItem a::after {
+  content: "";
+  display: flex;
+  margin-top: 5px;
+  width: 0%;
+  height: 3px;
+  background-color: #228bde;
+  transition: all ease 0.4s;
+}
+.mobileMenu .mobileMenuList .mobileMenuListItem:hover a::after {
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 3px;
+  background-color: #228bde;
+}
+.mobileMenu .mobileMenuList .active a::after {
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 3px;
+  background-color: #228bde;
+}
+.mobileMenu .mobileMenuList .mobileMenuListItem:not(:last-child) {
+  margin-bottom: 15px;
+}
+.mobileMenu .mobileSocial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.mobileMenu .mobileSocial .mobileSocialItem {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #228bde;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  transition: all ease 0.7s;
+}
+.mobileMenu .mobileSocial .mobileSocialItem svg {
+  width: 60%;
+  height: 60%;
+}
+.mobileMenu .mobileSocial .mobileSocialItem svg path {
+  transition: all ease 0.7s;
+}
+.mobileMenu .mobileSocial .mobileSocialItem:hover {
+  background-color: white;
+  border: 1px solid #228bde;
+  box-shadow: 0 0 2px 0 gray;
+}
+.mobileMenu .mobileSocial .mobileSocialItem:hover svg path {
+  fill: #228bde;
+}
+.mobileMenu .mobileSocial .mobileSocialItem:not(:last-child) {
+  margin-right: 14px;
+}
+
+.mobileMenuNone {
+  visibility: hidden;
+  left: -5000px;
+  transition: all ease 2s;
+}
+
+#headCover .headCover .headCoverItem {
+  min-height: 300px;
+  height: 300px;
+}
+#headCover .headCover .headCoverItem img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.carsButDes {
+  border: none;
+  outline: none;
+  background: none;
+  min-width: 200px;
+  background: #228bde;
+  color: #fff;
+  border-radius: 8px;
+  font-family: MontserratBold;
+  font-size: 20px;
+  padding: 12px 30px;
+  box-shadow: 0px 4px 50px 0px rgba(0, 0, 0, 0.2509803922);
+  transition: all ease 0.6s;
+}
+
+.carsButDes:hover {
+  color: #228bde;
+  background: white;
+  box-shadow: 0px 4px 20px 0px #228bde;
+}
+
+#about {
+  margin-top: 100px;
+}
+#about .about {
+  background-color: #dafffb;
+  border-radius: 29px;
+}
+#about .about .aboutLeft {
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+#about .about .aboutLeft .aboutLeftName {
+  font-family: MontserratBold;
+  font-size: 28px;
+}
+#about .about .aboutLeft .aboutLeftContent {
+  margin-top: 15px;
+  font-family: MontserratRegular;
+  color: #7d7a7a;
+  font-size: 18px;
+  -webkit-line-clamp: 4 !important;
+  -webkit-box-orient: vertical !important;
+  display: -webkit-box !important;
+  overflow: hidden !important;
+}
+#about .about .aboutLeft .aboutLeftButton {
+  margin-top: 40px;
+}
+#about .about .aboutRight {
+  display: flex;
+  justify-content: center;
+  width: 350px;
+  height: 350px;
+  position: relative;
+  top: -50px;
+}
+#about .about .aboutRight img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#about1 {
+  margin-top: 100px;
+}
+#about1 .about1 {
+  background-color: #dafffb;
+  border-radius: 29px;
+}
+#about1 .about1 .about1Left {
+  display: flex;
+  justify-content: center;
+  width: 550px;
+  height: 350px;
+}
+#about1 .about1 .about1Left img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#about1 .about1 .about1Right {
+  padding: 30px 30px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+#about1 .about1 .about1Right .about1RightName {
+  font-family: MontserratBold;
+  font-size: 28px;
+}
+#about1 .about1 .about1Right .about1RightContent {
+  margin-top: 15px;
+  font-family: MontserratRegular;
+  color: #7d7a7a;
+  font-size: 18px;
+  -webkit-line-clamp: 4 !important;
+  -webkit-box-orient: vertical !important;
+  display: -webkit-box !important;
+  overflow: hidden !important;
+}
+#about1 .about1 .about1Right .about1RightButton {
+  margin-top: 40px;
+}
+
+#blog {
+  margin-top: 70px;
+}
+#blog .blogHead {
+  font-family: MontserratBold;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+#blog .blogSubtitle {
+  font-family: MontserratRegular;
+  font-size: 18px;
+  color: #7d7a7a;
+  margin-bottom: 35px;
+  width: 40%;
+}
+#blog .blogBody {
+  margin-left: -25px;
+  margin-right: -25px;
+}
+#blog .blogBody .col-lg-4 {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+#blog .blogMore {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+#blog .blogMore .moreBlogs {
+  text-decoration: none;
+  font-family: MontserratRegular;
+  font-size: 18px;
+  color: #228bde;
+  border-bottom: 1px solid #228bde;
+}
+
+.blogItem {
+  border: 2px solid #eaeaea;
+  padding: 10px;
+  border-radius: 29px;
+  margin-top: 15px;
+  transition: all ease 0.4s;
+}
+.blogItem .blogItemImg {
+  display: flex;
+  border: 3px solid #eaeaea;
+  border-radius: 21px;
+  overflow: hidden;
+  height: 200px;
+  text-decoration: none;
+}
+.blogItem .blogItemImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all ease 0.4s;
+}
+.blogItem .blogItemBody {
+  margin-top: 30px;
+  padding: 0 10px;
+  padding-bottom: 20px;
+}
+.blogItem .blogItemBody .blogItemBodyName {
+  text-decoration: none;
+  font-family: MontserratBold;
+  font-size: 20px;
+  color: #000;
+}
+.blogItem .blogItemBody .blogItemBodyContent {
+  margin-top: 7px;
+  font-family: MontserratRegular;
+  font-size: 18px;
+  color: #7d7a7a;
+  -webkit-line-clamp: 2 !important;
+  -webkit-box-orient: vertical !important;
+  display: -webkit-box !important;
+  overflow: hidden !important;
+}
+.blogItem .blogItemBody .blogItemBodyDate {
+  margin-top: 10px;
+  font-family: MontserratRegular;
+  font-size: 16px;
+  color: #7d7a7a;
+}
+
+.blogItem:hover {
+  box-shadow: 0 -9px 20px 1px #eaeaea;
+}
+.blogItem:hover .blogItemImg img {
+  transform: scale(1.05);
+}
+
+#partners {
+  margin-top: 50px;
+}
+#partners .partnersHead {
+  font-family: MontserratBold;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+#partners .partnersSubtitle {
+  font-family: MontserratRegular;
+  font-size: 18px;
+  color: #7d7a7a;
+  margin-bottom: 35px;
+}
+#partners .partnersCover .partnersItem {
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
+}
+#partners .partnersCover .partnersItem img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#requestForm {
+  margin-top: 50px;
+  background-color: #dafffb;
+  padding: 35px 0 45px 0;
+}
+#requestForm .requestFormHead {
+  font-family: MontserratBold;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+#requestForm .requestFormSubtitle {
+  font-family: MontserratRegular;
+  font-size: 18px;
+  color: #7d7a7a;
+  margin-bottom: 35px;
+  width: 60%;
+}
+#requestForm .requestFormMain {
+  margin-top: 15px;
+}
+#requestForm .requestFormMain .row {
+  margin: -20px;
+}
+#requestForm .requestFormMain .row .col-lg-5 {
+  padding: 20px;
+}
+#requestForm .requestFormMain .row .col-lg-7 {
+  padding: 20px;
+}
+#requestForm .requestFormMain .requestFormMainLeft .requestFormMainInputDes {
+  width: 100%;
+  height: 50px;
+  background: white;
+  padding: 0 15px;
+  font-family: MontserratRegular;
+  font-size: 16px;
+  color: #858585;
+  margin-bottom: 20px;
+}
+#requestForm .requestFormMain .requestFormMainLeft .requestFormMainInputDes input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+#requestForm .requestFormMain .requestFormMainLeft .requestFormMainInputDes ::-moz-placeholder {
+  color: #858585;
+}
+#requestForm .requestFormMain .requestFormMainLeft .requestFormMainInputDes ::placeholder {
+  color: #858585;
+}
+#requestForm .requestFormMain .requestFormMainRight {
+  height: 190px;
+  background: white;
+  padding: 10px 15px;
+  font-family: MontserratRegular;
+  font-size: 16px;
+  color: #858585;
+}
+#requestForm .requestFormMain .requestFormMainRight textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  resize: none;
+}
+#requestForm .requestFormMain .requestFormMainRight ::-moz-placeholder {
+  color: #858585;
+}
+#requestForm .requestFormMain .requestFormMainRight ::placeholder {
+  color: #858585;
+}
+#requestForm .requestFormMain .requestFormButton {
+  margin-top: 10px;
+}
+#requestForm .requestFormMain .requestFormButton .carsButDes {
+  min-width: 180px;
+}
+
+#map {
+  margin-top: 50px;
+  padding-bottom: 20px;
+}
+#map .mapHead {
+  font-family: MontserratBold;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+#map .mapSubtitle {
+  font-family: MontserratRegular;
+  font-size: 18px;
+  color: #7d7a7a;
+  margin-bottom: 35px;
+  width: 60%;
+}
+#map .locationMap {
+  margin-top: 10px;
+  width: 100%;
+  height: 500px;
+}
+
+.ff-bold {
+  font-family: MontserratBold;
+}
+
+.footer {
+  margin-top: 30px;
+  background-color: #0060ce;
+  color: #fff;
+  padding: 25px 0;
+}
+.footer .footer1 .footer1Head .footer1Head1 {
+  font-family: MontserratBold;
+  font-size: 22px;
+}
+.footer .footer1 .footer1Head .footer1Head2 {
+  font-family: MontserratRegular;
+  font-size: 18px;
+}
+.footer .footer1 .footer1Img {
+  margin-top: 15px;
+  width: 100px;
+}
+.footer .footer1 .footer1Img img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.footer .footer1 .footer1Reserved {
+  margin-top: 15px;
+  font-family: MontserratRegular;
+  font-size: 16px;
+}
+.footer .footer1 .footer1Developed {
+  margin-top: 20px;
+  font-family: MontserratRegular;
+  font-size: 16px;
+}
+.footer .footer1 .footer1Developed a {
+  text-decoration: none;
+  color: #fff;
+}
+.footer .footer2 .footer2Name {
+  font-family: MontserratRegular;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.footer .footer2 .footer2List {
+  padding-left: 0;
+  margin-top: 8px;
+}
+.footer .footer2 .footer2List .footer2ListItem {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+}
+.footer .footer2 .footer2List .footer2ListItem .footer2ListItemIcon {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+.footer .footer2 .footer2List .footer2ListItem .footer2ListItemIcon svg {
+  fill: white;
+  width: 80%;
+  height: 80%;
+}
+.footer .footer2 .footer2List .footer2ListItem .footer2ListItemText {
+  color: 18px;
+  color: #fff;
+  font-family: MontserratRegular;
+  text-decoration: none;
+  color: #fff;
+  transition: all ease 0.4s;
+}
+.footer .footer2 .footer2List .footer2ListItem .footer2ListItemText:hover {
+  color: rgba(255, 255, 255, 0.7);
+  transform: scale(1.01);
+}
+.footer .footer3 .footer3Name {
+  font-family: MontserratRegular;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.footer .footer3 .footer3List {
+  padding-left: 0;
+  margin-top: 8px;
+}
+.footer .footer3 .footer3List .footer3ListItem {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+  color: 18px;
+  color: #fff;
+  font-family: MontserratRegular;
+}
+.footer .footer3 .footer3List .footer3ListItem a {
+  text-decoration: none;
+  color: #fff;
+  transition: all ease 0.4s;
+}
+.footer .footer3 .footer3List .footer3ListItem:hover a {
+  color: rgba(255, 255, 255, 0.7);
+  transform: scale(1.01);
+}
+.footer .footer4 .footer4First .footer4FirstName {
+  font-family: MontserratRegular;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.footer .footer4 .footer4First .footer4FirstList {
+  padding-left: 0;
+  margin-top: 8px;
+}
+.footer .footer4 .footer4First .footer4FirstList .footer4FirstListItem {
+  display: flex;
+  align-items: center;
+  margin-top: 7px;
+}
+.footer .footer4 .footer4First .footer4FirstList .footer4FirstListItem .footer4FirstListItemIcon {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+.footer .footer4 .footer4First .footer4FirstList .footer4FirstListItem .footer4FirstListItemIcon svg {
+  fill: white;
+  width: 80%;
+  height: 80%;
+}
+.footer .footer4 .footer4First .footer4FirstList .footer4FirstListItem .footer4FirstListItemText {
+  color: 18px;
+  color: #fff;
+  font-family: MontserratRegular;
+  text-decoration: none;
+  color: #fff;
+  transition: all ease 0.4s;
+}
+.footer .footer4 .footer4First .footer4FirstList .footer4FirstListItem .footer4FirstListItemText:hover {
+  color: rgba(255, 255, 255, 0.7);
+  transform: scale(1.01);
+}
+.footer .footer4 .footer4Second {
+  margin-top: 20px;
+}
+.footer .footer4 .footer4Second .footer4SecondName {
+  font-family: MontserratRegular;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.footer .footer4 .footer4Second .footer4SecondBody {
+  margin-top: 12px;
+  font-family: MontserratRegular;
+  font-size: 16px;
+}
+
+#find {
+  margin-top: 20px;
+}
+#find .find {
+  background: #0060ce;
+  border-radius: 29px;
+  border: 3px solid #f1f1f1;
+  padding: 20px 15px;
+}
+#find .find .findHead {
+  color: #fff;
+  padding: 15px;
+}
+#find .find .findHead .findHeadName {
+  font-family: MontserratBold;
+  font-size: 26px;
+  margin-bottom: 18px;
+}
+#find .find .findHead .findHeadSubtitle {
+  font-family: MontserratRegular;
+  font-size: 18px;
+  margin-bottom: 20px;
+  width: 70%;
+}
+#find .find .findHead .findHeadBody .findHeadBodyInputDes {
+  margin-top: 5px;
+  background: white;
+  padding: 0 15px;
+  width: 100%;
+  height: 50px;
+  font-family: MontserratRegular;
+  font-size: 18px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+#find .find .findHead .findHeadBody .findHeadBodyInputDes input {
+  border: none;
+  outline: none;
+  background: none;
+  width: 100%;
+  height: 100%;
+}
+#find .find .findHead .findHeadBody .findHeadBodyInputDes input ::-moz-placeholder {
+  color: #858585;
+}
+#find .find .findHead .findHeadBody .findHeadBodyInputDes input ::placeholder {
+  color: #858585;
+}
+#find .find .findHead .findHeadBody .findHeadBodyButton {
+  margin-top: 5px;
+  display: flex;
+  justify-content: right;
+}
+#find .find .findHead .findHeadBody .findHeadBodyButton .findCarButton {
+  min-width: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: #02c814;
+  padding: 9px 22px;
+  border: 2px solid transparent;
+  transition: all ease 0.4s;
+}
+#find .find .findHead .findHeadBody .findHeadBodyButton .findCarButton svg {
+  width: 22px;
+  height: 22px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: all ease 0.4s;
+}
+#find .find .findHead .findHeadBody .findHeadBodyButton .findCarButton svg path {
+  transition: all ease 0.4s;
+}
+#find .find .findHead .findHeadBody .findHeadBodyButton .findCarButton .findHeadBodyButtonName {
+  margin-left: 10px;
+  font-family: MontserratBold;
+  font-size: 18px;
+  color: #fff;
+  transition: all ease 0.4s;
+}
+#find .find .findHead .findHeadBody .findHeadBodyButton .findCarButton:hover {
+  background-color: white;
+  box-shadow: 0 0 7px #fff;
+  border: 2px solid #02c814;
+}
+#find .find .findHead .findHeadBody .findHeadBodyButton .findCarButton:hover svg path {
+  stroke: #02c814;
+}
+#find .find .findHead .findHeadBody .findHeadBodyButton .findCarButton:hover .findHeadBodyButtonName {
+  color: #02c814;
+}
+#find .find .findBody {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 20px 30px;
+}
+#find .find .findBody .orderItem {
+  width: 24%;
+  padding-right: 3px;
+  margin: 10px 0;
+}
+#find .find .findBody .orderItem1 .orderItemHead {
+  display: flex;
+}
+#find .find .findBody .orderItem1 .orderItemHead .orderItemHeadLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #02c814;
+  border-radius: 50%;
+  background: #02c814;
+}
+#find .find .findBody .orderItem1 .orderItemHead .orderItemHeadLeft svg {
+  width: 60%;
+  height: 60%;
+}
+#find .find .findBody .orderItem1 .orderItemHead .orderItemHeadLeft svg path {
+  fill: white;
+}
+#find .find .findBody .orderItem1 .orderItemHead .orderItemHeadRight {
+  margin-left: 10px;
+  margin-top: 3px;
+}
+#find .find .findBody .orderItem1 .orderItemHead .orderItemHeadRight .orderItemHeadRightStep {
+  font-size: 14px;
+  color: #636363;
+  font-family: PoppinsLight;
+}
+#find .find .findBody .orderItem1 .orderItemHead .orderItemHeadRight .orderItemHeadRightInfo {
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: PoppinsBold;
+}
+#find .find .findBody .orderItem1 .orderItemBody {
+  margin-top: 35px;
+}
+#find .find .findBody .orderItem1 .orderItemBody .orderItemBodyName {
+  font-family: MontserratBold;
+  font-size: 18px;
+}
+#find .find .findBody .orderItem1 .orderItemBody .orderItemBodyText {
+  margin-top: 7px;
+  font-family: MontserratMedium;
+  font-size: 16px;
+  color: #707070;
+}
+#find .find .findBody .orderLine {
+  margin-top: 36px;
+  width: 12%;
+  height: 4px;
+  background-color: #02c814;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+#find .find .findBody .orderItem2 .orderItemHead {
+  display: flex;
+}
+#find .find .findBody .orderItem2 .orderItemHead .orderItemHeadLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #02c814;
+  border-radius: 50%;
+}
+#find .find .findBody .orderItem2 .orderItemHead .orderItemHeadLeft svg {
+  width: 60%;
+  height: 60%;
+}
+#find .find .findBody .orderItem2 .orderItemHead .orderItemHeadLeft svg path {
+  fill: #02c814;
+}
+#find .find .findBody .orderItem2 .orderItemHead .orderItemHeadRight {
+  margin-left: 10px;
+  margin-top: 3px;
+}
+#find .find .findBody .orderItem2 .orderItemHead .orderItemHeadRight .orderItemHeadRightStep {
+  font-size: 14px;
+  color: #636363;
+  font-family: PoppinsLight;
+}
+#find .find .findBody .orderItem2 .orderItemHead .orderItemHeadRight .orderItemHeadRightInfo {
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: PoppinsBold;
+}
+#find .find .findBody .orderItem2 .orderItemBody {
+  margin-top: 12px;
+}
+#find .find .findBody .orderItem2 .orderItemBody .orderItemBodyName {
+  font-family: MontserratBold;
+  font-size: 18px;
+}
+#find .find .findBody .orderItem2 .orderItemBody .orderItemBodyText {
+  margin-top: 7px;
+  font-family: MontserratMedium;
+  font-size: 16px;
+  color: #707070;
+}
+#find .find .findBody .orderItem3 .orderItemHead {
+  display: flex;
+}
+#find .find .findBody .orderItem3 .orderItemHead .orderItemHeadLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #a6a6a6;
+  border-radius: 50%;
+}
+#find .find .findBody .orderItem3 .orderItemHead .orderItemHeadLeft svg {
+  width: 60%;
+  height: 60%;
+}
+#find .find .findBody .orderItem3 .orderItemHead .orderItemHeadLeft svg path {
+  fill: #a6a6a6;
+}
+#find .find .findBody .orderItem3 .orderItemHead .orderItemHeadRight {
+  margin-left: 10px;
+  margin-top: 3px;
+}
+#find .find .findBody .orderItem3 .orderItemHead .orderItemHeadRight .orderItemHeadRightStep {
+  font-size: 14px;
+  color: #636363;
+  font-family: PoppinsLight;
+}
+#find .find .findBody .orderItem3 .orderItemHead .orderItemHeadRight .orderItemHeadRightInfo {
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: PoppinsBold;
+}
+#find .find .findBody .orderItem3 .orderItemBody {
+  margin-top: 35px;
+}
+#find .find .findBody .orderItem3 .orderItemBody .orderItemBodyName {
+  font-family: MontserratBold;
+  font-size: 18px;
+}
+#find .find .findBody .orderItem3 .orderItemBody .orderItemBodyText {
+  margin-top: 7px;
+  font-family: MontserratMedium;
+  font-size: 16px;
+  color: #707070;
+}
+
+#findCarBlog {
+  margin-top: 70px;
+  padding-bottom: 30px;
+}
+#findCarBlog .findCarBlogHead {
+  font-family: MontserratBold;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+#findCarBlog .findCarBlogSubtitle {
+  font-family: MontserratRegular;
+  font-size: 18px;
+  color: #7d7a7a;
+  margin-bottom: 35px;
+  width: 40%;
+}
+#findCarBlog .findCarBlogBody {
+  margin-left: -25px;
+  margin-right: -25px;
+}
+#findCarBlog .findCarBlogBody .col-lg-4 {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@font-face {
+  font-family: MontserratRegular;
+  src: url(fonts/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: MontserratMedium;
+  src: url(fonts/Montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: MontserratSemibold;
+  src: url(fonts/Montserrat/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: MontserratBold;
+  src: url(fonts/Montserrat/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: PoppinsLight;
+  src: url(fonts/Poppins/Poppins-Light.ttf);
+}
+@font-face {
+  font-family: PoppinsBold;
+  src: url(fonts//Poppins/Poppins-Bold.ttf);
+}
+.list_reset {
+  list-style-type: none;
+  margin: 0;
+}
+
+.button_reset {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+@media only screen and (max-width: 1199.9px) {
+  #find .find .findBody {
+    padding: 20px 25px;
+  }
+  #find .find .findBody .orderItem {
+    width: 26%;
+    padding-right: 3px;
+    margin: 10px 0;
+  }
+  #find .find .findBody .orderLine {
+    margin-top: 36px;
+    width: 10%;
+    height: 4px;
+    background-color: #02c814;
+    border-radius: 3px;
+    margin-right: 5px;
+  }
+}
+@media only screen and (max-width: 991.9px) {
+  #carsHeader .carsHeader .carsHeaderLeft .carsHeaderLogo {
+    display: inline-flex;
+    width: 85px;
+  }
+  #carsHeader .carsHeader .carsHeaderLeft .carsHeaderLogo svg {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  #carsHeader .carsHeader .carsHeaderRight .carsHeaderMenuButBlock {
+    display: flex;
+  }
+  #carsHeader .carsHeader .carsHeaderRight .carsHeaderMenuList {
+    display: none;
+  }
+  #carsHeader .carsHeader .carsHeaderRight .carsHeaderSocial {
+    display: none;
+  }
+  #carsHeader .carsHeader .mobileMenu {
+    display: block;
+  }
+  #carsHeader .carsHeader .mobileMenuNone {
+    display: block;
+  }
+  .mobileMenu {
+    display: block;
+  }
+  #about {
+    margin-top: 50px;
+  }
+  #about .about .aboutLeft {
+    padding: 30px 25px;
+  }
+  #about .about .aboutLeft .aboutLeftName {
+    font-size: 26px;
+  }
+  #about .about .aboutLeft .aboutLeftContent {
+    margin-top: 12px;
+  }
+  #about .about .aboutLeft .aboutLeftButton {
+    margin-top: 35px;
+  }
+  #about .about .aboutRight {
+    display: none;
+  }
+  #about1 {
+    margin-top: 60px;
+  }
+  #about1 .about1 .about1Left {
+    display: none;
+  }
+  #about1 .about1 .about1Right .about1RightName {
+    font-size: 26px;
+  }
+  #about1 .about1 .about1Right .about1RightContent {
+    margin-top: 12px;
+  }
+  #about1 .about1 .about1Right .about1RightButton {
+    margin-top: 37px;
+  }
+  #blog {
+    margin-top: 60px;
+  }
+  #blog .blogHead {
+    font-size: 26px;
+    margin-bottom: 18px;
+  }
+  #blog .blogSubtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+    width: 80%;
+  }
+  #blog .blogBody {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  #blog .blogBody .col-lg-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #blog .blogMore {
+    margin-top: 35px;
+  }
+  #blog .blogMore .moreBlogs {
+    font-size: 18px;
+  }
+  #partners .partnersHead {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  #partners .partnersCover .partnersItem {
+    height: 95px;
+  }
+  #requestForm {
+    margin-top: 40px;
+    padding: 30px 0 40px 0;
+  }
+  #requestForm .requestFormHead {
+    font-size: 26px;
+    margin-bottom: 17px;
+  }
+  #requestForm .requestFormSubtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+    width: 90%;
+  }
+  #requestForm .requestFormMain {
+    margin-top: 12px;
+  }
+  #requestForm .requestFormMain .row {
+    margin: -15px;
+  }
+  #requestForm .requestFormMain .row .col-lg-5 {
+    padding: 15px;
+  }
+  #requestForm .requestFormMain .row .col-lg-7 {
+    padding: 15px;
+  }
+  #requestForm .requestFormMain .requestFormMainLeft .requestFormMainInputDes {
+    height: 48px;
+    margin-bottom: 18px;
+  }
+  #requestForm .requestFormMain .requestFormMainRight {
+    height: 180px;
+    padding: 10px 15px;
+  }
+  #requestForm .requestFormMain .requestFormButton {
+    margin-top: 8px;
+  }
+  #requestForm .requestFormMain .requestFormButton .carsButDes {
+    min-width: 160px;
+    font-style: 16px;
+  }
+  #map {
+    margin-top: 40px;
+    padding-bottom: 18px;
+  }
+  #map .mapHead {
+    font-size: 26px;
+    margin-bottom: 18px;
+  }
+  #map .mapSubtitle {
+    margin-bottom: 30px;
+    width: 90%;
+  }
+  #map .locationMap {
+    margin-top: 8px;
+    height: 420px;
+  }
+  .footer {
+    margin-top: 25px;
+  }
+  .footer .footer3 {
+    margin-top: 25px;
+  }
+  .footer .footer4 {
+    margin-top: 30px;
+  }
+  #find .find .findBody {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 20px 30px;
+  }
+  #find .find .findBody .orderItem {
+    width: 100%;
+  }
+  #find .find .findBody .orderItem1 .orderItemHead .orderItemHeadLeft {
+    width: 55px;
+    height: 55px;
+  }
+  #find .find .findBody .orderItem1 .orderItemHead .orderItemHeadRight .orderItemHeadRightStep {
+    font-size: 14px;
+  }
+  #find .find .findBody .orderItem1 .orderItemHead .orderItemHeadRight .orderItemHeadRightInfo {
+    margin-top: 9px;
+    font-size: 16px;
+  }
+  #find .find .findBody .orderItem1 .orderItemBody {
+    margin-top: 30px;
+  }
+  #find .find .findBody .orderItem1 .orderItemBody .orderItemBodyName {
+    font-size: 18px;
+  }
+  #find .find .findBody .orderItem1 .orderItemBody .orderItemBodyText {
+    margin-top: 7px;
+    font-size: 16px;
+  }
+  #find .find .findBody .orderLine {
+    display: none;
+  }
+  #find .find .findBody .orderItem2 .orderItemHead .orderItemHeadLeft {
+    width: 55px;
+    height: 55px;
+  }
+  #find .find .findBody .orderItem2 .orderItemHead .orderItemHeadRight .orderItemHeadRightStep {
+    font-size: 14px;
+  }
+  #find .find .findBody .orderItem2 .orderItemHead .orderItemHeadRight .orderItemHeadRightInfo {
+    margin-top: 9px;
+    font-size: 16px;
+  }
+  #find .find .findBody .orderItem2 .orderItemBody {
+    margin-top: 10px;
+  }
+  #find .find .findBody .orderItem2 .orderItemBody .orderItemBodyName {
+    font-size: 18px;
+  }
+  #find .find .findBody .orderItem2 .orderItemBody .orderItemBodyText {
+    margin-top: 7px;
+    font-size: 16px;
+  }
+  #find .find .findBody .orderItem3 .orderItemHead .orderItemHeadLeft {
+    width: 55px;
+    height: 55px;
+  }
+  #find .find .findBody .orderItem3 .orderItemHead .orderItemHeadRight .orderItemHeadRightStep {
+    font-size: 14px;
+  }
+  #find .find .findBody .orderItem3 .orderItemHead .orderItemHeadRight .orderItemHeadRightInfo {
+    margin-top: 9px;
+    font-size: 16px;
+  }
+  #find .find .findBody .orderItem3 .orderItemBody {
+    margin-top: 30px;
+  }
+  #find .find .findBody .orderItem3 .orderItemBody .orderItemBodyName {
+    font-size: 18px;
+  }
+  #find .find .findBody .orderItem3 .orderItemBody .orderItemBodyText {
+    margin-top: 7px;
+    font-size: 16px;
+  }
+  #findCarBlog {
+    margin-top: 60px;
+  }
+  #findCarBlog .findCarBlogHead {
+    font-size: 26px;
+    margin-bottom: 18px;
+  }
+  #findCarBlog .findCarBlogSubtitle {
+    font-size: 18px;
+    margin-bottom: 30px;
+    width: 80%;
+  }
+  #findCarBlog .findCarBlogBody {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  #findCarBlog .findCarBlogBody .col-lg-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media screen and (max-width: 767.9px) {
+  .carsButDes {
+    min-width: 150px;
+    font-size: 16px;
+    padding: 8px 22px;
+    box-shadow: 0px 3px 30px 0px rgba(0, 0, 0, 0.2509803922);
+  }
+  #about {
+    margin: 0 10px;
+    margin-top: 40px;
+  }
+  #about .about .aboutLeft {
+    padding: 18px 15px;
+  }
+  #about .about .aboutLeft .aboutLeftName {
+    font-size: 20px;
+  }
+  #about .about .aboutLeft .aboutLeftContent {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  #about .about .aboutLeft .aboutLeftButton {
+    margin-top: 30px;
+  }
+  #about1 {
+    margin: 0 10px;
+    margin-top: 40px;
+  }
+  #about1 .about1 .about1Right {
+    padding: 20px 15px;
+  }
+  #about1 .about1 .about1Right .about1RightName {
+    font-size: 20px;
+  }
+  #about1 .about1 .about1Right .about1RightContent {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  #about1 .about1 .about1Right .about1RightButton {
+    margin-top: 25px;
+  }
+  #blog {
+    margin-top: 50px;
+  }
+  #blog .blogHead {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  #blog .blogSubtitle {
+    font-size: 16px;
+    margin-bottom: 25px;
+    width: 90%;
+  }
+  #blog .blogBody {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  #blog .blogBody .col-lg-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  #blog .blogMore {
+    margin-top: 28px;
+  }
+  #blog .blogMore .moreBlogs {
+    font-size: 16px;
+  }
+  .blogItem {
+    padding: 10px;
+    margin-top: 10px;
+  }
+  .blogItem .blogItemImg {
+    height: 180px;
+  }
+  .blogItem .blogItemBody {
+    margin-top: 25px;
+    padding: 0 8px;
+    padding-bottom: 15px;
+  }
+  .blogItem .blogItemBody .blogItemBodyName {
+    font-size: 18px;
+    color: #000;
+  }
+  .blogItem .blogItemBody .blogItemBodyContent {
+    margin-top: 5px;
+    font-size: 16px;
+  }
+  .blogItem .blogItemBody .blogItemBodyDate {
+    margin-top: 8px;
+    font-size: 16px;
+  }
+  #partners {
+    margin-top: 35px;
+  }
+  #partners .partnersHead {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  #partners .partnersSubtitle {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  #partners .partnersCover .partnersItem {
+    height: 80px;
+  }
+  #requestForm {
+    margin-top: 35px;
+    padding: 30px 0 40px 0;
+  }
+  #requestForm .requestFormHead {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  #requestForm .requestFormSubtitle {
+    font-size: 16px;
+    margin-bottom: 25px;
+    width: 90%;
+  }
+  #requestForm .requestFormMain {
+    margin-top: 10px;
+  }
+  #requestForm .requestFormMain .requestFormMainLeft .requestFormMainInputDes {
+    height: 40px;
+    padding: 0 12px;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  #requestForm .requestFormMain .requestFormMainRight {
+    height: 140px;
+  }
+  #requestForm .requestFormMain .requestFormButton {
+    margin-top: 18px;
+  }
+  #map {
+    margin-top: 40px;
+    padding-bottom: 12px;
+  }
+  #map .mapHead {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  #map .mapSubtitle {
+    font-size: 16px;
+    margin-bottom: 25px;
+    width: 90%;
+  }
+  #map .locationMap {
+    margin-top: 5px;
+    height: 250px;
+  }
+  .footer {
+    margin-top: 25px;
+    padding: 22px 0;
+  }
+  .footer .footer1 .footer1Head .footer1Head1 {
+    font-size: 20px;
+  }
+  .footer .footer1 .footer1Head .footer1Head2 {
+    font-size: 16px;
+  }
+  .footer .footer1 .footer1Img {
+    margin-top: 12px;
+  }
+  .footer .footer1 .footer1Reserved {
+    margin-top: 10px;
+    font-family: MontserratRegular;
+    font-size: 14px;
+  }
+  .footer .footer1 .footer1Developed {
+    margin-top: 12px;
+    font-size: 14px;
+  }
+  .footer .footer2 .footer2Name {
+    font-size: 16px;
+  }
+  .footer .footer2 .footer2List .footer2ListItem .footer2ListItemIcon {
+    width: 27px;
+    height: 27px;
+    margin-right: 4px;
+  }
+  .footer .footer2 .footer2List .footer2ListItem .footer2ListItemText {
+    color: 16px;
+  }
+  .footer .footer3 .footer3Name {
+    font-size: 16px;
+  }
+  .footer .footer3 .footer3List .footer3ListItem {
+    color: 16px;
+  }
+  .footer .footer4 .footer4First .footer4FirstName {
+    font-size: 16px;
+  }
+  .footer .footer4 .footer4First .footer4FirstList .footer4FirstListItem .footer4FirstListItemIcon {
+    width: 27px;
+    height: 27px;
+  }
+  .footer .footer4 .footer4First .footer4FirstList .footer4FirstListItem .footer4FirstListItemText {
+    color: 16px;
+  }
+  .footer .footer4 .footer4Second {
+    margin-top: 20px;
+  }
+  .footer .footer4 .footer4Second .footer4SecondName {
+    font-size: 16px;
+  }
+  .footer .footer4 .footer4Second .footer4SecondBody {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  #find {
+    margin-top: 15px;
+  }
+  #find .find {
+    padding: 16px 12px;
+  }
+  #find .find .findHead {
+    padding: 10px;
+  }
+  #find .find .findHead .findHeadName {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+  #find .find .findHead .findHeadSubtitle {
+    font-size: 16px;
+    margin-bottom: 15px;
+    width: 100%;
+    -webkit-line-clamp: 4 !important;
+    -webkit-box-orient: vertical !important;
+    display: -webkit-box !important;
+    overflow: hidden !important;
+  }
+  #find .find .findHead .findHeadBody .findHeadBodyInputDes {
+    margin-top: 10px;
+    padding: 0 12px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 7px;
+  }
+  #find .find .findHead .findHeadBody .findHeadBodyButton {
+    margin-top: 14px;
+  }
+  #find .find .findHead .findHeadBody .findHeadBodyButton .findCarButton {
+    padding: 7px 18px;
+    border-radius: 7px;
+  }
+  #find .find .findHead .findHeadBody .findHeadBodyButton .findCarButton svg {
+    width: 20px;
+    height: 20px;
+  }
+  #find .find .findHead .findHeadBody .findHeadBodyButton .findCarButton .findHeadBodyButtonName {
+    font-size: 16px;
+  }
+  #find .find .findBody {
+    margin-top: 20px;
+    padding: 12px 20px;
+  }
+  #find .find .findBody .orderItem1 .orderItemHead .orderItemHeadLeft {
+    width: 50px;
+    height: 50px;
+  }
+  #find .find .findBody .orderItem1 .orderItemHead .orderItemHeadRight .orderItemHeadRightStep {
+    font-size: 12px;
+  }
+  #find .find .findBody .orderItem1 .orderItemHead .orderItemHeadRight .orderItemHeadRightInfo {
+    margin-top: 7px;
+    font-size: 14px;
+  }
+  #find .find .findBody .orderItem1 .orderItemBody {
+    margin-top: 20px;
+  }
+  #find .find .findBody .orderItem1 .orderItemBody .orderItemBodyName {
+    font-size: 16px;
+  }
+  #find .find .findBody .orderItem1 .orderItemBody .orderItemBodyText {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  #find .find .findBody .orderItem2 .orderItemHead .orderItemHeadLeft {
+    width: 50px;
+    height: 50px;
+  }
+  #find .find .findBody .orderItem2 .orderItemHead .orderItemHeadRight .orderItemHeadRightStep {
+    font-size: 12px;
+  }
+  #find .find .findBody .orderItem2 .orderItemHead .orderItemHeadRight .orderItemHeadRightInfo {
+    margin-top: 7px;
+    font-size: 14px;
+  }
+  #find .find .findBody .orderItem2 .orderItemBody {
+    margin-top: 7px;
+  }
+  #find .find .findBody .orderItem2 .orderItemBody .orderItemBodyName {
+    font-size: 16px;
+  }
+  #find .find .findBody .orderItem2 .orderItemBody .orderItemBodyText {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  #find .find .findBody .orderItem3 .orderItemHead .orderItemHeadLeft {
+    width: 50px;
+    height: 50px;
+  }
+  #find .find .findBody .orderItem3 .orderItemHead .orderItemHeadRight .orderItemHeadRightStep {
+    font-size: 12px;
+  }
+  #find .find .findBody .orderItem3 .orderItemHead .orderItemHeadRight .orderItemHeadRightInfo {
+    margin-top: 7px;
+    font-size: 14px;
+  }
+  #find .find .findBody .orderItem3 .orderItemBody {
+    margin-top: 20px;
+  }
+  #find .find .findBody .orderItem3 .orderItemBody .orderItemBodyName {
+    font-size: 16px;
+  }
+  #find .find .findBody .orderItem3 .orderItemBody .orderItemBodyText {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  #findCarBlog {
+    margin-top: 50px;
+  }
+  #findCarBlog .findCarBlogHead {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  #findCarBlog .findCarBlogSubtitle {
+    font-size: 16px;
+    margin-bottom: 25px;
+    width: 90%;
+  }
+  #findCarBlog .findCarBlogBody {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+  #findCarBlog .findCarBlogBody .col-lg-4 {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .mobileMenu .mobileMenuHead .mobileHeaderLogo {
+    width: 75px;
+  }
+  .mobileMenu .mobileMenuList .mobileMenuListItem {
+    font-size: 17px;
+  }
+  .mobileMenu .mobileMenuList .mobileMenuListItem:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .mobileMenu .mobileSocial .mobileSocialItem {
+    width: 32px;
+    height: 32px;
+  }
+  .mobileMenu .mobileSocial .mobileSocialItem:not(:last-child) {
+    margin-right: 18px;
+  }
+}/*# sourceMappingURL=style.css.map */

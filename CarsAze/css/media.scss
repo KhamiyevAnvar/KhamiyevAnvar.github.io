@@ -1,0 +1,860 @@
+@import "common";
+
+@media only screen and (max-width: 1400px) {
+}
+
+@media only screen and (max-width: 1199.9px) {
+  #find {
+    .find {
+      .findBody {
+        padding: 20px 25px;
+        .orderItem {
+          width: 26%;
+          padding-right: 3px;
+          margin: 10px 0;
+        }
+
+        .orderLine {
+          margin-top: 36px;
+          width: 10%;
+          height: 4px;
+          background-color: $col-search-but;
+          border-radius: 3px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991.9px) {
+  #carsHeader {
+    .carsHeader {
+      .carsHeaderLeft {
+        .carsHeaderLogo {
+          display: inline-flex;
+          width: 85px;
+          svg {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+
+      .carsHeaderRight {
+        .carsHeaderMenuButBlock {
+          display: flex;
+        }
+
+        .carsHeaderMenuList {
+          display: none;
+        }
+        .carsHeaderSocial {
+          display: none;
+        }
+      }
+
+      .mobileMenu {
+        display: block;
+      }
+
+      .mobileMenuNone {
+        display: block;
+      }
+    }
+  }
+
+  .mobileMenu {
+    display: block;
+  }
+
+  // about
+  #about {
+    margin-top: 50px;
+    .about {
+      .aboutLeft {
+        padding: 30px 25px;
+        .aboutLeftName {
+          font-size: $fs26;
+        }
+        .aboutLeftContent {
+          margin-top: 12px;
+        }
+
+        .aboutLeftButton {
+          margin-top: 35px;
+        }
+      }
+
+      .aboutRight {
+        display: none;
+      }
+    }
+  }
+
+  // about1
+  #about1 {
+    margin-top: 60px;
+    .about1 {
+      .about1Left {
+        display: none;
+      }
+
+      .about1Right {
+        .about1RightName {
+          font-size: $fs26;
+        }
+        .about1RightContent {
+          margin-top: 12px;
+        }
+
+        .about1RightButton {
+          margin-top: 37px;
+        }
+      }
+    }
+  }
+
+  #blog {
+    margin-top: 60px;
+    .blogHead {
+      font-size: $fs26;
+      margin-bottom: 18px;
+    }
+
+    .blogSubtitle {
+      font-size: $fs18;
+      margin-bottom: 30px;
+      width: 80%;
+    }
+
+    .blogBody {
+      margin-left: -10px;
+      margin-right: -10px;
+      .col-lg-4 {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+
+    .blogMore {
+      margin-top: 35px;
+      .moreBlogs {
+        font-size: $fs18;
+      }
+    }
+  }
+
+  // partner
+  #partners {
+    // padding: 20px 0 50px 0;
+    .partnersHead {
+      font-size: $fs24;
+      margin-bottom: 15px;
+    }
+    .partnersCover {
+      .partnersItem {
+        height: 95px;
+      }
+    }
+  }
+
+  // requestForm
+  #requestForm {
+    margin-top: 40px;
+
+    padding: 30px 0 40px 0;
+    .requestFormHead {
+      font-size: $fs26;
+      margin-bottom: 17px;
+    }
+
+    .requestFormSubtitle {
+      font-size: $fs18;
+      margin-bottom: 30px;
+      width: 90%;
+    }
+
+    .requestFormMain {
+      margin-top: 12px;
+
+      .row {
+        margin: -15px;
+        .col-lg-5 {
+          padding: 15px;
+        }
+        .col-lg-7 {
+          padding: 15px;
+        }
+      }
+
+      .requestFormMainLeft {
+        .requestFormMainInputDes {
+          height: 48px;
+          margin-bottom: 18px;
+        }
+      }
+      .requestFormMainRight {
+        height: 180px;
+        padding: 10px 15px;
+      }
+
+      .requestFormButton {
+        margin-top: 8px;
+
+        .carsButDes {
+          min-width: 160px;
+          font-style: $fs16;
+        }
+      }
+    }
+  }
+
+  //map
+  #map {
+    margin-top: 40px;
+    padding-bottom: 18px;
+    .mapHead {
+      font-size: $fs26;
+      margin-bottom: 18px;
+    }
+
+    .mapSubtitle {
+      margin-bottom: 30px;
+      width: 90%;
+    }
+
+    .locationMap {
+      margin-top: 8px;
+      height: 420px;
+    }
+  }
+
+  .footer {
+    margin-top: 25px;
+
+    .footer3 {
+      margin-top: 25px;
+    }
+
+    .footer4 {
+      margin-top: 30px;
+    }
+  }
+
+  // findCar
+
+  #find {
+    .find {
+      .findBody {
+        background-color: $col-white;
+        border-radius: 10px;
+        margin-top: 30px;
+        padding: 20px 30px;
+        .orderItem {
+          width: 100%;
+        }
+        .orderItem1 {
+          .orderItemHead {
+            .orderItemHeadLeft {
+              width: 55px;
+              height: 55px;
+            }
+            .orderItemHeadRight {
+              .orderItemHeadRightStep {
+                font-size: $fs14;
+              }
+
+              .orderItemHeadRightInfo {
+                margin-top: 9px;
+                font-size: $fs16;
+              }
+            }
+          }
+
+          .orderItemBody {
+            margin-top: 30px;
+            .orderItemBodyName {
+              font-size: $fs18;
+            }
+
+            .orderItemBodyText {
+              margin-top: 7px;
+              font-size: $fs16;
+            }
+          }
+        }
+
+        .orderLine {
+          display: none;
+        }
+
+        .orderItem2 {
+          .orderItemHead {
+            .orderItemHeadLeft {
+              width: 55px;
+              height: 55px;
+            }
+            .orderItemHeadRight {
+              .orderItemHeadRightStep {
+                font-size: $fs14;
+              }
+
+              .orderItemHeadRightInfo {
+                margin-top: 9px;
+                font-size: $fs16;
+              }
+            }
+          }
+
+          .orderItemBody {
+            margin-top: 10px;
+            .orderItemBodyName {
+              font-size: $fs18;
+            }
+
+            .orderItemBodyText {
+              margin-top: 7px;
+              font-size: $fs16;
+            }
+          }
+        }
+
+        .orderItem3 {
+          .orderItemHead {
+            .orderItemHeadLeft {
+              width: 55px;
+              height: 55px;
+            }
+            .orderItemHeadRight {
+              .orderItemHeadRightStep {
+                font-size: $fs14;
+              }
+
+              .orderItemHeadRightInfo {
+                margin-top: 9px;
+                font-size: $fs16;
+              }
+            }
+          }
+
+          .orderItemBody {
+            margin-top: 30px;
+            .orderItemBodyName {
+              font-size: $fs18;
+            }
+
+            .orderItemBodyText {
+              margin-top: 7px;
+              font-size: $fs16;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #findCarBlog {
+    margin-top: 60px;
+    .findCarBlogHead {
+      font-size: $fs26;
+      margin-bottom: 18px;
+    }
+
+    .findCarBlogSubtitle {
+      font-size: $fs18;
+      margin-bottom: 30px;
+      width: 80%;
+    }
+
+    .findCarBlogBody {
+      margin-left: -10px;
+      margin-right: -10px;
+      .col-lg-4 {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 919.9px) {
+}
+
+@media screen and (max-width: 767.9px) {
+  .carsButDes {
+    min-width: 150px;
+    font-size: $fs16;
+    padding: 8px 22px;
+    box-shadow: 0px 3px 30px 0px #00000040;
+  }
+
+  #about {
+    margin: 0 10px;
+    margin-top: 40px;
+    .about {
+      .aboutLeft {
+        padding: 18px 15px;
+        .aboutLeftName {
+          font-size: $fs20;
+        }
+        .aboutLeftContent {
+          margin-top: 10px;
+          font-size: $fs16;
+        }
+
+        .aboutLeftButton {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+
+  #about1 {
+    margin: 0 10px;
+    margin-top: 40px;
+    .about1 {
+      .about1Right {
+        padding: 20px 15px;
+
+        .about1RightName {
+          font-size: $fs20;
+        }
+        .about1RightContent {
+          margin-top: 10px;
+          font-size: $fs16;
+        }
+
+        .about1RightButton {
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+
+  //blog
+  #blog {
+    margin-top: 50px;
+    .blogHead {
+      font-size: $fs22;
+      margin-bottom: 15px;
+    }
+
+    .blogSubtitle {
+      font-size: $fs16;
+      margin-bottom: 25px;
+      width: 90%;
+    }
+
+    .blogBody {
+      margin-left: -5px;
+      margin-right: -5px;
+      .col-lg-4 {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+
+    .blogMore {
+      margin-top: 28px;
+      .moreBlogs {
+        font-size: $fs16;
+      }
+    }
+  }
+
+  .blogItem {
+    padding: 10px;
+    margin-top: 10px;
+    .blogItemImg {
+      height: 180px;
+    }
+
+    .blogItemBody {
+      margin-top: 25px;
+      padding: 0 8px;
+      padding-bottom: 15px;
+      .blogItemBodyName {
+        font-size: $fs18;
+        color: $col-black;
+      }
+      .blogItemBodyContent {
+        margin-top: 5px;
+        font-size: $fs16;
+      }
+      .blogItemBodyDate {
+        margin-top: 8px;
+        font-size: $fs16;
+      }
+    }
+  }
+
+  #partners {
+    margin-top: 35px;
+    .partnersHead {
+      font-size: $fs22;
+      margin-bottom: 15px;
+    }
+
+    .partnersSubtitle {
+      font-size: $fs16;
+      margin-bottom: 25px;
+    }
+    .partnersCover {
+      .partnersItem {
+        height: 80px;
+      }
+    }
+  }
+
+  #requestForm {
+    margin-top: 35px;
+
+    padding: 30px 0 40px 0;
+    .requestFormHead {
+      font-size: $fs22;
+      margin-bottom: 15px;
+    }
+
+    .requestFormSubtitle {
+      font-size: $fs16;
+      margin-bottom: 25px;
+      width: 90%;
+    }
+
+    .requestFormMain {
+      margin-top: 10px;
+
+      .requestFormMainLeft {
+        .requestFormMainInputDes {
+          height: 40px;
+          padding: 0 12px;
+          font-size: $fs16;
+          margin-bottom: 15px;
+        }
+      }
+      .requestFormMainRight {
+        height: 140px;
+      }
+
+      .requestFormButton {
+        margin-top: 18px;
+      }
+    }
+  }
+
+  #map {
+    margin-top: 40px;
+    padding-bottom: 12px;
+    .mapHead {
+      font-size: $fs22;
+      margin-bottom: 15px;
+    }
+
+    .mapSubtitle {
+      font-size: $fs16;
+      margin-bottom: 25px;
+      width: 90%;
+    }
+
+    .locationMap {
+      margin-top: 5px;
+      height: 250px;
+    }
+  }
+
+  .footer {
+    margin-top: 25px;
+    padding: 22px 0;
+    .footer1 {
+      .footer1Head {
+        .footer1Head1 {
+          font-size: $fs20;
+        }
+
+        .footer1Head2 {
+          font-size: $fs16;
+        }
+      }
+      .footer1Img {
+        margin-top: 12px;
+      }
+
+      .footer1Reserved {
+        margin-top: 10px;
+        font-family: $ff-reg;
+        font-size: $fs14;
+      }
+
+      .footer1Developed {
+        margin-top: 12px;
+        font-size: $fs14;
+      }
+    }
+
+    .footer2 {
+      .footer2Name {
+        font-size: $fs16;
+      }
+
+      .footer2List {
+        .footer2ListItem {
+          .footer2ListItemIcon {
+            width: 27px;
+            height: 27px;
+            margin-right: 4px;
+          }
+
+          .footer2ListItemText {
+            color: $fs16;
+          }
+        }
+      }
+    }
+
+    .footer3 {
+      .footer3Name {
+        font-size: $fs16;
+      }
+
+      .footer3List {
+        .footer3ListItem {
+          color: $fs16;
+        }
+      }
+    }
+
+    .footer4 {
+      .footer4First {
+        .footer4FirstName {
+          font-size: $fs16;
+        }
+
+        .footer4FirstList {
+          .footer4FirstListItem {
+            .footer4FirstListItemIcon {
+              width: 27px;
+              height: 27px;
+            }
+
+            .footer4FirstListItemText {
+              color: $fs16;
+            }
+          }
+        }
+      }
+
+      .footer4Second {
+        margin-top: 20px;
+        .footer4SecondName {
+          font-size: $fs16;
+        }
+
+        .footer4SecondBody {
+          margin-top: 10px;
+          font-size: $fs14;
+        }
+      }
+    }
+  }
+
+  #find {
+    margin-top: 15px;
+    .find {
+      padding: 16px 12px;
+      .findHead {
+        padding: 10px;
+        .findHeadName {
+          font-size: $fs22;
+          margin-bottom: 12px;
+        }
+
+        .findHeadSubtitle {
+          font-size: $fs16;
+          margin-bottom: 15px;
+          width: 100%;
+
+          @include lineLimit($line: 4);
+        }
+
+        .findHeadBody {
+          .findHeadBodyInputDes {
+            margin-top: 10px;
+            padding: 0 12px;
+            height: 40px;
+            font-size: $fs16;
+            border-radius: 7px;
+          }
+
+          .findHeadBodyButton {
+            margin-top: 14px;
+            .findCarButton {
+              padding: 7px 18px;
+              border-radius: 7px;
+              svg {
+                width: 20px;
+                height: 20px;
+              }
+              .findHeadBodyButtonName {
+                font-size: $fs16;
+              }
+            }
+          }
+        }
+      }
+      .findBody {
+        margin-top: 20px;
+        padding: 12px 20px;
+        .orderItem1 {
+          .orderItemHead {
+            .orderItemHeadLeft {
+              width: 50px;
+              height: 50px;
+            }
+            .orderItemHeadRight {
+              .orderItemHeadRightStep {
+                font-size: $fs12;
+              }
+
+              .orderItemHeadRightInfo {
+                margin-top: 7px;
+                font-size: $fs14;
+              }
+            }
+          }
+
+          .orderItemBody {
+            margin-top: 20px;
+            .orderItemBodyName {
+              font-size: $fs16;
+            }
+
+            .orderItemBodyText {
+              margin-top: 5px;
+              font-size: $fs14;
+            }
+          }
+        }
+
+        .orderItem2 {
+          .orderItemHead {
+            .orderItemHeadLeft {
+              width: 50px;
+              height: 50px;
+            }
+            .orderItemHeadRight {
+              .orderItemHeadRightStep {
+                font-size: $fs12;
+              }
+
+              .orderItemHeadRightInfo {
+                margin-top: 7px;
+                font-size: $fs14;
+              }
+            }
+          }
+
+          .orderItemBody {
+            margin-top: 7px;
+            .orderItemBodyName {
+              font-size: $fs16;
+            }
+
+            .orderItemBodyText {
+              margin-top: 5px;
+              font-size: $fs14;
+            }
+          }
+        }
+
+        .orderItem3 {
+          .orderItemHead {
+            .orderItemHeadLeft {
+              width: 50px;
+              height: 50px;
+            }
+            .orderItemHeadRight {
+              .orderItemHeadRightStep {
+                font-size: $fs12;
+              }
+
+              .orderItemHeadRightInfo {
+                margin-top: 7px;
+                font-size: $fs14;
+              }
+            }
+          }
+
+          .orderItemBody {
+            margin-top: 20px;
+            .orderItemBodyName {
+              font-size: $fs16;
+            }
+
+            .orderItemBodyText {
+              margin-top: 5px;
+              font-size: $fs14;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #findCarBlog {
+    margin-top: 50px;
+    .findCarBlogHead {
+      font-size: $fs22;
+      margin-bottom: 15px;
+    }
+
+    .findCarBlogSubtitle {
+      font-size: $fs16;
+      margin-bottom: 25px;
+      width: 90%;
+    }
+
+    .findCarBlogBody {
+      margin-left: -5px;
+      margin-right: -5px;
+      .col-lg-4 {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  //mobileMenu
+  .mobileMenu {
+    .mobileMenuHead {
+      .mobileHeaderLogo {
+        width: 75px;
+      }
+    }
+
+    .mobileMenuList {
+      .mobileMenuListItem {
+        font-size: 17px;
+      }
+
+      .mobileMenuListItem:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+    .mobileSocial {
+      .mobileSocialItem {
+        width: 32px;
+        height: 32px;
+      }
+      .mobileSocialItem:not(:last-child) {
+        margin-right: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+}

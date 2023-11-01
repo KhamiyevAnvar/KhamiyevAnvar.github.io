@@ -1,0 +1,94 @@
+@font-face {
+  font-family: MontserratRegular;
+  src: url(fonts/Montserrat/Montserrat-Regular.ttf);
+}
+
+@font-face {
+  font-family: MontserratMedium;
+  src: url(fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: MontserratSemibold;
+  src: url(fonts/Montserrat/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: MontserratBold;
+  src: url(fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: PoppinsLight;
+  src: url(fonts/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: PoppinsBold;
+  src: url(fonts//Poppins/Poppins-Bold.ttf);
+}
+
+$ff-reg: MontserratRegular;
+$ff-med: MontserratMedium;
+$ff-semibold: MontserratSemibold;
+$ff-bold: MontserratBold;
+
+$ff-light-pop: PoppinsLight;
+$ff-bold-pop: PoppinsBold;
+
+$fs12: 12px; //
+$fs14: 14px; //
+$fs16: 16px; //
+$fs18: 18px; //
+$fs20: 20px; //
+$fs22: 22px; //
+$fs24: 24px; //
+$fs26: 26px; //
+$fs28: 28px; //
+$fs32: 32px; //
+$fs40: 40px; //
+$fs44: 44px; //
+
+$col-main: #228bde;
+$col-main2: #7d7a7a;
+$col-black: #000;
+$col-white: #fff;
+
+$col-mainButton: #228bde;
+
+$col-cardBorder: #eaeaea;
+$col-placeholder: #858585;
+
+$col-search-but: #02c814;
+
+$col-step: #636363;
+
+$col-shield: #a6a6a6;
+
+$col-shield-text: #707070;
+
+$col-bg-about: #dafffb;
+$col-bgRequest: #dafffb;
+$col-bg-footer: #0060ce;
+
+.list_reset {
+  list-style-type: none;
+  margin: 0;
+}
+
+.button_reset {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+@mixin transitionTime($time: 0.4s) {
+  transition: all ease $time;
+}
+
+@mixin lineLimit($line: 1) {
+  -webkit-line-clamp: $line !important;
+  -webkit-box-orient: vertical !important;
+  display: -webkit-box !important;
+  overflow: hidden !important;
+}
