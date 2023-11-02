@@ -166,13 +166,13 @@
     margin-top: 12px;
   }
   #requestForm .requestFormMain .row {
-    margin: -15px;
+    margin: -10px;
   }
   #requestForm .requestFormMain .row .col-lg-5 {
-    padding: 15px;
+    padding: 10px;
   }
   #requestForm .requestFormMain .row .col-lg-7 {
-    padding: 15px;
+    padding: 10px;
   }
   #requestForm .requestFormMain .requestFormMainLeft .requestFormMainInputDes {
     height: 48px;
@@ -481,6 +481,15 @@
   #requestForm {
     margin-top: 35px;
     padding: 30px 0 40px 0;
+  }
+  #requestForm .row {
+    margin: -5px;
+  }
+  #requestForm .row .col-lg-5 {
+    padding: 5px;
+  }
+  #requestForm .row .col-lg-7 {
+    padding: 5px;
   }
   #requestForm .requestFormHead {
     font-size: 22px;
