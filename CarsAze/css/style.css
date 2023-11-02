@@ -477,6 +477,7 @@ html ::-webkit-scrollbar-thumb:hover {
   margin-top: 40px;
 }
 #blog .blogMore .moreBlogs {
+  display: flex;
   text-decoration: none;
   font-family: MontserratRegular;
   font-size: 18px;
@@ -1134,6 +1135,7 @@ html ::-webkit-scrollbar-thumb:hover {
   margin-top: 40px;
 }
 #blogPage .blogMore .moreBlogs {
+  display: flex;
   text-decoration: none;
   font-family: MontserratRegular;
   font-size: 18px;
@@ -1189,6 +1191,7 @@ html ::-webkit-scrollbar-thumb:hover {
   margin-top: 40px;
 }
 #singleBlogAdversiting .blogMore .moreBlogs {
+  display: flex;
   text-decoration: none;
   font-family: MontserratRegular;
   font-size: 18px;
