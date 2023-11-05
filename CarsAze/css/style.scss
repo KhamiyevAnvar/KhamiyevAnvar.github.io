@@ -339,6 +339,19 @@ html {
   }
 }
 
+// @keyframes glow {
+//   0% {
+//     box-shadow: 0px 4px 10px 0px $col-mainButton;
+//     transform: scale(1.01);
+//   }
+//   100% {
+//     box-shadow: 0px 4px 20px 0px $col-mainButton;
+//     transform: scale(1.03);
+//     background-color: white;
+//     color: $col-mainButton;
+//   }
+// }
+
 .carsButDes {
   border: none;
   outline: none;
@@ -351,7 +364,8 @@ html {
   font-size: $fs20;
   padding: 12px 30px;
   box-shadow: 0px 4px 50px 0px #00000040;
-  @include transitionTime($time: 0.6s);
+  // animation: glow 1s infinite alternate;
+  @include transitionTime($time: 0.7s);
 }
 
 .carsButDes:hover {
@@ -500,6 +514,7 @@ html {
   border-radius: 29px;
   margin-top: 15px;
   @include transitionTime;
+  position: relative;
   .blogItemImg {
     display: flex;
     border: 3px solid $col-cardBorder;
@@ -538,6 +553,15 @@ html {
       font-size: $fs16;
       color: $col-main2;
     }
+  }
+
+  .blogItemLink {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
   }
 }
 
