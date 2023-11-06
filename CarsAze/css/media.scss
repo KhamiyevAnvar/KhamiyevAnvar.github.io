@@ -1004,6 +1004,10 @@
       }
     }
   }
+
+  .slide {
+    height: 330px;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -1031,6 +1035,23 @@
       }
       .mobileSocialItem:not(:last-child) {
         margin-right: 18px;
+      }
+    }
+  }
+
+  .slide {
+    height: 300px;
+    .slideText {
+      font-family: $ff-med;
+      h1 {
+        font-size: $fs18;
+        letter-spacing: 3vw;
+        padding-left: 3vw;
+      }
+      p {
+        font-size: 4vw;
+        letter-spacing: 2vw;
+        padding-left: 2vw;
       }
     }
   }

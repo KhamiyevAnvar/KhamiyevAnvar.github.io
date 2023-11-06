@@ -11,6 +11,12 @@ $(function () {
     mobileMenu.addClass("mobileMenuNone");
   });
 
+  //
+
+  $(".mobileMenuListItem").click(function () {
+    mobileMenu.addClass("mobileMenuNone");
+  });
+
   // partners carousel
   if ($(".headCover").length > 0) {
     $(".headCover").owlCarousel({
