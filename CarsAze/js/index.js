@@ -122,6 +122,8 @@ $(function () {
       arrows: false,
       infinite: true,
       dots: true,
+      autoplay: true,
+      autoplaySpeed: 2500,
       speed: 1000,
       cssEase: "cubic-bezier(0.7, 0, 0.3, 1)",
     })
