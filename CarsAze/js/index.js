@@ -103,6 +103,7 @@ var swiper = new Swiper(".mySwiper", {
   freeMode: true,
   watchSlidesProgress: true,
 });
+
 var swiper2 = new Swiper(".mySwiper2", {
   loop: true,
   autoplay: true,
