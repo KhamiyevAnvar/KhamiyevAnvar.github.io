@@ -345,10 +345,6 @@ html {
       position: relative;
       overflow: hidden;
 
-      // * {
-      //   outline: none;
-      // }
-
       .item {
         height: 100vh;
         width: 100vw;
@@ -388,7 +384,6 @@ html {
         display: block;
         width: 100%;
         height: auto;
-
         & button {
           position: relative;
           width: 20px;

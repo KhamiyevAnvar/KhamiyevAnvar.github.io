@@ -189,6 +189,7 @@ $(function () {
     cssEase: "cubic-bezier(0.7, 0, 0.3, 1)",
     initialSlide: maxItems - 1,
   });
+
   $(".slideshow-text").slick({
     swipe: false,
     vertical: true,
@@ -198,17 +199,3 @@ $(function () {
     cssEase: "cubic-bezier(0.7, 0, 0.3, 1)",
   });
 });
-
-// clipPath
-//   .attr("d", path1)
-//   .animate({ d: path2 }, duration, firstCustomMinaAnimation, function () {
-//     clipPath.animate(
-//       { d: path3 },
-//       duration,
-//       secondCustomMinaAnimation,
-//       function () {
-//         oldSlide.removeClass("visible");
-//         newSlide.addClass("visible").removeClass("is-animating");
-//       }
-//     );
-//   });
