@@ -20,96 +20,14 @@
       href="css/bootstrap/bootstrap.min.css"
     />
 
-    <!-- slick -->
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
-    />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
-    />
-
     <!-- swiper -->
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="css/swiper.min.css" />
     <!-- owlCarousel -->
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     <!-- Demo styles -->
-    <style>
-      .coverSwiper {
-        height: 80vh;
-      }
-      .swiper {
-        width: 100%;
-        /* height: 100%; */
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      .swiper {
-        width: 100%;
-        /* height: 300px; */
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .swiper-slide {
-        background-size: cover;
-        background-position: center;
-      }
-
-      .mySwiper2 {
-        height: 85%;
-        width: 100%;
-      }
-
-      .mySwiper {
-        height: 15%;
-        box-sizing: border-box;
-        padding: 10px 5px;
-      }
-
-      .mySwiper .swiper-slide {
-        width: 25%;
-        height: 100%;
-        opacity: 0.4;
-      }
-
-      .mySwiper .swiper-slide-thumb-active {
-        opacity: 1;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    </style>
   </head>
 
   <body>
@@ -282,8 +200,7 @@
       </div>
     </div>
 
-    <!--  -->
-
+    <!-- cover  -->
     <div class="coverSwiper">
       <div
         style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
@@ -359,6 +276,7 @@
         </div>
       </div>
     </div>
+
     <!-- about -->
     <section id="about">
       <div class="container">
@@ -762,45 +680,11 @@
     <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
     <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"
-    ></script>
+    <script src="js/swiper.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script
       type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBByp1zFwtmhqM3ibxX-oVAVxi2eaYXlbk&callback"
     ></script>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        loop: true,
-        autoplay: true,
-        spaceBetween: 10,
-        slidesPerView: 5,
-        freeMode: true,
-        watchSlidesProgress: true,
-      });
-      var swiper2 = new Swiper(".mySwiper2", {
-        loop: true,
-        autoplay: true,
-        spaceBetween: 10,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        thumbs: {
-          swiper: swiper,
-        },
-      });
-    </script>
   </body>
 </html>
