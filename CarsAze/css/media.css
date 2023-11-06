@@ -796,4 +796,37 @@
   .mobileMenu .mobileSocial .mobileSocialItem:not(:last-child) {
     margin-right: 18px;
   }
+  .carsSlider {
+    height: 300px;
+  }
+  .carsSlider .slider-nav {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 0;
+    text-align: center;
+  }
+  .carsSlider .slider-nav div {
+    float: left;
+    width: 8px;
+    height: 8px;
+    border: 1px solid white;
+    z-index: 2;
+    display: inline-block;
+    margin: 0 6px;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 0.5;
+    transition-duration: 0.25s;
+    background-color: transparent;
+  }
+  .carsSlider .slider-nav div:hover {
+    opacity: 1;
+  }
+  .carsSlider .slider-nav div.active {
+    background-color: white;
+    transform: scale(1.6);
+    opacity: 1;
+  }
 }/*# sourceMappingURL=media.css.map */
