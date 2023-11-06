@@ -1210,7 +1210,7 @@ html ::-webkit-scrollbar-thumb:hover {
 
 .split-slideshow-container {
   position: relative;
-  height: 90vh;
+  height: 70vh;
   overflow: hidden;
 }
 
