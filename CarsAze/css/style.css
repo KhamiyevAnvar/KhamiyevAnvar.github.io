@@ -343,6 +343,8 @@ html ::-webkit-scrollbar-thumb:hover {
   width: 100vw;
   height: 100vw;
   z-index: 2;
+  position: relative;
+  overflow: hidden;
 }
 .split-slideshow-container .slideshow .slider .item {
   height: 100vh;
@@ -361,59 +363,6 @@ html ::-webkit-scrollbar-thumb:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-.split-slideshow-container .slideshow .slick-dots {
-  position: fixed;
-  z-index: 100;
-  width: 40px;
-  height: auto;
-  bottom: auto;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  left: auto;
-  color: #fff;
-  display: block;
-}
-.split-slideshow-container .slideshow .slick-dots li {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.split-slideshow-container .slideshow .slick-dots li button {
-  position: relative;
-  width: 20px;
-  height: 15px;
-  text-align: center;
-}
-.split-slideshow-container .slideshow .slick-dots li button:before {
-  content: "";
-  background: #fff;
-  color: #fff;
-  height: 2px;
-  width: 20px;
-  border-radius: 0;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  left: auto;
-  transform: translateY(-50%);
-  transition: all 0.3s ease-in-out;
-  opacity: 0.6;
-}
-.split-slideshow-container .slideshow .slick-dots li.slick-active button:before {
-  width: 40px;
-  opacity: 1;
-}
-.split-slideshow-container .slideshow.slideshow-right {
-  left: 0;
-  z-index: 1;
-  width: 50vw;
-  pointer-events: none;
-}
-.split-slideshow-container .slideshow.slideshow-right .slider {
-  left: 0;
-  position: absolute;
 }
 .split-slideshow-container .slideshow-text {
   position: absolute;

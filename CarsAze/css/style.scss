@@ -342,6 +342,8 @@ html {
       width: 100vw;
       height: 100vw;
       z-index: 2;
+      position: relative;
+      overflow: hidden;
 
       // * {
       //   outline: none;
@@ -369,69 +371,69 @@ html {
       }
     }
 
-    .slick-dots {
-      position: fixed;
-      z-index: 100;
-      width: 40px;
-      height: auto;
-      bottom: auto;
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-      left: auto;
-      color: #fff;
-      display: block;
+    // .slick-dots {
+    //   position: absolute;
+    //   z-index: 100;
+    //   width: 40px;
+    //   height: 60px;
+    //   bottom: auto;
+    //   top: 25%;
+    //   right: 0;
+    //   transform: translateY(-50%);
+    //   left: auto;
+    //   color: #fff;
+    //   display: block;
 
-      li {
-        display: block;
-        width: 100%;
-        height: auto;
+    //   li {
+    //     display: block;
+    //     width: 100%;
+    //     height: auto;
 
-        & button {
-          position: relative;
-          width: 20px;
-          height: 15px;
-          text-align: center;
+    //     & button {
+    //       position: relative;
+    //       width: 20px;
+    //       height: 15px;
+    //       text-align: center;
 
-          &:before {
-            content: "";
-            background: #fff;
-            color: #fff;
-            height: 2px;
-            width: 20px;
-            border-radius: 0;
-            position: absolute;
-            top: 50%;
-            right: 0;
-            left: auto;
-            transform: translateY(-50%);
-            transition: all 0.3s ease-in-out;
-            opacity: 0.6;
-          }
-        }
+    //       &:before {
+    //         content: "";
+    //         background: #fff;
+    //         color: #fff;
+    //         height: 2px;
+    //         width: 20px;
+    //         border-radius: 0;
+    //         position: absolute;
+    //         top: 50%;
+    //         right: 0;
+    //         left: auto;
+    //         transform: translateY(-50%);
+    //         transition: all 0.3s ease-in-out;
+    //         opacity: 0.6;
+    //       }
+    //     }
 
-        &.slick-active {
-          button {
-            &:before {
-              width: 40px;
-              opacity: 1;
-            }
-          }
-        }
-      }
-    }
+    //     &.slick-active {
+    //       button {
+    //         &:before {
+    //           width: 40px;
+    //           opacity: 1;
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
 
-    &.slideshow-right {
-      left: 0;
-      z-index: 1;
-      width: 50vw;
-      pointer-events: none;
+    // &.slideshow-right {
+    //   left: 0;
+    //   z-index: 1;
+    //   width: 50vw;
+    //   pointer-events: none;
 
-      .slider {
-        left: 0;
-        position: absolute;
-      }
-    }
+    //   .slider {
+    //     left: 0;
+    //     position: absolute;
+    //   }
+    // }
   }
 
   .slideshow-text {
