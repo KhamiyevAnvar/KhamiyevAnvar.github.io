@@ -341,7 +341,7 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 .split-slideshow-container .slideshow .slider {
   width: 100vw;
-  height: 100vw;
+  height: 100vh;
   z-index: 2;
   position: relative;
   overflow: hidden;
@@ -363,6 +363,16 @@ html ::-webkit-scrollbar-thumb:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.split-slideshow-container .slideshow.slideshow-right {
+  left: 0;
+  z-index: 1;
+  width: 50vw;
+  pointer-events: none;
+}
+.split-slideshow-container .slideshow.slideshow-right .slider {
+  left: 0;
+  position: absolute;
 }
 .split-slideshow-container .slideshow-text {
   position: absolute;

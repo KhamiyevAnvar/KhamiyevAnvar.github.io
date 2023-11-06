@@ -340,7 +340,7 @@ html {
 
     .slider {
       width: 100vw;
-      height: 100vw;
+      height: 100vh;
       z-index: 2;
       position: relative;
       overflow: hidden;
@@ -423,17 +423,17 @@ html {
     //   }
     // }
 
-    // &.slideshow-right {
-    //   left: 0;
-    //   z-index: 1;
-    //   width: 50vw;
-    //   pointer-events: none;
+    &.slideshow-right {
+      left: 0;
+      z-index: 1;
+      width: 50vw;
+      pointer-events: none;
 
-    //   .slider {
-    //     left: 0;
-    //     position: absolute;
-    //   }
-    // }
+      .slider {
+        left: 0;
+        position: absolute;
+      }
+    }
   }
 
   .slideshow-text {
