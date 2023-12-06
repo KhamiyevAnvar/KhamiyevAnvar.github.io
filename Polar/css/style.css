@@ -2666,6 +2666,605 @@ body {
   transform: translateX(100%);
 }
 
+#polarHeaderDesingPage {
+  padding: 20px 0;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+#polarHeaderDesingPage .polarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderLeft {
+  display: flex;
+  align-items: center;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderMiddle {
+  display: flex;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderMiddle .polarHeaderMenuList {
+  font-family: PoppinsRegular;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderMiddle .polarHeaderMenuList li a {
+  text-decoration: none;
+  color: black;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderMiddle .polarHeaderMenuList li:not(:last-child) {
+  margin-right: 20px;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderMiddle .polarHeaderMenuList li a::after {
+  content: "";
+  display: flex;
+  margin-top: 5px;
+  width: 0%;
+  height: 2.5px;
+  background-color: #b5a801;
+  transition: all ease 0.4s;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderMiddle .polarHeaderMenuList li:hover a::after {
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 2.5px;
+  background-color: #b5a801;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderMiddle .polarHeaderMenuList .active a::after {
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 2.5px;
+  background-color: #b5a801;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderMiddle .polarMobileLanguageBlock {
+  min-width: 70px;
+  position: relative;
+  margin-left: 15px;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderMiddle .polarMobileLanguageBlock .cdrop {
+  width: 100%;
+  height: 40px;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 4px 8px;
+  overflow: hidden;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderMiddle .polarMobileLanguageBlock .cdrop svg {
+  width: 34px;
+  height: 34px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderMiddle .polarMobileLanguageBlock .cdrop::after {
+  content: "";
+  display: inline-flex;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  background-image: url(../img/arrowVektorDown.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderMiddle .polarMobileLanguageBlock .hovcard {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+  padding: 2px 0;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderMiddle .polarMobileLanguageBlock .hovcard .flaqLangItem {
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderMiddle .polarMobileLanguageBlock .hovcard .flaqLangItem svg {
+  width: 32px;
+  height: 32px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderMiddle .polarMobileLanguageBlock .hovcard .flaqLangItem:hover {
+  cursor: pointer;
+  background-color: #f5f6ff;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderMiddle .polarMobileLanguageBlock .hovcard-active {
+  display: block;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderRight {
+  display: flex;
+  align-items: center;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderRight .polarMobileLanguageBlock {
+  min-width: 70px;
+  position: relative;
+  margin-right: 15px;
+  display: none;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderRight .polarMobileLanguageBlock .cdrop {
+  width: 100%;
+  height: 40px;
+  background: none;
+  border: none;
+  outline: none;
+  padding: 4px 8px;
+  background-color: transparent;
+  overflow: hidden;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderRight .polarMobileLanguageBlock .cdrop svg {
+  width: 34px;
+  height: 34px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderRight .polarMobileLanguageBlock .cdrop::after {
+  content: "";
+  display: inline-flex;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  background-image: url(../img/arrowVektorDown.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderRight .polarMobileLanguageBlock .hovcard {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.45);
+  border-radius: 2px;
+  padding: 2px 0;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderRight .polarMobileLanguageBlock .hovcard .flaqLangItem {
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderRight .polarMobileLanguageBlock .hovcard .flaqLangItem svg {
+  width: 32px;
+  height: 32px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderRight .polarMobileLanguageBlock .hovcard .flaqLangItem:hover {
+  cursor: pointer;
+  background-color: #f5f6ff;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderRight .polarMobileLanguageBlock .hovcard-active {
+  display: block;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderRight .polarHeaderSearchBlock .polarHeaderSearch {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: #b5a801;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  box-shadow: 0 0 4px 0 #fff;
+  transition: all ease 0.7s;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderRight .polarHeaderSearchBlock .polarHeaderSearch svg {
+  width: 60%;
+  height: 60%;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderRight .polarHeaderSearchBlock .polarHeaderSearch svg path {
+  transition: all ease 0.7s;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderRight .polarHeaderSearchBlock .polarHeaderSearch:hover {
+  background-color: white;
+  border: 1px solid #b5a801;
+  box-shadow: 0 0 2px 0 gray;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderRight .polarHeaderSearchBlock .polarHeaderSearch:hover svg path {
+  fill: #b5a801;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderRight .polarHeaderMenuButBlock {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderRight .polarHeaderMenuButBlock .polarMenuBut {
+  background: none;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  background-color: #b5a801;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  box-shadow: 0 0 4px 1px #fff;
+  transition: all ease 0.4s;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderRight .polarHeaderMenuButBlock .polarMenuBut span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  transition: all ease 0.4s;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderRight .polarHeaderMenuButBlock .polarMenuBut span:not(:last-child) {
+  margin-bottom: 4px;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderRight .polarHeaderMenuButBlock .polarMenuBut:hover {
+  background-color: white;
+  box-shadow: 0 0 4px 1px #b5a801;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderRight .polarHeaderMenuButBlock .polarMenuBut:hover span {
+  background-color: #b5a801;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderRight .polarHeaderSocial {
+  display: flex;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderRight .polarHeaderSocial .polarHeaderSocialDesing {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #b5a801;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  transition: all ease 0.7s;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderRight .polarHeaderSocial .polarHeaderSocialDesing svg {
+  width: 60%;
+  height: 60%;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderRight .polarHeaderSocial .polarHeaderSocialDesing svg path {
+  transition: all ease 0.7s;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderRight .polarHeaderSocial .polarHeaderSocialDesing:hover {
+  background-color: white;
+  border: 1px solid #b5a801;
+  box-shadow: 0 0 2px 0 gray;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderRight .polarHeaderSocial .polarHeaderSocialDesing:hover svg path {
+  fill: #b5a801;
+}
+#polarHeaderDesingPage .polarHeader .polarHeaderRight .polarHeaderSocial .polarHeaderSocialDesing:not(:last-child) {
+  margin-right: 10px;
+}
+#polarHeaderDesingPage .polarHeader .searchBlock {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  height: 43px;
+  box-shadow: 0 0 5px #b5a801;
+  border-radius: 5px;
+  overflow: hidden;
+  padding-left: 15px;
+  padding-right: 40px;
+  background-color: white;
+}
+#polarHeaderDesingPage .polarHeader .searchBlock form {
+  height: 100%;
+}
+#polarHeaderDesingPage .polarHeader .searchBlock form .searchInput {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+#polarHeaderDesingPage .polarHeader .searchBlock .closeSearch {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  outline: none;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#polarHeaderDesingPage .polarHeader .searchBlock .closeSearch svg {
+  width: 100%;
+  height: 100%;
+  fill: #a0a0a0;
+}
+#polarHeaderDesingPage .polarHeader .searchBlockNone {
+  display: none;
+}
+
+#desingPage .desingPage .desingPageImg {
+  display: none;
+  width: 100%;
+  transition: all ease 0.4s;
+}
+#desingPage .desingPage .desingPageImg img {
+  width: 100%;
+  height: 100%;
+}
+#desingPage .desingPage .desingPageImgActive {
+  display: flex;
+}
+#desingPage .desingPage .desingPageImg1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#desingPage .desingPage .desingPageImg1 .desingPageImg1Roof {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+}
+#desingPage .desingPage .desingPageImg1 .desingPageImg1Roof svg {
+  width: 100%;
+  height: 100%;
+}
+#desingPage .desingPage .desingPageImg1 .desingPageImg1Roof svg g path {
+  transition: all ease 0.4s;
+}
+#desingPage .desingPage .desingPageImg1 .desingPageImg1Wall {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+}
+#desingPage .desingPage .desingPageImg1 .desingPageImg1Wall svg {
+  width: 100%;
+  height: 100%;
+}
+#desingPage .desingPage .desingPageImg1 .desingPageImg1Wall svg g path {
+  transition: all ease 0.4s;
+}
+#desingPage .desingPage .desingPageImg2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#desingPage .desingPage .desingPageImg2 .desingPageImg2Roof {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+}
+#desingPage .desingPage .desingPageImg2 .desingPageImg2Roof svg {
+  width: 100%;
+  height: 100%;
+}
+#desingPage .desingPage .desingPageImg2 .desingPageImg2Roof svg g path {
+  transition: all ease 0.4s;
+}
+#desingPage .desingPage .desingPageImg2 .desingPageImg2Wall {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+}
+#desingPage .desingPage .desingPageImg2 .desingPageImg2Wall svg {
+  width: 100%;
+  height: 100%;
+}
+#desingPage .desingPage .desingPageImg2 .desingPageImg2Wall svg g path {
+  transition: all ease 0.4s;
+}
+
+.desingPageBody {
+  margin-top: 15px;
+}
+.desingPageBody .desingPageBodyName {
+  font-family: PoppinsRegular;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+}
+.desingPageBody .desingPageBodyButton {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+.desingPageBody .desingPageBodyButton .desingPageBodyButtonStyle {
+  padding: 5px 24px 5px 14px;
+  background: none;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  background-color: #a8a8a8;
+  color: white;
+  font-family: PoppinsBold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  transition: all ease 0.4s;
+}
+.desingPageBody .desingPageBodyButton .desingPageBodyButtonStyle .desingPageBodyButtonStyleImg {
+  margin-right: 12px;
+}
+.desingPageBody .desingPageBodyButton .desingPageBodyButtonStyle1 {
+  margin-right: 10px;
+}
+.desingPageBody .desingPageBodyButton .desingPageBodyButtonStyle2 {
+  margin-left: 10px;
+}
+.desingPageBody .desingPageBodyButton .desingPageBodyButtonStyleActive {
+  background-color: #a42425;
+}
+
+.designPageFouter {
+  margin-top: 35px;
+  margin-bottom: 150px;
+}
+.designPageFouter .designPageColorSelect .designPageColorSelectName {
+  font-family: PoppinsRegular;
+  margin-bottom: 4px;
+  font-size: 17px;
+}
+.designPageFouter .designPageColorSelect .designPageColorSelectBox .colorSelectContainer {
+  width: 100%;
+  font-family: PoppinsMedium;
+}
+.designPageFouter .designPageColorSelect .designPageColorSelectBox .color-select {
+  border: 2px solid #e3e3e3;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+  height: 50px;
+}
+.designPageFouter .designPageColorSelect .designPageColorSelectBox .color-select span {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+  font-size: 17px;
+}
+.designPageFouter .designPageColorSelect .designPageColorSelectBox .color-select span .colorName {
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+}
+.designPageFouter .designPageColorSelect .designPageColorSelectBox .color-select span .colorBox {
+  margin-top: -8px;
+  list-style: none;
+  width: 26px;
+  height: 26px;
+  display: block;
+  border-radius: 50%;
+  background: #fff;
+  float: left;
+  margin: 0 12px 0 6px;
+  cursor: pointer;
+}
+.designPageFouter .designPageColorSelect .designPageColorSelectBox .color-select .arrowVektorDown {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  transition: all ease 0.4s;
+}
+.designPageFouter .designPageColorSelect .designPageColorSelectBox .color-select .arrowVektorDownUp {
+  transform: translateY(-50%) rotateX(180deg);
+  transition: all ease 0.4s;
+}
+.designPageFouter .designPageColorSelect .designPageColorSelectBox .color-select ul {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  overflow: visible;
+  margin: 0;
+  background-color: white;
+  background-color: #f5f5f5;
+  padding: 5px 0;
+  display: none;
+  box-shadow: 0 0 5px 1px #b5a801;
+  max-height: 300px;
+  overflow: auto;
+  z-index: 10;
+}
+.designPageFouter .designPageColorSelect .designPageColorSelectBox .color-select ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.designPageFouter .designPageColorSelect .designPageColorSelectBox .color-select ul li {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  list-style: none;
+  margin-top: 10px;
+  padding: 0 15px;
+  transition: all ease 0.4s;
+}
+.designPageFouter .designPageColorSelect .designPageColorSelectBox .color-select ul li .dataColorV {
+  width: 30px;
+  height: 30px;
+  display: block;
+  overflow: hidden;
+  border-radius: 50%;
+  background: #fff;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.designPageFouter .designPageColorSelect .designPageColorSelectBox .color-select ul li .dataColorText {
+  display: inline-flex;
+  font-family: poppinsRegular;
+}
+.designPageFouter .designPageColorSelect .designPageColorSelectBox .color-select ul li:hover {
+  cursor: pointer;
+  background-color: white;
+}
+.designPageFouter .designPageFouterPrint {
+  display: flex;
+  align-items: end;
+}
+.designPageFouter .designPageFouterPrint .designPageFouterPrintButton {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 13px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #a42425;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.25);
+}
+.designPageFouter .designPageFouterPrint .designPageFouterPrintButton .designPageFouterPrintButtonImg {
+  margin-right: 4px;
+}
+.designPageFouter .designPageFouterPrint .designPageFouterPrintButton .designPageFouterPrintButtonText {
+  font-family: PoppinsBold;
+  font-size: 12px;
+  color: white;
+}
+.designPageFouter .designPageFouterPrint .designPageFouterPrintButton:hover {
+  box-shadow: rgba(0, 0, 0, 0.55);
+}
+
 @font-face {
   font-family: PoppinsRegular;
   src: url(fonts/Poppins/Poppins-Regular.ttf);
@@ -3294,6 +3893,34 @@ body {
     width: 42px;
     height: 42px;
   }
+  #polarHeaderDesingPage .polarHeader .polarHeaderLeft .polarHeaderLogo {
+    display: inline-flex;
+    width: 120px;
+  }
+  #polarHeaderDesingPage .polarHeader .polarHeaderLeft .polarHeaderLogo svg {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  #polarHeaderDesingPage .polarHeader .polarHeaderMiddle {
+    display: none;
+  }
+  #polarHeaderDesingPage .polarHeader .polarHeaderRight .polarMobileLanguageBlock {
+    display: flex;
+  }
+  #polarHeaderDesingPage .polarHeader .polarHeaderRight .polarHeaderMenuButBlock {
+    display: flex;
+  }
+  #polarHeaderDesingPage .polarHeader .polarHeaderRight .polarHeaderSocial {
+    display: none;
+  }
+  #polarHeaderDesingPage .polarHeader .mobileMenu {
+    display: block;
+  }
+  #polarHeaderDesingPage .polarHeader .mobileMenuNone {
+    display: block;
+  }
 }
 @media screen and (max-width: 575px) {
   #polarHeader {
@@ -3896,6 +4523,96 @@ body {
   .homeSlider .nav a {
     width: 38px;
     height: 38px;
+  }
+  #polarHeaderDesingPage {
+    padding: 15px 0;
+  }
+  #polarHeaderDesingPage .polarHeader .polarHeaderLeft .polarHeaderLogo {
+    display: inline-flex;
+    width: 108px;
+  }
+  #polarHeaderDesingPage .polarHeader .polarHeaderRight .polarHeaderSearchBlock {
+    margin-right: 15px;
+  }
+  #polarHeaderDesingPage .polarHeader .polarHeaderRight .polarHeaderSearchBlock .polarHeaderSearch {
+    margin-right: 0;
+    width: 32px;
+    height: 32px;
+  }
+  #polarHeaderDesingPage .polarHeader .polarHeaderRight .polarHeaderMenuButBlock {
+    display: flex;
+  }
+  #polarHeaderDesingPage .polarHeader .searchBlock {
+    top: 55px;
+    height: 42px;
+  }
+  #polarHeaderDesingPage .polarHeader .searchBlock .closeSearch {
+    width: 20px;
+    height: 20px;
+  }
+  .desingPageBody {
+    margin-top: 12px;
+  }
+  .desingPageBody .desingPageBodyName {
+    font-size: 17px;
+  }
+  .desingPageBody .desingPageBodyButton {
+    margin-top: 12px;
+  }
+  .desingPageBody .desingPageBodyButton .desingPageBodyButtonStyle {
+    padding: 5px 24px 5px 14px;
+  }
+  .desingPageBody .desingPageBodyButton .desingPageBodyButtonStyle .desingPageBodyButtonStyleImg {
+    margin-right: 10px;
+  }
+  .desingPageBody .desingPageBodyButton .desingPageBodyButtonStyle1 {
+    margin-right: 8px;
+  }
+  .desingPageBody .desingPageBodyButton .desingPageBodyButtonStyle2 {
+    margin-left: 8px;
+  }
+  .designPageFouter {
+    margin-top: 28px;
+    margin-bottom: 100px;
+  }
+  .designPageFouter .designPageColorSelect {
+    margin-top: 10px;
+  }
+  .designPageFouter .designPageColorSelect .designPageColorSelectName {
+    font-size: 16px;
+  }
+  .designPageFouter .designPageColorSelect .designPageColorSelectBox .color-select {
+    height: 45px;
+  }
+  .designPageFouter .designPageColorSelect .designPageColorSelectBox .color-select span {
+    font-size: 16px;
+  }
+  .designPageFouter .designPageColorSelect .designPageColorSelectBox .color-select span .colorBox {
+    width: 24px;
+    height: 24px;
+  }
+  .designPageFouter .designPageColorSelect .designPageColorSelectBox .color-select ul {
+    top: 45px;
+    max-height: 200px;
+  }
+  .designPageFouter .designPageColorSelect .designPageColorSelectBox .color-select ul li {
+    transition: all ease 0.4s;
+  }
+  .designPageFouter .designPageColorSelect .designPageColorSelectBox .color-select ul li .dataColorV {
+    width: 25px;
+    height: 25px;
+  }
+  .designPageFouter .designPageFouterPrint {
+    margin-top: 12px;
+  }
+  .designPageFouter .designPageFouterPrint .designPageFouterPrintButton {
+    padding: 10px 14px;
+  }
+  .designPageFouter .designPageFouterPrint .designPageFouterPrintButton .designPageFouterPrintButtonImg {
+    margin-right: 7px;
+  }
+  .designPageFouter .designPageFouterPrint .designPageFouterPrintButton .designPageFouterPrintButtonText {
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 360px) {

@@ -2624,4 +2624,676 @@ body {
   }
 }
 
+// desing
+
+#polarHeaderDesingPage {
+  padding: 20px 0;
+  position: absolute;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+
+  .polarHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    .polarHeaderLeft {
+      display: flex;
+      align-items: center;
+    }
+
+    .polarHeaderMiddle {
+      display: flex;
+      .polarHeaderMenuList {
+        font-family: PoppinsRegular;
+        font-size: $fs20;
+        display: flex;
+        align-items: center;
+        li {
+          a {
+            text-decoration: none;
+            color: black;
+          }
+        }
+        li:not(:last-child) {
+          margin-right: 20px;
+        }
+        li {
+          a::after {
+            content: "";
+            display: flex;
+            margin-top: 5px;
+            width: 0%;
+            height: 2.5px;
+            background-color: $col-main;
+            @include transitionTime;
+          }
+        }
+
+        li:hover {
+          a::after {
+            content: "";
+            display: flex;
+            width: 100%;
+            height: 2.5px;
+            background-color: $col-main;
+          }
+        }
+        .active {
+          a::after {
+            content: "";
+            display: flex;
+            width: 100%;
+            height: 2.5px;
+            background-color: $col-main;
+          }
+        }
+      }
+
+      .polarMobileLanguageBlock {
+        min-width: 70px;
+        position: relative;
+        margin-left: 15px;
+
+        .cdrop {
+          width: 100%;
+          height: 40px;
+          background: none;
+          border: none;
+          outline: none;
+          padding: 4px 8px;
+
+          overflow: hidden;
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          svg {
+            width: 34px;
+            height: 34px;
+            object-fit: contain;
+          }
+        }
+
+        .cdrop::after {
+          content: "";
+          display: inline-flex;
+          width: 15px;
+          height: 15px;
+          position: absolute;
+          top: 50%;
+          right: 5px;
+          transform: translateY(-50%);
+
+          background-image: url(../img/arrowVektorDown.png);
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .hovcard {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          display: none;
+          position: absolute;
+          top: 40px;
+          left: 0;
+          width: 100%;
+          background-color: white;
+          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.45);
+          border-radius: 2px;
+          padding: 2px 0;
+          .flaqLangItem {
+            display: flex;
+            justify-content: center;
+            padding: 2px;
+            svg {
+              width: 32px;
+              height: 32px;
+              object-fit: contain;
+            }
+          }
+          .flaqLangItem:hover {
+            cursor: pointer;
+            background-color: #f5f6ff;
+          }
+        }
+        .hovcard-active {
+          display: block;
+        }
+      }
+    }
+
+    .polarHeaderRight {
+      display: flex;
+      align-items: center;
+
+      //lang dropdown
+      .polarMobileLanguageBlock {
+        min-width: 70px;
+        position: relative;
+        margin-right: 15px;
+        display: none;
+        .cdrop {
+          width: 100%;
+          height: 40px;
+          background: none;
+          border: none;
+          outline: none;
+          padding: 4px 8px;
+          background-color: transparent;
+          overflow: hidden;
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          svg {
+            width: 34px;
+            height: 34px;
+            object-fit: contain;
+          }
+        }
+
+        .cdrop::after {
+          content: "";
+          display: inline-flex;
+          width: 15px;
+          height: 15px;
+          position: absolute;
+          top: 50%;
+          right: 5px;
+          transform: translateY(-50%);
+
+          background-image: url(../img/arrowVektorDown.png);
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        .hovcard {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          display: none;
+          position: absolute;
+          top: 40px;
+          left: 0;
+          width: 100%;
+          background-color: white;
+          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.45);
+          border-radius: 2px;
+          padding: 2px 0;
+          .flaqLangItem {
+            display: flex;
+            justify-content: center;
+            padding: 2px;
+            svg {
+              width: 32px;
+              height: 32px;
+              object-fit: contain;
+            }
+          }
+          .flaqLangItem:hover {
+            cursor: pointer;
+            background-color: #f5f6ff;
+          }
+        }
+        .hovcard-active {
+          display: block;
+        }
+      }
+
+      .polarHeaderSearchBlock {
+        .polarHeaderSearch {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 10px;
+          width: 30px;
+          height: 30px;
+          background-color: $col-main;
+          border-radius: 50%;
+          border: 1px solid transparent;
+          box-shadow: 0 0 4px 0 #fff;
+          @include transitionTime($time: 0.7s);
+          svg {
+            width: 60%;
+            height: 60%;
+            path {
+              @include transitionTime($time: 0.7s);
+            }
+          }
+        }
+        .polarHeaderSearch:hover {
+          background-color: white;
+          border: 1px solid $col-main;
+          box-shadow: 0 0 2px 0 gray;
+          svg {
+            path {
+              fill: $col-main;
+            }
+          }
+        }
+      }
+
+      .polarHeaderMenuButBlock {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        .polarMenuBut {
+          background: none;
+          border: none;
+          outline: none;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 0px;
+          background-color: $col-main;
+          border-radius: 50%;
+          width: 32px;
+          height: 32px;
+          box-shadow: 0 0 4px 1px #fff;
+          @include transitionTime;
+          span {
+            display: block;
+            width: 20px;
+            height: 2px;
+            background-color: white;
+            @include transitionTime;
+          }
+          span:not(:last-child) {
+            margin-bottom: 4px;
+          }
+        }
+
+        .polarMenuBut:hover {
+          background-color: white;
+          box-shadow: 0 0 4px 1px #b5a801;
+          span {
+            background-color: $col-main;
+          }
+        }
+      }
+
+      .polarHeaderSocial {
+        display: flex;
+        .polarHeaderSocialDesing {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          width: 30px;
+          height: 30px;
+          background-color: $col-main;
+          border-radius: 50%;
+          border: 1px solid transparent;
+          @include transitionTime($time: 0.7s);
+          svg {
+            width: 60%;
+            height: 60%;
+            path {
+              @include transitionTime($time: 0.7s);
+            }
+          }
+        }
+        .polarHeaderSocialDesing:hover {
+          background-color: white;
+          border: 1px solid $col-main;
+          box-shadow: 0 0 2px 0 gray;
+          svg {
+            path {
+              fill: $col-main;
+            }
+          }
+        }
+        .polarHeaderSocialDesing:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .searchBlock {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      height: 43px;
+      box-shadow: 0 0 5px $col-main;
+      border-radius: 5px;
+      overflow: hidden;
+      padding-left: 15px;
+      padding-right: 40px;
+      background-color: white;
+      form {
+        height: 100%;
+        .searchInput {
+          width: 100%;
+          height: 100%;
+          border: none;
+          outline: none;
+        }
+      }
+      .closeSearch {
+        position: absolute;
+        top: 50%;
+        right: 12px;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        outline: none;
+        width: 22px;
+        height: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg {
+          width: 100%;
+          height: 100%;
+          fill: #a0a0a0;
+        }
+      }
+    }
+
+    .searchBlockNone {
+      display: none;
+    }
+  }
+}
+
+#desingPage {
+  .desingPage {
+    .desingPageImg {
+      display: none;
+      width: 100%;
+
+      @include transitionTime;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .desingPageImgActive {
+      display: flex;
+    }
+
+    .desingPageImg1 {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      .desingPageImg1Roof {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        mix-blend-mode: multiply;
+        svg {
+          width: 100%;
+          height: 100%;
+          g {
+            path {
+              @include transitionTime;
+            }
+          }
+        }
+      }
+
+      .desingPageImg1Wall {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        mix-blend-mode: multiply;
+        svg {
+          width: 100%;
+          height: 100%;
+          g {
+            path {
+              @include transitionTime;
+            }
+          }
+        }
+      }
+    }
+
+    .desingPageImg2 {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      .desingPageImg2Roof {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        mix-blend-mode: multiply;
+        svg {
+          width: 100%;
+          height: 100%;
+          g {
+            path {
+              @include transitionTime;
+            }
+          }
+        }
+      }
+
+      .desingPageImg2Wall {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        mix-blend-mode: multiply;
+        svg {
+          width: 100%;
+          height: 100%;
+          g {
+            path {
+              @include transitionTime;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.desingPageBody {
+  margin-top: 15px;
+  .desingPageBodyName {
+    font-family: $ff-Reg;
+    font-size: $fs18;
+    display: flex;
+    justify-content: center;
+  }
+
+  .desingPageBodyButton {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    .desingPageBodyButtonStyle {
+      padding: 5px 24px 5px 14px;
+      background: none;
+      border: none;
+      outline: none;
+      border-radius: 6px;
+      background-color: $bg-colDesBut;
+      color: white;
+      font-family: PoppinsBold;
+      font-size: $fs14;
+
+      display: flex;
+      align-items: center;
+
+      @include transitionTime;
+      .desingPageBodyButtonStyleImg {
+        margin-right: 12px;
+      }
+    }
+
+    .desingPageBodyButtonStyle1 {
+      margin-right: 10px;
+    }
+    .desingPageBodyButtonStyle2 {
+      margin-left: 10px;
+    }
+
+    .desingPageBodyButtonStyleActive {
+      background-color: #a42425;
+    }
+  }
+}
+
+.designPageFouter {
+  margin-top: 35px;
+  margin-bottom: 150px;
+  .designPageColorSelect {
+    .designPageColorSelectName {
+      font-family: $ff-Reg;
+      margin-bottom: 4px;
+      font-size: $fs17;
+    }
+    .designPageColorSelectBox {
+      .colorSelectContainer {
+        width: 100%;
+        font-family: PoppinsMedium;
+      }
+      .color-select {
+        border: 2px solid #e3e3e3;
+        padding: 10px;
+        position: relative;
+        width: 100%;
+        height: 50px;
+        span {
+          padding: 10px 0;
+          display: flex;
+          align-items: center;
+          height: 100%;
+          cursor: pointer;
+          font-size: $fs17;
+          .colorName {
+            display: flex;
+            width: max-content;
+          }
+          .colorBox {
+            margin-top: -8px;
+            list-style: none;
+            width: 26px;
+            height: 26px;
+            display: block;
+            border-radius: 50%;
+            background: #fff;
+            float: left;
+            margin: 0 12px 0 6px;
+            cursor: pointer;
+          }
+        }
+        .arrowVektorDown {
+          position: absolute;
+          top: 50%;
+          right: 15px;
+          transform: translateY(-50%);
+          @include transitionTime;
+        }
+        .arrowVektorDownUp {
+          transform: translateY(-50%) rotateX(180deg);
+          @include transitionTime;
+        }
+
+        ul {
+          width: 100%;
+          position: absolute;
+          top: 50px;
+          left: 0;
+          width: 100%;
+          overflow: visible;
+          margin: 0;
+          background-color: white;
+          background-color: $col-backSecond;
+          padding: 5px 0;
+          display: none;
+          box-shadow: 0 0 5px 1px $col-main;
+          max-height: 300px;
+          overflow: auto;
+          z-index: 10;
+
+          &:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          li {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            list-style: none;
+            margin-top: 10px;
+            padding: 0 15px;
+            @include transitionTime;
+            .dataColorV {
+              width: 30px;
+              height: 30px;
+              display: block;
+              overflow: hidden;
+              border-radius: 50%;
+              background: #fff;
+              margin-right: 10px;
+              cursor: pointer;
+              -webkit-transition: all 0.3s ease-in-out;
+              -moz-transition: all 0.3s ease-in-out;
+              -ms-transition: all 0.3s ease-in-out;
+              -o-transition: all 0.3s ease-in-out;
+              transition: all 0.3s ease-in-out;
+            }
+            .dataColorText {
+              display: inline-flex;
+              font-family: poppinsRegular;
+            }
+            // &:hover {
+            //   -webkit-transform: scale(1.02);
+            //   -moz-transform: scale(1.02);
+            //   -ms-transform: scale(1.02);
+            //   -o-transform: scale(1.02);
+            //   transform: scale(1.02);
+            // }
+          }
+
+          li:hover {
+            cursor: pointer;
+            background-color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .designPageFouterPrint {
+    display: flex;
+    align-items: end;
+    .designPageFouterPrintButton {
+      border: none;
+      background: none;
+      outline: none;
+      padding: 13px 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #a42425;
+      border-radius: 6px;
+      box-shadow: rgba(0, 0, 0, 0.25);
+      .designPageFouterPrintButtonImg {
+        margin-right: 4px;
+      }
+      .designPageFouterPrintButtonText {
+        font-family: PoppinsBold;
+        font-size: $fs12;
+        color: white;
+      }
+    }
+
+    .designPageFouterPrintButton:hover {
+      box-shadow: rgba(0, 0, 0, 0.55);
+    }
+  }
+}
+
 @import "media";

@@ -305,7 +305,9 @@ $(function () {
       $this.after(build($this));
     });
   };
+
   var openCloseSelect = false;
+
   $(document).on("click", "body", function () {
     $(".colorList").hide();
     if (openCloseSelect == true) {
@@ -315,7 +317,9 @@ $(function () {
       openCloseSelect = false;
     }
   });
+
   $(document).on("click", ".colorList", function (e) {
+    openCloseSelect = false;
     e.stopPropagation();
   });
 
@@ -954,4 +958,145 @@ $(".checkedCheckboxComp input").click(function () {
       .find(".productsItems")
       .removeClass("productShow");
   }
+});
+
+// Design
+
+// design
+
+const polarHome1 = document.getElementById("polarHome1");
+const polarHome2 = document.getElementById("polarHome2");
+
+var desingPageImg1 = document.getElementById("desingPageImg1");
+var desingPageImg2 = document.getElementById("desingPageImg2");
+
+polarHome1.addEventListener("click", function () {
+  desingPageImg2.classList.remove("desingPageImgActive");
+  desingPageImg1.classList.add("desingPageImgActive");
+
+  this.classList.add("desingPageBodyButtonStyleActive");
+  polarHome2.classList.remove("desingPageBodyButtonStyleActive");
+});
+
+polarHome2.addEventListener("click", function () {
+  desingPageImg1.classList.remove("desingPageImgActive");
+  desingPageImg2.classList.add("desingPageImgActive");
+
+  this.classList.add("desingPageBodyButtonStyleActive");
+  polarHome1.classList.remove("desingPageBodyButtonStyleActive");
+});
+
+$(function () {
+  $.fn.colorSelect1 = function () {
+    function build($select) {
+      var html = "";
+      var listItems = "";
+
+      $select.find("option").each(function () {
+        listItems +=
+          "" +
+          "<li>" +
+          '<span class="dataColorV" style="background:' +
+          this.value +
+          '"data-colorVal="' +
+          this.value +
+          '">' +
+          "</span>" +
+          "<span class='dataColorText'>" +
+          this.text +
+          "</span>" +
+          "</li>";
+      });
+
+      html =
+        "" +
+        '<div class="color-select color-select1">' +
+        "<span>Rəngi seçin</span>" +
+        "<img class='arrowVektorDown' src='img/arrowVektorDown.png'>" +
+        "<ul class='colorList colorList1'>" +
+        listItems +
+        "</ul>" +
+        "</div>";
+
+      return html;
+    }
+
+    this.each(function () {
+      var $this = $(this);
+
+      $this.hide();
+
+      $this.after(build($this));
+    });
+  };
+
+  $.fn.colorSelect2 = function () {
+    function build($select) {
+      var html = "";
+      var listItems = "";
+
+      $select.find("option").each(function () {
+        listItems +=
+          "" +
+          "<li>" +
+          '<span class="dataColorV" style="background:' +
+          this.value +
+          '"data-colorVal="' +
+          this.value +
+          '">' +
+          "</span>" +
+          "<span class='dataColorText'>" +
+          this.text +
+          "</span>" +
+          "</li>";
+      });
+
+      html =
+        "" +
+        '<div class="color-select color-select2">' +
+        "<span>Rəngi seçin</span>" +
+        "<img class='arrowVektorDown' src='img/arrowVektorDown.png'>" +
+        "<ul class='colorList colorList2'>" +
+        listItems +
+        "</ul>" +
+        "</div>";
+
+      return html;
+    }
+
+    this.each(function () {
+      var $this = $(this);
+
+      $this.hide();
+
+      $this.after(build($this));
+    });
+  };
+  // roof
+
+  $("[roof-colorselect]").colorSelect1();
+
+  // wall
+  $("[wall-colorselect]").colorSelect2();
+
+  // homeroof color change
+  $(document).on("click", ".color-select1 li", function () {
+    let homeRoofColor = $(this).children(".dataColorV").attr("data-colorVal");
+
+    const home1Roof = $(".home1Roof");
+    const home2Roof = $(".home2Roof");
+
+    home1Roof.css({ fill: homeRoofColor });
+    home2Roof.css({ fill: homeRoofColor });
+  });
+
+  $(document).on("click", ".color-select2 li", function () {
+    let homeWallColor = $(this).children(".dataColorV").attr("data-colorVal");
+
+    const home1Wall = $(".home1Wall");
+    const home2Wall = $(".home2Wall");
+
+    home1Wall.css({ fill: homeWallColor });
+    home2Wall.css({ fill: homeWallColor });
+  });
 });
