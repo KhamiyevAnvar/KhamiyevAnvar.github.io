@@ -1125,7 +1125,7 @@ function download(canvas, filename) {
 }
 
 function onScreenShotClick(event) {
-  const element = document.querySelector("#desingPageImg1");
+  const element = document.querySelector("#desingPage");
 
   html2canvas(element).then((canvas) => {
     download(canvas, "polarEvDizayn");
