@@ -3105,6 +3105,9 @@ body {
   body * {
     display: none;
   }
+  @page {
+    size: landscape;
+  }
   #desingPage,
   #desingPage * {
     display: flex;
