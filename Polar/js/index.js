@@ -1100,3 +1100,62 @@ $(function () {
     home2Wall.css({ fill: homeWallColor });
   });
 });
+
+//print polar
+
+const desingImgPrintButton = document.getElementById("desingImgPrintButton");
+desingImgPrintButton.addEventListener("mousedown", onScreenShotClick);
+
+function download(canvas, filename) {
+  // create an "off-screen" anchor tag
+  const a = document.createElement("a");
+
+  // the key here is to set the download attribute of the a tag
+  a.download = filename;
+
+  // convert canvas content to data-uri for link. When download
+  // attribute is set the content pointed to by link will be
+  // pushed as "download" in HTML5 capable browsers
+  a.href = canvas.toDataURL("image/jpeg");
+
+  a.style.display = "none";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
+
+function onScreenShotClick(event) {
+  const element = document.querySelector("#desingPageImg1");
+
+  html2canvas(element).then((canvas) => {
+    download(canvas, "polarEvDizayn");
+  });
+}
+
+// dont work pdf color
+
+// var downPdf = document.getElementById("desingImgPrintButton");
+// downPdf.onclick = function () {
+//   const element = document.querySelector("#desingPage");
+//   html2canvas(element, {
+//     onrendered: function (canvas) {
+//       //Returns the image data URL, parameter: image format and clarity (0-1)
+//       var pageData = canvas.toDataURL("image/jpeg", 1.0);
+
+//       //Default vertical direction, size ponits, format a4[595.28,841.89]
+//       var pdf = new jsPDF("", "pt", "a4");
+
+//       //Two parameters after addImage control the size of the added image, where the page height is compressed according to the width-height ratio column of a4 paper.
+//       pdf.addImage(
+//         pageData,
+//         "JPEG",
+//         0,
+//         0,
+//         595.28,
+//         (592.28 / canvas.width) * canvas.height
+//       );
+
+//       pdf.save("home.pdf");
+//     },
+//   });
+// };

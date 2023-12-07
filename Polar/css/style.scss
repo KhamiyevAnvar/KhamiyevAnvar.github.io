@@ -2997,6 +2997,7 @@ body {
 }
 
 #desingPage {
+  mix-blend-mode: multiply;
   .desingPage {
     .desingPageImg {
       display: none;
@@ -3027,9 +3028,12 @@ body {
         svg {
           width: 100%;
           height: 100%;
+
+          mix-blend-mode: multiply;
           g {
             path {
               @include transitionTime;
+              mix-blend-mode: multiply;
             }
           }
         }
@@ -3045,9 +3049,11 @@ body {
         svg {
           width: 100%;
           height: 100%;
+          mix-blend-mode: multiply;
           g {
             path {
               @include transitionTime;
+              mix-blend-mode: multiply;
             }
           }
         }
@@ -3068,9 +3074,11 @@ body {
         svg {
           width: 100%;
           height: 100%;
+          mix-blend-mode: multiply;
           g {
             path {
               @include transitionTime;
+              mix-blend-mode: multiply;
             }
           }
         }
@@ -3086,9 +3094,11 @@ body {
         svg {
           width: 100%;
           height: 100%;
+          mix-blend-mode: multiply;
           g {
             path {
               @include transitionTime;
+              mix-blend-mode: multiply;
             }
           }
         }
