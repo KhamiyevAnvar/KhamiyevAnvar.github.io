@@ -3101,6 +3101,15 @@ body {
   mix-blend-mode: multiply;
 }
 
+@media print {
+  body * {
+    display: none;
+  }
+  #desingPage,
+  #desingPage * {
+    display: flex;
+  }
+}
 .desingPageBody {
   margin-top: 15px;
 }

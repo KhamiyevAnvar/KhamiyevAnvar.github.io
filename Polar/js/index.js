@@ -1104,33 +1104,37 @@ $(function () {
 //print polar
 
 const desingImgPrintButton = document.getElementById("desingImgPrintButton");
-desingImgPrintButton.addEventListener("mousedown", onScreenShotClick);
+// desingImgPrintButton.addEventListener("mousedown", onScreenShotClick);
 
-function download(canvas, filename) {
-  // create an "off-screen" anchor tag
-  const a = document.createElement("a");
+// function download(canvas, filename) {
+//   // create an "off-screen" anchor tag
+//   const a = document.createElement("a");
 
-  // the key here is to set the download attribute of the a tag
-  a.download = filename;
+//   // the key here is to set the download attribute of the a tag
+//   a.download = filename;
 
-  // convert canvas content to data-uri for link. When download
-  // attribute is set the content pointed to by link will be
-  // pushed as "download" in HTML5 capable browsers
-  a.href = canvas.toDataURL("image/jpeg");
+//   // convert canvas content to data-uri for link. When download
+//   // attribute is set the content pointed to by link will be
+//   // pushed as "download" in HTML5 capable browsers
+//   a.href = canvas.toDataURL("image/jpeg");
 
-  a.style.display = "none";
-  document.body.appendChild(a);
-  a.click();
-  document.body.removeChild(a);
-}
+//   a.style.display = "none";
+//   document.body.appendChild(a);
+//   a.click();
+//   document.body.removeChild(a);
+// }
 
-function onScreenShotClick(event) {
-  const element = document.querySelector("#desingPage");
+// function onScreenShotClick(event) {
+//   const element = document.querySelector("#desingPage");
 
-  html2canvas(element).then((canvas) => {
-    download(canvas, "polarEvDizayn");
-  });
-}
+//   html2canvas(element).then((canvas) => {
+//     download(canvas, "polarEvDizayn");
+//   });
+// }
+
+desingImgPrintButton.addEventListener("click", function () {
+  print();
+});
 
 // dont work pdf color
 
