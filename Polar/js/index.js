@@ -1104,6 +1104,13 @@ $(function () {
 //print polar
 
 const desingImgPrintButton = document.getElementById("desingImgPrintButton");
+
+desingImgPrintButton.addEventListener("click", function () {
+  print();
+});
+
+// jpg
+
 // desingImgPrintButton.addEventListener("mousedown", onScreenShotClick);
 
 // function download(canvas, filename) {
@@ -1131,10 +1138,6 @@ const desingImgPrintButton = document.getElementById("desingImgPrintButton");
 //     download(canvas, "polarEvDizayn");
 //   });
 // }
-
-desingImgPrintButton.addEventListener("click", function () {
-  print();
-});
 
 // dont work pdf color
 
