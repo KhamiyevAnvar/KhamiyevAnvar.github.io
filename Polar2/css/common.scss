@@ -1,0 +1,68 @@
+@font-face {
+  font-family: PoppinsRegular;
+  src: url(fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: PoppinsMedium;
+  src: url(fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: PoppinsSemibold;
+  src: url(fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: PoppinsBold;
+  src: url(fonts/Poppins/Poppins-Bold.ttf);
+}
+
+$ff-Reg: PoppinsRegular;
+$ff-Semibold: PoppinsSemibold;
+
+$fs12: 12px; //
+$fs14: 14px; //
+$fs16: 16px; //
+$fs17: 17px; //
+$fs18: 18px; //
+$fs20: 20px; //
+$fs22: 22px; //
+$fs24: 24px; //
+$fs26: 26px; //
+$fs28: 28px; //
+$fs32: 32px; //
+$fs40: 40px; //
+$fs44: 44px; //
+
+$col-main: #b5a801;
+$col-sugName: #3c3c3c;
+$col-cardBorder: #b4b4b4;
+$col-cardFeatures: #a0a0a0;
+$col-productType: #3b3b3b;
+
+$col-backSecond: #f5f5f5; //
+$col-productWeightBack: #e8e8e8;
+
+$bg-colDesBut: #a8a8a8;
+.list_reset {
+  list-style-type: none;
+  margin: 0;
+}
+
+.buuton_reset {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+@mixin transitionTime($time: 0.4s) {
+  transition: all ease $time;
+}
+
+@mixin lineLimit($line: 1) {
+  -webkit-line-clamp: $line !important;
+  -webkit-box-orient: vertical !important;
+  display: -webkit-box !important;
+  overflow: hidden !important;
+}
