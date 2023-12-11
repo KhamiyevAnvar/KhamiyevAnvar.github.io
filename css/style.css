@@ -85,7 +85,7 @@ html ::-webkit-scrollbar-thumb:hover {
 #Navbar .navdiv ul li a {
   display: inline-block;
   text-decoration: none;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   font-size: 0.938rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -107,7 +107,7 @@ html ::-webkit-scrollbar-thumb:hover {
   border-bottom: 1px solid #1cfbff;
 }
 #Navbar .nav-body {
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -228,7 +228,7 @@ html ::-webkit-scrollbar-thumb:hover {
 #about .about-head {
   padding: 5vh 0;
   box-shadow: 0 0 3px #019194;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   text-align: center;
   border-radius: 15px;
 }
@@ -267,7 +267,7 @@ html ::-webkit-scrollbar-thumb:hover {
   margin-top: 4vh;
   font-weight: 400;
   font-size: 1.313rem;
-  padding: 0 5vw ;
+  padding: 0 5vw;
   text-align: justify;
   color: #00adac;
 }
@@ -294,7 +294,7 @@ html ::-webkit-scrollbar-thumb:hover {
 #skills {
   background-color: #019194;
   padding: 10vh 0;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 #skills .skills-name {
   text-align: center;
@@ -471,7 +471,7 @@ html ::-webkit-scrollbar-thumb:hover {
 #contact {
   padding: 10vh 0;
   background-color: white;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 #contact .contact-name {
   text-align: center;
@@ -575,7 +575,7 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 #contact .social-div .s-whatsapp:hover {
   color: white;
-  background-color: #25D366;
+  background-color: #25d366;
   border: 2px solid white;
   transform: rotate(360deg);
 }
@@ -599,7 +599,7 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 #contact .social-div .s-linkedin:hover {
   color: white;
-  background-color: #0077B5;
+  background-color: #0077b5;
   border: 2px solid white;
   transform: rotate(360deg);
 }
@@ -676,7 +676,7 @@ html ::-webkit-scrollbar-thumb:hover {
   padding: 5px 15px;
   background-color: white;
   color: #02dde0;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   font-weight: 700;
   transition: 0.3s;
 }
@@ -685,7 +685,7 @@ html ::-webkit-scrollbar-thumb:hover {
   color: white;
 }
 #contact .contact-right:hover {
-  transform: scale(1.04);
+  transform: scale(1.02);
 }
 #copyright {
   background-color: #026E70;

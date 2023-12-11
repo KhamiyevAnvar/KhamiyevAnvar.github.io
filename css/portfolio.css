@@ -85,7 +85,7 @@ html ::-webkit-scrollbar-thumb:hover {
 #Navbar .navdiv ul li a {
   display: inline-block;
   text-decoration: none;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   font-size: 0.938rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -107,7 +107,7 @@ html ::-webkit-scrollbar-thumb:hover {
   border-bottom: 1px solid #1cfbff;
 }
 #Navbar .nav-body {
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -223,7 +223,7 @@ html ::-webkit-scrollbar-thumb:hover {
   padding: 4vh 2vw;
 }
 #portfolio .portfolio-head h1 {
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   font-weight: 700;
   font-size: clamp(2.6rem, 5vw, 3.625rem);
   color: white;
@@ -232,7 +232,7 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 @keyframes shado {
   0% {
-    text-shadow: 0 0px 10px  white;
+    text-shadow: 0 0px 10px white;
     color: #019194;
   }
   100% {
@@ -252,18 +252,18 @@ html ::-webkit-scrollbar-thumb:hover {
   margin-top: 30px;
   margin-bottom: 20px;
   text-align: center;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   font-weight: 500;
   font-size: 2.75rem;
   color: #02dde0;
 }
 #portfolio .port-item {
-  transition: 0.5s;
+  transition: 0.4s;
   margin: 15px 0;
   position: relative;
   width: 100%;
   height: 230px;
-  border-radius: 10px;
+  border-radius: 15px;
   box-shadow: 0 0 3px #02dde0;
   overflow: hidden;
 }
@@ -278,9 +278,9 @@ html ::-webkit-scrollbar-thumb:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   font-weight: 700;
-  font-size: clamp(1.8rem, 3vw, 2.313rem);
+  font-size: 2.063rem;
   color: white;
   text-decoration: none;
   opacity: 0;
@@ -296,7 +296,7 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 #portfolio .port-item a span {
   font-weight: 500;
-  font-size: 1.563rem;
+  font-size: 1.375rem;
 }
 #portfolio .port-item a span i {
   margin-left: 15px;
@@ -322,7 +322,7 @@ html ::-webkit-scrollbar-thumb:hover {
   left: -1000px;
   width: 100%;
   height: 100%;
-  padding: 18px 20px 0 0 ;
+  padding: 18px 20px 0 0;
   transition: all 0.5s ease;
   opacity: 0;
   z-index: 1;
@@ -358,7 +358,7 @@ html ::-webkit-scrollbar-thumb:hover {
 #contact {
   padding: 10vh 0;
   background-color: white;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 #contact .contact-name {
   text-align: center;
@@ -462,7 +462,7 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 #contact .social-div .s-whatsapp:hover {
   color: white;
-  background-color: #25D366;
+  background-color: #25d366;
   border: 2px solid white;
   transform: rotate(360deg);
 }
@@ -486,7 +486,7 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 #contact .social-div .s-linkedin:hover {
   color: white;
-  background-color: #0077B5;
+  background-color: #0077b5;
   border: 2px solid white;
   transform: rotate(360deg);
 }
@@ -563,7 +563,7 @@ html ::-webkit-scrollbar-thumb:hover {
   padding: 5px 15px;
   background-color: white;
   color: #02dde0;
-  font-family: 'Montserrat Alternates', sans-serif;
+  font-family: "Montserrat Alternates", sans-serif;
   font-weight: 700;
   transition: 0.3s;
 }
@@ -572,7 +572,7 @@ html ::-webkit-scrollbar-thumb:hover {
   color: white;
 }
 #contact .contact-right:hover {
-  transform: scale(1.04);
+  transform: scale(1.02);
 }
 #copyright {
   background-color: #026E70;
@@ -655,7 +655,7 @@ html ::-webkit-scrollbar-thumb:hover {
     margin-left: 15px;
   }
   #portfolio .port-item .anime {
-    padding: 18px 20px 0 0 ;
+    padding: 18px 20px 0 0;
   }
   #portfolio .port-item .anime i {
     height: 20px;

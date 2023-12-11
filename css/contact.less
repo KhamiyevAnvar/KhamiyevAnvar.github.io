@@ -1,232 +1,226 @@
-#contact{
-	padding:10vh 0; 
-	background-color:white;
-	font-family: @ff-montserrat;
-	
-	.contact-name{
-		text-align:center;
-		padding-bottom:5vh;
-		h1{
-			font-weight: @fw-700;
-			font-size: @fs-37;
-			color: @bg-col-nav;
-		}
-		.keep{
-			display: flex;
-			align-items:center;
-			justify-content: center;
-			span{
-				margin:5px;
-			}	
-			span:nth-child(1){
-				display: inline-block;
-				width: 50px;
-				height: 2px;
-				background-color:@col-about-p;
-			}
-			span:nth-child(2){
-				display: inline-block;
-				font-weight: 400;
-				font-size: @fs-20;
-				color: @col-about-p;
-			}
-			span:nth-child(3){
-				display: inline-block;
-				width: 50px;
-				height: 2px;
-				background-color:@col-about-p;
-			}
-		}
-	}
-	.contact-left{
-		margin-top: 6vh;
-		list-style: none;
-		padding:0;
-		.left-head{
-			margin-bottom: 30px;
-			h4{
-				font-weight: @fw-500;
-				font-size: @fs-30;
-				color: @bg-col-nav;
-			}
-		}
-		li{
-			margin-bottom: 12px;
-			transition: 0.3s;
+#contact {
+  padding: 10vh 0;
+  background-color: white;
+  font-family: @ff-montserrat;
 
-			i{
-				display: inline-block;
-				width: 25px;
-				height: 100%;
-				vertical-align: super;
-				font-size: @fs-30;
-				color: @bg-col-nav;
-				transition: 0.3s;
-				text-align: center;
-    			margin-right: 15px;
-			}
-			a{
-				display: inline-block;
-				text-decoration: none;
-				font-weight: @fw-700;
-				font-size: @fs-17;
-				color: @bg-col-nav;
+  .contact-name {
+    text-align: center;
+    padding-bottom: 5vh;
+    h1 {
+      font-weight: @fw-700;
+      font-size: @fs-37;
+      color: @bg-col-nav;
+    }
+    .keep {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span {
+        margin: 5px;
+      }
+      span:nth-child(1) {
+        display: inline-block;
+        width: 50px;
+        height: 2px;
+        background-color: @col-about-p;
+      }
+      span:nth-child(2) {
+        display: inline-block;
+        font-weight: 400;
+        font-size: @fs-20;
+        color: @col-about-p;
+      }
+      span:nth-child(3) {
+        display: inline-block;
+        width: 50px;
+        height: 2px;
+        background-color: @col-about-p;
+      }
+    }
+  }
+  .contact-left {
+    margin-top: 6vh;
+    list-style: none;
+    padding: 0;
+    .left-head {
+      margin-bottom: 30px;
+      h4 {
+        font-weight: @fw-500;
+        font-size: @fs-30;
+        color: @bg-col-nav;
+      }
+    }
+    li {
+      margin-bottom: 12px;
+      transition: 0.3s;
 
-				transition: 0.3s;
-			}
-			
-		}
-		li:hover{
-			transform: scale(1.02);
-			i{
-				color: @col-list;
-			}
-			a{
-				color: @col-list;
-			}
-		}
+      i {
+        display: inline-block;
+        width: 25px;
+        height: 100%;
+        vertical-align: super;
+        font-size: @fs-30;
+        color: @bg-col-nav;
+        transition: 0.3s;
+        text-align: center;
+        margin-right: 15px;
+      }
+      a {
+        display: inline-block;
+        text-decoration: none;
+        font-weight: @fw-700;
+        font-size: @fs-17;
+        color: @bg-col-nav;
 
-	}
-	.social-div{
-		margin-top: 20px;
-		a{		
-			display: inline-block;
-			text-align: center;
-			margin-right: 10px;
-			width: 42px;
-			height: 42px;
-			font-size: @fs-25;
-			font-weight: @fw-400;
-			border-radius:50%;
-			box-shadow:0 0 4px black;
-			
-		}
-		.s-whatsapp{
-			color: @bg-col-nav;
-			background-color:white;
-			border:2px solid @bg-col-nav;
-			transition: 0.3s;
-			
-		}
-		.s-whatsapp:hover{
-			color: white;
-			background-color:#25D366;
-			border:2px solid white;
-			transform: rotate(360deg);
-		}
-		.s-insta{
-			color: @bg-col-nav;
-			background-color:white;
-			border:2px solid @bg-col-nav;
-			transition: 0.3s;
-		}
-		.s-insta:hover{
-			color: white;
-			background-color:#8a3ab9;
-			border:2px solid white;
-			transform: rotate(360deg);
-		}
-		.s-linkedin{
-			color: @bg-col-nav;
-			background-color:white;
-			border:2px solid @bg-col-nav;
-			transition: 0.3s;
-		}
-		.s-linkedin:hover{
-			color: white;
-			background-color:#0077B5;
-			border:2px solid white;
-			transform: rotate(360deg);
-		}
-		.s-facebook{
-			color: @bg-col-nav;
-			background-color:white;
-			border:2px solid @bg-col-nav;
-			transition: 0.3s;
-		}
-		.s-facebook:hover{
-			color: white;
-			background-color:#105792;
-			border:2px solid white;
-			transform: rotate(360deg);
-		}
-	}
-	.contact-right{
-		margin: 3vh 0;
-		box-shadow:0 0 5px @bg-col-nav; 
-    	padding: 25px;
-    	border-radius: 10px;
-    	transition: 0.3s;
-		.right-head{
-			margin-bottom: 30px;
-			h4{
-				font-weight: @fw-500;
-				font-size: @fs-30;
-				color: @bg-col-nav;
-			}
-		}
-		form{
-			input{
-				outline: none;
-				border:none;
-				border-radius:8px;
-				box-shadow:0 0 5px @bg-col-nav;
-				color: @col-list;
-				font-weight: @fw-400;
-				font-size: @fs-17;
-			}
-			.first-row{
-				.f-name{
-					width: 49%;
-					height: 32px;
-					padding-left:10px;
-				}
-				.f-email{
-					width: 49%;
-					float: right;
-					height: 32px;
-					padding-left:10px;
-				}
-			}
-			.f-subject{
-				width: 100%;
-				margin-top: 20px;
-				height: 32px;
-				padding-left:10px;
-			}
-			.f-message{
-				width: 100%;
-				margin-top: 20px;
-				padding:10px;
-				outline: none;
-				border:none;
-				border-radius:8px;
-				color: @col-list;
-				font-weight: @fw-400;
-				font-size: @fs-17;
-				box-shadow:0 0 5px @bg-col-nav;
-			}
-			::placeholder{
-				color:@col-list;
-			}
-			.sub-but{
-				margin-top: 10px;
-				padding:5px 15px;
-				background-color:white;
-				color: @col-list;
-				font-family: @ff-montserrat;
-				font-weight: @fw-700;
-				transition: 0.3s;
-			}
-			.sub-but:hover{
-
-				background-color: @col-list;
-				color:white;
-			}
-			
-		}
-	}
-	.contact-right:hover{
-		transform: scale(1.04);
-	}
+        transition: 0.3s;
+      }
+    }
+    li:hover {
+      transform: scale(1.02);
+      i {
+        color: @col-list;
+      }
+      a {
+        color: @col-list;
+      }
+    }
+  }
+  .social-div {
+    margin-top: 20px;
+    a {
+      display: inline-block;
+      text-align: center;
+      margin-right: 10px;
+      width: 42px;
+      height: 42px;
+      font-size: @fs-25;
+      font-weight: @fw-400;
+      border-radius: 50%;
+      box-shadow: 0 0 4px black;
+    }
+    .s-whatsapp {
+      color: @bg-col-nav;
+      background-color: white;
+      border: 2px solid @bg-col-nav;
+      transition: 0.3s;
+    }
+    .s-whatsapp:hover {
+      color: white;
+      background-color: #25d366;
+      border: 2px solid white;
+      transform: rotate(360deg);
+    }
+    .s-insta {
+      color: @bg-col-nav;
+      background-color: white;
+      border: 2px solid @bg-col-nav;
+      transition: 0.3s;
+    }
+    .s-insta:hover {
+      color: white;
+      background-color: #8a3ab9;
+      border: 2px solid white;
+      transform: rotate(360deg);
+    }
+    .s-linkedin {
+      color: @bg-col-nav;
+      background-color: white;
+      border: 2px solid @bg-col-nav;
+      transition: 0.3s;
+    }
+    .s-linkedin:hover {
+      color: white;
+      background-color: #0077b5;
+      border: 2px solid white;
+      transform: rotate(360deg);
+    }
+    .s-facebook {
+      color: @bg-col-nav;
+      background-color: white;
+      border: 2px solid @bg-col-nav;
+      transition: 0.3s;
+    }
+    .s-facebook:hover {
+      color: white;
+      background-color: #105792;
+      border: 2px solid white;
+      transform: rotate(360deg);
+    }
+  }
+  .contact-right {
+    margin: 3vh 0;
+    box-shadow: 0 0 5px @bg-col-nav;
+    padding: 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+    .right-head {
+      margin-bottom: 30px;
+      h4 {
+        font-weight: @fw-500;
+        font-size: @fs-30;
+        color: @bg-col-nav;
+      }
+    }
+    form {
+      input {
+        outline: none;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 0 5px @bg-col-nav;
+        color: @col-list;
+        font-weight: @fw-400;
+        font-size: @fs-17;
+      }
+      .first-row {
+        .f-name {
+          width: 49%;
+          height: 32px;
+          padding-left: 10px;
+        }
+        .f-email {
+          width: 49%;
+          float: right;
+          height: 32px;
+          padding-left: 10px;
+        }
+      }
+      .f-subject {
+        width: 100%;
+        margin-top: 20px;
+        height: 32px;
+        padding-left: 10px;
+      }
+      .f-message {
+        width: 100%;
+        margin-top: 20px;
+        padding: 10px;
+        outline: none;
+        border: none;
+        border-radius: 8px;
+        color: @col-list;
+        font-weight: @fw-400;
+        font-size: @fs-17;
+        box-shadow: 0 0 5px @bg-col-nav;
+      }
+      ::placeholder {
+        color: @col-list;
+      }
+      .sub-but {
+        margin-top: 10px;
+        padding: 5px 15px;
+        background-color: white;
+        color: @col-list;
+        font-family: @ff-montserrat;
+        font-weight: @fw-700;
+        transition: 0.3s;
+      }
+      .sub-but:hover {
+        background-color: @col-list;
+        color: white;
+      }
+    }
+  }
+  .contact-right:hover {
+    transform: scale(1.02);
+  }
 }
