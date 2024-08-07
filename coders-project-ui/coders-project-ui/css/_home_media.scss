@@ -1,0 +1,294 @@
+@media only screen and (max-width: 1199.9px) {
+  .brand-info-block {
+    .brand-info {
+      width: 50%;
+      border-left: 0 solid $bd-main-color !important;
+      padding: 10px 0 !important;
+    }
+  }
+}
+
+@media only screen and (max-width: 919.9px) {
+  .main-head-design {
+    font-size: $fs30;
+    .main-head-design-second {
+      display: none;
+    }
+  }
+
+  #collection {
+    padding: 70px 0 96px 0;
+    .collection {
+      margin-top: 32px;
+
+      .collection-carousel {
+        .slick-dots {
+          bottom: -60px !important;
+        }
+        .collection-block {
+          .collection-item {
+            .collection-item-left {
+              h4 {
+                font-size: $fs22;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #recommendation {
+    padding: 70px 0 96px 0;
+    .recommendation {
+      margin-top: 32px;
+      .recommendation-carousel {
+        .slick-dots {
+          bottom: -60px !important;
+        }
+      }
+    }
+  }
+
+  #bestsellers {
+    padding: 70px 0 96px 0;
+    .bestsellers {
+      margin-top: 32px;
+      .bestsellers-carousel {
+        .slick-dots {
+          bottom: -60px !important;
+        }
+      }
+    }
+  }
+
+  #banner {
+    padding: 52px 0;
+    .banner {
+      padding: 0 80px;
+      .banner-left {
+        width: 100%;
+        padding: 50px 0;
+        .banner-left-content {
+          .banner-left-content-head {
+            font-size: $fs18;
+          }
+
+          .banner-left-content-body {
+            margin-top: 14px;
+            font-family: poppins-semibold;
+            font-size: $fs36;
+            color: $bg-col-main-but;
+            line-height: $lh40;
+          }
+
+          .banner-left-content-bottom {
+            margin-top: 24px;
+            font-family: poppins-medium;
+            font-size: $fs20;
+            color: $col-nav;
+          }
+        }
+        .main-button-design {
+          margin-top: 24px;
+          @extend %main-button-design;
+          padding: 14px 32px;
+          @include transition;
+
+          &:hover {
+            color: $bg-col-main-but;
+            background-color: white;
+            transform: scale(1.05);
+          }
+        }
+      }
+      .banner-right {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .brand-info-block {
+    // margin: 52px 0 32px 0;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    border: 0px solid $bd-main-color;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .brand-info {
+      width: auto;
+      padding: 5px 0 !important;
+      margin-right: 20px;
+      svg {
+        width: 19px;
+      }
+
+      .brand-info-right {
+        margin-left: 10px;
+        .brand-info-right-head {
+          font-family: poppins-regular;
+          font-size: $fs14 !important;
+          color: $col-nav !important;
+          width: max-content;
+        }
+        .brand-info-right-bottom {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .main-head-design {
+    font-size: $fs30;
+  }
+}
+
+@media screen and (max-width: 575.9px) {
+  #n-cover {
+    height: 550px;
+
+    .cover-carousel {
+      .cover-item {
+        height: 550px;
+        img {
+          display: none;
+        }
+
+        .n-cover-pos {
+          .n-cover-pos-block {
+            padding: 0 12px;
+            .n-cover-start-text {
+              font-size: $fs14;
+            }
+
+            .n-cover-h1 {
+              font-size: $fs30;
+              line-height: $lh38;
+              margin-top: 8px;
+            }
+
+            .main-button-design {
+              padding: 12px 24px;
+              margin-top: 40px;
+              font-size: $fs14;
+
+              &:hover {
+                transform: scale(1.05);
+              }
+
+              svg {
+                width: 16px;
+                height: 16px;
+              }
+            }
+          }
+        }
+      }
+
+      .slick-dots {
+        padding-left: 24px;
+        bottom: 30px !important;
+        display: flex !important;
+      }
+    }
+  }
+
+  #brand-info {
+    padding: 52px 12px;
+  }
+
+  .brand-info-head {
+    display: flex;
+  }
+
+  .brand-info-block {
+    margin: 0;
+    padding: 0;
+    margin-top: 24px;
+    .brand-info {
+      svg {
+        path {
+          stroke: $col-nav;
+        }
+      }
+      .brand-info-right {
+        margin-left: 10px;
+        .brand-info-right-head {
+          font-family: poppins-regular !important;
+        }
+      }
+    }
+  }
+
+  .main-head-design {
+    font-size: $fs24;
+    .main-head-design-second {
+      display: none;
+    }
+  }
+
+  #collection {
+    padding: $npy-52 12px $npy-84 12px;
+    .collection {
+      margin-top: $nmt-24;
+
+      .collection-carousel {
+        .slick-dots {
+          bottom: -48px !important;
+        }
+        .collection-block {
+          .collection-item {
+            padding: 40px 24px;
+            .collection-item-left {
+              h4 {
+                font-size: $fs20;
+              }
+              span {
+                font-size: $fs12;
+              }
+            }
+            .collection-item-right {
+              padding: 8px 0 8px 12px;
+
+              span {
+                font-size: $fs12;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #recommendation {
+    padding: $npy-52 12px $npy-84 12px;
+    .recommendation {
+      margin-top: $nmt-24;
+      .recommendation-carousel {
+        .slick-dots {
+          bottom: -48px !important;
+        }
+      }
+    }
+  }
+
+  #bestsellers {
+    padding: $npy-52 12px $npy-110 12px;
+    .bestsellers {
+      margin-top: $nmt-24;
+      .bestsellers-carousel {
+        .slick-dots {
+          bottom: -48px !important;
+        }
+      }
+    }
+  }
+
+  #banner {
+    display: none;
+  }
+}

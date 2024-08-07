@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html ::-webkit-scrollbar {
+  width: 0.45vw !important;
+}
+html ::-webkit-scrollbar-track {
+  background-color: $bd-main-color;
+}
+html ::-webkit-scrollbar-thumb {
+  background-color: $col-nav;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+html ::-webkit-scrollbar-thumb:hover {
+  background-color: $bg-col-main-but;
+  opacity: 0.5;
+  margin: 1px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}

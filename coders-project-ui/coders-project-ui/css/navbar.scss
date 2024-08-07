@@ -1,0 +1,253 @@
+.n-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+
+  .n-navbar-logo {
+    display: flex;
+    width: 90px;
+    img {
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  .n-navbar-mobile-logo {
+    display: none;
+  }
+
+  .n-navbar-list {
+    @include list-reset;
+    li {
+      @include transition;
+      a {
+        text-decoration: none;
+        color: $col-nav;
+        font-family: poppins-medium;
+        font-size: $fs18;
+        @include transition;
+      }
+
+      &:not(:last-child) {
+        margin-right: 14px;
+      }
+
+      &:hover {
+        transform: scale(1.05);
+        a {
+          color: black;
+        }
+      }
+    }
+  }
+
+  .n-navbar-search {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    border-radius: 25px;
+    background-color: $bg-col-search;
+    padding: 10px 25px;
+
+    .n-navbar-search-icon {
+      height: 22px;
+      margin-right: 5px;
+      display: flex;
+      svg {
+        width: auto;
+        height: 100%;
+      }
+    }
+
+    .n-navbar-search-input {
+      width: 100%;
+      height: 24px;
+      display: flex;
+      input {
+        outline: none;
+        border: none;
+        background: none;
+        width: 100%;
+        height: 100%;
+        font-family: poppins-medium;
+        font-size: $fs14;
+      }
+    }
+  }
+
+  .n-navbar-right {
+    display: flex;
+    align-items: flex-end;
+    .n-navbar-user {
+      display: inline-flex;
+      text-decoration: none;
+      @include transition;
+
+      svg {
+        @include transition;
+      }
+
+      &:hover {
+        transform: scale(1.05);
+
+        svg {
+          path {
+            stroke: black;
+          }
+        }
+      }
+    }
+
+    .n-navbar-basket {
+      display: inline-flex;
+      text-decoration: none;
+      margin-left: 10px;
+      position: relative;
+      @include transition;
+
+      .basket-count {
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 18px;
+        height: 18px;
+        background-color: $bg-col-basket-count;
+        font-family: poppins-medium;
+        font-size: $fs12;
+        color: white;
+      }
+
+      svg {
+        @include transition;
+      }
+
+      &:hover {
+        transform: scale(1.05);
+
+        svg {
+          path {
+            stroke: black;
+          }
+        }
+      }
+    }
+
+    .n-navbar-mobile-button {
+      display: none;
+      #n-mobile-button {
+        border: none;
+        background: none;
+        outline: none;
+        width: 22px;
+        span {
+          display: flex;
+          width: 100%;
+          height: 3px;
+          background-color: $col-nav;
+          border-radius: 10px;
+
+          &:not(:last-child) {
+            margin-bottom: 3px;
+          }
+        }
+      }
+    }
+
+    .n-navbar-mobile-button-svg {
+      display: none;
+      svg {
+        path {
+          fill: $col-nav;
+        }
+      }
+    }
+
+    #navbar_menu_button {
+      //   position: fixed;
+      //   top: 5px;
+      //   right: 35px;
+      //   z-index: 1002;
+      transition: all ease 1s;
+      .ham {
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        transition: transform 400ms;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      .hamRotate.active {
+        transform: rotate(45deg);
+      }
+
+      .line {
+        fill: none;
+        transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+        stroke: $col-nav;
+        stroke-width: 7;
+        stroke-linecap: round;
+        transition: all ease 1s;
+      }
+
+      .ham8 {
+        height: 28px;
+        .top {
+          stroke-dasharray: 40 160;
+        }
+
+        .middle {
+          stroke-dasharray: 40 142;
+          transform-origin: 50%;
+          transition: transform 400ms;
+        }
+        .bottom {
+          stroke-dasharray: 40 85;
+          transform-origin: 50%;
+          transition: transform 400ms, stroke-dashoffset 400ms;
+        }
+      }
+
+      .active {
+        .top {
+          stroke-dashoffset: -64px;
+        }
+
+        .middle {
+          transform: rotate(90deg);
+        }
+
+        .bottom {
+          stroke-dashoffset: -64px;
+        }
+      }
+
+      &:hover {
+        .line {
+          stroke: black;
+        }
+
+        #navbar_menu_button_ham {
+          transform: rotate(45deg);
+          .top {
+            stroke-dashoffset: -64px;
+          }
+
+          .middle {
+            transform: rotate(90deg);
+          }
+
+          .bottom {
+            stroke-dashoffset: -64px;
+          }
+        }
+      }
+    }
+  }
+}
