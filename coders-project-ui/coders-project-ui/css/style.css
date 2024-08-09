@@ -311,6 +311,7 @@ ul {
   fill: #4b5563;
 }
 .n-navbar .n-navbar-right #navbar_menu_button {
+  display: none;
   transition: all ease 1s;
 }
 .n-navbar .n-navbar-right #navbar_menu_button .ham {
@@ -959,6 +960,9 @@ ul {
   }
   .n-navbar .n-navbar-right .n-navbar-basket {
     display: none;
+  }
+  .n-navbar .n-navbar-right #navbar_menu_button {
+    display: inline-flex;
   }
 }
 @media screen and (max-width: 767.9px) {
