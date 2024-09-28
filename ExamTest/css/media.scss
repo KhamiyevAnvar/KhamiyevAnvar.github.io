@@ -1,0 +1,208 @@
+@import "common";
+
+@media only screen and (max-width: 1400px) {
+}
+
+@media only screen and (max-width: 1199.9px) {
+  #examHeader {
+    .examHeader {
+      .examHeaderMiddle {
+        .examHeaderMenuList {
+          font-size: $fs18;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991.9px) {
+  #examHeader {
+    .examHeader {
+      .examHeaderLeft {
+        .examHeaderLogo {
+          width: 70px;
+        }
+      }
+
+      .examHeaderMiddle {
+        .examHeaderMenuList {
+          display: none;
+        }
+
+        .examHeaderMenuButBlock {
+          display: flex;
+        }
+      }
+
+      .mobileMenu {
+        display: block;
+      }
+
+      .mobileMenuNone {
+        display: none;
+      }
+    }
+  }
+
+  .mobileMenu {
+    display: block;
+  }
+
+  // fouter
+  #fouter {
+    .fouter {
+      padding: 20px 0;
+      .fouterLogo {
+        svg {
+          width: 125px;
+        }
+      }
+
+      .fouterSocial {
+        margin-top: 25px;
+        .fouterSocialBox {
+          .fouterSocialItem {
+            width: 30px;
+            height: 30px;
+          }
+
+          .fouterSocialText {
+            font-size: $fs18;
+          }
+        }
+
+        .fouterSocialBox:not(:last-child) {
+          margin-right: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+}
+
+@media screen and (max-width: 575px) {
+  // nav
+  #examHeader {
+    padding: 8px 0;
+    .examHeader {
+      .examHeaderLeft {
+        .examHeaderLogo {
+          width: 65px;
+        }
+      }
+
+      .examHeaderRight {
+        .examHeaderSearchBlock {
+          margin-right: 15px;
+          .examHeaderSearch {
+            margin-right: 0;
+            width: 32px;
+            height: 32px;
+          }
+        }
+        .examHeaderMenuButBlock {
+          display: flex;
+        }
+      }
+
+      .searchBlock {
+        top: 55px;
+        height: 42px;
+
+        .closeSearch {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  //mobileMenu
+  .mobileMenu {
+    .mobileMenuHead {
+      .mobileHeaderLogo {
+        width: 75px;
+        display: inline-flex;
+      }
+    }
+
+    .mobileMenuList {
+      .mobileMenuListItem {
+        font-size: $fs18;
+      }
+
+      .mobileMenuListItem:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+    .mobileSocial {
+      .mobileSocialItem {
+        width: 32px;
+        height: 32px;
+      }
+      .mobileSocialItem:not(:last-child) {
+        margin-right: 18px;
+      }
+    }
+  }
+
+  // fouter
+  #fouter {
+    .fouter {
+      padding: 15px 0;
+      .fouterLogo {
+        svg {
+          width: 108px;
+        }
+      }
+
+      .fouterSocial {
+        margin-top: 20px;
+        .fouterSocialBox {
+          .fouterSocialItem {
+            width: 27px;
+            height: 27px;
+          }
+
+          .fouterSocialText {
+            font-size: $fs16;
+          }
+        }
+
+        .fouterSocialBox:not(:last-child) {
+          margin-right: 12px;
+        }
+      }
+
+      .fouterCopyright {
+        font-size: $fs14;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  // fouter
+  #fouter {
+    .fouter {
+      .fouterSocial {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .fouterSocialBox {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+        }
+
+        .fouterSocialBox:not(:last-child) {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

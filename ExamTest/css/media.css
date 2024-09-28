@@ -1,0 +1,154 @@
+@font-face {
+  font-family: PoppinsRegular;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: PoppinsMedium;
+  src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: PoppinsSemibold;
+  src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: PoppinsBold;
+  src: url(../fonts/Poppins/Poppins-Bold.ttf);
+}
+.list_reset {
+  list-style-type: none;
+  margin: 0;
+}
+
+.button_reset {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+@media only screen and (max-width: 1199.9px) {
+  #examHeader .examHeader .examHeaderMiddle .examHeaderMenuList {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 991.9px) {
+  #examHeader .examHeader .examHeaderLeft .examHeaderLogo {
+    width: 70px;
+  }
+  #examHeader .examHeader .examHeaderMiddle .examHeaderMenuList {
+    display: none;
+  }
+  #examHeader .examHeader .examHeaderMiddle .examHeaderMenuButBlock {
+    display: flex;
+  }
+  #examHeader .examHeader .mobileMenu {
+    display: block;
+  }
+  #examHeader .examHeader .mobileMenuNone {
+    display: none;
+  }
+  .mobileMenu {
+    display: block;
+  }
+  #fouter .fouter {
+    padding: 20px 0;
+  }
+  #fouter .fouter .fouterLogo svg {
+    width: 125px;
+  }
+  #fouter .fouter .fouterSocial {
+    margin-top: 25px;
+  }
+  #fouter .fouter .fouterSocial .fouterSocialBox .fouterSocialItem {
+    width: 30px;
+    height: 30px;
+  }
+  #fouter .fouter .fouterSocial .fouterSocialBox .fouterSocialText {
+    font-size: 18px;
+  }
+  #fouter .fouter .fouterSocial .fouterSocialBox:not(:last-child) {
+    margin-right: 12px;
+  }
+}
+@media screen and (max-width: 575px) {
+  #examHeader {
+    padding: 8px 0;
+  }
+  #examHeader .examHeader .examHeaderLeft .examHeaderLogo {
+    width: 65px;
+  }
+  #examHeader .examHeader .examHeaderRight .examHeaderSearchBlock {
+    margin-right: 15px;
+  }
+  #examHeader .examHeader .examHeaderRight .examHeaderSearchBlock .examHeaderSearch {
+    margin-right: 0;
+    width: 32px;
+    height: 32px;
+  }
+  #examHeader .examHeader .examHeaderRight .examHeaderMenuButBlock {
+    display: flex;
+  }
+  #examHeader .examHeader .searchBlock {
+    top: 55px;
+    height: 42px;
+  }
+  #examHeader .examHeader .searchBlock .closeSearch {
+    width: 20px;
+    height: 20px;
+  }
+  .mobileMenu .mobileMenuHead .mobileHeaderLogo {
+    width: 75px;
+    display: inline-flex;
+  }
+  .mobileMenu .mobileMenuList .mobileMenuListItem {
+    font-size: 18px;
+  }
+  .mobileMenu .mobileMenuList .mobileMenuListItem:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .mobileMenu .mobileSocial .mobileSocialItem {
+    width: 32px;
+    height: 32px;
+  }
+  .mobileMenu .mobileSocial .mobileSocialItem:not(:last-child) {
+    margin-right: 18px;
+  }
+  #fouter .fouter {
+    padding: 15px 0;
+  }
+  #fouter .fouter .fouterLogo svg {
+    width: 108px;
+  }
+  #fouter .fouter .fouterSocial {
+    margin-top: 20px;
+  }
+  #fouter .fouter .fouterSocial .fouterSocialBox .fouterSocialItem {
+    width: 27px;
+    height: 27px;
+  }
+  #fouter .fouter .fouterSocial .fouterSocialBox .fouterSocialText {
+    font-size: 16px;
+  }
+  #fouter .fouter .fouterSocial .fouterSocialBox:not(:last-child) {
+    margin-right: 12px;
+  }
+  #fouter .fouter .fouterCopyright {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 360px) {
+  #fouter .fouter .fouterSocial {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #fouter .fouter .fouterSocial .fouterSocialBox {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  #fouter .fouter .fouterSocial .fouterSocialBox:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}/*# sourceMappingURL=media.css.map */

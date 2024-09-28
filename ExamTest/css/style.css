@@ -1,0 +1,1037 @@
+@font-face {
+  font-family: PoppinsRegular;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: PoppinsMedium;
+  src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: PoppinsSemibold;
+  src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: PoppinsBold;
+  src: url(../fonts/Poppins/Poppins-Bold.ttf);
+}
+.list_reset {
+  list-style-type: none;
+  margin: 0;
+}
+
+.button_reset {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html ::-webkit-scrollbar {
+  width: 0.35vw !important;
+}
+html ::-webkit-scrollbar-track {
+  background-color: #ececec;
+}
+html ::-webkit-scrollbar-thumb {
+  background-color: #008ace;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+html ::-webkit-scrollbar-thumb:hover {
+  background-color: #008ace;
+  opacity: 0.5;
+  margin: 1px 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+#examHeader {
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+#examHeader .examHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+#examHeader .examHeader .examHeaderLeft {
+  display: flex;
+  align-items: center;
+}
+#examHeader .examHeader .examHeaderLeft .examHeaderLogo {
+  width: 75px;
+  height: auto;
+}
+#examHeader .examHeader .examHeaderLeft .examHeaderLogo img {
+  width: 100%;
+}
+#examHeader .examHeader .examHeaderMiddle {
+  display: flex;
+}
+#examHeader .examHeader .examHeaderMiddle .examHeaderMenuList {
+  font-family: PoppinsRegular;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+#examHeader .examHeader .examHeaderMiddle .examHeaderMenuList li a {
+  text-decoration: none;
+  color: #9a9a9a;
+  transition: all ease 0.4s;
+}
+#examHeader .examHeader .examHeaderMiddle .examHeaderMenuList li:not(:last-child) {
+  margin-right: 20px;
+}
+#examHeader .examHeader .examHeaderMiddle .examHeaderMenuList li a::after {
+  content: "";
+  display: flex;
+  margin-top: 5px;
+  width: 0%;
+  height: 2.5px;
+  background-color: #008ace;
+  transition: all ease 0.4s;
+}
+#examHeader .examHeader .examHeaderMiddle .examHeaderMenuList li:hover a {
+  color: #000;
+}
+#examHeader .examHeader .examHeaderMiddle .examHeaderMenuList li:hover a::after {
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 2.5px;
+  background-color: #008ace;
+}
+#examHeader .examHeader .examHeaderMiddle .examHeaderMenuList .active a {
+  color: #000;
+}
+#examHeader .examHeader .examHeaderMiddle .examHeaderMenuButBlock {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#examHeader .examHeader .examHeaderMiddle .examHeaderMenuButBlock .examMenuBut {
+  background: none;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  background-color: #008ace;
+  border-radius: 5px;
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+  transition: all ease 0.4s;
+}
+#examHeader .examHeader .examHeaderMiddle .examHeaderMenuButBlock .examMenuBut span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  transition: all ease 0.4s;
+}
+#examHeader .examHeader .examHeaderMiddle .examHeaderMenuButBlock .examMenuBut span:not(:last-child) {
+  margin-bottom: 4px;
+}
+#examHeader .examHeader .examHeaderMiddle .examHeaderMenuButBlock .examMenuBut:hover {
+  background-color: white;
+  box-shadow: 0 0 4px 1px #008ace;
+}
+#examHeader .examHeader .examHeaderMiddle .examHeaderMenuButBlock .examMenuBut:hover span {
+  background-color: #008ace;
+}
+
+.mobileMenu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 0 15px;
+  transition: all ease 0.5s;
+}
+.mobileMenu .mobileMenuHead {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobileMenu .mobileMenuHead .mobileHeaderLogo {
+  width: 75px;
+  display: flex;
+}
+.mobileMenu .mobileMenuHead .mobileHeaderLogo img {
+  width: 100%;
+}
+.mobileMenu .mobileMenuHead .mobileCloseBut {
+  border: none;
+  outline: none;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33px;
+  height: 33px;
+  background-color: #008ace;
+  border-radius: 50%;
+  transition: all ease 0.4s;
+}
+.mobileMenu .mobileMenuHead .mobileCloseBut svg {
+  width: 23px;
+  height: 23px;
+  fill: white;
+  transition: all ease 0.4s;
+}
+.mobileMenu .mobileMenuHead .mobileCloseBut:hover {
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 0 0 4px 1px #008ace;
+}
+.mobileMenu .mobileMenuHead .mobileCloseBut:hover svg {
+  fill: #008ace;
+}
+.mobileMenu .mobileMenuList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+}
+.mobileMenu .mobileMenuList .mobileMenuListItem {
+  font-family: PoppinsRegular;
+  font-size: 22px;
+  line-height: 33px;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0;
+  position: relative;
+}
+.mobileMenu .mobileMenuList .mobileMenuListItem a {
+  text-decoration: none;
+  color: #000;
+  transition: all ease 0.4s;
+}
+.mobileMenu .mobileMenuList .mobileMenuListItem a::after {
+  content: "";
+  display: flex;
+  margin-top: 5px;
+  width: 0%;
+  height: 3px;
+  background-color: #008ace;
+  transition: all ease 0.4s;
+}
+.mobileMenu .mobileMenuList .mobileMenuListItem:hover a::after {
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 3px;
+  background-color: #008ace;
+  transform: scale(1.1);
+}
+.mobileMenu .mobileMenuList .active a::after {
+  content: "";
+  display: flex;
+  width: 100%;
+  height: 3px;
+  background-color: #008ace;
+}
+.mobileMenu .mobileMenuList .mobileMenuListItem:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.mobileMenuNone {
+  visibility: hidden;
+  left: -5000px;
+  transition: all ease 2s;
+}
+
+#examCover {
+  padding: 30px;
+}
+#examCover .examCoverLeft {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: PoppinsSemibold;
+  font-size: 50px;
+}
+#examCover .examCoverRight {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#examCover .examCoverRight img {
+  width: 100%;
+}
+
+#examAbout {
+  margin-top: 15px;
+  padding: 20px;
+  min-height: 280px;
+}
+#examAbout .examAbout {
+  box-shadow: 0 0 4px #9a9a9a;
+  border-radius: 8px;
+  padding: 40px 30px;
+}
+#examAbout .examAbout .examAboutHead {
+  text-align: center;
+  font-family: PoppinsSemibold;
+}
+#examAbout .examAbout .examAboutBody {
+  margin-top: 30px;
+  font-family: PoppinsRegular;
+  color: #555;
+}
+#examAbout .examAbout .examAboutBody p {
+  text-align: center;
+}
+
+#examArticle {
+  margin-top: 15px;
+}
+#examArticle .examArticle {
+  padding: 15px 0;
+}
+#examArticle .examArticle .examArticleItem {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+#examArticle .examArticle .examArticleItem .examArticleItemImg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all ease 0.4s;
+}
+#examArticle .examArticle .examArticleItem .examArticleItemPos {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 20px;
+  background-color: rgba(0, 138, 206, 0.1);
+  text-decoration: none;
+  transition: all ease 0.4s;
+}
+#examArticle .examArticle .examArticleItem .examArticleItemPos .examArticleItemPosName {
+  font-family: PoppinsSemibold;
+  font-size: 18px;
+  color: black;
+  -webkit-line-clamp: 1 !important;
+  -webkit-box-orient: vertical !important;
+  display: -webkit-box !important;
+  overflow: hidden !important;
+  transition: all ease 0.4s;
+}
+#examArticle .examArticle .examArticleItem .examArticleItemPos .examArticleItemPosContent {
+  font-family: PoppinsRegular;
+  font-size: 14px;
+  color: #555;
+  -webkit-line-clamp: 1 !important;
+  -webkit-box-orient: vertical !important;
+  display: -webkit-box !important;
+  overflow: hidden !important;
+}
+#examArticle .examArticle .examArticleItem:hover .examArticleItemImg {
+  transform: scale(1.06);
+}
+#examArticle .examArticle .examArticleItem:hover .examArticleItemPos {
+  background-color: rgba(0, 138, 206, 0.2);
+}
+#examArticle .examArticle .examArticleItem:hover .examArticleItemPos .examArticleItemPosName {
+  color: #008ace;
+}
+
+#articleOnePage {
+  padding: 30px 0;
+}
+#articleOnePage .articleOnePage .articleOnePageLeft .articleOnePageLeftImg {
+  border-radius: 5px;
+  overflow: hidden;
+  height: 300px;
+}
+#articleOnePage .articleOnePage .articleOnePageLeft .articleOnePageLeftImg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#articleOnePage .articleOnePage .articleOnePageLeft .articleOnePageHead {
+  margin-top: 15px;
+  padding: 5px 0;
+}
+#articleOnePage .articleOnePage .articleOnePageLeft .articleOnePageHead .articleOnePageHeadType {
+  font-family: PoppinsRegular;
+  font-size: 14px;
+  color: #9a9a9a;
+  text-decoration: none;
+}
+#articleOnePage .articleOnePage .articleOnePageLeft .articleOnePageHead .articleOnePageHeadName {
+  display: block;
+  margin-top: 10px;
+  font-family: PoppinsSemibold;
+  font-size: 20px;
+  color: #008ace;
+  text-decoration: none;
+}
+#articleOnePage .articleOnePage .articleOnePageLeft .articleOnePageHead .articleOnePageHeadFooter {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+#articleOnePage .articleOnePage .articleOnePageLeft .articleOnePageHead .articleOnePageHeadFooter .articleOnePageHeadFooterAuthor {
+  font-family: PoppinsRegular;
+  color: #9a9a9a;
+}
+#articleOnePage .articleOnePage .articleOnePageLeft .articleOnePageHead .articleOnePageHeadFooter .articleOnePageHeadFooterAuthor .articleOnePageHeadFooterAuthorName {
+  color: #555;
+  padding-left: 8px;
+  text-decoration: none;
+}
+#articleOnePage .articleOnePage .articleOnePageLeft .articleOnePageHead .articleOnePageHeadFooter .articleOnePageHeadFooterHistory {
+  color: #9a9a9a;
+  padding-left: 10px;
+  margin-left: 10px;
+  border-left: 1px solid #9a9a9a;
+}
+#articleOnePage .articleOnePage .articleOnePageLeft .articleOnePageLeftContent {
+  margin-top: 20px;
+}
+#articleOnePage .articleOnePage .articleOnePageRight {
+  box-shadow: 0 0 3px #eee;
+  height: 80vh;
+  border-radius: 5px;
+  overflow: hidden;
+}
+#articleOnePage .articleOnePage .articleOnePageRight img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#examExamination {
+  margin-top: 45px;
+  min-height: 100vh;
+  transition: all ease 0.6s;
+}
+#examExamination .examExamination {
+  padding: 15px 0;
+}
+#examExamination .examExamination .examExaminationName {
+  font-family: PoppinsSemibold;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+#examExamination .examExamination .examExaminationItem .examExaminationItemLink {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: PoppinsSemibold;
+  font-size: 22px;
+  color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding: 7px 0;
+  background-color: #038bcf;
+  text-decoration: none;
+  transition: all ease 0.4s;
+}
+#examExamination .examExamination .examExaminationItem input {
+  display: none;
+}
+#examExamination .examExamination .examExaminationItem input:checked ~ .examExaminationItemLink {
+  background: white;
+  color: #008ace;
+  border-color: #008ace;
+  box-shadow: 0 0 5px #038bcf;
+}
+#examExamination .examExamination .examExaminationItem .examExaminationItemLink:hover {
+  background-color: white;
+  box-shadow: 0 0 5px #038bcf;
+  color: #038bcf;
+  cursor: pointer;
+}
+
+.swal2-popup {
+  font-family: PoppinsSemibold;
+}
+.swal2-popup .examEnd {
+  margin-left: 10px;
+}
+
+#examStartSection {
+  display: none;
+  transition: all ease 0.6s;
+  padding: 50px;
+  min-height: 90vh;
+}
+#examStartSection .examStartSectionLeft {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-family: PoppinsSemibold;
+  font-size: 24px;
+  text-align: center;
+}
+#examStartSection .examStartSectionRight {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#examStartSection .examStartSectionRight button {
+  font-family: PoppinsMedium;
+  font-size: 20px;
+  box-shadow: 0 0 5px #038bcf;
+  color: #038bcf;
+  border-radius: 5px;
+  padding: 11px 24px;
+  transition: all ease 0.4s;
+}
+#examStartSection .examStartSectionRight button:hover {
+  box-shadow: 0 0 8px #038bcf;
+  color: white;
+  background-color: #038bcf;
+}
+
+#examTestPage {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  display: none;
+}
+#examTestPage .examTestPage {
+  padding: 15px 0;
+}
+#examTestPage .examTestPage .examTestPageSubject {
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 0 2px #9a9a9a;
+  padding: 5px 0;
+  margin-top: 5px;
+}
+#examTestPage .examTestPage .examTestPageSubject .examTestPageSubjectHead {
+  font-family: PoppinsSemibold;
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #008ace;
+}
+#examTestPage .examTestPage .examTestPageSubject .examTestPageSubjectName {
+  font-family: PoppinsSemibold;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #555;
+}
+#examTestPage .examTestPage .examTestPageClock {
+  border-radius: 5px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 2px #9a9a9a;
+  padding: 5px 15px;
+  margin-top: 5px;
+}
+#examTestPage .examTestPage .examTestPageClock .examTestPageClockName {
+  font-family: PoppinsSemibold;
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #008ace;
+}
+#examTestPage .examTestPage .examTestPageClock .examTestPageClockWatch {
+  font-family: PoppinsSemibold;
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: #555;
+}
+#examTestPage .examTestPage .examEndBlock {
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#examTestPage .examTestPage .examEndBlock #examEnd {
+  background-color: white;
+  color: #e72929;
+  border-radius: 5px;
+  box-shadow: 0 0 7px #e72929;
+  font-size: 18px;
+  width: 100%;
+  padding: 12px 20px;
+  font-family: PoppinsSemibold;
+  transition: all ease 0.6s;
+}
+#examTestPage .examTestPage .examEndBlock #examEnd:hover {
+  background-color: #e72929;
+  color: white;
+}
+#examTestPage .examTestPage .examSubjects {
+  margin-top: 15px;
+  justify-content: center;
+}
+#examTestPage .examTestPage .examSubjects .nav-link {
+  height: 50px;
+  border-radius: 5px;
+  margin: 5px 0;
+  background-color: #038bcf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: PoppinsSemibold;
+  font-size: 18px;
+  color: white;
+  transition: all ease 0.6s;
+}
+#examTestPage .examTestPage .examSubjects .nav-link:not(:last-child) {
+  margin-right: 18px;
+}
+#examTestPage .examTestPage .examSubjects .nav-link:hover {
+  background-color: white;
+  box-shadow: 0 0 5px #038bcf;
+  color: #038bcf;
+}
+#examTestPage .examTestPage .examSubjects .active {
+  background-color: white;
+  box-shadow: 0 0 5px #038bcf;
+  color: #038bcf;
+}
+#examTestPage .examTestPage .examTestPageRow2 {
+  margin-top: 20px;
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageResult {
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 2px #9a9a9a;
+  padding: 20px 15px;
+  margin-top: 5px;
+  order: 1;
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageResult .examTestPageResultName {
+  font-family: PoppinsSemibold;
+  font-size: 20px;
+  color: #008ace;
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageResult .examTestPageResultBlock {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageResult .examTestPageResultBlock .examTestPageResultItem {
+  width: 18%;
+  height: 35px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #008ace;
+  font-family: PoppinsSemibold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 3px #9a9a9a;
+  transition: all ease 0.3s;
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageResult .examTestPageResultBlock .examTestPageResultItem:hover {
+  cursor: pointer;
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageResult .examTestPageResultBlock .examTestPageResultItem:focus {
+  box-shadow: 0 0 5px #9a9a9a;
+  transform: scale(1.05);
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageResult .examTestPageResultBlock .examTestPageResultItem:active {
+  box-shadow: 0 0 5px #9a9a9a;
+  transform: scale(1.05);
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageResult .examTestPageResultBlock .examTestPageResultItemSelect {
+  background-color: #038bcf;
+  color: white;
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageResult .examTestPageResultBlock .examTestPageResultItemTrue {
+  background-color: green;
+  color: white;
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageResult .examTestPageResultBlock .examTestPageResultItemFalse {
+  background-color: red;
+  color: white;
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageQuestionBlock {
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 0 2px #9a9a9a;
+  padding: 25px 15px;
+  margin-top: 5px;
+  order: 2;
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageQuestionBlock .examTestPageQuestionBlockHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageQuestionBlock .examTestPageQuestionBlockHead button {
+  display: flex;
+  align-items: center;
+  background-color: #008ace;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-family: PoppinsMedium;
+  font-size: 18px;
+  transition: all ease 0.4s;
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageQuestionBlock .examTestPageQuestionBlockHead button svg {
+  width: 20px;
+  fill: white;
+  transition: all ease 0.4s;
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageQuestionBlock .examTestPageQuestionBlockHead button:hover {
+  background-color: white;
+  color: #008ace;
+  box-shadow: 0 0 5px #9a9a9a;
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageQuestionBlock .examTestPageQuestionBlockHead button:hover svg {
+  fill: #008ace;
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageQuestionBlock .examTestPageQuestionBlockHead button:focus {
+  transform: scale(0.9);
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageQuestionBlock .examTestPageQuestionBlockHead .examTestPageQuestionBeforeButton span {
+  display: inline-flex;
+  margin-left: 10px;
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageQuestionBlock .examTestPageQuestionBlockHead .examTestPageQuestionNextButton span {
+  display: inline-flex;
+  margin-right: 10px;
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageQuestionBlock .examTestPageQuestionBlockHead .examTestPageQuestionBlockHeadName {
+  font-size: 20px;
+  font-family: PoppinsBold;
+  color: #008ace;
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageQuestionBlock .examTestPageQuestionBlockSlide {
+  margin-top: 15px;
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageQuestionBlock .examTestPageQuestionBlockSlide .examTestPageQuestionBlockSlideItem {
+  display: none;
+  transition: all ease 1s;
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageQuestionBlock .examTestPageQuestionBlockSlide .examTestPageQuestionBlockSlideItem .examTestPageQuestionBlockSlideItemContent {
+  font-family: PoppinsRegular;
+  color: #555;
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageQuestionBlock .examTestPageQuestionBlockSlide .examTestPageQuestionBlockSlideItem .examTestPageQuestionBlockSlideItemOptions {
+  font-family: PoppinsRegular;
+  color: #555;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 15px;
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageQuestionBlock .examTestPageQuestionBlockSlide .examTestPageQuestionBlockSlideItem .examTestPageQuestionBlockSlideItemOptions .examTestPageQuestionBlockSlideItemOption .examTestPageQuestionBlockSlideItemOptionLabel {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageQuestionBlock .examTestPageQuestionBlockSlide .examTestPageQuestionBlockSlideItem .examTestPageQuestionBlockSlideItemOptions .examTestPageQuestionBlockSlideItemOption .examTestPageQuestionBlockSlideItemOptionLabel .examTestPageQuestionBlockSlideItemOptionName {
+  font-family: PoppinsMedium;
+  color: #555;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #555;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  min-width: 30px;
+  transition: all ease 0.4s;
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageQuestionBlock .examTestPageQuestionBlockSlide .examTestPageQuestionBlockSlideItem .examTestPageQuestionBlockSlideItemOptions .examTestPageQuestionBlockSlideItemOption .examTestPageQuestionBlockSlideItemOptionLabel input {
+  display: none;
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageQuestionBlock .examTestPageQuestionBlockSlide .examTestPageQuestionBlockSlideItem .examTestPageQuestionBlockSlideItemOptions .examTestPageQuestionBlockSlideItemOption .examTestPageQuestionBlockSlideItemOptionLabel input:checked ~ .examTestPageQuestionBlockSlideItemOptionName {
+  background: #008ace;
+  color: white;
+  border-color: white;
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageQuestionBlock .examTestPageQuestionBlockSlide .examTestPageQuestionBlockSlideItem .examTestPageQuestionBlockSlideItemOptions .examTestPageQuestionBlockSlideItemOption .examTestPageQuestionBlockSlideItemOptionLabel .rightAnswer {
+  background: green !important;
+  border: 2px solid green !important;
+  color: white;
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageQuestionBlock .examTestPageQuestionBlockSlide .examTestPageQuestionBlockSlideItem .examTestPageQuestionBlockSlideItemOptions .examTestPageQuestionBlockSlideItemOption .examTestPageQuestionBlockSlideItemOptionLabel .wrongAnswer {
+  background: red !important;
+  border: 2px solid red !important;
+  color: white;
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageQuestionBlock .examTestPageQuestionBlockSlide .examTestPageQuestionBlockSlideItem .examTestPageQuestionBlockSlideItemOptions .examTestPageQuestionBlockSlideItemOption .examTestPageQuestionBlockSlideItemOptionLabel:hover {
+  cursor: pointer;
+}
+#examTestPage .examTestPage .examTestPageRow2 .examTestPageQuestionBlock .examTestPageQuestionBlockSlide .examTestPageQuestionBlockSlideItemActive {
+  display: block;
+}
+
+#fouter {
+  background-color: #008ace;
+}
+#fouter .fouter {
+  text-align: center;
+  padding: 25px 0;
+}
+#fouter .fouter .fouterLogo {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+#fouter .fouter .fouterLogo svg {
+  width: 135px;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#fouter .fouter .fouterSocial {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#fouter .fouter .fouterSocial .fouterSocialBox {
+  display: flex;
+  align-items: center;
+}
+#fouter .fouter .fouterSocial .fouterSocialBox .fouterSocialItem {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  transition: all ease 0.7s;
+}
+#fouter .fouter .fouterSocial .fouterSocialBox .fouterSocialItem svg {
+  width: 60%;
+  height: 60%;
+}
+#fouter .fouter .fouterSocial .fouterSocialBox .fouterSocialItem svg path {
+  fill: black;
+  transition: all ease 0.7s;
+}
+#fouter .fouter .fouterSocial .fouterSocialBox .fouterSocialItem:hover {
+  background-color: black;
+  box-shadow: 0 0 2px 0 gray;
+}
+#fouter .fouter .fouterSocial .fouterSocialBox .fouterSocialItem:hover svg path {
+  fill: white;
+}
+#fouter .fouter .fouterSocial .fouterSocialBox .fouterSocialText {
+  font-family: PoppinsRegular;
+  font-size: 18px;
+  color: black;
+  margin-left: 8px;
+}
+#fouter .fouter .fouterSocial .fouterSocialBox:not(:last-child) {
+  margin-right: 14px;
+}
+#fouter .fouter .fouterCopyright {
+  margin-top: 25px;
+  font-family: PoppinsRegular;
+  font-size: 16px;
+  color: black;
+}
+
+@font-face {
+  font-family: PoppinsRegular;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: PoppinsMedium;
+  src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: PoppinsSemibold;
+  src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: PoppinsBold;
+  src: url(../fonts/Poppins/Poppins-Bold.ttf);
+}
+.list_reset {
+  list-style-type: none;
+  margin: 0;
+}
+
+.button_reset {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+@media only screen and (max-width: 1199.9px) {
+  #examHeader .examHeader .examHeaderMiddle .examHeaderMenuList {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 991.9px) {
+  #examHeader .examHeader .examHeaderLeft .examHeaderLogo {
+    width: 70px;
+  }
+  #examHeader .examHeader .examHeaderMiddle .examHeaderMenuList {
+    display: none;
+  }
+  #examHeader .examHeader .examHeaderMiddle .examHeaderMenuButBlock {
+    display: flex;
+  }
+  #examHeader .examHeader .mobileMenu {
+    display: block;
+  }
+  #examHeader .examHeader .mobileMenuNone {
+    display: none;
+  }
+  .mobileMenu {
+    display: block;
+  }
+  #fouter .fouter {
+    padding: 20px 0;
+  }
+  #fouter .fouter .fouterLogo svg {
+    width: 125px;
+  }
+  #fouter .fouter .fouterSocial {
+    margin-top: 25px;
+  }
+  #fouter .fouter .fouterSocial .fouterSocialBox .fouterSocialItem {
+    width: 30px;
+    height: 30px;
+  }
+  #fouter .fouter .fouterSocial .fouterSocialBox .fouterSocialText {
+    font-size: 18px;
+  }
+  #fouter .fouter .fouterSocial .fouterSocialBox:not(:last-child) {
+    margin-right: 12px;
+  }
+}
+@media screen and (max-width: 575px) {
+  #examHeader {
+    padding: 8px 0;
+  }
+  #examHeader .examHeader .examHeaderLeft .examHeaderLogo {
+    width: 65px;
+  }
+  #examHeader .examHeader .examHeaderRight .examHeaderSearchBlock {
+    margin-right: 15px;
+  }
+  #examHeader .examHeader .examHeaderRight .examHeaderSearchBlock .examHeaderSearch {
+    margin-right: 0;
+    width: 32px;
+    height: 32px;
+  }
+  #examHeader .examHeader .examHeaderRight .examHeaderMenuButBlock {
+    display: flex;
+  }
+  #examHeader .examHeader .searchBlock {
+    top: 55px;
+    height: 42px;
+  }
+  #examHeader .examHeader .searchBlock .closeSearch {
+    width: 20px;
+    height: 20px;
+  }
+  .mobileMenu .mobileMenuHead .mobileHeaderLogo {
+    width: 75px;
+    display: inline-flex;
+  }
+  .mobileMenu .mobileMenuList .mobileMenuListItem {
+    font-size: 18px;
+  }
+  .mobileMenu .mobileMenuList .mobileMenuListItem:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .mobileMenu .mobileSocial .mobileSocialItem {
+    width: 32px;
+    height: 32px;
+  }
+  .mobileMenu .mobileSocial .mobileSocialItem:not(:last-child) {
+    margin-right: 18px;
+  }
+  #fouter .fouter {
+    padding: 15px 0;
+  }
+  #fouter .fouter .fouterLogo svg {
+    width: 108px;
+  }
+  #fouter .fouter .fouterSocial {
+    margin-top: 20px;
+  }
+  #fouter .fouter .fouterSocial .fouterSocialBox .fouterSocialItem {
+    width: 27px;
+    height: 27px;
+  }
+  #fouter .fouter .fouterSocial .fouterSocialBox .fouterSocialText {
+    font-size: 16px;
+  }
+  #fouter .fouter .fouterSocial .fouterSocialBox:not(:last-child) {
+    margin-right: 12px;
+  }
+  #fouter .fouter .fouterCopyright {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 360px) {
+  #fouter .fouter .fouterSocial {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #fouter .fouter .fouterSocial .fouterSocialBox {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  #fouter .fouter .fouterSocial .fouterSocialBox:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */

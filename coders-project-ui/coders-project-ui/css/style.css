@@ -578,6 +578,10 @@ ul {
     margin-right: 5px;
   }
 }
+.smm {
+  display: block;
+}
+
 #n-cover {
   height: 600px;
   width: 100%;
@@ -908,6 +912,9 @@ ul {
   }
 }
 @media only screen and (max-width: 919.9px) {
+  .smm {
+    display: flex;
+  }
   .n-container {
     max-width: 768px;
   }

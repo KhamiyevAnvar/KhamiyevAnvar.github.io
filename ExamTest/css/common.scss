@@ -1,0 +1,63 @@
+@font-face {
+  font-family: PoppinsRegular;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: PoppinsMedium;
+  src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: PoppinsSemibold;
+  src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: PoppinsBold;
+  src: url(../fonts/Poppins/Poppins-Bold.ttf);
+}
+
+$fs12: 12px; //
+$fs14: 14px; //
+$fs16: 16px; //
+$fs17: 17px; //
+$fs18: 18px; //
+$fs20: 20px; //
+$fs22: 22px; //
+$fs24: 24px; //
+$fs26: 26px; //
+$fs28: 28px; //
+$fs32: 32px; //
+$fs40: 40px; //
+$fs44: 44px; //
+
+$fs50: 50px; //
+
+$col-main: #008ace;
+$col-main2: #038bcf;
+$col-text: #9a9a9a;
+$col-text2: #555;
+
+$col-bg-exam: #f5f5f5;
+.list_reset {
+  list-style-type: none;
+  margin: 0;
+}
+
+.button_reset {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+@mixin transitionTime($time: 0.4s) {
+  transition: all ease $time;
+}
+
+@mixin lineLimit($line: 1) {
+  -webkit-line-clamp: $line !important;
+  -webkit-box-orient: vertical !important;
+  display: -webkit-box !important;
+  overflow: hidden !important;
+}

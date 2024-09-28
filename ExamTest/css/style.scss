@@ -1,0 +1,1018 @@
+@import "common";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+
+  ::-webkit-scrollbar {
+    width: 0.35vw !important;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #ececec;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: $col-main;
+    transition: 0.3s;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: $col-main;
+    opacity: 0.5;
+    margin: 1px 0;
+  }
+}
+
+body {
+  min-height: 100vh;
+}
+
+//nav
+#examHeader {
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  .examHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    .examHeaderLeft {
+      display: flex;
+      align-items: center;
+      .examHeaderLogo {
+        width: 75px;
+        height: auto;
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .examHeaderMiddle {
+      display: flex;
+      .examHeaderMenuList {
+        font-family: PoppinsRegular;
+        font-size: $fs18;
+        display: flex;
+        align-items: center;
+        li {
+          a {
+            text-decoration: none;
+            color: $col-text;
+            @include transitionTime;
+          }
+        }
+        li:not(:last-child) {
+          margin-right: 20px;
+        }
+        li {
+          a::after {
+            content: "";
+            display: flex;
+            margin-top: 5px;
+            width: 0%;
+            height: 2.5px;
+            background-color: $col-main;
+            @include transitionTime;
+          }
+        }
+
+        li:hover {
+          a {
+            color: #000;
+          }
+          a::after {
+            content: "";
+            display: flex;
+            width: 100%;
+            height: 2.5px;
+            background-color: $col-main;
+          }
+        }
+        .active {
+          a {
+            color: #000;
+          }
+          //   a::after {
+          //     content: "";
+          //     display: flex;
+          //     width: 100%;
+          //     height: 2.5px;
+          //     background-color: $col-main;
+          //   }
+        }
+      }
+
+      .examHeaderMenuButBlock {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        .examMenuBut {
+          background: none;
+          border: none;
+          outline: none;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 0px;
+          background-color: $col-main;
+          border-radius: 5px;
+          width: 35px;
+          height: 35px;
+          margin-right: 5px;
+          @include transitionTime;
+          span {
+            display: block;
+            width: 20px;
+            height: 2px;
+            background-color: white;
+            @include transitionTime;
+          }
+          span:not(:last-child) {
+            margin-bottom: 4px;
+          }
+        }
+
+        .examMenuBut:hover {
+          background-color: white;
+          box-shadow: 0 0 4px 1px $col-main;
+          span {
+            background-color: $col-main;
+          }
+        }
+      }
+    }
+  }
+}
+
+//mobileMenu
+.mobileMenu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 0 15px;
+  @include transitionTime($time: 0.5s);
+
+  .mobileMenuHead {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .mobileHeaderLogo {
+      width: 75px;
+      display: flex;
+      img {
+        width: 100%;
+      }
+    }
+    .mobileCloseBut {
+      border: none;
+      outline: none;
+      background: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 33px;
+      height: 33px;
+      background-color: $col-main;
+      border-radius: 50%;
+      @include transitionTime;
+      svg {
+        width: 23px;
+        height: 23px;
+        fill: white;
+        @include transitionTime;
+      }
+    }
+
+    .mobileCloseBut:hover {
+      cursor: pointer;
+      background-color: white;
+      box-shadow: 0 0 4px 1px $col-main;
+
+      svg {
+        fill: $col-main;
+      }
+    }
+  }
+
+  .mobileMenuList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    .mobileMenuListItem {
+      font-family: PoppinsRegular;
+      font-size: $fs22;
+      line-height: 33px;
+      width: max-content;
+      padding: 0;
+      position: relative;
+      a {
+        text-decoration: none;
+        color: #000;
+        @include transitionTime;
+      }
+    }
+
+    .mobileMenuListItem {
+      a::after {
+        content: "";
+        display: flex;
+        margin-top: 5px;
+        width: 0%;
+        height: 3px;
+        background-color: $col-main;
+        @include transitionTime;
+      }
+    }
+
+    .mobileMenuListItem:hover {
+      a::after {
+        content: "";
+        display: flex;
+        width: 100%;
+        height: 3px;
+        background-color: $col-main;
+        transform: scale(1.1);
+      }
+    }
+
+    .active {
+      a::after {
+        content: "";
+        display: flex;
+        width: 100%;
+        height: 3px;
+        background-color: $col-main;
+      }
+    }
+
+    .mobileMenuListItem:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  //   .mobileSocial {
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+  //     margin-top: 20px;
+  //     .mobileSocialItem {
+  //       display: inline-flex;
+  //       justify-content: center;
+  //       align-items: center;
+  //       width: 30px;
+  //       height: 30px;
+  //       background-color: $col-main;
+  //       border-radius: 50%;
+  //       border: 1px solid transparent;
+  //       @include transitionTime($time: 0.7s);
+  //       svg {
+  //         width: 60%;
+  //         height: 60%;
+  //         path {
+  //           @include transitionTime($time: 0.7s);
+  //         }
+  //       }
+  //     }
+  //     .mobileSocialItem:hover {
+  //       background-color: white;
+  //       border: 1px solid $col-main;
+  //       box-shadow: 0 0 2px 0 gray;
+  //       svg {
+  //         path {
+  //           fill: $col-main;
+  //         }
+  //       }
+  //     }
+  //     .mobileSocialItem:not(:last-child) {
+  //       margin-right: 14px;
+  //     }
+  //   }
+}
+
+.mobileMenuNone {
+  visibility: hidden;
+  left: -5000px;
+  @include transitionTime($time: 2s);
+}
+
+//examCover
+
+#examCover {
+  padding: 30px;
+  .examCoverLeft {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: PoppinsSemibold;
+    font-size: $fs50;
+  }
+  .examCoverRight {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+#examAbout {
+  margin-top: 15px;
+  padding: 20px;
+  min-height: 280px;
+  .examAbout {
+    box-shadow: 0 0 4px $col-text;
+    border-radius: 8px;
+    padding: 40px 30px;
+    .examAboutHead {
+      text-align: center;
+      font-family: PoppinsSemibold;
+    }
+    .examAboutBody {
+      margin-top: 30px;
+      font-family: PoppinsRegular;
+      color: $col-text2;
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
+
+// article page
+
+#examArticle {
+  margin-top: 15px;
+  .examArticle {
+    padding: 15px 0;
+
+    .examArticleItem {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+      border-radius: 5px;
+      margin-top: 20px;
+      //   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      .examArticleItemImg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        @include transitionTime;
+      }
+
+      .examArticleItemPos {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-left: 20px;
+        background-color: rgba(0, 138, 206, 0.1);
+        text-decoration: none;
+        @include transitionTime;
+
+        .examArticleItemPosName {
+          font-family: PoppinsSemibold;
+          font-size: $fs18;
+          color: black;
+          @include lineLimit;
+          @include transitionTime;
+        }
+
+        .examArticleItemPosContent {
+          font-family: PoppinsRegular;
+          font-size: $fs14;
+          color: $col-text2;
+          @include lineLimit;
+        }
+      }
+    }
+
+    .examArticleItem:hover {
+      .examArticleItemImg {
+        transform: scale(1.06);
+      }
+
+      .examArticleItemPos {
+        background-color: rgba(0, 138, 206, 0.2);
+
+        .examArticleItemPosName {
+          color: $col-main;
+        }
+
+        // .examArticleItemPosContent {
+        //   color: white;
+        // }
+      }
+    }
+  }
+}
+
+// article one page
+#articleOnePage {
+  padding: 30px 0;
+  .articleOnePage {
+    .articleOnePageLeft {
+      .articleOnePageLeftImg {
+        border-radius: 5px;
+        overflow: hidden;
+        height: 300px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .articleOnePageHead {
+        margin-top: 15px;
+        padding: 5px 0;
+
+        .articleOnePageHeadType {
+          font-family: PoppinsRegular;
+          font-size: $fs14;
+          color: $col-text;
+          text-decoration: none;
+        }
+
+        .articleOnePageHeadName {
+          display: block;
+          margin-top: 10px;
+          font-family: PoppinsSemibold;
+          font-size: $fs20;
+          color: $col-main;
+          text-decoration: none;
+        }
+        .articleOnePageHeadFooter {
+          display: flex;
+          align-items: center;
+          margin-top: 8px;
+          .articleOnePageHeadFooterAuthor {
+            font-family: PoppinsRegular;
+            color: $col-text;
+
+            .articleOnePageHeadFooterAuthorName {
+              color: $col-text2;
+              padding-left: 8px;
+              text-decoration: none;
+            }
+          }
+
+          .articleOnePageHeadFooterHistory {
+            color: $col-text;
+            padding-left: 10px;
+            margin-left: 10px;
+            border-left: 1px solid $col-text;
+          }
+        }
+      }
+
+      .articleOnePageLeftContent {
+        margin-top: 20px;
+      }
+    }
+    .articleOnePageRight {
+      box-shadow: 0 0 3px #eee;
+      height: 80vh;
+      border-radius: 5px;
+      overflow: hidden;
+      //   position: sticky;
+      //   top: 0;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+// exampage
+// examination
+#examExamination {
+  margin-top: 45px;
+  min-height: 100vh;
+  transition: all ease 0.6s;
+  .examExamination {
+    padding: 15px 0;
+    .examExaminationName {
+      font-family: PoppinsSemibold;
+      font-size: $fs32;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .examExaminationItem {
+      .examExaminationItemLink {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: PoppinsSemibold;
+        font-size: $fs22;
+        color: white;
+        border-radius: 5px;
+        margin-top: 20px;
+        padding: 7px 0;
+        background-color: $col-main2;
+        text-decoration: none;
+        @include transitionTime;
+      }
+
+      input {
+        display: none;
+      }
+
+      input:checked ~ .examExaminationItemLink {
+        background: white;
+        color: $col-main;
+        border-color: $col-main;
+        box-shadow: 0 0 5px $col-main2;
+      }
+
+      .examExaminationItemLink:hover {
+        background-color: white;
+        box-shadow: 0 0 5px $col-main2;
+        color: $col-main2;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+// .examExaminationNone {
+//   display: none;
+// }
+
+// examStartSection
+.swal2-popup {
+  font-family: PoppinsSemibold;
+  .examEnd {
+    margin-left: 10px;
+  }
+}
+
+#examStartSection {
+  display: none;
+  transition: all ease 0.6s;
+  padding: 50px;
+  min-height: 90vh;
+  .examStartSectionLeft {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: PoppinsSemibold;
+    font-size: $fs24;
+    text-align: center;
+  }
+  .examStartSectionRight {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+      font-family: PoppinsMedium;
+      font-size: $fs20;
+      box-shadow: 0 0 5px $col-main2;
+      color: $col-main2;
+      border-radius: 5px;
+      padding: 11px 24px;
+      @include transitionTime;
+    }
+
+    button:hover {
+      box-shadow: 0 0 8px $col-main2;
+      color: white;
+      background-color: $col-main2;
+    }
+  }
+}
+
+// examTestPage
+#examTestPage {
+  background-color: $col-bg-exam;
+  min-height: 100vh;
+  display: none;
+  .examTestPage {
+    padding: 15px 0;
+    .examTestPageSubject {
+      border-radius: 5px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 0 2px $col-text;
+      padding: 5px 0;
+      margin-top: 5px;
+
+      .examTestPageSubjectHead {
+        font-family: PoppinsSemibold;
+        font-size: $fs20;
+        margin-bottom: 5px;
+        color: $col-main;
+      }
+
+      .examTestPageSubjectName {
+        font-family: PoppinsSemibold;
+        font-size: $fs18;
+        margin-bottom: 5px;
+        color: $col-text2;
+      }
+    }
+
+    .examTestPageClock {
+      border-radius: 5px;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 0 2px $col-text;
+      padding: 5px 15px;
+      margin-top: 5px;
+
+      .examTestPageClockName {
+        font-family: PoppinsSemibold;
+        font-size: $fs20;
+        margin-bottom: 5px;
+        color: $col-main;
+      }
+
+      .examTestPageClockWatch {
+        font-family: PoppinsSemibold;
+        font-size: $fs18;
+        margin-bottom: 5px;
+        color: $col-text2;
+      }
+    }
+
+    .examEndBlock {
+      padding: 5px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      #examEnd {
+        background-color: white;
+        color: #e72929;
+        border-radius: 5px;
+        box-shadow: 0 0 7px #e72929;
+        font-size: $fs18;
+        width: 100%;
+        padding: 12px 20px;
+        font-family: PoppinsSemibold;
+        @include transitionTime($time: 0.6s);
+      }
+      #examEnd:hover {
+        background-color: #e72929;
+        color: white;
+      }
+    }
+
+    .examSubjects {
+      margin-top: 15px;
+      justify-content: center;
+      .nav-link {
+        height: 50px;
+        border-radius: 5px;
+        margin: 5px 0;
+        background-color: $col-main2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: PoppinsSemibold;
+        font-size: $fs18;
+        color: white;
+        @include transitionTime($time: 0.6s);
+      }
+
+      .nav-link:not(:last-child) {
+        margin-right: 18px;
+      }
+
+      .nav-link:hover {
+        background-color: white;
+        box-shadow: 0 0 5px $col-main2;
+        color: $col-main2;
+      }
+
+      .active {
+        background-color: white;
+        box-shadow: 0 0 5px $col-main2;
+        color: $col-main2;
+      }
+    }
+
+    .examTestPageRow2 {
+      margin-top: 20px;
+      .examTestPageResult {
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 0 0 2px $col-text;
+        padding: 20px 15px;
+        margin-top: 5px;
+        order: 1;
+
+        .examTestPageResultName {
+          font-family: PoppinsSemibold;
+          font-size: $fs20;
+          color: $col-main;
+        }
+
+        .examTestPageResultBlock {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+          list-style-type: none;
+          padding: 0;
+          margin-top: 10px;
+          .examTestPageResultItem {
+            width: 18%;
+            height: 35px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            background-color: transparent;
+            color: $col-main;
+            font-family: PoppinsSemibold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 3px $col-text;
+            @include transitionTime($time: 0.3s);
+          }
+
+          .examTestPageResultItem:hover {
+            cursor: pointer;
+          }
+
+          .examTestPageResultItem:focus {
+            box-shadow: 0 0 5px $col-text;
+            transform: scale(1.05);
+          }
+
+          .examTestPageResultItem:active {
+            box-shadow: 0 0 5px $col-text;
+            transform: scale(1.05);
+          }
+
+          .examTestPageResultItemSelect {
+            background-color: $col-main2;
+            color: white;
+          }
+
+          .examTestPageResultItemTrue {
+            background-color: green;
+            color: white;
+          }
+          .examTestPageResultItemFalse {
+            background-color: red;
+            color: white;
+          }
+        }
+      }
+
+      .examTestPageQuestionBlock {
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 0 0 2px $col-text;
+        padding: 25px 15px;
+        margin-top: 5px;
+        order: 2;
+
+        .examTestPageQuestionBlockHead {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          button {
+            display: flex;
+            align-items: center;
+            background-color: $col-main;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 5px;
+            font-family: PoppinsMedium;
+            font-size: $fs18;
+            @include transitionTime;
+            svg {
+              width: 20px;
+              fill: white;
+              @include transitionTime;
+            }
+          }
+
+          button:hover {
+            background-color: white;
+            color: $col-main;
+            box-shadow: 0 0 5px $col-text;
+            svg {
+              fill: $col-main;
+            }
+          }
+
+          button:focus {
+            transform: scale(0.9);
+          }
+
+          .examTestPageQuestionBeforeButton {
+            span {
+              display: inline-flex;
+              margin-left: 10px;
+            }
+          }
+
+          .examTestPageQuestionNextButton {
+            span {
+              display: inline-flex;
+              margin-right: 10px;
+            }
+          }
+
+          .examTestPageQuestionBlockHeadName {
+            font-size: $fs20;
+            font-family: PoppinsBold;
+            color: $col-main;
+          }
+        }
+
+        .examTestPageQuestionBlockSlide {
+          margin-top: 15px;
+          .examTestPageQuestionBlockSlideItem {
+            display: none;
+            @include transitionTime($time: 1s);
+            .examTestPageQuestionBlockSlideItemContent {
+              font-family: PoppinsRegular;
+              color: $col-text2;
+            }
+
+            .examTestPageQuestionBlockSlideItemOptions {
+              font-family: PoppinsRegular;
+              color: $col-text2;
+              list-style-type: none;
+              padding: 0;
+              margin-top: 15px;
+              .examTestPageQuestionBlockSlideItemOption {
+                .examTestPageQuestionBlockSlideItemOptionLabel {
+                  margin-top: 10px;
+                  display: flex;
+                  align-items: center;
+                  .examTestPageQuestionBlockSlideItemOptionName {
+                    font-family: PoppinsMedium;
+                    color: $col-text2;
+                    margin-right: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 1px solid $col-text2;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 5px;
+                    min-width: 30px;
+                    @include transitionTime;
+                  }
+
+                  input {
+                    display: none;
+                  }
+
+                  input:checked
+                    ~ .examTestPageQuestionBlockSlideItemOptionName {
+                    background: $col-main;
+                    color: white;
+                    border-color: white;
+                  }
+
+                  .rightAnswer {
+                    background: green !important;
+                    border: 2px solid green !important;
+                    color: white;
+                  }
+
+                  .wrongAnswer {
+                    background: red !important;
+                    border: 2px solid red !important;
+                    color: white;
+                  }
+                }
+
+                .examTestPageQuestionBlockSlideItemOptionLabel:hover {
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+
+          .examTestPageQuestionBlockSlideItemActive {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+// fouter
+#fouter {
+  background-color: $col-main;
+
+  .fouter {
+    text-align: center;
+    padding: 25px 0;
+    .fouterLogo {
+      padding-top: 10px;
+      display: flex;
+      justify-content: center;
+      svg {
+        width: 135px;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+
+    .fouterSocial {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .fouterSocialBox {
+        display: flex;
+        align-items: center;
+        .fouterSocialItem {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          width: 35px;
+          height: 35px;
+          background-color: white;
+          border-radius: 50%;
+          border: 1px solid transparent;
+          @include transitionTime($time: 0.7s);
+          svg {
+            width: 60%;
+            height: 60%;
+            path {
+              fill: black;
+              @include transitionTime($time: 0.7s);
+            }
+          }
+        }
+        .fouterSocialItem:hover {
+          background-color: black;
+          box-shadow: 0 0 2px 0 gray;
+          svg {
+            path {
+              fill: white;
+            }
+          }
+        }
+
+        .fouterSocialText {
+          font-family: PoppinsRegular;
+          font-size: $fs18;
+          color: black;
+          margin-left: 8px;
+        }
+      }
+
+      .fouterSocialBox:not(:last-child) {
+        margin-right: 14px;
+      }
+    }
+
+    .fouterCopyright {
+      margin-top: 25px;
+      font-family: PoppinsRegular;
+      font-size: $fs16;
+      color: black;
+    }
+  }
+}
+
+//design end
+@import "media";
