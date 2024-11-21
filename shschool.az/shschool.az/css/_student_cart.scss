@@ -1,0 +1,97 @@
+.student-cart {
+  direction: ltr;
+  padding: 48px 40px;
+  background-color: white;
+  border-radius: 12px;
+  .student-cart-head {
+    display: flex;
+    align-items: center;
+    .student-cart-head-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: gray;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .student-cart-head-right {
+      padding-left: 10px;
+      .student-cart-head-right-name {
+        font-family: $Manrope700;
+        font-size: $fs20;
+        color: $col-blue1;
+      }
+
+      .student-cart-head-right-position {
+        font-family: $Inter400;
+        font-size: $fs14;
+        color: $col-blue1;
+      }
+    }
+  }
+  .student-cart-content {
+    font-family: $Inter400;
+    font-size: $fs18;
+    color: $col-blue1;
+    margin-top: 12px;
+  }
+}
+
+@media only screen and (max-width: 991.9px) {
+  .student-cart {
+    padding: 40px 32px;
+    .student-cart-head {
+      .student-cart-head-img {
+        width: 44px;
+        height: 44px;
+      }
+
+      .student-cart-head-right {
+        padding-left: 8px;
+        .student-cart-head-right-name {
+          font-size: $fs18;
+        }
+
+        .student-cart-head-right-position {
+          font-size: $fs14;
+        }
+      }
+    }
+    .student-cart-content {
+      font-size: $fs16;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .student-cart {
+    padding: 26px 24px;
+    .student-cart-head {
+      .student-cart-head-img {
+        width: 38px;
+        height: 38px;
+      }
+
+      .student-cart-head-right {
+        padding-left: 8px;
+        .student-cart-head-right-name {
+          font-size: $fs16;
+        }
+
+        .student-cart-head-right-position {
+          font-size: $fs12;
+        }
+      }
+    }
+    .student-cart-content {
+      font-size: $fs14;
+      margin-top: 8px;
+    }
+  }
+}

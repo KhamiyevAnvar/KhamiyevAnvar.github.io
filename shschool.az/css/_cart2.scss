@@ -1,0 +1,132 @@
+.sh-cart2 {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  // box-shadow: 0px 6px 8px 0 #c7c7c740;
+  border-radius: 24px;
+  //   overflow: hidden;
+  direction: ltr;
+  .sh-cart-head {
+    width: 357px;
+    height: 282px;
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    svg {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      @include transitionTime;
+      path {
+        @include transitionTime;
+      }
+    }
+  }
+
+  .sh-cart-body {
+    padding: 14px;
+    padding-right: 35px;
+    width: calc(100% - 357px);
+    .sh-cart-date {
+      display: inline-flex;
+      padding: 2px 10px;
+      background-color: #3567b047;
+      color: white;
+      font-family: $Manrope400;
+      font-size: $fs12;
+      border-radius: 17px;
+    }
+
+    .sh-cart-category {
+      margin-top: 4px;
+      font-family: $Manrope600;
+      font-size: $fs14;
+      color: $col-blue3;
+    }
+
+    .sh-cart-name {
+      color: $col-blue4;
+      font-family: $Manrope800;
+      font-size: $fs30;
+      margin-top: 8px;
+      img {
+        width: 30px;
+      }
+    }
+
+    .sh-cart-content {
+      margin-top: 8px;
+      color: $col-blue4;
+      font-family: $Manrope400;
+      font-size: $fs16;
+      @include lineLimit($line: 4);
+    }
+
+    // .sh-cart-icon {
+    //   margin-top: 10px;
+    //   display: flex;
+    //   justify-content: right;
+    // }
+  }
+}
+
+.sh-cart2:hover {
+  .sh-cart-head {
+    svg {
+      transform: rotate(45deg);
+      path {
+        fill: $col-blue3;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767.8px) {
+  .sh-cart2 {
+    flex-wrap: wrap;
+    .sh-cart-head {
+      width: 100%;
+      height: 200px;
+      // border-radius: 10px;
+      svg {
+        position: absolute;
+        top: 7px;
+        right: 7px;
+        width: 22px;
+        height: 22px;
+      }
+    }
+
+    .sh-cart-body {
+      margin-top: 10px;
+      padding: 14px;
+      width: 100%;
+      .sh-cart-date {
+        padding: 1px 7px;
+        font-size: $fs12;
+        border-radius: 17px;
+      }
+
+      .sh-cart-category {
+        margin-top: 3px;
+        font-size: $fs12;
+      }
+
+      .sh-cart-name {
+        font-size: $fs18;
+        margin-top: 5px;
+      }
+
+      .sh-cart-content {
+        margin: 0;
+        margin-top: 5px;
+        font-size: $fs12;
+      }
+    }
+  }
+}

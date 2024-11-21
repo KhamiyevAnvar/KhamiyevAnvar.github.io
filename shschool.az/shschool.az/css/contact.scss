@@ -1,0 +1,530 @@
+@import "common";
+
+@import "_navbar";
+
+// @import "_cart";
+
+// @import "_cart2";
+
+// @import "_student_cart";
+
+@import "_footer";
+
+// body[dir="rtl"] .slick-track {
+//   direction: rtl;
+// }
+
+// body[dir="rtl"] .slick-slide {
+//   text-align: right;
+// }
+
+// body[dir="rtl"] .slick-prev {
+//   left: auto;
+//   right: 0;
+// }
+
+// body[dir="rtl"] .slick-next {
+//   right: auto;
+//   left: 0;
+// }
+
+#contact {
+  padding: 50px 0 15px;
+  .contact {
+    border: 1px solid #f3f6fb;
+    background: #e8edf6;
+    border-radius: 20px;
+    padding: 16px;
+    .contact-name {
+      font-family: $Manrope700;
+      font-size: $fs40;
+      color: $col-blue4;
+    }
+    .contact-content {
+      font-family: $Manrope400;
+      font-size: $fs18;
+      color: $col-blue1;
+      margin-top: 7px;
+      width: 75%;
+    }
+
+    .contact-connect {
+      margin-top: 15px;
+
+      .contact-connect-item {
+        background: #f3f6fb;
+        border-radius: 10px;
+        padding: 10px;
+        height: 100%;
+        .contact-connect-item-head {
+          display: flex;
+          align-items: center;
+          .contact-connect-item-head-img {
+            margin-right: 5px;
+          }
+          .contact-connect-item-head-text {
+            // margin-top: 8px;
+            font-family: $Manrope700;
+            font-size: $fs24;
+            color: $col-blue1;
+          }
+        }
+
+        .contact-connect-item-body {
+          font-family: $Manrope400;
+          font-size: $fs16;
+          color: #757575;
+        }
+      }
+    }
+  }
+}
+
+#contact-foot {
+  padding: 30px 0 90px 0;
+  .contact-foot {
+    #locationMap {
+      width: 100%;
+      height: 465px;
+    }
+
+    .contact-foot-map {
+      border: 1px solid rgba(209, 209, 209, 1);
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .contact-foot-right {
+      // border: 1px solid #f3f6fb;
+      background: #e8edf6;
+      border-radius: 20px;
+      padding: 16px;
+      .contact-foot-right-name {
+        font-family: $Manrope700;
+        font-size: $fs32;
+        color: $col-blue4;
+      }
+      .contact-foot-right-content {
+        font-family: $Manrope400;
+        font-size: $fs18;
+        color: $col-blue1;
+        opacity: 0.77;
+        margin-top: 7px;
+      }
+
+      .contact-foot-right-form {
+        margin-top: 20px;
+        .contact-form-input {
+          background: rgba(243, 246, 251, 1);
+          border-radius: 8px;
+          input {
+            @extend %button_reset;
+            width: 100%;
+            padding: 12px 16px;
+            color: #757575;
+          }
+        }
+
+        .main-select-design {
+          font-family: $Manrope400;
+          font-size: $fs14 !important;
+          color: #757575;
+          margin-top: 12px;
+
+          //  select
+          .select2-container--open {
+            .select2-selection--single {
+              border-radius: 8px !important;
+            }
+          }
+
+          .select2-container {
+            width: 100% !important;
+
+            .select2-selection--single {
+              border: none;
+              border-radius: 8px;
+              height: 48px;
+              //   padding-left: 8px;
+              color: blue;
+
+              background-color: #f3f6fb;
+              .select2-selection__rendered {
+                line-height: 48px;
+                padding: 0 16px;
+              }
+
+              .select2-selection__arrow {
+                line-height: 48px !important;
+                b {
+                  background-image: url(https://cdn4.iconfinder.com/data/icons/user-interface-174/32/UIF-76-512.png);
+                  //  background-color: transparent;
+                  background-size: contain;
+                  border: none !important;
+                  height: 20px !important;
+                  width: 20px !important;
+                  margin: auto !important;
+                  top: 50% !important;
+                  transform: rotate(-90deg);
+                  left: auto !important;
+                  right: 15px;
+                  line-height: 48px !important;
+                }
+              }
+            }
+          }
+        }
+
+        .contact-form-textarea {
+          background: rgba(243, 246, 251, 1);
+          border-radius: 8px;
+          margin-top: 12px;
+          color: #757575;
+          textarea {
+            @extend %button_reset;
+            width: 100%;
+            padding: 12px 16px;
+            resize: none;
+          }
+        }
+
+        .contact-form-button {
+          margin-top: 12px;
+          button {
+            @extend %button_reset;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 12px 24px;
+            background: rgba(202, 239, 69, 1);
+            border-radius: 14px;
+            @include transitionTime;
+            span {
+              font-family: $Manrope700;
+              font-size: $fs16;
+              color: $col-blue1;
+              @include transitionTime;
+            }
+            svg {
+              margin-left: 5px;
+              @include transitionTime;
+            }
+          }
+
+          button:hover {
+            background-color: $col-blue1;
+            span {
+              color: rgba(202, 239, 69, 1);
+            }
+            svg {
+              path {
+                stroke: rgba(202, 239, 69, 1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.foot {
+  background-color: $col-blue1;
+}
+
+// select 2
+.select2-dropdown {
+  border: none;
+  font-family: $Manrope400;
+  font-size: $fs14 !important;
+  color: $col-blue1;
+  border-radius: 8px;
+  overflow: hidden;
+
+  .select2-search--dropdown {
+    display: none !important;
+  }
+
+  .select2-results__option {
+    padding-left: 8px;
+  }
+}
+
+.select2-container--default {
+  .select2-results__option--selectable {
+    color: black;
+  }
+  .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: $col-blue3;
+    color: white;
+  }
+
+  .select2-results__option--selected {
+    color: white;
+    background-color: $col-blue5;
+  }
+
+  .select2-results__option {
+    padding-left: 15px !important;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+}
+
+@media only screen and (max-width: 1199.9px) {
+}
+
+@media only screen and (max-width: 991.9px) {
+  #contact {
+    padding: 50px 0 15px;
+    .contact {
+      padding: 16px;
+      .contact-name {
+        font-size: $fs32;
+      }
+      .contact-content {
+        font-size: $fs16;
+        margin-top: 5px;
+        width: 100%;
+      }
+
+      .col-md-6 {
+        margin-top: 12px;
+      }
+      .contact-connect {
+        margin-top: 0;
+
+        .contact-connect-item {
+          padding: 10px;
+          .contact-connect-item-head {
+            .contact-connect-item-head-img {
+              margin-right: 5px;
+            }
+            .contact-connect-item-head-text {
+              font-size: $fs20;
+            }
+          }
+
+          .contact-connect-item-body {
+            font-size: $fs16;
+          }
+        }
+      }
+    }
+  }
+
+  #contact-foot {
+    padding: 30px 0 90px 0;
+    .contact-foot {
+      #locationMap {
+        height: 400px;
+      }
+      .contact-foot-right {
+        margin-top: 30px;
+        background: #e8edf6;
+        border-radius: 20px;
+        padding: 16px;
+        .contact-foot-right-name {
+          font-size: $fs28;
+        }
+        .contact-foot-right-content {
+          font-size: $fs16;
+        }
+
+        .contact-foot-right-form {
+          margin-top: 16px;
+          .contact-form-input {
+            input {
+              padding: 12px 16px;
+            }
+          }
+
+          .main-select-design {
+            font-size: $fs14 !important;
+            margin-top: 12px;
+
+            //  select
+
+            .select2-container {
+              width: 100% !important;
+
+              .select2-selection--single {
+                height: 48px;
+                .select2-selection__rendered {
+                  line-height: 48px;
+                  padding: 0 16px;
+                }
+
+                .select2-selection__arrow {
+                  line-height: 48px !important;
+                  b {
+                    background-image: url(https://cdn4.iconfinder.com/data/icons/user-interface-174/32/UIF-76-512.png);
+                    background-size: contain;
+                    border: none !important;
+                    height: 20px !important;
+                    width: 20px !important;
+                    margin: auto !important;
+                    top: 50% !important;
+                    transform: rotate(-90deg);
+                    left: auto !important;
+                    right: 15px;
+                    line-height: 48px !important;
+                  }
+                }
+              }
+            }
+          }
+
+          .contact-form-textarea {
+            margin-top: 12px;
+            textarea {
+              padding: 12px 16px;
+            }
+          }
+
+          .contact-form-button {
+            margin-top: 12px;
+            button {
+              padding: 12px 24px;
+              span {
+                font-size: $fs16;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  #contact {
+    padding: 25px 0 15px;
+    .contact {
+      padding: 16px;
+      .contact-name {
+        font-size: $fs24;
+      }
+      .contact-content {
+        font-size: $fs14;
+        margin-top: 5px;
+      }
+
+      .col-md-6 {
+        margin-top: 8px;
+      }
+      .contact-connect {
+        margin-top: 4px;
+
+        .contact-connect-item {
+          padding: 8px;
+          .contact-connect-item-head {
+            .contact-connect-item-head-img {
+              margin-right: 5px;
+              svg {
+                width: 28px;
+              }
+            }
+            .contact-connect-item-head-text {
+              font-size: $fs16;
+            }
+          }
+
+          .contact-connect-item-body {
+            font-size: $fs14;
+          }
+        }
+      }
+    }
+  }
+
+  #contact-foot {
+    padding: 15px 0 50px 0;
+    .contact-foot {
+      #locationMap {
+        height: 280px;
+      }
+      .contact-foot-right {
+        margin-top: 20px;
+        background: #e8edf6;
+        //   padding: 16px;
+        .contact-foot-right-name {
+          font-size: $fs22;
+        }
+        .contact-foot-right-content {
+          font-size: $fs14;
+        }
+
+        .contact-foot-right-form {
+          margin-top: 2px;
+          .contact-form-input {
+            margin-top: 12px;
+            input {
+              padding: 12px 16px;
+            }
+          }
+
+          .main-select-design {
+            font-size: $fs14 !important;
+            margin-top: 12px;
+
+            //  select
+
+            .select2-container {
+              width: 100% !important;
+
+              .select2-selection--single {
+                height: 48px;
+                .select2-selection__rendered {
+                  line-height: 48px;
+                  padding: 0 16px;
+                }
+
+                .select2-selection__arrow {
+                  line-height: 48px !important;
+                  b {
+                    background-image: url(https://cdn4.iconfinder.com/data/icons/user-interface-174/32/UIF-76-512.png);
+                    background-size: contain;
+                    border: none !important;
+                    height: 20px !important;
+                    width: 20px !important;
+                    margin: auto !important;
+                    top: 50% !important;
+                    transform: rotate(-90deg);
+                    left: auto !important;
+                    right: 15px;
+                    line-height: 48px !important;
+                  }
+                }
+              }
+            }
+          }
+
+          .contact-form-textarea {
+            margin-top: 12px;
+            textarea {
+              padding: 12px 16px;
+            }
+          }
+
+          .contact-form-button {
+            margin-top: 12px;
+            button {
+              padding: 12px 24px;
+              span {
+                font-size: $fs16;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+}
+
+@media screen and (max-width: 360px) {
+}

@@ -1,0 +1,1075 @@
+#navbar {
+  position: relative;
+  overflow: hidden;
+  //   z-index: 1;
+  .navbar {
+    padding: 30px 0;
+
+    .sh-navbar {
+      // position: sticky;
+      // top: 30px;
+      // z-index: 1001;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      padding: 14px 12px;
+      background-color: white;
+      border-radius: 10px;
+
+      .sh-navbar-list {
+        @extend %list_reset;
+        display: flex;
+
+        li {
+          font-family: $Manrope400;
+          font-size: $fs14;
+          border-radius: 3px;
+          @include transitionTime;
+        }
+
+        .sh-navbar-list-item {
+          overflow: hidden;
+          @include transitionTime;
+
+          .sh-navbar-list-link {
+            display: flex;
+            padding: 6px 9px;
+            color: $col-blue5;
+            @include transitionTime;
+          }
+        }
+
+        .sh-navbar-list-dropdown {
+          .dropdown {
+            .dropdown-toggle {
+              background: none;
+              outline: none;
+              border: none;
+              box-shadow: none;
+              // display: flex;
+              font-family: $Manrope400;
+              font-size: $fs14;
+              border-radius: 3px;
+              // @include transitionTime;
+              padding: 6px 9px;
+              color: $col-blue5;
+              @include transitionTime;
+            }
+
+            ul {
+              li {
+                margin-left: 0 !important;
+              }
+              .active {
+                background-color: $col-blue5;
+              }
+            }
+
+            .show:focus {
+              background-color: $col-blue5;
+              color: white;
+            }
+          }
+        }
+
+        .active {
+          font-family: $Manrope700;
+          font-size: $fs14;
+        }
+
+        .sh-navbar-list-item:not(.active):hover {
+          .sh-navbar-list-link {
+            background-color: $col-blue5;
+            color: white;
+          }
+
+          // .sh-dropdown-button {
+          //   background-color: $col-blue5;
+          //   color: white;
+          // }
+        }
+
+        li:not(:first-child) {
+          margin-left: 7px;
+        }
+      }
+
+      .sh-navbar-right {
+        display: flex;
+        align-items: center;
+
+        .shLanguageBlock {
+          min-width: 65px;
+          position: relative;
+
+          .shLanguageBlockHead {
+            display: flex;
+            align-items: center;
+          }
+          .cdrop {
+            width: 100%;
+            height: 40px;
+            background: none;
+            border: none;
+            outline: none;
+            padding: 4px;
+            overflow: hidden;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            svg {
+              width: 34px;
+              height: 34px;
+              object-fit: contain;
+            }
+
+            img {
+              width: 30px;
+              margin-left: 5px;
+            }
+          }
+
+          .cdrop:hover {
+            cursor: pointer;
+          }
+
+          .cdrop::after {
+            content: "";
+            display: inline-flex;
+            width: 15px;
+            height: 15px;
+            position: absolute;
+            top: 50%;
+            right: 5px;
+            transform: translateY(-50%);
+
+            // background-image: url(../img/arrowVektorDown.png);
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+
+          .imgdown {
+            height: 100%;
+            display: flex;
+            align-items: center;
+          }
+
+          .hovcard {
+            opacity: 0;
+            visibility: hidden;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: block;
+            position: absolute;
+            top: 160%;
+            right: 0;
+            background-color: white;
+            box-shadow: 0 3px 13px 1px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            overflow: hidden;
+
+            @include transitionTime;
+            .flaqLangItem {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 8px 15px;
+              svg {
+                width: 24px;
+                height: 24px;
+                object-fit: contain;
+              }
+              img {
+                width: 24px;
+                height: 24px;
+              }
+            }
+            .flaqLangItem:hover {
+              cursor: pointer;
+              background-color: #f5f6ff;
+            }
+          }
+
+          .hovcard-active {
+            visibility: visible;
+            opacity: 1;
+            top: 120%;
+          }
+        }
+
+        .sh-navbar-join {
+          margin-left: 15px;
+          background-color: $col-blue3;
+          border-radius: 8px;
+          a {
+            display: flex;
+            text-decoration: none;
+            font-family: $Manrope500;
+            font-size: $fs14;
+            padding: 10px;
+            color: white;
+          }
+        }
+
+        .shMenuButBlock {
+          display: none;
+          justify-content: center;
+          align-items: center;
+          margin-left: 15px;
+          .shMenuBut {
+            background: none;
+            border: none;
+            outline: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            background-color: $col-blue3;
+            border-radius: 5px;
+            width: 34px;
+            height: 34px;
+            @include transitionTime;
+            span {
+              display: block;
+              width: 20px;
+              height: 2px;
+              background-color: white;
+              @include transitionTime;
+            }
+            span:not(:last-child) {
+              margin-bottom: 4px;
+            }
+          }
+
+          .shMenuBut:hover {
+            background-color: white;
+            box-shadow: 0 0 4px 1px $col-blue3;
+            span {
+              background-color: $col-blue1;
+            }
+          }
+        }
+      }
+    }
+
+    .cover {
+      padding: 80px 0;
+      .cover-name {
+        font-family: $Manrope800;
+        font-size: $fs80;
+        color: white;
+        line-height: 100px;
+      }
+
+      .cover-body {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        .cover-content {
+          font-family: $Manrope400;
+          font-size: $fs20;
+          color: #f3f6fb;
+        }
+
+        .cover-body-button {
+          margin-left: 30px;
+          a {
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+            border-radius: 14px;
+            background-color: #131313;
+            color: white;
+
+            svg {
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+
+      .cover-foot {
+        margin-top: 10px;
+      }
+    }
+
+    .cover2 {
+      padding: 40px 0 20px 0;
+      .cover-name {
+        font-family: $Manrope800;
+        font-size: $fs60;
+        color: white;
+        line-height: 70px;
+      }
+
+      .cover-body {
+        margin-top: 20px;
+        .cover-category-name {
+          color: rgba(254, 243, 243, 0.4);
+          font-family: $Manrope500;
+          font-size: $fs20;
+        }
+
+        .cover-category-list {
+          @extend %list_reset;
+          margin-top: 2px;
+          display: flex;
+          flex-wrap: wrap;
+          padding: 0;
+          li {
+            margin-top: 8px;
+            border: 1px solid white;
+            border-radius: 50px;
+            margin-right: 10px;
+            @include transitionTime;
+            a {
+              display: flex;
+              padding: 8px 30px;
+              color: white;
+              font-family: $Manrope800;
+              font-size: $fs20;
+              @include transitionTime;
+            }
+          }
+
+          .active {
+            background-color: white;
+            a {
+              color: $col-blue3;
+            }
+          }
+
+          li:hover {
+            background-color: white;
+            a {
+              color: $col-blue3;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .background-clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    //  width: 100%;
+    //  height: auto;
+    z-index: -1;
+  }
+
+  .background-shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    background: linear-gradient(
+      138.02deg,
+      #3567b0 10.96%,
+      #255397 48.43%,
+      #162b4a 85.58%
+    );
+
+    z-index: -1;
+  }
+
+  .background-shadow2 {
+    opacity: 1;
+  }
+
+  .background-cover1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .background-cover2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+//mobileMenu
+.mobileMenu {
+  // display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 0 15px;
+  opacity: 1;
+  @include transitionTime($time: 0.5s);
+
+  .mobileMenuHead {
+    padding: 30px 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .mobileHeaderLogo {
+      // width: 100px;
+      display: flex;
+      svg {
+        width: 110px;
+      }
+    }
+    .mobileCloseBut {
+      border: none;
+      outline: none;
+      background: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 35px;
+      height: 35px;
+      background-color: $col-blue3;
+      border-radius: 8px;
+      @include transitionTime;
+      svg {
+        width: 23px;
+        height: 23px;
+        fill: white;
+        @include transitionTime;
+      }
+    }
+
+    .mobileCloseBut:hover {
+      cursor: pointer;
+      background-color: white;
+      box-shadow: 0 0 4px 1px $col-blue3;
+      svg {
+        fill: $col-blue3;
+      }
+    }
+  }
+
+  .mobileMenuList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    .mobileMenuListItem {
+      font-family: $Manrope500;
+      font-size: 14px;
+      border-radius: 3px;
+      overflow: hidden;
+      width: 100%;
+      padding: 0;
+      position: relative;
+      a {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 6px 9px;
+        color: $col-blue5;
+        text-decoration: none;
+        // color: #000;
+        @include transitionTime;
+      }
+    }
+
+    .mobileMenuListItemDrop {
+      font-family: $Manrope500;
+      font-size: 14px;
+      border-radius: 3px;
+      overflow: hidden;
+      width: 100%;
+      padding: 0;
+      position: relative;
+      @include transitionTime;
+      .dropArrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 6px 9px;
+        color: $col-blue5;
+        text-decoration: none;
+        // color: #000;
+        @include transitionTime;
+        svg {
+          margin-left: 10px;
+          width: 15px;
+          height: 16px;
+          @include transitionTime;
+        }
+      }
+
+      .dropArrow.active span {
+        font-family: $Manrope500;
+        font-size: 14px;
+      }
+
+      .dropArrow.active svg {
+        transform: rotate(-180deg);
+        border-color: #fff;
+      }
+
+      ul {
+        @extend %list_reset;
+        padding: 0 15px;
+        border-radius: 3px;
+        // @include transitionTime;
+        li {
+          border-radius: 3px;
+          overflow: hidden;
+          @include transitionTime;
+          a {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding: 6px 9px;
+            color: $col-blue5;
+            text-decoration: none;
+            // color: #000;
+            @include transitionTime;
+          }
+        }
+
+        li:not(.active):hover {
+          a {
+            color: white;
+            background-color: $col-blue3;
+          }
+        }
+
+        .active {
+          font-family: $Manrope700;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .mobileMenuListItem:not(.active):hover {
+      a {
+        color: white;
+        background-color: $col-blue3;
+      }
+    }
+
+    .active {
+      font-family: $Manrope700;
+      font-size: 14px;
+    }
+
+    .mobileMenuListItem:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+
+  .mobile-join-us {
+    margin-top: 20px;
+    background-color: $col-blue3;
+    border-radius: 8px;
+    a {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      text-decoration: none;
+      font-family: $Manrope500;
+      font-size: $fs14;
+      padding: 10px;
+      color: white;
+    }
+  }
+}
+
+.mobileMenuNone {
+  opacity: 0;
+  visibility: hidden;
+  left: -100%;
+  @include transitionTime($time: 1.2s);
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .background-clip {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .background-clip {
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+}
+
+@media only screen and (max-width: 1199.9px) {
+}
+
+@media only screen and (max-width: 991.9px) {
+  #navbar {
+    .navbar {
+      //   padding: 30px 0;
+
+      .sh-navbar {
+        padding: 14px 12px;
+        border-radius: 10px;
+
+        .sh-navbar-list {
+          display: none;
+        }
+
+        .sh-navbar-right {
+          display: flex;
+          align-items: center;
+
+          .shLanguageBlock {
+            min-width: 65px;
+            position: relative;
+
+            .shLanguageBlockHead {
+              display: flex;
+              align-items: center;
+            }
+            .cdrop {
+              width: 100%;
+              height: 40px;
+              background: none;
+              border: none;
+              outline: none;
+              padding: 4px;
+              overflow: hidden;
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              svg {
+                width: 34px;
+                height: 34px;
+                object-fit: contain;
+              }
+
+              img {
+                width: 30px;
+                margin-left: 5px;
+              }
+            }
+
+            .cdrop:hover {
+              cursor: pointer;
+            }
+
+            .cdrop::after {
+              content: "";
+              display: inline-flex;
+              width: 15px;
+              height: 15px;
+              position: absolute;
+              top: 50%;
+              right: 5px;
+              transform: translateY(-50%);
+
+              // background-image: url(../img/arrowVektorDown.png);
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+
+            .imgdown {
+              height: 100%;
+              display: flex;
+              align-items: center;
+            }
+
+            .hovcard {
+              opacity: 0;
+              visibility: hidden;
+              list-style-type: none;
+              padding: 0;
+              margin: 0;
+              display: block;
+              position: absolute;
+              top: 160%;
+              right: 0;
+              background-color: white;
+              box-shadow: 0 3px 13px 1px rgba(0, 0, 0, 0.2);
+              border-radius: 8px;
+              overflow: hidden;
+
+              @include transitionTime;
+              .flaqLangItem {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 8px 15px;
+                svg {
+                  width: 24px;
+                  height: 24px;
+                  object-fit: contain;
+                }
+                img {
+                  width: 24px;
+                  height: 24px;
+                }
+              }
+              .flaqLangItem:hover {
+                cursor: pointer;
+                background-color: #f5f6ff;
+              }
+            }
+
+            .hovcard-active {
+              visibility: visible;
+              opacity: 1;
+              top: 120%;
+            }
+          }
+
+          .sh-navbar-join {
+            margin-left: 15px;
+            background-color: $col-blue3;
+            border-radius: 8px;
+            a {
+              display: flex;
+              text-decoration: none;
+              font-family: $Manrope500;
+              font-size: $fs14;
+              padding: 10px;
+              color: white;
+            }
+          }
+
+          .shMenuButBlock {
+            display: flex;
+          }
+        }
+      }
+
+      .cover {
+        padding: 60px 0;
+        .cover-name {
+          font-size: $fs50;
+          line-height: 70px;
+        }
+
+        .cover-body {
+          margin-top: 15px;
+          .cover-content {
+            font-size: $fs18;
+          }
+
+          .cover-body-button {
+            margin-left: 30px;
+            a {
+              padding: 8px 16px;
+              font-size: $fs14;
+            }
+          }
+        }
+
+        .cover-foot {
+          margin-top: 10px;
+        }
+      }
+
+      .cover2 {
+        padding: 40px 0 20px 0;
+        .cover-name {
+          font-family: $Manrope800;
+          font-size: $fs50;
+          color: white;
+          line-height: 60px;
+        }
+
+        .cover-body {
+          .cover-category-name {
+            font-size: $fs18;
+          }
+
+          .cover-category-list {
+            @extend %list_reset;
+            margin-top: 10px;
+            padding: 0;
+            li {
+              margin-right: 10px;
+              a {
+                display: flex;
+                padding: 7px 28px;
+                font-size: $fs18;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .background-clip {
+      position: absolute;
+      top: 0;
+      left: 0;
+      //  width: 100%;
+      //  height: auto;
+      z-index: -1;
+    }
+
+    .background-shadow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.7;
+      background: linear-gradient(
+        138.02deg,
+        #3567b0 10.96%,
+        #255397 48.43%,
+        #162b4a 85.58%
+      );
+
+      z-index: -1;
+    }
+
+    .background-cover1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .background-cover2 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  #navbar {
+    .navbar {
+      padding: 18px 0;
+
+      .sh-navbar {
+        padding: 12px 10px;
+
+        .sh-navbar-right {
+          .shLanguageBlock {
+            min-width: 65px;
+            position: relative;
+
+            .shLanguageBlockHead {
+              display: flex;
+              align-items: center;
+            }
+            .cdrop {
+              width: 100%;
+              height: 40px;
+              background: none;
+              border: none;
+              outline: none;
+              padding: 4px;
+              overflow: hidden;
+              display: flex;
+              justify-content: left;
+              align-items: center;
+              svg {
+                width: 34px;
+                height: 34px;
+                object-fit: contain;
+              }
+
+              img {
+                width: 30px;
+                margin-left: 5px;
+              }
+            }
+
+            .cdrop:hover {
+              cursor: pointer;
+            }
+
+            .cdrop::after {
+              content: "";
+              display: inline-flex;
+              width: 15px;
+              height: 15px;
+              position: absolute;
+              top: 50%;
+              right: 5px;
+              transform: translateY(-50%);
+
+              // background-image: url(../img/arrowVektorDown.png);
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+
+            .imgdown {
+              height: 100%;
+              display: flex;
+              align-items: center;
+            }
+
+            .hovcard {
+              opacity: 0;
+              visibility: hidden;
+              list-style-type: none;
+              padding: 0;
+              margin: 0;
+              display: block;
+              position: absolute;
+              top: 160%;
+              right: 0;
+              background-color: white;
+              box-shadow: 0 3px 13px 1px rgba(0, 0, 0, 0.2);
+              border-radius: 8px;
+              overflow: hidden;
+
+              @include transitionTime;
+              .flaqLangItem {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 8px 15px;
+                svg {
+                  width: 24px;
+                  height: 24px;
+                  object-fit: contain;
+                }
+                img {
+                  width: 24px;
+                  height: 24px;
+                }
+              }
+              .flaqLangItem:hover {
+                cursor: pointer;
+                background-color: #f5f6ff;
+              }
+            }
+
+            .hovcard-active {
+              visibility: visible;
+              opacity: 1;
+              top: 120%;
+            }
+          }
+
+          .sh-navbar-join {
+            display: none;
+          }
+        }
+      }
+
+      .cover {
+        padding: 30px 0;
+        .cover-name {
+          font-size: $fs26;
+          line-height: 32px;
+        }
+
+        .cover-body {
+          margin-top: 10px;
+          flex-wrap: wrap;
+          .cover-content {
+            width: 100%;
+            font-size: $fs14;
+          }
+
+          .cover-body-button {
+            width: 100%;
+            margin-left: 0;
+            margin-top: 10px;
+            a {
+              display: inline-flex;
+              padding: 6px 13px;
+              font-size: $fs12;
+            }
+          }
+        }
+
+        .cover-foot {
+          margin-top: 8px;
+        }
+      }
+
+      .cover2 {
+        padding: 40px 0 20px 0;
+        .cover-name {
+          font-size: $fs36;
+          line-height: 40px;
+        }
+
+        .cover-body {
+          margin-top: 15px;
+          .cover-category-name {
+            font-size: $fs16;
+          }
+
+          .cover-category-list {
+            margin-top: 8px;
+            padding: 0;
+            li {
+              margin-right: 8px;
+              a {
+                display: flex;
+                padding: 4px 18px;
+                font-size: $fs14;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .background-clip {
+      position: absolute;
+      top: 0;
+      left: 0;
+      //  width: 100%;
+      //  height: auto;
+      z-index: -1;
+    }
+
+    .background-shadow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.7;
+      background: linear-gradient(
+        138.02deg,
+        #3567b0 10.96%,
+        #255397 48.43%,
+        #162b4a 85.58%
+      );
+
+      z-index: -1;
+    }
+
+    .background-cover1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    .background-cover2 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+}
+
+@media screen and (max-width: 360px) {
+}

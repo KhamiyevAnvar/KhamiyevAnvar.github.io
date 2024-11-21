@@ -1,0 +1,62 @@
+@font-face {
+  font-family: ManropeRegular;
+  src: url(font/Manrope/Manrope-Regular.ttf);
+}
+@font-face {
+  font-family: ManropeMedium;
+  src: url(font/Manrope/Manrope-Medium.ttf);
+}
+@font-face {
+  font-family: ManropeSemibold;
+  src: url(font/Manrope/Manrope-SemiBold.ttf);
+}
+@font-face {
+  font-family: ManropeBold;
+  src: url(font/Manrope/Manrope-Bold.ttf);
+}
+@font-face {
+  font-family: ManropeExtraBold;
+  src: url(font/Manrope/Manrope-ExtraBold.ttf);
+}
+@font-face {
+  font-family: InterRegular;
+  src: url(font/inter/Inter_18pt-Regular.ttf);
+}
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html ::-webkit-scrollbar {
+  width: 0.35vw !important;
+}
+html ::-webkit-scrollbar-track {
+  background-color: #ececec;
+}
+html ::-webkit-scrollbar-thumb {
+  background-color: #3567b0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+html ::-webkit-scrollbar-thumb:hover {
+  background-color: #3567b0;
+  opacity: 0.5;
+  margin: 1px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list_reset {
+  list-style-type: none;
+  margin: 0;
+}
+
+.button_reset {
+  border: none;
+  outline: none;
+  background: none;
+}/*# sourceMappingURL=media.css.map */
