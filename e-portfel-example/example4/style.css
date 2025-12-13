@@ -1,0 +1,153 @@
+:root {
+  --white: #ffffff;
+  --light-gray: #f5f7fb;
+  --royal-blue: #4c7dff;
+  --pastel-blue: #a8c8ff;
+  --text-dark: #1a1a1a;
+  --glow-light: rgba(76, 125, 255, 0.28);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--light-gray);
+  font-family: "Urbanist", sans-serif;
+  color: var(--text-dark);
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background: var(--white);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--royal-blue);
+  text-shadow: 0 0 10px var(--glow-light);
+}
+
+.navbar ul {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+}
+
+.navbar a {
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: var(--royal-blue);
+  text-shadow: 0 0 6px var(--glow-light);
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 60px;
+}
+
+.title {
+  font-size: 48px;
+  color: var(--text-dark);
+  text-shadow: 0 0 10px rgba(76, 125, 255, 0.15);
+}
+
+.subtitle {
+  margin: 20px 0 20px;
+  opacity: 0.7;
+}
+
+.btn {
+  margin-top: 30px;
+  padding: 12px 30px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: var(--royal-blue);
+  color: white;
+  box-shadow: 0 0 15px var(--glow-light);
+  transition: 0.3s;
+}
+
+.btn:hover {
+  box-shadow: 0 0 25px rgba(76, 125, 255, 0.45);
+}
+
+/* HERO IMAGE */
+.hero-img-wrapper {
+  position: relative;
+}
+
+.neon-behind {
+  position: absolute;
+  width: 350px;
+  height: 420px;
+  background: var(--glow-light);
+  filter: blur(45px);
+  z-index: 1;
+  top: 0;
+  border-radius: 20px;
+}
+
+.hero-img-wrapper img {
+  width: 350px;
+  border-radius: 20px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 25px rgba(76, 125, 255, 0.18);
+}
+
+/* PROJECTS */
+.projects {
+  padding: 100px 60px;
+}
+
+.section-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: var(--text-dark);
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.project-card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 0 15px rgba(76, 125, 255, 0.15);
+  transition: 0.3s;
+  border: 1px solid rgba(76, 125, 255, 0.15);
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px var(--glow-light);
+}
+
+/* FOOTER */
+footer {
+  padding: 40px;
+  text-align: center;
+  opacity: 0.6;
+  font-size: 14px;
+}

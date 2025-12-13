@@ -1,0 +1,61 @@
+:root {
+  --black: #000;
+  --white: #fff;
+
+  --neon-blue: #4fc3ff;
+  --neon-purple: #b28fff;
+  --neon-pink: #ff66cc;
+
+  --glow-soft: 0 0 15px rgba(120, 170, 255, 0.4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+}
+
+body {
+  background: var(--black);
+  color: var(--white);
+}
+
+/* NAVBAR */
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 15px 50px;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--neon-blue);
+  text-shadow: var(--glow-soft);
+}
+
+.navbar ul {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: var(--neon-purple);
+  text-shadow: var(--glow-soft);
+}

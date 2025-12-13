@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Light Neon Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <section class="calendar-section">
+      <h2 class="section-title">3 Aylıq Plan</h2>
+      <div class="calendar-3months">
+        <div class="month-grid" id="month1"></div>
+        <div class="month-grid" id="month2"></div>
+        <div class="month-grid" id="month3"></div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>© 2025 — Sənin Adın</footer>
+
+    <script>
+      const today = new Date();
+      const monthsToShow = 3;
+      const monthContainers = [
+        document.getElementById("month1"),
+        document.getElementById("month2"),
+        document.getElementById("month3"),
+      ];
+
+      const dayNames = ["B.e", "B.a", "Ç.a", "Ç.", "C.a", "C.", "Ş."];
+
+      // Nümunə üçün bəzi dolu günləri ay + gün formatında qeyd edirik
+      // Format: "YYYY-MM-DD"
+      var filledDays = [
+        "2025-12-03",
+        "2025-12-04",
+        "2025-12-10",
+        "2025-12-15",
+        "2025-12-20",
+        "2026-01-05",
+        "2026-01-12",
+        "2026-02-08",
+        "2026-02-14",
+      ];
+
+      for (let i = 0; i < monthsToShow; i++) {
+        const current = new Date(today.getFullYear(), today.getMonth() + i, 1);
+        const monthGrid = monthContainers[i];
+
+        // Ay başlığı
+        const monthTitle = document.createElement("h3");
+        monthTitle.classList.add("month-title");
+        monthTitle.textContent = current.toLocaleString("az-AZ", {
+          month: "long",
+          year: "numeric",
+        });
+        monthGrid.appendChild(monthTitle);
+
+        // Days grid
+        const daysGrid = document.createElement("div");
+        daysGrid.classList.add("days-grid");
+        monthGrid.appendChild(daysGrid);
+
+        // Həftə günləri adları
+        dayNames.forEach((name) => {
+          const dayNameDiv = document.createElement("div");
+          dayNameDiv.classList.add("day-name");
+          dayNameDiv.textContent = name;
+          daysGrid.appendChild(dayNameDiv);
+        });
+
+        // Boş div-lər (ay 1-in başlamadığı günlər üçün)
+        const firstDay = current.getDay() === 0 ? 6 : current.getDay() - 1;
+
+        for (let b = 0; b < firstDay; b++) {
+          const emptyDiv = document.createElement("div");
+          emptyDiv.classList.add("day", "empty");
+          daysGrid.appendChild(emptyDiv);
+        }
+
+        // Günləri generasiya et
+        const daysInMonth = new Date(
+          current.getFullYear(),
+          current.getMonth() + 1,
+          0
+        ).getDate();
+
+        for (let d = 1; d <= daysInMonth; d++) {
+          const dayDiv = document.createElement("div");
+          dayDiv.classList.add("day");
+
+          dayDiv.textContent = d;
+
+          const fullDateStr = `${current.getFullYear()}-${String(
+            current.getMonth() + 1
+          ).padStart(2, "0")}-${String(d).padStart(2, "0")}`;
+
+          // tarix ucun atribut elave etmek
+          dayDiv.setAttribute("day-date", fullDateStr);
+          //  end
+
+          // Əgər filledDays-də varsa dolu et
+          if (filledDays.includes(fullDateStr)) {
+            dayDiv.classList.add("filled");
+          }
+
+          // Həftə sonlarını ayrıca rənglə göstər
+          const weekday = new Date(
+            current.getFullYear(),
+            current.getMonth(),
+            d
+          ).getDay();
+          if (weekday === 0 || weekday === 6) {
+            dayDiv.classList.add("weekend");
+            dayDiv.classList.add("filled");
+          }
+
+          daysGrid.appendChild(dayDiv);
+        }
+      }
+
+      // gunu rezerv etmek
+      const days = document.querySelectorAll(".day");
+      // console.log(days.length);
+
+      days.forEach((item) => {
+        item.addEventListener("click", function () {
+          let date = this.getAttribute("day-date");
+          if (date && date != undefined) {
+            this.classList.toggle("filled");
+            // array-də toggle
+            const index = filledDays.indexOf(date);
+            if (index > -1) {
+              // varsa sil
+              filledDays.splice(index, 1);
+            } else {
+              // yoxdursa əlavə et
+              filledDays.push(date);
+            }
+            console.log("isledi");
+          }
+        });
+      });
+      //
+    </script>
+  </body>
+</html>
