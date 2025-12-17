@@ -1,5 +1,5 @@
 /* =========================
-   ROOT COLORS & GLOWS
+   ROOT COLORS
 ========================= */
 :root {
   --bg-main: #050507;
@@ -8,7 +8,6 @@
 
   --text-main: #e6e6eb;
   --text-muted: #9a9aa3;
-  --white: #ffffff;
 
   --purple-main: #5b36d9;
   --purple-soft: #7c63ff;
@@ -16,16 +15,8 @@
 
   --gold-main: #ffd070;
 
-  --soft-purple: rgba(155, 108, 224, 0.4);
-  --soft-blue: rgba(58, 142, 230, 0.2);
-  --neon-blue: #00f0ff;
-  --neon-purple: #9b6ce0;
-
   --blur-bg: rgba(5, 5, 7, 0.75);
-  --overlay-hero: rgba(0, 0, 0, 0.45);
-
-  --glow-soft: 0 0 5px #fff, 0 0 10px #aaa;
-  --glow-soft2: 0 0 8px #00f0ff, 0 0 16px #7c63ff;
+  --overlay-hero: rgba(0, 0, 0, 0.65);
 }
 
 /* =========================
@@ -36,6 +27,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -84,8 +76,9 @@ body {
 }
 
 /* =========================
-   HERO / COVER
+   HERO
 ========================= */
+/* HERO CONTAINER */
 .hero {
   padding: 120px 80px 60px;
   display: flex;
@@ -97,15 +90,16 @@ body {
   width: 100%;
   max-width: 1200px;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 20px; /* istəyirsənsə radius, yoxsa 0 */
+  box-shadow: 0 0 10px var(--gold-main), 0 0 40px var(--purple-main);
 }
 
 .hero-img {
   width: 100%;
-  height: 500px;
+  height: 500px; /* lazım gələrsə dəyişdir */
   object-fit: cover;
   display: block;
-  filter: brightness(0.5);
+  filter: brightness(0.5); /* overlay effekti üçün */
 }
 
 .hero-text {
@@ -312,94 +306,4 @@ footer {
   color: var(--text-muted);
   font-size: 14px;
   border-top: 1px solid rgba(91, 54, 217, 0.2);
-}
-
-/* =========================
-   CALENDAR
-========================= */
-.calendar-section {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 80px 50px;
-}
-
-.calendar-3months {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.month-grid {
-  background: rgba(255, 255, 255, 0.03);
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 0 12px rgba(79, 195, 255, 0.15);
-  transition: all ease 0.4s;
-}
-
-.month-grid:hover {
-  box-shadow: 0 0 12px rgba(79, 195, 255, 0.25);
-}
-
-.month-title {
-  text-align: center;
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: var(--white);
-  text-shadow: var(--glow-soft);
-}
-
-.days-grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 5px;
-}
-
-.day-name {
-  color: #aaa;
-  text-align: center;
-  font-weight: 600;
-  font-size: 14px;
-}
-
-.day {
-  background: rgba(
-    255,
-    255,
-    255,
-    0.05
-  ); /* əvvəldən 0.03 idi, bir az tündləşdirildi */
-  border: 1px solid rgba(255, 255, 255, 0.15); /* border daha kontrastlı */
-  border-radius: 10px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 15px;
-  color: var(--white);
-  cursor: pointer;
-  transition: 0.3s;
-  position: relative;
-}
-
-.day:not(.empty, .day.weekend, .filled):hover {
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.9); /* daha aydın hover */
-  border-color: rgba(255, 255, 255, 0.25);
-}
-
-.empty {
-  box-shadow: none; /* daha aydın hover */
-  border: none;
-  background: none;
-}
-
-.day.filled {
-  background: var(--neon-purple);
-  box-shadow: 0 0 14px var(--neon-purple);
-  color: #fff;
-}
-
-.day.weekend {
-  background: rgba(58, 142, 230, 0.35); /* tündləşdirildi */
-  box-shadow: 0 0 12px rgba(58, 142, 230, 0.3);
 }

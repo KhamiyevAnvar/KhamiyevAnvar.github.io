@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BDJ • Neon Music</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --gold: #d4af37;
+        --amber: #ffae00;
+        --orange: #ff8c00;
+        --bronze: #8c6b1f;
+        --bg: #090909;
+        --bg-soft: #131313;
+        --text-soft: #cfcfcf;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background: radial-gradient(circle at top, #1a1306, var(--bg));
+        color: #fff;
+      }
+
+      /* ===== NAVBAR ===== */
+      nav {
+        position: fixed;
+        width: 100%;
+        padding: 22px 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(9, 9, 9, 0.75);
+        backdrop-filter: blur(14px);
+        z-index: 100;
+      }
+
+      nav h1 {
+        color: var(--gold);
+        letter-spacing: 2px;
+        text-shadow: 0 0 12px var(--gold), 0 0 25px var(--orange);
+      }
+
+      nav ul {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+      }
+
+      nav ul a {
+        color: var(--text-soft);
+        font-weight: 500;
+      }
+
+      nav ul a:hover {
+        color: var(--amber);
+        text-shadow: 0 0 10px var(--amber);
+      }
+
+      /* ===== HERO ===== */
+      .hero {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .hero h2 {
+        font-size: 64px;
+        font-weight: 700;
+        color: var(--gold);
+        text-transform: uppercase;
+        text-shadow: 0 0 20px var(--gold), 0 0 40px var(--orange),
+          0 0 80px rgba(255, 140, 0, 0.5);
+      }
+
+      .hero p {
+        margin: 25px 0 45px;
+        font-size: 18px;
+        color: var(--text-soft);
+        letter-spacing: 2px;
+      }
+
+      .hero .cta {
+        padding: 16px 55px;
+        font-size: 18px;
+        font-weight: 700;
+        background: linear-gradient(90deg, var(--amber), var(--orange));
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        box-shadow: 0 0 25px var(--orange), 0 0 60px rgba(255, 140, 0, 0.6);
+        animation: beat 1.8s infinite;
+      }
+
+      @keyframes beat {
+        0% {
+          box-shadow: 0 0 25px var(--orange);
+        }
+        50% {
+          box-shadow: 0 0 55px var(--orange);
+        }
+        100% {
+          box-shadow: 0 0 25px var(--orange);
+        }
+      }
+
+      /* ===== SECTION ===== */
+      section {
+        padding: 110px 80px;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 36px;
+        color: var(--gold);
+        margin-bottom: 70px;
+        text-shadow: 0 0 14px var(--gold), 0 0 30px var(--orange);
+      }
+
+      /* ===== ABOUT ===== */
+      .about {
+        max-width: 900px;
+        margin: auto;
+        text-align: center;
+        color: var(--text-soft);
+        line-height: 1.9;
+      }
+
+      /* ===== PROJECTS / SETS ===== */
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 45px;
+      }
+
+      .card {
+        background: var(--bg-soft);
+        border-radius: 22px;
+        overflow: hidden;
+        box-shadow: 0 0 25px rgba(140, 107, 31, 0.45);
+        transition: 0.4s;
+      }
+
+      .card:hover {
+        transform: translateY(-15px);
+        box-shadow: 0 0 35px var(--gold), 0 0 70px rgba(255, 140, 0, 0.6);
+      }
+
+      .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .card .content {
+        padding: 28px;
+      }
+
+      .card h3 {
+        color: var(--amber);
+        margin-bottom: 10px;
+      }
+
+      /* ===== CONTACT ===== */
+      .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+      }
+
+      .contact-info h3 {
+        color: var(--gold);
+        margin-bottom: 15px;
+      }
+
+      .contact-info p {
+        color: var(--text-soft);
+      }
+
+      input,
+      textarea {
+        width: 100%;
+        padding: 16px;
+        background: #1a1a1a;
+        border: none;
+        border-radius: 14px;
+        color: #fff;
+        margin-bottom: 5px;
+      }
+
+      input:focus,
+      textarea:focus {
+        outline: none;
+        box-shadow: 0 0 18px var(--orange);
+      }
+
+      button.send {
+        padding: 16px;
+        background: linear-gradient(90deg, var(--amber), var(--orange));
+        border: none;
+        border-radius: 14px;
+        font-weight: 700;
+        cursor: pointer;
+        box-shadow: 0 0 30px var(--orange);
+      }
+
+      /* ===== FOOTER ===== */
+      footer {
+        text-align: center;
+        padding: 28px;
+        background: #050505;
+        color: #8c8c8c;
+      }
+
+      /* ===== RESPONSIVE ===== */
+      @media (max-width: 768px) {
+        nav {
+          padding: 20px;
+        }
+        section {
+          padding: 80px 20px;
+        }
+        .contact {
+          grid-template-columns: 1fr;
+        }
+        .hero h2 {
+          font-size: 42px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <h1>BDJ</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Sets</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <div>
+        <h2>DJ Alisoy</h2>
+        <p>Music • Energy • Stage</p>
+        <button class="cta">Contact me</button>
+      </div>
+    </div>
+
+    <section>
+      <h2 class="section-title">About BDJ</h2>
+      <div class="about">
+        <p>
+          BDJ — səhnə enerjisi, güclü bass və premium sound ilə klubları
+          silkələyən DJ brendidir.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Live Sets</h2>
+      <div class="projects">
+        <div class="card">
+          <img src="https://picsum.photos/400/300?music=1" />
+          <div class="content">
+            <h3>Ibiza Night</h3>
+            <p>Live club performance</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://picsum.photos/400/300?music=2" />
+          <div class="content">
+            <h3>Dubai Stage</h3>
+            <p>Festival main stage</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://picsum.photos/400/300?music=3" />
+          <div class="content">
+            <h3>After Party</h3>
+            <p>Deep & melodic vibes</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Contact</h2>
+      <div class="contact">
+        <div class="contact-info">
+          <h3>Bookings & Info</h3>
+          <p>booking@bdj.com</p>
+        </div>
+        <form>
+          <input placeholder="Name" />
+          <input placeholder="Email" />
+          <textarea rows="5" placeholder="Message"></textarea>
+          <button class="send">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>© 2025 BDJ • Neon DJ Experience</footer>
+  </body>
+</html>

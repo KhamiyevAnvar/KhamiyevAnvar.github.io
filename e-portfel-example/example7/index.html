@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Neon Aura</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --gold: oklch(75% 0.183 55.934); /* soft qızılı */
+        --blue-bg: oklch(21% 0.034 264.665); /* mavi section background */
+        --white: oklch(98% 0.02 100); /* ağ */
+        --black: oklch(5% 0 0); /* qara */
+        --bg: #0a0a0a; /* tünd fon üçün */
+        --orange-hover: oklch(75% 0.25 60); /* narıncı hover */
+        --black-soft: oklch(9% 0.02 0); /* qara yumuşaq */
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Urbanist", sans-serif;
+      }
+
+      body {
+        background: var(--bg);
+        color: var(--white);
+      }
+
+      /* NAVBAR */
+      .navbar {
+        position: fixed;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 80px;
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(6px);
+        z-index: 10;
+      }
+
+      .navbar .logo {
+        color: var(--gold);
+        font-weight: 800;
+        font-size: 24px;
+        text-shadow: 0 0 8px var(--gold);
+      }
+
+      .navbar ul {
+        display: flex;
+        gap: 30px;
+        list-style: none;
+      }
+
+      .navbar a {
+        color: var(--white);
+        text-decoration: none;
+        transition: 0.3s;
+      }
+
+      .navbar a:hover {
+        color: var(--orange-hover);
+        text-shadow: 0 0 6px var(--orange-hover);
+      }
+
+      /* HERO */
+      .hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 140px 80px 60px 80px;
+        min-height: 100vh;
+      }
+
+      .neon-title {
+        font-size: 62px;
+        font-weight: 800;
+        color: var(--gold);
+        text-shadow: 0 0 12px var(--gold), 0 0 24px var(--blue-bg);
+        animation: neonGlow 2s infinite alternate;
+      }
+
+      .neon-title span {
+        color: white;
+        text-shadow: 0 0 12px var(--gold), 0 0 24px var(--blue-bg);
+      }
+
+      @keyframes neonGlow {
+        0% {
+          text-shadow: 0 0 8px var(--gold), 0 0 20px var(--blue-bg);
+        }
+        100% {
+          text-shadow: 0 0 16px var(--gold), 0 0 32px var(--blue-bg);
+        }
+      }
+
+      .subtitle {
+        margin: 16px 0;
+        font-size: 20px;
+        color: var(--white);
+      }
+
+      .primary-btn {
+        padding: 12px 30px;
+        background: var(--gold);
+        border: none;
+        border-radius: 30px;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: 0 0 10px var(--blue-bg), 0 0 18px var(--gold);
+        transition: 0.3s;
+      }
+
+      .primary-btn:hover {
+        box-shadow: 0 0 18px var(--blue-bg), 0 0 30px var(--gold);
+        transform: translateY(-2px);
+      }
+
+      .hero-right {
+        position: relative;
+      }
+
+      .hero-right img {
+        width: 300px;
+        border-radius: 20px;
+        box-shadow: 0 0 16px var(--gold), 0 0 30px var(--blue-bg);
+      }
+
+      /* ABOUT — MAVİ BACKGROUND */
+      #about {
+        /* background: var(--blue-bg); */
+
+        background: linear-gradient(
+          135deg,
+          var(--blue-bg) 55%,
+          /* mavi başlangıç */ #000000 100% /* siyah bitiş */
+        );
+
+        padding: 80px 80px;
+        border-radius: 12px;
+        max-width: 1300px;
+        margin: 0 auto;
+        box-shadow: 0 0 8px var(--orange-hover);
+      }
+
+      .section-title {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 50px;
+        color: var(--gold);
+        text-shadow: 0 0 6px var(--blue-bg);
+      }
+
+      .about-content {
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+      }
+
+      .about-text {
+        flex: 1 1 400px;
+        font-size: 16px;
+        line-height: 1.8;
+      }
+
+      .skills {
+        flex: 1 1 300px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+
+      .skill-card {
+        background: var(--black-soft);
+        padding: 18px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 0 10px var(--blue-bg);
+        transition: 0.3s;
+      }
+
+      .skill-card:hover {
+        box-shadow: 0 0 18px var(--gold), 0 0 26px var(--blue-bg);
+        transform: translateY(-3px);
+      }
+
+      /* PROJECTS */
+      .projects {
+        padding: 100px 80px;
+      }
+
+      .project-grid {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      }
+
+      .project-card {
+        background: var(--black-soft);
+        border-radius: 14px;
+        overflow: hidden;
+        box-shadow: 0 0 8px var(--blue-bg), 0 0 12px var(--gold);
+        transition: 0.3s;
+      }
+
+      .project-card:hover {
+        box-shadow: 0 0 12px var(--gold), 0 0 20px var(--blue-bg);
+        transform: translateY(-3px);
+      }
+
+      .project-img {
+        width: 100%;
+        height: 180px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 14px 14px 0 0;
+      }
+
+      .project-card h3 {
+        margin: 12px;
+        color: var(--gold);
+      }
+
+      .project-card p {
+        margin: 0 12px 18px 12px;
+        color: var(--white);
+        font-size: 14px;
+      }
+
+      /* FOOTER */
+      footer {
+        text-align: center;
+        padding: 40px 20px;
+        background: var(--black-soft);
+        color: var(--white);
+      }
+
+      /* Responsive */
+      @media (max-width: 1024px) {
+        .hero {
+          flex-direction: column;
+          text-align: center;
+        }
+        .hero-right {
+          margin-top: 30px;
+        }
+        .about-content {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="logo">MyPortfolio</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-left">
+        <h1 class="neon-title">DJ <span>Alisoy</span></h1>
+        <p class="subtitle">Business Analyst</p>
+        <button class="primary-btn">Contact Me</button>
+      </div>
+      <div class="hero-right">
+        <img
+          src="https://images.unsplash.com/photo-1765451817006-4a9f9cb3afc4?q=80&w=400&auto=format&fit=crop"
+          alt="Me"
+        />
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          Mən frontend developerəm. UI/UX, animasiya və funksional web
+          tətbiqləri hazırlayıram. Minimalist, lüks və neon tərz dizaynlara
+          xüsusi yanaşıram.
+        </div>
+        <div class="skills">
+          <div class="skill-card">HTML</div>
+          <div class="skill-card">CSS</div>
+          <div class="skill-card">JavaScript</div>
+          <div class="skill-card">React</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects">
+      <h2 class="section-title">My Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <div
+            class="project-img"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1612831455540-08f0be5b8e5f?q=80&w=400');
+            "
+          ></div>
+          <h3>Project 1</h3>
+          <p>Qısa izah...</p>
+        </div>
+        <div class="project-card">
+          <div
+            class="project-img"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1612831455500-07d1be5b7f4c?q=80&w=400');
+            "
+          ></div>
+          <h3>Project 2</h3>
+          <p>Qısa izah...</p>
+        </div>
+        <div class="project-card">
+          <div
+            class="project-img"
+            style="
+              background-image: url('https://images.unsplash.com/photo-1612831455580-09e2ae5b8f6b?q=80&w=400');
+            "
+          ></div>
+          <h3>Project 3</h3>
+          <p>Qısa izah...</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+      <p>© 2025 Elmaddin Aliyev</p>
+    </footer>
+  </body>
+</html>
