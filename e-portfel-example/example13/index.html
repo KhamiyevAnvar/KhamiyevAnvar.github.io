@@ -3,13 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DJ Portfolio</title>
-
+    <title>Light Neon Portfolio</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -25,18 +23,23 @@
       </ul>
     </nav>
 
+    <!-- HERO -->
     <section id="home" class="hero">
-      <div class="hero-container">
+      <div class="hero-text">
+        <h1 class="title">DJ Alisoy</h1>
+        <p class="subtitle">Live DJ & Event Mixer</p>
+        <button class="btn">Contact Me</button>
+      </div>
+
+      <div class="hero-img-wrapper">
+        <div class="neon-behind"></div>
         <img
-          src="https://images.unsplash.com/photo-1660211934853-e33d8a02201d?q=80&w=1374&auto=format&fit=crop"
-          alt="DJ"
-          class="hero-img"
+          src="https://images.unsplash.com/photo-1535682215715-c5c6a5d28247?q=80&w=687&auto=format&fit=crop"
+          alt="Me"
         />
-        <div class="hero-text">
-          <h1 class="neon-title">DJ Alisoy</h1>
-          <p class="subtitle">Music Producer & DJ</p>
-          <button class="primary-btn">Əlaqə</button>
-        </div>
+      </div>
+
+      <div class="hero-overlay">
         <div id="particles-js"></div>
       </div>
     </section>
@@ -62,12 +65,12 @@
 
     <!-- PROJECTS -->
     <section id="projects" class="projects">
-      <h2 class="section-title">İşlərim</h2>
+      <h2 class="section-title">Yenilikler</h2>
       <div class="project-grid">
         <div class="project-card">
           <div class="project-card-img js-tilt">
             <img
-              src="https://images.unsplash.com/photo-1535682215715-c5c6a5d28247?q=80&w=687&auto=format&fit=crop"
+              src="	https://images.unsplash.com/photo-1660211934853-e33d8a02201d?q=80&w=1374&auto=format&fit=crop"
               alt="Project Image"
               class="project-img"
             />
@@ -100,6 +103,51 @@
       </div>
     </section>
 
+    <!-- =========================
+     SERVICES
+========================= -->
+    <section class="services" id="services">
+      <h2 class="section-title">Xidmətlər</h2>
+
+      <div class="service-grid">
+        <div class="service-card">
+          <div class="service-icon">🎧</div>
+          <h3>DJ Performansları</h3>
+          <p>
+            Öz repertuarımla canlı konsertlər və tədbirlər üçün DJ
+            performansları.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🎵</div>
+          <h3>Studio İşi</h3>
+          <p>
+            Yenilikçi mix və mastering xidmətləri, öz musiqini peşəkar səviyyədə
+            hazırlamaq.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🎤</div>
+          <h3>Parti / Event DJ</h3>
+          <p>
+            Partilər, gecələr və xüsusi tədbirlər üçün unudulmaz musiqi
+            atmosferi yaradıram.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🔊</div>
+          <h3>Online Session & Mix</h3>
+          <p>
+            Onlayn DJ sessiyaları və mixlər, sosial media və virtual tədbirlər
+            üçün.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!-- CONTACT FORM -->
     <section id="contact" class="contact">
       <h2 class="section-title">Əlaqə</h2>
@@ -112,9 +160,7 @@
     </section>
 
     <!-- FOOTER -->
-    <footer>
-      <p>© 2025 DJ Alisoy</p>
-    </footer>
+    <footer>© 2025 — DJ Alisoy</footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
