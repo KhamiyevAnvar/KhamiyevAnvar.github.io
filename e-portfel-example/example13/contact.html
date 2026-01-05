@@ -11,6 +11,79 @@
     <link rel="stylesheet" href="slick/slick.css" />
     <link rel="stylesheet" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      #contact_page .contact_page .contact_page_body {
+        padding: 0 0 120px 0;
+      }
+
+      #contact_page .contact_page .contact_page_body .contact_page_body_head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .contact_page_body_head h3 {
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      .contact_page_body_head a {
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--text-muted);
+        text-decoration: none;
+      }
+
+      .contact_page_body_head a:hover {
+        color: var(--purple-soft);
+      }
+
+      .contact_page_form {
+        max-width: 600px;
+        margin: auto;
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .contact_page_form input,
+      .contact_page_form textarea {
+        padding: 16px 20px;
+        border-radius: 12px;
+        border: none;
+        background: var(--bg-card);
+        color: var(--text-main);
+        font-size: 16px;
+      }
+
+      .contact_page_form textarea {
+        min-height: 150px;
+        resize: none;
+      }
+
+      .contact_page_form button {
+        align-self: flex-start;
+        padding: 16px 46px;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        font-weight: 700;
+        color: var(--bg-main);
+        background: linear-gradient(
+          90deg,
+          var(--purple-main),
+          var(--white-main)
+        );
+        box-shadow: 0 0 35px rgba(91, 54, 217, 0.6);
+        transition: 0.3s;
+      }
+
+      .contact_page_form button:hover {
+        transform: translateY(-4px);
+      }
+    </style>
   </head>
 
   <body>
@@ -19,8 +92,8 @@
       <div class="logo">DJ Alisoy</div>
       <div class="navbar-left">
         <ul class="navbar-list">
-          <li class="active"><a href="index.html">Ana Səhifə</a></li>
-          <li><a href="about.html">Haqqında</a></li>
+          <li><a href="index.html">Ana Səhifə</a></li>
+          <li><a href="about.html">Haqqımda</a></li>
           <li><a href="latest.html">Yenilikler</a></li>
           <li><a href="index.html#services">Xidmətlər</a></li>
           <li>
@@ -40,285 +113,33 @@
       </div>
     </nav>
 
-    <!-- HERO -->
-    <section id="home" class="hero">
-      <div class="hero-img-wrapper">
-        <div class="neon-behind"></div>
-        <img
-          src="https://images.unsplash.com/photo-1535682215715-c5c6a5d28247?q=80&w=687&auto=format&fit=crop"
-          alt="Me"
-        />
-        <div class="hero-text">
-          <h1 class="title">DJ Alisoy</h1>
-          <p class="subtitle">Live DJ & Event Mixer</p>
-          <a href="tel:+994 55 555 55 55" class="btn">Contact Me</a>
-        </div>
-      </div>
-
-      <div class="hero-overlay">
-        <div id="particles-js"></div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="about">
-      <h2 class="section-title">Haqqında</h2>
-      <div class="about-content">
-        <div class="about-text">
-          <p>
-            Mən musiqi istehsalçısıyam və DJ-lik edirəm. Minimalist və neon
-            dizaynlar ilə vizual təqdimatlar hazırlayıram.
-          </p>
-        </div>
-        <div class="skills">
-          <div class="skill-card">Ableton</div>
-          <div class="skill-card">FL Studio</div>
-          <div class="skill-card">Mixing</div>
-          <div class="skill-card">Sound Design</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Latest -->
-    <section id="projects" class="projects">
-      <h2 class="section-title">Yenilikler</h2>
-      <div class="project-grid">
-        <a href="latest-single.html" class="project-card">
-          <div class="project-card-img js-tilt">
-            <img
-              src="	https://images.unsplash.com/photo-1660211934853-e33d8a02201d?q=80&w=1374&auto=format&fit=crop"
-              alt="Project Image"
-              class="project-img"
-            />
-          </div>
-          <h3>Live Set</h3>
-          <p>Neon minimal stage setup.</p>
-        </a>
-        <div class="project-card">
-          <div class="project-card-img js-tilt">
-            <img
-              src="https://images.unsplash.com/photo-1496337589254-7e19d01cec44?q=80&w=1740&auto=format&fit=crop"
-              alt="Project Image"
-              class="project-img"
-            />
-          </div>
-          <h3>Track Release</h3>
-          <p>Soft neon album visuals.</p>
-        </div>
-        <div class="project-card">
-          <div class="project-card-img js-tilt">
-            <img
-              src="https://images.unsplash.com/photo-1542628682-88321d2a4828?q=80&w=1740&auto=format&fit=crop"
-              alt="Project Image"
-              class="project-img"
-            />
-          </div>
-          <h3>Promo Video</h3>
-          <p>Modern neon style video edit.</p>
-        </div>
-      </div>
-      <div class="project-footer">
-        <a href="latest.html" class="more-link">Daha çox</a>
-      </div>
-    </section>
-
-    <!-- SERVICES -->
-    <section id="services" class="services">
-      <h2 class="section-title">Xidmətlər</h2>
-
-      <div class="service-grid">
-        <div class="service-card">
-          <div class="service-icon">🎧</div>
-          <h3>DJ Performansları</h3>
-          <p>
-            Öz repertuarımla canlı konsertlər və tədbirlər üçün DJ
-            performansları.
-          </p>
-          <a href="galery.html" class="service-link">Ətraflı</a>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">🎵</div>
-          <h3>Studio İşi</h3>
-          <p>
-            Yenilikçi mix və mastering xidmətləri, öz musiqini peşəkar səviyyədə
-            hazırlamaq.
-          </p>
-          <a href="galery.html" class="service-link">Ətraflı</a>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">🎤</div>
-          <h3>Parti / Event DJ</h3>
-          <p>
-            Partilər, gecələr və xüsusi tədbirlər üçün unudulmaz musiqi
-            atmosferi yaradıram.
-          </p>
-          <a href="galery.html" class="service-link">Ətraflı</a>
-        </div>
-
-        <div class="service-card">
-          <div class="service-icon">🔊</div>
-          <h3>Online Session & Mix</h3>
-          <p>
-            Onlayn DJ sessiyaları və mixlər, sosial media və virtual tədbirlər
-            üçün.
-          </p>
-          <a href="galery.html" class="service-link">Ətraflı</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="testimonials">
-      <h2 class="section-title">Müştəri Rəyləri</h2>
-
-      <div class="testimonial-grid">
-        <!-- Card -->
-        <div class="testimonial-grid-item">
-          <div class="testimonial-card">
-            <div class="testimonial-header">
-              <h3>Əla Xidmət</h3>
+    <!-- Contact -->
+    <section id="contact_page">
+      <div>
+        <div class="contact_page">
+          <h2 class="page-title">Əlaqə</h2>
+          <div class="contact_page_body">
+            <div class="contact_page_body_head">
+              <h3>Ümumi sorğu</h3>
+              <a href="tel:+994 55 555 55 55" class="contact_num"
+                >+994 55 555 55 55</a
+              >
+              <a href="mailto:info@seym.az" class="contact_mail"
+                >info@djalisoy.az</a
+              >
             </div>
-
-            <div class="testimonial-user">
-              <div class="user-img">
-                <img src="https://i.pravatar.cc/100?img=12" alt="user" />
-              </div>
-              <div class="user-info">
-                <span class="user-name">Elvin Məmmədov</span>
-                <span class="user-job">UI/UX Dizayner</span>
-              </div>
-            </div>
-
-            <div class="testimonial-body">
-              <p>
-                İş çox professional şəkildə icra olundu. Dizayn və sürət
-                gözləntimi tam qarşıladı.
-              </p>
-            </div>
-
-            <div class="testimonial-footer">
-              <span class="star active">★</span>
-              <span class="star active">★</span>
-              <span class="star active">★</span>
-              <span class="star active">★</span>
-              <span class="star">★</span>
-            </div>
-          </div>
-        </div>
-        <!-- Card -->
-        <div class="testimonial-grid-item">
-          <div class="testimonial-card">
-            <div class="testimonial-header">
-              <h3>Əla Xidmət</h3>
-            </div>
-
-            <div class="testimonial-user">
-              <div class="user-img">
-                <img src="https://i.pravatar.cc/100?img=12" alt="user" />
-              </div>
-              <div class="user-info">
-                <span class="user-name">Elvin Məmmədov</span>
-                <span class="user-job">UI/UX Dizayner</span>
-              </div>
-            </div>
-
-            <div class="testimonial-body">
-              <p>
-                İş çox professional şəkildə icra olundu. Dizayn və sürət
-                gözləntimi tam qarşıladı. İş çox professional şəkildə icra
-                olundu. Dizayn və sürət gözləntimi tam qarşıladı.
-              </p>
-            </div>
-
-            <div class="testimonial-footer">
-              <span class="star active">★</span>
-              <span class="star active">★</span>
-              <span class="star active">★</span>
-              <span class="star active">★</span>
-              <span class="star">★</span>
-            </div>
-          </div>
-        </div>
-        <!-- Card -->
-        <div class="testimonial-grid-item">
-          <div class="testimonial-card">
-            <div class="testimonial-header">
-              <h3>Əla Xidmət</h3>
-            </div>
-
-            <div class="testimonial-user">
-              <div class="user-img">
-                <img src="https://i.pravatar.cc/100?img=12" alt="user" />
-              </div>
-              <div class="user-info">
-                <span class="user-name">Elvin Məmmədov</span>
-                <span class="user-job">UI/UX Dizayner</span>
-              </div>
-            </div>
-
-            <div class="testimonial-body">
-              <p>
-                İş çox professional şəkildə icra olundu. Dizayn və sürət
-                gözləntimi tam qarşıladı.
-              </p>
-            </div>
-
-            <div class="testimonial-footer">
-              <span class="star active">★</span>
-              <span class="star active">★</span>
-              <span class="star active">★</span>
-              <span class="star active">★</span>
-              <span class="star">★</span>
-            </div>
-          </div>
-        </div>
-        <!-- Card -->
-        <div class="testimonial-grid-item">
-          <div class="testimonial-card">
-            <div class="testimonial-header">
-              <h3>Əla Xidmət</h3>
-            </div>
-
-            <div class="testimonial-user">
-              <div class="user-img">
-                <img src="https://i.pravatar.cc/100?img=12" alt="user" />
-              </div>
-              <div class="user-info">
-                <span class="user-name">Elvin Məmmədov</span>
-                <span class="user-job">UI/UX Dizayner</span>
-              </div>
-            </div>
-
-            <div class="testimonial-body">
-              <p>
-                İş çox professional şəkildə icra olundu. Dizayn və sürət
-                gözləntimi tam qarşıladı.
-              </p>
-            </div>
-
-            <div class="testimonial-footer">
-              <span class="star active">★</span>
-              <span class="star active">★</span>
-              <span class="star active">★</span>
-              <span class="star active">★</span>
-              <span class="star">★</span>
-            </div>
+            <form class="contact_page_form">
+              <input type="text" placeholder="Adınız" required />
+              <input type="email" placeholder="Email" required />
+              <textarea placeholder="Mesajınız" required></textarea>
+              <button type="submit">Göndər</button>
+            </form>
           </div>
         </div>
       </div>
     </section>
 
     <!-- CONTACT FORM -->
-    <section id="contact" class="contact">
-      <h2 class="section-title">Sorğu göndər</h2>
-      <form class="contact-form">
-        <input type="text" placeholder="Adınız" required />
-        <input type="email" placeholder="Email" required />
-        <textarea placeholder="Mesajınız" required></textarea>
-        <button type="submit">Göndər</button>
-      </form>
-    </section>
 
     <!-- Social -->
     <section id="social">

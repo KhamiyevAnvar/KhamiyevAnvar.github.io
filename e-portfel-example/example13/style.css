@@ -63,10 +63,54 @@ body {
   letter-spacing: 1px;
 }
 
+.navbar .navbar-left {
+  display: flex;
+  align-items: center;
+}
+
 .navbar .navbar-list {
   list-style: none;
   display: flex;
+  align-items: center;
   gap: 36px;
+}
+
+.navbar .navbar-list li {
+  position: relative;
+  transition: all ease 0.4s;
+  padding: 10px 0;
+}
+
+.navbar .navbar-list li .dropdown {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  background-color: var(--text-main);
+  /* box-shadow: 0 0 3px var(--purple-main); */
+  border-radius: 4px;
+  list-style-type: none;
+  transition: all ease 0.4s;
+}
+
+.navbar .navbar-list li .dropdown li {
+  padding: 0;
+}
+
+.navbar .navbar-list li .dropdown li a {
+  display: flex;
+
+  padding: 8px 25px;
+  color: var(--bg-main);
+}
+
+.navbar .navbar-list li .dropdown li:hover a {
+  background-color: var(--purple-main);
+  color: white;
 }
 
 .navbar .navbar-list a {
@@ -86,6 +130,11 @@ body {
   text-shadow: 0 0 10px var(--white-main);
 }
 
+.navbar .navbar-list li:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  height: auto;
+}
 .navbar-left {
   display: flex;
 }
@@ -192,6 +241,7 @@ body {
   background: linear-gradient(90deg, var(--purple-main), var(--white-main));
   box-shadow: 0 0 40px rgba(91, 54, 217, 0.6);
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .hero-text .btn:hover {
@@ -468,6 +518,24 @@ body {
   justify-content: center;
   margin-top: 60px;
 }
+
+.more-link {
+  padding: 10px 25px;
+  background-color: var(--bg-main);
+  box-shadow: 0 0 4px var(--purple-main);
+  color: var(--text-main);
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all ease 0.4s;
+  font-size: 16px;
+}
+
+.more-link:hover {
+  background-color: var(--text-main);
+  box-shadow: 0 0 4px var(--white-main);
+  color: var(--bg-main);
+}
 /* =========================
    SERVICES
 ========================= */
@@ -554,6 +622,13 @@ body {
   color: var(--bg-main);
   margin-top: 18px;
   font-weight: 600;
+  background-size: 150% 150%;
+  transition: all ease 0.5s;
+}
+
+.service-card .service-link:hover {
+  background-position: 100% 0;
+  /* background: linear-gradient(90deg, var(--white-main), var(--purple-main)); */
 }
 
 /* =========================
@@ -619,7 +694,7 @@ body {
 }
 
 #social .social .social-list li {
-  padding: 0 8px;
+  padding: 0 12px;
 }
 
 #social .social .social-list li a {
@@ -766,6 +841,6 @@ a:hover .galery-hover {
   padding: 0 -12px;
 }
 #latest_page .latest_page .latest_page_body .project-card {
-  width: calc((100% / 2) - 24px);
+  width: calc((100% / 3) - 24px);
   margin: 12px;
 }
