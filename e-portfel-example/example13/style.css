@@ -844,3 +844,101 @@ a:hover .galery-hover {
   width: calc((100% / 3) - 24px);
   margin: 12px;
 }
+
+/* videos page */
+
+.videos-page-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  gap: 40px;
+  padding-bottom: 120px;
+}
+
+.videos-page-card {
+  padding: 22px;
+  border-radius: 22px;
+  border: 1px solid rgba(91, 54, 217, 0.25);
+  color: var(--text-main);
+  transition: 0.35s;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+.videos-page-card-img {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.videos-page-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.videos-page-card-img iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+}
+
+.videos-page-card-img .play-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all ease 0.4s;
+}
+
+.videos-page-card-img .play-button:hover {
+  background: rgba(0, 0, 0, 0);
+}
+
+.videos-page-card-img .play-button svg {
+  width: 50px;
+  text-shadow: 0 0 10px black;
+}
+
+.videos-page-card-img .play-button svg path {
+  fill: var(--white-main);
+  opacity: 0.8;
+  /* text-shadow: 0 0 10px black; */
+  pointer-events: none;
+  transition: all ease 0.4s;
+}
+
+.videos-page-card-img .play-button:hover svg path {
+  opacity: 1;
+}
+
+.videos-page-card h3 {
+  color: var(--white-main);
+  margin-bottom: 12px;
+}
+
+.videos-page-card p {
+  color: var(--text-muted);
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.videos-page-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 40px rgba(91, 54, 217, 0.7), 0 0 20px rgba(255, 208, 112, 0.5);
+}
+
+.videos-page-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
