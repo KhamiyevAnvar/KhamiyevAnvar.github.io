@@ -61,6 +61,12 @@ body {
   font-weight: 800;
   color: var(--white-main);
   letter-spacing: 1px;
+  height: 48px;
+}
+
+.logo img {
+  height: 100%;
+  object-fit: contain;
 }
 
 .navbar .navbar-left {
@@ -849,7 +855,8 @@ a:hover .galery-hover {
 
 .videos-page-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(45%, 1fr)); */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 40px;
   padding-bottom: 120px;
 }
